@@ -42,10 +42,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     # Social auth providers. See here for the full available list:
     # https://django-allauth.readthedocs.io/en/latest/installation.html
-    # Add appropriate credentials to SOCIALACCOUNT_PROVIDERS below
-    'allauth.socialaccount.providers.apple',
     'allauth.socialaccount.providers.discord',
-    'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
 
     'crispy_forms',
