@@ -6,8 +6,9 @@ env = environs.Env()
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env.str("SECRET_KEY")
 DEBUG = env.bool("DEBUG", default=False)
-ALLOWED_HOSTS = [".herokuapp.com", "localhost", "0.0.0.0", "127.0.0.1"]
-INTERNAL_IPS = ['127.0.0.1']
+ALLOWED_HOSTS = [env.str("DJANGO_HOSTNAME", ".herokuapp.com")]
+if DEBUG:
+    ALLOWED_HOSTS += ["localhost", "0.0.0.0", "127.0.0.1"]
 
 # In production we may use a different URL for the admin interface.
 ADMIN_URL = env.str('ADMIN_URL', 'admin/')
@@ -152,3 +153,7 @@ ACCOUNT_RATE_LIMITS = {
     "signup": "20/m",
     # NOTE: Login is already protected via `ACCOUNT_LOGIN_ATTEMPTS_LIMIT`
 }
+
+# Heroku integration
+import django_heroku
+django_heroku.settings(locals())
