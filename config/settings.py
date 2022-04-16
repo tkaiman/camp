@@ -17,6 +17,14 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = env.str('TIME_ZONE', default='UTC')
 USE_TZ = True
 
+# Security settings
+SECURE_HSTS_SECONDS = env.int('SECURE_HSTS_SECONDS', 60)
+SECURE_HSTS_INCLUDE_SUBDOMAINS = not DEBUG
+SECURE_SSL_REDIRECT = not DEBUG
+SESSION_COOKIE_SECURE = not DEBUG
+CSRF_COOKIE_SECURE = not DEBUG
+SECURE_HSTS_PRELOAD = not DEBUG
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -31,6 +39,14 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    # Social auth providers. See here for the full available list:
+    # https://django-allauth.readthedocs.io/en/latest/installation.html
+    # Add appropriate credentials to SOCIALACCOUNT_PROVIDERS below
+    'allauth.socialaccount.providers.apple',
+    'allauth.socialaccount.providers.discord',
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
+
     'crispy_forms',
     'crispy_bootstrap5',
     'debug_toolbar',
@@ -58,6 +74,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'APP_DIRS': True,
+        'DIRS': [ BASE_DIR / 'templates' ],
         'OPTIONS': {
             'debug': DEBUG,
             'context_processors': [
@@ -103,6 +120,35 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # THIRD PARTY APP CONFIGS
 
-# django-crispy-forms
+# crispy_forms
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+# allauth
+
+# Login using either username or email address
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+# Requires an email be provided at signup if true
+ACCOUNT_EMAIL_REQUIRED = False  # Let's see if all our social auths provide this
+# Require verification? 'mandatory' = no login until confirmed... maybe later.
+ACCOUNT_EMAIL_VERIFICATION = 'optional'
+# Usernames are stored lowercase
+ACCOUNT_PRESERVE_USERNAME_CASING = False
+# Only ask for the password once. Use password reset if you fail.
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
+# TODO: Rate limiting requires a cache other than DummyCache. Ensure we have that set up.
+ACCOUNT_RATE_LIMITS = {
+    # Change password view (for users already logged in)
+    "change_password": "5/m",
+    # Email management (e.g. add, remove, change primary)
+    "manage_email": "10/m",
+    # Request a password reset, global rate limit per IP
+    "reset_password": "20/m",
+    # Rate limit measured per individual email address
+    "reset_password_email": "5/m",
+    # Password reset (the view the password reset email links to).
+    "reset_password_from_key": "20/m",
+    # Signups.
+    "signup": "20/m",
+    # NOTE: Login is already protected via `ACCOUNT_LOGIN_ATTEMPTS_LIMIT`
+}
