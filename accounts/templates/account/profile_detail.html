@@ -1,0 +1,17 @@
+{% extends "account/base.html" %}
+{% load account %}
+
+{% block head_title %}{% user_display object %}{% endblock %}
+
+{% block content %}
+<p>User: {{ object }}</p>
+<ul>
+<li><a href="{% url 'account_email' %}">Change E-mail</a></li>
+{% if user.password %}
+<li><a href="{% url 'account_change_password' %}">Change Password</a></li>
+{% else %}
+<li><a href="{% url 'account_set_password' %}">Set Password</a></li>
+{% endif %}
+<li><a href="{% url 'socialaccount_connections' %}">Manage Connected Accounts</a></li>
+</ul>
+{% endblock content %}
