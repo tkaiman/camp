@@ -10,7 +10,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 DEBUG = env.bool("DEBUG", default=False)
 ALLOWED_HOSTS = [env.str("DJANGO_HOSTNAME", ".herokuapp.com")]
 if DEBUG:
-    ALLOWED_HOSTS += ["localhost", "0.0.0.0", "127.0.0.1"]
+    ALLOWED_HOSTS += ["localhost", "0.0.0.0", "127.0.0.1"]  # nosec
 
 # In production we may use a different URL for the admin interface.
 ADMIN_URL = env.str("ADMIN_URL", "admin/")
