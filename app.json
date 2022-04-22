@@ -1,10 +1,8 @@
 {
-  "name": "Camp",
+  "addons": [
+    "heroku-postgresql"
+  ],
   "description": "Larp Campaign Manager",
-  "image": "heroku/python",
-  "repository": "https://github.com/kw/camp",
-  "keywords": ["python", "django" ],
-  "addons": [ "heroku-postgresql" ],
   "env": {
     "SECRET_KEY": {
       "description": "The secret key for the Django application.",
@@ -14,9 +12,16 @@
   "environments": {
     "test": {
       "scripts": {
-        "test-setup": "python manage.py collectstatic --noinput",
-        "test": "python manage.py test"
+        "test": "python manage.py test",
+        "test-setup": "python manage.py collectstatic --noinput"
       }
     }
-  }
+  },
+  "image": "heroku/python",
+  "keywords": [
+    "python",
+    "django"
+  ],
+  "name": "Camp",
+  "repository": "https://github.com/kw/camp"
 }

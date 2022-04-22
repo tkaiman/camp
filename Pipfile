@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 ipython = "~=8.2"
+pre-commit = "*"
 
 [packages]
 crispy-bootstrap5 = "==0.6"
