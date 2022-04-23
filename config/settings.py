@@ -7,14 +7,20 @@ env = environs.Env()
 env.read_env()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = env.str("SECRET_KEY")
-DEBUG = env.bool("DEBUG", default=False)
-ALLOWED_HOSTS = [env.str("DJANGO_HOSTNAME", ".herokuapp.com")]
+DEBUG = env.bool("DEBUG", default=True)
+# SECRET_KEY must be specified in production environments.
+SECRET_KEY = env.str(
+    "SECRET_KEY",
+    default="django-insecure 43)%4yx)aa@a=+_c(fn&kf3g29xax+=+a&key9i=!98zyim=8j"
+    if DEBUG
+    else None,
+)
+ALLOWED_HOSTS = [env.str("DJANGO_HOSTNAME", default=".herokuapp.com")]
 if DEBUG:
     ALLOWED_HOSTS += ["localhost", "0.0.0.0", "127.0.0.1"]  # nosec
 
 # In production we may use a different URL for the admin interface.
-ADMIN_URL = env.str("ADMIN_URL", "admin/")
+ADMIN_URL = env.str("ADMIN_URL", default="admin/")
 
 SITE_ID = 1
 LANGUAGE_CODE = "en-us"
@@ -22,7 +28,7 @@ TIME_ZONE = env.str("TIME_ZONE", default="UTC")
 USE_TZ = True
 
 # Security settings
-SECURE_HSTS_SECONDS = env.int("SECURE_HSTS_SECONDS", 60)
+SECURE_HSTS_SECONDS = env.int("SECURE_HSTS_SECONDS", default=60)
 SECURE_HSTS_INCLUDE_SUBDOMAINS = not DEBUG
 SECURE_SSL_REDIRECT = not DEBUG
 SESSION_COOKIE_SECURE = not DEBUG
