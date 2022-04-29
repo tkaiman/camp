@@ -22,7 +22,7 @@ if DEBUG:
 # In production we may use a different URL for the admin interface.
 ADMIN_URL = env.str("ADMIN_URL", default="admin/")
 
-SITE_ID = 1
+SITE_ID = env.int("SITE_ID", default=None)
 LANGUAGE_CODE = "en-us"
 TIME_ZONE = env.str("TIME_ZONE", default="UTC")
 USE_TZ = True
@@ -34,6 +34,12 @@ SECURE_SSL_REDIRECT = not DEBUG
 SESSION_COOKIE_SECURE = not DEBUG
 CSRF_COOKIE_SECURE = not DEBUG
 SECURE_HSTS_PRELOAD = not DEBUG
+
+# Cookie domain configuration. Keep them all the same for simplicity, for now.
+COOKIE_DOMAIN = env.str("COOKIE_DOMAIN", default=None)
+LANGUAGE_COOKIE_DOMAIN = COOKIE_DOMAIN
+SESSION_COOKIE_DOMAIN = COOKIE_DOMAIN
+CSRF_COOKIE_DOMAIN = COOKIE_DOMAIN
 
 INSTALLED_APPS = [
     "django.contrib.admin",

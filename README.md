@@ -54,7 +54,25 @@ pipenv shell
 To work inside the virtual environment. For more information on what this means,
 see https://pipenv.pypa.io.
 
-### Setup and Run Django
+#### Pre-commit
+
+Pre-commit checks are handles by the [`pre-commit`](https://pre-commit.com/)
+tool. The tool should already be installed in your pipenv environment, but to
+automatically run it on commit, you must hook it into your local repository:
+
+```sh
+pre-commit install
+```
+
+You can then manually run pre-commit checks with `pre-commit run`, or just
+attempt to commit changes. Pre-commit hooks check for various issues and
+in some cases automatically fix them (for example, the Black linter). If
+a hook changes any files, your commit will fail and will need to be tried again.
+
+If you fail to install the pre-commit hooks, the CI system will run it for you
+in pull requests.
+
+### Django
 
 Camp uses [Django](https://www.djangoproject.com/) as its backend framework.
 If you haven't used Django before, the tutorial on their website, or the
