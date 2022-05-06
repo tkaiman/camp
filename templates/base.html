@@ -17,7 +17,8 @@
   {% block body %}
 
   <header>
-    <h1>{{ request.site.name }}: LarpDB</h1>
+    <h1>
+      {% block body_title %}{{ request.site.name }}: {{ site_title }}{% endblock %}</h1>
     <div>
       <strong>Menu:</strong>
       <menu>

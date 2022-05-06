@@ -22,6 +22,7 @@ if DEBUG:
 # In production we may use a different URL for the admin interface.
 ADMIN_URL = env.str("ADMIN_URL", default="admin/")
 
+SITE_TITLE = env.str("SITE_TITLE", default="Campaign Manager")
 SITE_ID = env.int("SITE_ID", default=None)
 LANGUAGE_CODE = "en-us"
 TIME_ZONE = env.str("TIME_ZONE", default="UTC")
@@ -94,6 +95,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "context.base.site_title",
             ],
         },
     },
@@ -131,8 +133,22 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [str(BASE_DIR / "static")]
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+# Parse email URLs, e.g. "smtp://"
+# See https://github.com/migonzalvar/dj-email-url/blob/master/README.rst for syntax
+email_config = env.dj_email_url("EMAIL_URL", default="console:")
+EMAIL_FILE_PATH = email_config["EMAIL_FILE_PATH"]
+EMAIL_HOST_USER = email_config["EMAIL_HOST_USER"]
+EMAIL_HOST_PASSWORD = email_config["EMAIL_HOST_PASSWORD"]
+EMAIL_HOST = email_config["EMAIL_HOST"]
+EMAIL_PORT = email_config["EMAIL_PORT"]
+EMAIL_BACKEND = email_config["EMAIL_BACKEND"]
+EMAIL_USE_TLS = email_config["EMAIL_USE_TLS"]
+EMAIL_USE_SSL = email_config["EMAIL_USE_SSL"]
+EMAIL_TIMEOUT = email_config["EMAIL_TIMEOUT"]
+SERVER_EMAIL = email_config.get("SERVER_EMAIL", "root@localhost")
+DEFAULT_FROM_EMAIL = email_config.get("DEFAULT_FROM_EMAIL", "webmaster@localhost")
 
+EMAIL_SUBJECT_PREFIX = env.str("EMAIL_SUBJECT_PREFIX", "[Django] ")
 
 # THIRD PARTY APP CONFIGS
 
