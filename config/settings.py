@@ -158,6 +158,9 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 # allauth
 
+# Account creation adapters
+ACCOUNT_ADAPTER = "accounts.adapter.AccountAdapter"
+SOCIALACCOUNT_ADAPTER = "accounts.adapter.SocialAccountAdapter"
 # Login using either username or email address
 ACCOUNT_AUTHENTICATION_METHOD = "username_email"
 # Requires an email be provided at signup if true
@@ -184,5 +187,6 @@ ACCOUNT_RATE_LIMITS = {
     "signup": "20/m",
     # NOTE: Login is already protected via `ACCOUNT_LOGIN_ATTEMPTS_LIMIT`
 }
+ACCOUNT_SIGNUP_ENABLED = env.bool("SIGNUP_ENABLED", default=True)
 
 django_heroku.settings(locals())
