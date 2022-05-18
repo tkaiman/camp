@@ -6,8 +6,8 @@ import environs
 env = environs.Env()
 env.read_env()
 
-BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = env.bool("DEBUG", default=True)
+BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY must be specified in production environments.
 SECRET_KEY = env.str(
     "SECRET_KEY",
@@ -15,9 +15,13 @@ SECRET_KEY = env.str(
     if DEBUG
     else None,
 )
-ALLOWED_HOSTS = [env.str("DJANGO_HOSTNAME", default=".herokuapp.com")]
+ALLOWED_HOSTS = []
+DJANGO_HOSTNAME = env.str("DJANGO_HOSTNAME", default=None)
+if DJANGO_HOSTNAME:
+    ALLOWED_HOSTS += [DJANGO_HOSTNAME]
 if DEBUG:
     ALLOWED_HOSTS += ["localhost", "0.0.0.0", "127.0.0.1"]  # nosec
+    INTERNAL_IPS = ["127.0.0.1"]
 
 # In production we may use a different URL for the admin interface.
 ADMIN_URL = env.str("ADMIN_URL", default="admin/")
@@ -37,7 +41,7 @@ CSRF_COOKIE_SECURE = not DEBUG
 SECURE_HSTS_PRELOAD = not DEBUG
 
 # Cookie domain configuration. Keep them all the same for simplicity, for now.
-COOKIE_DOMAIN = env.str("COOKIE_DOMAIN", default=None)
+COOKIE_DOMAIN = env.str("COOKIE_DOMAIN", default=DJANGO_HOSTNAME)
 LANGUAGE_COOKIE_DOMAIN = COOKIE_DOMAIN
 SESSION_COOKIE_DOMAIN = COOKIE_DOMAIN
 CSRF_COOKIE_DOMAIN = COOKIE_DOMAIN
@@ -55,25 +59,26 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "crispy_forms",
+    "crispy_bootstrap5",
+    "debug_toolbar",
     # Social auth providers. See here for the full available list:
     # https://django-allauth.readthedocs.io/en/latest/installation.html
     "allauth.socialaccount.providers.discord",
     "allauth.socialaccount.providers.google",
-    "crispy_forms",
-    "crispy_bootstrap5",
-    "debug_toolbar",
     # Local
     "pages",
     "accounts",
+    "game",
 ]
 
 MIDDLEWARE = [
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.contrib.sites.middleware.CurrentSiteMiddleware",
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
@@ -95,7 +100,8 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "context.base.site_title",
+                "context.base.settings",
+                "context.base.game",
             ],
         },
     },

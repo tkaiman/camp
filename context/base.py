@@ -1,7 +1,13 @@
-from django.conf import settings
+from django.conf import settings as _settings
 
 
-def site_title(request):
+def settings(request):
     return {
-        "site_title": settings.SITE_TITLE,
+        "site_title": _settings.SITE_TITLE,
     }
+
+
+def game(request):
+    if request.site and hasattr(request.site, "game"):
+        return {"game": request.site.game}
+    return {"game": None}

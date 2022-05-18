@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block head_title %}Untitled{% endblock %} - {{ request.site.name }}</title>
+  <title>
+    {% block entire_title %}
+    {% block head_title %}Untitled{% endblock head_title %} - {{ request.site.name }}
+    {% endblock entire_title %}</title>
   {% block extra_head %}
   {% endblock extra_head %}
   {% block css %}
@@ -18,7 +21,7 @@
 
   <header>
     <h1>
-      {% block body_title %}{{ request.site.name }}: {{ site_title }}{% endblock %}</h1>
+      {% block body_title %}{{ request.site.name }} - {{ site_title }}{% endblock %}</h1>
     <div>
       <strong>Menu:</strong>
       <menu>
