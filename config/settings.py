@@ -15,6 +15,7 @@ SECRET_KEY = env.str(
     if DEBUG
     else None,
 )
+HOST_PORT = env.str("HOST_PORT", default="")
 ALLOWED_HOSTS = []
 DJANGO_HOSTNAME = env.str("DJANGO_HOSTNAME", default=None)
 if DJANGO_HOSTNAME:

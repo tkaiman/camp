@@ -17,7 +17,7 @@
     <h2>Games</h2>
     <ul>
     {% for game in open_games %}
-        <li><a href="{% gamelink game %}">{{game.name}}</a>
+        <li><a href="{% gamelink game %}">{{game}}</a>
     {% endfor %}
     </ul>
 {% endif %}

@@ -1,3 +1,4 @@
+from django.conf import settings as _settings
 from django.contrib.sites.models import Site
 from django.db import models
 
@@ -22,14 +23,5 @@ class Game(models.Model):
 
         Needs a request to properly extract the scheme and port in use.
         """
-        port = request.META["SERVER_PORT"]
-        if (
-            port == "80"
-            and request.scheme == "http"
-            or port == "443"
-            and request.scheme == "https"
-        ):
-            port_str = ""
-        else:
-            port_str = ":" + port
+        port_str = f":{_settings.HOST_PORT}" if _settings.HOST_PORT else ""
         return f"{request.scheme}://{self.site.domain}{port_str}/"
