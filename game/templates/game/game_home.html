@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block head_title %}Home{% endblock %}
+
+{% block body_title %}
+{{ game }} - {{ site_title }}
+{% endblock body_title %}
+
+{% block content %}
+{{ game.description }}
+{% endblock content %}

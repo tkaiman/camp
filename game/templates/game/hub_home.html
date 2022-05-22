@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load gamelink %}
+{% block head_title %}Home{% endblock %}
+
+{% block body_title %}
+{{ site_title }} Hub
+{% endblock body_title %}
+
+{% block content %}
+<h2>Games</h2>
+{% if object_list %}
+<ul>
+{% for game in object_list %}
+    <li><a href="{% gamelink game %}">{{game}}</a>
+{% endfor %}
+</ul>
+{% else %}
+<p>No games currently open.</p>
+{% endif %}
+{% endblock content %}

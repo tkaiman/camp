@@ -7,7 +7,7 @@ urlpatterns = [
     path(settings.ADMIN_URL, admin.site.urls),
     path("accounts/", include("allauth.urls")),
     path("accounts/", include("accounts.urls")),
-    path("", include("pages.urls")),
+    path("", include("game.urls")),
 ]
 
 if settings.DEBUG:
