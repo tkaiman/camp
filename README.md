@@ -92,6 +92,26 @@ This will create a local SQLite3 database called `db.sqlite3`. You can delete
 this to completely reset the state of your database, though this also includes
 any user accounts you've created locally.
 
+#### Collect Static Assets
+
+Before running tests, you may need to run collectstatic. This will
+compile static assets from around the project into a `staticfiles`
+directory.
+
+```sh
+./manage.py collectstatic
+```
+
+#### Run Tests
+
+Runs all Django tests in the project. To be included, the test needs to be in
+a package that has an `__init__.py` file, and the test file name should start
+with "test".
+
+```sh
+./manage.py test
+```
+
 #### Create an Admin User
 
 To create an admin user:
