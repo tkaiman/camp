@@ -1,0 +1,22 @@
+version: '2.1'
+orbs:
+  python: circleci/python@2.0.3
+jobs:
+  build:
+    executor:
+      name: python/default
+      tag: "3.10"
+    steps:
+      - checkout
+      - python/install-packages:
+          args: -d
+          pkg-manager: pipenv
+      - run:
+          command: |
+            pipenv run python manage.py collectstatic
+            pipenv run python manage.py test
+          name: Django Test
+workflows:
+  main:
+    jobs:
+      - build
