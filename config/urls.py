@@ -7,6 +7,7 @@ urlpatterns = [
     path(settings.ADMIN_URL, admin.site.urls),
     path("accounts/", include("allauth.urls")),
     path("accounts/", include("accounts.urls")),
+    path("pages/", include("django.contrib.flatpages.urls")),
     path("", include("game.urls")),
 ]
 
