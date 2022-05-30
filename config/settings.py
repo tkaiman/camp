@@ -41,12 +41,6 @@ SESSION_COOKIE_SECURE = not DEBUG
 CSRF_COOKIE_SECURE = not DEBUG
 SECURE_HSTS_PRELOAD = not DEBUG
 
-# Cookie domain configuration. Keep them all the same for simplicity, for now.
-COOKIE_DOMAIN = env.str("COOKIE_DOMAIN", default=DJANGO_HOSTNAME)
-LANGUAGE_COOKIE_DOMAIN = COOKIE_DOMAIN
-SESSION_COOKIE_DOMAIN = COOKIE_DOMAIN
-CSRF_COOKIE_DOMAIN = COOKIE_DOMAIN
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
