@@ -63,8 +63,8 @@ INSTALLED_APPS = [
     "allauth.socialaccount.providers.discord",
     "allauth.socialaccount.providers.google",
     # Local
-    "accounts",
-    "game",
+    "camp.accounts",
+    "camp.game",
 ]
 
 MIDDLEWARE = [
@@ -95,8 +95,8 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "context.base.settings",
-                "context.base.game",
+                "camp.context.base.settings",
+                "camp.context.base.game",
             ],
         },
     },
@@ -160,8 +160,8 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 # allauth
 
 # Account creation adapters
-ACCOUNT_ADAPTER = "accounts.adapter.AccountAdapter"
-SOCIALACCOUNT_ADAPTER = "accounts.adapter.SocialAccountAdapter"
+ACCOUNT_ADAPTER = "camp.accounts.adapter.AccountAdapter"
+SOCIALACCOUNT_ADAPTER = "camp.accounts.adapter.SocialAccountAdapter"
 # Login using either username or email address
 ACCOUNT_AUTHENTICATION_METHOD = "username_email"
 # Requires an email be provided at signup if true

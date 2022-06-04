@@ -1,6 +1,6 @@
 from django.views.generic import ListView
 
-from game.models import Game
+from .models import Game
 
 
 class HomePageView(ListView):

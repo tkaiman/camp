@@ -6,9 +6,9 @@ from django.urls import path
 urlpatterns = [
     path(settings.ADMIN_URL, admin.site.urls),
     path("accounts/", include("allauth.urls")),
-    path("accounts/", include("accounts.urls")),
+    path("accounts/", include("camp.accounts.urls")),
     path("pages/", include("django.contrib.flatpages.urls")),
-    path("", include("game.urls")),
+    path("", include("camp.game.urls")),
 ]
 
 if settings.DEBUG:
