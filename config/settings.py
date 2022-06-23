@@ -27,8 +27,9 @@ if DEBUG:
 # In production we may use a different URL for the admin interface.
 ADMIN_URL = env.str("ADMIN_URL", default="admin/")
 
+USE_MULTIPLE_SITES = env.bool("USE_MULTIPLE_SITES", default=False)
 SITE_TITLE = env.str("SITE_TITLE", default="Campaign Manager")
-SITE_ID = env.int("SITE_ID", default=None)
+SITE_ID = env.int("SITE_ID", default=None if USE_MULTIPLE_SITES else 1)
 LANGUAGE_CODE = "en-us"
 TIME_ZONE = env.str("TIME_ZONE", default="UTC")
 USE_TZ = True
