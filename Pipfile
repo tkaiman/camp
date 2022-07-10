@@ -6,6 +6,8 @@ verify_ssl = true
 [dev-packages]
 ipython = "~=8.2"
 pre-commit = "*"
+pytest = "==7.1.2"
+pytest-django = "==4.5.2"
 
 [packages]
 crispy-bootstrap5 = "==0.6"
@@ -18,6 +20,7 @@ environs = {extras = ["django"], version = "==9.5.0"}
 gunicorn = "==20.1.0"
 django-heroku = "==0.3.1"
 psycopg2-binary = "==2.9.3"
+rules = "==3.3"
 
 [requires]
 python_version = "3.10"
