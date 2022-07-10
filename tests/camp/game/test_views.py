@@ -3,8 +3,8 @@ from django.test import TestCase
 from django.test.utils import override_settings
 from django.urls import reverse
 
-from .models import Chapter
-from .models import Game
+from camp.game.models import Chapter
+from camp.game.models import Game
 
 
 class HomePageTests(TestCase):

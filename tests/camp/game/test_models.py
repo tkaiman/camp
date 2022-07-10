@@ -3,10 +3,10 @@ from django.contrib.auth.models import User
 from django.contrib.sites.models import Site
 from django.test import TestCase
 
-from .models import Chapter
-from .models import ChapterRole
-from .models import Game
-from .models import GameRole
+from camp.game.models import Chapter
+from camp.game.models import ChapterRole
+from camp.game.models import Game
+from camp.game.models import GameRole
 
 VIEW_GAME = "game.view_game"
 CHANGE_GAME = "game.change_game"
