@@ -104,12 +104,12 @@ directory.
 
 #### Run Tests
 
-Runs all Django tests in the project. To be included, the test needs to be in
+Run all Django tests in the project. To be included, the test needs to be in
 a package that has an `__init__.py` file, and the test file name should start
 with "test".
 
 ```sh
-./manage.py test
+pytest
 ```
 
 #### Create an Admin User
