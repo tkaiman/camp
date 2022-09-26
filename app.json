@@ -23,5 +23,6 @@
     "django"
   ],
   "name": "Camp",
-  "repository": "https://github.com/kw/camp"
+  "repository": "https://github.com/kw/camp",
+  "stack": "heroku-22"
 }
