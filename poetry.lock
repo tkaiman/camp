@@ -670,7 +670,7 @@ postgresql = ["psycopg2"]
 name = "pyyaml"
 version = "6.0"
 description = "YAML parser and emitter for Python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -764,7 +764,7 @@ tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 
@@ -848,7 +848,7 @@ brotli = ["Brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10.0"
-content-hash = "ab53e429eb0ad538870a083240c3ffe9aecd0f89858f21f0aeda36a8b3373834"
+content-hash = "d9389b17124dfc4ced68b44badc04a70a00922713fb72ebe5db8af37f7add6ad"
 
 [metadata.files]
 appnope = [
