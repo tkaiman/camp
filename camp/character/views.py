@@ -98,7 +98,9 @@ class DeleteCharacterView(AutoPermissionRequiredMixin, DeleteView):
         return reverse("character-list")
 
 
-@permission_required("character.change_character", fn=objectgetter(Character))
+@permission_required(
+    "character.change_character", fn=objectgetter(Character), raise_exception=True
+)
 def set_attr(request, pk):
     """Set the character's Level or CP to an arbitrary value."""
     # TODO: Restrict this to either freeplay mode or maybe logistics action.
@@ -134,7 +136,9 @@ def set_attr(request, pk):
     return redirect("character-detail", pk=pk)
 
 
-@permission_required("character.change_character", fn=objectgetter(Character))
+@permission_required(
+    "character.change_character", fn=objectgetter(Character), raise_exception=True
+)
 def feature_view(request, pk, feature_id):
     character = get_object_or_404(Character, id=pk)
     sheet = character.primary_sheet
@@ -251,7 +255,9 @@ def _try_apply_purchase(
     return False, pf
 
 
-@permission_required("character.change_character", fn=objectgetter(Character))
+@permission_required(
+    "character.change_character", fn=objectgetter(Character), raise_exception=True
+)
 def undo_view(request, pk):
     character = get_object_or_404(Character, id=pk)
     sheet = character.primary_sheet
