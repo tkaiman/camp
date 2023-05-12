@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import environs
+from django.contrib.messages import constants as message_constants
 
 env = environs.Env()
 env.read_env()
@@ -64,6 +65,7 @@ INSTALLED_APPS = [
     # Local
     "camp.accounts",
     "camp.game",
+    "camp.character",
 ]
 
 MIDDLEWARE = [
@@ -190,6 +192,16 @@ ACCOUNT_RATE_LIMITS = {
     # NOTE: Login is already protected via `ACCOUNT_LOGIN_ATTEMPTS_LIMIT`
 }
 ACCOUNT_SIGNUP_ENABLED = env.bool("SIGNUP_ENABLED", default=True)
+
+MESSAGE_TAGS = {
+    message_constants.DEBUG: "primary",
+    message_constants.INFO: "info",
+    message_constants.SUCCESS: "success",
+    message_constants.WARNING: "warning",
+    message_constants.ERROR: "danger",
+}
+
+UNDO_STACK_SIZE = env.int("UNDO_STACK_SIZE", default=10)
 
 try:
     import django_heroku

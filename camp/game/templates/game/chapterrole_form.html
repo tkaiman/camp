@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% load rules %}
 {% load crispy_forms_tags %}
-{% block head_title %}
+{% block head_title %}{% block body_title %}
 {% if object %}
 Update Role for {{ object.user }}
 {% else %}
 Assign New Role
 {% endif %}
-{% endblock %}
+{% endblock %}{% endblock %}
 
 {% block content %}
 {% if object %}

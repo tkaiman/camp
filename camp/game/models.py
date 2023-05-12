@@ -142,6 +142,7 @@ class Ruleset(RulesModel):
         Game, on_delete=models.CASCADE, related_name="rulesets"
     )
     package: str = models.CharField(blank=True, null=True, max_length=100)
+    enabled: bool = models.BooleanField(default=True)
 
     @cached_property
     def ruleset(self) -> camp.engine.rules.base_models.BaseRuleset:
@@ -172,11 +173,13 @@ class Ruleset(RulesModel):
         except Exception:
             ruleset = None
         if ruleset:
-            return f"{ruleset.name} [{ruleset.id} {ruleset.version}]"
+            return f"{ruleset.name} [{ruleset.id} {ruleset.version}]" + (
+                " (disabled)" if not self.enabled else ""
+            )
         return f"Unreadable Ruleset [{self.package}]"
 
     def __repr__(self) -> str:
-        return f"Ruleset(package={self.package})"
+        return f"Ruleset(package={self.package}, enabled={self.enabled})"
 
     class Meta:
         rules_permissions = {

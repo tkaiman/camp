@@ -46,6 +46,27 @@ Discounts: TypeAlias = dict[str, Discount | int]
 
 
 class ChoiceDef(base_models.BaseModel):
+    """Describes a choice that can be made related to a feature.
+
+    Choices are always represented by features, which might be subfeatures
+    rather than "normal" features. By default, a choice causes the feature
+    to be Granted, unless a discount is specified (see the `discount` attribute).
+    However, a custom controler could alter this behavior.
+
+    Attributes:
+        name: The user-visible name of the choice.
+        description: A user-visible description of the choice.
+        limit: The number of times this choice can be made. If "unlimited",
+            there is no limit.
+        discount: A discount that applies to the choice. This is rarely used,
+            but can be used to make a choice cheaper than normal. For example,
+            the Geas Core "Patron" perk allows a number of choices to be made
+            from (almost) the full list of Perks, and each choice is discounted
+            by 1 CP. The choice can be made after the purchase was made. Note
+            that this doesn't actually _grant_ the choice in this case.
+        matcher: A feature matcher that can be used to limit the choices available.
+    """
+
     name: str
     description: str | None = None
     limit: int | Literal["unlimited"] = 1
@@ -81,8 +102,6 @@ class ClassDef(BaseFeatureDef):
     starting_features: Grantable | None = None
     multiclass_features: Grantable | None = None
     bonus_features: dict[int, Grantable] | None = None
-    level_table_columns: dict[str, dict]
-    levels: dict[int, dict]
     # By default, classes have 10 levels.
     ranks: int = 10
 
@@ -232,9 +251,21 @@ class Ruleset(base_models.BaseRuleset):
     spikes: AttributeScaling = AttributeScaling(base=2, factor=8, rounding="down")
 
     attributes: ClassVar[Iterable[Attribute]] = [
-        Attribute(id="xp", name="Experience Points", abbrev="XP", default_value=0),
-        Attribute(id="xp_level", name="Experience Level", hidden=True, default_value=2),
-        Attribute(id="level", name="Character Level", is_tag=True),
+        Attribute(
+            id="xp",
+            name="Experience Points",
+            abbrev="XP",
+            description="You earn 2 XP per half-day game, or 8 per normal weekend game.",
+            default_value=0,
+        ),
+        Attribute(
+            id="xp_level",
+            name="Experience Level",
+            abbrev="Level",
+            default_value=2,
+            description="Your level, determined by your XP total.",
+        ),
+        Attribute(id="level", name="Character Level", hidden=True, is_tag=True),
         Attribute(id="lp", name="Life Points", abbrev="LP", default_value=2),
         Attribute(id="cp", name="Character Points", abbrev="CP", default_value=0),
         Attribute(id="breedcap", name="Max Breeds", default_value=2, hidden=True),

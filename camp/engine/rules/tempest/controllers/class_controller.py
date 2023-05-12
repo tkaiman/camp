@@ -3,7 +3,6 @@ from __future__ import annotations
 from camp.engine.rules.decision import Decision
 
 from .. import defs
-from .. import models
 from . import character_controller
 from . import feature_controller
 
@@ -12,8 +11,8 @@ _MUST_BE_POSITIVE = Decision(success=False, reason="Value must be positive.")
 
 class ClassController(feature_controller.FeatureController):
     definition: defs.ClassDef
-    model_type = models.ClassModel
-    model: models.ClassModel
+    currency = None
+    rank_name_labels: tuple[str, str] = ("level", "levels")
 
     def __init__(self, id: str, character: character_controller.TempestCharacter):
         super().__init__(id, character)
@@ -23,29 +22,45 @@ class ClassController(feature_controller.FeatureController):
             )
 
     @property
-    def is_primary(self) -> bool:
-        return self.model.primary
+    def is_archetype(self) -> bool:
+        return self.model.is_archetype_class
 
-    @is_primary.setter
-    def is_primary(self, value: bool) -> None:
-        self.model.primary = value
+    @is_archetype.setter
+    def is_archetype(self, value: bool) -> None:
+        self.model.is_archetype_class = value
         if value:
             # There can be only one primary class
-            for id, controller in self.character.classes.items():
-                if id != self.full_id:
-                    controller.is_primary = False
+            for controller in self.character.classes:
+                if controller.id != self.full_id:
+                    controller.is_archetype = False
 
     @property
     def is_starting(self) -> bool:
-        return self.model.starting
+        if self.character.level == 0:
+            # If there are no classes, we're talking hyoptheticals,
+            # so we'll assume this would be the starting class if purchased.
+            return True
+        return self.model.is_starting_class
+
+    @property
+    def next_value(self) -> int:
+        if self.value == 0 and self.character.level == 0:
+            return 2
+        return super().next_value
+
+    @property
+    def min_value(self) -> int:
+        if self.is_starting and self.character.is_multiclass:
+            return 2
+        return super().min_value
 
     @is_starting.setter
     def is_starting(self, value: bool) -> None:
-        self.model.starting = value
+        self.model.is_starting_class = value
         if value:
             # There can be only one starting class
-            for id, controller in self.character.classes.items():
-                if id != self.full_id:
+            for controller in self.character.classes:
+                if controller.id != self.full_id:
                     controller.is_starting = False
 
     @property
@@ -82,11 +97,11 @@ class ClassController(feature_controller.FeatureController):
         if not (rd := super().increase(value)):
             return rd
         if (
-            not self.is_primary
-            and max((c.value for c in self.character.classes.values()), default=0)
+            not self.is_archetype
+            and max((c.value for c in self.character.classes), default=0)
             < self.purchased_ranks
         ):
-            self.is_primary = True
+            self.is_archetype = True
         if self.character.starting_class is None:
             self.is_starting = True
         self.reconcile()
@@ -115,14 +130,26 @@ class ClassController(feature_controller.FeatureController):
         if not (rd := super().decrease(value)):
             return rd
         if self.model.ranks <= 0:
-            self.model.starting = False
-            self.model.primary = False
+            self.model.is_starting_class = False
+            self.model.is_archetype_class = False
         if (
-            self.is_primary
-            and max((c.value for c in self.character.classes.values()), default=0)
+            self.is_archetype
+            and max((c.value for c in self.character.classes), default=0)
             > self.purchased_ranks
         ):
             # TODO: Auto-set to the new highest
             pass
         self.reconcile()
         return Decision(success=True, amount=self.value)
+
+    def extra_grants(self) -> dict[str, int]:
+        # Base classes grant different starting features based on whether it's your starting class.
+        if self.is_starting:
+            return self._gather_grants(self.definition.starting_features)
+        else:
+            return self._gather_grants(self.definition.multiclass_features)
+
+    def __str__(self) -> str:
+        if self.value > 0:
+            return f"{self.definition.name} {self.value}"
+        return self.definition.name

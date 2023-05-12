@@ -23,7 +23,7 @@ from .decision import Decision
 _REQ_SYNTAX = re.compile(
     r"""(?P<prop>[a-zA-Z0-9_-]+)
     (?:@(?P<slot>-?[a-zA-Z0-9_-]+))?          # Choice, aka "@4"
-    (?:\#(?P<option>[a-zA-Z0-9?_-]+))?   # Skill options, aka "#Undead_Lore"
+    (?:\+(?P<option>[a-zA-Z0-9?_-]+))?   # Skill options, aka "+Undead_Lore"
     (?::(?P<value>-?\d+))?       # Minimum value, aka ":5"
     (?:\$(?P<single>-?\d+))?       # Minimum value in single thing, aka "$5"
     (?:<(?P<less_than>-?\d+))?     # Less than value, aka "<5"
@@ -44,6 +44,7 @@ class Attribute(BaseModel):
     id: str
     name: str
     abbrev: str | None = None
+    description: str | None = None
     default_value: int = 0
     hidden: bool = False
     scoped: bool = False
@@ -233,7 +234,7 @@ class PropExpression(BoolExpr):
         if slot:
             req += f"@{slot}"
         if option:
-            req += f"#{option.replace(' ', '_')}"
+            req += f"+{option.replace(' ', '_')}"
         if value:
             req += f":{value}"
         if single:
@@ -330,6 +331,7 @@ class BaseFeatureDef(BaseModel):
     id: str
     name: str
     type: str
+    category: str | None = None
     requires: Requirements = None
     def_path: str | None = None
     tags: set[str] = pydantic.Field(default_factory=set)
@@ -653,6 +655,7 @@ class RankMutation(BaseModel):
             use the default of "1". If negative, this is a sellback or overcome.
     """
 
+    type: Literal["rank"] = "rank"
     id: str
     option: str | None = None
     ranks: int = 1
@@ -676,6 +679,7 @@ class RankMutation(BaseModel):
 
 
 class ChoiceMutation(BaseModel):
+    type: Literal["choice"] = "choice"
     id: str
     choice: str
     value: str
@@ -683,11 +687,13 @@ class ChoiceMutation(BaseModel):
 
 
 class NoteMutation(BaseModel):
+    type: Literal["note"] = "note"
     id: str
     note: str
 
 
 class PlotMutation(BaseModel):
+    type: Literal["plot"] = "plot"
     id: str
     ranks: int | None = None
     suppress: bool | None = None
@@ -700,9 +706,17 @@ class PlotMutation(BaseModel):
 Mutation = RankMutation | ChoiceMutation | NoteMutation | PlotMutation
 
 
+def load_mutation(data: dict) -> Mutation:
+    return pydantic.parse_obj_as(Mutation, data)
+
+
+def dump_mutation(mutation: Mutation) -> dict:
+    return utils.dump_dict(mutation, exclude_unset=False, exclude_defaults=False)
+
+
 def full_id(id: str, option: str | None) -> str:
     if option:
-        return f"{id}#{option.replace(' ', '_')}"
+        return f"{id}+{option.replace(' ', '_')}"
     else:
         return id
 

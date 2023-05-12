@@ -1,12 +1,12 @@
 from __future__ import annotations
 
 from functools import cached_property
-from typing import Iterable
 from typing import Mapping
 from typing import cast
 
 from camp.engine import utils
 from camp.engine.rules import base_engine
+from camp.engine.rules.base_models import ChoiceMutation
 from camp.engine.rules.base_models import PropExpression
 from camp.engine.rules.base_models import RankMutation
 from camp.engine.rules.decision import Decision
@@ -18,6 +18,7 @@ from . import attribute_controllers
 from . import class_controller
 from . import feature_controller
 from . import flaw_controller
+from . import subfeature_controller
 
 
 class TempestCharacter(base_engine.CharacterController):
@@ -58,6 +59,7 @@ class TempestCharacter(base_engine.CharacterController):
         self.model.metadata.awards["xp"] = utils.table_reverse_lookup(
             self.ruleset.xp_table, value
         )
+        self.mutated = True
 
     @property
     def base_cp(self) -> int:
@@ -75,6 +77,7 @@ class TempestCharacter(base_engine.CharacterController):
     @awarded_cp.setter
     def awarded_cp(self, value: int) -> None:
         self.model.metadata.awards["cp"] = value
+        self.mutated = True
 
     @property
     def base_lp(self) -> int:
@@ -113,28 +116,16 @@ class TempestCharacter(base_engine.CharacterController):
     def levels_available(self) -> int:
         return self.xp_level - self.level.value
 
-    def _feature_models(
-        self, types: str | set[str] | None = None
-    ) -> Iterable[tuple[str, models.FeatureModel]]:
-        is_set = isinstance(types, set)
-        for id, model in self.model.features.items():
-            if (
-                types is None
-                or (is_set and model.type in types)
-                or (not is_set and model.type == types)
-            ):
-                yield id, model
-
     @property
     def primary_class(self) -> class_controller.ClassController | None:
-        for controller in self.classes.values():
-            if controller.is_primary:
+        for controller in self.classes:
+            if controller.is_archetype:
                 return controller
         return None
 
     @property
     def starting_class(self) -> class_controller.ClassController | None:
-        for controller in self.classes.values():
+        for controller in self.classes:
             if controller.is_starting:
                 return controller
         return None
@@ -145,19 +136,35 @@ class TempestCharacter(base_engine.CharacterController):
             return self._features
         feats: dict[str, feature_controller.FeatureController] = {}
         for id, model in self.model.features.items():
-            controller = self._new_controller_for_type(model.type, id)
+            controller = self._new_controller_for_type(id)
             feats[id] = controller
         self._features = feats
         return feats
 
     @property
-    def classes(self) -> dict[str, class_controller.ClassController]:
-        """Dict of the character's class controllers."""
-        return {
-            id: feat
-            for (id, feat) in self.features.items()
-            if isinstance(feat, class_controller.ClassController)
-        }
+    def classes(self) -> list[class_controller.ClassController]:
+        """List of the character's class controllers."""
+        classes = [
+            feat
+            for (feat) in self.features.values()
+            if feat.feature_type == "class" and feat.value > 0
+        ]
+        classes.sort(key=lambda c: c.value, reverse=True)
+        return classes
+
+    @property
+    def is_multiclass(self) -> bool:
+        return len(self.classes) > 1
+
+    @property
+    def skills(self) -> list[feature_controller.FeatureController]:
+        skills = [
+            feat
+            for (feat) in self.features.values()
+            if feat.feature_type == "skill" and feat.value > 0
+        ]
+        skills.sort(key=lambda s: s.display_name())
+        return skills
 
     def feature_def(self, feature_id: str) -> defs.FeatureDefinitions | None:
         expr = PropExpression.parse(feature_id)
@@ -197,6 +204,13 @@ class TempestCharacter(base_engine.CharacterController):
         return Decision(
             success=False, reason=f"Purchase not implemented: {entry.expression}"
         )
+
+    def choose(self, entry: ChoiceMutation) -> Decision:
+        if controller := self._controller_for_feature(entry.id):
+            if entry.remove:
+                return controller.unchoose(entry.choice, entry.value)
+            return controller.choose(entry.choice, entry.value)
+        return Decision(success=False, reason=f"Unknown feature {entry.id}")
 
     def has_prop(self, expr: str | PropExpression) -> bool:
         """Check whether the character has _any_ property (feature, attribute, etc) with the given name.
@@ -261,14 +275,14 @@ class TempestCharacter(base_engine.CharacterController):
     def divine(self) -> base_engine.AttributeController:
         return attribute_controllers.SumAttribute("divine", self, "class", "divine")
 
-    def _new_controller_for_type(
-        self, feature_type: str, id: str
-    ) -> feature_controller.FeatureController:
-        match feature_type:
+    def _new_controller_for_type(self, id: str) -> feature_controller.FeatureController:
+        match self._feature_type(id):
             case "class":
                 return class_controller.ClassController(id, self)
             case "flaw":
                 return flaw_controller.FlawController(id, self)
+            case "subfeature":
+                return subfeature_controller.SubfeatureController(id, self)
             case _:
                 return feature_controller.FeatureController(id, self)
 
@@ -287,7 +301,7 @@ class TempestCharacter(base_engine.CharacterController):
             return controller
         # Otherwise, create a controller and ask it.
         if create:
-            return self._new_controller_for_type(feature_def.type, expr.full_id)
+            return self._new_controller_for_type(expr.full_id)
         return None
 
     def _controller_for_property(

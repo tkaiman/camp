@@ -4,6 +4,7 @@ import math
 from functools import cached_property
 from typing import Iterable
 from typing import Type
+from typing import cast
 
 from camp.engine.rules import base_engine
 from camp.engine.rules.base_models import PropExpression
@@ -23,6 +24,7 @@ class FeatureController(base_engine.BaseFeatureController):
     character: character_controller.TempestCharacter
     model_type: Type[models.FeatureModel] = models.FeatureModel
     _effective_ranks: int | None
+    _subfeatures: set[str]
 
     # Subclasses can change the currency used, but CP is the default.
     # Note that no currency display will be shown if the feature has no cost model.
@@ -31,6 +33,22 @@ class FeatureController(base_engine.BaseFeatureController):
     def __init__(self, full_id: str, character: character_controller.TempestCharacter):
         super().__init__(full_id, character)
         self._effective_ranks = None
+        self._subfeatures = set()
+
+    @property
+    def subfeatures(self) -> list[FeatureController]:
+        subfeatures = []
+        for id in self._subfeatures:
+            subfeature = self.character.features.get(id)
+            if subfeature is not None and subfeature.value > 0:
+                subfeatures.append(subfeature)
+        return subfeatures
+
+    @property
+    def parent(self) -> FeatureController | None:
+        if not hasattr(self.definition, "parent") or self.definition.parent is None:
+            return None
+        return self.character.controller(self.definition.parent)
 
     @property
     def taken_options(self) -> dict[str, int]:
@@ -52,11 +70,30 @@ class FeatureController(base_engine.BaseFeatureController):
     def cost(self) -> int:
         return self._cost_for(self.paid_ranks)
 
+    @property
+    def next_cost(self) -> int:
+        return self._cost_for(self.paid_ranks + 1) - self._cost_for(self.paid_ranks)
+
+    @property
+    def currency_name(self) -> str | None:
+        if self.currency:
+            return self.character.display_name(self.currency)
+        return None
+
+    def purchase_cost_string(
+        self, ranks: int = 1, cost: int | None = None
+    ) -> str | None:
+        if self.currency and self.cost_def:
+            if cost is None:
+                cost = self._cost_for(self.paid_ranks + ranks) - self._cost_for(
+                    self.paid_ranks
+                )
+            return f"{cost} {self.currency_name}"
+        return None
+
     @cached_property
     def model(self) -> models.FeatureModel:
-        return self.character.model.features.get(self.full_id) or self.model_type(
-            type=self.definition.type, ranks=0
-        )
+        return self.character.model.features.get(self.full_id) or self.model_type()
 
     @property
     def free(self) -> bool:
@@ -83,6 +120,58 @@ class FeatureController(base_engine.BaseFeatureController):
         elif not model.should_keep() and saved:
             del self.character.model.features[self.full_id]
 
+    def explain(self) -> list[str]:
+        """Returns a list of strings explaining details of the feature."""
+        if self.model.plot_suppressed:
+            return ["This feature was suppressed by a plot member."]
+
+        if self.value <= 0:
+            return []
+
+        reasons = []
+        if self.model.plot_added:
+            reasons.append("This feature was added by a plot member.")
+        if self.model.plot_free:
+            reasons.append("This feature is free for plot reasons.")
+
+        if self.definition.ranks == 1 and self.purchased_ranks == 1:
+            reasons.append("You have taken this feature.")
+
+        if self.definition.ranks != 1 and self.purchased_ranks > 0:
+            reasons.append(
+                f"You have taken {self.purchased_ranks} {self.rank_name(self.purchased_ranks)}."
+            )
+
+        if self.purchased_ranks > 0 and self.currency_name and self.cost > 0:
+            reasons.append(
+                f"You have spent {self.cost} {self.currency_name} on this feature."
+            )
+
+        if self._propagation_data:
+            for source_id, data in self._propagation_data.items():
+                data = cast(engine.PropagationData, data)
+                source = self.character.display_name(source_id)
+                if data.grants > 0:
+                    source = self.character.display_name(source_id)
+                    if data.grants == 1:
+                        reasons.append(f"Granted by {source}.")
+                    else:
+                        reasons.append(
+                            f"Granted {data.grants} {self.rank_name(data.grants)} from {source}."
+                        )
+                if data.discount:
+                    for discount in data.discount:
+                        reason = (
+                            f"Discounted by {discount.discount} {self.currency_name}, "
+                        )
+                        if discount.minimum:
+                            reason += f"minimum {discount.minimum}, "
+                        if discount.ranks:
+                            reason += f"up to {discount.ranks} {self.rank_name(discount.ranks)}, "
+                        reason += f"via {source}."
+                        reasons.append(reason)
+        return reasons
+
     @property
     def granted_ranks(self) -> int:
         return sum(d.grants for d in self._propagation_data.values())
@@ -97,10 +186,20 @@ class FeatureController(base_engine.BaseFeatureController):
     def choices(self) -> dict[str, choice_controller.ChoiceController] | None:
         if not self.definition.choices or self.value < 1:
             return None
-        choices = dict()
-        for key in self.definition.choices:
-            choices[key] = choice_controller.ChoiceController(self, key)
-        return choices
+        return {
+            key: choice_controller.ChoiceController(self, key)
+            for key in self.definition.choices
+        }
+
+    def choose(self, choice: str, selection: str) -> Decision:
+        if controller := self.choices.get(choice):
+            return controller.choose(selection)
+        return Decision(success=False, reason=f"Unknown choice '{choice}'")
+
+    def unchoose(self, choice: str, selection: str) -> Decision:
+        if controller := self.choices.get(choice, None):
+            return controller.unchoose(selection)
+        return Decision(success=False, reason=f"Unknown choice '{choice}'")
 
     @property
     def paid_ranks(self) -> int:
@@ -131,7 +230,7 @@ class FeatureController(base_engine.BaseFeatureController):
             for feat, controller in self.character.controllers_for_type(
                 self.feature_type
             ).items():
-                if feat.startswith(f"{self.id}#"):
+                if feat.startswith(f"{self.id}+"):
                     total += controller.value
             return total
         if self._effective_ranks is None:
@@ -149,7 +248,7 @@ class FeatureController(base_engine.BaseFeatureController):
             for feat, controller in self.character.controllers_for_type(
                 self.feature_type
             ).items():
-                if feat.startswith(f"{self.id}#"):
+                if feat.startswith(f"{self.id}+"):
                     new_value = controller.value
                     if new_value > current:
                         current = new_value
@@ -171,6 +270,8 @@ class FeatureController(base_engine.BaseFeatureController):
 
     @property
     def purchaseable_ranks(self) -> int:
+        if self.option_def and not self.option:
+            return self.max_ranks
         return max(self.max_ranks - self.value, 0)
 
     def _link_to_character(self):
@@ -195,9 +296,9 @@ class FeatureController(base_engine.BaseFeatureController):
         if not (rd := self.character.meets_requirements(self.definition.requires)):
             return rd
         # Is this an option skill without an option specified?
-        if self.option_def and not self.option:
-            return Decision(success=False, needs_option=True)
-        elif (
+        # if self.option_def and not self.option:
+        #     return Decision(success=False, needs_option=True)
+        if (
             self.option_def
             and self.option
             and not self.definition.option.freeform
@@ -224,9 +325,35 @@ class FeatureController(base_engine.BaseFeatureController):
             return Decision(
                 success=False,
                 need_currency={"cp": cp_delta},
-                reason=f"Need {cp_delta} CP to purchase, but only have {current_cp}",
+                reason=f"Need {cp_delta} CP to purchase, but only have {current_cp.value}",
                 amount=self._max_rank_increase(current_cp.value),
             )
+        if self.option_def:
+            # If this is an option feature and the option was specified,
+            # this is either a new or existing option. If it's existing, that's fine.
+            # If it's new, we need to make sure the character has enough options left.
+            if self.option:
+                if self.value > 0:
+                    # This isn't new, so we don't need to check if we can add a new option.
+                    return Decision.OK
+                if not self.can_take_new_option:
+                    # This is a new option, but we're at max. Report negative.
+                    return Decision(
+                        success=False,
+                        reason=f"Can't take new option for {self.id} because the maximum number of options has been reached.",
+                    )
+            if not self.option:
+                # Just checking whether the option template is available.
+                if self.can_take_new_option:
+                    # If this is a non-freeform option, are there any valid options left?
+                    if (
+                        not self.definition.option.freeform
+                        and not self.available_options
+                    ):
+                        return Decision.NO
+                    return Decision.NEEDS_OPTION
+                else:
+                    return Decision.NO
         return Decision.OK
 
     def can_decrease(self, value: int = 1) -> Decision:
@@ -246,6 +373,8 @@ class FeatureController(base_engine.BaseFeatureController):
     def increase(self, value: int) -> Decision:
         if not (rd := self.can_increase(value)):
             return rd
+        if rd.needs_option:
+            return Decision.NEEDS_OPTION_FAIL
         self.purchased_ranks += value
         self.reconcile()
         return Decision(success=True, amount=self.value)
@@ -289,8 +418,16 @@ class FeatureController(base_engine.BaseFeatureController):
             if controller := self.character._controller_for_property(id):
                 controller.propagate(data)
 
+    def extra_grants(self) -> dict[str, int]:
+        """Return any extra grants that should be applied for this feature.
+
+        This is used for features that grant other features, such as a class granting a skill.
+        """
+        return {}
+
     def _gather_propagation(self) -> dict[str, engine.PropagationData]:
         grants = self._gather_grants(self.definition.grants)
+        grants.update(self.extra_grants())
         discounts = self._gather_discounts(self.definition.discounts)
         # Choices may also affect grants/discounts.
         if self.choices:

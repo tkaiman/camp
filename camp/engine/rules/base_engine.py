@@ -7,6 +7,7 @@ from dataclasses import dataclass
 from functools import cached_property
 from functools import total_ordering
 from typing import Any
+from typing import Iterable
 from typing import Type
 
 import pydantic
@@ -21,6 +22,7 @@ from .decision import Decision
 class CharacterController(ABC):
     model: base_models.CharacterModel
     engine: Engine
+    mutated: bool = False
 
     # Copy of the model for use when the model is mutated by fails validation.
     _dumped_model: base_models.CharacterModel
@@ -28,6 +30,10 @@ class CharacterController(ABC):
     @property
     def ruleset(self):
         return self.engine.ruleset
+
+    @abstractproperty
+    def features(self) -> dict[str, BaseFeatureController]:
+        ...
 
     def __init__(self, engine: Engine, model: base_models.CharacterModel):
         self.model = model
@@ -51,7 +57,7 @@ class CharacterController(ABC):
         # exclude_unset is useful here because, for example, writing into a
         # dict on a model won't mark that field as set as far as the model is
         # concerned.
-        data = dump_dict(self.model, exclude_unset=False)
+        data = dump_dict(self.model, exclude_unset=False, exclude_defaults=True)
         if not isinstance(data, dict):
             pass
         return data
@@ -60,9 +66,55 @@ class CharacterController(ABC):
         """Returns a copy of the current model."""
         return self.model.copy(deep=True)
 
+    def display_name(self, id: str) -> str:
+        """Returns the display name of the given feature."""
+        if id in self.ruleset.display_names:
+            return self.ruleset.display_names[id]
+        if id in self.ruleset.features:
+            return self.ruleset.features[id].name
+        if id in self.ruleset.attribute_map:
+            return self.ruleset.attribute_map[id].name
+        return id.replace("_", " ").title()
+
+    def list_features(
+        self, type: str | None = None, taken: bool = True, available: bool = True
+    ) -> Iterable[BaseFeatureController]:
+        """List all features of the given type."""
+        if taken:
+            for id, fc in self.features.items():
+                if type and fc.definition.type != type:
+                    continue
+                if fc.value <= 0:
+                    continue
+                if available and not fc.can_increase():
+                    continue
+                if fc.option_def and not fc.option:
+                    # This is feature controller belongs to an option feature
+                    # that doesn't have an option selected. It represents the
+                    # "raw" skill and should appear in the "untaken" list even
+                    # though it has a value associated.
+                    continue
+                yield fc
+        else:
+            for id, definition in self.ruleset.features.items():
+                if id in self.features and self.get_prop(id) > 0:
+                    continue
+                if type and definition.type != type:
+                    continue
+                fc = self.feature_controller(id)
+                rd = fc.can_increase()
+                if available and not (rd or rd.needs_option):
+                    continue
+                yield fc
+
     @abstractmethod
     def clear_caches(self):
         """Clear any cached data that might need to be recomputed upon mutating the character model."""
+
+    def reconcile(self):
+        """Perform any necessary reconciliation of the character model."""
+        for feat in list(self.features.values()):
+            feat.reconcile()
 
     def apply(self, mutation: base_models.Mutation | str) -> Decision:
         rd: Decision
@@ -72,10 +124,14 @@ class CharacterController(ABC):
             match mutation:
                 case base_models.RankMutation():
                     rd = self.purchase(mutation)
+                case base_models.ChoiceMutation():
+                    rd = self.choose(mutation)
                 case _:
                     rd = Decision(
                         success=False, reason=f"Mutation {mutation} unsupported."
                     )
+        except AttributeError:
+            raise
         except Exception as exc:
             rd = Decision(
                 success=False,
@@ -90,6 +146,7 @@ class CharacterController(ABC):
             self._reload_dump()
         else:
             self._save_dump()
+            self.mutated = True
         return rd
 
     def validate(self) -> Decision:
@@ -187,6 +244,10 @@ class CharacterController(ABC):
     def purchase(self, entry: base_models.RankMutation) -> Decision:
         ...
 
+    @abstractmethod
+    def choose(self, entry: base_models.ChoiceMutation) -> Decision:
+        ...
+
     def meets_requirements(self, requirements: base_models.Requirements) -> Decision:
         messages: list[str] = []
         for req in maybe_iter(requirements):
@@ -258,7 +319,7 @@ class CharacterController(ABC):
                     legal_values ^= removals
                     legal_values |= additions
 
-        legal_values ^= options_excluded
+        legal_values -= options_excluded
 
         # An option definition can specify requirements for each option. If a
         # requirement is specified and not met, remove it from the set.
@@ -306,6 +367,30 @@ class CharacterController(ABC):
             feature_id, exclude_taken=exclude_taken
         )
 
+    def describe_mutation(self, mutation: base_models.Mutation) -> str:
+        """Returns a human-readable description of the given mutation."""
+        match mutation:
+            case base_models.RankMutation():
+                if mutation.option:
+                    name = f"{self.display_name(mutation.id)} [{mutation.option}] x{abs(mutation.ranks)}"
+                else:
+                    name = f"{self.display_name(mutation.id)} x{abs(mutation.ranks)}"
+                if mutation.ranks > 0:
+                    return f"Purchase {name}"
+                elif mutation.ranks == 0:
+                    # WTF?
+                    return f"Unrecognized rank mutation on {name}"
+                else:
+                    return f"Remove {name}"
+            case base_models.ChoiceMutation():
+                feature = self.feature_controller(mutation.id)
+                choice = feature.choices.get(mutation.choice)
+                choice_name = getattr(choice, "name", mutation.choice.title())
+                selection = self.display_name(mutation.value)
+                return f"Chose '{selection}' for choice {choice_name} of {feature.display_name()}"
+            case _:
+                return repr(mutation)
+
 
 @total_ordering
 class PropertyController(ABC):
@@ -313,6 +398,7 @@ class PropertyController(ABC):
     full_id: str
     expression: base_models.PropExpression
     character: CharacterController
+    description: str | None
     _propagation_data: dict[str, PropagationData]
 
     def __init__(self, full_id: str, character: CharacterController):
@@ -322,9 +408,19 @@ class PropertyController(ABC):
         self.id = self.expression.prop
         self.character = character
 
+    def display_name(self) -> str:
+        name = self.character.display_name(self.expression.prop)
+        if self.option:
+            name += f" [{self.option}]"
+        return name
+
     @abstractproperty
     def value(self) -> int:
         ...
+
+    @property
+    def option(self) -> str | None:
+        return self.expression.option
 
     @property
     def max_value(self) -> int:
@@ -361,6 +457,8 @@ class PropertyController(ABC):
 
 
 class BaseFeatureController(PropertyController):
+    rank_name_labels: tuple[str, str] = ("rank", "ranks")
+
     @cached_property
     def expr(self) -> base_models.PropExpression:
         return base_models.PropExpression.parse(self.id)
@@ -370,6 +468,32 @@ class BaseFeatureController(PropertyController):
         return self.character.engine.feature_defs[self.expr.prop]
 
     @property
+    def next_value(self) -> int | None:
+        """What's the next value that can be purchased?
+
+        Normally, the next value available for purchase is the current value + 1.
+
+        In some cases, such as when in Geas when selecting your first class level,
+        the class jumps from 0 directly to 2, and 1 is not a possible value.
+        """
+        if self.max_ranks == "unlimited" or self.value < self.max_ranks:
+            return self.value + 1
+
+    @property
+    def min_value(self) -> int | None:
+        """What's the lowest value that we can reduce to?
+
+        Normally this will be 0, but in some cases such as when a feature
+        has been granted ranks or you're asking about a Geas starting class's
+        level, it may not be possible to reduce it all the way.
+        """
+        return self.granted_ranks
+
+    @property
+    def description(self) -> str | None:
+        return self.definition.description
+
+    @property
     def max_ranks(self) -> int:
         if self.definition.ranks == "unlimited":
             # Arbitrarily chosen large int.
@@ -377,12 +501,26 @@ class BaseFeatureController(PropertyController):
         return self.definition.ranks
 
     @property
-    def option(self) -> str | None:
-        return self.expression.option
+    def type_name(self) -> str:
+        return self.character.display_name(self.feature_type)
 
     @property
     def option_def(self) -> base_models.OptionDef | None:
         return self.definition.option
+
+    @property
+    def purchase_cost_string(self) -> str | None:
+        return None
+
+    @property
+    def category(self) -> str | None:
+        return self.definition.category
+
+    @property
+    def is_concrete(self) -> bool:
+        return (
+            (self.option_def and self.option) or not self.option_def
+        ) and self.value > 0
 
     @property
     def is_taken(self) -> bool:
@@ -398,8 +536,102 @@ class BaseFeatureController(PropertyController):
         return self.definition.type
 
     @property
+    def is_option_template(self) -> str:
+        """True if this is an option template feature.
+
+        For example, "Lore" is an option template feature, while
+        "Lore [History]" is an option feature.
+        The template should never appear on a character sheet except
+        in the "Add New {Type}" section of each type group. However,
+        the controller still needs to exist, as it is used to determine
+        whether a new option feature can be added based on it, and also
+        to provide a property for other features to use as a prerequisite.
+        (e.g. "Requires three ranks of Lore").
+        """
+        return self.option_def and not self.option
+
+    @property
+    def can_take_new_option(self) -> bool:
+        """True if this option template can take a new option.
+
+        False if no more options may be taken, or if this is not an option template.
+        """
+        if not self.option_def:
+            return False
+        taken = len(self.taken_options)
+        if isinstance(self.option_def.multiple, bool):
+            if not self.option_def.multiple and taken:
+                return False
+            return True
+        if (
+            isinstance(self.option_def.multiple, int)
+            and taken >= self.option_def.multiple
+        ):
+            return False
+        if self.option_def.inherit:
+            return True
+        return True
+
+    @property
     def taken_options(self) -> dict[str, int]:
         return {}
+
+    @property
+    def available_options(self) -> list[str] | None:
+        if not self.option_def:
+            return None
+        return sorted(
+            self.character.options_values_for_feature(self.id, exclude_taken=True)
+        )
+
+    @property
+    def available_ranks(self) -> int:
+        """How many ranks are available to be taken?
+
+        This isn't just the number of ranks left, but the number of ranks that
+        the character could buy right now. For example, if the character has
+        3 ranks in a feature that has a max of 5, then they have 2 ranks available,
+        but only if they have enough CP to buy them and they meet any other requirements.
+        """
+        theoretical_max = self.max_ranks - self.value
+        if theoretical_max <= 0:
+            return 0
+        if rd := self.can_increase(theoretical_max):
+            return theoretical_max
+        return rd.amount or 0
+
+    @property
+    def purchased_ranks(self) -> int:
+        return self.value
+
+    @property
+    def granted_ranks(self) -> int:
+        return 0
+
+    def rank_name(self, value: int | None = None):
+        if value is None:
+            value = self.value
+        if value == 1:
+            return self.rank_name_labels[0]
+        else:
+            return self.rank_name_labels[1]
+
+    def explain(self) -> list[str]:
+        """Returns a list of strings explaining how the ranks were obtained."""
+        if self.value <= 0:
+            return []
+        if self.definition.ranks == 1 and self.purchased_ranks == 1:
+            return ["You have taken this feature."]
+        reasons = []
+        if self.purchased_ranks > 0:
+            reasons.append(
+                f"You have taken {self.purchased_ranks} {self.rank_name(self.purchased_ranks)}."
+            )
+        if self.granted_ranks > 0:
+            reasons.append(
+                f"You have been granted {self.granted_ranks} {self.rank_name(self.granted_ranks)}."
+            )
+        return reasons
 
     def can_increase(self, value: int = 1) -> Decision:
         return Decision(success=False, reason=f"Increase unsupported for {type(self)}")
@@ -418,13 +650,16 @@ class BaseFeatureController(PropertyController):
         return None
 
     def __str__(self) -> str:
-        if self.expr.option:
-            name = f"{self.definition.name} [{self.expr.option}]"
-        else:
-            name = f"{self.definition.name}"
-        if isinstance(self.definition.ranks, str) or self.definition.ranks > 1:
-            name += f": x{self.value}"
-        return name
+        if self.option_def and not self.option:
+            # This is feature controller belongs to an option feature
+            # that doesn't have an option selected. It represents the
+            # "raw" skill, and it doesn't have anything to display.
+            return self.display_name()
+        if (
+            isinstance(self.definition.ranks, str) or self.definition.ranks > 1
+        ) and self.value > 0:
+            return f"{self.display_name()} x{self.value}"
+        return self.display_name()
 
 
 class AttributeController(PropertyController):
@@ -482,7 +717,9 @@ class Engine(ABC):
         """
         updated_data = self.update_data(data)
         model = pydantic.parse_obj_as(self.sheet_type, updated_data)
-        return self.character_controller(self, model)
+        c = self.character_controller(self, model)
+        c.reconcile()
+        return c
 
     def update_data(self, data: dict) -> dict:
         """If the data is from a different but compatible rules version, update it.

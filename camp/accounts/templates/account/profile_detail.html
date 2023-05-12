@@ -2,13 +2,12 @@
 {% load account %}
 
 {% if object %}
-{% block head_title %}
-    {% user_display object %}
-{% endblock %}
+{% block head_title %}{% block body_title %}
+{% user_display object %}
+{% endblock %}{% endblock %}
 {% endif %}
 
 {% block content %}
-<p>User: {{ object }}</p>
 <ul>
 <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
 {% if user.password %}
@@ -18,5 +17,6 @@
 {% endif %}
 <li><a href="{% url 'socialaccount_connections' %}">Manage Connected Accounts</a></li>
 </ul>
-<p><strong><a href="/">Back to Home</a></p>
+<p><strong><a href="{% url 'account_logout' %}">Logout</a></strong></p>
+<p><strong><a href="/">Back to Home</a></strong></p>
 {% endblock content %}
