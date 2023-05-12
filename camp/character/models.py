@@ -82,7 +82,7 @@ class Character(RulesModel):
             "view": rules.is_owner | rules.is_logistics | rules.is_plot,
             "change": rules.is_owner | rules.is_logistics | rules.is_plot,
             "delete": rules.is_owner | rules.is_logistics,
-            "add": rules.is_owner | rules.is_logistics,
+            "add": rules.is_authenticated,
         }
 
 
