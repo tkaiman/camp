@@ -203,6 +203,7 @@ class FlawDef(BaseFeatureDef):
         if isinstance(self.award, dict):
             return base_models.OptionDef(
                 values=set(self.award.keys()),
+                multiple=False,
             )
         return None
 
