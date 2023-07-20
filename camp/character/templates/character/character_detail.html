@@ -24,7 +24,21 @@
   </div>
 
 <ul class="list-group list-group-horizontal">
-    <li class="list-group-item">Level {% get 'xp_level' %} ({% get 'xp' %} XP)</li>
+    <li class="list-group-item"
+        data-bs-toggle="tooltip" data-bs-html="true"
+        data-bs-placement="bottom"
+        data-bs-title="
+        <p>{% get 'xp' %} XP (Earned Level {% get 'xp_level'%})</p>
+        {% if controller.levels_available > 0 %}
+        <p>{{ controller.levels_available }} level(s) available!
+        Increase your class levels or add new classes to level up.</p>
+        {% endif %}
+        ">
+        Level {% get 'level' %}
+        {% if controller.levels_available > 0 %}
+        <span class="badge bg-primary">Level Up!</span>
+        {% endif %}
+    </li>
     <li class="list-group-item"
         data-bs-toggle="tooltip" data-bs-html="true"
         data-bs-placement="bottom"

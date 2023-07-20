@@ -79,7 +79,7 @@ class TempestCharacter(base_engine.CharacterController):
 
         By default, this is 1 + 2 * Level.
         """
-        return self.ruleset.cp_baseline + (self.ruleset.cp_per_level * self.xp_level)
+        return self.ruleset.cp_baseline + (self.ruleset.cp_per_level * self.level.value)
 
     @property
     def awarded_cp(self) -> int:
@@ -93,7 +93,7 @@ class TempestCharacter(base_engine.CharacterController):
 
     @property
     def base_lp(self) -> int:
-        return self.ruleset.lp.evaluate(self.xp_level)
+        return self.ruleset.lp.evaluate(self.level.value)
 
     @cached_property
     def lp(self) -> attribute_controllers.LifePointController:
@@ -101,7 +101,7 @@ class TempestCharacter(base_engine.CharacterController):
 
     @property
     def spikes(self) -> int:
-        return self.ruleset.spikes.evaluate(self.xp_level)
+        return self.ruleset.spikes.evaluate(self.level.value)
 
     @property
     def can_respend(self) -> bool:
