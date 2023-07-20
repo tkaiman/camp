@@ -337,6 +337,7 @@ class ClassController(feature_controller.FeatureController):
     @property
     def explain(self) -> list[str]:
         lines = super().explain
+        character = self.character
         if self.value > 0:
             if self.is_starting:
                 lines.append("This is your starting class.")
@@ -344,20 +345,22 @@ class ClassController(feature_controller.FeatureController):
                 lines.append("This is your archetype class.")
             if self.caster:
                 lines.append(
-                    f"Spellcasting sphere: {self.character.display_name(self.sphere)}"
+                    f"Spellcasting sphere: {character.display_name(self.sphere)}"
                 )
-                lines.append(f"Cantrips: {self.get('cantrips')}")
+                lines.append(f"Cantrips: {character.get(f'{self.id}.cantrips')}")
                 lines.append(
-                    f"Spell slots: {self.get('spell_slots@1')}/{self.get('spell_slots@2')}/{self.get('spell_slots@3')}/{self.get('spell_slots@4')}"
+                    f"Spell slots: {character.get(f'{self.id}.spell_slots@1')}/{character.get(f'{self.id}.spell_slots@2')}/{character.get(f'{self.id}.spell_slots@3')}/{character.get(f'{self.id}.spell_slots@4')}"
                 )
-                lines.append(f"Spells prepared: {self.get('spells_prepared')}")
+                lines.append(
+                    f"Spells prepared: {character.get(f'{self.id}.spells_prepared')}"
+                )
                 lines.append(
                     f"Spells that can be added to spellbook: {self.spellbook_available}"
                 )
             else:
-                lines.append(f"Utilities: {self.get('utilities')}")
+                lines.append(f"Utilities: {character.get(f'{self.id}.utilities')}")
                 lines.append(
-                    f"Powers: {self.get('powers@1')}/{self.get('powers@2')}/{self.get('powers@3')}/{self.get('powers@4')}"
+                    f"Powers: {character.get(f'{self.id}.powers@1')}/{character.get(f'{self.id}.powers@2')}/{character.get(f'{self.id}.powers@3')}/{character.get(f'{self.id}.powers@4')}"
                 )
                 powers_taken = self.powers_taken
                 powers_available = self.powers_available
