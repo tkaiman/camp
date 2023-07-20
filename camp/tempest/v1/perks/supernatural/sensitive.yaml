@@ -1,4 +1,5 @@
 name: Sensitive
+requires: sight-beyond-sight
 cost: 3
 description: |
   The character is vaguely aware of things beyond the ability of others to sense.
