@@ -282,6 +282,8 @@ class FeatureController(base_engine.BaseFeatureController):
         badges = super().badges
         if self.unused_bonus:
             badges.append(("success", "Bonus Available"))
+        elif self.supports_child_purchases and self.child_purchase_remaining > 0:
+            badges.append(("primary", "Purchases Available"))
         elif self.has_available_choices:
             badges.append(("primary", "Choices Available"))
         return badges
