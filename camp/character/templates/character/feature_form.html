@@ -32,6 +32,10 @@
 {% endif %}
 
 {% if purchase_form %}
+{% if feature.unused_bonus > 0 %}
+<p>You have {{ feature.unused_bonus }} unused bonus rank(s). Your next purchase is free.</p>
+{% endif %}
+
 <form method="post" id="purchaseForm">
     {% csrf_token %}
         {{ purchase_form | crispy }}
@@ -70,7 +74,7 @@
 <h3>Granted Features</h3>
 <ul>
 {% for subfeat in feature.granted_features %}
-<li><a href="{% url 'character-feature-view' character.id subfeat.id %}">{{ subfeat.formal_name }}</a></li>
+<li><a href="{% url 'character-feature-view' character.id subfeat.full_id %}">{{ subfeat.formal_name }}</a></li>
 {% endfor %}
 </ul>
 {% endif %}
@@ -129,4 +133,34 @@
 
 <a role="button" class="btn btn-secondary" href="{% url 'character-detail' character.id %}">Back</a>
 
+{% endblock %}
+
+{% block javascript %}
+<script>
+    /* If we have both radio buttons and a freeform option, disable the freeform option unless the "Other" radio button is selected. */
+    const other_radio = document.querySelector('input[type="radio"][name="option"][value="__other__"]');
+    const option_freeform = document.querySelector("#id_option_freeform");
+    if (other_radio && option_freeform) {
+        if (other_radio.checked) {
+            option_freeform.disabled = false;
+            option_freeform.required = true;
+        } else {
+            option_freeform.disabled = true;
+            option_freeform.required = false;
+        }
+        other_radio.addEventListener("change", function() {
+            if (other_radio.checked) {
+                option_freeform.disabled = false;
+                option_freeform.required = true;
+            }
+        });
+        document.querySelectorAll('input[type="radio"][name="option"]:not([value="__other__"])').forEach(function(radio) {
+            radio.addEventListener("change", function() {
+                option_freeform.disabled = true;
+                option_freeform.required = false;
+                option_freeform.value = "";
+            });
+        });
+    }
+</script>
 {% endblock %}
