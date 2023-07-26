@@ -99,10 +99,15 @@
   {% endif %}
 
   <main class="container">
-  <h1>{% block body_title %}{% endblock %}</h1>
-  {% block content %}
-    <p>Default content...</p>
-  {% endblock content %}
+    <h1>{% block body_title %}{% endblock %}</h1>
+    <div class="container">
+      {% block precontent %}{% endblock %}
+    </div>
+    <div class="container py-2">
+    {% block content %}
+      <p>Default content...</p>
+    {% endblock content %}
+    </div>
   </main>
   {% endblock body %}
   {% block extra_body %}

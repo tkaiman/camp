@@ -31,6 +31,60 @@ Grantable: TypeAlias = str | list[str] | dict[str, int] | GrantDef
 Discounts: TypeAlias = dict[str, base_models.Discount | int]
 
 
+class ScalingTable(base_models.Table, base_models.BaseModel):
+    base: int
+    factor: float
+    rounding: Literal["up", "down", "nearest"] = "nearest"
+    low: int = 1
+    high: int = 25
+
+    def bounds(self) -> tuple[int, int]:
+        return self.low, self.high
+
+    def evaluate(self, key: int) -> int:
+        x = self.base + (key / self.factor)
+        if key < self.low:
+            key = self.low
+        elif key > self.high:
+            key = self.high
+        match self.rounding:
+            case "up":
+                return math.ceil(x)
+            case "down":
+                return math.floor(x)
+            case _:
+                return round(x)
+
+
+Table = ScalingTable | base_models.DictTable
+
+
+class CostByRank(base_models.BaseModel):
+    """For when the cost of something depends on something.
+
+    Attributes:
+        rank: Map of rank to costs. Any value that isn't map assumes
+        the next lowest cost. For example:
+                1: 1
+                5: 3
+                10: 5
+            means: Ranks from 1-4 cost 1 point each. Ranks from 5-9 cost 3.
+                Ranks 10+ cost 5.
+    """
+
+    ranks: dict[int, int]
+
+    def single_rank_cost(self, rank: int) -> int:
+        """The cost of a particular rank."""
+        return table_lookup(self.ranks, rank)
+
+    def rank_costs(self, ranks: int) -> list[int]:
+        return [self.single_rank_cost(r) for r in range(1, ranks + 1)]
+
+
+CostDef: TypeAlias = int | CostByRank | None
+
+
 class ChoiceDef(base_models.BaseModel):
     """Describes a choice that can be made related to a feature.
 
@@ -80,13 +134,20 @@ class PowerCard(base_models.BaseModel):
     description: str | None = None
 
 
+class ChildPurchaseDef(base_models.BaseModel):
+    basis: str | None = None
+    limit: Table | None = None
+
+
 class BaseFeatureDef(base_models.BaseFeatureDef, PowerCard):
+    cost: CostDef
     grants: Grantable | None = None
     grant_if: dict[str, base_models.Requirements] | None = None
     rank_grants: dict[int, Grantable] | None = Field(default=None, alias="level_grants")
     discounts: Discounts | None = None
     choices: dict[str, ChoiceDef] | None = None
     subcard: PowerCard | list[PowerCard] | None = None
+    child_purchase: ChildPurchaseDef | None = None
 
     def post_validate(self, ruleset: base_models.BaseRuleset) -> None:
         super().post_validate(ruleset)
@@ -144,36 +205,9 @@ class ClassDef(BaseFeatureDef):
             )
 
 
-class CostByRank(base_models.BaseModel):
-    """For when the cost of something depends on something.
-
-    Attributes:
-        rank: Map of rank to costs. Any value that isn't map assumes
-        the next lowest cost. For example:
-                1: 1
-                5: 3
-                10: 5
-            means: Ranks from 1-4 cost 1 point each. Ranks from 5-9 cost 3.
-                Ranks 10+ cost 5.
-    """
-
-    ranks: dict[int, int]
-
-    def single_rank_cost(self, rank: int) -> int:
-        """The cost of a particular rank."""
-        return table_lookup(self.ranks, rank)
-
-    def rank_costs(self, ranks: int) -> list[int]:
-        return [self.single_rank_cost(r) for r in range(1, ranks + 1)]
-
-
-CostDef: TypeAlias = int | CostByRank | None
-
-
 class SkillDef(BaseFeatureDef):
     type: Literal["skill"] = "skill"
     category: str = "General Skills"
-    cost: CostDef
     uses: int | None = None
     rank_labels: dict[int, str] | None = None
 
@@ -216,7 +250,6 @@ class FlawDef(BaseFeatureDef):
 class PerkDef(BaseFeatureDef):
     type: Literal["perk"] = "perk"
     category: str = "General Perks"
-    cost: CostDef
     rank_labels: dict[int, str] | None = None
     creation_only: bool = False
 
@@ -262,34 +295,6 @@ FeatureDefinitions: TypeAlias = (
     | Cantrip
     | Utility
 )
-
-
-class ScalingTable(base_models.Table, base_models.BaseModel):
-    base: int
-    factor: float
-    rounding: Literal["up", "down", "nearest"] = "nearest"
-    low: int = 1
-    high: int = 25
-
-    def bounds(self) -> tuple[int, int]:
-        return self.low, self.high
-
-    def evaluate(self, key: int) -> int:
-        x = self.base + (key / self.factor)
-        if key < self.low:
-            key = self.low
-        elif key > self.high:
-            key = self.high
-        match self.rounding:
-            case "up":
-                return math.ceil(x)
-            case "down":
-                return math.floor(x)
-            case _:
-                return round(x)
-
-
-Table = ScalingTable | base_models.DictTable
 
 
 class Ruleset(base_models.BaseRuleset):

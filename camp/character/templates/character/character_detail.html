@@ -1,55 +1,27 @@
-{% extends "base.html" %}
+{% extends "character/character_base.html" %}
 {% load rules %}
 {% load character_sheet %}
 
-{% block head_title %}{% block body_title %}
-{{ character }}
-{% endblock %}{% endblock %}
+{% block extra_header_bar %}
+    <li class="list-group-item">
+        <div class="dropdown">
+            <a href="#" class="link-body-emphasis" data-bs-toggle="dropdown" aria-expanded="false">
+                Manage
+            </a>
+            <ul class="dropdown-menu">
+                <li class=><a class="dropdown-item btn-secondary-outline" role="button" data-bs-toggle="modal" data-bs-target="#setAttrsModal">Set Attributes</a></li>
+                <li><a class="dropdown-item btn-secondary-outline" role="button" data-bs-toggle="modal" data-bs-target="#deleteCharacterModal">Delete Character</a></li>
+                {% if undo %}
+                <li><a class="dropdown-item btn-secondary-outline" role="button" data-bs-toggle="modal" data-bs-target="#undoModal">{{undo}}</a></li>
+                {% else %}
+                <li><a class="dropdown-item btn-secondary-outline disabled" role="button">Undo not available</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </li>
+    {% endblock %}
 
 {% block content %}
-
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Manage
-    </button>
-    <ul class="dropdown-menu">
-        <li class=><a class="dropdown-item btn-secondary-outline" role="button" data-bs-toggle="modal" data-bs-target="#setAttrsModal">Set Attributes</a></li>
-        <li><a class="dropdown-item btn-secondary-outline" role="button" data-bs-toggle="modal" data-bs-target="#deleteCharacterModal">Delete Character</a></li>
-        {% if undo %}
-        <li><a class="dropdown-item btn-secondary-outline" role="button" data-bs-toggle="modal" data-bs-target="#undoModal">{{undo}}</a></li>
-        {% else %}
-        <li><a class="dropdown-item btn-secondary-outline disabled" role="button">Undo not available</a></li>
-        {% endif %}
-    </ul>
-  </div>
-
-<ul class="list-group list-group-horizontal">
-    <li class="list-group-item"
-        data-bs-toggle="tooltip" data-bs-html="true"
-        data-bs-placement="bottom"
-        data-bs-title="
-        <p>{% get 'xp' %} XP (Earned Level {% get 'xp_level'%})</p>
-        {% if controller.levels_available > 0 %}
-        <p>{{ controller.levels_available }} level(s) available!
-        Increase your class levels or add new classes to level up.</p>
-        {% endif %}
-        ">
-        Level {% get 'level' %}
-        {% if controller.levels_available > 0 %}
-        <span class="badge bg-primary">Level Up!</span>
-        {% endif %}
-    </li>
-    <li class="list-group-item"
-        data-bs-toggle="tooltip" data-bs-html="true"
-        data-bs-placement="bottom"
-        data-bs-title="
-        <p>Base: {{ controller.base_cp }}</p>
-        <p>Awarded: {{ controller.awarded_cp }}</p>
-        <p>Flaw Awards: {{ controller.cp.flaw_award_cp }}</p>
-        <p>Spent: {{ controller.cp.spent_cp }}</p>">
-        CP: {% get 'cp' %}</li>
-    <li class="list-group-item">LP: {% get 'lp' %}</li>
-    <li class="list-group-item">Spikes: {% get 'spikes' %}</li>
 </ul>
 {% if controller.sphere_data %}
 {# TODO: Make this look better. #}
@@ -118,8 +90,8 @@
             {% endfor %}
             {% if group.has_available %}
             <li class="list-group-item">
-                <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#newFeatureModal_{{group.type}}" aria-expanded="false" aria-controls="newFeatureModal_{{group.type}}">
-                    New {{ group.name }} ➕
+                <a class="link-success" href="#" role="button" data-bs-toggle="modal" data-bs-target="#newFeatureModal_{{group.type|slugify}}" aria-expanded="false" aria-controls="newFeatureModal_{{group.type|slugify}}">
+                    Add {{ group.name }}
                 </a>
             </li>
             {% endif %}
@@ -211,11 +183,11 @@
 <!-- Add Feature Modals -->
 {% for group in feature_groups %}
 {% if group.has_available %}
-<div class="modal fade" id="newFeatureModal_{{group.type}}" tabindex="-1" aria-labelledby="newFeatureModalLabel_{{group.type}}" aria-hidden="true">
+<div class="modal fade" id="newFeatureModal_{{group.type|slugify}}" tabindex="-1" aria-labelledby="newFeatureModalLabel_{{group.type|slugify}}" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="newFeatureModalLabel_{{group.type}}">Add New {{group.name}}</h1>
+                <h1 class="modal-title fs-5" id="newFeatureModalLabel_{{group.type|slugify}}">Add New {{group.name}}</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">

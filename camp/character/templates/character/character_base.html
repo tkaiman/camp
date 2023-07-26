@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% comment %} {% load rules %} {% endcomment %}
+{% load character_sheet %}
+
+{% block head_title %}
+{{character}}
+{% endblock %}
+
+{% block body_title %}
+<a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="{% url 'character-detail' character.id %}">{{ character }}</a>
+{% endblock %}
+
+{% block precontent %}
+<ul class="list-group list-group-horizontal">
+    <li class="list-group-item"
+        data-bs-toggle="tooltip" data-bs-html="true"
+        data-bs-placement="bottom"
+        data-bs-title="
+        <p>{% get 'xp' %} XP (Earned Level {% get 'xp_level'%})</p>
+        {% if controller.levels_available > 0 %}
+        <p>{{ controller.levels_available }} level(s) available!
+        Increase your class levels or add new classes to level up.</p>
+        {% endif %}
+        ">
+        <span class="align-middle">Level {% get 'level' %}
+        {% if controller.levels_available > 0 %}
+        <span class="badge bg-primary">Level Up!</span></span>
+        {% endif %}
+    </li>
+    <li class="list-group-item"
+        data-bs-toggle="tooltip" data-bs-html="true"
+        data-bs-placement="bottom"
+        data-bs-title="
+        <p>Base: {{ controller.base_cp }}</p>
+        <p>Awarded: {{ controller.awarded_cp }}</p>
+        <p>Flaw Awards: {{ controller.cp.flaw_award_cp }}</p>
+        <p>Spent: {{ controller.cp.spent_cp }}</p>">
+        <span class="align-middle">CP: {% get 'cp' %}</span></li>
+    <li class="list-group-item"><span class="align-middle">LP: {% get 'lp' %}</span></li>
+    <li class="list-group-item"><span class="align-middle">Spikes: {% get 'spikes' %}</span></li>
+    {% block extra_header_bar %}{% endblock %}
+</ul>
+{% if controller.sphere_data %}
+{# TODO: Make this look better. #}
+<table class="table table-sm table-bordered">
+    {% for data in controller.sphere_data %}
+    <tr>
+        <th scope="row">{{ data.name }}</th>
+        <td>Spell Slots: {{ data.slots.0 }} / {{ data.slots.1 }} / {{ data.slots.2 }} / {{ data.slots.3 }}</td>
+        <td>Spells Prepared: {{ data.prepared }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+
+{% endblock %}
+
+{% block content %}
+{% endblock %}

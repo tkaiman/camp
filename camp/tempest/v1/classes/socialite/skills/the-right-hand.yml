@@ -9,6 +9,16 @@ accent: Contract
 duration: Long Rest
 refresh: Long Rest
 effect: Special
+child_purchase:
+  basis: socialite
+  limit:
+    1: 1
+    4: 2
+    7: 3
+    10: 4
+    13: 5
+    16: 6
+    19: 7
 description: |
   The Socialite is a creature of beauty, a flower in a field. They’re a damsel in distress when they want to be, and when they don’t want to be, they have their Bodyguard. After talking with another individual at length about becoming the Socialite’s bodyguard, they may bind that individual into a written contract stating that they will protect the Socialite should they fall in harm’s way. This contract is valid until stated otherwise (it defaults to a Long Rest, but may be extended indefinitely with subsequent uses of this ability).
 

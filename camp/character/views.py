@@ -145,11 +145,6 @@ def feature_view(request, pk, feature_id):
     sheet = character.primary_sheet
     controller = cast(TempestCharacter, sheet.controller)
     feature_controller = controller.feature_controller(feature_id)
-    currencies: dict[str, str] = {}
-    if feature_controller.currency:
-        currencies[
-            controller.display_name(feature_controller.currency)
-        ] = controller.get(feature_controller.currency)
 
     can_inc = feature_controller.can_increase()
     can_dec = feature_controller.can_decrease()
@@ -195,12 +190,23 @@ def feature_view(request, pk, feature_id):
                 messages.error(request, result.reason or "Could not apply choice.")
         return redirect("character-feature-view", pk=pk, feature_id=feature_id)
 
+    if feature_controller.value > 0 and feature_controller.supports_child_purchases:
+        subfeatures = _features(
+            controller,
+            chain(
+                feature_controller.subfeatures, feature_controller.subfeatures_available
+            ),
+            hide_internal=False,
+            use_type_name=True,
+        )
+    else:
+        subfeatures = []
     choices = feature_controller.choices
     context = {
         "character": character,
         "controller": controller,
         "feature": feature_controller,
-        "currencies": currencies,
+        "subfeatures": subfeatures,
         "explain_ranks": feature_controller.explain,
         "choices": {k: forms.ChoiceForm(c) for (k, c) in choices.items()}
         if choices
@@ -291,20 +297,30 @@ def undo_view(request, pk):
 
 
 def _features(
-    controller: CharacterController, feats: Iterable[BaseFeatureController]
+    controller: CharacterController,
+    feats: Iterable[BaseFeatureController],
+    hide_internal: bool = True,
+    use_type_name: bool = False,
 ) -> list[FeatureGroup]:
     by_type: dict[str, FeatureGroup] = {}
     for feat in feats:
-        if feat.feature_type not in by_type:
-            by_type[feat.feature_type] = FeatureGroup(
+        if hide_internal and feat.internal:
+            continue
+
+        if use_type_name:
+            feature_type = feat.type_name
+        else:
+            feature_type = feat.feature_type
+
+        if feature_type not in by_type:
+            by_type[feature_type] = FeatureGroup(
                 type=feat.feature_type,
-                name=controller.plural_name(feat.feature_type),
-                priority=controller.display_priority(feat.feature_type),
+                name=controller.plural_name(feature_type),
+                priority=controller.display_priority(feature_type),
             )
-        group = by_type[feat.feature_type]
+        group = by_type[feature_type]
         if feat.should_show_in_list:
-            if not feat.internal:
-                group.taken.append(feat)
+            group.taken.append(feat)
         elif feat.is_option_template:
             # Option templates should only appear in the available list,
             # and only if another option is available.

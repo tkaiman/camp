@@ -44,6 +44,14 @@ class FeatureController(base_engine.BaseFeatureController):
         ]
 
     @property
+    def subfeatures_available(self) -> list[FeatureController]:
+        return [
+            fc
+            for fc in self.children
+            if fc.feature_type in _SUBFEATURE_TYPES and fc.can_increase()
+        ]
+
+    @property
     def internal(self) -> bool:
         return self.feature_type in _SUBFEATURE_TYPES
 
@@ -61,13 +69,6 @@ class FeatureController(base_engine.BaseFeatureController):
         such as the list of internal features for a class.
         """
         return f"{self.display_name()} [{self.type_name}]"
-
-    @property
-    def type_name(self) -> str:
-        base_name = self.character.display_name(self.feature_type)
-        if self.parent:
-            return f"{self.parent.display_name()} {base_name}"
-        return base_name
 
     @cached_property
     def tag_names(self) -> list[str]:
@@ -132,7 +133,7 @@ class FeatureController(base_engine.BaseFeatureController):
     def purchase_cost_string(
         self, ranks: int = 1, cost: int | None = None
     ) -> str | None:
-        if self.currency and self.cost_def:
+        if self.currency and self.cost_def is not None:
             if cost is None:
                 if self.is_option_template:
                     grants = 0
@@ -399,6 +400,35 @@ class FeatureController(base_engine.BaseFeatureController):
         if self.full_id not in self.character.features:
             self.character.features[self.full_id] = self
 
+    @property
+    def supports_child_purchases(self) -> bool:
+        return self.definition.child_purchase is not None
+
+    @property
+    def child_purchase_limit(self) -> int | None:
+        if not self.definition.child_purchase:
+            return None
+        if basis_id := self.definition.child_purchase.basis:
+            basis = self.character.get(basis_id)
+        else:
+            basis = self.value
+
+        if table := self.definition.child_purchase.limit:
+            limit = table.evaluate(basis)
+        else:
+            limit = basis
+        return limit
+
+    @property
+    def child_purchase_count(self) -> int:
+        return sum(c.purchased_ranks for c in self.children)
+
+    @property
+    def child_purchase_remaining(self) -> int | None:
+        if (limit := self.child_purchase_limit) is not None:
+            return limit - self.child_purchase_count
+        return None
+
     def can_increase(self, value: int = 1) -> Decision:
         if value <= 0:
             return _MUST_BE_POSITIVE
@@ -406,6 +436,15 @@ class FeatureController(base_engine.BaseFeatureController):
         current = self.value
         if purchaseable <= 0:
             return Decision(success=False)
+        # If the parent feature has purchase limits for children, enforce it.
+        if self.parent and self.parent.supports_child_purchases:
+            if (remaining := self.parent.child_purchase_remaining) is not None:
+                if remaining < value:
+                    return Decision(
+                        success=False,
+                        reason=f"Can't increase {self.display_name()} by {value} because {self.parent.display_name()}'s current limit is {remaining}.",
+                        amount=max(remaining - value, 0),
+                    )
         # Is the purchase within defined range?
         if value > purchaseable:
             return Decision(
