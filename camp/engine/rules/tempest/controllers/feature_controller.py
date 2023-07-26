@@ -215,18 +215,16 @@ class FeatureController(base_engine.BaseFeatureController):
                         reasons.append(f"Granted by [{source}](../{source_id}).")
                     else:
                         reasons.append(
-                            f"Granted {data.grants} {self.rank_name(data.grants)} from {source}."
+                            f"Granted {data.grants} {self.rank_name(data.grants)} from [{source}](../{source_id})."
                         )
                 if data.discount:
                     for discount in data.discount:
                         reason = (
                             f"Discounted by {discount.discount} {self.currency_name}, "
                         )
-                        if discount.minimum:
-                            reason += f"minimum {discount.minimum}, "
                         if discount.ranks:
                             reason += f"up to {discount.ranks} {self.rank_name(discount.ranks)}, "
-                        reason += f"via {source}."
+                        reason += f"via [{source}](../{source_id})."
                         reasons.append(reason)
 
         return reasons
@@ -702,10 +700,18 @@ class FeatureController(base_engine.BaseFeatureController):
         if not discounts:
             return discount_map
         elif isinstance(discounts, dict):
-            for key, value in discounts.items():
-                if key not in discount_map:
-                    discount_map[key] = []
-                discount_map[key].append(Discount.cast(value))
+            for feature_id, value in discounts.items():
+                value = Discount.cast(value)
+                if feature_id not in discount_map:
+                    discount_map[feature_id] = []
+                discount_map[feature_id].append(value)
+                if feature := self.character.feature_controller(feature_id):
+                    feature: FeatureController
+                    if feature.is_option_template:
+                        for option in feature.option_controllers.values():
+                            if option.full_id not in discount_map:
+                                discount_map[option.full_id] = []
+                            discount_map[option.full_id].append(value)
             return discount_map
         else:
             raise NotImplementedError(f"Unexpected discount value: {discounts}")
