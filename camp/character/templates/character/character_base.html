@@ -42,15 +42,14 @@
 </ul>
 {% if controller.sphere_data %}
 {# TODO: Make this look better. #}
-<table class="table table-sm table-bordered">
+<ul class="list-group list-group-horizontal">
     {% for data in controller.sphere_data %}
-    <tr>
-        <th scope="row">{{ data.name }}</th>
-        <td>Spell Slots: {{ data.slots.0 }} / {{ data.slots.1 }} / {{ data.slots.2 }} / {{ data.slots.3 }}</td>
-        <td>Spells Prepared: {{ data.prepared }}</td>
-    </tr>
+    <li class="list-group-item">
+        {{ data.name }} Slots: {{ data.slots.0 }} / {{ data.slots.1 }} / {{ data.slots.2 }} / {{ data.slots.3 }}, Prepared: {{ data.prepared }}
+    </li>
     {% endfor %}
-</table>
+</ul>
+
 {% endif %}
 
 {% endblock %}

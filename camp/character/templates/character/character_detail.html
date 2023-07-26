@@ -22,20 +22,6 @@
     {% endblock %}
 
 {% block content %}
-</ul>
-{% if controller.sphere_data %}
-{# TODO: Make this look better. #}
-<table class="table table-sm table-bordered">
-    {% for data in controller.sphere_data %}
-    <tr>
-        <th scope="row">{{ data.name }}</th>
-        <td>Spell Slots: {{ data.slots.0 }} / {{ data.slots.1 }} / {{ data.slots.2 }} / {{ data.slots.3 }}</td>
-        <td>Spells Prepared: {{ data.prepared }}</td>
-    </tr>
-    {% endfor %}
-</table>
-{% endif %}
-
 <!-- Existing Feature Cards -->
 <div class="row">
 {% for group in feature_groups %}
