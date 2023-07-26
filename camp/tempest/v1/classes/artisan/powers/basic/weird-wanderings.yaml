@@ -4,7 +4,7 @@ choices:
   power:
     name: Basic Power
     matcher:
-      type: martial
+      type: power
       tier: 1
       parent: -artisan
       refresh: ^Spell

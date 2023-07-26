@@ -654,7 +654,10 @@ class FeatureMatcher(BaseModel):
                 return False
         if self.parent is not None:
             if isinstance(self.parent, str):
-                if feature.parent != self.parent:
+                if self.parent[0] == "-":
+                    if feature.parent == self.parent[1:]:
+                        return False
+                elif feature.parent != self.parent:
                     return False
             elif isinstance(self.parent, FeatureMatcher):
                 if not feature.parent_def or not self.parent.matches(
@@ -663,10 +666,17 @@ class FeatureMatcher(BaseModel):
                     return False
         # Arbitrary attribute matcher.
         for attr, value in self.attrs.items():
-            if not hasattr(feature, attr):
-                return False
-            if getattr(feature, attr) != value:
-                return False
+            if isinstance(value, str) and value.startswith("^"):
+                # Not Like matcher. Matches if the attribute is missing or the value
+                # isn't a substring of it.
+                if attr_value := getattr(feature, attr, None):
+                    if value[1:] in attr_value:
+                        return False
+            else:
+                if not hasattr(feature, attr):
+                    return False
+                if getattr(feature, attr) != value:
+                    return False
         # If none of the filters was negative, this is a match
         return True
 
