@@ -198,6 +198,17 @@ class BaseFeatureChoice(ChoiceController):
             )
         return super().choose(choice)
 
+    def available_choices(self) -> dict[str, str]:
+        # Already taken too many?
+        if self.choices_remaining <= 0:
+            return {}
+        character = self._feature.character
+        feats = self._matching_features()
+        choices = {}
+        for expr in sorted(feats):
+            choices[expr] = character.display_name(expr)
+        return choices
+
     def _matching_features(self) -> set[str]:
         return {
             choice
@@ -332,7 +343,74 @@ class AccessibleClassPowerChoice(GrantChoice):
         return True
 
 
+class AgileLearnerChoice(BaseFeatureChoice):
+    """Used by the Agile Learner skill.
+
+    In conjunction with the specified matcher in the skill def, this presents only
+    basic classes that the character has levels in. Additionally, the class must
+    currently have at least one tier-1 slot to trade away - you can't take a single
+    level in a class and then apply all three ranks of Agile Learner to it.
+
+    This will dock the character one tier-1 slot from the chosen class, then grant
+    one tier-2 slot in that same class. If a spell slot was swapped, the character
+    should also be able to swap out a known spell.
+    """
+
+    # TODO: Once characters are locked down, add a "swap out a known spell" token.
+
+    def _matches(self, choice: str) -> bool:
+        if not super()._matches(choice):
+            return False
+
+        character = self._feature.character
+        feat = character.feature_controller(choice)
+
+        # You have to have levels in it already.
+        if feat.value <= 0:
+            return False
+
+        # Check for a novice spell or basic power to trade away.
+        if feat.caster:
+            if character.get(f"{feat.full_id}.spell_slots@1") <= 0:
+                return False
+        elif character.get(f"{feat.full_id}.powers@1") <= 0:
+            return False
+
+        return True
+
+    def update_propagation(
+        self, grants: dict[str, int], discounts: dict[str, list[Discount]]
+    ) -> None:
+        character = self._feature.character
+        for choice, ranks in self.choice_ranks().items():
+            feat = character.feature_controller(choice)
+            if feat.caster:
+                grants[f"{choice}.spell_slots@1"] = -ranks
+                grants[f"{choice}.spell_slots@2"] = ranks
+            else:
+                grants[f"{choice}.powers@1"] = -ranks
+                grants[f"{choice}.powers@2"] = ranks
+
+
 class OptionBonusRouter(GrantChoice):
+    """Special choice controller used only by option features.
+
+    A few classes grant a bonus to a template option ID. For example, Socialite
+    and Mage grant "Lore". Not "Lore [Arcana]", just "Lore", with the intent that
+    the player will choose a Lore to receive. We could add a choice controller to
+    every feature that grants something like this, but then we'd have to port the
+    freeform option logic (Lore [Sailboats] is a perfectly valid lore to choose).
+
+    That's plausible and it might be desirable in the future, but for now, we have this.
+    When an option skill has a bonus, it presents this choice controller to allow
+    one of its existing option instances to be chosen to receive the bonus. Additionally,
+    the option template presents itself as having a free purchase available. The purchase
+    logic notes whether the feature has "unspent bonus" left, and if so, redirects the
+    purchase to making a choice in this controller. This allows the option template's
+    presentation of options and freeform field to be hijacked for the purpose of selecting
+    a bonus Lore or whatever.
+    """
+
     show_description: bool = False
 
     def _matching_features(self) -> set[str]:
@@ -394,6 +472,8 @@ def make_controller(
             return PracticedCraftChoice(feature, choice_id)
         case "accessible-powers":
             return AccessibleClassPowerChoice(feature, choice_id)
+        case "agile-learner":
+            return AgileLearnerChoice(feature, choice_id)
         case None:
             return GrantChoice(feature, choice_id)
         case _:

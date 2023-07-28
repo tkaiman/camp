@@ -1,0 +1,49 @@
+name: Agile Learner I
+cost: 3
+requires:
+  - level:6
+  - basic-classes:2
+choices:
+  trade:
+    name: Choose a Class
+    description: You will lose a first-tier slot in this class and gain a second-tier slot in the same class.
+    controller: agile-learner
+    matcher:
+      type: class
+      class_type: basic
+description: |
+  The character can trade out one first-tier Power for a second-tier Power from the same class or can lose access to a first-tier Spell-Slot and gain access to a second-tier Spell-Slot from the same class. If a Spell-Slot is switched out, a Known Spell from the spell-book can be similarly switched from first- to second-tier. [Agile Learner II](../agile-learner-2) can be taken at 8th character-level, and [Agile Learner III](../agile-learner-3) can be taken at 10th character-level.
+---
+id: agile-learner-2
+name: Agile Learner II
+cost: 3
+requires:
+  - agile-learner
+  - level:8
+choices:
+  trade:
+    name: Choose a Class
+    description: You will lose a first-tier slot in this class and gain a second-tier slot in the same class.
+    controller: agile-learner
+    matcher:
+      type: class
+      class_type: basic
+description: |
+  The character can trade out one first-tier Power for a second-tier Power from the same class or can lose access to a first-tier Spell-Slot and gain access to a second-tier Spell-Slot from the same class. If a Spell-Slot is switched out, a Known Spell from the spell-book can be similarly switched from first- to second-tier. [Agile Learner II](../agile-learner-2) can be taken at 8th character-level, and [Agile Learner III](../agile-learner-3) can be taken at 10th character-level.
+---
+id: agile-learner-3
+name: Agile Learner III
+cost: 3
+requires:
+  - agile-learner-2
+  - level:10
+choices:
+  trade:
+    name: Choose a Class
+    description: You will lose a first-tier slot in this class and gain a second-tier slot in the same class.
+    controller: agile-learner
+    matcher:
+      type: class
+      class_type: basic
+description: |
+  The character can trade out one first-tier Power for a second-tier Power from the same class or can lose access to a first-tier Spell-Slot and gain access to a second-tier Spell-Slot from the same class. If a Spell-Slot is switched out, a Known Spell from the spell-book can be similarly switched from first- to second-tier. [Agile Learner II](../agile-learner-2) can be taken at 8th character-level, and [Agile Learner III](../agile-learner-3) can be taken at 10th character-level.
