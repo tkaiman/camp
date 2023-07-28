@@ -161,7 +161,7 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 # allauth
-
+LOGIN_REDIRECT_URL = "home"
 # Account creation adapters
 ACCOUNT_ADAPTER = "camp.accounts.adapter.AccountAdapter"
 SOCIALACCOUNT_ADAPTER = "camp.accounts.adapter.SocialAccountAdapter"

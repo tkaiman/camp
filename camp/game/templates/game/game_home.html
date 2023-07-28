@@ -17,8 +17,19 @@
 </ul>
 
 <a href="{% url 'character-add' %}">Create a new character</a>
+{% else %}
+<p>You must <a href="{% url 'account_login' %}">login</a> or <a href="{% url 'account_signup' %}">sign up</a> to view or create characters.</p>
+<p>Or, sign in directly with a social account:</p>
+<div class="socialaccount_ballot">
+
+    <ul class="socialaccount_providers">
+      {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+    </ul>
+  </div>
 {% endif %}
 
+{% comment %}
+{# We'll add chapters back in later, let's focus on characters. #}
 <h2>Chapters</h2>
 <ul>
 {% for chapter in game.open_chapters %}
@@ -27,4 +38,5 @@
     <li>This game currently has no open chapters.</li>
 {% endfor %}
 </ul>
+{% endcomment %}
 {% endblock content %}
