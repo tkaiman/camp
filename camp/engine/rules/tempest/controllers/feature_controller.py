@@ -113,13 +113,13 @@ class FeatureController(base_engine.BaseFeatureController):
 
     @property
     def cost(self) -> int:
-        return self._cost_for(self.paid_ranks, self.granted_ranks)
+        return self._cost_for(self.paid_ranks, self.bonus)
 
     @property
     def next_cost(self) -> int:
         if self.unused_bonus > 0:
             return 0
-        grants = 0 if self.is_option_template else self.granted_ranks
+        grants = 0 if self.is_option_template else self.bonus
         return self._cost_for(self.paid_ranks + 1, grants) - self._cost_for(
             self.paid_ranks, grants
         )
@@ -138,7 +138,7 @@ class FeatureController(base_engine.BaseFeatureController):
                 if self.is_option_template:
                     grants = 0
                 else:
-                    grants = self.granted_ranks
+                    grants = self.bonus
                 ranks = max(0, ranks - self.unused_bonus)
                 cost = self._cost_for(self.paid_ranks + ranks, grants) - self._cost_for(
                     self.paid_ranks, grants
@@ -254,10 +254,6 @@ class FeatureController(base_engine.BaseFeatureController):
         return features
 
     @property
-    def granted_ranks(self) -> int:
-        return sum(d.grants for d in self._propagation_data.values())
-
-    @property
     def discounts(self) -> Iterable[Discount]:
         for data in self._propagation_data.values():
             if data.discount:
@@ -330,26 +326,6 @@ class FeatureController(base_engine.BaseFeatureController):
         return Decision(success=False, reason=f"Unknown choice '{choice}'")
 
     @property
-    def paid_ranks(self) -> int:
-        """Number of ranks purchased that actually need to be paid for with some currency.
-
-        This is generally equal to `purchased_ranks`, but when grants push the total over the
-        feature's maximum, these start to be refunded. They remain on the sheet in case the
-        grants are revoked in the future due to an undo, a sellback, a class level swap, etc.
-        """
-        total = self.purchased_ranks + self.granted_ranks
-        max_ranks = self.max_ranks
-        if total <= max_ranks:
-            return self.purchased_ranks
-        # The feature is at maximum. Only pay for ranks that haven't been granted.
-        # Note that the total grants could also exceed max_ranks. This is more likely
-        # to happen with single-rank features like weapon proficiencies that a character
-        # might receive from multiple classes.
-        if self.granted_ranks < max_ranks:
-            return max_ranks - self.granted_ranks
-        return 0
-
-    @property
     def value(self) -> int:
         if self.option_def and not self.option:
             # This is an aggregate controller for the feature.
@@ -395,10 +371,6 @@ class FeatureController(base_engine.BaseFeatureController):
         if self.option_def and not self.option:
             return self.max_ranks
         return max(self.max_ranks - self.value, 0)
-
-    @property
-    def meets_requirements(self) -> Decision:
-        return self.character.meets_requirements(self.definition.requires)
 
     def _link_to_character(self):
         if self.full_id not in self.character.features:
@@ -517,7 +489,7 @@ class FeatureController(base_engine.BaseFeatureController):
         available = self._currency_balance()
         if available is None:
             return _NO_PURCHASE
-        grants = 0 if self.is_option_template else self.granted_ranks
+        grants = 0 if self.is_option_template else self.bonus
         currency_delta = self._cost_for(self.paid_ranks + value, grants) - self.cost
         if available < currency_delta:
             return Decision(
@@ -541,7 +513,7 @@ class FeatureController(base_engine.BaseFeatureController):
                 amount=(value - purchases),
             )
         # There's no use in selling back ranks if the feature is already fully refunded.
-        if self.granted_ranks >= self.max_ranks:
+        if self.bonus >= self.max_ranks:
             return Decision(success=False, reason="Feature is already fully refunded.")
         return Decision.OK
 
@@ -583,9 +555,7 @@ class FeatureController(base_engine.BaseFeatureController):
 
         Subclasses may have more specific grants. For example, a character class may automatically grant certain features at specific levels.
         """
-        self._effective_ranks = min(
-            self.granted_ranks + self.purchased_ranks, self.max_ranks
-        )
+        self._effective_ranks = min(self.bonus + self.purchased_ranks, self.max_ranks)
         self._link_to_character()
         self._update_choices()
         self._link_model()
@@ -785,7 +755,7 @@ class FeatureController(base_engine.BaseFeatureController):
                 # Relatively trivial case
                 return min(available_ranks, math.floor(available / cd))
             case defs.CostByRank():
-                granted_ranks = self.granted_ranks
+                granted_ranks = self.bonus
                 while available_ranks > 0:
                     cp_delta = (
                         self._cost_for(self.paid_ranks + available_ranks, granted_ranks)

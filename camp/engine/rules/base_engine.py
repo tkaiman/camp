@@ -132,7 +132,10 @@ class CharacterController(ABC):
             feat.reconcile()
 
     def apply(
-        self, mutation: base_models.Mutation | str, raise_exc: bool = True
+        self,
+        mutation: base_models.Mutation | str,
+        raise_exc: bool = True,
+        dry_run: bool = False,
     ) -> Decision:
         rd: Decision
         if isinstance(mutation, str):
@@ -163,8 +166,9 @@ class CharacterController(ABC):
             validated = self.validate()
             if not validated:
                 rd = validated
-        if not rd:
+        if dry_run or not rd:
             self._reload_dump()
+            self.clear_caches()
         else:
             self._save_dump()
             self.mutated = True
@@ -177,6 +181,13 @@ class CharacterController(ABC):
         predict (or prevent). Validate will be called following mutations, so feature requirements
         and other state should be checked. If the valdity check fails, the mutation will be reverted.
         """
+        # Basic validity: Do all features claim to be valid?
+        features = list(self.features.values())
+        for feature in features:
+            feature.reconcile()
+        for feature in features:
+            if not (rd := feature.hard_validate()):
+                return rd
         return Decision.OK
 
     def has_prop(self, expr: str | base_models.PropExpression) -> bool:
@@ -604,6 +615,10 @@ class BaseFeatureController(PropertyController):
         return [c for c in self.children if c.value > 0]
 
     @property
+    def meets_requirements(self) -> Decision:
+        return self.character.meets_requirements(self.definition.requires)
+
+    @property
     def next_value(self) -> int | None:
         """What's the next value that can be purchased?
 
@@ -623,7 +638,7 @@ class BaseFeatureController(PropertyController):
         has been granted ranks or you're asking about a Geas starting class's
         level, it may not be possible to reduce it all the way.
         """
-        return self.granted_ranks
+        return self.bonus
 
     @property
     def description(self) -> str | None:
@@ -779,12 +794,28 @@ class BaseFeatureController(PropertyController):
         """The number of ranks left to be taken, regardless of whether they can be taken right now."""
         return self.max_ranks - self.value
 
-    @property
+    @abstractproperty
     def purchased_ranks(self) -> int:
-        return self.value
+        """How many ranks the player has intentionally purchased, whether or not they're used."""
 
     @property
-    def granted_ranks(self) -> int:
+    def paid_ranks(self) -> int:
+        """Number of ranks purchased that actually need to be paid for with some currency.
+
+        This is generally equal to `purchased_ranks`, but when grants push the total over the
+        feature's maximum, these start to be refunded. They remain on the sheet in case the
+        grants are revoked in the future due to an undo, a sellback, a class level swap, etc.
+        """
+        total = self.purchased_ranks + self.bonus
+        max_ranks = self.max_ranks
+        if total <= max_ranks:
+            return self.purchased_ranks
+        # The feature is at maximum. Only pay for ranks that haven't been granted.
+        # Note that the total grants could also exceed max_ranks. This is more likely
+        # to happen with single-rank features like weapon proficiencies that a character
+        # might receive from multiple classes.
+        if self.bonus < max_ranks:
+            return max_ranks - self.bonus
         return 0
 
     def rank_name(self, value: int | None = None):
@@ -807,9 +838,9 @@ class BaseFeatureController(PropertyController):
             reasons.append(
                 f"You have taken {self.purchased_ranks} {self.rank_name(self.purchased_ranks)}."
             )
-        if self.granted_ranks > 0:
+        if self.bonus > 0:
             reasons.append(
-                f"You have been granted {self.granted_ranks} {self.rank_name(self.granted_ranks)}."
+                f"You have been granted {self.bonus} {self.rank_name(self.bonus)}."
             )
         return reasons
 
@@ -839,6 +870,39 @@ class BaseFeatureController(PropertyController):
         if self.definition.has_ranks and self.value > 0:
             return f"{self.display_name()} x{self.value}"
         return self.display_name()
+
+    def hard_validate(self) -> Decision:
+        """Check that the feature is valid.
+
+        What does validity really mean? For the purposes of this app, let's consider _hard_ and _soft_ validity.
+
+        Hard validity means that certain things will always be true, and anything that would make them false fails.
+        If you take Profession - Journeyman, it depends on Profession - Apprentice, so you can't remove Apprentice
+        as long as you have Journeyman.
+
+        Soft validity means that things must _eventually_ be true. You can't add a new Advanced Power if you don't
+        have a slot for it, but if you suddenly find yourself with fewer Advanced Powers than you have slots, the
+        response is not "you can't do that, abort mutation", but rather "OK, but now you need to pick a power to remove."
+
+        In general, hard validity is intended to be checked every time you do anything to the character, and if it fails,
+        the thing did not happen to the character. If a character ends up persisted in a hard-invalid state and you can't
+        fix it in one step, you may need an admin to fix it. (Alternatively, the app can launch your character in "recovery mode",
+        and treat hard validation failures as soft until corrected). Soft validity is checked when you try to register for
+        an event (or later, when logistics goes to print sheets).
+        """
+        if self.paid_ranks <= 0:
+            # If we don't have the feature purchased but the controller exists anyway, that's fine.
+            # No need to validate.
+            # Note that this means a feature can be granted without needing to meet its prerequisites.
+            return Decision.OK
+        # By default, the only validation needed is that the feature's requirements are still met.
+        if not self.meets_requirements:
+            # TODO: Nice rendering for the actual requirements issue would be nice, but for now, just
+            # identify the feature that has been offended.
+            return Decision(
+                success=False, reason=f"Requirements not met for {self.display_name()}"
+            )
+        return Decision.OK
 
     def __str__(self) -> str:
         return self.feature_list_name

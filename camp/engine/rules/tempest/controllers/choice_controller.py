@@ -443,7 +443,7 @@ class OptionBonusRouter(GrantChoice):
             # This skill only gets a single option ever, so all bonuses should be directed
             # to it instead of just the one that the GrantChoice would normally give.
             if choices := self.taken_choices().keys():
-                grants[list(choices)[0]] = self._feature.granted_ranks
+                grants[list(choices)[0]] = self._feature.bonus
         else:
             super().update_propagation(grants, discounts)
 

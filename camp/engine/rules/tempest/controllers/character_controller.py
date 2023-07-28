@@ -246,9 +246,11 @@ class TempestCharacter(base_engine.CharacterController):
     def purchase(self, entry: RankMutation) -> Decision:
         if controller := self.feature_controller(entry.expression):
             if entry.ranks > 0:
-                return controller.increase(entry.ranks)
+                rd = controller.increase(entry.ranks)
             elif entry.ranks < 0:
-                return controller.decrease(-entry.ranks)
+                rd = controller.decrease(-entry.ranks)
+            # self.clear_caches()
+            return rd
         return Decision(
             success=False, reason=f"Purchase not implemented: {entry.expression}"
         )
@@ -390,6 +392,8 @@ class TempestCharacter(base_engine.CharacterController):
     def clear_caches(self):
         super().clear_caches()
         self._features = {}
+        for feature in list(self.features.values()):
+            feature.reconcile()
 
 
 @dataclass

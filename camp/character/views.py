@@ -58,13 +58,15 @@ class CharacterView(AutoPermissionRequiredMixin, DetailView):
         controller: CharacterController = sheet.controller
         context["sheet"] = sheet
         context["controller"] = controller
-
         taken_features = controller.list_features(taken=True, available=False)
         available_features = controller.list_features(available=True, taken=False)
         context["feature_groups"] = _features(
             controller, chain(taken_features, available_features)
         )
         context["undo"] = sheet.last_undo
+
+        if not (rd := controller.validate()):
+            messages.error(self.request, "Error validating character: %s" % rd.reason)
         return context
 
 
@@ -146,8 +148,16 @@ def feature_view(request, pk, feature_id):
     controller = cast(TempestCharacter, sheet.controller)
     feature_controller = controller.feature_controller(feature_id)
 
-    can_inc = feature_controller.can_increase()
     can_dec = feature_controller.can_decrease()
+    if can_dec:
+        # Ok, but can we _really_ decrease?
+        dec_mutation = RankMutation(id=feature_id, ranks=-1)
+        if not controller.apply(dec_mutation, raise_exc=False, dry_run=True):
+            can_dec = False
+        # The old controller is tainted, reload it.
+        feature_controller = controller.feature_controller(feature_id)
+    can_inc = feature_controller.can_increase()
+
     pf = None
 
     if can_inc or can_dec:
@@ -416,5 +426,4 @@ def _apply_mutation(
             )
             if len(sheet.undo_stack.all()) > settings.UNDO_STACK_SIZE:
                 sheet.undo_stack.order_by("timestamp").first().delete()
-            controller.clear_caches()
     return result
