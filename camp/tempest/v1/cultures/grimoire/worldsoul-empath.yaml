@@ -1,0 +1,41 @@
+name: Worldsoul Empath
+discounts:
+  basic-medicine: 1
+  basic-faith: 1
+  lore+Religious: 1
+grants: empathic-nature
+description: |
+  _Locations: Grimoire: The Ever-Autumn_
+
+  _Concepts: Nature, Peace, Healing_
+
+  Between the Eyes of Tempest exist a demi-realm of golden leaves and resplendent life. This is the birthplace of the Thrylossi, who brought the radiance of their realm with them when they wandered forth through the Worldsoul into the mortal realms. It is said that during times of great duress, the ancient Thrylossi of Everautumn would commune with the Worldsoul and share their troubles and burdens with the others linked to it, alleviating the overwhelming emotions tied to their woes. To this effect, these ancient Thrylossi became the first Worldsoul Empaths.
+
+  When the Thyrlossi came to the mortal realms, they brought with them this culture of sharing their emotions, burdens and hardships. While it did not erupt by any means, the Worldsoul Empath culture grew steadily and fostered with its understanding and comradery among their cult.
+
+  The Worldsoul Empaths have grown to be a large and respected organization, fostering the standards of understanding and compassion. It’s not uncommon for war-torn veterans to visit the Worldsoul Empaths to help them through rough memories or the turmoil afterwards.
+
+  Members of the Worldsoul Empath cult are found in most settlements, and while they are linked by their Bonds to the Worldsoul, they tend to operate independently of one another. They do, however, tend to work for similar goals and ends, and while some Worldsoul Empath cults may have a spiritual ‘leader’, it’s not uncommon for them to simply be a community of like minded individuals.
+
+  ## Commonalities of the Culture
+
+  * Natural made accents are common among the Worldsoul, utilizing materials like fur, buckskin and wool.
+  * The Worldsoul Empaths tend to wear jewelry that incorporates wood or tiger's eye.
+  * Worldsoul Empaths tend to be cooperative and supportive in disposition.
+  * Worldsoul Empath cults often incorporate personal sigils among their groups to identify them as members of the same cult.
+  * Garments are often naturally colored.
+---
+id: empathic-nature
+type: inheritance
+parent: worldsoul-empath
+name: Empathic Nature
+incant: RP
+call: '“[Name or Description] Discern to Living: What emotion are you feeling?”'
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest
+accent: None
+effect: Discern
+description: |
+  When communicating with a living creature, this social Power allows the Empath to determine what emotions that creature is feeling at that point in time.

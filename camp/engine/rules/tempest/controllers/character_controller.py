@@ -15,6 +15,7 @@ from .. import models
 from . import attribute_controllers
 from . import cantrip_controller
 from . import class_controller
+from . import culture_controller
 from . import feature_controller
 from . import flaw_controller
 from . import power_controller
@@ -26,13 +27,14 @@ from . import utility_controller
 _DISPLAY_PRIORITIES = {
     "class": 0,
     "breed": 1,
-    "flaw": 2,
-    "perk": 3,
-    "skill": 4,
-    "cantrip": 5,
-    "utility": 6,
-    "spell": 7,
-    "power": 8,
+    "culture": 2,
+    "flaw": 3,
+    "perk": 4,
+    "skill": 5,
+    "cantrip": 6,
+    "utility": 7,
+    "spell": 8,
+    "power": 9,
 }
 
 
@@ -155,6 +157,13 @@ class TempestCharacter(base_engine.CharacterController):
             return self._features
         self._features = {id: self._new_controller(id) for id in self.model.features}
         return self._features
+
+    @property
+    def culture(self) -> feature_controller.FeatureController | None:
+        for feature in self.features.values():
+            if feature.feature_type == "culture" and feature.value > 0:
+                return feature
+        return None
 
     @property
     def classes(self) -> list[class_controller.ClassController]:
@@ -363,6 +372,8 @@ class TempestCharacter(base_engine.CharacterController):
                 return power_controller.PowerController(id, self)
             case "utility":
                 return utility_controller.UtilityController(id, self)
+            case "culture":
+                return culture_controller.CultureController(id, self)
             case _:
                 return feature_controller.FeatureController(id, self)
 

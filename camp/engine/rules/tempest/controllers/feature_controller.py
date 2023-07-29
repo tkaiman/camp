@@ -19,7 +19,13 @@ _MUST_BE_POSITIVE = Decision(success=False, reason="Value must be positive.")
 _NO_RESPEND = Decision(success=False, reason="Respend not currently available.")
 _NO_PURCHASE = Decision(success=False, reason="Feature cannot be purchased.")
 
-_SUBFEATURE_TYPES: set[str] = {"subfeature", "innate", "archetype"}
+_SUBFEATURE_TYPES: set[str] = {
+    "subfeature",
+    "innate",
+    "archetype",
+    "inheritance",
+    "devotion",
+}
 _OPTION_BONUS = "__option__"
 
 

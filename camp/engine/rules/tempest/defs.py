@@ -282,6 +282,23 @@ class Cantrip(BaseFeatureDef):
     sphere: Literal["arcane", "divine", None] = None
 
 
+class Culture(BaseFeatureDef):
+    type: Literal["culture"] = "culture"
+
+
+class InheritancePower(BaseFeatureDef):
+    type: Literal["inheritance"] = "inheritance"
+
+
+class Religion(BaseFeatureDef):
+    type: Literal["religion"] = "religion"
+
+
+class DevotionPower(BaseFeatureDef):
+    type: Literal["devotion"] = "devotion"
+    level: Literal["bonus", "basic", "advanced"]
+
+
 FeatureDefinitions: TypeAlias = (
     ClassDef
     | SubFeatureDef
@@ -294,6 +311,10 @@ FeatureDefinitions: TypeAlias = (
     | Spell
     | Cantrip
     | Utility
+    | Culture
+    | InheritancePower
+    | Religion
+    | DevotionPower
 )
 
 
@@ -325,6 +346,7 @@ class Ruleset(base_models.BaseRuleset):
     plural_names: dict[str, str] = {
         "Class": "Classes",
         "Utility": "Utilities",
+        "Culture": "Culture",  # You only get one, so don't pluralize.
     }
     tags: dict[str, str | None] = Field(default_factory=dict)
 
