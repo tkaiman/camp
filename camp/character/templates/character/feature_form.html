@@ -43,7 +43,7 @@
 </form>
 {% elif no_purchase_reason %}
 <p>You can not currently purchase this because:</p>
-<p>{{ no_purchase_reason }}</p>
+<p>{{ no_purchase_reason | markdown }}</p>
 {% endif %}
 
 
@@ -120,93 +120,58 @@
 {% endif %}
 
 {% if subfeatures %}
-    <h3>{{subfeatures.0.name}}</h3>
-        <ul class="list-group col-12 col-lg-6 col-xl-4">
-            {% for group in subfeatures %}
-            {% for f in group.taken %}
-            <li class="list-group-item">
-                <a href="{% url 'character-feature-view' character.id f.full_id %}">
-                    {{ f.feature_list_name }}
-                    {% if f.can_increase %}
+<ul class="list-group">
+    {% for f in subfeatures %}
+    <li class="list-group-item">
+        <a href="{% url 'character-feature-view' character.id f.full_id %}">
+            {{ f.feature_list_name }}
+            {% if f.can_increase %}
+            ⇧
+            {% if f.purchase_cost_string %}
+                ({{ f.purchase_cost_string }})
+            {% endif %}
+            {% endif %}
+            {% for level, badge in f.badges %}
+            <span class="badge bg-{{level}}">{{badge}}</span>
+            {% endfor %}
+        </a>
+        {# Yeah I guess subfeatures could have subfeatures... #}
+        {% if f.subfeatures %}
+        <ul>
+            {% for sf in f.subfeatures %}
+            <li>
+                <a href="{% url 'character-feature-view' character.id sf.full_id%}">
+                    {{ sf.formal_name }}
+                    {% if sff.can_increase %}
                     ⇧
-                    {% if f.purchase_cost_string %}
-                        ({{ f.purchase_cost_string }})
-                    {% endif %}
-                    {% endif %}
-                    {% for level, badge in f.badges %}
-                    <span class="badge bg-{{level}}">{{badge}}</span>
-                    {% endfor %}
-                </a>
-                {# Yeah I guess subfeatures could have subfeatures... #}
-                {% if f.subfeatures %}
-                <ul>
-                    {% for sf in f.subfeatures %}
-                    <li>
-                        <a href="{% url 'character-feature-view' character.id sf.full_id%}">
-                            {{ sf.formal_name }}
-                            {% if sff.can_increase %}
-                            ⇧
-                                {% if sf.purchase_cost_string %}
-                                ({{ sf.purchase_cost_string }})
-                                {% endif %}
-                            {% endif %}
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-            </li>
-            {% endfor %}
-            {% endfor %}
-        </ul>
-
-    {% for group in subfeatures %}
-        {% if group.available %}
-        <h4>{{group.name}} Available</h4>
-            <ul class="list-group col-12 col-lg-6 col-xl-4">
-            {% if group.explain %}
-            <li class="list-group-item">
-            {{ group.explain }}
-            </li>
-            {% endif %}
-
-            {% for f in group.available %}
-                <li class="list-group-item">
-                    <a href="{% url 'character-feature-view' character.id f.full_id%}">
-                        {{ f }}
-                        {% if f.purchase_cost_string %}
-                        ({{ f.purchase_cost_string }})
+                        {% if sf.purchase_cost_string %}
+                        ({{ sf.purchase_cost_string }})
                         {% endif %}
-                    </a>
-                </li>
-            {% endfor %}
-            </ul>
-        {% endif %}
-    {% endfor %}
-
-    {% for group in subfeatures %}
-        {% for category, available in group.available_categories.items %}
-        <h4>{{category}} Available</h4>
-        <ul class="list-group col-12 col-lg-6 col-xl-4">
-            {% if available.0.explain_category_group %}
-            <li class="list-group-item">
-                {{ available.0.explain_category_group }}
-            </li>
-            {% endif %}
-            {% for f in available %}
-            <li class="list-group-item">
-                <a href="{% url 'character-feature-view' character.id f.full_id%}">
-                    {{ f }}
-                    {% if f.purchase_cost_string %}
-                    ({{ f.purchase_cost_string }})
                     {% endif %}
                 </a>
             </li>
             {% endfor %}
         </ul>
-        {% endfor %}
+        {% endif %}
+    </li>
     {% endfor %}
+</ul>
+{% endif %}
 
+{% if subfeatures_available %}
+<h3>Purchases Available</h3>
+<ul class="list-group">
+{% for f in subfeatures_available %}
+    <li class="list-group-item">
+        <a href="{% url 'character-feature-view' character.id f.full_id%}">
+            {{ f }}
+            {% if f.purchase_cost_string %}
+            ({{ f.purchase_cost_string }})
+            {% endif %}
+        </a>
+    </li>
+{% endfor %}
+</ul>
 {% endif %}
 
 <a role="button" class="btn btn-secondary" href="{% url 'character-detail' character.id %}">Back to {{character}}</a>

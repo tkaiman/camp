@@ -1,0 +1,21 @@
+name: Defy Outsider
+level: advanced
+cost: 5
+requires:
+  any:
+    - power:2
+    - spell:2
+description: |
+  > _“Years of training and constant opposition to the meddling of the gods has led to the understanding that the divine will is not omnipotent, and can be denied with the correct application of skill and focus.”_
+subcard:
+  name: Defy Outsider [Devotion]
+  incant: None
+  call: “Counter, Defy Outsider”
+  target: One Attack
+  duration: Instantaneous
+  delivery: None
+  refresh: Short Rest
+  accent: None
+  effect: Counter
+  description: |
+    The Undevoted, through pure dedication, toughness, or sometimes concentrated hatred, can Counter one Attack that has the Radiance or Darkness Accent.

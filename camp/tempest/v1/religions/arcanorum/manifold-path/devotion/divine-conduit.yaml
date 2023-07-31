@@ -1,0 +1,24 @@
+name: Divine Conduit
+level: advanced
+cost: 2
+requires:
+  any:
+    - power@2
+    - spell@2
+description: |
+  > _“The Manifold Path provides choices and opportunities aplenty, however, let not the choices provided to you choose for you: for every choice you make is your own, even if the apparent options before you seem absolute. There is always another way, if one cares to look.”_
+subcard:
+  name: Divine Conduit [Devotion]
+  incant: None
+  call: Grant Accent
+  target: Self
+  delivery: None
+  accent: '[Chosen Accent]'
+  duration: Passive
+  refresh: Long Rest
+  effect: Grant Accent
+  description: |
+    When attending a Rite of Choosing, the participant may select from one of two benefits:
+
+    * They may choose to add the new Rite’s Accent to their current Chosen Accent, having up to two available to them at the same time.
+    * They may apply the newly selected Chosen Accent to their unAccented basic and Spike weapon attacks until their next Short Rest.

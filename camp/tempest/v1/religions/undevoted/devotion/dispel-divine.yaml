@@ -1,0 +1,28 @@
+name: Dispel Divine
+level: advanced
+cost: 3
+requires:
+  any:
+    - power:2
+    - spell:2
+description: |
+  > _“While many of the Undevoted simply live out their lives unaffected by the machinations of the Gods, some have turned to the arcane and attempt to undo the divine will directly, opposing them wherever they may have impacted the land.”_
+subcard:
+  name: Dispel Divine [Devotion][Adept]
+  incant: “I call the power that is mine by right, I wield and shape creation's light, I draw my strength from sky and land, Gather now within my hand to dispel the Divine.“
+  call: See below
+  target: Individual or Object
+  duration: Instantaneous
+  delivery: Packet (Spell-Ball)
+  refresh: Spell
+  accent: None
+  effect: Dispel
+  description: |
+    This powerful spell can be used to counter the effects of divine powers and denizens. It can be used in one of the following ways:
+
+    * Harm divine creatures: “Wounding 6 to Angel”, or “Wounding 6 to Demon”
+    * Dispel all Conditions caused by Radiance or Darkness Accents: “Dispel [Darkness/Radiance]”
+
+    The first time this spell is cast each long rest it will not consume a spell slot.
+
+    **Note**: By game-design, Dispel Divine may have other specific uses.

@@ -16,9 +16,11 @@ from . import attribute_controllers
 from . import cantrip_controller
 from . import class_controller
 from . import culture_controller
+from . import devotion_controller
 from . import feature_controller
 from . import flaw_controller
 from . import power_controller
+from . import religion_controller
 from . import spell_controller
 from . import spellbook_controller
 from . import subfeature_controller
@@ -28,13 +30,14 @@ _DISPLAY_PRIORITIES = {
     "class": 0,
     "breed": 1,
     "culture": 2,
-    "flaw": 3,
-    "perk": 4,
-    "skill": 5,
-    "cantrip": 6,
-    "utility": 7,
-    "spell": 8,
-    "power": 9,
+    "religion": 3,
+    "flaw": 4,
+    "perk": 5,
+    "skill": 6,
+    "cantrip": 7,
+    "utility": 8,
+    "spell": 9,
+    "power": 10,
 }
 
 
@@ -159,9 +162,16 @@ class TempestCharacter(base_engine.CharacterController):
         return self._features
 
     @property
-    def culture(self) -> feature_controller.FeatureController | None:
+    def culture(self) -> culture_controller.CultureController | None:
         for feature in self.features.values():
             if feature.feature_type == "culture" and feature.value > 0:
+                return feature
+        return None
+
+    @property
+    def religion(self) -> religion_controller.ReligionController | None:
+        for feature in self.features.values():
+            if feature.feature_type == "religion" and feature.value > 0:
                 return feature
         return None
 
@@ -230,12 +240,30 @@ class TempestCharacter(base_engine.CharacterController):
             if isinstance(feat, spell_controller.SpellController)
         ]
 
-    @property
-    def martial_powers(self) -> list[feature_controller.FeatureController]:
-        return [feat for feat in self.features.values() if feat.feature_type == "power"]
+    def spell(self, expr: PropExpression | None = None) -> int:
+        """The number of spell slots total or at a paritcular tier."""
+        slot = int(expr.slot) if (expr and expr.slot is not None) else None
+        count = 0
+        for clazz in self.classes:
+            if slot is None:
+                count += self.get(f"{clazz.full_id}.spell_slots@{slot}")
+            else:
+                count += self.get(f"{clazz.full_id}.spell_slots")
+        return 0
 
     @property
-    def utilities(self) -> list[feature_controller.FeatureController]:
+    def martial_powers(self) -> list[power_controller.PowerController]:
+        return [feat for feat in self.features.values() if feat.feature_type == "power"]
+
+    def power(self, expr: PropExpression | None = None) -> int:
+        """The number of martial powers known total or at a given tier."""
+        if expr is None or expr.slot is None:
+            return sum(p.value for p in self.martial_powers)
+        slot = int(expr.slot)
+        return sum(p.value for p in self.martial_powers if p.tier == slot)
+
+    @property
+    def utilities(self) -> list[utility_controller.UtilityController]:
         return [
             feat for feat in self.features.values() if feat.feature_type == "utility"
         ]
@@ -374,6 +402,10 @@ class TempestCharacter(base_engine.CharacterController):
                 return utility_controller.UtilityController(id, self)
             case "culture":
                 return culture_controller.CultureController(id, self)
+            case "religion":
+                return religion_controller.ReligionController(id, self)
+            case "devotion":
+                return devotion_controller.DevotionController(id, self)
             case _:
                 return feature_controller.FeatureController(id, self)
 

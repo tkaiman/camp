@@ -1,0 +1,14 @@
+name: Devotee of the Underworld
+level: advanced
+cost: 3
+requires:
+  any:
+    - power:2
+    - spell:2
+grants:
+  - patron
+  - gift-of-hateful-retribution
+description: |
+  > _“Through specific rites, deep in the sands of time, the Most Devoted inscribe charms and runes with the keys to their souls. The Pharaoh is most willing to accept these tithes, and rewards the truly faithful in return.”_
+
+  The character gains Patron (Tithebearer) Character Option, as well as Gift of Hateful Retribution at Tier 1. However, the spirit of the Chosen is forever bound to the Pharaoh, and is Vulnerable to effects delivered with the “to Follower of the Pharaoh” Qualifier. The covenant bound through this contract with the Pharaoh is non-negotiable and non-transferable, and the cost is the Chosen’s soul. When the Pharaoh chooses to collect his debt, however, is never quite clear.

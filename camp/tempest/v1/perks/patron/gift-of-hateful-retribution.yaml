@@ -1,19 +1,17 @@
 name: Gift of Hateful Retribution
 requires: patron
-ranks: 5
+ranks: 4
 cost:
   ranks:
     1: 2
-    2: 3
-    3: 4
-    4: 5
-    5: 6
+    2: 1
+    3: 1
+    4: 1
 rank_labels:
   1: 10/-
   2: 15/-
   3: 25/5
   4: 50/10
-  5: 100/20
 description: |
   The character’s patron, often a war or death deity, or some other similar greater power,
   has given the character the ability to destroy those who would end the patron’s beloved pet.
@@ -28,6 +26,5 @@ description: |
     | :-: | :-----: | :--: |
     | 10  | -       | 2    |
     | 15  | -       | 3    |
-    | 25  | 5       | 4    |
-    | 50  | 10      | 5    |
-    | 100 | 20      | 6    |
+    | 25  | -       | 4    |
+    | 50  | 5       | 5    |

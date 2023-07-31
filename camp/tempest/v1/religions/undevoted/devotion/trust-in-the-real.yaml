@@ -1,0 +1,5 @@
+name: Trust in the Real
+level: basic
+cost: 3
+description: |
+  Whenever this character receives at least two points of healing from a single non-magical, consumable source, such as crafted Basic Health Draughts that have been Kicked, they may Cure one Condition of their choosing.

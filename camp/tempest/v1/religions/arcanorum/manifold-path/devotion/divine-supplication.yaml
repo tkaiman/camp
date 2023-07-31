@@ -1,0 +1,11 @@
+name: Divine Supplication
+level: bonus
+cost: 2
+description: |
+  The wielder of this ability may choose an individual Deity and perform a Rite of their own creation at the Manifold Path’s Shrine. In so doing, they may alter their Chosen Accent to the selected Deity’s until (at least) the next Long Rest.
+
+  The leader of the Rite may allow as many adherents of the Manifold Path to alter their Chosen Accent as they wish, but all attendees of the Rite may alter their Chosen Accent to the one selected by the leader of the Rite they participate in.
+
+  The Chosen Accent, for each participant, remains for at least one Long Rest, and will remain Chosen until the  participant alters the Accent at a new Rite, or the Event ends. The Chosen Accent at the beginning of each event is None, and the Rite will need to be performed before the participants may select a Chosen Accent.
+
+  **Note**: The Leader of the Rite of Choosing should notify Plot when a Rite’s attendance exceeds ten people, including leader, when convenient.

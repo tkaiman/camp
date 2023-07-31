@@ -201,22 +201,18 @@ def feature_view(request, pk, feature_id):
         return redirect("character-feature-view", pk=pk, feature_id=feature_id)
 
     if feature_controller.value > 0 and feature_controller.supports_child_purchases:
-        subfeatures = _features(
-            controller,
-            chain(
-                feature_controller.subfeatures, feature_controller.subfeatures_available
-            ),
-            hide_internal=False,
-            use_type_name=True,
-        )
+        subfeatures = feature_controller.subfeatures
+        subfeatures_available = feature_controller.subfeatures_available
     else:
         subfeatures = []
+        subfeatures_available = []
     choices = feature_controller.choices
     context = {
         "character": character,
         "controller": controller,
         "feature": feature_controller,
         "subfeatures": subfeatures,
+        "subfeatures_available": subfeatures_available,
         "explain_ranks": feature_controller.explain,
         "choices": {k: forms.ChoiceForm(c) for (k, c) in choices.items()}
         if choices

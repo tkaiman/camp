@@ -149,7 +149,9 @@ class FeatureController(base_engine.BaseFeatureController):
                 cost = self._cost_for(self.paid_ranks + ranks, grants) - self._cost_for(
                     self.paid_ranks, grants
                 )
-            return f"{cost} {self.currency_name}"
+            if cost >= 0:
+                return f"{cost} {self.currency_name}"
+            return f"+{abs(cost)} {self.currency_name}"
         return None
 
     @cached_property
@@ -286,7 +288,10 @@ class FeatureController(base_engine.BaseFeatureController):
             badges.append(("success", "Bonus Available"))
         elif (
             self.supports_child_purchases
-            and self.child_purchase_remaining > 0
+            and (
+                self.child_purchase_remaining is None
+                or self.child_purchase_remaining > 0
+            )
             and self.subfeatures_available
         ):
             badges.append(("primary", "Purchases Available"))
@@ -435,7 +440,7 @@ class FeatureController(base_engine.BaseFeatureController):
                 amount=purchaseable,
             )
         # Does the character meet the prerequisites?
-        if not (rd := self.character.meets_requirements(self.definition.requires)):
+        if not (rd := self.meets_requirements):
             return rd
         # Is this an option skill without an option specified?
         if (

@@ -1,0 +1,25 @@
+name: A Guided Path
+level: advanced
+cost: 2
+requires:
+  any:
+    - power@2
+    - spell@2
+description: |
+  > _“The Manifold Path is a long and winding road, full of twists and turns, and prone to encouraging conflict around those who walk it. However, for those who are truly faithful, aid will ever be present for those who do not walk alone.”_
+subcard:
+  name: The Other Path [Devotion][Adept]
+  incant: “I call my faith, divine and right, I wield and shape creation’s light. I draw my strength from sky and land. Gather now within my hand to walk the road less trodden.”
+  call: “Cure [Condition] and Grant Protect vs Packets by [Chosen Accent]”
+  target: Two Individuals
+  delivery: Touch
+  accent: '[Chosen Accent]'
+  duration: Instantaneous, Until Used
+  refresh: Spell
+  effect: Grant, Cure
+  description: |
+    The Path sometimes deviates from our chosen fate - the Chosen may realign the fate of their allies by removing the negative consequences of ill fate and applying protective sigils to ward off further corruption.
+
+    The caster may deliver a Touch cast to call “Cure [Condition] and Grant Protect vs Packets” on up to two allies, protecting them from harm.
+
+    The first time this spell is cast each Long Rest it will not consume a spell slot.

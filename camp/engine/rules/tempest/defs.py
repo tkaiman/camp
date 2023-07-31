@@ -347,6 +347,7 @@ class Ruleset(base_models.BaseRuleset):
         "Class": "Classes",
         "Utility": "Utilities",
         "Culture": "Culture",  # You only get one, so don't pluralize.
+        "Religion": "Religion",  # Also only get one.
     }
     tags: dict[str, str | None] = Field(default_factory=dict)
 
@@ -385,6 +386,15 @@ class Ruleset(base_models.BaseRuleset):
             name="Spells Known",
             scoped=True,
         ),
+        # "spell" is a global attribute that counts the number of spell slots
+        # of any sphere you have available at each tier.
+        Attribute(
+            id="spell",
+            name="Spell",
+            scoped=False,
+            tiered=True,
+            tier_names=["Novice", "Adept", "Greater", "Master"],
+        ),
         # Spellbook is a little different than Spells Known. It's a pool of "bonus" spellbook
         # capacity granted by skills like Basic Arcane, Spellscholar, etc. Spellbook capacity
         # is per-sphere, and critically, taking the Sourcerer class blocks it entirely.
@@ -409,6 +419,14 @@ class Ruleset(base_models.BaseRuleset):
             id="powers",
             name="Powers",
             scoped=True,
+            tiered=True,
+            tier_names=["Basic", "Advanced", "Veteran", "Champion"],
+        ),
+        # Power is a global attribute that counts the number of tiered powers you know of any class.
+        Attribute(
+            id="power",
+            name="Power",
+            scoped=False,
             tiered=True,
             tier_names=["Basic", "Advanced", "Veteran", "Champion"],
         ),
