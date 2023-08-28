@@ -106,7 +106,7 @@ class CharacterController(ABC):
         """List all features of the given type."""
         if taken:
             for id, fc in list(self.features.items()):
-                if not fc.value > 0:
+                if fc.value <= 0 and fc.unused_bonus <= 0:
                     # It's not actually taken...
                     continue
                 if type and fc.definition.type != type:

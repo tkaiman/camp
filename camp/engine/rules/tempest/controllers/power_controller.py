@@ -95,7 +95,7 @@ class PowerController(feature_controller.FeatureController):
             for claz, tiers in available.items():
                 class_name = self.character.display_name(claz)
                 for i, count in enumerate(tiers):
-                    if count > 0:
+                    if count != 0:
                         explain.append(
                             f"{count} {class_name} {self.character.ruleset.attribute_map['powers'].tier_names[i]} powers available."
                         )

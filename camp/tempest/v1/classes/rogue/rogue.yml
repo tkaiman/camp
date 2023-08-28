@@ -50,6 +50,7 @@ level_grants:
 ---
 id: rogue-bonus-damage
 type: subfeature
+display_type: Bonus
 parent: rogue
 name: +1 Bonus Spike Damage
 category: Rogue Class Bonuses
