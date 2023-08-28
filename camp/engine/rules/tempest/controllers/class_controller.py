@@ -133,6 +133,11 @@ class ClassController(feature_controller.FeatureController):
             return 0
         return self.character.ruleset.powers[0].evaluate(self.value)
 
+    def cantrips_awarded(self) -> int:
+        if not self.caster:
+            return 0
+        return self.character.get(f"{self.full_id}.cantrips")
+
     def cantrips_purchased(self) -> int:
         if not self.caster:
             return 0
@@ -155,6 +160,11 @@ class ClassController(feature_controller.FeatureController):
         return sum(
             c.paid_ranks for c in self.taken_children if c.feature_type == "utility"
         )
+
+    def utilities_awarded(self) -> int:
+        if not self.martial:
+            return 0
+        return self.character.get(f"{self.full_id}.utilities")
 
     @cached_property
     def spellbook(self) -> spellbook_controller.SpellbookController | None:
@@ -203,9 +213,27 @@ class ClassController(feature_controller.FeatureController):
                     Issue(
                         issue_code="too-many-powers",
                         reason=f"Too many tier {i+1} or lower {self.display_name()} powers taken ({abs(available)}). Please remove some.",
-                        feature_id=self.full_id,
                     )
                 )
+
+        utilities_available = self.utilities_awarded() - self.utilities_purchased()
+        if utilities_available < 0:
+            issues.append(
+                Issue(
+                    issue_code="too-many-powers",
+                    reason=f"Too many {self.display_name()} utility powers taken ({abs(utilities_available)}). Please remove some.",
+                )
+            )
+
+        cantrips_available = self.cantrips_awarded() - self.cantrips_purchased()
+        if cantrips_available < 0:
+            issues.append(
+                Issue(
+                    issue_code="too-many-powers",
+                    reason=f"Too many {self.display_name()} cantrips taken ({abs(cantrips_available)}). Please remove some.",
+                )
+            )
+
         return issues
 
     def powers(self, expr: PropExpression) -> int:

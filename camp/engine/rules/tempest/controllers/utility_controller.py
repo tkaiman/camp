@@ -12,7 +12,7 @@ class UtilityController(feature_controller.FeatureController):
     def _utilities_available(self) -> int:
         if self.parent and self.parent.feature_type == "class":
             purchased = self.parent.utilities_purchased()
-            utilties = self.character.get(f"{self.parent.full_id}.utilities")
+            utilties = self.parent.utilities_awarded()
             return utilties - purchased
         return 0
 
@@ -29,3 +29,14 @@ class UtilityController(feature_controller.FeatureController):
 
     def explain_category_group(self) -> str | None:
         return f"{self._utilities_available()} {self.category} available"
+
+    @property
+    def explain_list(self) -> list[str]:
+        explain = []
+        for claz in self.character.classes:
+            available = claz.utilities_awarded() - claz.utilities_purchased()
+            if available != 0:
+                explain.append(
+                    f"{available} {claz.display_name()} utilities available."
+                )
+        return explain

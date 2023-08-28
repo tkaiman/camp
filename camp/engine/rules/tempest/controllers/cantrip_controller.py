@@ -14,7 +14,7 @@ class CantripController(feature_controller.FeatureController):
     def _cantrips_available(self) -> int:
         if self.parent and self.parent.feature_type == "class":
             purchased = self.parent.cantrips_purchased()
-            cantrips = self.character.get(f"{self.parent.full_id}.cantrips")
+            cantrips = self.parent.cantrips_awarded()
             return cantrips - purchased
         return 0
 
@@ -35,3 +35,12 @@ class CantripController(feature_controller.FeatureController):
 
     def explain_category_group(self) -> str | None:
         return f"{self._cantrips_available()} {self.category} available"
+
+    @property
+    def explain_list(self) -> list[str]:
+        explain = []
+        for claz in self.character.classes:
+            available = claz.cantrips_awarded() - claz.cantrips_purchased()
+            if available != 0:
+                explain.append(f"{available} {claz.display_name()} cantrips available.")
+        return explain
