@@ -1,5 +1,5 @@
 name: Master Mystic Smith
-cost: 1
+cost: 3
 requires: mystic-smith
 description: |
-  The character can spend a Focus Quick 100 to Mend 1 point of summoned armor that anyone is wearing. This can be done at-will.
+  When the character uses a Power that produces the Mending effect, they may increase the Mending done by 1.

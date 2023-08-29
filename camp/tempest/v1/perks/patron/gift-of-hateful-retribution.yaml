@@ -10,8 +10,8 @@ cost:
 rank_labels:
   1: 10/-
   2: 15/-
-  3: 25/5
-  4: 50/10
+  3: 25/-
+  4: 50/5
 description: |
   The character’s patron, often a war or death deity, or some other similar greater power,
   has given the character the ability to destroy those who would end the patron’s beloved pet.

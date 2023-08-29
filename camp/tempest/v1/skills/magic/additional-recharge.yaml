@@ -6,9 +6,4 @@ requires:
     - basic-arcane
     - basic-faith
 description: |
-  The character is adept at tapping into her power source.
-  Once per Long Rest she can perform a small personal centering ceremony
-  (the details of which are up to the caster) which should take about five minutes.
-  At the end of this ceremony she can refresh four Novice spell-slots from any one
-  Sphere (although they do not have to be from the same class). These Novice spell-slots
-  can be traded in for higher tier slots (two for Adept, three for Greater, and four for Master).
+  The character is adept at tapping into their power source. The character may add 4 Novice spell slots to their Arcane or Divine spell slot refresh pool, chosen at the time the skill is purchased. Meaning, the total number of Novice spell slots they can refresh per Long Rest, using the relevant innate Powers, increases by 4.

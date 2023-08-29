@@ -1,8 +1,9 @@
 name: Advanced Warcasting
 cost: 5
-# TODO(#15): Also requires one greater-level spell slot
 requires:
   - warcaster
+  - any:
+    - divine.spell_slots@3
+    - arcane.spell_slots@3
 description: |
-  The caster can add one damage to all damaging cantrips that she casts. If the cantrip grants multiple
-  charges then this skill will only increase the damage of one charge, no matter how it is delivered
+  The caster can add one damage to all damaging Cantrips that they cast. If the Cantrip grants multiple charges then this skill will only increase the damage of one charge, no matter how it is delivered

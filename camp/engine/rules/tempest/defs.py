@@ -549,6 +549,24 @@ class Ruleset(base_models.BaseRuleset):
             hidden=True,
             scoped=True,
         ),
+        Attribute(
+            id="basic",
+            name="Basic",
+            hidden=True,
+            scoped=True,
+        ),
+        Attribute(
+            id="advanced",
+            name="Advanced",
+            hidden=True,
+            scoped=True,
+        ),
+        Attribute(
+            id="devotion",
+            name="Devotion Powers",
+            hidden=True,
+            scoped=False,
+        ),
     ]
 
     def feature_model_types(self) -> base_models.ModelDefinition:

@@ -1,0 +1,12 @@
+name: Axecraft
+cost: 4
+requires:
+  - short-weapons
+  - martial:2
+  - any:
+    - weapon-specialization+Axe
+    - weapon-specialization+Great_Axe
+description: |
+  An axe is a special short weapon (22"-36") or great weapon (48"-60’’) that must have an obvious "bladed head." The character has a special skill with an axe to sunder shields. Each time the axe strikes a shield, the character can expend a Spike to do Shield-Breaking.
+
+  If using a great weapon that’s an axe, you may instead refresh one Spike whenever you Destroy or Shatter a Shield.

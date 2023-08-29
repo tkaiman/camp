@@ -9,21 +9,18 @@ duration: Event
 refresh: Long Rest
 effect: Imbue Heal
 description: |
-  The Artisan prepares special totems and can give them to others. This Power will infuse up to
-  six small non-liquid items with the ability to heal. With an explanation, these may then be
-  handed out to others, but may not then be re-gifted. By using the item, the character gains
-  the ability to heal themself. This healing is taxing, however, and the character will then be
-  drained until they complete a Short Rest. The type of totem need not be all the same.
+  Through prayers to small/great Gods, energy manipulation, and/or binding of minor spirits, the Mystic imbues up to six non-liquid objects with power that may be gifted to others.
+
+  When bestowed to another, the Mystic explains the totem’s healing properties, and how they are used. The bound powers are non-transferrable, and cannot be regifted. Such power comes with a price, and the life given will take something in return, causing the recipient to be drained until they complete a Short Rest.
 subcard:
-  incant: None
-  call: None
+  incant: '“By these strange magics I invoke this gift”'
+  call: '“Heal 1 to Dying, Short Drain to Self”'
   delivery: RP
   accent: Poison
-  duration: Until consumed
+  duration: Permanent
   refresh: None
   effect: Heal
   description: |
-    By using the small, non-liquid totem that they were given by the Artisan, the character
-    gains the ability to Heal herself for 1 point before the next time they complete a Long
-    Rest. This healing takes a Quick Count of 100, but can be done while the character is
-    dying. After the healing is complete, the character is drained until they complete a Short Rest.
+    So long as the totem is on your person, you may speak the Incant to Heal 1 to Dying. This healing can be used while Dying and Drains the character until they complete a Short Rest.
+
+    **Note**: If you are unable to speak such as with the Dies Alone Flaw, the incantation cannot be said and thus the Power cannot be invoked.

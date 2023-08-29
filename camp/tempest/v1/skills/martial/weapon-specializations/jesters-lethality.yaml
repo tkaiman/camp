@@ -1,0 +1,7 @@
+name: Jester's Lethality
+cost: 4
+requires:
+  - shattering-toss
+  - martial:10
+description: |
+  When using a Thrown Weapon the character can aim for a Quick 10 to gain +1 Base Damage to the attack. This bonus may only be added once per attack.

@@ -1,0 +1,7 @@
+name: Chopper
+cost: 4
+requires:
+  - hooked-head
+  - martial:10
+description: |
+  The character has a special skill with an axe and does +1 Base Damage when they expend a Spike on a Basic Spike attack with an axe. If they do, the attack gains the Force Accent (which cannot be changed).

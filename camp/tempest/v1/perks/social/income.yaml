@@ -1,7 +1,5 @@
 name: Income
 cost: 3
-# TODO(#16)
+# TODO(#16): Add tracking to record the income
 description: |
-  Perhaps the character is a minor noble (see Minor Nobility Perk) or perhaps her family owns
-  a small business. Whatever the reason, the character gets a small stipend from it. The character
-  gets 7 Wealth at the beginning of every game.
+  Perhaps the character is a minor noble (see Minor Nobility Perk) or perhaps their family owns a small business. Whatever the reason, the character gets a small stipend from it. The character gets 7 Wealth at the beginning of every game.

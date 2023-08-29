@@ -1,6 +1,4 @@
 name: Inheritance
 cost: 4
 description: |
-  The character has a valuable item or sum of money left to her by her family or other benefactor.
-  The character gets a significant bonus to their starting wealth and adds 100 Wealth at the beginning
-  of her first Event.
+  The character has a valuable item or sum of money left to them by their family or other benefactor. The character gets a significant bonus to their starting wealth and adds 100 Wealth at the beginning of their first Event. This Perk costs only 3 if the benefactor is a Patron the character has already purchased.

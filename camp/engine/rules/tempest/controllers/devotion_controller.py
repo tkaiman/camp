@@ -29,6 +29,14 @@ class DevotionController(feature_controller.FeatureController):
         return self.definition.level
 
     @property
+    def is_basic(self) -> bool:
+        return self.definition.level == "basic"
+
+    @property
+    def is_advanced(self) -> bool:
+        return self.definition.level == "advanced"
+
+    @property
     def meets_requirements(self) -> Decision:
         if not (parent := self.parent):
             return Decision(success=False, reason="No parent religion defined.")

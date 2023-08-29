@@ -1,0 +1,7 @@
+name: Holding Back the Tide
+cost: 4
+requires:
+  - sweeping-strike
+  - martial:10
+description: |
+  When wielding a polearm in two hands you may spend a Spike to make an attack that is “Short Repel By Force.”

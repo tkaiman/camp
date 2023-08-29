@@ -1,0 +1,6 @@
+name: Flurry of Cuts
+requires:
+  - parrying-dagger
+  - martial:10
+description: |
+  When __only__ using one or two small bladed weapons, they may spend a Spike to do an attack that does “Double 1 by Force.” This attack can’t be modified other than changing its accent. In addition, whenever the character Counters an attack that hits their small weapons they may regain a Spike.

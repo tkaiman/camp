@@ -236,8 +236,7 @@ class PropExpression(BoolExpr):
         if match := _REQ_SYNTAX.fullmatch(expr):
             groups = match.groupdict()
             prop = groups["prop"]
-            slot = t if (t := groups.get("slot")) else None
-            if slot:
+            if slot := groups.get("slot"):
                 try:
                     slot = int(slot)
                 except ValueError:
@@ -261,7 +260,7 @@ class PropExpression(BoolExpr):
     def unparse(
         cls,
         prop: str,
-        slot: str | None = None,
+        slot: str | int | None = None,
         option: str | None = None,
         value: int = 1,
         single: int | None = None,

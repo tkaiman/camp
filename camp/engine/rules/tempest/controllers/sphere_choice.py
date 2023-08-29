@@ -37,7 +37,17 @@ class SphereGrantChoice(choice_controller.GrantChoice):
             return False
 
         # Rule 2: The choice must come from a casting class the character has, if they have any.
-        casting_classes = {claz.full_id for claz in character.classes if claz.caster}
+        # If a sphere is specified in controller_data, only classes of that sphere are considered.
+        if (data := self.definition.controller_data) and (sphere := data.get("sphere")):
+            casting_classes = {
+                claz.full_id
+                for claz in character.classes
+                if claz.caster and claz.sphere == sphere
+            }
+        else:
+            casting_classes = {
+                claz.full_id for claz in character.classes if claz.caster
+            }
         if casting_classes:
             # In the off chance that a cantrip/spell/whatever is listed with a cost, it should be excluded.
             # These have unique purchase rules and shouldn't be available as a choice for anything that uses

@@ -2,4 +2,4 @@ name: Heavy Armor
 cost: 3
 requires: medium-armor
 description: |
-  The character can gain up to eight armor points after hit location calculations.
+  The character can benefit from up to eight Armor Points of repped armor. Their total armor can still be altered by character Skills and Powers, which may increase their armor above this repped armor maximum.

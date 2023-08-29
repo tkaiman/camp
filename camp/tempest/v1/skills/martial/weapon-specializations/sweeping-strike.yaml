@@ -1,0 +1,7 @@
+name: Sweeping Strike
+cost: 4
+requires:
+  - polearmcraft
+  - martial:5
+description: |
+  When wielding a polearm in two hands using it to make an attack, if they miss or the power is Prevented, they may immediately (before making any other attacks or using other Powers) use the same Power with a second swing without expending additional uses. The second attempt must have a different target. If the retry misses or is Prevented, the Power is expended.

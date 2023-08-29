@@ -9,10 +9,12 @@ duration: Permanent
 refresh: Short Rest
 effect: 'Grant Type: Member of [Group Name]'
 description: |
-  The Socialite may spend significant time, generally 5-10 minutes, discussing their group to a character and at the end of the discussion induct that character into the group. The character must accept the invitation of their own free will and cannot be compelled into joining.
+  Socialites tend to find themselves at the center of social cliques. Acting as the cog of a wheel can confer many benefits to its members, including organization, information disbursement, and even mental health.
 
-  Upon joining the group the character gains the Inherent Type: Member of [Group Name]. The character may leave the group at any time by informing the Socialite or between games by informing staff that they wish to leave the group. Each Event the Socialite may call "Counter" to any attack or power used on the Socialite from any member of the group once per level of Socialite they possess. Joining the group also has other effects detailed in other Socialite powers below.
+  A Socialite may extend a formal invitation after spending 5-10 minutes discussing the group with the potential new member. Invitees must accept of their own free will, automatically resisting any compulsions to join.
 
-  The Socialite must inform staff they have created a group before inducting any members. To disband a group, the Socialite must inform staff between games. The Socialite may only have a number of characters as a part of their group equal to their Socialite level. Socialites may only be the Heart of a single group without other powers or items. Characters added to a group in this manner should be logged with staff.
+  The new member gains the Inherent Type: Member of [Group Name]. In addition, they gain effects from other Socialite powers targeting the group. However, they may leave at any time by informing the Socialite or by notifying Staff between games.
 
-  If the Socialite has a bodyguard, that character may be included in the group without counting against the total limit. The Socialite may also include themselves in their own group without counting against the total limit.
+  The Socialite gains a number of "Counters" equal to their levels in Socialite usable against any attack or power from any member of their group.
+
+  The Socialite must inform Staff when a group is created (before any recruiting happens), disbanded, and when a new member is inducted. Without powers or items to create an exception, the Socialite may have up to their Socialite level in members, and may only be the Heart of a single group. A Socialite's bodyguard, and the Socialite themselves, may be included in the group without counting against the total limit.

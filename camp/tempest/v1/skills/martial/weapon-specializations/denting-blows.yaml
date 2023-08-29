@@ -1,0 +1,7 @@
+name: Denting Blows
+cost: 4
+requires:
+  - toppling-blows
+  - martial:10
+description: |
+  The character has a special skill with a mace and can use it to rend Armor. If you are confident you landed a regular melee hit on the target, you can expend a Spike and call "Shatter Armor by Force" on your next swing which must be against the same target.

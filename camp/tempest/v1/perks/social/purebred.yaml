@@ -4,5 +4,4 @@ requires: breeds<2
 grants: bp-primary:3
 tags: [no-patron]
 description: |
-  You may choose one Breed and get 3 Breed Points to spend on Breed Advantages.
-  You may not buy Breed Advantages from any other Breeds than the one chosen.
+  You may choose one Breed and get 3 Breed Points to spend on Breed Advantages. You may not buy Breed Advantages from any other Breeds than the one chosen.

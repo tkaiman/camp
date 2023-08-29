@@ -2,9 +2,8 @@ name: Advanced Traps
 cost: 4
 requires: basic-traps
 description: |
-  This skill allows a character three specific benefits. First, when disarming a Triggered Trap,
-  they may keep the trap card if they disarm the Trap successfully. Secondly, if they disarm a
-  Latch Trap they may keep the Latch Card to use again. Third, characters that have unused Latch
-  or Trigger traps may set them as described in the Traps and Locks chapter. The exact details of
-  the set trap must be noted with the trap itself, and the original description card of the trap
-  mechanism must be included.
+  This skill allows a character three specific benefits. First, when disarming a Trap (Latch or Triggered), they may be able to keep the trap card if they disarm the Trap successfully (Staff Discretion).
+
+  Second, characters that have unused Latch or Trigger traps may set them as described in the Traps and Locks chapter. The exact details of the set trap must be noted with the trap itself, and the original description card of the trap mechanism must be included.
+
+  Third, they may, once per Long Rest when able to see a Trap Card call “Subtle Discern: What are the effects of that Trap?” and may walk over and examine both sides of the Trap card, reading it to themselves. They are not in any way protected during this time.

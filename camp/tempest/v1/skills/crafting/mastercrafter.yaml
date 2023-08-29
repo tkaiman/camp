@@ -21,3 +21,7 @@ option:
     Divine Ritual: master-divine-ritual
     Enchanting: master-enchanting
     Tinkering: master-tinkering
+description: |
+  Once per event, the crafter may create an item that they can submit to Staff for an artistic boon. An artistic boon will be a special benefit granted to that item, often at random. Depending on the setting, gaining the artistic boon may have some in-game process, such as being left to absorb power in an Arcane Kiln, or getting the blessing of some powerful being.
+
+  This skill may only be taken once, and is tied to the Master level crafting skill used as its prerequisite. If the Mastercrafted item falls into a category of item for which the character has Profession skill (such as Tinkering a sword and having Profession - Weaponsmith), the chances of good or multiple boons will be increased. Exceptional, immersive items (items submitted for a boon along with a physical prop of high production value) that are submitted have a chance of gaining more powerful boons than others.

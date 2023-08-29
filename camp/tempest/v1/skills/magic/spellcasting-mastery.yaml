@@ -1,12 +1,10 @@
 name: Spellcasting Mastery
-cost: 3
-ranks: 2
+cost: 6
 requires:
   - spell-preparation
   - greater-bookcaster
-  # TODO(#15): One master-level spell slot
+  - any:
+    - arcane.spell_slots@4
+    - divine.spell_slots@4
 description: |
-  Every spell for a single Base Class in the character’s spellbook is
-  considered Prepared at all times. Any instances of Spell Preperation the
-  character has may either be applied to another classes’ spell list, or can
-  be refunded, as long as the character retains at least one instance of Spell Preperation.
+  Every spell for a single Base Class in the character’s spellbook is considered Prepared at all times. Any instances of spell preparation the character has may either be applied to another classes’ spell list, or can be refunded, as long as the character retains at least one instance of spell preparation.

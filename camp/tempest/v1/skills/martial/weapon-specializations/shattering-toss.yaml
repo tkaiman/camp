@@ -1,0 +1,7 @@
+name: Shattering Toss
+cost: 4
+requires:
+  - thrown-weaponcraft
+  - martial:5
+description: |
+  Once per Short Rest, when using a Thrown Weapon the character may use a Spike to call "Shatter [Item] by Force" as their weapon tears apart any held item or door.

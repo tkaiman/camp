@@ -1,7 +1,4 @@
 name: Ancestral Relic
 cost: 2
 description: |
-  The character designates one item as being linked with her character’s history,
-  family, or fate. At the character’s option, this item can be chosen to be magical
-  or not, but it will not have specific magical qualities. The character can treat
-  the item as if she had the Cold Dead Hands Perk.
+  The character designates one item as being linked with their character’s history, family, or fate. At the character’s option, this item can be chosen to be magical or not, but it will not have specific magical qualities. The character can treat the item as if they had the Cold Dead Hands Perk. This Perk costs only 1 if the benefactor is a Patron the character has already purchased.

@@ -1,0 +1,7 @@
+name: Hooked Head
+cost: 4
+requires:
+  - axecraft
+  - martial:5
+description: |
+  The character has a special skill with an axe. When the axe strikes a held weapon or shield, the character may expend a Spike to "Disarm [Item]" where the item named must be the weapon or shield that was hit.

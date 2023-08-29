@@ -1,0 +1,7 @@
+name: Quick Shot
+cost: 4
+requires:
+  - bowcraft
+  - martial:5
+description: |
+  The character may do their Spike Damage with bows, without any aim time a number of times per Long Rest equal to their Maximum Spikes.

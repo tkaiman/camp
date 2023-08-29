@@ -1,8 +1,10 @@
 name: Mystic Armorer
-cost: 4
+cost: 3
+ranks: 3
+requires:
+  any:
+    - basic-arcane
+    - basic-faith
+    - apprentice-enchanting
 description: |
-  The character was born with a special ability to create summoned armors.
-  For every 2 points of summoned armor that the character creates with a Power
-  (including Spells), the armor has one additional point. For example, if a 2
-  point armoring Power were used (such as Mage Armor), it would make 3 points of Armor.
-  Note that this has no effect on Powers that add to existing armor.
+  The character can Focus for a Quick 100 to Mend their or another character’s physical armor within Touch range to full Armor Points. This can be done once per Long Rest. The Call for this is “Mend Physical Armor to Full.”

@@ -1,0 +1,7 @@
+name: Daggercraft
+cost: 4
+requires:
+  - weapon-specialization+Dagger
+  - martial:2
+description: |
+  When only using one or two small bladed weapons (each under 21") you find it easier to deal critical damage. While using daggers only, you have +1 Base Maximum Spikes for attacks with daggers. This bonus to Maximum Spikes is a Base change, and does not interact with the stacking rules for Maximum Spikes.

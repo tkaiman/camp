@@ -1,5 +1,5 @@
 name: Mystic Smith
-cost: 6
+cost: 5
 requires: mystic-armorer
 description: |
-  The character can spend a Focus Quick 100 to Mend 1 point of summoned armor she is wearing. This can be done at-will.
+  The Character may Focus Quick 100 to and spend a Spike to Mend another character's armor for 2 points. The appropriate call for this is “Mend 2 by Force.“

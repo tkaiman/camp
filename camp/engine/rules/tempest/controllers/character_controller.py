@@ -286,7 +286,7 @@ class TempestCharacter(base_engine.CharacterController):
         slot = int(expr.slot) if (expr and expr.slot is not None) else None
         count = 0
         for clazz in self.classes:
-            if slot is None:
+            if slot is not None:
                 count += self.get(f"{clazz.full_id}.spell_slots@{slot}")
             else:
                 count += self.get(f"{clazz.full_id}.spell_slots")
@@ -394,6 +394,19 @@ class TempestCharacter(base_engine.CharacterController):
     @cached_property
     def powerbook(self) -> spellbook_controller.PowerbookController:
         return self.martial.powerbook
+
+    @cached_property
+    def devotion(self) -> base_engine.AttributeController:
+        controller = attribute_controllers.SumAttribute("devotion", self, "devotion")
+        basic_devotion = attribute_controllers.SumAttribute(
+            "basic", self, "devotion", "is_basic"
+        )
+        adv_devotion = attribute_controllers.SumAttribute(
+            "advanced", self, "devotion", "is_advanced"
+        )
+        controller.basic = basic_devotion
+        controller.advanced = adv_devotion
+        return controller
 
     def sphere_data(self) -> list[SphereData]:
         spheres = []

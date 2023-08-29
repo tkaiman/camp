@@ -1,16 +1,22 @@
 name: Protected Casting
 tags: [mystic]
 description: |
-  When casting a ritual, the Artisan is shrouded by a magic circle.
-  The circle is only big enough to encompass the Artisan themself,
-  to a maximum size of 3 feet in diameter. The circle dissipates
-  immediately when the ritual ends. Once the circle is up, the
-  Artisan gains a number of Counters vs Weapons equal to their
-  Artisan class-level. These protections will prevent disruption of
-  the ritual by weapon delivered damage and effects - the Artisan
-  need only say “Counter, Protected Casting” when struck to
-  acknowledge the attack, but the ritual remains undisrupted.
+  When casting a ritual, the Artisan and additional Participants up to the Ritualist’s levels in Artisan,are shrouded by a magic circle. The circle is only big enough to encompass the Ritual itself. The circle becomes active when the ritual begins, and dissipates immediately when the ritual ends. Once the circle is up, the Artisan and each additional Participant gains a number of Counters vs Weapons equal to one third their Artisan class-levels. These protections will prevent disruption of the ritual by weapon delivered damage and effects - the Artisan/Participant need only say “Counter, Protected Casting” when struck to acknowledge the attack, but the ritual remains undisrupted.
 
-  These defenses are lost when the circle dissipates. The Artisan
-  is responsible for providing the physical representation of this,
-  otherwise the circle does not form.
+  These defenses are lost when the circle dissipates. The Artisan is responsible for providing the physical representation of this, otherwise the circle does not form.
+
+  Further, before the ritual, the Artisan may perform a Focus Slow 120 to draw out the power of a Forgesource, sacrificing it in the process to gain a number of uses of Repulsive Ritualist equal to half their Artisan level.
+subcard:
+  name: Repulsive Ritualist [Utility] [Mystic]
+  incant: None
+  call: '“[Name or Description] Short Obey by Fear: Do not intentionally disrupt this ritual.”'
+  target: Individual
+  duration: Short Rest
+  delivery: Verbal
+  refresh: Long Rest
+  accent: Fear
+  effect: Repel
+  description: |
+    While the Artisan is a ritualist actively engaged in a ritual, they can Repel other creatures who come near. The Artisan may use this Power without disrupting the ritual they are working on, even if the Ritual would normally be disrupted by the Ritualist using Powers.
+
+    **Note**: the use of this Power may not be enough to stop them from disrupting a Ritual.

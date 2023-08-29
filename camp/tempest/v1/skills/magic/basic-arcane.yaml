@@ -1,8 +1,18 @@
 name: Basic Arcane
 cost: 4
-grants: arcane.spellbook:4
+requires: level:1
+choices:
+  spell:
+    name: Novice Arcane Spell
+    limit: 4
+    matcher:
+      type: spell
+      sphere: arcane
+      tier: 1
+      parent:
+        type: class
+    controller: sphere-grant
+    controller_data:
+      sphere: arcane
 description: |
-  The character learns how to record Arcane spells into a spellbook and Prepare them.
-  She can add four Novice-tier Arcane spells into her spellbook. If the character has
-  levels in an Arcane spell-casting class, these spells must all be spells from one of those classes.
-  This skill confers no actual spell-slots or preparation slots.
+  The character learns how to record Arcane spells into a spellbook and Prepare them. They can add four Novice-tier Arcane spells into their spellbook. If the character has levels in an Arcane spell-casting class, these spells must all be spells from one of those classes. This skill confers no actual spell-slots or preparation slots.

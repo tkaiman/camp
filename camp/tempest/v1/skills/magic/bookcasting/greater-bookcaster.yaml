@@ -1,8 +1,10 @@
 name: Greater Bookcaster
 cost: 3
-# TODO(#15): Add "one greater spell-slot" requirement... if the skill actually develops one.
 requires:
   - adept-bookcaster
+  - any:
+    - arcane.spell_slots@3
+    - divine.spell_slots@3
 description: |
   The character can cast Greater spells directly from her spellbook.
   Although the spell will still exhaust a Greater Spell-Slot, it need not

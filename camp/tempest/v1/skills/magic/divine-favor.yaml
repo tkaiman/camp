@@ -1,0 +1,8 @@
+name: Divine Favor
+cost: 2
+ranks: unlimited
+requires:
+  - -undevoted
+  - devotion
+description: |
+  The character may channel divine favor through their martial prowess. Once per Short Rest, they may add the Radiance Accent to any one basic Spike or replace the Accent of a Martial Power (Basic, Advanced, etc) or basic attack that has an Accent already to Radiance.

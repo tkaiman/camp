@@ -1,0 +1,5 @@
+name: Expanded Hearth
+cost: 1
+requires: hearth
+description: |
+  When the character creates a Hearth, they may designate an additional five people (thus a maximum of 10 people, besides the caster) who also intend to sleep in that room and the area will count as a Hearth for them as well.

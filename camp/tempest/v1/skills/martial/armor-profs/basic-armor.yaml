@@ -1,4 +1,4 @@
 name: Basic Armor
 cost: 2
 description: |
-  The character can gain up to two armor points after hit location calculations.
+  The character can benefit from up to two Armor Points of repped armor. Their total armor can still be altered by character Skills and Powers, which may increase their armor above this repped armor maximum.

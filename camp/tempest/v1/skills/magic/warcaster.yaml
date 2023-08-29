@@ -1,7 +1,9 @@
 name: Warcaster
 cost: 5
 # TODO(#15): Actually requires one novice-level slot
-requires: caster
+requires:
+  any:
+    - arcane.spell_slots@1
+    - divine.spell_slots@1
 description: |
-  The caster can add one additional point to all damaging Spells (not cantrips) she casts.
-  If the spell grants multiple charges then this skill will only increase the damage of one charge, no matter how it is delivered
+  The caster can add one additional point to all damaging Spells (not Cantrips) they cast. If the spell grants multiple charges then this skill will only increase the damage of one charge, no matter how it is delivered

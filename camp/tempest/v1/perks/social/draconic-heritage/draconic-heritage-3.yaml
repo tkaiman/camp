@@ -1,9 +1,9 @@
 name: Draconic Heritage III
-cost: 2
+cost: 1
 requires:
   - level:10
   - draconic-heritage-2
 option:
   inherit: draconic-heritage-1
 description: |
-  The character may choose to Resist effects from their chosen Element. They may do this at will.
+  The dragon’s natural magical resistance expresses itself. After completing a Short Rest, the character automatically gains a Protect vs Packets. This Protect lasts until it is used or until the character completes a Short Rest.

@@ -107,7 +107,7 @@ class ClassController(feature_controller.FeatureController):
     def spell_slots(self, expr: PropExpression) -> int:
         if not self.caster:
             return 0
-        if expr is None or expr.slot is None:
+        if expr.slot is None:
             return sum(
                 self.spell_slots(expr.model_copy(update={"slot": t}))
                 for t in (1, 2, 3, 4)

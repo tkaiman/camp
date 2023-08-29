@@ -1,0 +1,7 @@
+name: Toppling Blows
+cost: 4
+requires:
+  - macecraft
+  - martial:5
+description: |
+  The character has a notable skill with a mace and can use it to knock foes off balance. Each time the mace strikes a target they may expend a Spike to call "Quick Slow."

@@ -1,0 +1,10 @@
+name: Bowcraft
+cost: 4
+requires:
+  - projectile-weapons
+  - martial:2
+  - any:
+    - weapon-specialization+Bow
+    - weapon-specialization+Crossbow
+description: |
+  Each time the Character strikes a shield with a projectile weapon, the character can expend a Spike to do Shield-Breaking.

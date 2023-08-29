@@ -1,0 +1,7 @@
+name: Parrying Dagger
+cost: 4
+requires:
+  - daggercraft
+  - martial:5
+description: |
+  When only using one or two small bladed weapons, the character may Counter any melee weapon attack that hits the character if they can see the source of the attack, by calling "Counter, Parry" once per Short Rest.

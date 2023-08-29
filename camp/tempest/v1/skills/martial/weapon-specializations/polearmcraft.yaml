@@ -1,0 +1,7 @@
+name: Polearmcraft
+requires:
+  - great-weapons
+  - martial:2
+  - weapon-specialization+Polearm
+description: |
+  When wielding a polearm (A great weapon with an overall length of 61"-90") in two hands you may spend a Spike to Counter any Disarm Effect that targets the polearm by calling "Counter, Polearmcraft."

@@ -6,5 +6,4 @@ requires:
     - level:10
     - good-timing
 description: |
-  Higher ranks of prospecting are more likely to yield Rare Minerals.
-  Additionally, Mithril Ore will only be obtainable by characters with Rank 3 Prospecting.
+  Higher ranks of prospecting are more likely to yield Rare Minerals. Additionally, Mithril Ore will only be obtainable by characters with Rank 3 Prospecting.

@@ -3,8 +3,6 @@ award:
   Single Favor: 1
   Life Debt: 2
 description: |
-  The character has a debt of honor or blood that must be repaid. Perhaps the character’s
-  life or family was saved by another. Perhaps, in a time of need, a favor was provided.
-  Whatever the debt, it is one that hangs over the character and can be collected upon at any time.
-  If the debt is one that can be paid by a single favor, it is worth 1 point. If the debt is one
-  that is perhaps impossible to fully pay off, it is worth 2.
+  The character has a debt of honor or blood that must be repaid. Perhaps the character’s life or family was saved by another. Perhaps, in a time of need, a favor was provided. Whatever the debt, it is one that hangs over the character and can be collected upon at any time. If the debt is one that can be paid by a single favor, it is worth 1 point. If the debt is one that is perhaps impossible to fully pay off, it is worth 2.
+
+  **Note**: This debt must be to an NPC or other plot driven entity to qualify. Honor debts to PCs (only) do not qualify.
