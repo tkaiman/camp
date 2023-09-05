@@ -9,6 +9,13 @@ accent: None
 duration: Passive
 refresh: None
 effect: Special
+option:
+  values:
+    - Alchemy
+    - Arcane Ritual Magic
+    - Divine Ritual Magic
+    - Enchanting
+    - Tinkering
 description: |
   Artisans, being masters of their trade, craft some plans so often that the patterns have
   become mere muscle memory, and are so rote that it becomes trivial to build several copies
