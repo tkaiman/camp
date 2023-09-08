@@ -12,6 +12,7 @@ from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db import IntegrityError
 from django.db import transaction
+from django.http import Http404
 from django.shortcuts import get_object_or_404
 from django.shortcuts import redirect
 from django.shortcuts import render
@@ -147,7 +148,10 @@ def feature_view(request, pk, feature_id):
     character = get_object_or_404(Character, id=pk)
     sheet = character.primary_sheet
     controller = cast(TempestCharacter, sheet.controller)
-    feature_controller = controller.feature_controller(feature_id)
+    try:
+        feature_controller = controller.feature_controller(feature_id)
+    except ValueError:
+        raise Http404(f"Feature with ID '{feature_id}' not found or is seeekrit.")
     issues = feature_controller.issues() or []
 
     can_dec = feature_controller.can_decrease()
