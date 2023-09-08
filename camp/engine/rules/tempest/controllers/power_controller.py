@@ -46,9 +46,10 @@ class PowerController(feature_controller.FeatureController):
         return 0
 
     def can_afford(self, value: int = 1) -> Decision:
-        if (self._powers_available + self._higher_tier_available) >= value:
+        available = self._powers_available + self._higher_tier_available
+        if available >= value:
             return Decision.OK
-        return Decision(success=False)
+        return Decision(success=False, amount=max(available, 0))
 
     @property
     def explain_category_group(self) -> str | None:
