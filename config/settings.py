@@ -202,3 +202,9 @@ MESSAGE_TAGS = {
 }
 
 UNDO_STACK_SIZE = env.int("UNDO_STACK_SIZE", default=10)
+
+if sentry_dsn := env.str("SENTRY_DSN", default=None):
+    import sentry_sdk
+    from sentry_sdk.integrations.django import DjangoIntegration
+
+    sentry_sdk.init(dsn=sentry_dsn, integrations=[DjangoIntegration()])

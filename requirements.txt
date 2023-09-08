@@ -457,6 +457,9 @@ requests==2.31.0 ; python_full_version >= "3.11.0" and python_full_version < "4.
 rules==3.3 ; python_full_version >= "3.11.0" and python_full_version < "4.0.0" \
     --hash=sha256:12c8bbab5f54560e68528fcca7abc0e162c35ac882e3cc0daed40ac49c963070 \
     --hash=sha256:bf7bea8b724b73c36a622714c1b3557620c187a2ee05321a2ac8ab7472dc4464
+sentry-sdk==1.30.0 ; python_full_version >= "3.11.0" and python_full_version < "4.0.0" \
+    --hash=sha256:2e53ad63f96bb9da6570ba2e755c267e529edcf58580a2c0d2a11ef26e1e678b \
+    --hash=sha256:7dc873b87e1faf4d00614afd1058bfa1522942f33daef8a59f90de8ed75cd10c
 setuptools==67.7.2 ; python_full_version >= "3.11.0" and python_full_version < "4.0.0" \
     --hash=sha256:23aaf86b85ca52ceb801d32703f12d77517b2556af839621c641fca11287952b \
     --hash=sha256:f104fa03692a2602fa0fec6c6a9e63b6c8a968de13e17c026957dd1f53d80990
