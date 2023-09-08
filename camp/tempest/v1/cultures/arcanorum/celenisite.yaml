@@ -1,0 +1,37 @@
+name: Celenisite
+discounts:
+  basic-faith: 1
+  macecraft: 1
+  lore+Religious: 1
+description: |
+  _Locations: Arcanorum: Celenis, The Isle of Krell_
+
+  _Concepts: Religious, Educated, Virtuous_
+
+  A religious people through and through, the Celenisite Isles boast the highest ratio of clerics to population in the known world, a fact for which they are notably proud. Religious education is the de facto state mandate, and the people encourage this down to the family and individual level.
+
+  As one of the primary venues for religious teaching, the Schola Divina is part of every Celenisite’s upbringing: a boarding type school in the early pre-teens through the age of sixteen that rigorously educates its pupils in the ways of the world, declaring that “Intellectus divinus est” or “Understanding is Divine”. As such, Celenisites are often among the most well educated in the known world, and believe that knowledge is the path to better connection with their deity, for “If the divines are omniscient, should not the Celeniste strive to model themselves the same way?”
+
+  In personal dealings, the Celeniste strives to uphold the Triune Virtues: Honesty, Integrity, and Perseverance. While other cultures may find the bluntness of the Celenisites words sometimes off-putting, one can trust they mean what they say, even if it’s not the most pleasant.
+
+  ## Commonalities of the Culture
+
+  * Celenisites, being schooled by the state, are invariably able to read and write, and treat illiteracy as a failing to be pitied.
+  * The colors of the Celenisite’s favored deity, Aeterius, are red and gold, and they are often represented in their fashion regardless of individual devotion.
+  * Being islanders by nature, Celenisites are often familiar with the ins and outs of basic sailing, fishing, and other nautical concepts.
+  * The Celenisite Islands are traditionally metal-poor, and so only the most wealthy or cosmopolitan use it for anything other than practical uses. Metal jewelry is generally uncommon, more likely to be made primarily of wood, polished stone, and opal and mother of pearl.
+  * Celenisite government is generally perceived as the elevation of the “worthy” by either elected or divine means. This tends to foment great faith in the leadership - until they prove themselves unworthy, at least.
+subcard:
+  name: First Rites [Inheritance]
+  incant: 'Slow 300 RP: Doing community prayer, saying Rites to the High Lord. “By the will of the Highlord, bestow your light upon the chosen.”'
+  call: Grant Protect vs Darkness
+  target: Three Individuals
+  delivery: Touch
+  accent: Radiance
+  duration: Until Used
+  refresh: Long Rest
+  effect: Grant Protect
+  description: |
+    The First Rites of the High Lord are a rote memory drilled into every Celenisite native, virtually recitable in their sleep. Few know the reason this particular rite is so ingrained in the culture, but given the protection it bestows, few inquire too deeply.
+
+    After a Slow 300 by saying Rites aloud or actively praying with others to the High Lord, the Celenisite may grant protection from darkness up to three targets, one of which may be themselves.

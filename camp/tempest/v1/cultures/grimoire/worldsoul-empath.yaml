@@ -3,7 +3,6 @@ discounts:
   basic-medicine: 1
   basic-faith: 1
   lore+Religious: 1
-grants: empathic-nature
 description: |
   _Locations: Grimoire: The Ever-Autumn_
 
@@ -24,18 +23,15 @@ description: |
   * Worldsoul Empaths tend to be cooperative and supportive in disposition.
   * Worldsoul Empath cults often incorporate personal sigils among their groups to identify them as members of the same cult.
   * Garments are often naturally colored.
----
-id: empathic-nature
-type: inheritance
-parent: worldsoul-empath
-name: Empathic Nature
-incant: RP
-call: '“[Name or Description] Discern to Living: What emotion are you feeling?”'
-target: Individual
-duration: Instantaneous
-delivery: Verbal
-refresh: Short Rest
-accent: None
-effect: Discern
-description: |
-  When communicating with a living creature, this social Power allows the Empath to determine what emotions that creature is feeling at that point in time.
+subcard:
+  name: Empathic Nature [Inheritance]
+  incant: RP
+  call: '“[Name or Description] Discern to Living: What emotion are you feeling?”'
+  target: Individual
+  duration: Instantaneous
+  delivery: Verbal
+  refresh: Short Rest
+  accent: None
+  effect: Discern
+  description: |
+    When communicating with a living creature, this social Power allows the Empath to determine what emotions that creature is feeling at that point in time.

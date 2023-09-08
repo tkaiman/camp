@@ -1,0 +1,35 @@
+name: Hjalmorian
+discounts:
+  advanced-shields: 1
+  fence: 1
+  medium-armor: 1
+description: |
+  _Locations: Arcanorum: Hjalmor, The Tarandri Steppes_
+
+  _Concepts: Spendthrift, Discoverer, Adventurer_
+
+  The Hjalmorians are an interesting people: commonly seen as stoic and rational by other cultures, they are possessed of a certain kind of passion for wealth and celebration above all else. While it is uncommon to see an Hjalmorian react with more than subdued emotions, once the ring of a gold coin, or the shine of a freshly polished jewel enters the room, or the mere mention of a party,  the Hjalmorian’s reserved nature disappears without a trace.
+
+  Not so much greedy, in the traditional sense, Hjalmorians revel in the possibilities of what wealth offers, as though every coin is a gift just waiting to be unwrapped. Thus while the allure of wealth is great, the Hjalmorian is often a spendthrift, rarely hoarding it, preferring to accumulate only so much, and then spent to hold great feasts, buy rounds at the bar, or otherwise acquire extravagances, even if they are fleeting.
+
+  This great churn, the constant acquisition of wealth and subsequent spending of it, means that the spirit of discovery and adventuring is common among the Hjalmorian people, and as a profession generally lauded. Stories of great quests, bountiful hauls, and week-long celebrations are common among the Hjalmorians. Truly, the Hjalmorian culture embodies the “Work to Live” ethic.
+
+  ## Commonalities of the Culture
+
+  * As the Hjalmorians sense of celebration is second to none, the average Hjalmorian is likely to have a personal mug, some form of flask, or even a jug of ale handy at virtually all times.
+  * Stalwart defenders of the Lowstones, many Hjal are comfortable in the mountains and caves beneath them, as heights and depths are commonplace in Hjalmorian experience.
+  * As the home of most Hjal is the Lowstones, much of the jewelry and ornamentation is derived from the gems, metals, and stones mined there. Common materials like iron, steel, hematite, agates, and quartzes feature prominently.
+  * Hjalmorians tend to favor more metallic substances in arms and armor, commonly taking to chain, scale, and plate when possible. Helms, breastplates, and the like are common heritage items, passed down from generation to generation: well cared for, but often with tell-tale damage from a previous generation.
+  * One of the most celebrated festivals in Hjalmorian culture is Shadekeep, commonly held the day after the summer solstice, heralding the latter half of the year. For some communities, it is a gift giving occasion, and shade-related gifts are common and the celebratory drinks often feature tiny colorful umbrellas with written fortunes for lucky hidden inside.
+subcard:
+  name: Another Round! [Inheritance]
+  incant: None
+  call: Grant Protect vs Fear to Self by Will
+  target: Self
+  delivery: None
+  accent: Will
+  duration: Instantaneous
+  refresh: Short Rest
+  effect: Grant Protect
+  description: |
+    Always willing to spread petty cash around, the Hjalmorian knows that a proper tip ensures prompt service now, and good favor in the future. When tipping the Tavern Staff, or the owner or representative of an in-game establishment at least one Wealth that must be accepted by the recipient, the Hjalmorian may Grant themselves a Protect vs Fear.

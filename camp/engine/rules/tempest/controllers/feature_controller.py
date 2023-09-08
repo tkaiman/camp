@@ -24,7 +24,6 @@ _SUBFEATURE_TYPES: set[str] = {
     "subfeature",
     "innate",
     "archetype",
-    "inheritance",
     "devotion",
     "subbreed",
     "breedchallenge",

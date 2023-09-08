@@ -1,0 +1,37 @@
+name: Elyran
+discounts:
+  mastercrafter: 1
+  rumormonger: 1
+  lore+Shadow: 1
+description: |
+  _Locations: Arcanorum: Elyra, Qairus_
+
+  _Concepts: Focused, Relentless, Artistic_
+
+  The Elyran is one of incongruous dualities: one may lavish meticulous attention to the tiniest detail in their chosen profession, while completely disregarding the ramshackle nature of everything else around them. The flash of a bolt of lightning most well symbolizes the Elyran: unimaginably impactful in one specific area, leaving the rest untouched.
+
+  Elyrans are quite often regarded as being the "specialists of specialists," since they believe that simply doing one thing well is not enough; instead, they strive for perfection: striving for the ever-out-of-reach is the the way of any true Elyran.  Because the tangible world never quite matches the mental perfection envisioned by the Elyran, beautiful art creations that have been laboriously created for weeks and garnered acclaim from those around them are often forgotten, tossed aside, or merely labeled as "okay."
+
+  The fact is, when Elyrans are focused on a goal, they are relentless in their pursuit of that objective, frequently sacrificing themselves, others, and whatever else is necessary to see that goal achieved.
+
+  Having an Elyran compatriot, means that one could expect them to storm the gates of the Abyss without hesitation, without remorse, and still have the same single-mindedness as they went in long after many would turn back.
+
+  ## Commonalities of the Culture
+
+  * Elyrans are commonly fascinated by the art and craft of other cultures, and will often carry small notebooks to take notes in, or sketch while out in the wild during down times. These notes and sketches aren’t always practical, just as often a detail that caught their attention as anything useful.
+  * Elyran culture enjoys strongly dyed fabrics in complex patterns. They enjoy making a statement with their clothing.
+  * Elyrans tend to favor more fitted garments above the natural waist, and more flowing garments below. Billowing pant legs or skirts and long tunics are common, accentuated with draped scarves, decorative free-hanging cords, and the like.
+  * Elyrans often prefer to have many things at the ready, carrying satchels, bags, backpacks and the like everywhere they go.
+  * Low stakes gambling is a common part of Elyran socializing, most commonly for petty cash, or simple baubles the table is interested in. More serious games often center around beloved art pieces or particularly rare or valuable clothing and jewelry. The same piece may change hands many times in a night, or over the course of several sessions, until the “shine” of a piece wears off.
+subcard:
+  name: Knowing the Tell [Inheritance]
+  incant: RP
+  call: '“Subtle Discern: Are you cheating?”'
+  target: Individual
+  delivery: RP
+  accent: None
+  duration: Instantaneous, Passive
+  refresh: Short Rest
+  effect: Discern, Immunity
+  description: |
+    While directly involved in a game of gambling the Elyran may observe a target, and engage in conversation with them for at least one minute. Once they have done so, they may Discern if the target has been cheating at the game they have been playing. This Character is immune to powers that would Discern if they are cheating.

@@ -1,0 +1,34 @@
+name: Brassic
+discounts:
+  axecraft: 1
+  rumormonger: 1
+  lore+Noble: 1
+description: |
+  _Locations: Arcanorum: The Brassic Isles, Vunstimil, Kratis_
+
+  _Concepts: Practicality, Loyalty, Power_
+
+  Built foundationally on the concept that “Might makes right”, the Brassic people are a forthright, no-nonsense, and often militaristic people. A Brassic, believing that force is the ultimate problem solver, is the most likely to suggest violence to solve an intractable problem plaguing them. It’s not that they are incapable of solving issues by different means, but they just prefer to focus on proactive solutions that ensure the problem never arises again.
+
+  The Brassic are politically cutthroat, and are unlikely to balk at either the sword or pen in accomplishing whatever ends they have set. They have little qualms about the use of deception, poison, or assassination to ensure the success of their agenda. Many court intrigue novellas are set in the Brassic Isles, often without embellishment, as the Brassics have little patience for the niceties of court protocol, and prefer a more direct approach: the Brassic are not above murdering a competitor to ensure the success of their agenda.
+
+  In their personal lives, Brassics are fiercely loyal, defining almost all relationships in a “inside/outside” set of concentric rings with clearly defined borders. Each person they meet is labeled, defined as to the relationship they hold to the Brassic, and changes in that status are clearly communicated, ie: “Greetings, friend Toric.”
+
+  ## Commonalities of the Culture
+
+  * Brassic culture is one of impending violence at virtually all occasions. Few would allow themselves to the completely disarmed, often having at least a small dagger or similar stowed away somewhere discreet.
+  * Brassics favor loose fitting clothing, with a preference for long sleeves, often in blues, greens, and grays.
+  * Brassics favor whale bone, ivory, antler, and horn based accents & jewelry in both their casual and formal dress.
+  * Brassics are practical, often taking the most straightforward approach, and patience is not often considered a virtue. Not exactly impulsive, but it might seem that way to outsiders.
+  * Brassics tend towards more hand crafted materials, including leathers, furs, and broad woven cottons. These are often integrated into something that's exceptionally well tailored.
+subcard:
+  name: The Strong Endure [Inheritance]
+  call: "Resist"
+  target: None
+  delivery: None
+  accent: None
+  duration: Passive
+  refresh: None
+  effect: Resistance
+  description: |
+    Due to the harsh nature of the Brassic traditions it has hardened the people of the land to be able to push through the pains of torture. Harking back to the brutal punishments of the isle. The character has Resistance to Discern Effects that are delivered by the Agony, Flame, or Lightning accents that would come from being tortured.

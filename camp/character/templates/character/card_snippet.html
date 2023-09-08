@@ -11,12 +11,17 @@
         {% if card.should_format_as_card %}
         <table class="table table-striped table-responsive">
             <tbody>
+                {% if card.incant %}
                 <tr>
                     <td colspan="2"><span class="card-text"><strong>Incantation:</strong> {{card.incant}}</span>
                 </tr>
+                {% endif %}
+                {% if card.call %}
                 <tr>
                     <td colspan="2"><strong>Call:</strong> {{card.call}}</td>
                 </tr>
+                {% endif %}
+
                 <tr>
                     <td><strong>Target:</strong> {{card.target}}</td>
                     <td><strong>Duration:</strong> {{card.duration}}</td>

@@ -1,0 +1,43 @@
+name: Summum Outlander
+discounts:
+  basic-shields: 1
+  light-armor: 1
+  basic-medicine: 1
+description: |
+  Locations: Arcanorum: The Summum Wilds
+
+  Concepts: Tribal, Loner, Outlander, Hermit
+
+  Deep in the continent of Summum, the Old Empire lies in ruins, covered over by centuries of death, dust, and the reclamation of nature. In this place, which was once home to a bustling civilization, there are now only scattered communities and solitary people to be seen making their way through a landscape that has been taken over almost entirely by mother nature and all of her wondrous and horrifying creations.
+
+  The Outlanders are difficult to define as a group, as each tribe might have their own customs and methods for dealing with the harsh realities of the Summum Wilds, thus assumptions and generalizations are just as likely to get one into trouble as to provide potential insight. However, due to the environs, some aspects often hold true: Outlanders are a practical people by need - they often must be ready to move at a moments notice, and so they often pack lightly, and are sensitive to their own personal noise as avoiding a fight is a fight one is more likely to survive.
+
+  The monstrous denizens of the Wilds provide ample weaponry, as the long claws and sharp teeth they leave behind are well suited to armaments, both for small and medium length melee weapons, and bolts and arrows. Truly massive two-handed blades are very rare, as the materials needed to craft a single edge that long are difficult to come by, and cumbersome to carry.
+
+  Lastly, trust among the Outlanders is a slow process, as the Wilds are not kind to anyone, least of all those who would display a weakness that could be exploited. However, once a true trust is earned, it is not lightly forgotten, and can forge bonds that last decades, even without crossing paths for years.
+
+  ## Commonalities of the Culture
+
+  * Born on the continent of Summum, Outlanders are used to having to rough it out in the wilderness, and have a practical and pragmatic approach to clothing and equipment. Most Outlanders have little use for ornamentation beyond simple designs painted or sewn into their garments.
+  * Knowing that every venture into civilized lands is tempting fate, Outlanders are often keen on establishing single points of contact for the things they need, minimizing the people they need to trust in order to get by. Not truly anti-social, Outlanders just take a lot longer to get to know, and even old friends might be surprised by a new tale from the Outlander’s history.
+  * Given the resources available, the vast majority of clothing and equipment is scrounged or derived from the lands they inhabit, thus almost all of it is made from natural materials, or many-times-repaired civilized goods, however an artifact of the Old Empire, abused or broken, can often be repurposed.
+  * Given that finished goods are hard to come by, many Outlanders have a small collection of items, or even a single object, often practical, but sometimes sentimental that stands out as particularly favored and well cared for - a cameo of a family member, a small golden statuette, or a totem from a tribe long left behind in search of adventure.
+  * Often superstitious, Outlanders cultivate a rich oral history, which guides their understanding of the world they inhabit, and while these mythic tales aren’t always factually correct, they often bear adages of wisdom and insight that belies their fanciful nature.
+subcard:
+  name: Salvage [Inheritance]
+  incant: None
+  call: "RP, Appropriate Skill Call"
+  target: Skill Target
+  delivery: Touch
+  accent: None
+  duration: Instantaneous
+  refresh: Long Rest
+  effect: Scavenge or Forage
+  description: |
+    Years of living out in the Wilds have taught the Outlander that everything has a place, if gathered correctly and put to good use. Once per Long Rest, the Outlander may use either the Scavenge or Forage skill as if they had Rank 1 in it, allowing them to scavenge from one creature or gather one Bloom or Night Prize.
+
+    They must perform all the appropriate roleplay of those skills, and have the appropriate implements, or this skill fails and cannot be used until the next Long Rest. Any negative effects of the gathering skill still apply to the Outlander.
+
+    If the Outlander already has Scavenging, they may instead use this to negate a single negative outcome from Scavenging, once per Long Rest. If they already have Foraging this Power allows them to exceed their per Event Foraging limits by 4 (1 per Long Rest).
+
+    When utilizing this power to Forage, the Outlander may not pull from Patches, they may only take individual Bloom or Night Prizes.

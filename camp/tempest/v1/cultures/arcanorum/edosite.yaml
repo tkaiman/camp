@@ -3,7 +3,6 @@ discounts:
   armor-expertise: 1
   basic-medicine: 1
   lore+Noble: 1
-grants: glory-of-the-past
 description: |
   _Locations: Arcanorum: Edos, Ordun, Solena, Enia, Avalin, Thera_
 
@@ -20,20 +19,17 @@ description: |
   * Personal grooming is also a facet of Edosite culture, as any opportunity to show off is regularly taken. Intricate shaving patterns, jewel studded piercings, and colorful tattoos are just some of the lengths Edosites will go to stand out.
   * Edosites are notable tippers in their culture, prone to a subtle language of coin that some other cultures might perceive as graft or outright bribery. A coin passed in confidence is common when receiving a boon from another, and the winnings from a hot night gambling is commonly spread to those who cheered them on.
   * Edosite culture, being who they are, are no stranger to verbal tales of deals with the deities and demons of the world gone horribly wrong. So, while normally impulsive, Edosites are generally reluctant to engage in deals they don’t know the full scope of, often referring to tales of distant (and probably fictional) relatives who were burned, usually metaphorically, but not always.
----
-id: glory-of-the-past
-type: inheritance
-parent: edosite
-name: Glory of the Past
-incant: 'Slow 300 RP: Recanting the tales of the glory days of Edos and the betrayal of the Brassic.'
-call: “Short Strengthen By Will”
-target: Self, Individual
-duration: Short Rest
-delivery: Touch
-refresh: Long Rest
-accent: Will
-effect: Strengthen
-description: |
-  When thinking of the glory days of Edos it brings happiness to most Edosite’s but the treason of the Brassic people brings a deep seated anger as that was at the core of the fall of their empire. With these heavy emotions they can fuel themselves to push further and prove that the Edosite’s are not to be trifled with. After spending some time talking of the glory days and the betrayal of the Brassic they may embolden others that feel the story with “Short Strengthen by Will” To themselves and one other person.
+subcard:
+  name: Glory of the Past [Inheritance]
+  incant: 'Slow 300 RP: Recanting the tales of the glory days of Edos and the betrayal of the Brassic.'
+  call: “Short Strengthen By Will”
+  target: Self, Individual
+  duration: Short Rest
+  delivery: Touch
+  refresh: Long Rest
+  accent: Will
+  effect: Strengthen
+  description: |
+    When thinking of the glory days of Edos it brings happiness to most Edosite’s but the treason of the Brassic people brings a deep seated anger as that was at the core of the fall of their empire. With these heavy emotions they can fuel themselves to push further and prove that the Edosite’s are not to be trifled with. After spending some time talking of the glory days and the betrayal of the Brassic they may embolden others that feel the story with “Short Strengthen by Will” To themselves and one other person.
 
-  **Note**: This power can’t be done alone, at least one other individual must be present for the telling of the tale.
+    **Note**: This power can’t be done alone, at least one other individual must be present for the telling of the tale.

@@ -1,0 +1,35 @@
+name: Vedean
+discounts:
+  two-weapon-style: 1
+  light-armor: 1
+  basic-arcane: 1
+description: |
+  _Locations: Arcanorum: Vedea, Copoa_
+
+  _Concepts: Magical, Innovative, Aesthetic_
+
+  The Vedean culture is strongly focused on the act of creation as an expression of self: whether that be via crafting of practical (but artistically produced) good, fine art, or less material expressions like music and theater, each Vedean is encouraged to have a method of expression and growth as part of their daily lives.
+
+  Among the Copoans, storytelling, singing, whittling and glass making are common, while mainlanders often tend gardens, take up painting, knit or crochet, or take up more traditional crafts as a hobby or side business. As such it’s rare that a Vedean doesn’t have something occupying their hands in the “between moments”, that life affords them.
+
+  Socially, Vedeans are an upbeat and positive people, viewing the world around them as a wondrous joy to experience. They greet each new day, person, and place with a sense of adventure, and their enthusiasm can often be infectious to others. Bards, playwrights, painters, sailors, adventurers and a dozen other professions are all extolled as “horizon expanders”, and universally lauded as excellent ways to spend one’s life.
+
+  ## Commonalities of the Culture
+
+  * Hailing from a coastland nation, with sailing deeply ingrained in the Copoans, virtually every Vedean knows how to swim, and how to chart a basic course through the waters of their homelands’ often choppy waters.
+  * Jewelry and ornamentation of the Vedeans commonly features glass and other crystals, matched with materials from the sea: mother of pearl, shells, and so on. Northern Vedeans, and the more urbane, tend towards gems and semiprecious stones embedded directly into their clothing, tending towards silver and opaque stones like obsidian, turquoise, and malachite.
+  * The dueling culture of the Vedeans can be complex, particularly to outsiders, as each community has their own variations on what is acceptable, allowed and discouraged. What is common across all variations is that once the duel is complete, the matter is settled and the outcome accepted by all.
+  * As a culture commonly exposed to the sun for long periods, loose fitting clothing with an eye towards avoiding extended exposure to the sun is common. In addition, colorful patterned parasols have recently become fashionable among the elite and younger generations.
+  * Vedean cities are often rife with magical improvements, and so the urban dwellers of Vedea are often at least minorly magically adept, often having small items or cantrips available to them, even if that’s not normally their “stock in trade.”
+subcard:
+  name: Arcane Bypass [Inheritance]
+  incant: “By the arcane weave, I act as your creator!”
+  call: '“[Name or Description] Short Obey to Construct: Act as though I don’t exist.”'
+  target: Construct
+  delivery: Verbal
+  accent: Arcane
+  duration: Short Rest
+  refresh: Event
+  effect: Obey
+  description: |
+    The Vedeans are familiar with constructs, as they tend to many aspects of the cities they live in. In many ways constructs are the lifeblood of Vedean cities, and the citizenry are used to ordering them around to perform even the most trivial of tasks. This familiarity often extends to constructs even if they are not of Vedean make.

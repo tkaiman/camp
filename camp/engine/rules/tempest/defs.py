@@ -298,10 +298,6 @@ class Culture(BaseFeatureDef):
     type: Literal["culture"] = "culture"
 
 
-class InheritancePower(BaseFeatureDef):
-    type: Literal["inheritance"] = "inheritance"
-
-
 class Religion(BaseFeatureDef):
     type: Literal["religion"] = "religion"
 
@@ -377,7 +373,6 @@ FeatureDefinitions: TypeAlias = (
     | Cantrip
     | Utility
     | Culture
-    | InheritancePower
     | Religion
     | DevotionPower
     | Breed

@@ -1,0 +1,35 @@
+name: Thetlish
+discounts:
+  forage-1: 1
+  basic-medicine: 1
+  lore+Historical: 1
+description: |
+  _Locations: Arcanorum: Thetlin_
+
+  _Concepts: Hard Working, Courageous, Bucolic_
+
+  The Thetlish people are a quiet, often unadventurous, and clannish people, generally given to finding themselves farming the lands they live on, and rarely straying more than a dozen miles or so from where they’re born. The Thetlish rivers provide nearly all its people could want, and so the people there have grown quiet, and relaxed.
+
+  That said, the Thetlish are no stranger to hard work, being primarily farmers, and likewise no stranger to the defense of those lands from the errant wolves from the Staghorn mountains, or the occasional raiders from the Tarandri Steppes. When these tribulations do occur, the Thetlish take it in stride, stepping up to defend their homes with a steadfast courage that surprises others, only to be cast off once the danger has passed, to find themselves a hammock to spend the rest of the day in.
+
+  Given the sedate nature of the Thetlish, it can be surprising to know that they are fairly passionate about history and notably genealogy, as they recount the tales of their forefathers regularly, especially those of the early Thetlish and the founding, taming, and building of the Thetlish nation.
+
+  ## Commonalities of the Culture
+
+  * The Thetlish, being a people of the farmland, are never too far from a good brew, a hearty meal, and close family. Thetlish celebrations commonly revolve around feasts and country fairs covering livestock, brewing competitions, and sampling arrays of imported foods and delicacies.
+  * The Thetlish tend to favor natural dyes, earthen tones, and less metallic materials when fashioning clothes - wools, cotton, leather, and linens feature prominently. Greens, blues, browns, and ochres are common shades seen in much of common folk dress, and most “white” clothing tends towards a warmer, bone sore of hue.
+  * During social gatherings, Thetlish commonly break out clean and tidy garb of various sorts, with a trend towards vests and chained timepieces (if one can find a reasonable tinker). Knee high leather boots, with breeches and flared pantaloons regularly feature in Thetlish fashion.
+  * Few Thetlish are without a harrowing tale of bravery from their ancestors' past, and a casual sort of “one upmanship” regularly occurs, right up until someone calls out an obvious fabrication in good humor.
+  * While not every Thetlish is born on a farm, the pervasive sense of “living off the land” continues, and so many Thetlish pride themselves on being savvy at basic campmaking and provisioning from the natural world. Few are ill-prepared enough to fail to thrive in the forest during a short trip of a few days,even if they may crave the comforts of home.
+subcard:
+  name: One Foot in Front of the Other [Inheritance]
+  incant: 'Slow 300 RP: Talking about the long days of work back home and the strength needed to get through it.'
+  call: "Grant Protect vs Weakness"
+  target: Up to 3 Individuals
+  duration: Until Used
+  delivery: Touch
+  accent: None
+  refresh: Short Rest
+  effect: Grant Protect vs Weakness
+  description: |
+    The Thetlish are no stranger to hard work and long days. Talking with others about the preparations they had to do to have the energy for a long day of work can empower others to use those ideals to push through the woes of weakness. After talking with others about this they may “Grant Protect vs Weakness” to up to 3 individuals who were present during the RP.
