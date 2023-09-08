@@ -12,15 +12,27 @@ from django.utils.safestring import mark_safe
 
 from camp.engine.rules.base_engine import CharacterController
 from camp.engine.rules.base_engine import PropertyController
+from camp.engine.rules.tempest.controllers.feature_controller import FeatureController
 
 register = template.Library()
+
+
+class _Extension(md.extensions.Extension):
+    def extendMarkdown(self, md):
+        md.registerExtension(self)
+
+
+_MD = md.Markdown(
+    output="html",
+    extensions=["tables", "smarty", _Extension()],
+)
 
 
 @register.filter()
 @mark_safe
 @stringfilter
 def markdown(value):
-    return nh3.clean(md.markdown(value, extensions=["tables", "smarty"]))
+    return nh3.clean(_MD.convert(value))
 
 
 @register.simple_tag(takes_context=True)
@@ -56,6 +68,17 @@ def subcon(
     if not controller:
         raise ValueError("No controller specified and no controller found in context.")
     return controller.controller(expr)
+
+
+@register.simple_tag()
+def name_without_tags(feature: FeatureController, *tags):
+    tag_set = set()
+    for t in tags:
+        if isinstance(t, set):
+            tag_set |= t
+        else:
+            tag_set.add(t)
+    return feature.name_with_tags(exclude_tags=tag_set)
 
 
 _T = TypeVar("_T")
