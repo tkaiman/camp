@@ -74,8 +74,8 @@
 {% if feature.discounted_features %}
 <h3>Discounted Features</h3>
 <ul>
-{% for subfeat in feature.discounted_features %}
-<li><a href="{% url 'character-feature-view' character.id subfeat.full_id %}">{{ subfeat.display_name }}</a></li>
+{% for subfeat, amount in feature.discounted_features %}
+<li><a href="{% url 'character-feature-view' character.id subfeat.full_id %}">{{ subfeat.display_name }}: {{amount}}</a></li>
 {% endfor %}
 </ul>
 {% endif %}

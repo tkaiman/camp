@@ -301,15 +301,26 @@ class FeatureController(base_engine.BaseFeatureController):
         return features
 
     @property
-    def discounted_features(self) -> list[FeatureController]:
+    def discounted_features(self) -> list[(FeatureController, int)]:
         """Returns a list of features discounted by this feature."""
-        controllers = (
-            self.character.controller(id)
-            for id, data in self._gather_propagation().items()
-            if data.discount
-        )
-        features = [f for f in controllers if isinstance(f, FeatureController)]
-        features.sort(key=lambda f: f.full_id)
+        if self.value > 0:
+            discounts = (
+                (self.character.controller(id), sum(d.discount for d in data.discount))
+                for (id, data) in self._gather_propagation().items()
+                if data.discount
+            )
+        elif self.definition.discounts:
+            discounts = (
+                (
+                    self.character.controller(id),
+                    data if isinstance(data, int) else data.discount,
+                )
+                for id, data in self.definition.discounts.items()
+            )
+        else:
+            return []
+        features = [f for f in discounts if isinstance(f[0], FeatureController)]
+        features.sort(key=lambda f: f[0].full_id)
         return features
 
     @property
