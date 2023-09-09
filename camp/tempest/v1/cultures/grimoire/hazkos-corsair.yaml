@@ -1,0 +1,37 @@
+name: Hazkos Corsair
+discounts:
+  thrown-weapons: 1
+  basic-locks: 1
+  lore+Shadow: 1
+description: |
+  _Locations: Grimoire: Hazkos_
+
+  _Concepts: Naval, Sea-faring, Pirate_
+
+  In the shadow of the Shattered Mountains, bordered by the Ironcrown Woodlands and the Gleaming Sea lies Sweetwater Cove.  Nestled within this sequestered run of shoreline is the thriving city state of Hazkos.  Once a small smugglers' port, Hazkos has grown into a bustling harbor with a sprawling mass of docks and ships.  Claiming to be a haven of individual freedom and independence, Hazkos is in fact a stronghold nation of pirates, smugglers and castaways.  There is truth to the claim that among the Citizens of Hazkos there are many criminals and exiles from all over the world, but the city is home to just as many explorers, adventurers and fortune seekers.
+
+  Hazkos has no traditional army or navy.  Instead, the nation is organized into a vast number of autonomous sea-faring gangs of various sizes simply called ‘Crews’.  A Hazkosian Crew can refer to the working crew of a single vessel under an individual Captain, or it may reference the hundreds of followers across one of the massive armadas that sail under the flag of one Admirals of the Council of Crossed Swords.
+
+  The citizens of Hazkos who have signed up with a Crew to seek their fame and fortune are referred to as Corsairs, although less savory terms exist: Pirate, Buccaneer or Raider.  Although many Corsairs are content to prowl the open seas in search of merchant vessels to plunder or coastal villages to raid, a large number of Crews are dedicated to pursuits such as exploration, seeking out hidden treasures or even mercenary work.  As long as it pays in coin and yields interesting stories to tell over a round of ale, the Hazkosian Corsairs are keen to take the job.
+
+  The Hazkosians couldn’t care less for the circumstances that brought an individual to their shores or who they might have been before stepping onto the Razor Docks to start their life as a Corsair.  Be they noble, low blood or any and all in between, all within sight of the Gleaming Sea are free to join a Crew and strike out and make their own fate… for better or worse.
+
+  ## Commonalities of the Culture
+
+  * Corsair are often proud of their deeds, their garb is often decorated with small trinkets and charms that tell the story of their journeys.
+  * While wealth is usually a prime motivator for Corsairs, they are often quick to spend and enjoy it.  After all, a jingling purse is simply begging to be stolen.
+  * Corsairs tend to be a superstitious lot, as a whole they are quite weary of curses and foul omens and tend to form unique habits or personal rituals to ward away such misfortunes.
+  * On land, it is tradition among the Corsairs to adorn their sleeping quarters with a banner or some other shared symbol of their Crew.
+  * Corsairs tend to be ambitious individuals who are drawn to a life of freedom and adventure.
+subcard:
+  name: Carousing [Inheritance]
+  incant: '“Hazkos’s finest, fierce and strong. Tainted by the cards gone wrong. Grog in hand and cuts asunder, vile this tankard and drink them under!”'
+  call: Resist, Carousing
+  target: Self
+  delivery: None
+  accent: None
+  duration: Slow 60
+  refresh: Long Rest
+  effect: Resistance, Intoxicate
+  description: |
+    After finishing the chant, the Hazkosian steels his stomach for a long and arduous night of drinking. For a Slow 60, the Hazkosian becomes Resistant to Ingested Poisons. If any Damage or Effect is Resisted this way, the Hazkos may also take an Intoxicate by Poison, if they so choose.

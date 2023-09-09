@@ -1,0 +1,43 @@
+name: Naveshkan
+discounts:
+  draconic-heritage-1: 1
+  projectile-weapons: 1
+  medium-armor: 1
+description: |
+  _Locations: Grimoire: Naveshka_
+
+  _Concepts: Draconic Heritage, Might Makes Right_
+
+  Naveshka is a land of fire and brimstone, its capital hewn from the molten heart of an ancient volcano. The fire from the Naveshkan forges fuel the gears to their Great Conquest, washing across the land under black and red banners and laying waste to those who oppose them.
+
+  While the War Machine of Naveshka is harsh and sometimes brutal, those they conquered are considered the same as all other citizens. The assimilated cultures are neither hunted, persecuted, nor stripped of their previous identity, and the traditions that make them who they are are considered one and the same as the native Naveshkans .Indeed, those who acquiesce to the war-banners of Naveshka are granted a seat on their Obsidian Council: the governing body of Naveshka and advisors to its Praetor.
+
+  Those who refuse to bow their heads to their new Praetor are granted temporary sanctuary and taken beyond the borders of their lands and released. Their resistance, while noted, is not a mark against them to the Naveshkan War Machine. Honorable foes, while defeated, are considered worthy of respect, but not worthy of the lands that were conquered.
+
+  In the aftermath of their march, the Praetor will travel to the newly conquered land to hand select a new magistrate for the claimed land. It is widely known that the Praetor never chooses a magistrate from outside the conquered lands' own people: to what end, is anybody’s guess.
+
+  Life under Naveshkan rule is brutal for those who stay and do not earn their place. The farmer, the fisherman, and the blacksmith: these are those who flourish under Naveshkan rule, as the Master is to be hated: the Lord reaches out to take, to steal what is not theirs and what they have not earned, and Naveshka treats theft as harshly as others would murder.
+
+  At key stages of their lives, Naveshkans are granted a metal scale by the Obsidian Council. The first, a Bronze scale, is given to a Naveshkan who serves the War Machine in some capacity. The second is a silver scale, and is given to a Naveshkan who reaches a rank of Knighthood within the Naveshkan War machine. The last is given to a Naveshkan who serves its Praetor in an outstanding capacity, personal sacrifice or otherwise. This scale is given to them by the Praetor themselves, and is well known to be a real dragon scale.
+
+  Naveshkan are a people of many lives, faiths, and cultures, but one unified purpose. The Praetor serves Naveshka, and the All serve Naveshka by serving the Praetor.
+
+  ## Commonalities of the Culture
+
+  * Garments worn by Naveshkans tend towards red and blacks. If their garments are embellished with the intent of honoring the Preator, they are often embellished in silver.
+  * Honorific names are not used by Naveshkans, with the sole exception being the Praetor. When interacting with other nobles, it’s quite common for Naveshkans to refuse them their title, on pain of death. Due to this, Naveshkan nobility do not use titles like ‘Lord’, either.
+  * Naveshkan jewelry is often made from uncut black obsidian, to honor the Obsidian Council who lead them from the frontlines of the War Machine.
+  * The Fallen Deity is not worshiped by Naveshka, for he sought the destruction of the Preator and earned his defeat by opposing the people. Naveshkans are considered outcast if they worship the God of Glory.
+  * Naveshkans laud hard work and dedication over talent and skill. Those who persevere through difficult trials are often considered more heroic than those for whom a task is easy. Similarly, failure is not considered inherently negative - more of a learning experience, and those that reasonably attempt difficult things are more valued than those who take the easy route.
+subcard:
+  name: Unity in Purpose [Inheritance]
+  incant: “We stand, United in Purpose.”
+  call: Grant Protect vs [Acid/ Flame/ Lightning / Ice] by Will
+  target: Self
+  delivery: None
+  accent: Will
+  duration: Instantaneous
+  refresh: Long Rest
+  effect: Grant Protect vs (Acid/ Flame / Lightning/ Ice)
+  description: |
+    Whenever another individual in touch range uses a power to Grant a Protect vs [Acid/ Flame / Lightning/ Ice], you may expend this power to also receive a copy of that effect. You may use this ability once per Long Rest.

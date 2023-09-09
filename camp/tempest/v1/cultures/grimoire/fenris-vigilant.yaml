@@ -1,0 +1,37 @@
+name: Fenris Vigilant
+discounts:
+  weapon-specialization+Flail: 1
+  lore+Noble: 1
+  basic-medicine: 1
+description: |
+  _Locations: Grimoire: Fenris Isle_
+
+  _Concepts: Community, Honor, Noble Houses_
+
+  Fenris is a Kingdom, run by three houses, built upon the corpse of Kerberos, the corpse of a three headed silver canine titan that became a mountain within a caldera after its death. The three major houses that make up the council running Fenris run a different aspect of the city, the commerce is handled by House Coinin, the white wolf head, the Industry is handled by House Ylva, the black wolf head and the military is handled by House Strongarm, the gray wolf head. The emblem of Fenris depicts the three wolf heads with the White wolf on the left and black wolf on the right and the gray wolf in the middle.
+
+  The caldera is bordered by a massive wall built to protect its denizens from invasion and provides a barrier between Leonholdt and Naveshka. Due to Fenris being a neutral party, only having a mutual agreement with sunwatch, it makes it very difficult for the two warring nations to put pressure on each other without ascertaining the wrath of the two neutral parties.
+
+  The Vigilant revere Kerberos giving it the name Fenris, and holding celebrations for the home it has bestowed upon them after its life, the land fertile from the blood coming from its veins. The citizens of Fenris follow the worship of a god not a kin to the recognized pantheon, although they recognize the normalized pantheon they still will pay homage to their witch-god.
+
+  ## Commonalities of the Culture
+
+  * It is common for Vigilant to have a depiction of the Witch-God Kerberos on their person. This can come in the form of a painted shield, embossed armor, or embroidered cape. The head of Kerberos represented this way will usually reflect the House the Vigilant serves.
+  * Community is very important for the Vigilant, they are taught that community and self-sufficiency is vital to their way of life. Because of this, most Vigilant support and foster strong community ideals.
+  * Wolf fur mantles of the color of one of the three houses are a staple among the Vigilant: Their color directly corresponds to the house that they follow.
+  * Wealth or status for the Vigilant tends to be shown on their persons in various ways. Vigilant that follow House Coinin tend to wear extravagant clothing with brilliant purples with white accents. Vigilant that follow House Yvla tend to carry their own tools that are ornamented or engraved with depictions of the Witch-God’s quintessence. Vigilant that follow House Strongarm pride themselves on having the most effective forms of weapons and armor available to them. While the other two focus on opulence, House Strongarm focuses on practicality.
+  * Free-standing standards are a common sight to the Vigilant, adorning the walls of their home and carrying them onto the theater of war. It’s common for Vigilant to bring these standards with them when fighting for home and hearth. These standards are usually white, black and gray to represent the three heads, with silver adornments.
+subcard:
+  name: Mantle of Fenris [Inheritance]
+  incant: "I protect you with the Mantle of Fenris"
+  call: Grant Protect vs Damage Under 3
+  target: One or Two Individuals
+  delivery: Touch
+  accent: None
+  duration: Until Used
+  refresh: Long Rest
+  effect: Grant Protect
+  description: |
+    This power may only be used out of combat. The user may endow another individual with a boon of Fenris, granting them a “Protect vs Damage Under 3.”
+
+    If the user is wielding their own Fenris Vigilant standard, they may instead target up to two individuals with this power.

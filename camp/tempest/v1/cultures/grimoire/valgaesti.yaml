@@ -1,0 +1,45 @@
+name: Valgaesti
+discounts:
+  lore+Historical: 1
+  advanced-shields: 1
+  armor-expertise: 1
+description: |
+  _Locations: Grimoire: Valgast_
+
+  _Concepts: Mortal Champions, Oral History, Chroniclers of Heroes_
+
+  The Valgaesti of Valgast are known far and wide for their stories. The somber tales told in hush-quiet inns of the champions of yore, raising their blades and magics against the darkest temptations of the Grimm. They are a steadfast folk, rooted in companionship and faction, and give much of themselves into that perspective.
+
+  In Valgast lies the Cathedral of the Bloodmother, She-of-Sacrifice. It is here that the Sanguine Covenant make their primary foothold. In older times, other religious sects sought to snuff the then cult, but on Valgast’s soil, and with their support, they were able to survive into the modern day. Because of this, or maybe consequently, when the Sanguine Covenant built their Cathedral, they included a great hall, known as the Hall of Paragons, that exalted the champions who defended their faith and gave them a chance to simply be. Many Valgaesti have been taken into the Blood Mother’s fold, but even those who do not, revere the Hall of Paragons for what it stands for.
+
+  To the Valgaesti, the Hall of Paragons represents freedom and defiance in the face of tyranny, and as new Paragons are adopted by the Valgaesti people, new statues are built within their halls. The seven most notable Paragons are as follows:
+
+  * **Brume** - Human of Valgasti. Brume fought in the Tide of Blood, where the Diavallan cult made their final stand in Valgast. He defended them as if they were his own, and for his righteousness, he was blessed by [Pantheon God].
+  * **Ikbal Ashescar** - Chimera Rahkdari of Sunwatch. Ikbal was a medical sort, and traveled the land with his wagon, selling medical goods and tinctures. During a particularly nasty outbreak of a disease known as The Wasting, Ikbal took his caravan to the heart of those fetid places to help the ailing as he could. Ikbal went missing shortly after the climax of the epidemic’s spread, but shortly thereafter, the disease all but vanished. It is rumored that Ikbal gave his own body to some unknown power to rid the world of the illness- and that has earned him a place within the Cathedral of Sacrifice.
+  * **Xantom the Phantom** - Aelthen Rahkdari of Fenris. “Xantom” was the name given to a man who thieved from the land for years. His crimes were always monetary, and there was no lock that could bar his path, should he set his eyes on it. He was jailed within the Naveshkan lands for years, before the war, and was released on the condition that he use his infiltration ability to free the prisoners of war taken by Leonholdt. He agreed, and, to many people’s surprise, upheld his end of his bargain. Even after his death, many warminds are loath to take prisoners, thinking that, not only is it bad luck, but it may attract the attention of Xantom’s spectral form.
+  * **Talonius Sunshriek** - Aelthen Thrylossi of Hazkos. The Sunshriek banner was one familiar to many Corsairs that made their way out of Hazkos, and it usually brought good tidings. He served as a custodian of their waters, protecting his land, single handedly, against invaders. It’s unclear how Talonius angered the waters, but one day, the sea rose up against him. During a cataclysmic storm, Talonius fought against Uragliac the Writhing, a leviathan that had grown hungry for the flesh of Man. He drove his ship into the heart of the leviathan, but as the beast fell, he dragged Talonius down to the depths with him.
+  * **Marric Slain** - Drimmen of the Winterlands. While the statue of Marric Slain stands tall and imperious, It is widely known that Marric was a small and feeble man. He was a runt by Nir standards, and many Nirfolk saw him as a liability. However, strength alone does not make a champion. Marric had a natural bond with animals. During one of the common Nirfolk skirmishes, Marric called upon his bonds to bring his animal companions to him, and defended his home. Some Nirfolk believe that Marric Slain had befriended Renthyr himself, and that alone gave him the rite to rule his clan. Unfortunately, Marric earned his place within the Hall of Sacrifice for his untimely assassination.
+  * **Slaithe Paleheart** - Thrylossi of Naveshka. Slaithe of the Frozen Mist, as she is commonly known, gave her life in service of Naveshka. She believed in the Preator’s creed with all of her being, and did what she thought was necessary to see that goal made complete. Slaithe, before her death, performed a ritual to become a Lich, returning to Naveshka’s service for years before finally falling to a champion of Leonholdt.
+  * **Kendrel Thale** - Aelthen of Valgast. Kendrel was a mage of impressive power and husband to the Lord-Governor of Valgast, who ventured to Naveshka and gave his services willingly in the condition that Valgast remain neutral in their war. It’s unsure what the exact events that transpired, but it’s known to the Naveshkan people that he gave his life to protect the Praetor.
+
+  ## Commonalities of the Culture
+
+  * When Valgaesti come of age - denoted by the first major choice they must make that will affect their path through life, they often celebrate the event by holding a small festivity, during which, their peers will take different strands of silk, leather, or other fabric and weave for them a braided Strand. Each cord on this braid is given to them by a different compatriot and represents that, alone, a Valgaesti may fall, but a strand braided is hard to break.
+  * Valgaesti often champion a fallen Paragon, and mark their equipment with seals that are inscribed with the words, philosophies and histories of their chosen Paragon. These seals are often fabric or cloth and are adorned around the Valgaesti’s tent, camp and personal effects. Often, they are affixed with ornamental pins or wax.
+  * Valgaesti believe in the duty of the self, the land, and their peers over the whims of the ‘powerful’. They are often seen as unruly and defiant, especially towards religious or national leaders, but these attitudes may be changed by the individual's personal support of the said leader’s ideals.
+  * Most history taught in Valgast is oral, and the Valgaesti often spin these tales into textile or engravings. Valgaesti armor, clothing and weapons often bear images of their Paragons and the ordeals undertaken by them.
+  * Valgaesti do not keep the names that they are given at birth, but rather, when they come of age, they take a name based on their chosen Paragon. For instance, Bruma took her name after the Paragon Brume or Eschillio after the Paragon Eschillio.
+subcard:
+  name: Sanctity of Name [Inheritance]
+  incant: None
+  call: “Counter, Sanctity of Name“
+  target: Self
+  delivery: None
+  accent: None
+  duration: Instantaneous
+  refresh: Long Rest
+  effect: Counter
+  description: |
+    The Valgaesti cherish the names that they take from their naming ceremonies deeply, and many passages and rites perform small rituals to protect the new name they are given.
+
+    Once per Long Rest, Valgaesti may Counter any Discern Effect used against them that would force them to give their name, even if it is Subtle in nature. As this is a Counter and not an Obfuscate effect, the correct call for this power is “Counter, Sanctity of Name.”

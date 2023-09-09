@@ -1,0 +1,45 @@
+name: Khettashi Khet
+discounts:
+  basic-traps: 1
+  rumormonger: 1
+  fence: 1
+description: |
+  _Locations: Grimoire: Ruins of Khettashi_
+
+  _Concepts: Mischief, Copper Baubles, Coin, Pharaoh of Tithes_
+
+  In the eastern sands lay the ruins of a grand bazaar that served to ferry goods far across the kingdom. This Bazaar was once known as Khettash, and it would be the shining jewel of its time. The exact reasons for Khettash’s fall is unclear - but it still has a large group of people who claim that they are from the ruined city. These people are known as the Khet.
+
+  The Khet are a nomadic people who carry the history of Khettash with them. They are vocal storytellers and often spin tales of the Old Ways of Khettash. Fable and fantasy are incredible motivators to the Khet, and they have adopted a healthy superstition of most supernatural aspects because of it.
+
+  Most Khet follow the teachings of a namelost God, who they revere as The Pharaoh of Tithes. The Khet believe that the Pharaoh is the ferrier of all lost souls, and the struggles of wealth and poverty are directly linked to a person’s sacrifice at his tithe. The Khet believe that the Pharaoh is the ruler of Khettash, and as of such, tithes to him can only be paid in their native metal- Copper.
+
+  Dotted along the surface of the Kingdom lay strange, caryatid-like statues, their arms raised in groveling gestures. These Paupers are known far and wide and are often regarded with suspicion and concern - though, many people simply ignore them. They serve as way-markers and guides, the unmoving gestures indicators that ‘the path is this way’, or ‘turn back’. These solemn simulacrums are bereft of purpose- they are the relics of a time long lost, the corpses of soldiers of unknown wars, or the husks of an ancient people. Historians and scholars often debate their purpose– but to the Khet, their purpose is singular. They serve as drop-off points for the tithes given to the Pharaoh.
+
+  The exact nature of these tithes vary from Khet to Khet. Some Khet believe that the tithe can only be paid in minted currency that is copper, some believe it must be paid in the rare, but still circulating currency of old Khettash- Khetper, and some believe that any copper object will suffice as tithe. Academically, the final appears to be the most true, as, when unobserved, a copper object left within a close proximity to a Pauper will disappear without a trace.
+
+  Mischievous and guileful, the Khet carve out a living for themselves primarily on the outskirts of major towns, and within small “Hush-Hush Undermarkets” hidden in the sneakiest places. These Undermarkets primarily focus on providing goods and services to those who cannot traditionally afford them, often for literal handfuls of copper instead of their implied or perceived value.
+
+  The Khet as a whole have a very disdainful look towards theft. However, it is not uncommon for the Khet to provide their services to a person in the form of miscellaneous chores while ‘paying themselves’ for the service by taking what loose copper or copper objects they could find from the bewildered “Employers” person or private abode.
+
+  ## Commonalities of the Culture
+
+  * Because the Khet often leave offerings to the Paupers in the form of copper, it is common to find them wearing jewelry and ornamentation made of the Pharaoh’s Metal.
+  * Khet often wear lightweight and brightly colored scarves around their necks, waists or heads.
+  * Khet tend to have a flair for the dramatic, and often, their clothing choices reflect this. Gilded coats, brightly patterned pants and shiny buckles are all common sights among the Khet.
+  * Khet are shrewd dealmakers and often jump at opportunity to offer their services for copper, twisting the deal much further in their favor than their cohorts. .
+  * A Khet is likely to offer a small, but noticeable discount on services and contracts, if the buyer is willing to pay entirely in copper.
+subcard:
+  name: M’iaq’s Tongue [Inheritance]
+  incant: “I know only that which I can say, and that I cannot say.”
+  call: “Obfuscate vs Discern and Expose”
+  target: Self
+  delivery: None
+  accent: None
+  duration: Instantaneous
+  refresh: Long Rest
+  effect: Obfuscate
+  description: |
+    The Khet are well known for being mischievous, but this one has practiced the arts of deception to the point that it has become second nature. Partial truths, white lies, and outright falsehoods are simple stock in trade, as one needs only talk to a Khet to figure out.
+
+    After finishing the incantation, the character may choose to be Obfuscated versus a single Discern or Expose Effect once per Long Rest. When using Obfuscate, the Khet may answer however they like, and do not need to reveal that they have used this power.  This can be done even if the Discern is Subtle, as the use of Obfuscate is a natural and instinctual attempt to hide the truth.

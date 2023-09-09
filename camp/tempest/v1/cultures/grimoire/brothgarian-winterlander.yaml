@@ -1,0 +1,50 @@
+name: Brothgarian Winterlander
+discounts:
+  two-weapon-style: 1
+  light-armor: 1
+  tracking: 1
+description: |
+  _Locations: Grimoire: The Winterlands_
+
+  _Concepts: Hardy, Barbarian, Wildfolk_
+
+  In the outer reaches of the ever-expanding borders of the Creeping Winterlands, firmly within the freezing taiga known as the Withered Valley lies a small tract of land flanked by the twin mountains of Marlbrook and Shauswell. Nestled within this sequestered gorge rests the last (and perhaps only) bastion of what passes for ‘civilization’ within Winterlands, Nir’Brothgar.
+
+  A harsh and unforgiving place, the once thriving wilds of the Withered Valley have fallen victim to the spreading curse emanating from the distant ruined kingdom of Astralor. The Creeping Winterlands are the direct result of that frozen scar upon the world and still it continues to grow larger. Each year, miles of once verdant terrain are consumed by the Winterlands with no end in sight.
+
+  The Creeping Winterlands are home to some of the most dangerous creatures and rugged individuals within the known world and the Withered Valley is no exception. Nothing comes easy to those who dwell in the Winterlands. The land offers little to its inhabitants thus everything else must be taken by force… be it from nature or from their fellow man. There are no cities in the traditional sense, instead the landscape is dominated by several large 'barbarian’ style settlements that spring from the ruins of the various kingdoms claimed over the centuries by the Winterlands. These settlements, called ‘Nir’ by the Winterlanders, are basically heavily fortified encampments that serve as the focal point for various tribes and their wars over the Winterlands and its scarce resources.
+
+  Primarily made up of descendants of those kingdoms lost to the advance of the Creeping Winterlands, the Winterlanders or Nirfolk as they refer to themselves, are a rugged and tenacious people, hardened by unyielding cold and bitter circumstances. The harsh wilds of the Withered Valley have a habit of claiming the weak and hostile war parties of neighboring Nirfolk are always a concern for the Brothgar… particularly the bitter rivalry with the bloodthirsty raiders of Nir’Kalrok.
+
+  Of all the tribes within the Winterlands, Brothgar is the only one who displays at least some tolerance toward Outlanders. The Nir is full of individuals who have had their livelihoods and families torn from them by the other malevolent Winterland Tribes, Outlander and Nirfolk alike. The Withered Valley is also a draw for the occasional Outlander merchant or adventurer seeking the treasures of ancient fallen civilizations that still remain within the frozen wastes. While it might be a bit much to say they are welcomed within the Nir, at the very least they receive preferable treatment to those who end up staked out as gruesome Skelgaz territory markers or stuffed into a Golrath cookpot.
+
+  The gods of the Winterlanders are generally local deities, their names rarely known to those outside of the Winterlands. Although it is not at all uncommon for a Brothgarian to worship gods from the greater Pantheon, the Nirfolk still give praise and offerings to at least one of the three entities that have watched over the Brothgar for generations, Soktar the White Fox, Canja the Grey Owl and Renthyr the Black Wolf.
+
+  There is a unique freedom that comes from being a Winterlander, a clarity that can only come from an understanding of the world and one's own place within it. The people of Nir’Brothgar serve no king or royal bloodline. A Chieftain of Nir’Brothgar is chosen by its people and serves only as long as the Nirfolk trust in their ability to do so. Should that trust falter, they are likely to be violently unseated and another selected to take the mantle. The only laws within the Nir are the ones that are agreed upon enough to be enforced by its populace and are thus quite simple:
+
+  > “Shed not the lifeblood of fellow Nirfolk.
+  > Do not take what is not yours by right.
+  > Lend your hearth to those who need warmth.
+  > Earn your keep.”
+
+  ## Commonalities of the Culture
+
+  * Brothgarians are respectful of their people’s legacy. Though their travels may take them far from their Nir, they always carry a small carving depicting either a fox, owl or wolf on their person to pay homage to the patron gods of their Nir.
+  * Winterlanders never truly feel comfortable outside of their Nir or the wilds they call home. In fact they often scorn the ‘comforts’ of civilization, choosing instead to rest outside the confines of city walls in a tent or under the stars.
+  * Winterlanders most commonly wear clothing fashioned from or adorned with furs and animal hides. Trophies of bones, claws or fangs taken from prized hunts or foes are also common.
+  * Nirfolk have a strong connection to their family and their ancestors. It is tradition to carry a family totem carved from wood or bone to adorn their tents on long journeys. In this way they may be among their people no matter how far from home they travel.
+  * Winterlanders tend to be hardy, independent people who thrive on opportunities to prove their usefulness and strength, be it of strength of mind, body or spirit.
+subcard:
+  name: Brave the Elements [Inheritance]
+  incant: None
+  call: "Resist, Brave the Elements"
+  target: Self
+  delivery: None
+  accent: None
+  duration: Instantaneous
+  refresh: Event
+  effect: Resist
+  description: |
+    The Nirfolk have made a home for themselves in the harshest of driving razorwinds and blistering storms. The cold could be biting directly through one’s armor, and the Winterlandsers often do not even shiver.
+
+    Winterlander may Resist a number of environmental Effects they take with the Ice Accent each Event equal to their Maximum Life Points.

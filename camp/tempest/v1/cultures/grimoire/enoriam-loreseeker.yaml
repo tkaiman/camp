@@ -1,0 +1,39 @@
+name: Enoriam Loreseeker
+discounts:
+  lore+Arcane: 1
+  rumormonger: 1
+  basic-arcane: 1
+description: |
+  _Locations: Grimoire: Oscary_
+
+  _Concepts: Pilgrim, Knowledge Seeker_
+
+  Deep within the Eskana Badlands, far from the relative safety of civilization along Knife Coast lies the Crystalline Valley of the Twilight Oasis. Within the valley, lies a secret nearly lost to time. The Enoriam Repository. An ancient vault built in the final moments of a past age as the last desperate act of a dying people. The Enoriam is thought to safeguard the secrets and combined knowledge of the ancients, an unparalleled understanding of the world. The Magesters of Oscary have tried for over a century to open the sealed trove and while a great deal of headway has been made, the Enoriam holds fast its secrets.
+
+  As word of the great mystery of the Enoriam spread, scholars and researchers flocked to the Twilight Oasis, giving birth to the Magocracy of Oscary. Although a relatively young nation in the grand scheme of things, Oscary has grown into a force to be reckoned with. The combination of influential mage families, powerful guilds and influx of those drawn to the city seeking riches rumored to be contained within the vault have been a great boon to the nation. The oasis city has also proven a draw for those who are engaged in the study of magics or pursuits that would be frowned upon or even outright forbidden in other parts of the world.
+
+  While some travel to Oscary to devote their lives to the grand riddle of the Repository, others believe that the Enoriam is a cruel joke played upon mortalkind, a puzzle-box created by the gods to drive countless inquisitive minds into madness. This is a notion that the Conclave of Seven, the ruling body of Oscary, fervently denies. Indeed, the city and its rulers have a great interest in seeing the remaining locks on the arcane vault undone and expend a vast amount of energy and resources into seeing it so.
+
+  Each of the Enoriam’s mystical seals has proven significantly more resilient than the last. It has now been twenty-three years since the last time a seal was breached. Fearing continued stagnation of progress will harm the nation’s long term interests, the Conclave has promised an unparalleled bounty to anyone who can provide the necessary knowledge or insight to break the final set of seals. This challenge has served as a rallying call that has caused many Enoriam’s to put their talents, both magical and martial, to practical use. These pilgrims, explorers and traveling scholars are often referred to as Loreseekers.
+
+  Oscaryian Loreseekers heed the call of adventure and travel far and wide, plying their chosen trades and skills in whatever manner suits them best in their greater quest. It is not uncommon to encounter a Loreseeker pouring over a stack of musty tomes in a royal’s personal library, or visiting a obscure tavern comparing notes to the fables and folk stories being told by the local bard or perhaps even braving some long forgotten half crumbling ruin; all in hopes of uncovering a clue to the secrets of the Enoriam. Loreseekers dedicate their lives to the acquisition and preservation of knowledge and antiquity and the hopes of being remembered by history as the one who finds the missing piece to what is perhaps the world's greatest puzzle.
+
+  ## Commonalities of the Culture
+
+  * To a Loreseeker, knowledge is both an asset and a currency. It is not uncommon to trade material possessions for the secrets of others or for the Loreseeker to barter their own expertise.
+  * Among Loreseekers, It is tradition to wear a key around one's neck. This is to serve as a reminder of the Enoriam and the secrets that lie within.
+  * Loreseekers tend to be open minded individuals who often openly reject dogma in all of its various forms. This habit makes them unpopular with certain groups.
+  * Loreseekers are known for their note taking. Some may keep a journal, while others maintain a sketchbook. Some have even been known to compose songs or write poems to chronicle their exploits.
+  * Loreseekers tend to be inquisitive individuals who relish opportunities to acquire new knowledge or uncover the truth behind the mysteries of the world.
+subcard:
+  name: Stay a While and Listen [Inheritance]
+  incant: 'Slow 300, RP: Telling a tale or story'
+  call: Grant 2 Barrier
+  target: Individual(s)
+  delivery: Touch
+  accent: None
+  duration: Until Used
+  refresh: Long Rest
+  effect: Grant Barrier
+  description: |
+    Out of combat, the Loreseeker may regale onlookers with a tale or story, or otherwise wax poetic about their travels and recall the stories they’ve uncovered while lacing the very words with potent arcane protection. After telling a short story for at least a Slow 300, the Loreseeker may “Grant 2 Barrier” to up to three individuals who were listening to the tale.

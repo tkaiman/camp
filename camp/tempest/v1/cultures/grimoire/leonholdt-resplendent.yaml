@@ -1,0 +1,41 @@
+name: Leonholdt Resplendent
+discounts:
+  shield-expertise: 1
+  basic-faith: 1
+  lore+Noble: 1
+description: |
+  _Locations: Grimoire:  Leonholdt, The First Expedition_
+
+  _Concepts: Excellence, Rising Above, Glory_
+
+  To be Leonholdt is to be a member of a glorious, righteous community of nobles, knights and wizened wizards who serve to the clergy of Leovitrius the Resplendent, golden god of Glory and patron to all heroes and champions. Leonholdt is a relatively small kingdom, but takes a stalwart stance on following their intrepid ideals. They bring light to the dark places, and vanquish the foul beasts found wherever their polished boots fall.
+
+  The Clergy of Leovitrius have their seat of power within the capital city of Leonholdt, and its opulence and elegance is only barely matched by the King’s own castle. The faith of Leovitrius is taught ardently, and even other Pantheon gods are shunned and discouraged by them. It is not uncommon for civilians of Leonholdt to share the same disdain towards worshippers of other gods, but even they commonly recognize that heretics have their place beside you on the field of war.
+
+  The civil structure of Leonholdt is written very plainly in stark lines. The Peasantry owe their safety to the Merchants who own the lands that they serf, the Merchants pay their taxes to the Royalty- including regional taxes to the nobles anointed by the King himself- and the King acts with absolute authority bestowed upon him by Grand Arbiter Alexi Siccay of the Clergy of Leovitrius.
+
+  Following their resplendent theme, they take care of their people, their land, and their public image.  They are the first to stand up for the oppressed and those who Struggle- a concept that is exemplified by their people. Those who live outside of Glory- those who live outside of Leonholdt, live within the Struggle. And the struggle is to be Ended, by bringing those outside of glory to the light of Leovitrius.
+
+  ## Commonalities of the Culture
+
+  * Gold and White are the colors of glory, and the Resplendent often incorporate them into their garb. It is very common for them to wear fabrics bearing white and gold embroidery.
+  * Cleanliness is paramount to Leonholdt. They do not often wear stained fabrics, or allow their armor to become tarnished.
+  * The Symbol of Leondholdt is a Lion’s head- the same as Leovitrius- and it’s very common for them to wear tabards, belt flags, or emblazon their shields with its image.
+  * Resplendents often seek to encourage others to strive for excellence, to undertake amazing tasks so that they might earn the blessing of Leovitrius. It is quite common for Resplendent to be the first to charge, and the last to flee.
+  * While not all members of Leonholdt explicitly worship Leovitrius, those who do not tend to leave him offerings as well, for without Him, there would be no Leonholdt and they must show their thanks.
+subcard:
+  name: Lionheart [Inheritance]
+  incant: '(Proudly) “Hear me, and the Lion’s Roar! Face your fears!”'
+  call: Cure Fear by Radiance
+  target: Another Individual
+  delivery: Touch
+  accent: Radiance
+  duration: Instantaneous
+  refresh: Long Rest
+  effect: Cure
+  description: |
+    The Resplendent are often the forerunners, the knights in shining, polished armor standing against the darkest and vilest evils. Their bravery is legendary, and their stalwart devotion to their people an inspiring beacon of courage. The Leonholdt Resplendent may Cure any Condition granted by the Fear Accent once per Long Rest.
+
+    Alternatively, out of combat, this power may be expended to counter the ill effects of the Nightmares character flaw. To do so, the Resplendent must listen to the nightmare given by the afflicted, and explain how applying their own steadfast bravery could fix the situation.
+
+    This power may not be used on Desecrated land or while under any Condition with the Fear Accent.

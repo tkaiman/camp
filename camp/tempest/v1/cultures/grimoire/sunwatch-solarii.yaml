@@ -1,0 +1,39 @@
+name: Sunwatch Solarii
+discounts:
+  weapon-specialization+Great_Sword: 1
+  basic-medicine: 1
+  lore+Historical: 1
+description: |
+  _Locations: Grimoire: Sunwatch_
+
+  _Concepts: Funerals, Duty, Vigilance_
+
+  Making their home in the dark of the Stygian Moor, Sunwatch stands as a beacon against the surrounding swamp shadowy depths but only barely: the citizens hang on to every thread of sunlight they manage to get, as it quickly fades in the oppressive gloom of the swamp. The people who live within share much the same disposition. Outside of the city, they are often known as the “Watchers of the Sun”, or more simply: “The Solarii”.
+
+  The most common profession of Solarii are the gravetenders who work the Ubergraf: A walled fortress-graveyard of blessed granite that holds thousands of headstones, mausoleums, crypts and shrines to persons long gone. It is the largest structure in all of Sunwatch,  completely surrounding the city with high marble walls and terrace upon terrace of resting grounds. It is considered an honor to be laid to rest within the gloomy halls of Sunwatch, as it is a promise that when a body is laid to rest for their blessed sleep, they are protected behind sacred marble and the Undead hunter patrols.
+
+  Less common are the Blackguard, who train under the shadow of their barracks, the Sunspire. The Sunspire itself is also visited as a cathedral dedicated to funerals, representing each religion that holds special death rites. The Blackguard are a grim lot, but are professionals in matters of death magic, specializing in the destruction of undead and their necromantic masters. The Grave Wardens, who watch the city walls, have many Blackguards among their ranks.
+
+  Wherever they may hail from, the Solarii are stoic people who take both life and death seriously. Because of the importance of the cycle of life and death to the Solarii, Necromancy is seen as the highest form of treason to not only their people, but to the very world. No necromancer can claim to call themselves Solarii– not to the others, at least. This comfort with both sides of mortality, and distaste for necromancy lends itself to a reputation for breeding the finest undead hunters the Crowns could ask for.
+
+  In Sunwatch proper, countless festivals honoring death and the dead occupy the calendar, remembering the death dates of ancient heroes, kings, and even deities of antiquity. While many of these Death festivals are simple holidays, with little fanfare, one in particular carries more weight than the rest: The Festival of Malbrega Sunshatter, an old Sunwatch Highlord, in the gloomy, autumnal months. Many Solarii return to Sunwatch annually to pay tribute to the fallen Highlord with food, song, and story, late into the night, often with partygoers swearing that the spirit of the Highlord walks the streets and alleys, watching and guarding the populace until dawn.
+
+  ## Commonalities of the Culture
+
+  * Many Solarii wear featureless, porcelain masks during public social gatherings, during times of ritual or celebration. The specific shape of these masks vary from person to person, as a reflection of personal taste and significance.
+  * Traditional dress among the Solarii is reserved and often colored in charcoal and purple, with hints of gold or silver.
+  * Solarii carry incense burners on their belts or otherwise with them, believing that burning incense wards off evil spirits that may wander into Sunwatch. (Note: these incense burners are not allowed to be lit for safety reasons.)
+  * As their home is fixated on the exaltation of the dead, many Solarii wear armor or embellishments adorned with skulls and skeleton iconography. Others paint their face to give a skeletal visage, particularly when the undead walk, as is often the case in the fall.
+  * Solarii tend to be cold and serious in public: They’re often compared to the dead in that regard. Overt displays of emotion can be considered to be “tipping one’s hand” and somewhat distasteful. However, in private, or in places where they may feel safe, they often relax and can be quite joyful.
+subcard:
+  name: Deathward [Inheritance]
+  incant: “I stand watch to ward off death.”
+  call: '“Instruction: Pause your death timer,” ”Instruction: Resume Death Timer”'
+  target: Individual
+  delivery: Touch
+  accent: None
+  duration: Focus Slow 100
+  refresh: Long Rest
+  effect: Special
+  description: |
+    After finishing the incantation, the Solarii may sit down and watch over a corpse and stop their death timer by calling “Instruction: Pause your death timer.” For up to a Slow Count of 100, they may keep the Individual’s death counter paused. While doing so, if they take damage, receive any Effect, or use any other Power, they must end this Power with “Instruction: Resume Death Timer”. At any time before the Slow 100 is up, they may choose to end this Power with “Instruction: Resume Death Timer.”
