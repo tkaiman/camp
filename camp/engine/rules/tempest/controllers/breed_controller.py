@@ -188,6 +188,21 @@ class BreedController(feature_controller.FeatureController):
         reasons.append(f"You have {bp_balance} BP to spend on breed advantages.")
         return reasons
 
+    def issues(self) -> list[Issue]:
+        issues: list[Issue] = []
+        if bp_controller := self.bp:
+            cost = bp_controller.advantage_cost_bp
+            awarded = bp_controller.awarded_bp
+            if cost > awarded:
+                issues.append(
+                    Issue(
+                        issue_code="insufficient-bp",
+                        feature_id=self.full_id,
+                        reason=f"Too many breed advantages chosen for {self.display_name()}: {cost}/{awarded}",
+                    )
+                )
+        return issues
+
 
 class SubbreedController(feature_controller.FeatureController):
     definition: defs.Subbreed
@@ -362,8 +377,7 @@ class BreedChallengeController(feature_controller.FeatureController):
                     award += mod
         return max(award * self.paid_ranks, 0)
 
-    @property
-    def cost_string(self) -> str | None:
+    def cost_string(self, **kw) -> str | None:
         if (cost := self.award_bp) or self.paid_ranks:
             return self.purchase_cost_string(cost=cost)
         return None

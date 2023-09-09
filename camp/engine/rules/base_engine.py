@@ -767,7 +767,7 @@ class BaseFeatureController(PropertyController):
         return self.definition.type
 
     @property
-    def is_option_template(self) -> str:
+    def is_option_template(self) -> bool:
         """True if this is an option template feature.
 
         For example, "Lore" is an option template feature, while

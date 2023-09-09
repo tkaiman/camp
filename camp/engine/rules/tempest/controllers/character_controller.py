@@ -523,6 +523,17 @@ class TempestCharacter(base_engine.CharacterController):
                         reason=f"Too many {self.display_name(spellbook.sphere)} spells known ({excess})",
                     )
                 )
+        cp_controller = self.cp
+        cp_awarded = cp_controller.total_cp
+        cp_spent = cp_controller.spent_cp
+        if cp_spent > cp_awarded:
+            issues.append(
+                Issue(
+                    issue_code="insufficient-cp",
+                    reason=f"Too much CP spent {cp_spent}/{cp_awarded}",
+                )
+            )
+
         return issues
 
     def clear_caches(self):

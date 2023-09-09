@@ -115,15 +115,17 @@ class FeatureController(base_engine.BaseFeatureController):
     def cost(self) -> int:
         return self._cost_for(self.paid_ranks, self.bonus)
 
-    @property
-    def cost_string(self) -> str | None:
+    def cost_string(self, include_grants: bool = True) -> str | None:
+        if not self.value or self.is_option_template:
+            return self.purchase_cost_string()
         # Things that cost (or grant) currency should show a cost.
         if (cost := self.cost) or self.paid_ranks:
             return self.purchase_cost_string(cost=cost)
         # Things that don't normally cost a currency may still be on some other budget,
         # so explicitly call out the ons that are granted.
         elif (
-            self.value
+            include_grants
+            and self.value
             and not self.paid_ranks
             and not self.cost_def
             and not self.internal
@@ -142,14 +144,25 @@ class FeatureController(base_engine.BaseFeatureController):
             return tags | {self.parent.id}
         return tags
 
-    def name_with_tags(self, exclude_tags: set[str] | None = None) -> str:
+    def name_with_tags(
+        self, exclude_tags: set[str] | None = None, include_cost: bool = False
+    ) -> str:
+        name = self.display_name()
         if tags := self.render_tags(exclude_tags=exclude_tags):
-            return f"{super().feature_list_name} {tags}"
-        else:
-            return super().feature_list_name
+            name = f"{name} {tags}"
+        if not self.is_option_template and self.max_ranks > 1:
+            if self.value:
+                name = f"{name} x{self.value}"
+            else:
+                name = f"{name} ({self.max_ranks})"
+        if include_cost and (cost := self.cost_string(include_grants=False)):
+            name = f"{name} {cost}"
+        return name
 
     def power_card(self) -> defs.PowerCard | None:
-        return self.definition.model_copy(update={"name": self.feature_list_name})
+        return self.definition.model_copy(
+            update={"name": self.name_with_tags(include_cost=True)}
+        )
 
     def render_tags(self, exclude_tags: set[str] | None = None) -> str:
         tags = self.tags
@@ -364,7 +377,7 @@ class FeatureController(base_engine.BaseFeatureController):
         elif self.has_available_choices:
             badges.append(("primary", "Choices Available"))
 
-        if cost := self.cost_string:
+        if cost := self.cost_string():
             badges.append(("secondary", cost))
 
         return badges
