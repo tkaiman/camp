@@ -1,0 +1,5 @@
+name: Rewind
+level: basic
+cost: 1
+description: |
+  Whenever this character grants healing to a target other than themselves with the Time Accent, they may Mend 1 Armor to themselves or the target of the healing.

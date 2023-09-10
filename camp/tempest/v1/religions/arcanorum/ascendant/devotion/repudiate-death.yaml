@@ -1,0 +1,23 @@
+name: Repudiate Death
+level: advanced
+cost: 4
+requires:
+  any:
+    - spell@2
+    - power@2
+description: |
+  _“We deny the most dangerous, the most cunning, and most devious force in the planes: Death itself. It is a most implacable foe, nipping at the heels of family, friends, and foe alike. Only with the purest of dedication may we win this ceaseless war, and bring to an end the ravages of Death.”_
+subcard:
+  name: Repudiate Death [Devotion][Adept]
+  incant: “I call  my faith, divine and right, I wield and shape creation’s light. I draw my strength from eternal life. Gather now within my hand, to negate death’s strife.”
+  call: "Grant Life by Time"
+  target: Individual
+  delivery: Touch
+  accent: Time
+  duration: Instantaneous
+  refresh: Long Rest, Spell
+  effect: Grant Life
+  description: |
+    This powerful spell unwinds a corpse's Fate, returning it to the state prior to death. If the target is a corpse, it will bring it back to life with 1 Life Point. This spell can only be used to bring one corpse back from the dead once per Long Rest.
+
+    The first time this spell is cast each long rest it will not consume a spell slot.

@@ -1,0 +1,26 @@
+name: Temporal Awareness
+level: advanced
+cost: 2
+requires:
+  any:
+    - power@1
+    - spell@1
+description: |
+  _“The connection with the Ascendant was mind-altering in a way that Kalin never considered. New options unfolded before her, laid out as pathways stretching out to the horizon. Her own death, once an immutable fact of her existence, was now more of a… guideline, and one that could be avoided.”_
+subcard:
+  name: Temporal Awareness [Devotion]
+  incant: None
+  call: '“Temporal Awareness”, “Obey to Spirit: Tell me what the current Day is.”'
+  target: Self
+  delivery: None
+  accent: Time
+  duration: Instantaneous
+  refresh: Focus Quick 100
+  effect: Special
+  description: |
+    This ability draws upon the faithful’s connection with the Ascendant, and gives them the ability to perceive time in a way that is often shrouded from others. This ability grants the following abilities:
+
+    * The character gains the Carnal Creature perk if they did not already have it.
+    * The character gains the Hard to Kill perk if they did not already have it.
+    * The character may carry an in-game pocket watch. This watch is unshatterable and unable to be taken from the character. Any attempt to remove the watch from the character may be countered with the Call “Counter: Temporal Awareness.” This ability may be used while slept, dying or dead. The pocketwatch may not be altered by in-game means, such as Enchanting.
+    * Should the faithful be convinced they have been shifted in time, knocked out for a long period, or other situation where they might have lost track of time they may reorient themselves by concentrating for a Focus Quick 100. Once complete, the faithful may seek out a nearby marshaling spirit to ask “Obey to Spirit: Tell me what the current Day is.” The Spirit will answer as accurately as they can.
