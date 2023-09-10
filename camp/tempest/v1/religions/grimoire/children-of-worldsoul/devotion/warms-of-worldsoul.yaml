@@ -1,0 +1,21 @@
+name: Warmth of the Worldsoul
+level: advanced
+cost: 3
+requires:
+  any:
+    - power@2
+    - spell@2
+description: |
+  _“The protectors and custodians of the Worldsoul are known to carry the radiant blessings of the Worldsoul in their spirits like a warm shawl, dampening harm that they would take.”_
+subcard:
+  name: Warmth of the Worldsoul [Devotion]
+  incant: None
+  call: '“Grant 1 Barrier to Self”, “Grant 3 Barrier to Self”'
+  target: Self
+  delivery: None
+  accent: None
+  duration: Passive
+  refresh: None
+  effect: Grant Barrier
+  description: |
+    When this character receives healing by the Radiance Accent, they choose to also gain 1 Barrier. If they expend a Spike, they may instead gain 3 Barrier.

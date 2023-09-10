@@ -1,0 +1,5 @@
+name: Aid the Fallen
+level: basic
+cost: 1
+description: |
+  Whenever the Follower of the Worldsoul Stabilizes or heals another who is Dying, they “Heal 1 to Self by Empathy.” The healing provided by this will only trigger once per individual per Short Rest.

@@ -1,0 +1,23 @@
+name: Lifestream Gospel
+level: advanced
+cost: 2
+requires:
+  any:
+    - power@2
+    - spell@2
+description: |
+  _“To speak of the Lifestream in good faith and earnest, is to invite it within yourself. It is to offer your heart to your friends, your family, and those who simply walk beside you at each gathering. While you may be the shepherd of their flock, it is for their flock that you find purpose, and the purpose that is found is guided by the Lifestream.”_
+subcard:
+  name: Lifestream Gospel [Devotion][Adept]
+  incant: 'RP: Character must speak from the heart about the importance of the Worldsoul and the Lifestream for a Slow 60.'
+  call: '“By My Voice Heal to Maximum Life Points”'
+  target: Individuals
+  delivery: Voice
+  accent: None
+  duration: Instantaneous
+  refresh: Spell
+  effect: Heal
+  description: |
+    Out of combat, this spell can be cast to heal all within a large range to the peak of their health.
+
+    The first time this spell is cast each long rest it will not consume a spell slot.
