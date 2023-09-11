@@ -1,0 +1,23 @@
+name: Flames of Phoenix
+level: advanced
+cost: 2
+requires:
+  any:
+    - spell@2
+    - power@2
+description: |
+  _Where Phoenix walks, righteous fire follows. The same could be said of her Feathers, who carry with them the power to draw the Flames of Phoenix._
+subcard:
+  name: Flames of Phoenix [Devotion][Adept]
+  incant: “I call my faith, divine and right, I wield and shape Phoenix's might. I draw Her strength from flaming brand, it gathers now within my hand. The Flames of Phoenix, guide my sight, to heal or harm, til morning's light.”
+  call: '“Wounding 2 by Flame”,  “Heal 2 by Flame”'
+  target: Individual
+  delivery: Packet (Spell-ball)
+  accent: Flame
+  duration: Special
+  refresh: Spell
+  effect: Damage
+  description: |
+    Drawing the power of Phoenix into their hands, and planting their feet, a character may use this power to charge three Spell-Balls. These Spell-Balls may be thrown as “Wounding 2 by Flame” or “Heal 2 by Flame.” Two additional Spell-Balls may be charged by expending a Spike when casting this spell. The caster may not heal themselves with this power.
+
+    The first time this spell is cast each Long Rest it will not consume a spell slot.

@@ -1,0 +1,5 @@
+name: Walk the Flames
+level: basic
+cost: 1
+description: |
+  Anytime the Feather takes damage by Environmental damage with the Flame Accent, they may instead call “Resist.”

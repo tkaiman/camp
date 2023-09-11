@@ -1,0 +1,21 @@
+name: Rise from Ash
+level: advanced
+cost: 4
+requires:
+  any:
+    - power@2
+    - spell@2
+description: |
+  _It is well known that before Phoenix ascended, she was a woman by the name of Ariadne Brighthearth. She died trying to defend innocent lives from a great evil that had come to their home, but was reborn by her ascension and the power of her grimoire. She has gifted her most faithful with a similar power, that they may continue their crusade._
+subcard:
+  name: Rise from Ash [Devotion]
+  incant: None
+  call: “Life by Flame”
+  target: Self
+  delivery: Touch
+  accent: Flame
+  duration: Instantaneous
+  refresh: Event
+  effect: Life
+  description: |
+    After finishing a 180 count of your death timer, you may expend this power to take a “Life by Flame” instead of discorporating. Once the character rises from the ashes, they are affected by a Short Drain.
