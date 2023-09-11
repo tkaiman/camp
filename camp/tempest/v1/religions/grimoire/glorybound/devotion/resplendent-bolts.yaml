@@ -1,0 +1,21 @@
+name: Resplendent Bolts
+level: advanced
+cost: 4
+requires:
+  any:
+    - spell@2
+    - power@2
+description: |
+  _While Bright Bolt is a staple among many clerics, Alexi devised a powerful alternative to it that can be used in any theater of war._
+subcard:
+  name: Resplendent Bolt [Devotion]
+  incant: '“I call the Lion for Resplendent Bolts!“'
+  call: "1 Radiance"
+  target: Individual
+  delivery: Packet (Spell-Packet)
+  accent: Radiance
+  duration: Instantaneous
+  refresh: Instantaneous
+  effect: Damage
+  description: |
+    This minor cantrip charges a packet of materia with an explosive burst which will do 1 by Radiance to those it hits. If this first packet is not Prevented, the caster may immediately charge two additional packets without further incant.

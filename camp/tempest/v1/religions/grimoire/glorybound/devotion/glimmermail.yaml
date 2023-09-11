@@ -1,0 +1,7 @@
+name: Glimmermail
+level: basic
+cost: 3
+description: |
+  After completing a Long Rest the character may gain a Protect vs Darkness.
+
+  While this character is wearing metal armor on their chest (even if they are not benefiting from the armor points) they may Resist a number of Effects with the Darkness Accent equal to the character’s Maximum Life Points per Event.

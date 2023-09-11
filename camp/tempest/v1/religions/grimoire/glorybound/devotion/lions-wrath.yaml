@@ -1,0 +1,21 @@
+name: Lion's Wrath
+level: advanced
+cost: 3
+requires:
+  any:
+    - power@2
+    - spell@2
+description: |
+  _For the Glorybound, one decisive moment can be the difference between utter failure and radiant Glory. Channeling their faith’s wrath, the Glorybound are able to harness that tense moment to devastating perk._
+subcard:
+  name: Lion's Wrath [Devotion]
+  incant: "“I become the Lion's Wrath!“"
+  call: '“Wounding 2 Radiance” or “Wounding 5 Radiance”'
+  target: Self
+  delivery: Weapon
+  accent: Radiance
+  duration: Short Rest
+  refresh: Short Rest
+  effect: Radiance
+  description: |
+    The Power allows the Glory-bound to gain two charges of “Wounding 2 Radiance” usable with up to two weapon attacks until they complete a Short Rest. If you are using a two handed weapon, this ability deals “Wounding 5 Radiance” instead, however, it is limited to one use.
