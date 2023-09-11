@@ -1,0 +1,29 @@
+name: Blood is Power
+level: advanced
+cost: 3
+requires:
+  any:
+    - spell@2
+    - power@2
+description: |
+  _“The Chosen of Diavalla are well known for delving into the Rite of Blood, and their experience is such that they may call upon these profane magics at a moment's notice. Trading their own life essence for power, they are able to extend their magical ability beyond most practitioners' ability, but at a gruesome price.”_
+subcard:
+  name: Blood is Power [Devotion][Adept]
+  incant: “I call my faith, divine and right, I wield and shape creation's light, With fervent plea and ardent zeal, I summon strength for woe and weal…”
+  call: '“Grant [X] Blood Points”'
+  target: Self
+  delivery: None
+  accent: None
+  duration: Long Rest
+  refresh: Spell, Long Rest
+  effect: Grant Blood Points
+  description: |
+    The True Believer in Diavalla knows that the power of Blood and Flesh is the cornerstone to all magic. By Sacrificing their blood to Diavalla, they may refresh their spell slots. The caster gains two Blood Points, and an additional Blood Point for each Life Point Sacrificed during the casting of this spell. All Blood Points are lost when the caster completes a Long Rest.
+
+    When casting spells, the caster may Sacrifice one Blood Point to cast a Novice Spell, two for a Adept Spell, and three for a Greater Spell instead of the normal Spell-slots. The caster must have at least one slot of the appropriate tier and Sphere to cast spells this way. Master spells cannot be cast this way.
+
+    Alternatively, Blood Points may be spent while a participant of a Blood Magic Ritual to fulfill the requirement(s) of Life Point Costs.
+
+    The casting of this spell is particularly taxing upon the caster, and can only be cast once per Long Rest.
+
+    The first time this spell is cast each long rest it will not consume a spell slot.

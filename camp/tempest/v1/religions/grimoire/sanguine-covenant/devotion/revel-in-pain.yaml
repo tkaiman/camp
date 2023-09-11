@@ -1,0 +1,21 @@
+name: Revel in Pain
+cost: 3
+level: advanced
+requires:
+  any:
+    - spell@2
+    - power@2
+description: |
+  For the faithful of the Sanguine Covenant, even the sharpest blades expertly slid between the ribs can be little more than a nuisance. The blood of the Red Mother blesses those who give their blood willingly, and protects her Covenant against those who would silence her faithful.
+subcard:
+  name: Revel in Pain [Devotion]
+  incant: None
+  call: '“Counter, Revel in Pain”'
+  target: Self
+  delivery: None
+  accent: Agony
+  duration: Instantaneous
+  refresh: Long Rest
+  effect: Counter, Heal
+  description: |
+    When struck by a Piercing Effect, the character may expend a Spike to Counter the Piercing effect and instead be Heal 1 by Agony. This effect may only be used once per Long Rest. A character must call “Counter, Revel in Pain” when using this effect.
