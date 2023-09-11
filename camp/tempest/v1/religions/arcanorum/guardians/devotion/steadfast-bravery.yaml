@@ -1,0 +1,23 @@
+name: Steadfast Bravery
+level: advanced
+cost: 3
+requires:
+  any:
+    - spell@2
+    - power@2
+description: |
+  Calling upon the Guardians to embolden the will and steel the spine, the devoted grants their ally protection from that which would sap their will to fight on.
+subcard:
+  name: Steadfast Bravery [Devotion][Adept]
+  incant: “I call the Guardian, divine and right, I wield and shape creation’s light. I draw my strength from watchful eyes. Gather now within my hand to rally my allies.”
+  call: “Short Grant Fear Resistance by Will”
+  target: Individual
+  delivery: Touch
+  accent: Will
+  duration: Short Rest
+  refresh: Spell
+  effect: Grant Resistance
+  description: |
+    This spell allows the caster to protect an ally from damage and effects with the Fear Accent. When cast the caster may grant Fear Resistance to a target.
+
+    The first time this spell is cast each long rest it will not consume a spell slot.

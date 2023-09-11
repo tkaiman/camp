@@ -1,0 +1,21 @@
+name: Citadel of Will
+level: advanced
+cost: 3
+requires:
+  any:
+    - power@2
+    - spell@2
+description: |
+  The foes of the Guardians are no strangers to the usage of terror and madness to weaken their foes. Likewise, the Devotees of the Guardians have had to adapt to their opponent’s tactics, and rigorous mental training is expected of all holy warriors that wish to follow their deities into combat.
+subcard:
+  name: Citadel of Will [Devotion]
+  incant: None
+  call: “Counter, Citadel of Will”
+  target: Self
+  delivery: None
+  accent: Will
+  duration: Instantaneous
+  refresh: Short Rest
+  effect: Counter
+  description: |
+    The warrior is conditioned against the supernatural horrors of the battlefield, having trained their mind to persevere against the unholy onslaughts they must face. Once per Short Rest, the character may Counter any damage or Effect with the Madness Accent.
