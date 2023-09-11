@@ -1,0 +1,5 @@
+name: Ember's Brush
+level: basic
+cost: 3
+description: |
+  Whenever this character is affected by an Effect with the Flame Accent, they may expend a Spike to Resist it. This is an at-will ability. This effect can be used a number of times equal to the character’s Maximum Life Points per Event.

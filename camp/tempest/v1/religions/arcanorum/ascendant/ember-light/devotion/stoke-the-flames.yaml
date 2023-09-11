@@ -1,0 +1,21 @@
+name: Stoke the Flames
+level: advanced
+cost: 4
+requires:
+  any:
+    - spell@2
+    - power@2
+description: |
+  “Even deep within frozen wastelands, or high up in the most frostbitten peaks, the everburning flames of the Ember Light are always burning, and one need not fear the cold when embraced by the light.”
+subcard:
+  name: Stoke the Flames [Devotion]
+  incant: “I invoke my faith, divine and right, I wield and shape Ember’s might. I draw strength from inferno bright, building high the pyres might.”
+  call: “Short Grant Ice Resistance to Self by Flame”
+  target: Self
+  delivery: None
+  accent: Flame
+  duration: Short Rest
+  refresh: Long Rest
+  effect: Grant Resistance
+  description: |
+    Once per Long Rest, this character may gain Ice Resistance until her next Short Rest.

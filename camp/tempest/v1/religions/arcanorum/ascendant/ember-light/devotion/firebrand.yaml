@@ -1,0 +1,23 @@
+name: Firebrand
+level: advanced
+cost: 1
+requires:
+  any:
+    - spell@1
+    - power@1
+description: |
+  _“While the adherents of the Ember Light are not noted for violent tendencies, once riled up, the mob acts as a raging wildfire, sweeping across the land, burning torches and flaming weapons in every hand.”_
+subcard:
+  name: Firebrand [Devotion][Novice]
+  incant: “I call my faith, divine and right, I wield and shape Ember’s might. I draw strength from flaming brand, it gathers now within my hand. The Flames of Yaziri, burning bright, sear these heretics from my sight.”
+  call: '“Short Grant Flame Accent by Flame”, Explanation'
+  target: Individual
+  delivery: Touch
+  accent: Flame
+  duration: Short Rest
+  refresh: Spell
+  effect: Grant Accent
+  description: |
+    The target of this spell gains the Flame Accent, which allows any weapon call to substitute the Flame Accent at-will.
+
+    The first time this spell is cast each long rest it will not consume a spell slot.
