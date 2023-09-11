@@ -165,7 +165,7 @@ class FeatureController(base_engine.BaseFeatureController):
 
     @property
     def _max_ranks_tag(self) -> str:
-        return f"({self.max_ranks})"
+        return f"{self.max_ranks}"
 
     def power_card(self) -> defs.PowerCard | None:
         return self.definition.model_copy(
