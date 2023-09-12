@@ -1,0 +1,25 @@
+name: Blessing of the Highlord
+level: advanced
+cost: 3
+requires:
+  any:
+    - spell@2
+    - power@2
+description: |
+  Calling upon the grace and righteousness of the Highlord Aeterius, the cleric may shine the light of creation upon his flock, granting them additional power in the fight against darkness:
+subcard:
+  name: Blessing of the Highlord [Devotion][Adept]
+  incant: “I call the Highlord, divine and right, I wield and shape creation’s light. I draw my strength from blazing sun. Gather now within my hand to rally my allies.”
+  call: '“Short Grant +2 Maximum Spikes to Followers of The Highlord by Radiance”'
+  target: Self and up to three Followers of The Highlord
+  delivery: Touch
+  accent: Radiance
+  duration: Short Rest
+  refresh: Spell
+  effect: Grant Spike
+  description: |
+    This spell can be cast on the caster and up to three individuals that are devoted to the Highlord who are within Touch range of the caster and can only be cast out of combat. This Blessing will grant each beneficiary an additional two Maximum Spikes. No individual may benefit from this Blessing more than once per Long Rest.
+
+    If a Greater spell-slot is used to cast this spell, it will affect up to six targets (other than the caster). If a Master spell-slot is used to cast this spell, it will affect up to nine targets (other than the caster) and they may be devoted to any faith other than Undevoted.
+
+    The first time this spell is cast each long rest it will not consume a spell slot.

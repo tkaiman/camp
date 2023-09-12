@@ -1,0 +1,21 @@
+name: Radiant Blade
+level: advanced
+cost: 3
+requires:
+  any:
+    - spell@2
+    - power@2
+description: |
+  As the pre-eminent faith in the fight against the unholy, the Highlord’s followers are trained early on how to channel the light against their foes:
+subcard:
+  name: Radiant Strike [Devotion]
+  incant: None
+  call: '“Piercing [X] to Demon By Radiance”'
+  target: Individual
+  delivery: Weapon
+  accent: Radiance
+  duration: Instantaneous
+  refresh: Short Rest
+  effect: Piercing
+  description: |
+    Once per Short Rest, the character may make a weapon attack and add their Spike damage, gain the “Piercing” effect, and add the “to Demon” qualifier.
