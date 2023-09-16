@@ -28,6 +28,7 @@ _SUBFEATURE_TYPES: set[str] = {
     "subbreed",
     "breedchallenge",
     "breedadvantage",
+    "breedtrait",
 }
 _OPTION_BONUS = "__option__"
 
@@ -379,6 +380,7 @@ class FeatureController(base_engine.BaseFeatureController):
                 self.child_purchase_remaining is None
                 or self.child_purchase_remaining > 0
             )
+            and (self.child_purchase_budget is None or self.child_purchase_budget > 0)
             and self.subfeatures_available
         ):
             badges.append(("primary", "Purchases Available"))
@@ -512,6 +514,10 @@ class FeatureController(base_engine.BaseFeatureController):
     def child_purchase_remaining(self) -> int | None:
         if (limit := self.child_purchase_limit) is not None:
             return limit - self.child_purchase_count
+        return None
+
+    @property
+    def child_purchase_budget(self) -> int | None:
         return None
 
     def can_increase(self, value: int = 1) -> Decision:

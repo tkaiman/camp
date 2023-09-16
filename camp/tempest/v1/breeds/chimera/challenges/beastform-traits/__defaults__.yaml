@@ -1,0 +1,4 @@
+parent: beastform
+category: Beastform Traits
+requires: beastform
+id_prefix: bf-

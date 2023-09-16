@@ -320,10 +320,11 @@ class Subbreed(BaseFeatureDef):
 class BreedChallenge(BaseFeatureDef):
     type: Literal["breedchallenge"] = "breedchallenge"
     subbreed: str | None = None
-    award: int | dict[str, int] = Field(default=0)
+    award: int | dict[str, int] = 0
     award_mods: dict[str, int] | None = None
     costuming: set[str] | bool = False
     parent: str  # Parent is _required_
+    trait_max_bp: int | None = None
 
     @classmethod
     def default_name(cls) -> str:
@@ -333,6 +334,12 @@ class BreedChallenge(BaseFeatureDef):
         super().post_validate(ruleset)
         if self.subbreed:
             ruleset.validate_identifiers(self.subbreed)
+        parent = ruleset.features[self.parent]
+        if not isinstance(parent, (Breed, BreedChallenge)):
+            raise ValueError(
+                f"Parent {self.parent} of {self.id} expected "
+                f"to be type breed or breedchallenge, but was {parent.type}"
+            )
 
     @property
     def option(self) -> base_models.OptionDef | None:
@@ -349,6 +356,7 @@ class BreedChallenge(BaseFeatureDef):
 class BreedAdvantage(BaseFeatureDef):
     type: Literal["breedadvantage"] = "breedadvantage"
     subbreed: str | None = None
+    parent: str  # Parent is _required_
 
     @classmethod
     def default_name(cls) -> str:
@@ -358,6 +366,11 @@ class BreedAdvantage(BaseFeatureDef):
         super().post_validate(ruleset)
         if self.subbreed:
             ruleset.validate_identifiers(self.subbreed)
+        parent = ruleset.features[self.parent]
+        if not isinstance(parent, Breed):
+            raise ValueError(
+                f"Parent {self.parent} of {self.id} expected to be type breed, but was {parent.type}"
+            )
 
 
 FeatureDefinitions: TypeAlias = (

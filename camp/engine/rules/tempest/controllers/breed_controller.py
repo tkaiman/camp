@@ -126,6 +126,24 @@ class BreedController(feature_controller.FeatureController):
         return grants
 
     @property
+    def child_purchase_budget(self) -> int | None:
+        if bpc := self.bp:
+            # We have two budgets to consider:
+            # 1. How many points worth of challenges have we taken?
+            #    As long as we can take more BP worth of challenges,
+            #    we still have purchase budget.
+            # 2. How many points worth of advantages have we taken?
+            #    As long as we have unspent BP, we still have purcahse
+            #    budget.
+            # Basically, we want to show the "Purchases Available" badge
+            # until the breed is at cap and fully spent.
+            challenge_budget = bpc.bp_cap - bpc.challenge_award_bp
+            if challenge_budget > 0:
+                return challenge_budget
+            return bpc.value
+        return None
+
+    @property
     def bp(self) -> attribute_controllers.BreedPointController | None:
         if self.value <= 0:
             return None
@@ -276,18 +294,19 @@ class BreedAdvantageController(feature_controller.FeatureController):
 class BreedChallengeController(feature_controller.FeatureController):
     character: character_controller.TempestCharacter
     definition: defs.BreedChallenge
-    parent: BreedController
+    parent: BreedController | BreedChallengeController
+    supports_child_purchases: bool = True
 
     @property
     def meets_requirements(self) -> bool:
         if not (rd := super().meets_requirements):
             return rd
-        if self.subbreed_id:
+        if self.subbreed_id and not self.character.get(self.subbreed_id) > 0:
             # The primary breed must be this breed
             if not (pb := self.character.primary_breed):
                 # No primary breed selected, can't be this one.
                 return Decision.NO
-            if not pb.full_id == self.parent.full_id:
+            if not pb.full_id == self.parent_breed.full_id:
                 # Wrong breed is primary
                 return Decision(
                     success=False,
@@ -307,22 +326,30 @@ class BreedChallengeController(feature_controller.FeatureController):
         return tags
 
     @property
+    def parent_breed(self) -> BreedController:
+        parent = self.parent
+        while not isinstance(parent, BreedController):
+            parent = parent.parent
+        return parent
+
+    @property
     def subbreed(self) -> feature_controller.FeatureController | None:
         if sbi := self.subbreed_id:
             return self.character.controller(sbi)
         return None
 
     def can_afford(self, value: int = 1) -> Decision:
+        breed = self.parent_breed
         if sbi := self.subbreed_id:
-            if not self.parent.is_primary:
+            if not breed.is_primary:
                 return Decision(
                     success=False, reason="Only primary breed can select subbreeds"
                 )
-            if self.parent.subbreed_id is None:
+            if breed.subbreed_id is None:
                 return Decision.OK
-            if self.parent.subbreed_id != sbi:
+            if breed.subbreed_id != sbi:
                 return Decision(success=False, reason="Subbreed mismatch")
-        if not self.parent.value > 0:
+        if breed.value <= 0 and self.parent.value <= 0:
             return Decision.NO
         return Decision.OK
 
@@ -366,12 +393,21 @@ class BreedChallengeController(feature_controller.FeatureController):
     def _award_value(self) -> int:
         """Amount of BP that would be awarded, assuming this challenge was taken at character creation."""
         award = self._option_award(self.option)
+        award += self._trait_bp()
         # The award value can be modified if other features are present.
         if self.definition.award_mods:
             for flaw, mod in self.definition.award_mods.items():
                 if self.character.get(flaw) > 0:
                     award += mod
         return max(award * self.paid_ranks, 0)
+
+    def _trait_bp(self) -> int:
+        if self.definition.trait_max_bp:
+            award: int = 0
+            for c in self.taken_children:
+                award += c.award_bp
+            return min(award, self.definition.trait_max_bp)
+        return 0
 
     def _option_award(self, option) -> int:
         if isinstance(self.definition.award, int):
@@ -388,11 +424,13 @@ class BreedChallengeController(feature_controller.FeatureController):
     def cost_string(self, **kw) -> str | None:
         if (cost := self.award_bp) or self.paid_ranks:
             return self.purchase_cost_string(cost=cost)
-        return None
+        return self.purchase_cost_string()
 
     def purchase_cost_string(self, ranks: int = 1, cost: int | None = None) -> str:
         if cost is not None:
             return f"+{cost} BP"
+        if self.definition.trait_max_bp:
+            return f"+1-{self.definition.trait_max_bp}"
         match self.definition.award:
             case int():
                 return f"+{self.definition.award} BP"
@@ -408,6 +446,12 @@ class BreedChallengeController(feature_controller.FeatureController):
                 return "+? BP"
 
     @property
+    def child_purchase_budget(self) -> int | None:
+        if self.definition.trait_max_bp:
+            return self.definition.trait_max_bp - self._trait_bp()
+        return None
+
+    @property
     def explain(self) -> list[str]:
         reasons = super().explain
 
@@ -418,6 +462,17 @@ class BreedChallengeController(feature_controller.FeatureController):
 
         if self.award_bp:
             reasons.append(f"You receive {self.award_bp} BP from this flaw.")
+
+        if trait_max := self.definition.trait_max_bp:
+            trait_bp = self._trait_bp()
+            if trait_bp >= trait_max:
+                reasons.append(
+                    f"You have selected the maximum {trait_max} BP from traits."
+                )
+            else:
+                reasons.append(
+                    f"{trait_bp} BP of the allowed {trait_max} BP for this challenge selected."
+                )
         return reasons
 
     def issues(self) -> list[Issue] | None:

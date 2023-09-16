@@ -270,11 +270,24 @@ def _parse(
             # Add them to our existing defaults and skip the entry.
             # Note that these only apply to this file.
             del raw_data["id"]
+            # Combine prefixes up the tree.
+            new_prefix = None
+            if (
+                (raw_prefix := raw_data.get("id_prefix"))
+                and (default_prefix := defaults.get("id_prefix"))
+                and (raw_prefix != default_prefix)
+            ):
+                new_prefix = raw_prefix + default_prefix
             defaults = _dict_merge(defaults, raw_data)
+            if new_prefix:
+                defaults["id_prefix"] = new_prefix
             continue
         count += 1
         try:
             data = _dict_merge(defaults, raw_data)
+            if "id_prefix" in data:
+                data["id"] = data["id_prefix"] + data["id"]
+                del data["id_prefix"]
             data["def_path"] = str(path)
             type_key = data.get("type")
             if not type_key:

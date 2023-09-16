@@ -1,0 +1,3 @@
+parent: grand-design
+id_prefix: "gd-"
+requires: grand-design
