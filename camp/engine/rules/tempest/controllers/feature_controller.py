@@ -126,7 +126,7 @@ class FeatureController(base_engine.BaseFeatureController):
 
     @property
     def cost(self) -> int:
-        return self._cost_for(self.paid_ranks, self.bonus)
+        return self.cost_for(self.paid_ranks, self.bonus)
 
     def cost_string(self, include_grants: bool = True) -> str | None:
         if not self.value or self.is_option_template:
@@ -211,7 +211,7 @@ class FeatureController(base_engine.BaseFeatureController):
         if self.unused_bonus > 0:
             return 0
         grants = 0 if self.is_option_template else self.bonus
-        return self._cost_for(self.paid_ranks + 1, grants) - self._cost_for(
+        return self.cost_for(self.paid_ranks + 1, grants) - self.cost_for(
             self.paid_ranks, grants
         )
 
@@ -231,7 +231,7 @@ class FeatureController(base_engine.BaseFeatureController):
                 else:
                     grants = self.bonus
                 ranks = max(0, ranks - self.unused_bonus)
-                cost = self._cost_for(self.paid_ranks + ranks, grants) - self._cost_for(
+                cost = self.cost_for(self.paid_ranks + ranks, grants) - self.cost_for(
                     self.paid_ranks, grants
                 )
             if cost >= 0:
@@ -626,7 +626,7 @@ class FeatureController(base_engine.BaseFeatureController):
         if available is None:
             return _NO_PURCHASE
         grants = 0 if self.is_option_template else self.bonus
-        currency_delta = self._cost_for(self.paid_ranks + value, grants) - self.cost
+        currency_delta = self.cost_for(self.paid_ranks + value, grants) - self.cost
         if available < currency_delta:
             return Decision(
                 success=False,
@@ -834,7 +834,7 @@ class FeatureController(base_engine.BaseFeatureController):
         else:
             raise NotImplementedError(f"Unexpected discount value: {discounts}")
 
-    def _cost_for(self, purchased_ranks: int, granted_ranks: int = 0) -> int:
+    def cost_for(self, purchased_ranks: int, granted_ranks: int = 0) -> int:
         """Returns the cost for the number of ranks, typically in CP.
 
         This tries to take into account any active discounts applied to this feature.
@@ -904,7 +904,7 @@ class FeatureController(base_engine.BaseFeatureController):
                 granted_ranks = self.bonus
                 while available_ranks > 0:
                     cp_delta = (
-                        self._cost_for(self.paid_ranks + available_ranks, granted_ranks)
+                        self.cost_for(self.paid_ranks + available_ranks, granted_ranks)
                         - current_cost
                     )
                     if cp_delta <= available:

@@ -1,0 +1,16 @@
+name: Latent Psionic Energy
+cost: 3
+description: |
+  The Arbiter has some amount of psionic energy stored in their form that they can call on in times of need. When called upon the Arbiter is able to force their mind unto another to confuse and remove the Arbiter from their direct attention. This Character has the Mental Rubrication Power below:
+subcard:
+  name: Mental Rubrication [Breed]
+  incant: '“Through ancient power, I call for the rubrication of your mind!”'
+  call: '“[Name or Description]: Short Repel by Mind”'
+  target: Individual
+  delivery: Verbal
+  accent: Mind
+  duration: Instantaneous
+  refresh: Long Rest
+  effect: Repel
+  description: |
+    Upon calling forth this power they may point at their target and call “[Name or Description]: Short Repel by Mind”

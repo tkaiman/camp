@@ -1,0 +1,15 @@
+name: The Waystone
+cost: 2
+grants: hearth
+choices:
+  hearth-perks:
+    name: Hearth Perks
+    description: Choose up to 5 points of Hearth perks.
+    controller: point-picker
+    controller_data:
+      points: 5
+    matcher:
+      id: -hearth
+      category: Hearth Perks
+description: |
+  Arbiters are islands of calm in the maelstrom of the Tempest, and can solidify the protections of the Worlds when necessary. This Character has the Hearth Perk from the Character Options Chapter as a Breed Advantage, and can choose up to 5 points worth of other Hearth Perks.

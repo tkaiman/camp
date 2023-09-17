@@ -1,0 +1,16 @@
+name: Scalding Power
+cost: 6
+description: |
+  Through the fiendish heritage of the Forsaken some find that they may call upon their cursed blood to wound their enemies. This Character has the Shadowflame Cantrip below:
+subcard:
+  name: Shadowflame [Breed]
+  incant: '"From ancient blood, I summon the Shadowflame.”'
+  call: '“1 [Flame or Darkness]” or “2 [Flame or Darkness]”'
+  target: Individual
+  delivery: Packet (Spell-Packet)
+  accent: Flame or Darkness
+  duration: Instantaneous
+  refresh: Immediate
+  effect: Damage
+  description: |
+    This minor spell charges a Spell-Packet of materia with an explosive burst of demonic power which will do 1 point of damage to those it hits. The Forsaken may choose, when the Power is used, whether it will do Flame or Darkness damage. If the Forsaken expends a Spike while casting this spell, it will do 2 points of damage.

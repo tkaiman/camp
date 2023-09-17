@@ -84,7 +84,7 @@
 <a name="choices"></a>
 {% for key, choice in choices.items %}
     {% if choice.controller.limit > 1 %}
-    <h3>{{ choice.controller.name }} ({{choice.controller.limit}})</h3>
+    <h3>{{ choice.controller.name }} ({{choice.controller.choices_remaining}}/{{choice.controller.limit}})</h3>
     {% else %}
     <h3>{{ choice.controller.name }}</h3>
     {% endif %}

@@ -1,0 +1,16 @@
+name: Aspect of Truth
+cost: 3
+description: |
+  Blessed with a sliver of the omniscience of its maker, the celestine is attuned to the Truth, peering beyond the material, into the spirit of those they encounter. This Character has the Divine Scrutiny Power below:
+subcard:
+  name: Divine Scrutiny [Breed]
+  incant: One minute of RP
+  call: '“ Discern: Have you knowingly spoken an untruth in the last five minutes?”'
+  target: Individual
+  delivery: Verbal
+  accent: None
+  duration: Instantaneous
+  refresh: Short Rest
+  effect: Discern
+  description: |
+    The Celestine after talking to another being for a small amount of time will be able to peer at through the words that someone is saying to them. After one minute of talking to another, they may Discernif someone was actively trying to deceive them.

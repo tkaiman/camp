@@ -285,7 +285,9 @@ class GrantChoice(BaseFeatureChoice):
         for expr in sorted(feats):
             feat = self._feature.character.feature_controller(expr)
             short = feat.short_description
-            descr = feat.name_with_tags(exclude_tags={self._feature.id})
+            descr = feat.name_with_tags(
+                exclude_tags={self._feature.id}, include_cost=True
+            )
             if self.show_description:
                 if not feat.possible_ranks:
                     descr = f"{descr} (Already at Max)"
@@ -303,6 +305,44 @@ class GrantChoice(BaseFeatureChoice):
             if choice not in grants:
                 grants[choice] = 0
             grants[choice] += ranks
+
+
+class PointPickerChoice(GrantChoice):
+    @property
+    def points(self) -> int:
+        return self.definition.controller_data.get("points", 0)
+
+    @property
+    def limit(self) -> int:
+        return self.points
+
+    @property
+    def taken_points(self) -> int:
+        points = 0
+        character = self._feature.character
+        for fid, ranks in self.choice_ranks().items():
+            controller = character.feature_controller(fid)
+            points += controller.cost_for(ranks)
+        return points
+
+    @property
+    def available_points(self) -> int:
+        return self.points - self.taken_points
+
+    @property
+    def choices_remaining(self) -> int:
+        return self.available_points
+
+    def _matching_features(self) -> set[str]:
+        # Only match features that would be within budget.
+        available = self.available_points
+        matching = set()
+        for choice in super()._matching_features():
+            controller = self._feature.character.feature_controller(choice)
+            cost = controller.cost_for(1)
+            if cost <= available:
+                matching.add(choice)
+        return matching
 
 
 class SameTagChoice(GrantChoice):
@@ -591,6 +631,8 @@ def make_controller(
             return AccessibleClassPowerChoice(feature, choice_id)
         case "agile-learner":
             return AgileLearnerChoice(feature, choice_id)
+        case "point-picker":
+            return PointPickerChoice(feature, choice_id)
         case None:
             return GrantChoice(feature, choice_id)
         case _:
