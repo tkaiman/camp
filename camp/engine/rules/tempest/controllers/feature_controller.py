@@ -63,9 +63,13 @@ class FeatureController(base_engine.BaseFeatureController):
 
     @property
     def subfeatures(self) -> list[FeatureController]:
-        return [
+        subfeats = [
             fc for fc in self.taken_children if fc.feature_type in _SUBFEATURE_TYPES
         ]
+        for ec in self.extra_children():
+            if ec not in subfeats:
+                subfeats.append(ec)
+        return subfeats
 
     @property
     def subfeatures_available(self) -> list[FeatureController]:
@@ -81,9 +85,16 @@ class FeatureController(base_engine.BaseFeatureController):
 
     @property
     def parent(self) -> FeatureController | None:
-        if parent := super().parent:
-            return cast(FeatureController, parent)
-        return None
+        parent = super().parent
+        if (parent is None or parent.value == 0) and self.internal and self.value > 0:
+            # This feature is internal to another feature, but has been taken
+            # independently somehow. If some other feature is granting it, try
+            # to classify _that_ feature as our adopted parent.
+            for controller, _ in self.granted_by:
+                if controller.value > 0:
+                    parent = controller
+                    break
+        return cast(FeatureController | None, parent)
 
     @property
     def formal_name(self) -> str:
@@ -319,6 +330,18 @@ class FeatureController(base_engine.BaseFeatureController):
         features = [f for f in controllers if isinstance(f, FeatureController)]
         features.sort(key=lambda f: f.full_id)
         return features
+
+    def extra_children(self) -> list[FeatureController]:
+        return [c for c in self.granted_features if c.internal]
+
+    @property
+    def granted_by(self) -> list[tuple[FeatureController, int]]:
+        grants = []
+        for source_id, data in self._propagation_data.items():
+            if data.grants > 0:
+                controller = self.character.feature_controller(source_id)
+                grants.append((controller, data.grants))
+        return grants
 
     @property
     def discounted_features(self) -> list[(FeatureController, int)]:

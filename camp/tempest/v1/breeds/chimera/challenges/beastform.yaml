@@ -1,5 +1,6 @@
 name: Beastform
 trait_max_bp: 6
 requires: -grand-design
+costuming: true
 description: |
   Crafted from the best nature has to offer, the Beastform is an amalgamation of the traits most suited to the Chimera’s environment. The Chimera may take any combination of the following traits: Stub Tail, Snout, Beastly Ears, Fangs, Horns, Hide, Paws, Tail, or Chitin for up to six points of Chimera Challenges. A player may choose to represent additional Beastform traits, but will not gain Breed points for doing so.

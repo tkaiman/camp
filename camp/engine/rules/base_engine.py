@@ -990,7 +990,18 @@ class BaseFeatureController(PropertyController):
 
         Plot/logistics might also be able to waive a particular issue if it suits their needs.
         """
-        return None
+        issues: list[base_models.Issues] = []
+        if self.value > 0:
+            if sr := self.definition.soft_requires:
+                if not (rd := self.character.meets_requirements(sr)):
+                    issues.append(
+                        base_models.Issue(
+                            issue_code="soft-requirements-not-met",
+                            feature_id=self.full_id,
+                            reason=rd.reason,
+                        )
+                    )
+        return issues
 
     def __str__(self) -> str:
         return self.feature_list_name

@@ -1,0 +1,6 @@
+name: Thy Flesh Consumed
+award: 3
+requires: -appetite-for-thy-kin
+soft_requires: gheist-consume
+description: |
+  The gheist does not gain nourishment from traditional food and must regularly consume flesh from sapient, humanoid creatures. Once per Long Rest the gheist must feed on a sapient humanoid creature using the Consume Breed Advantage, if they don’t, upon their next long rest they are Inherently Drained by Hunger until they use the Consume Breed Advantage successfully. **While drained in this way the gheist may still use the Consume Breed Advantage**. This Challenge is mutually exclusive with **Appetite for Thy Kin**. The gheist must take the Consume advantage if this challenge is taken.

@@ -1,0 +1,8 @@
+name: Shroud's Protection
+cost: 2
+requires:
+  any:
+    - shroud-of-the-veil
+    - shroud-of-dk
+description: |
+  While the Gheist is wearing their **Shroud of the Veil** conspicuously, the gheist may receive a Protect vs. Ice at the end of a Short Rest.

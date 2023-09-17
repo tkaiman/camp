@@ -1,0 +1,8 @@
+name: Shroud of the Dead
+cost: 3
+requires:
+  any:
+    - shroud-of-the-veil
+    - shroud-of-dk
+description: |
+  The shroud commonly worn by the gheist is rumored to both be a part of them and also a form of protection, keeping the gheist “alive” such that it may spread its curse to others before being hunted down and put out if it, and everyone else’s, misery. The Shroud of the Veil, if worn on the head, and conspicuously visible, is considered 2 points of Natural Armor. The gheist must take the Shroud of the Veil  challenge for this to become available.

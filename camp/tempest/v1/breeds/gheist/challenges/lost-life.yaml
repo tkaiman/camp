@@ -1,0 +1,16 @@
+name: Lost Life
+costuming: true
+requires: breeds<2
+trait_max_bp: 10
+choices:
+  borrowed-challenge:
+    name: Previous Life Breed Challenge
+    description: Select a single costuming challenge from your previous life.
+    matcher:
+      type: breedchallenge
+      costuming: true
+      parent:
+        id: -gheist
+        type: breed
+description: |
+  Lost in the depths of time and memory the past life of the gheist is but a half remembered dream. This gheist cannot Cross-Breed. However, they may choose a physical [Repped] challenge from a single specific breed and earn that amount of Advantage points for Lost Life instead. Any [Repped] tags the disadvantage has is also applied to Lost Life. For instance, if the  Ætori Aelthen “Burning Gaze” breed disadvantage is taken,  Lost Life will be [Repped, Eye Color] and award 4 points.

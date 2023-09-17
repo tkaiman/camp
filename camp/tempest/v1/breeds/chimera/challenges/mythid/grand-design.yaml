@@ -1,6 +1,7 @@
 name: Grand Design
 trait_max_bp: 10
 requires: -beastform
+costuming: true
 inherit_children:
   - beastform
   - hewn-form

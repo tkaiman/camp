@@ -1,0 +1,5 @@
+name: Blood Bulwark
+cost: 3
+requires: gheist-consume
+description: |
+  It is rumored that Erasmus survived an onslaught of ghouls for three days, feasting only on the corpses of his fallen gheist brethren. Once per Short Rest, When using the **Consume** Breed Advantage, any Healing that goes over the Characters Maximum Life Points is converted to Barrier, up to the gheist’s maximum Barrier.

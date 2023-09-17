@@ -13,6 +13,8 @@ from . import attribute_controllers
 from . import character_controller
 from . import feature_controller
 
+BREED_LIMITERS = ["purebred", "lost-life"]
+
 
 class BreedController(feature_controller.FeatureController):
     character: character_controller.TempestCharacter
@@ -112,8 +114,14 @@ class BreedController(feature_controller.FeatureController):
     def all_subbreeds(self) -> list[feature_controller.FeatureController]:
         return [c for c in self.children if c.feature_type == "subbreed"]
 
+    def _has_breed_limiter(self) -> bool:
+        for limiter in BREED_LIMITERS:
+            if self.character.get(limiter):
+                return True
+        return False
+
     def can_afford(self, value: int = 1) -> Decision:
-        if self.character.get("purebred") and self.character.breeds > 0:
+        if self._has_breed_limiter() and self.character.breeds > 0:
             return Decision.NO
         if self.character.breeds < 2:
             return Decision.OK
@@ -399,14 +407,22 @@ class BreedChallengeController(feature_controller.FeatureController):
             for flaw, mod in self.definition.award_mods.items():
                 if self.character.get(flaw) > 0:
                     award += mod
-        return max(award * self.paid_ranks, 0)
+        return max(award * self.value, 0)
 
     def _trait_bp(self) -> int:
         if self.definition.trait_max_bp:
             award: int = 0
-            for c in self.taken_children:
+            for c in self.subfeatures:
                 award += c.award_bp
             return min(award, self.definition.trait_max_bp)
+        return 0
+
+    def _trait_required_bp(self) -> int:
+        if self.definition.trait_required_bp:
+            award: int = 0
+            for c in self.subfeatures:
+                award += c.award_bp
+            return max(0, self.definition.trait_required_bp - award)
         return 0
 
     def _option_award(self, option) -> int:
@@ -493,6 +509,14 @@ class BreedChallengeController(feature_controller.FeatureController):
                             feature_id=self.full_id,
                         )
                     )
+        if self.value > 0 and (trait_required_bp := self._trait_required_bp()):
+            issues.append(
+                Issue(
+                    issue_code="insufficient-trait-bp",
+                    reason=f"{self.display_name()} requires {trait_required_bp} more BP worth of trait purchases.",
+                    feature_id=self.full_id,
+                )
+            )
         return issues
 
     def get_costuming(self) -> models.CostumingData | None:

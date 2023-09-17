@@ -1,0 +1,5 @@
+name: Ravenous
+cost: 2
+requires: gheist-consume
+description: |
+  Some gheist find no succor in the flesh of others, but have a mindless need to consume all those around them. The gheist may use the **Consume** ability once more per Short Rest, this use expends a Spike. The gheist must take the **Consume** advantage for this to become available.

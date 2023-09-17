@@ -418,6 +418,7 @@ class BaseFeatureDef(BaseModel):
     category: str | None = None
     category_priority: float = 100.0
     requires: Requirements = None
+    soft_requires: Requirements = None
     def_path: str | None = None
     tags: set[str] = pydantic.Field(default_factory=set)
     description: str | None = None
@@ -425,6 +426,7 @@ class BaseFeatureDef(BaseModel):
     ranks: int | Literal["unlimited"] = 1
     option_def: OptionDef | None = pydantic.Field(default=None, alias="option")
     inherit_children: set[str] | None = None
+    extra_children: set[str] | None = None
     _child_ids: set[str] = pydantic.PrivateAttr(default_factory=set)
     _uncles: set[str] = pydantic.PrivateAttr(default_factory=set)
     _parent_def: BaseFeatureDef | None = pydantic.PrivateAttr(default=None)
@@ -479,6 +481,9 @@ class BaseFeatureDef(BaseModel):
             for uncle in self.inherit_children:
                 uncle_model = ruleset.features[uncle]
                 uncle_model._uncles.add(self.id)
+        if self.extra_children:
+            ruleset.validate_identifiers(self.extra_children)
+            self._child_ids.update(self.extra_children)
 
 
 class BadDefinition(BaseModel):
@@ -660,7 +665,10 @@ class FeatureMatcher(BaseModel, extra="allow"):
         """
         if self.id is not None:
             if isinstance(self.id, str):
-                if feature.id != self.id:
+                if self.id.startswith("-"):
+                    if self.id[1:] == feature.id:
+                        return False
+                elif feature.id != self.id:
                     return False
             elif feature.id not in self.id:
                 return False
@@ -698,6 +706,9 @@ class FeatureMatcher(BaseModel, extra="allow"):
                 if attr_value := getattr(feature, attr, None):
                     if value[1:] in attr_value:
                         return False
+            elif isinstance(value, bool):
+                # If the value given is a bool, perform truthiness matching.
+                return bool(getattr(feature, attr, False)) == value
             else:
                 if not hasattr(feature, attr):
                     return False

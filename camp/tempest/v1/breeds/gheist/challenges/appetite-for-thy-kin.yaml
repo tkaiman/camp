@@ -1,0 +1,6 @@
+name: Appetite for Thy Kin
+award: 5
+requires: -thy-flesh-consumed
+soft_requires: gheist-consume
+description: |
+   Cursed from beyond the veil, the gheist only gains nourishment from the members of their breed. Once per long rest the gheist must feed on a member of their own breed (a creature sharing the same breed qualifiers they have) using the Consume Breed Advantage, if they don’t, upon their next long rest they are Inherently Drained by Hunger until they use the Consume Breed Advantage successfully on a creature that is from their breed. **While drained in this way the gheist may still use the Consume Breed Advantage**. This Challenge is mutually exclusive with **Thy Flesh Consumed**. The gheist must take the **Consume** advantage if this challenge is taken.

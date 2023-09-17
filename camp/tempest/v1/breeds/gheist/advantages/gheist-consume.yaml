@@ -1,0 +1,16 @@
+name: Cannibalistic Consumption
+cost: 5
+description: |
+  Gheist, cursed spirits and broken flesh, are commonly known as “eaters of the dead”, devouring whole individuals in a single sitting. The gheist gains the Consume power below:
+subcard:
+  name: Consume [Breed]
+  incant: Mimicking eating the a dead body for a Focus Quick 100
+  call: “Shatter Corpse to Living, Heal Three to Self by Hunger”
+  target: Individual
+  delivery: RP
+  accent: None
+  duration: Instantaneous
+  refresh: Short Rest
+  effect: Shatter, Healing
+  description: |
+    This Breed Power allows the Character to mimic eating a living humanoid corpse, shattering the corpse and healing three life points. This power may only be used on humanoids, including any Breed (or combination of) and some other targets (Gnolls, Goblins or Kobolds as some examples.)

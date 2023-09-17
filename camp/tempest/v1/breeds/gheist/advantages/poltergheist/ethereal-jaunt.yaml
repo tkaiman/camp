@@ -1,0 +1,16 @@
+name: Ethereal Jaunt
+cost: 3
+description: |
+  The physical form of some poltergheists can be made completely intangible for a short period of time during which physical attacks and spells pass right through their ghostly form. The poltergheist gains the Ethereal Jaunt power below.
+subcard:
+  name: Ethereal Jaunt [Breed]
+  incant: “I walk between worlds.”
+  call: '“Insubstantial to Self”, “Dispel Insubstantial to Self”'
+  target: Self
+  delivery: Touch
+  accent: None
+  duration: Slow 10
+  refresh: Short Rest
+  effect: Insubstantial
+  description: |
+    The poltergheist may call Insubstantial to Self after reciting the incant, and then, after a Slow 10, must dispel her insubstantial Condition by calling “Dispel Insubstantial to Self”. While insubstantial, the poltergheist can only walk, and cannot interact with objects, creatures, or doors.

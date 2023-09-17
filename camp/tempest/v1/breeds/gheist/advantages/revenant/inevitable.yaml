@@ -1,0 +1,5 @@
+name: Inevitable
+cost: 8
+requires: famine
+description: |
+  Some revenants are able to empower their very stride with that of their Curse, and in doing so, not even the strongest of arcane shackles may slow their advance. The character has Inherent Resistance to Root Effects. This will last until the character has resisted a number of these Effects equal to their Maximum Life Points, and only refreshes at the beginning of each event.  This advantage is only available to purchase if the Revenant has taken the Famine Disadvantage.

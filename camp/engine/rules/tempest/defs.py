@@ -325,6 +325,7 @@ class BreedChallenge(BaseFeatureDef):
     costuming: set[str] | bool = False
     parent: str  # Parent is _required_
     trait_max_bp: int | None = None
+    trait_required_bp: int | None = None
 
     @classmethod
     def default_name(cls) -> str:

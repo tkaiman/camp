@@ -1,0 +1,16 @@
+name: Unstoppable Force
+cost: 4
+description: |
+  Inhuman monsters of immeasurable strength, the revenant may break down doors and other objects barring their way with little effort.
+subcard:
+  name: Unstoppable Force [Breed]
+  incant: RP
+  call: “Shatter [Target] by Strength”
+  target: Door, Wall, or other large obstacle
+  delivery: RP
+  accent: Strength
+  duration: Instantaneous
+  refresh: Instantaneous
+  effect: Shatter
+  description: |
+    By expending one Spike or Life Point and putting her shoulder into a door, wall, or other immobile object, the revenant can cause a Shatter Effect against it by force of pure strength. Care should be taken by the player not to damage any actual property.

@@ -1,0 +1,12 @@
+name: Hidden Shroud
+cost: 4
+requires:
+  any:
+    - shroud-of-the-veil
+    - shroud-of-dk
+description: |
+  _“The reclusive hermit Kepesca was once rumored to be a witch, dealing in many a totem, trinket, and potion. However, the wiley woman concealed her true nature out in the open, among the many dangling baubles strung about her hut.”_
+
+  The gheist’s shroud manifests as either a small fetish, trinket or momento that is easily concealable, but must be marked with strange symbols and carried on their person. The gheist no longer needs to wear their shroud out in the open for the benefits of **Shroud of the Veil** or **Shroud of the Dead**. Otherwise, it functions exactly the same as **Shroud of the Veil**. The gheist must take the **Shroud of the Veil** advantage for this to become available.
+
+  In addition, on completion of each Long Rest, the Gheist my Resist a single effect with the accent “Fear.”

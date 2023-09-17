@@ -281,7 +281,7 @@ class GrantChoice(BaseFeatureChoice):
         feats = self._matching_features()
         feats -= set(self.taken_choices().keys())
 
-        choices = {}
+        choices = []
         for expr in sorted(feats):
             feat = self._feature.character.feature_controller(expr)
             short = feat.short_description
@@ -292,8 +292,9 @@ class GrantChoice(BaseFeatureChoice):
                 elif short:
                     descr = f"{descr}: {short}"
 
-            choices[expr] = descr
-        return choices
+            choices.append((expr, descr))
+        choices.sort(key=lambda c: c[1])
+        return {c: d for c, d in choices}
 
     def update_propagation(
         self, grants: dict[str, int], discounts: dict[str, list[Discount]]

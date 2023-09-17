@@ -1,0 +1,20 @@
+name: Taste the Mind
+cost: 3
+description: |
+  _“Lokor stood watching the gheist consume the wretched bandit they had just felled together, and waited. Soon, Hrothgar’s head snapped up, blood still streaming from his decayed lips, eyes faintly glowing, and he murmured: “This way, the camp, it’s way.” before stalking off into the snowy night.”_
+
+  When using Consume Breed Advantage, the gheist gains the Taste the Mind power below.
+subcard:
+  name: Taste the Mind
+  incant: None
+  call: '“Subtle Discern to Corpse by Hunger: [yes/no question]”'
+  target: One Corpse
+  delivery: Touch
+  accent: Hunger
+  duration: Special
+  refresh: Long Rest
+  effect: Discern
+  description: |
+    Immediately after using the Consume Breed Advantage, but before shattering the corpse, the gheist can dig through the mind of the Corpse looking for answers that the corpse may have. The gheist will be able to ask 3 questions that must be yes/no questions and the call for each question is “Subtle Discern to Corpse by Hunger: [yes/no question]”.
+
+    Once a corpse has been asked the questions, the gheist cannot use this power on that same corpse again. The power will end immediately if the gheist gets out of touch range of the corpse or speaks for any reason other than to ask more Taste the Mind questions of the corpse. Keep in mind that most corpses only last 180 seconds before they dissipate.
