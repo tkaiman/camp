@@ -1,4 +1,7 @@
 parent: beastform
 category: Beastform Traits
-requires: beastform
+requires:
+  any:
+    - beastform
+    - grand-design
 id_prefix: bf-

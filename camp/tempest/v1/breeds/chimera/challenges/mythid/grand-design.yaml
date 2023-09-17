@@ -1,5 +1,9 @@
 name: Grand Design
 trait_max_bp: 10
 requires: -beastform
+inherit_children:
+  - beastform
+  - hewn-form
+  - twisted-visage
 description: |
   Some Mythid consider themselves to be the apex of ‘natural’ life. Others consider their own existence to be an abomination, and scoff at the assertion that anything about them is ‘natural’ in its entirety. Even still, both agree that the Mythid represents an overt display of all of what a Chimera can be painted onto a single canvas. The Mythid may take any combination of any traits listed from **Twisted Visage**, **Hewn Form**, and **Beastform** for up to ten points of Chimera Challenges. A player may choose to represent additional challenges from Grand Design traits, but will not gain Breed points for doing so.

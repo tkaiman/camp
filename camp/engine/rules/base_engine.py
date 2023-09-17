@@ -619,11 +619,24 @@ class BaseFeatureController(PropertyController):
     def definition(self) -> base_models.BaseFeatureDef:
         return self.character.engine.feature_defs[self.expr.prop]
 
+    @cached_property
+    def extra_parent_ids(self) -> frozenset[str]:
+        if parent_id := self.definition.parent:
+            if uncles := self.character.ruleset.features[parent_id]._uncles:
+                return frozenset(uncles)
+        return frozenset()
+
     @property
     def parent(self) -> BaseFeatureController | None:
         if self.definition.parent is None:
             return None
-        return self.character.feature_controller(self.definition.parent)
+        parent = self.character.feature_controller(self.definition.parent)
+        if parent.value == 0 and (extra_ids := self.extra_parent_ids):
+            for eid in extra_ids:
+                extra_controller = self.character.feature_controller(eid)
+                if extra_controller.value > 0:
+                    return extra_controller
+        return parent
 
     @cached_property
     def tags(self) -> set[str]:
@@ -633,14 +646,25 @@ class BaseFeatureController(PropertyController):
     def parent_def(self) -> base_models.BaseFeatureDef | None:
         return self.definition.parent_def
 
+    @cached_property
+    def child_ids(self) -> frozenset[str]:
+        children = self.definition.child_ids.copy()
+        if self.definition.inherit_children:
+            for inherit_id in self.definition.inherit_children:
+                feature = self.character.feature_controller(inherit_id)
+                new_children = feature.child_ids
+                children.update(new_children)
+        return frozenset(children)
+
     @property
     def children(self) -> list[BaseFeatureController]:
         children: list[BaseFeatureController] = []
-        for expr in self.definition.child_ids:
+        for expr in self.child_ids:
             fc = self.character.feature_controller(expr)
             children.append(fc)
             if fc.is_option_template:
                 children.extend(fc.option_controllers.values())
+
         children.sort(key=lambda f: f.display_name())
         children.sort(key=lambda f: self.character.display_priority(f.feature_type))
         return children
@@ -922,16 +946,9 @@ class BaseFeatureController(PropertyController):
     def currency(self) -> str | None:
         return None
 
-    @property
+    @abstractproperty
     def feature_list_name(self) -> str:
-        if self.option_def and not self.option:
-            # This is feature controller belongs to an option feature
-            # that doesn't have an option selected. It represents the
-            # "raw" skill, and it doesn't have anything to display.
-            return self.display_name()
-        if self.definition.has_ranks and self.value > 0:
-            return f"{self.display_name()} x{self.value}"
-        return self.display_name()
+        ...
 
     def validate(self) -> Decision:
         """Check that the feature is valid.

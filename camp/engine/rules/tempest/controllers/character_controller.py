@@ -26,6 +26,7 @@ from . import religion_controller
 from . import spell_controller
 from . import spellbook_controller
 from . import subfeature_controller
+from . import undefined_controller
 from . import utility_controller
 
 _DISPLAY_PRIORITIES = {
@@ -439,7 +440,7 @@ class TempestCharacter(base_engine.CharacterController):
     def _new_controller(self, id: str) -> feature_controller.FeatureController:
         match self._feature_type(id):
             case None:
-                raise ValueError(f"Unknown feature {id}")
+                return undefined_controller.UndefinedFeatureController(id, self)
             case "class":
                 return class_controller.ClassController(id, self)
             case "flaw":

@@ -424,7 +424,9 @@ class BaseFeatureDef(BaseModel):
     short_description: str | None = None
     ranks: int | Literal["unlimited"] = 1
     option_def: OptionDef | None = pydantic.Field(default=None, alias="option")
+    inherit_children: set[str] | None = None
     _child_ids: set[str] = pydantic.PrivateAttr(default_factory=set)
+    _uncles: set[str] = pydantic.PrivateAttr(default_factory=set)
     _parent_def: BaseFeatureDef | None = pydantic.PrivateAttr(default=None)
 
     @classmethod
@@ -459,6 +461,10 @@ class BaseFeatureDef(BaseModel):
     def parent_def(self) -> BaseFeatureDef | None:
         return self._parent_def
 
+    @property
+    def uncle_ids(self) -> set[str]:
+        return self._uncles
+
     def post_validate(self, ruleset: BaseRuleset) -> None:
         self.requires = parse_req(self.requires)
         if self.requires:
@@ -468,6 +474,11 @@ class BaseFeatureDef(BaseModel):
             parent = ruleset.features[self.parent]
             parent._child_ids.add(self.id)
             self._parent_def = parent
+        if self.inherit_children:
+            ruleset.validate_identifiers(self.inherit_children)
+            for uncle in self.inherit_children:
+                uncle_model = ruleset.features[uncle]
+                uncle_model._uncles.add(self.id)
 
 
 class BadDefinition(BaseModel):

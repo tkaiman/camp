@@ -1,4 +1,8 @@
 parent: hewn-form
 category: Hewn Form Traits
-requires: hewn-form
+subbreed: ~
+requires:
+  any:
+    - hewn-form
+    - grand-design
 id_prefix: hf-

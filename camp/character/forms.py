@@ -26,7 +26,7 @@ class FeatureForm(forms.Form):
         Multi-rank features are removed by setting the rank to 0 in the rank chooser.
         """
         c = self._controller
-        return c.value == 1 and c.definition.ranks == 1 and c.can_decrease()
+        return c.value == 1 and c.max_ranks == 1 and c.can_decrease()
 
     def _make_ranks_field(self, c: FeatureController) -> forms.Field:
         # If the feature only needs a remove button, don't bother with a ranks field.
@@ -39,14 +39,14 @@ class FeatureForm(forms.Form):
         else:
             current = c.value
         choices = []
-        if available == 1 and c.definition.ranks == 1:
+        if available == 1 and c.max_ranks == 1:
             # The only thing that can happen here is purchasing 1 rank, so don't
             # bother with a choice field.
             if c.unused_bonus > 0:
                 self.button_label = "Get!"
                 self.button_level = "success"
             return
-        if available > 0 and c.definition.ranks != 1:
+        if available > 0 and c.max_ranks != 1:
             next_value = c.next_value
             if c.currency:
                 choices.extend(

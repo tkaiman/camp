@@ -4,6 +4,7 @@ import math
 from functools import cached_property
 from typing import Iterable
 from typing import Type
+from typing import cast
 
 from camp.engine import utils
 from camp.engine.rules import base_engine
@@ -80,9 +81,9 @@ class FeatureController(base_engine.BaseFeatureController):
 
     @property
     def parent(self) -> FeatureController | None:
-        if self.definition.parent is None:
-            return None
-        return self.character.controller(self.definition.parent)
+        if parent := super().parent:
+            return cast(FeatureController, parent)
+        return None
 
     @property
     def formal_name(self) -> str:
@@ -245,10 +246,7 @@ class FeatureController(base_engine.BaseFeatureController):
 
     @purchased_ranks.setter
     def purchased_ranks(self, value: int) -> None:
-        if self.definition.ranks != "unlimited":
-            self.model.ranks = min(value, self.definition.ranks)
-        else:
-            self.model.ranks = value
+        self.model.ranks = min(value, self.max_ranks)
         self._link_model()
 
     def _link_model(self) -> None:
