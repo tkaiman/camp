@@ -1,0 +1,18 @@
+name: Acidic Bile
+cost: 6
+description: |
+  _“T’skara licked his fangs as the group of unruly tavern-goers approached him with weapons in hand. It’s truly unfortunate that they weren’t taught some of his reptilian cousin’s tricks. He considered himself a fine educator. Three quick flits of his tongue against the back of his grooved fangs, and they were each covering their eyes, screaming in agony. T’skara took his drink, and waved a thank you to the bar-tender.”_
+
+  The character can use the Acidic Bile Power, below:
+subcard:
+  name: Acidic Bile [Breed]
+  incant: 'RP: Making gross noises to represent drawing bile into their mouth.'
+  call: '“1 by Acid” or “Shield Breaking by Acid”'
+  target: Individual
+  delivery: Packet (Spell-Packet)
+  accent: Acid
+  duration: Instantaneous
+  refresh: Focus Quick 100
+  effect: 1 by Acid, Shield Breaking
+  description: |
+    By spending a spike, this Power charges 3 Spell-Packets with an explosive burst of acidic bile from the Korus’ acid glands, which will do 1 point of Acid damage to those it hits. The Korus may choose to instead charge a single packet with Shield Breaking by Acid when activating this Power.

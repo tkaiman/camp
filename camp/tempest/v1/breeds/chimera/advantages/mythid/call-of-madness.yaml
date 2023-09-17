@@ -1,0 +1,16 @@
+name: Call of Madness
+cost: 4
+description: |
+  Mythids, by their very nature elicit unsettling feelings in others, but that unease can be utilized to give the Mythid some breathing room when disadvantaged. The Mythid gains the Call of Madness power below.
+subcard:
+  name: Call of Madness [Breed]
+  incant: RP, Blood-curdling scream
+  call: “[Name or Description], Short Repel by Madness”
+  target: Individual
+  delivery: verbal
+  accent: Madness
+  duration: Short
+  refresh: Long Rest
+  effect: Repel
+  description: |
+    After unleashing a blood-curdling scream, the Mythid can force away a target by pure madness. Once per long rest, the Mythid may call “[Name or Description], Short Repel by Madness.”

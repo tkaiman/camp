@@ -1,0 +1,9 @@
+name: Inborn Defenses
+cost: 5
+requires:
+  any:
+    - bf-hide
+    - bf-chitin
+    - hf-shell
+description: |
+  Nature is replete with natural defenses, and ones that chimera have ready familiarity with. If the Chimera took the **Beastform: Hide** or **Chitin** Challenge or the **Scavat: Shell** Challenge, she may count as having 2 points of Natural Armor.

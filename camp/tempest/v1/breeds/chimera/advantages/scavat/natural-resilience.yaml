@@ -1,0 +1,9 @@
+name: Natural Resilience
+cost: 7
+requires:
+  any:
+    - bf-hide
+    - bf-chitin
+    - hf-shell
+description: |
+  Scavat are regularly more tough than one might expect, given the predatory nature many of them display. This Character counts as having one additional point of maximum Natural Armor. This Advantage can only be taken if the Chimera took the Beastform: **Hide** or **Chitin** Challenge or the Scavat: **Shell** Challenge.
