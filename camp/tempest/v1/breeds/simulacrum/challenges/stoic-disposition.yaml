@@ -1,0 +1,9 @@
+name: Stoic Disposition
+award: 2
+costuming: true
+soft_requires:
+  - -heartbond
+  - -boon-bonds
+  - -generous-soul
+description: |
+  Simulacra are often apparently “purpose-built” and sometimes features are simply not included - this particular one seems to lack the emotional range common in most breeds. The Character’s emotions are subdued or even non-existent. They have difficulty empathizing with others and are motivated by principle, mission, and reason, rather than feeling. Because of this, she cannot gain benefits from any of the Heartbond, Boon Bond, or Generous Soul advantages.
