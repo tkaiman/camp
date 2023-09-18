@@ -1,0 +1,10 @@
+name: Punish
+incant: '"... to punish the unrighteous.”'
+call: '“Wounding 5 to [Devotion] by Radiance”'
+target: Individual
+delivery: Packet (Spell-ball)
+accent: Radiance
+duration: Instantaneous
+effect: Wounding, Piercing
+description: |
+  It allows the Cleric to punish those with an alternate world-view, and thus may not be cast with the qualifier of the Cleric’s own Devotion. The damage will increase to 8 if it is cast as a Greater-tier spell, and to Piercing 10 if cast as a Master-tier spell.

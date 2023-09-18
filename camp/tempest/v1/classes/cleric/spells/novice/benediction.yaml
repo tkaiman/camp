@@ -1,0 +1,10 @@
+name: Benediction
+incant: '"... to grant a boon to my allies.”'
+call: '“Heal 2 By Radiance” or “Mend 2 By Radiance”'
+target: Self and up to six Individuals
+delivery: Touch
+accent: Radiance
+duration: Special
+effect: Heal, Mend
+description: |
+  This spell can be cast on a group of people who are within Touch range of the caster and can only be cast out of combat. The Cleric can either Heal each target for 2 Life Points, or Mend the armor of each target for 2 points. The same option must be chosen for all targets. If the caster has the Peacecaster skill, instead the entire effect is improved, making the call “Heal 3 by Radiance” to all affected targets. If the caster expends a Spike in the casting of this spell, they may call “Mend 3 by Radiance.”

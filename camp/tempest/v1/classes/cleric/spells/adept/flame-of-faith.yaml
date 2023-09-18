@@ -1,0 +1,10 @@
+name: Flame of Faith
+incant: '"... to burn the creatures of the night.”'
+call: '“Wounding 6 to Undead by Radiance”'
+target: Undead Individual
+delivery: Packet (Spell-Ball)
+accent: Radiance
+duration: Instantaneous
+effect: Wounding, Refresh
+description: |
+  There are few spells as good for destroying the undead than Flame of Faith. Summoning righteous fire, the Cleric causes 6 points of damage to Undead. Casting this spell adds two points to the Cleric’s Healing Touch pool if they have one. If the caster has the Peacecaster skill, instead the caster will add three points into their Healing Touch pool if they have one.

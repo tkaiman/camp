@@ -1,0 +1,10 @@
+name: Armor of Faith
+incant: '"... to armor myself with faith.”'
+call: '“Grant 2 Summoned Armor to Self By Radiance” or “Grant +1 Armor to Self by Radiance”'
+target: Self
+delivery: None
+accent: Radiance
+duration: Long Rest
+effect: Grant Summoned Armor, Grant Plus Armor
+description: |
+  The caster grants themself 2 Summoned Armor Points. This is considered a new “suit” or armor and is not stackable with other sources of summoned armor. If the cleric is wearing physical armor, they may instead grant themself +1 Armor, increasing their Maximum Armor Points.

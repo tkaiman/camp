@@ -1,0 +1,12 @@
+name: Lightstorm
+incant: '"... to sear my foes.”'
+call: '“Wounding 2 by Radiance to Undead”'
+target: Undead Individual, Self
+delivery: Packet (Spell-Ball)
+accent: Radiance
+duration: Instantaneous, Quick 100
+effect: Wounding, Drain
+description: |
+  Lightstorm charges spell-balls with a dreadful divine light. As long as the Cleric does not move their right foot, or use another non-Counter Power, they can charge additional spell-balls to do the same thing by using the incantation “I call for the Lightstorm.”
+
+  Each Lightstorm ball thrown at an opponent will add one point to the Cleric’s Healing Touch pool to a maximum of 3 if they have one. Once the Cleric moves their right foot or uses a non-Counter Power, the power flows out of them, the spell ends and they are drained for a Quick Count of 100. At-will, the caster may expend a Spike to charge a single spell-ball with “Wounding 4 by Radiance to Undead” while this spell is active.

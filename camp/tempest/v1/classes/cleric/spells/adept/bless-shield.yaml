@@ -1,0 +1,10 @@
+name: Bless Shield
+incant: '"... to bless this shield.”'
+call: '“Short Grant Wounding Resistance to Shield until Broken by Radiance”'
+target: Shield
+delivery: Touch
+accent: Radiance
+duration: Short Rest
+effect: Grant Wounding Resistance
+description: |
+  Bless Shield makes one shield resistant to Wounding Effects. The wielder of the shield should call “Resist” when the shield is hit with such an Effect, and should take one point of damage. This resistance lasts only until the wielder completes a Short Rest or the Shield is reduced to zero shield points.

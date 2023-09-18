@@ -1,0 +1,10 @@
+name: Spirit Speak
+incant: '“... to speak with the Spirits.”'
+call: '“Short Root to Spirit by Will. Obey to Spirit: Converse with me for at least one minute and speak only the truth. You are not required to answer questions.” “[Name or Description of Spirit] Cure Root to Spirit”'
+target: Spirit
+delivery: Packet (Spell-ball)
+accent: Will
+duration: Short, One Minute, Instantaneous
+effect: Root, Obey, Cure Root
+description: |
+  The Cleric can require a Spirit to stop and talk with them, forcing them to speak the truth. The Spirit is not required to answer questions, but cannot lie when they do speak. When the Cleric is done with their conversation, they must call “[Name or Description of Spirit] Cure Root to Spirit” to end the spell and release the Spirit. Until the Spirit is released, the Cleric cannot cast additional spells.

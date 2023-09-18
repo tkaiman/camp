@@ -1,3 +1,4 @@
 type: spell
 sphere: arcane
 parent: mage
+refresh: Spell

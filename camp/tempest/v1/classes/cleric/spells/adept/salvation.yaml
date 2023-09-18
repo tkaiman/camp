@@ -1,0 +1,10 @@
+name: Salvation
+incant: '"... to save those who need it.”'
+call: '“By My Voice Heal 1 to Dying by Radiance”'
+target: Individuals
+delivery: Voice
+accent: Radiance
+duration: Instantaneous
+effect: Heal
+description: |
+  This spell will save all those who might be dying, bringing them to 1 Life Point. If the caster expends a Spike, they may add up to three points to their Healing Touch pool. If the caster has the Peacecaster skill, instead the caster will add four points into their Healing Touch pool if they have one.

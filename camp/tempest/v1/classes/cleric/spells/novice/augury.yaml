@@ -1,0 +1,10 @@
+name: Augury
+incant: '"... to see the wisdom of my choices.”'
+call: '“Obey: Tell me if it is a good idea or bad idea to [suggested immediate action] by answering ‘boon’, ‘bane’ or ‘unknown’.”'
+target: Individual
+delivery: None
+accent: None
+duration: Instantaneous
+effect: Obey
+description: |
+  The Cleric will only be able to successfully cast this spell if there is a Player Guide available. The spell lets the Cleric determine whether an action they are about to take will be, on the whole, harmful or beneficial, to them and their goals. They might, for example, ask if it is boon or bane to walk down the apparently empty hallway in front of them. Or they might ask if it is boon or bane to open the chest they are holding. If successfully cast, the Cleric’s greater power will find a way to answer the question. If there is no good answer, the answer is unknown, or there are bad assumptions in the question (“Boon or bane to trust the emissary of the Korstone Dwarves?” when there is not an emissary of Korstone Dwarves) will all give “Unknown” as an answer. If the answer is Unknown, it will immediately refresh the spell-slot used to cast it, if it were a Novice spell-slot.

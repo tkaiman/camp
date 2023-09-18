@@ -1,0 +1,10 @@
+name: Rekindle
+incant: '"... to rekindle the precious flame of life.”'
+call: '“Grant Life to Corpse 5th level or Lower by Radiance”'
+target: Corpse
+delivery: Touch
+accent: Radiance
+duration: Instantaneous
+effect: Grant Life, Refresh
+description: |
+  This spell will return the target to life if they are 5th level or lower. If the spell is successful, the Cleric can add five points into their Healing Touch pool if they have one. Characters returned to life in this way will have 1 Life Point.

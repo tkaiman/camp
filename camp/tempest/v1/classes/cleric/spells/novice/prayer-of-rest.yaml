@@ -1,0 +1,20 @@
+name: Prayer of Rest
+incant: '"... to grant you rest.”'
+call: '“Grant Power by Radiance”, Explanation'
+target: Other Individual
+delivery: Touch
+accent: Radiance
+duration: Event
+effect: Grant Power Heal
+description: |
+  This spell can only be cast out of combat on a willing target and the Cleric cannot cast it on themself. The recipient and the caster must sit facing one another while the incantation is completed. The power imbued is: After the target has been Dying for a Slow Count of 120, they can Heal themself for 1 Life Point. Note that this Power can be used at any time after the recipient has been Dying for at least 120 seconds. This ability will last until used, or the end of an Event, whichever occurs first. The Cleric should explain the effects of this power to the recipient.
+subcard:
+  call: Heal 1 to Self by [X]
+  target: Self
+  delivery: None
+  accent: X
+  duration: Instantaneous
+  refresh: None
+  effect: Heal
+  description: |
+    After the character has been Dying for a Slow Count of 120, they can Heal themself for 1 Life Point. The Accent of this power is the Accent that was used by the cleric who granted this Power (default is Radiance).

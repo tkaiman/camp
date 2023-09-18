@@ -1,0 +1,10 @@
+name: Disrupt
+incant: '"... to disrupt the undead.”'
+call: '“By My Voice 3 to Undead by Radiance”'
+target: Undead Individual
+delivery: Voice
+accent: Radiance
+duration: Instantaneous
+effect: Piercing
+description: |
+  A powerful pulse of energy comes from the Cleric, washing over all nearby Living Dead. If a Greater spell-slot is used to cast Disrupt, it will do 5 points. A Master spell-slot will do Piercing 5 by Radiance to Undead.

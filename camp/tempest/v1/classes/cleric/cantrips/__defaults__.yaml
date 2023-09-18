@@ -1,3 +1,4 @@
 type: cantrip
+sphere: divine
 parent: cleric
 category: Cleric Cantrips

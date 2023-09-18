@@ -1,0 +1,12 @@
+name: Judgement
+incant: '"... to judge friend and foe alike.”'
+call: '“Quick Imprison by Will”, “[Name or Description] [Heal/Wounding] 2 by Radiance to Imprisoned”'
+target: Individual
+delivery: Packet (Spell-Ball)
+accent: Will
+duration: Quick 100
+effect: Imprison, Heal, Wounding
+description: |
+  Wrapping their target in iron bands of willpower, the Cleric captures a creature and locks it away. While the creature is Imprisoned, the Cleric may charge harming or healing powers to use on that creature. After focusing for a Quick 30, the Cleric may either do “[Name or Description] Wounding 2 by Radiance to Imprisoned” as a verbal, or may do “[Name or Description] Heal 2 by Radiance to Imprisoned” as a verbal. This may be done as often as desired until the target ceases to be Imprisoned by this spell.
+
+  **Note**: If the caster has the Peacecaster skill, instead the Call becomes “[Name or Description] Heal 3 by Radiance to Imprisoned”, and if the caster has the Warcaster skill, instead the Call becomes “[Name or Description] Wounding 3 by Radiance to Imprisoned.” This is an exception to normal Peacecasting / Warcasting rules.

@@ -1,0 +1,10 @@
+name: Intercession
+incant: '"... to restore the power of the good works.”'
+call: '“Add [X] points of Healing Touch to Cleric By Radiance”'
+target: Individual
+delivery: Touch
+accent: Radiance
+duration: Instantaneous
+effect: Refresh
+description: |
+  With this spell, the caster can add four points to a Cleric’s Healing Touch pool if they have one. If this spell is cast with an Adept spell-slot it will add eight points. A Greater spell-slot will add twelve points. A Master spell-slot will add twenty points. If the caster has the Peacecaster skill, each of these numbers is increased by 1.

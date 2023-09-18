@@ -1,0 +1,20 @@
+name: Holy Blade
+incant: '"... to infuse this warrior with holy power.”'
+call: '“Imbue Wounding to Undead By Radiance”, Explanation'
+target: Individual
+delivery: Touch
+accent: Radiance
+duration: Short Rest
+effect: Imbue Wounding
+description: |
+  The spell allows the touched recipient to do “Wounding 1 to Undead” Delivered by Weapon until they complete a Short Rest. This should be explained to the recipient. An individual can only ever have one instance of this Imbue. If the target is dropped to 0 Life Points or uses another Power, this spell ends.
+subcard:
+  call: '“Wounding 1 to Undead”'
+  target: Undead Individual
+  delivery: Weapon
+  accent: None
+  duration: Instantaneous
+  refresh: None
+  effect: Wounding
+  description: |
+    The Character may do “Wounding 1 to Undead” with basic weapon attacks until their next Short Rest. If the character is dropped to 0 Life Points or uses another Power, this spell ends.

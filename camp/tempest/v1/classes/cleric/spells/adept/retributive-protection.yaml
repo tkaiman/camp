@@ -1,0 +1,14 @@
+name: Retributive Protection
+incant: '"... to harm those who would harm me.”'
+call: '“Counter, Retributive Protection” and “[Name or Description] Piercing 2 by Radiance”'
+target: Self
+delivery: None
+accent: Radiance
+duration: Until Discharghed, Instantaneous
+effect: Grant Protect, Piercing
+description: |
+  This spell allows the Cleric to protect themself from damage, giving two “Retributive Protection” defenses, which Prevent two damaging attacks of any kind. In order to prime the retributive part of this spell, the Cleric must point at a creature and say “I invoke my faith to warn you against harming me.” Only the last creature that they warned will be a valid target for retribution.
+
+  When the Cleric uses a Guardian defense from this spell to stop damage from the last warned creature, they may call out a Verbal Effect against that attacker: “[Name or Description], Piercing 2 by Radiance.”
+
+  Note that this can be done for each Guardian defense that is used. This spell ends early if the Cleric causes harm to another with damage or Effects other than the retributive damage from this spell.

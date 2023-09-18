@@ -1,0 +1,10 @@
+name: Speak With The Dead
+incant: '"... to command this corpse to speak.”'
+call: '“Discern to Corpse by Radiance: [yes/no question]”'
+target: One Corpse
+delivery: Touch
+accent: Radiance
+duration: Special
+effect: Discern
+description: |
+  After completing the incantation while touching a corpse, the Cleric can cause the corpse to temporarily animate and truthfully answer questions posed by the Cleric. The Cleric can ask 3 questions. This spell may be cast with a higher-tier slot to allow more questions. A Greater slot will allow 4 questions, and a Master spell-slot will allow 7 questions. The questions must be yes/no questions and the call for each question is “Discern to Corpse by Radiance: [yes/no question]”. Once a corpse has been asked the questions, the Cleric cannot cast this spell on that same corpse again. The spell will end immediately if the Cleric gets out of Touch range of the corpse or speaks for any reason other than to ask more Speak With Dead questions of the corpse.
