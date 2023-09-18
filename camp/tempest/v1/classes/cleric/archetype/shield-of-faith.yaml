@@ -1,0 +1,16 @@
+name: Shield of Faith
+requires:
+  - cleric:5
+  - basic-shields
+incant: None
+call: "Counter, Shield"
+target: One attack by Weapon or Packet delivery
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Counter
+description: |
+  The Cleric's faith protects them from those that seek to do them harm, forming a magical shield around any shield the Cleric wields in battle.
+
+  The Cleric may call “Counter, Shield” when the shield is hit by any attack with Weapon or Packet delivery - this negates the attack. Attacks that do not strike the Cleric's shield may not be countered in this way. This power refreshes every Short Rest.

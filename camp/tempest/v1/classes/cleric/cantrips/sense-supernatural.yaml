@@ -1,0 +1,11 @@
+name: Sense Supernatural
+incant: '"... to sense the supernatural.”'
+call: '“[Name or Description], Subtle Discern: Are you a/an [Undead/Demon/Angel]?”'
+target: Individual
+delivery: Verbal
+accent: None
+duration: Instantaneous
+refresh: Immediate
+effect: Discern
+description: |
+  This divination cantrip will let the Cleric know if a particular creature is Undead, an Angel, or a Demon. Only one of the options can be detected by any single casting of the spell. The spell may not always result in information, due to the frenetic nature of combat.

@@ -1,0 +1,6 @@
+name: Divine Ritual Affinity
+requires: cleric:3
+discounts:
+  apprentice-divine-ritual: 1
+description: |
+  The Cleric can use their understanding of Divine magic to help navigate the complexities of Divine Ritual magic. The Apprentice Divine Ritual Magic skill costs them one fewer Character Point. Once they achieve 7th level Cleric, they can purchase Journeyman Divine Ritual Magic skill for one fewer Character Point. If they have already purchased either of these skills, they get one Character Point back for each.

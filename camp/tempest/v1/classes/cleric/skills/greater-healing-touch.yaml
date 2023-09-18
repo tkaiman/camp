@@ -1,0 +1,5 @@
+name: Greater Healing Touch
+cost: 3
+requires: cleric:9
+description: |
+  The depth of the Cleric’s devotion to their cause deepens, and with it, new boons are born from the mastery of novice skills. The Cleric now gains four points to their healing pool per cleric level for the Healing Touch Archetype Power Instead of three.

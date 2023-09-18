@@ -1,0 +1,16 @@
+name: Mantle of Faith
+cost: 3
+requires: cleric:4
+call: “Grant Protect vs [Devotion Accent]”
+target: Other Individual
+delivery: Touch
+accent: None
+duration: Until Used
+refresh: Short Rest
+effect: Refresh
+description: |
+  When taking a Short Rest, the Cleric may spend a quick moment reciting their prayers and the creed of their faith to draw the strength of their deity to them. In doing so, they may grant protection against those who would use the nature of their deity’s power against them.
+
+  When completing a Short Rest, they may “Grant Protect vs [Devotion Accent]” to an ally.
+
+  If the Cleric is Undevoted, they gain no benefit from this power as the Undevoted path has no Accent.

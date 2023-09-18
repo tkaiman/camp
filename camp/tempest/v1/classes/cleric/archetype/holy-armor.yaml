@@ -1,0 +1,6 @@
+name: Holy Armor
+requires: cleric:8
+description: |
+  The Cleric's deity shows them favor through power infused into the Cleric's summoned armors. For every 3 points of summoned armor that the character creates with a Power (including Spells), the armor has one additional point. For example, if a 4 point armoring Power were used (such as Divine Armor), it would make 5 points of Armor.
+
+  This Archetype Power does not stack with other sources that add to summoned armor and has no effect on natural or worn armor.

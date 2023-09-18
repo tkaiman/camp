@@ -1,0 +1,18 @@
+name: Healing Touch
+requires: cleric:2
+incant: "I call my faith, divine and right, to knit your wounds with healing light."
+call: “Heal [x] by Radiance”
+target: Other Individual
+delivery: Touch
+accent: Radiance
+duration: Instantaneous
+refresh: Immediate
+effect: Heal
+description: |
+  The cleric gains a pool of healing that can be used between Long Rests called the Healing Touch Pool. This Healing Touch pool is equal to three times the Cleric’s class-level.
+
+  Each time this spell is cast, the Cleric can heal another Individual up to the Cleric’s class-level, subtracting the healing from the Healing Touch Pool. Healing Touch will not work on the caster themself.
+
+  **For Example**: a 4th level Cleric would have 12 total points of Healing to give out between Long Rests and could use a casting of this Power to Heal up to 4 points at a time. There is no limit to the number of points that can be in this pool; however, the pool resets to three times the Cleric’s class-level at the end of a Long Rest. Note that if this cantrip is gained by a non-Cleric, the amount of healing is still determined by the number of Cleric class-levels, i.e. zero.
+
+  **Note**: While this Power is an Archetype power, for purposes of Advanced Peacecaster, it counts as a Cantrip.

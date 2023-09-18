@@ -1,0 +1,11 @@
+name: Revive
+incant: '"...to revive you.”'
+call: '“Heal 1 to Dying”'
+target: Individual
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Quick 100
+effect: Heal
+description: |
+  The Cleric can Heal one Life Point to a Dying target. The call may not be altered.
