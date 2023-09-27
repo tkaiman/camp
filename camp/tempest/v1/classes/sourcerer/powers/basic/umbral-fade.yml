@@ -1,0 +1,11 @@
+name: Umbral Fade
+incant: '"... to gather shadows and fade away.”'
+call: Short Grant Insubstantial by Darkness, Cure Insubstantial
+target: Self
+delivery: None
+accent: None
+duration: Short
+refresh: Spell
+effect: Grant Insubstantial, Cure Insubstantial
+description: |
+   When this Spell is cast, the Sourcerer may enter a shadowed area, and become Insubstantial. While the character remains in shadow, they may walk or stand still as they please. They may not cross an unshadowed area or jump across unshadowed areas. If the caster allows themselves to be struck by sunlight, moonlight, torchlight, or other sources of light, the Spell immediately ends. At any time, the caster may call “Cure Insubstantial to Self” to end the Effect.

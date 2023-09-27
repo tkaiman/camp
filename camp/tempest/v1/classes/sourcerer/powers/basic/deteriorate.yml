@@ -1,0 +1,11 @@
+name: Deteriorate
+incant: '"... to erode your armor.”'
+call: Shatter Armor by Acid
+target: Individual
+delivery: Packet (Spell-Ball)
+accent: Acid
+duration: Instantaneous
+refresh: Spell
+effect: Shatter
+description: |
+   When this spell is cast, Deteriorate charges one spell-ball with “Shatter Armor by Acid.”

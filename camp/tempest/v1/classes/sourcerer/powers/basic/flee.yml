@@ -1,0 +1,11 @@
+name: Flee
+incant: '"... to cause my foes to flee from my sight.”'
+call: 'Quick Obey by [Eldritch Accent]: “Walk away from me.”'
+target: Individual
+delivery: Packet (Spell-Ball)
+accent: '[Eldritch Accent]'
+duration: Quick 100
+refresh: Spell
+effect: Obey
+description: |
+   Upon striking a target with a packet, the target is compelled to remove themselves from the company of the caster. The sourcerer is able to charge a packet with “Quick Obey by [Eldritch Accent]: “Walk away from me.”
