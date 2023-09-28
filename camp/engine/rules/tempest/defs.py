@@ -245,6 +245,7 @@ class FlawDef(BaseFeatureDef):
     category: str = "General Flaws"
     award: int | dict[str, int] = Field(default=0)
     award_mods: dict[str, int] | None = None
+    cost: None = None  # Do not allow a cost definition.
 
     @property
     def option(self) -> base_models.OptionDef | None:
@@ -330,6 +331,7 @@ class BreedChallenge(BaseFeatureDef):
     parent: str  # Parent is _required_
     trait_max_bp: int | None = None
     trait_required_bp: int | None = None
+    cost: None = None  # Do not allow a cost definition
 
     @classmethod
     def default_name(cls) -> str:
