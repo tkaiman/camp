@@ -159,7 +159,6 @@ class CharacterController(ABC):
                     rd = Decision(
                         success=False, reason=f"Mutation {mutation} unsupported."
                     )
-            self.pre_serialize()
         except Exception as exc:
             if raise_exc:
                 # Most of the time, we want to raise exceptions. A production environment
@@ -459,25 +458,6 @@ class CharacterController(ABC):
         return option_value in self.options_values_for_feature(
             feature_id, exclude_taken=exclude_taken
         )
-
-    def pre_serialize(self) -> None:
-        """Performs pre-serialization steps for all features."""
-        steps = 0
-        while steps < 100:
-            needs_reconcile = False
-            for feature in self.features.values():
-                if feature.pre_serialize():
-                    needs_reconcile = True
-            if needs_reconcile:
-                steps += 1
-                self.clear_caches()
-                self.reconcile()
-            else:
-                break
-        if steps >= 100:
-            raise ValueError(
-                f"Could not reconcile character model after {steps} steps."
-            )
 
     def describe_mutation(self, mutation: base_models.Mutation) -> str:
         """Returns a human-readable description of the given mutation."""
@@ -1026,18 +1006,6 @@ class BaseFeatureController(PropertyController):
                         )
                     )
         return issues
-
-    def pre_serialize(self) -> bool:
-        """Perform pre-serialization updates.
-
-        This is primarily used to scrub old data from the model when a feature
-        no longer has any ranks.
-
-        Returns:
-            True if the update requires re-validating the character, usually because
-            it touched data owned by other controllers.
-        """
-        return False
 
     def __str__(self) -> str:
         return self.feature_list_name

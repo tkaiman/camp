@@ -72,7 +72,6 @@ class FeatureModel(base_models.BaseModel):
             or self.overcome_award_override is not None
             or self.is_archetype_class
             or self.is_starting_class
-            or self.is_primary_breed
         )
 
 
