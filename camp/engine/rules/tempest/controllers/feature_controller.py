@@ -974,6 +974,44 @@ class FeatureController(base_engine.BaseFeatureController):
                     issues.extend(choice_issues)
         return issues
 
+    def pre_serialize(self) -> bool:
+        # Purge choice memory if the choice is no longer offered.
+        if (model := self.character.model.features.get(self.full_id)) and (
+            choices := model.choices
+        ):
+            choice_controllers = self.choices or {}
+            deleted_choices = []
+            for choice in choices:
+                if choice not in choice_controllers:
+                    deleted_choices.append(choice)
+            if deleted_choices:
+                for choice in deleted_choices:
+                    if choice in choices:
+                        del choices[choice]
+
+        # If the character has no ranks from purchases or other bonuses,
+        # forget everything about this feature. Previous choices are not
+        # remembered.
+        # Note that this explicitly doesn't use `value` because some mechanics
+        # can cause the value to be 0 on things that very much should still
+        # exist in the character model, such as flaws that have been overcome.
+        if (
+            self.purchased_ranks == 0
+            and self.bonus == 0
+            and self.full_id in self.character.model.features
+        ):
+            del self.character.model.features[self.full_id]
+
+        mutated = False
+        # If a feature has been fully deleted, remove purchases of all of its children.
+        if self.value == 0 and (children := self.children):
+            for child in children:
+                if child.purchased_ranks:
+                    child.purchased_ranks = 0
+                    mutated = True
+
+        return mutated
+
 
 class SkillController(FeatureController):
     definition: defs.SkillDef
