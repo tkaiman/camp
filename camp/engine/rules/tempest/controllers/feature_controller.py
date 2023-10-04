@@ -178,6 +178,8 @@ class FeatureController(base_engine.BaseFeatureController):
 
     @property
     def _max_ranks_tag(self) -> str:
+        if self.unlimited_ranks:
+            return "Unlimited"
         return f"{self.max_ranks}"
 
     def power_card(self) -> defs.PowerCard | None:

@@ -715,8 +715,12 @@ class BaseFeatureController(PropertyController):
         return None
 
     @property
+    def unlimited_ranks(self) -> bool:
+        return self.definition.ranks == "unlimited"
+
+    @property
     def max_ranks(self) -> int:
-        if self.definition.ranks == "unlimited":
+        if self.unlimited_ranks:
             # Arbitrarily chosen large int.
             return 101
         return self.definition.ranks
