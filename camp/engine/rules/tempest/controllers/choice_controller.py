@@ -487,9 +487,13 @@ class AgileLearnerChoice(BaseFeatureChoice):
 
         # Check for a novice spell or basic power to trade away.
         if feat.caster:
-            if character.get(f"{feat.full_id}.spell_slots@1") <= 0:
-                return False
-        elif character.get(f"{feat.full_id}.powers@1") <= 0:
+            existing = character.get(f"{feat.full_id}.spell_slots@1")
+        else:
+            existing = character.get(f"{feat.full_id}.powers@1")
+
+        if already_chosen and existing < 0:
+            return False
+        elif not already_chosen and existing <= 0:
             return False
 
         return True
