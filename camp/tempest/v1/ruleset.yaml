@@ -273,12 +273,14 @@ default_flags:
     - Scale
     - Bloom
     - Night Prize
+    - Other Uncommon Allergen
   Common Allergens:
     - Iron
     - Leather
     - Cloth
     - Magic
     - Materia
+    - Other Common Allergen
   # Used in Profession - Apprentice and Chronic Hobbyist
   Professions:
     - Soldier
