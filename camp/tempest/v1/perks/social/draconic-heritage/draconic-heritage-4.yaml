@@ -1,5 +1,5 @@
 name: Draconic Heritage IV
-cost: 1
+cost: 5
 requires:
   - level:15
   - draconic-heritage-3

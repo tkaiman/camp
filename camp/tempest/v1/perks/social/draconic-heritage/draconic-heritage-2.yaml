@@ -1,5 +1,5 @@
 name: Draconic Heritage II
-cost: 1
+cost: 3
 requires:
   - level:5
   - draconic-heritage-1

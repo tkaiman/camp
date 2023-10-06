@@ -1,5 +1,5 @@
 name: Draconic Heritage III
-cost: 1
+cost: 4
 requires:
   - level:10
   - draconic-heritage-2
