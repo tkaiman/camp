@@ -62,7 +62,7 @@ If you haven't used Django before, the tutorial on their website, or the
 [Django Girls tutorial](https://tutorial.djangogirls.org/) are good places
 to start. The rest of this document assumes some familiarity.
 
-The command below are all to be run **inside** the container. Either start
+The commands below are all to be run **inside** the container. Either start
 a shell in the container using `docker-compose exec web shell` or send them
 individually.
 
