@@ -21,3 +21,9 @@ description: |
   can be purchased more cheaply if they are granted (and thus revocable) by the Patron. Any Perk
   that doesn’t have the Patron prerequisite that is going to be considered a gift from the Patron
   costs 1 CP less (to a minimum of 1).  The Patron perk may provide a maximum of 10 CP in discounts.
+
+  ### CMA Note
+
+  Making choices below will not grant you the perks chosen. Instead, it causes you to have a discount on the
+  chosen perks. You must still purchase the perk to gain its effects. You may apply this discount to
+  perks whether you have already taken them or not.
