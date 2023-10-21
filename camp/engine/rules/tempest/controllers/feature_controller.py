@@ -296,9 +296,15 @@ class FeatureController(base_engine.BaseFeatureController):
                 f"You have taken {self.purchased_ranks} {self.rank_name(self.purchased_ranks)}."
             )
 
-        if self.purchased_ranks > 0 and self.currency_name and self.cost > 0:
+        cost = self.cost
+        if self.purchased_ranks > 0 and self.currency_name and cost > 0:
+            paid_cost, _, _ = self._cost_values(self.purchased_ranks, self.bonus)
+            if paid_cost > 0 and cost != paid_cost:
+                reasons.append(
+                    f"The cost would be {paid_cost} {self.currency_name} before discounts."
+                )
             reasons.append(
-                f"You have spent {self.cost} {self.currency_name} on this feature."
+                f"You have spent {cost} {self.currency_name} on this feature."
             )
 
         if self._propagation_data:
@@ -830,24 +836,34 @@ class FeatureController(base_engine.BaseFeatureController):
         else:
             raise NotImplementedError(f"Unexpected discount value: {discounts}")
 
-    def cost_for(self, purchased_ranks: int, granted_ranks: int = 0) -> int:
-        """Returns the cost for the number of ranks, typically in CP.
+    def _cost_values(
+        self, purchased_ranks: int, granted_ranks: int = 0
+    ) -> tuple[int, int, int]:
+        """Returns a triplet of cost parameters based on the cost definition.
 
-        This tries to take into account any active discounts applied to this feature.
+        The values are: paid_cost, potential_cost, applied_refund
+
+        paid_cost: The CP cost of paid ranks, before any discounts. If the number of purchased
+            and granted ranks exceeds the max ranks for this feature, only the smallest necessary
+            number of purchases are used to determine what is paid.
+        potential_cost: The CP cost that would be paid for granted ranks. Only grants needed to max out
+            the feature are counted here. This can be used to determine the maximum amount of _rebates_
+            that can be offered (CP refunded based on discounts).
+        applied_refund: The CP value that should be refunded due to the total ranks exceeding the
+            max ranks of the feature.
         """
-        if self.free or not (cd := self.cost_def):
-            return 0
-
-        max_ranks = self.max_ranks
-        effective_ranks = min(max_ranks, purchased_ranks + granted_ranks)
-        grants_used = min(max_ranks, granted_ranks)
-        paid_ranks = effective_ranks - grants_used
-
+        if not (cd := self.cost_def):
+            return 0, 0, 0
         # Compute the CP cost of the paid ranks. This is generally simple
         # multiplication, but some features have variable-cost ranks. However,
         # in all of those cases the "cheapest" ranks are the first ones. So,
         # we'll always assume that purchased ranks are "first" and granted ranks
         # are "last" for ordering purposes.
+        max_ranks = self.max_ranks
+        grants_used = min(max_ranks, granted_ranks)
+        effective_ranks = min(max_ranks, purchased_ranks + granted_ranks)
+        paid_ranks = effective_ranks - grants_used
+
         if isinstance(cd, int):
             # Most powers use a simple "N CP per rank" cost model
             paid_cost = cd * paid_ranks
@@ -860,6 +876,27 @@ class FeatureController(base_engine.BaseFeatureController):
             refund_value = cd.single_rank_cost(max_ranks)
         else:
             raise NotImplementedError(f"Don't know how to compute cost with {cd}")
+
+        # Any grants above and beyond the maximum ranks are refunded.
+        applied_refund = refund_value * max(granted_ranks - grants_used, 0)
+        return paid_cost, potential_cost, applied_refund
+
+    def cost_for(self, purchased_ranks: int, granted_ranks: int = 0) -> int:
+        """Returns the cost for the number of ranks, typically in CP.
+
+        This tries to take into account any active discounts applied to this feature.
+        """
+        if self.free or not self.cost_def:
+            return 0
+
+        max_ranks = self.max_ranks
+        effective_ranks = min(max_ranks, purchased_ranks + granted_ranks)
+        grants_used = min(max_ranks, granted_ranks)
+        paid_ranks = effective_ranks - grants_used
+
+        paid_cost, potential_cost, applied_refund = self._cost_values(
+            purchased_ranks, granted_ranks
+        )
 
         # Apply discounts. Discounts apply whether the ranks are actually paid for or not.
         # The paid cost can't be reduced to below 1 per paid rank.
@@ -879,9 +916,6 @@ class FeatureController(base_engine.BaseFeatureController):
                 rebate_total += discount.discount * min(grants_used, discountable_ranks)
         applied_discount = min(discount_total, potential_discount)
         applied_rebate = min(rebate_total, potential_rebate)
-
-        # Any grants above and beyond the maximum ranks are refunded.
-        applied_refund = refund_value * max(granted_ranks - grants_used, 0)
 
         return paid_cost - applied_discount - applied_rebate - applied_refund
 
