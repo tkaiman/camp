@@ -11,6 +11,7 @@ urlpatterns = [
         "<int:pk>/delete/", views.DeleteCharacterView.as_view(), name="character-delete"
     ),
     path("<int:pk>/set/", views.set_attr, name="character-set-attr"),
+    path("<int:pk>/name/", views.set_name, name="character-set-name"),
     path("<int:pk>/undo/", views.undo_view, name="character-undo"),
     path(
         "<int:pk>/f/<str:feature_id>/",

@@ -144,6 +144,22 @@ def set_attr(request, pk):
 @permission_required(
     "character.change_character", fn=objectgetter(Character), raise_exception=True
 )
+def set_name(request, pk):
+    """Sets the character's name."""
+    character = get_object_or_404(Character, id=pk)
+    if request.POST:
+        if new_name := request.POST.get("name", "").strip():
+            character.name = new_name
+            character.save()
+            messages.success(request, f"Name changed to {new_name}")
+        else:
+            messages.error(request, "Character name can't be empty.")
+    return redirect("character-detail", pk=pk)
+
+
+@permission_required(
+    "character.change_character", fn=objectgetter(Character), raise_exception=True
+)
 def feature_view(request, pk, feature_id):
     character = get_object_or_404(Character, id=pk)
     sheet = character.primary_sheet

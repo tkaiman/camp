@@ -10,7 +10,8 @@
                 Manage
             </a>
             <ul class="dropdown-menu">
-                <li class=><a class="dropdown-item btn-secondary-outline" role="button" data-bs-toggle="modal" data-bs-target="#setAttrsModal">Set Attributes</a></li>
+                <li><a class="dropdown-item btn-secondary-outline" role="button" data-bs-toggle="modal" data-bs-target="#setAttrsModal">Set Attributes</a></li>
+                <li><a class="dropdown-item btn-secondary-outline" role="button" data-bs-toggle="modal" data-bs-target="#setNameModal">Change Name</a></li>
                 <li><a class="dropdown-item btn-secondary-outline" role="button" data-bs-toggle="modal" data-bs-target="#deleteCharacterModal">Delete Character</a></li>
                 {% if undo %}
                 <li><a class="dropdown-item btn-secondary-outline" role="button" data-bs-toggle="modal" data-bs-target="#undoModal">{{undo}}</a></li>
@@ -152,6 +153,32 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="submit" class="btn btn-primary" form='set-attr'>Apply</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Set Name Modal -->
+<div class="modal fade" id="setNameModal" tabindex="-1" aria-labelledby="setNameLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="setNameLabel">Change Name</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id='set-name' action="{% url 'character-set-name' character.id %}" method='POST'>
+                {% csrf_token %}
+                <div>
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="set-name" name="name"
+                        value="{{ character.name }}" required>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" form='set-name'>Apply</button>
             </div>
         </div>
     </div>
