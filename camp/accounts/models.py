@@ -1,3 +1,7 @@
+from __future__ import annotations
+
+import datetime
+
 from django.contrib.auth import get_user_model
 from django.db import models
 from rules.contrib.models import RulesModel
@@ -18,18 +22,66 @@ class Membership(RulesModel):
     """
 
     joined: int = models.TimeField(auto_now_add=True)
-    nickname: str = models.CharField(blank=True, max_length=50, default="nickname")
     game: int = models.ForeignKey(
         game_models.Game, on_delete=models.CASCADE, related_name="game"
     )
     user: str = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user")
 
+    # Profile data tied to the membership.
+    legal_name: str = models.CharField(
+        max_length=100, help_text="Your legal name, for legal reasons."
+    )
+    preferred_name: str = models.CharField(
+        max_length=100,
+        blank=True,
+        default="",
+        help_text="Name you prefer to use. We'll use it whenever possible.",
+    )
+    pronouns: str = models.CharField(
+        max_length=20,
+        blank=True,
+        default="",
+        help_text="What are your pronouns? Optional.",
+    )
+    birthdate: datetime.date = models.DateField(
+        help_text="Your date of birth. Games have special rules regarding minors."
+    )
+    medical: str = models.TextField(
+        blank=True,
+        default="",
+        help_text="Do you have any allergies or other medical conditions that you would like staff to know about?",
+    )
+    emergency_contacts: str = models.TextField(
+        blank=True,
+        default="",
+        help_text="Please provide one or more emergency contacts.",
+    )
+    my_guardian: str = models.TextField(
+        blank=True,
+        default="",
+        help_text="If you are a minor or otherwise require a guardian, who will serve as your guardian at games?",
+    )
+    my_minors: str = models.TextField(
+        blank=True,
+        default="",
+        help_text="If you are a guardian for a minor you are responsible for at game, identify them here.",
+    )
+
+    @classmethod
+    def find(cls, request) -> Membership | None:
+        return cls.objects.filter(
+            game=request.game,
+            user=request.user,
+        ).first()
+
     def __str__(self):
-        return self.nickname
+        return self.preferred_name or self.legal_name or self.user.get_full_name()
 
     class Meta:
         rules_permissions = {
-            "view": game_models.is_self,
+            "view": game_models.is_self
+            | game_models.is_owner
+            | game_models.is_logistics,
             "change": game_models.is_self
             | game_models.is_owner
             | game_models.is_logistics,
