@@ -7,6 +7,8 @@ from django.utils import timezone
 from rules.contrib.views import objectgetter
 from rules.contrib.views import permission_required
 
+from camp.accounts.forms import MembershipForm
+from camp.accounts.models import Membership
 from camp.character.models import Character
 
 from .. import forms
@@ -130,6 +132,7 @@ def register_view(request, pk):
     4. Maybe we should send an email?
     5. Might want to support some types of non-game events ("meetups") that don't involve
        things like characters, PC/NPC distinctions, lodging, etc.
+    6. I don't have a profile yet / I want to review or edit my profile while registering
     """
     event = _get_event(pk)
 
@@ -141,13 +144,28 @@ def register_view(request, pk):
             details=event.details_template,
         )
 
-    form = forms.RegisterForm(instance=registration)
+    membership = Membership.find(request) or Membership(
+        game=request.game, user=request.user
+    )
+    needs_profile = membership.pk is None
 
-    if request.method == "POST":
+    if request.method == "GET":
+        form = forms.RegisterForm(instance=registration, prefix="reg")
+        profile_form = MembershipForm(instance=membership, prefix="profile")
+    elif request.method == "POST":
+        form = forms.RegisterForm(request.POST, instance=registration, prefix="reg")
+        profile_form = MembershipForm(
+            request.POST, instance=membership, prefix="profile"
+        )
         if not event.registration_window_open():
             messages.error(request, "Registration window is closed, sorry.")
         else:
-            form = forms.RegisterForm(request.POST, instance=registration)
+            if profile_form.is_valid():
+                membership = profile_form.save()
+                needs_profile = False
+            else:
+                needs_profile = True
+
             if form.is_valid():
                 registration: models.EventRegistration = form.save(commit=False)
                 is_initial_registration = registration.pk is None
@@ -174,7 +192,6 @@ def register_view(request, pk):
                 registration.sheet = registration.character.primary_sheet
 
                 registration.save()
-                form = forms.RegisterForm(instance=registration)
 
                 if is_initial_registration:
                     messages.success(request, f"Registered for {event}!")
@@ -196,7 +213,12 @@ def register_view(request, pk):
     return render(
         request,
         "events/register_form.html",
-        {"form": form, "registration": registration},
+        {
+            "form": form,
+            "registration": registration,
+            "profile_form": profile_form,
+            "needs_profile": needs_profile,
+        },
     )
 
 

@@ -34,8 +34,37 @@ Register for {{registration.event}}
 </form>
 {% endif %}
 
-<form method="post">
+<form method="post" id="comboForm">
     {% csrf_token %}
+    {# Profile Editor #}
+    {# Depending on whether the profile already exists, default the accordian to open or closed. #}
+    {% if registration.event.registration_window_open %}
+      <div class="accordion my-2" id="profileAccordian">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button {% if not needs_profile %}collapsed{% endif %}" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseProfile"
+                  aria-expanded="{% if needs_profile %}true{% else %}false{% endif %}"
+                  aria-controls="collapseProfile">
+              {% if needs_profile %}
+                Create Profile
+              {% else %}
+                Update Profile
+              {% endif %}
+            </button>
+          </h2>
+          <div id="collapseProfile"
+              class="accordion-collapse collapse {% if needs_profile %}show{% endif %}"
+              data-bs-parent="#profileAccordian">
+            <div class="accordion-body">
+              <p>Your profile data will be saved for use in future events. You can edit your profile between games on the <a href="{% url 'account_profile' %}">Account</a> page.</p>
+              {{ profile_form | crispy }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
     {{ form | crispy }}
     {% if registration.event.registration_window_open %}
     <input type="submit" class="btn btn-primary" value="{% if registration.is_canceled %}Resubmit{% else %}Submit{% endif %}">
@@ -44,3 +73,19 @@ Register for {{registration.event}}
 
 <a href="{{ registration.event.get_absolute_url }}">Return to {{registration.event}}</a>
 {% endblock content %}
+
+{% block javascript %}
+<script>
+  function openAccordianOnValidationError(event) {
+    try {
+      const collapse = bootstrap.Collapse.getOrCreateInstance(this.closest('.collapse'));
+      collapse.show();
+    } catch {
+      // ignore
+    }
+  }
+  document.getElementById('collapseProfile')
+    .querySelectorAll('input')
+    .forEach(x => x.addEventListener('invalid', openAccordianOnValidationError));
+</script>
+{% endblock javascript %}
