@@ -15,6 +15,7 @@ urlpatterns = [
     # Most pages will use the favicon defined by the template, but for cases
     # where no template is used, at least serve a favicon when asked.
     path("favicon.ico", RedirectView.as_view(url=static("images/favicon.png"))),
+    path("robots.txt", RedirectView.as_view(url=static("robots.txt"))),
 ]
 
 if settings.DEBUG:
