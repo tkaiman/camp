@@ -2,7 +2,7 @@
 {% load rules %}
 {% load django_htmx %}
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="dark" class="h-100">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,84 +20,87 @@
   {% endblock css %}
 </head>
 
-<body hx-boost="{{hxboost}}"
+<body class="d-flex flex-column h-100"
+      hx-boost="{{hxboost}}"
       hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
   {% block body %}
   {% has_perm 'game.change_game' user game as can_change_game %}
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="{% url 'home' %}">
-        <img src="{% static 'images/favicon.png' %}" width=24 height=24>
-        {% block brand_title %}{{ game }}{% endblock %}
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a
-            {% if request.resolver_match.url_name == 'home' %}
-            class="nav-link active"
-            {% else %}
-            class="nav-link"
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'home' %}">
+          <img src="{% static 'images/favicon.png' %}" width=24 height=24>
+          {% block brand_title %}{{ game }}{% endblock %}
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+              {% if request.resolver_match.url_name == 'home' %}
+              class="nav-link active"
+              {% else %}
+              class="nav-link"
+              {% endif %}
+              href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+              {% if request.resolver_match.url_name == 'events-list' %}
+              class="nav-link active"
+              {% else %}
+              class="nav-link"
+              {% endif %}
+              href="{% url 'events-list' %}">Events</a>
+            </li>
+            {% if can_change_game %}
+            <li class="nav-item">
+              <a
+                {% if request.resolver_match.url_name == 'game-manage' %}
+                class="nav-link active"
+                {% else %}
+                class="nav-link"
+                {% endif %}
+                href="{% url 'game-manage' %}">Manage {{ game.name }}</a>
+            </li>
             {% endif %}
-            href="{% url 'home' %}">Home</a>
-          </li>
-          <li class="nav-item">
-            <a
-            {% if request.resolver_match.url_name == 'events-list' %}
-            class="nav-link active"
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a
+                {% if request.resolver_match.url_name == 'account_profile' %}
+                class="nav-link active"
+                {% else %}
+                class="nav-link"
+                {% endif %}
+                href="{% url 'account_profile' %}">{{ user }}</a>
+            </li>
             {% else %}
-            class="nav-link"
+            <li class="nav-item">
+              <a
+                {% if request.resolver_match.url_name == 'account_signup' %}
+                class="nav-link active"
+                {% else %}
+                class="nav-link"
+                {% endif %}
+                href="{% url 'account_signup' %}">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a
+                {% if request.resolver_match.url_name == 'account_login' %}
+                class="nav-link active"
+                {% else %}
+                class="nav-link"
+                {% endif %}
+                href="{% url 'account_login' %}">Login</a>
+            </li>
             {% endif %}
-            href="{% url 'events-list' %}">Events</a>
-          </li>
-          {% if can_change_game %}
-          <li class="nav-item">
-            <a
-              {% if request.resolver_match.url_name == 'game-manage' %}
-              class="nav-link active"
-              {% else %}
-              class="nav-link"
-              {% endif %}
-              href="{% url 'game-manage' %}">Manage {{ game.name }}</a>
-          </li>
-          {% endif %}
-          {% if user.is_authenticated %}
-          <li class="nav-item">
-            <a
-              {% if request.resolver_match.url_name == 'account_profile' %}
-              class="nav-link active"
-              {% else %}
-              class="nav-link"
-              {% endif %}
-              href="{% url 'account_profile' %}">{{ user }}</a>
-          </li>
-          {% else %}
-          <li class="nav-item">
-            <a
-              {% if request.resolver_match.url_name == 'account_signup' %}
-              class="nav-link active"
-              {% else %}
-              class="nav-link"
-              {% endif %}
-              href="{% url 'account_signup' %}">Sign Up</a>
-          </li>
-          <li class="nav-item">
-            <a
-              {% if request.resolver_match.url_name == 'account_login' %}
-              class="nav-link active"
-              {% else %}
-              class="nav-link"
-              {% endif %}
-              href="{% url 'account_login' %}">Login</a>
-          </li>
-          {% endif %}
-        </ul>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   {% if messages %}
   <div id="messages">
@@ -113,7 +116,7 @@
 
   <div id="htmx-alert" hidden class="alert alert-warning sticky-top"></div>
 
-  <main class="container">
+  <main class="flex-shrink-0">
     <h1>{% block body_title %}{% endblock %}</h1>
     <div class="container">
       {% block precontent %}{% endblock %}
@@ -128,9 +131,11 @@
   {% block extra_body %}
   {% endblock extra_body %}
 
-  <footer>
+  <footer class="footer mt-auto py-3">
+    <div class="container">
     {% block footer %}
     {% endblock footer %}
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

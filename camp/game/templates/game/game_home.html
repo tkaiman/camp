@@ -46,3 +46,9 @@
 </ul>
 {% endcomment %}
 {% endblock content %}
+
+{% block footer %}
+{% if game.home_footer %}
+{{ game.home_footer | markdown}}
+{% endif %}
+{% endblock footer %}

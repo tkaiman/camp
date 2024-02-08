@@ -256,6 +256,7 @@ class Game(RulesModel):
 
     name: str = models.CharField(blank=False, max_length=100, default="Game")
     description: str = models.TextField(blank=True)
+    home_footer: str = models.TextField(blank=True)
     is_open: bool = models.BooleanField(default=False)
     # If a user is set as a game owner, they are always considered to have
     # role admin privileges, even if the corresponding roles are
