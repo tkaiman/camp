@@ -227,6 +227,9 @@ CELERY_RESULT_BACKEND = "django-db"
 CELERY_CACHE_BACKEND = "django-cache"
 CELERY_TASK_SERIALIZER = "json"
 CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
+CELERY_TASK_SOFT_TIME_LIMIT = env.int("TASK_SOFT_TIMEOUT_SECONDS", default=3600)
+CELERY_TASK_TIME_LIMIT = env.int("TASK_HARD_TIMEOUT_SECONDS", default=3600 * 2)
+
 
 # Sentry error reporting
 if sentry_dsn := env.str("SENTRY_DSN", default=None):
