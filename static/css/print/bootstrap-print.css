@@ -69,4 +69,8 @@
   .avoidbreak {
     break-inside: avoid;
   }
+  .avoidbreakaround {
+    break-before: avoid;
+    break-after: avoid;
+  }
 }

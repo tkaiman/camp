@@ -126,11 +126,11 @@
   <div id="htmx-alert" hidden class="alert alert-warning sticky-top d-print-none"></div>
 
   <main class="flex-shrink-0">
-    <div class="container">
+    <div class="container avoidbreak avoidbreakaround">
       <h1>{% block body_title %}{% endblock %}</h1>
       {% block precontent %}{% endblock %}
     </div>
-    <div class="container py-2">
+    <div class="avoidbreakaround container py-2">
     {% block content %}
       <p>Default content...</p>
     {% endblock content %}

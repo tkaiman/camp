@@ -7,14 +7,14 @@
 {% endblock %}
 
 {% block body_title %}
-<div {% if request.resolver_match.url_name != 'character-detail' %}class="d-print-none"{% endif %}>
+<div class="{% if request.resolver_match.url_name != 'character-detail' %}d-print-none {% endif %}">
 <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="{% url 'character-detail' character.id %}">{{ character }}</a>
 <div>
 {% endblock %}
 
 {% block precontent %}
 
-<div {% if request.resolver_match.url_name != 'character-detail' %}class="d-print-none"{% endif %}>
+<div class="{% if request.resolver_match.url_name != 'character-detail' %}d-print-none{% endif %}">
 <h4>{% if character.campaign %}
     Campaign: {{character.campaign}}
     {% else %}
@@ -68,7 +68,7 @@
 
 {% endif %}
 
-{% endblock %}
+{% endblock precontent %}
 
 {% block content %}
 {% endblock %}
