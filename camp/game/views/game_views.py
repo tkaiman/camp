@@ -253,7 +253,7 @@ class CampaignView(AutoPermissionRequiredMixin, DetailView):
 class CreateCampaignView(AutoPermissionRequiredMixin, CreateView):
     model = Campaign
 
-    fields = ["slug", "name", "description", "is_open", "ruleset"]
+    fields = ["slug", "name", "description", "start_year", "is_open", "ruleset"]
 
     def get_permission_object(self):
         return self.request.game
@@ -273,7 +273,7 @@ class CreateCampaignView(AutoPermissionRequiredMixin, CreateView):
 
 class UpdateCampaignView(AutoPermissionRequiredMixin, UpdateView):
     model = Campaign
-    fields = ["slug", "name", "description", "is_open", "ruleset"]
+    fields = ["slug", "name", "description", "start_year", "is_open", "ruleset"]
 
     @property
     def success_url(self):

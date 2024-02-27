@@ -17,7 +17,7 @@ Registrations for <a href="{% url 'event-detail' event.pk %}">{{event}}</a>
 <button class="btn btn-success"
   data-bs-toggle="tooltip"
   data-bs-placement="right"
-  title="Click to begin award distribution and increase progress the campaign tracker"
+  title="Click to begin award distribution and progress the campaign tracker"
   hx-post="{% url 'event-complete' event.pk %}"
 >
   Mark Complete
