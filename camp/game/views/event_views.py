@@ -31,7 +31,7 @@ from .. import tasks
 
 
 def event_list(request):
-    chapters = request.game.chapters.order_by("name")
+    chapters = request.game.chapters.filter(is_open=True).order_by("name")
     chapter_events = [(c, c.events.order_by("event_start_date")) for c in chapters]
     return render(request, "events/event_list.html", {"chapter_events": chapter_events})
 
