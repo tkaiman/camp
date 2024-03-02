@@ -452,7 +452,13 @@ class TempestCharacter(base_engine.CharacterController):
     def _new_controller(self, id: str) -> feature_controller.FeatureController:
         match self._feature_type(id):
             case None:
-                return undefined_controller.UndefinedFeatureController(id, self)
+                # Handle the circumstance of a feature that was previously purchased but
+                # stops existing in the ruleset. This will appear on the character sheet
+                # in a semi-dead state until removed.
+                controller = undefined_controller.UndefinedFeatureController(id, self)
+                if not controller.purchased_ranks:
+                    raise ValueError("No such feature")
+                return controller
             case "class":
                 return class_controller.ClassController(id, self)
             case "flaw":
