@@ -15,7 +15,7 @@ class Command(BaseCommand):
     help = "Recomputes player records."
 
     def add_arguments(self, parser):
-        parser.add_argument("-c" "--campaign_id", type=str)
+        parser.add_argument("-c", "--campaign_id", type=str)
         parser.add_argument("-p", "--players", nargs="+", type=str)
         parser.add_argument("-n", "--dry-run", action="store_true", default=False)
 
