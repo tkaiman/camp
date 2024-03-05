@@ -599,7 +599,7 @@ class Campaign(RulesModel):
 
     @record.setter
     def record(self, model: campaign.CampaignRecord):
-        self.engine_data = model.model_dump(mode="json")
+        self.engine_data = model.model_dump(mode="json", exclude_defaults=True)
 
     def __str__(self) -> str:
         if self.name:
@@ -725,7 +725,7 @@ class PlayerCampaignData(RulesModel):
 
     @record.setter
     def record(self, value: PlayerRecord):
-        self.data = value.model_dump(mode="json")
+        self.data = value.model_dump(mode="json", exclude_defaults=True)
 
     @transaction.atomic
     def apply(self, award: AwardRecord):
@@ -870,7 +870,7 @@ class Award(RulesModel):
 
     @record.setter
     def record(self, value: AwardRecord):
-        self.award_data = value.model_dump(mode="json")
+        self.award_data = value.model_dump(mode="json", exclude_defaults=True)
 
     @property
     def needs_character(self) -> bool:

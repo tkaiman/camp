@@ -174,9 +174,9 @@ def test_claim_award(game, campaign):
     award = Award.objects.create(
         campaign=campaign,
         email="Bob@GMail.com",
-        award_data=AwardRecord(date=date(2020, 2, 2), bonus_cp=1).model_dump(
-            mode="json"
-        ),
+        award_data=AwardRecord(
+            date=date(2020, 2, 2), character_flags={"foo": "bar"}
+        ).model_dump(mode="json"),
     )
 
     character = Character.objects.create(
@@ -193,7 +193,7 @@ def test_claim_award(game, campaign):
     assert award.check_applied()
 
     record = PlayerCampaignData.retrieve_model(bob, campaign).record
-    assert record.characters[character.id].bonus_cp == 1
+    assert record.characters[character.id].flags == {"foo": "bar"}
 
 
 @pytest.mark.django_db
@@ -204,9 +204,9 @@ def test_claim_assigned_award(game, campaign):
     award = Award.objects.create(
         campaign=campaign,
         player=bob,
-        award_data=AwardRecord(date=date(2020, 2, 2), bonus_cp=1).model_dump(
-            mode="json"
-        ),
+        award_data=AwardRecord(
+            date=date(2020, 2, 2), character_flags={"foo": "bar"}
+        ).model_dump(mode="json"),
     )
 
     character = Character.objects.create(
@@ -223,7 +223,7 @@ def test_claim_assigned_award(game, campaign):
     assert award.check_applied()
 
     record = PlayerCampaignData.retrieve_model(bob, campaign).record
-    assert record.characters[character.id].bonus_cp == 1
+    assert record.characters[character.id].flags == {"foo": "bar"}
 
 
 @pytest.mark.django_db
@@ -330,7 +330,7 @@ def test_claim_assigned_to_other_player(game, campaign):
     award = Award.objects.create(
         campaign=campaign,
         player=other,
-        award_data=AwardRecord(date=date(2020, 2, 2), bonus_cp=1).model_dump(
+        award_data=AwardRecord(date=date(2020, 2, 2), event_cp=1).model_dump(
             mode="json"
         ),
     )

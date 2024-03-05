@@ -138,7 +138,6 @@ class AwardRecord(BaseModel, frozen=True):
             # We need a character assigned if any of the following fields is set:
             return (
                 self.event_cp != 0
-                or self.bonus_cp != 0
                 or self.backstory_approved is not None
                 or self.character_flags
                 or self.character_grants
@@ -161,7 +160,6 @@ class CharacterRecord(BaseModel, frozen=True):
     Attributes:
       id: The character ID, or some debugging value if unknown.
       event_cp: Amount of Event CP earned by this character (or received as floor CP)
-      bonus_cp: Amount of Bonus CP assigned to this character.
       backstory_approved: Flags that this character should receive +2 CP due to an approved backstory.
       events_played: Number of events attended as a PC.
       last_played: Last date when this character was used as a PC.
@@ -174,7 +172,6 @@ class CharacterRecord(BaseModel, frozen=True):
 
     id: int | None = None
     event_cp: int = 0
-    bonus_cp: int = 0
     backstory_approved: bool = False
     events_played: int = 0
     last_played: datetime.date | None = None
@@ -192,6 +189,7 @@ class PlayerRecord(BaseModel, frozen=True):
       user: If populated, either the username of the player or something
         descriptive. This is only used for debugging purposes.
       xp: Amount of XP the player has earned.
+      bonus_cp: Amount of Bonus CP assigned to this player.
       events_played: Number of events attended as a PC.
       last_played: Last date when any character was used as a PC.
       awards: List of all awards associated with this player.
@@ -207,6 +205,7 @@ class PlayerRecord(BaseModel, frozen=True):
 
     user: int | None = None
     xp: int = 0
+    bonus_cp: int = 0
     events_played: int = 0
     events_staffed: int = 0
     last_played: datetime.date | None = None
@@ -246,13 +245,13 @@ class PlayerRecord(BaseModel, frozen=True):
         #    (But also get some other bits we need)
 
         xp = player.xp
+        bonus_cp = player.bonus_cp
         player_flags = player.flags.copy()
         player_events_played = player.events_played
         player_events_staffed = player.events_staffed
         player_last_played = player.last_played
         player_last_staffed = player.last_staffed
         event_cp = {id: c.event_cp for id, c in player.characters.items()}
-        bonus_cp = {id: c.bonus_cp for id, c in player.characters.items()}
         backstory = {id: c.backstory_approved for id, c in player.characters.items()}
         character_flags = {id: c.flags.copy() for id, c in player.characters.items()}
         character_grants = {id: c.grants.copy() for id, c in player.characters.items()}
@@ -270,7 +269,8 @@ class PlayerRecord(BaseModel, frozen=True):
             )
             # b. If the player is below the previous XP floor, set them to the previous XP floor.
             # c. If any of the player’s characters in this campaign are below the previous CP floor, set them to the previous CP floor.
-            xp = _constrain(prev, xp, event_cp, bonus_cp)
+            xp, bonus_cp = _constrain(prev, xp, bonus_cp, event_cp)
+            prev_xp = xp
 
             if award.event_played:
                 player_events_played += 1
@@ -282,8 +282,9 @@ class PlayerRecord(BaseModel, frozen=True):
                 if player_last_staffed is None or player_last_staffed < award.date:
                     player_last_staffed = award.date
 
-            # d. If the award includes XP, award the stated amount if they are at the previous cap,
-            #    else award double the stated value.
+            # d. If the award includes XP, award 2 points per half-day if the player was at Max XP before
+            # this event, or double that if below, capped at the new Max XP. If this leaves them under the
+            # new XP Floor, set them to the new XP Floor.
             if award.event_xp > 0:
                 if xp < prev.max_xp:
                     xp = min(xp + 2 * award.event_xp, current.max_xp)
@@ -302,24 +303,18 @@ class PlayerRecord(BaseModel, frozen=True):
                         player_flags[flag] = value
 
             if award.character is not None:
-                # e. If the award includes XP, award 1 Event CP to the character associated with the
-                # event (either the character played, or the one awarded to, if this was an NPC shift).
-                # If this would put the character over Max Event CP, instead add it to Bonus CP. If
-                # this would put the character over Max Bonus CP, too bad, discard it.
+                # e.If the award includes XP, the player may gain Event CP or Bonus CP depending on various factors.
                 if award.event_cp:
-                    # The character record might not exist; use a default floor CP as the base if so.
-                    current_cp = event_cp.get(award.character, prev.floor_cp)
-                    current_bonus_cp = bonus_cp.get(award.character, 0)
-                    if current_cp < current.max_cp:
-                        event_cp[award.character] = current_cp + award.event_cp
-                    elif current_bonus_cp < current.max_bonus_cp:
-                        bonus_cp[award.character] = current_bonus_cp + award.event_cp
-
-                # f. If the award includes Bonus CP, add it to the Bonus CP if it is not over cap.
-                if award.bonus_cp:
-                    current_bonus_cp = bonus_cp.get(award.character, 0)
-                    if current_bonus_cp < current.max_bonus_cp:
-                        bonus_cp[award.character] = current_bonus_cp + 1
+                    # i. If the player could not gain XP due to already being at Campaign Max, and the player is
+                    #    not already at Max Bonus CP, increase Bonus CP by 1.
+                    # ii. Otherwise, award 1 Event CP to the character associated with the event.
+                    if prev_xp >= current.max_xp and bonus_cp < current.max_bonus_cp:
+                        bonus_cp += 1
+                    else:
+                        # The character record might not exist; use a default floor CP as the base if so.
+                        current_cp = event_cp.get(award.character, prev.floor_cp)
+                        if current_cp < current.max_cp:
+                            event_cp[award.character] = current_cp + award.event_cp
 
                 # Track the backstory flag. An award can potentially set or unset the flag.
                 if award.backstory_approved is not None:
@@ -358,20 +353,18 @@ class PlayerRecord(BaseModel, frozen=True):
                     grants.extend(award.character_grants)
 
         # 4. Whether or not any events occurred, perform floor/max checks.
-        xp = _constrain(campaign, xp, event_cp, bonus_cp)
+        xp, bonus_cp = _constrain(campaign, xp, bonus_cp, event_cp)
 
         # Build updated character records.
         new_characters = {}
         all_character_ids = (
             event_cp.keys()
-            | bonus_cp.keys()
             | backstory.keys()
             | character_flags.keys()
             | character_grants.keys()
         )
         for id in all_character_ids:
             new_cp = event_cp.get(id, campaign.floor_cp)
-            new_bonus_cp = bonus_cp.get(id, 0)
             new_backstory = backstory.get(id, False)
             flags = character_flags.get(id, {})
             grants = character_grants.get(id, [])
@@ -383,7 +376,6 @@ class PlayerRecord(BaseModel, frozen=True):
                 char = player.characters[id].model_copy(
                     update={
                         "event_cp": new_cp,
-                        "bonus_cp": new_bonus_cp,
                         "events_played": char_events_played,
                         "last_played": char_last_played,
                         "backstory_approved": new_backstory,
@@ -395,7 +387,6 @@ class PlayerRecord(BaseModel, frozen=True):
                 char = CharacterRecord(
                     id=id,
                     event_cp=new_cp,
-                    bonus_cp=new_bonus_cp,
                     events_played=char_events_played,
                     last_played=char_last_played,
                     backstory_approved=new_backstory,
@@ -407,6 +398,7 @@ class PlayerRecord(BaseModel, frozen=True):
         return player.model_copy(
             update={
                 "xp": xp,
+                "bonus_cp": bonus_cp,
                 "events_played": player_events_played,
                 "events_staffed": player_events_staffed,
                 "last_played": player_last_played,
@@ -418,9 +410,17 @@ class PlayerRecord(BaseModel, frozen=True):
             }
         )
 
+    def regenerate(self, campaign: CampaignRecord) -> PlayerRecord:
+        return PlayerRecord(user=self.user).update(campaign, self.awards)
+
     def metadata_for(self, character_id: int) -> CharacterMetadata:
         """Produce character metadata for the indicated character."""
-        awards = {"xp": self.xp, "event_cp": 0, "bonus_cp": 0, "backstory_cp": 0}
+        awards = {
+            "xp": self.xp,
+            "event_cp": 0,
+            "bonus_cp": self.bonus_cp,
+            "backstory_cp": 0,
+        }
         flags = self.flags.copy()
         events_played = 0
         last_played = None
@@ -432,7 +432,6 @@ class PlayerRecord(BaseModel, frozen=True):
             events_played = char.events_played
             last_played = char.last_played
             awards["event_cp"] = char.event_cp
-            awards["bonus_cp"] = char.bonus_cp
         return CharacterMetadata(
             events_played=events_played,
             last_played=last_played,
@@ -476,18 +475,18 @@ class PlayerRecord(BaseModel, frozen=True):
 def _constrain(
     values: CampaignRecord | CampaignValues,
     xp: int,
+    bonus_cp: int,
     event_cp: dict[int, int],
-    bonus_cp: dict[int, int],
-) -> int:
+) -> tuple[int, int]:
     """Constrains the given values based on the given campaign values.
 
     Returns: The adjusted (if necessary) player XP. The CP dictionaries are mutated.
     """
     xp = min(max(xp, values.floor_xp), values.max_xp)
+    bonus_cp = min(bonus_cp, values.max_bonus_cp)
     for id in event_cp:
         event_cp[id] = min(max(event_cp.get(id, 0), values.floor_cp), values.max_cp)
-        bonus_cp[id] = min(bonus_cp.get(id, 0), values.max_bonus_cp)
-    return xp
+    return xp, bonus_cp
 
 
 AwardRecordAdapter = TypeAdapter(AwardRecord)
