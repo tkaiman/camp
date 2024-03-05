@@ -27,6 +27,8 @@
     {% endif %}
 </h4>
 
+{% with record=character.campaign.record %}
+
 <ul class="list-group list-group-horizontal">
     <li class="list-group-item"
         data-bs-toggle="tooltip" data-bs-html="true"
@@ -36,6 +38,9 @@
         {% if controller.levels_available > 0 %}
         <p>{{ controller.levels_available }} level(s) available!
         Increase your class levels or add new classes to level up.</p>
+        {% endif %}
+        {% if record %}
+        <p>Campaign Max XP: {{ record.max_xp }}</p>
         {% endif %}
         ">
         <span class="align-middle">Level {% get 'level' %}
@@ -49,14 +54,21 @@
         data-bs-custom-class="listgroup-tooltip"
         data-bs-title="
         <ul class='list-group list-group-flush'>
-        <li class='list-group-item'>Base: {{ controller.base_cp }}</li>
+        <li class='list-group-item'>Base CP: {{ controller.base_cp }}</li>
         {% if controller.freeplay_cp %}
         <li class='list-group-item'>Freeplay: {{ controller.freeplay_cp }}</li>
+        {% else %}
+        <li class='list-group-item'>
+            Event CP: {{ controller.event_cp }}/{{record.max_cp}}
+        </li>
+        <li class='list-group-item'>
+            Bonus CP: {{ controller.bonus_cp }}/{{record.max_bonus_cp}}
+        </li>
+        <li class='list-group-item'>Backstory: {{ controller.backstory_cp }}/2</li>
         {% endif %}
-        <li class='list-group-item'>Event: {{ controller.event_cp }}</li>
-        <li class='list-group-item'>Bonus: {{ controller.bonus_cp }}</li>
-        <li class='list-group-item'>Backstory: {{ controller.backstory_cp }}</li>
-        <li class='list-group-item'>Flaw Awards: {{ controller.cp.flaw_award_cp }}</li>
+        <li class='list-group-item'>
+            Flaw Awards: {{ controller.cp.flaw_award_cp }}/5
+        </li>
         {% if controller.cp.bonus %}
         <li class='list-group-item'>Other: {{ controller.cp.bonus }}</li>
         {% endif %}
@@ -84,7 +96,7 @@
 </div>
 
 {% endif %}
-
+{% endwith %}
 {% endblock precontent %}
 
 {% block content %}

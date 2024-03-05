@@ -114,6 +114,17 @@ def test_character_lifecycle(user, user_client, character, first_event):
         # This isn't really a logistics user, but let's not bother creating one...
         reg.apply_award(user)
 
+    response = user_client.get(
+        f"/characters/{id}/",
+    )
+    metadata = response.context_data["character"].metadata
+    assert metadata.awards == {
+        "xp": 12,
+        "event_cp": 1,
+        "bonus_cp": 0,
+        "backstory_cp": 0,
+    }
+
     # We should now be able to add a new level.
     response = user_client.post(
         f"/characters/{id}/f/mage/", {"purchase": True, "ranks": 3}
