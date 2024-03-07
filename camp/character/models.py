@@ -68,7 +68,7 @@ class Character(RulesModel):
         player_data = game_models.PlayerCampaignData.retrieve_model(
             user=self.owner, campaign=self.campaign
         )
-        return player_data.record.metadata_for(self.id)
+        return player_data.record.metadata_for(self.id, self.campaign.record)
 
     @property
     def primary_sheet(self) -> Sheet:

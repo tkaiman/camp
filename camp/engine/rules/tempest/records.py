@@ -415,11 +415,13 @@ class PlayerRecord(BaseModel, frozen=True):
     def regenerate(self, campaign: CampaignRecord) -> PlayerRecord:
         return PlayerRecord(user=self.user).update(campaign, self.awards)
 
-    def metadata_for(self, character_id: int) -> CharacterMetadata:
+    def metadata_for(
+        self, character_id: int, campaign: CampaignRecord
+    ) -> CharacterMetadata:
         """Produce character metadata for the indicated character."""
         awards = {
-            "xp": self.xp,
-            "event_cp": 0,
+            "xp": max(self.xp, campaign.floor_xp),
+            "event_cp": campaign.floor_cp,
             "bonus_cp": self.bonus_cp,
             "backstory_cp": 0,
         }

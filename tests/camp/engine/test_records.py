@@ -130,8 +130,17 @@ def test_bonus_cp():
     assert len(updated.characters) == 0
 
     # Any character we request, extant or not, has the bonus CP.
-    metadata = updated.metadata_for(42)
+    metadata = updated.metadata_for(42, CAMPAIGN)
     assert metadata.awards["bonus_cp"] == 2
+
+
+def test_new_character_metadata():
+    """A player who has attended no events still gets floor XP/CP."""
+    updated = PLAYER.update(CAMPAIGN)
+
+    metadata = updated.metadata_for(1, CAMPAIGN)
+    assert metadata.awards["xp"] == CAMPAIGN.floor_xp
+    assert metadata.awards["event_cp"] == CAMPAIGN.floor_cp
 
 
 def test_awards_single_all():
