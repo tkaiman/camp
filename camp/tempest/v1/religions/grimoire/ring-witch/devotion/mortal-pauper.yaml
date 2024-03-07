@@ -1,0 +1,30 @@
+name: Mortal Pauper
+level: advanced
+cost: 2
+requires:
+  any:
+    - power:2
+    - spell:2
+description: |
+  > _To Tithe is a habit that most former Pharaoh’s Chosen Ring Witch carry into their new faith, but, it’s clear that the Pharaoh’s shadow looms behind them. They may sacrifice small baubles and trinkets at a touch, shattering the item and consigning it to their Death God._
+subcard:
+  name: Mortal Pauper [Devotion] [Cantrip]
+  incant: |
+    “I call my faith divine and right, kindly hear my dut’ous pleas.
+    I come now in this troubled time, to ask thee for thy boon.
+    To give this one a sweet good night, a copper guarantees.
+    I know, until the Keepers’ chime, thy time has come too soon.“
+  call: “Death to Helpless by Darkness Final” or “Stabilize by Radiance”
+  target: Individual
+  duration: Instantaneous
+  delivery: Touch
+  accent: Darkness, Radiance
+  refresh: Immediate
+  effect: Death, Stabilize
+  description: |
+    The Ring Witch may Sacrifice a piece of worked copper or a copper  trinket, such a coin or ring, to call one of two effects:
+
+    * Death to Helpless by Darkness Final. The Ring Witch may Heal 1 by Radiance.
+    * Stabilize by Radiance. The Ring Witch takes a Quick Drain by Darkness.  
+
+    **Note**: The copper trinket must be placed into the Ash Bin and becomes property of the game. Simple copper wire is not a suitable sacrifice, but crafts made of it can be.

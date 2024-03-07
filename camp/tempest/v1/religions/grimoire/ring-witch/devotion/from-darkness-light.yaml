@@ -1,0 +1,5 @@
+name: From Darkness, Light
+level: basic
+cost: 3
+description: |
+  Whenever this character heals a target by Darkness or deals damage by Radiance, they may grant themselves 1 Barrier.

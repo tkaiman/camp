@@ -1,0 +1,13 @@
+name: Dusk and Dawn
+level: basic
+cost: 1
+description: |
+  The Character gains resistance to the Fear Accent while within The Grimm.
+
+  In addition, the Ring Witch is tied to the cycle of the day and night:
+
+  During the night (7 PM to 7 AM), the character must replace the Radiance Accent with Darkness for all powers using the Radiance Accent.
+
+  During the day (7 AM to 7 PM), the character must replace the Darkness Accent with Radiance for all powers using the Darkness accent.
+
+  **Note**: These Accents *may not* be further altered.

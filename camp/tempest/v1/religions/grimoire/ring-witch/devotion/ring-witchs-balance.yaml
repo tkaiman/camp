@@ -1,0 +1,25 @@
+name: Ring Witch’s Balance
+level: advanced
+cost: 4
+requires:
+  any:
+    - power:2
+    - spell:2
+description: |
+  _“Death and Life are a continual cycle. Ring Witches are able to manipulate that cycle, returning what was lost, by replacing it with someone, or something else.”_
+subcard:
+  name: Ring Witch’s Balance [Devotion]
+  incant: None
+  call: “Death to Helpless by Darkness”, “Life by Radiance”
+  target: Individual
+  delivery: Touch
+  accent: Darkness
+  duration: Instantaneous
+  refresh: Long
+  effect: Death, Shatter
+  description: |
+    When this power is activated, the Ring Witch has a Slow 10 count to touch a Helpless individual. When they do, they may call “Death to Helpless by Darkness.”
+
+    If the creature dies by this effect, the Ring Witch may then charge a single spell-ball with “Life by Radiance.” The Ring Witch must use this charge within a Slow 10 count. If they fail to do so, the Ring Witch must call “[Name or Description] Grant Life Final”, returning the life of the creature who received the Death effect.
+
+    Finally, a Ring Witch may use this power and sacrifice themselves to return life to another. If they do, instead, they may simply call “Life by Radiance” to their target. If the target is returned to life this way, the Ring Witch immediately dies, discorporates, and begins the resurrection process at the Spirit Well.
