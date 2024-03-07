@@ -113,6 +113,27 @@ def test_no_awards():
     assert len(updated.characters) == 0
 
 
+def test_bonus_cp():
+    """Bonus CP Awards are tracked."""
+    bonus_award = AwardRecord(
+        date=date(2023, 1, 1),
+        bonus_cp=2,
+    )
+    updated = PLAYER.update(CAMPAIGN, [bonus_award])
+    assert updated.xp == CAMPAIGN.floor_xp
+    assert updated.events_played == 0
+    assert updated.events_staffed == 0
+    assert updated.last_played is None
+    assert updated.bonus_cp == 2
+
+    # No character records present.
+    assert len(updated.characters) == 0
+
+    # Any character we request, extant or not, has the bonus CP.
+    metadata = updated.metadata_for(42)
+    assert metadata.awards["bonus_cp"] == 2
+
+
 def test_awards_single_all():
     """What a dedicated player! They get all the things."""
     updated = PLAYER.update(CAMPAIGN, AWARDS_SINGLE_ALL)

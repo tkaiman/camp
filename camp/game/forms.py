@@ -347,7 +347,7 @@ class AwardPlotStep(_AwardStepTwo):
         max_value=10,
         initial=0,
         required=False,
-        help_text="Grant Bonus CP. Automatically capped per character",
+        help_text="Grant Bonus CP. This is a per-player value. Capped at 3 per Season",
     )
     player_flags = forms.CharField(
         required=False,

@@ -272,6 +272,8 @@ class PlayerRecord(BaseModel, frozen=True):
             xp, bonus_cp = _constrain(prev, xp, bonus_cp, event_cp)
             prev_xp = xp
 
+            bonus_cp += award.bonus_cp
+
             if award.event_played:
                 player_events_played += 1
                 if player_last_played is None or player_last_played < award.date:
