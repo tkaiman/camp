@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import re
+
 from django import forms
 
 from camp.character.models import Character
@@ -9,6 +11,9 @@ from camp.engine.rules.tempest.controllers.feature_controller import FeatureCont
 from camp.game.models import Campaign
 
 OPEN_CAMPAIGNS = Campaign.objects.filter(is_open=True).order_by("name")
+
+ALLOWED_FREEFORM_PATTERN = r"^[\w&.․()!?：:;,[\]|%/\\ -]+$"
+ALLOWED_FREEFORM = re.compile(ALLOWED_FREEFORM_PATTERN)
 
 
 class FeatureForm(forms.Form):
@@ -101,12 +106,24 @@ class FeatureForm(forms.Form):
                     help_text=help_text,
                 )
             if option_def.freeform:
-                self.fields["option_freeform"] = forms.CharField(
+                self.fields["option_freeform"] = freeform = forms.CharField(
                     max_length=100,
                     label="Custom Option",
                     required=not (available),
                     help_text=f"This {c.type_name.lower()} takes a custom option. Enter it here.",
                 )
+                freeform.widget.attrs.update({"pattern": ALLOWED_FREEFORM_PATTERN})
+
+    def clean_option_freeform(self) -> str | None:
+        if value := self.cleaned_data.get("option_freeform"):
+            value = value.replace(".", "․")
+            value = value.replace(":", "：")
+            if not ALLOWED_FREEFORM.match(value):
+                raise forms.ValidationError(
+                    f"{value} is not a valid option (try removing some special characters)"
+                )
+            return value
+        return None
 
 
 class DatalistTextInput(forms.TextInput):

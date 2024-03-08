@@ -1,6 +1,21 @@
 from django.urls import path
+from django.urls import register_converter
 
 from . import views
+
+
+class FeatureIdEncoder:
+    regex = r"[\w&.․$()!?：;,<>[\]|%@\\ +-]+"
+
+    def to_python(self, value):
+        return value.replace("$", "/")
+
+    def to_url(self, value):
+        return value.replace("/", "$")
+
+
+register_converter(FeatureIdEncoder, "feature")
+
 
 urlpatterns = [
     # Home / Game Views
@@ -12,7 +27,7 @@ urlpatterns = [
     path("<int:pk>/name/", views.set_name, name="character-set-name"),
     path("<int:pk>/undo/", views.undo_view, name="character-undo"),
     path(
-        "<int:pk>/f/<str:feature_id>/",
+        "<int:pk>/f/<feature:feature_id>/",
         views.feature_view,
         name="character-feature-view",
     ),

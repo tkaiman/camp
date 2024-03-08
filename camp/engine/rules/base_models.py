@@ -25,9 +25,9 @@ from .decision import Decision
 
 _REQ_SYNTAX = re.compile(
     r"""(?P<prop>[^\s.@+:$<]+)
-    (?:\.(?P<attribute>[^\s.@+:$<]+))?  # Attribute, aka ".utilities"
-    (?:@(?P<slot>-?[^\s.@+:$<]+))?     # Choice, aka "@4"
-    (?:\+(?P<option>[^\s.@+:$<]+))?   # Skill options, aka "+Undead_Lore"
+    (?:\.(?P<attribute>[^\s.@+:$<.]+))?  # Attribute, aka ".utilities"
+    (?:@(?P<slot>-?[^\s.@+:$<.]+))?     # Choice, aka "@4"
+    (?:\+(?P<option>[^\s.@+:$<.]+))?   # Skill options, aka "+Undead_Lore"
     (?::(?P<value>-?\d+))?       # Minimum value, aka ":5"
     (?:\$(?P<single>-?\d+))?       # Minimum value in single thing, aka "$5"
     (?:<(?P<less_than>-?\d+))?     # Less than value, aka "<5"
