@@ -13,6 +13,7 @@ from camp.engine.rules.tempest.records import AwardRecord
 from camp.game.models.event_models import _XP_PER_HALFDAY
 
 from . import models
+from .fields import DateField
 from .fields import DateTimeField
 from .fields import DefaultModelChoiceField
 
@@ -285,7 +286,7 @@ class AwardEventStep(_AwardStepTwo):
         event_xp = max(min(event_max_xp, event_xp), 0)
 
         record = AwardRecord(
-            date=timezone.now().date(),
+            date=event.event_end_date,
             source_id=event.id,
             category=AwardCategory.EVENT,
             description=description,
@@ -338,6 +339,11 @@ class AwardEventStep(_AwardStepTwo):
 
 
 class AwardPlotStep(_AwardStepTwo):
+    backdate = DateField(
+        required=False,
+        label="Backdate To",
+        help_text="To backdate this award, enter a date. Otherwise, it is applied as of now.",
+    )
     backstory = forms.BooleanField(
         required=False,
         help_text="Grants the character an extra +2 CP for an approved backstory",
@@ -378,6 +384,8 @@ class AwardPlotStep(_AwardStepTwo):
         character_flags = None
         grants = None
 
+        backdate = self.cleaned_data.get("backdate", timezone.now().date())
+
         if raw_player_flag:
             player_flags: dict[str, FlagValue] = {}
             for flag in FLAG_SEP.split(raw_player_flag):
@@ -391,7 +399,7 @@ class AwardPlotStep(_AwardStepTwo):
             grants = FLAG_SEP.split(raw_grants)
 
         record = AwardRecord(
-            date=timezone.now().date(),
+            date=backdate,
             category=AwardCategory.EVENT,
             description=description,
             character=character.id if character else None,
