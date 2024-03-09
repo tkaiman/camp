@@ -400,7 +400,7 @@ class AwardPlotStep(_AwardStepTwo):
 
         record = AwardRecord(
             date=backdate,
-            category=AwardCategory.EVENT,
+            category=AwardCategory.PLOT,
             description=description,
             character=character.id if character else None,
             bonus_cp=bonus_cp,
