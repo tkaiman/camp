@@ -17,12 +17,16 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument("-c", "--campaign_id", type=str)
         parser.add_argument("-p", "--players", nargs="+", type=str)
+        parser.add_argument(
+            "-r", "--regenerate_awards", action="store_true", default=False
+        )
         parser.add_argument("-n", "--dry-run", action="store_true", default=False)
 
     def handle(
         self,
         campaign_id: str | None = None,
         players: list[str] | None = None,
+        regenerate_awards: bool = False,
         dry_run=False,
         **options,
     ):
@@ -41,11 +45,18 @@ class Command(BaseCommand):
                 self.stdout.write(f"Regenerating {total} player records")
                 for pd in query.all():
                     prev_record = pd.record
-                    new_record = prev_record.regenerate(pd.campaign.record)
+                    if regenerate_awards:
+                        new_record = pd.regenerate_awards()
+                    else:
+                        new_record = prev_record.regenerate(pd.campaign.record)
                     if new_record != prev_record:
                         pd.record = new_record
                         pd.save()
                         updated += 1
+
+                    self.stdout.write(f"Updating {pd.user.username}\n")
+                    self.stdout.write(f"Previous: {prev_record}\n")
+                    self.stdout.write(f"New: {new_record}\n\n")
 
                 self.stdout.write(f"Updated {updated}/{total} records")
 
