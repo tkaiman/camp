@@ -100,7 +100,7 @@ class CampaignRecord(BaseModel, frozen=True):
     bonus_cp_per_season: int = 3
     value_table: list[CampaignValues] = Field(default_factory=list)
     events: list[EventRecord] = Field(default_factory=list)
-    last_event_date: datetime.date = datetime.date(1, 1, 1)
+    last_event_date: datetime.date = datetime.date(1970, 1, 1)
 
     @property
     def season(self) -> int:

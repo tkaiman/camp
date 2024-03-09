@@ -393,11 +393,13 @@ class EventRegistration(RulesModel):
         # TODO: Once we're tracking SP, include a configurable default SP award for NPC registrations.
         event = self.event
         if logistics_periods is None:
-            logistics_periods = self.default_logistics_periods
-        else:
-            logistics_periods = max(
-                min(event.logistics_periods, logistics_periods), Decimal(0)
-            )
+            if self.attended_periods:
+                logistics_periods = self.attended_periods
+            else:
+                logistics_periods = self.default_logistics_periods
+        logistics_periods = max(
+            min(event.logistics_periods, logistics_periods), Decimal(0)
+        )
         xp = int(_XP_PER_HALFDAY * logistics_periods)
 
         return AwardRecord(
@@ -475,7 +477,10 @@ class EventRegistration(RulesModel):
             # TODO: Support revising a previously applied award.
             raise ValueError("Already marked attendance for this player")
         if logistics_periods is None:
-            logistics_periods = self.default_logistics_periods
+            if self.attended_periods:
+                logistics_periods = self.attended_periods
+            else:
+                logistics_periods = self.default_logistics_periods
         self.attended = True
         self.attended_periods = logistics_periods
         self.award_applied_by = applied_by

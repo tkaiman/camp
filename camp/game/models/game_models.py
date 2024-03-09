@@ -746,6 +746,22 @@ class PlayerCampaignData(RulesModel):
                 model.record = new_player_record
         return model
 
+    def regenerate_awards(self) -> PlayerRecord:
+        """Regenerate award data from event and award date."""
+        registrations = self.user.event_registrations.filter(
+            event__campaign=self.campaign,
+            attended=True,
+        )
+        awards = self.user.award_set.filter(
+            campaign=self.campaign,
+            applied_date__isnull=False,
+        )
+        event_records = [e.award_record() for e in registrations]
+        other_records = [a.record for a in awards]
+        return PlayerRecord(user=self.user_id).update(
+            self.campaign.record, event_records + other_records
+        )
+
     def __str__(self):
         return f"PlayerData({self.user}, {self.campaign})"
 
