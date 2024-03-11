@@ -1,3 +1,4 @@
+{% load accounts %}
 {% load static %}
 {% load rules %}
 {% load django_htmx %}
@@ -83,7 +84,7 @@
                 {% else %}
                 class="nav-link"
                 {% endif %}
-                href="{% url 'account_profile' %}">{{ user }}</a>
+                href="{% url 'account_profile' %}">{% displayuser %}</a>
             </li>
             {% else %}
             <li class="nav-item">

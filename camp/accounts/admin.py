@@ -1,10 +1,19 @@
 from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+from django.contrib.auth.models import User
 
 from . import models
 
-# admin.site.register(Membership)
+
+class MembershipInline(admin.StackedInline):
+    model = models.Membership
+    extra = 0
 
 
-@admin.register(models.Membership)
-class MembershipAdmin(admin.ModelAdmin):
-    pass
+class UserAdmin(BaseUserAdmin):
+    inlines = [MembershipInline]
+
+
+# User is already registered, so we need to unregister it first.
+admin.site.unregister(User)
+admin.site.register(User, UserAdmin)
