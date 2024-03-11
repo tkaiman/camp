@@ -348,3 +348,32 @@ def test_claim_assigned_to_other_player(game, campaign):
 
     assert award.applied_date is None
     assert not award.check_applied()
+
+
+@pytest.mark.django_db
+def test_claim_non_character_award(game, campaign):
+    bob = User.objects.create(username="bob")
+
+    character = Character.objects.create(
+        owner=bob,
+        game=game,
+        campaign=campaign,
+    )
+
+    award = Award.objects.create(
+        campaign=campaign,
+        player=bob,
+        award_data=AwardRecord(date=date(2020, 2, 2), bonus_cp=1).model_dump(
+            mode="json"
+        ),
+    )
+
+    award.claim(bob, character)
+
+    assert award.applied_date is not None
+
+    player = PlayerCampaignData.retrieve_model(bob, campaign)
+    record = player.record
+    assert record.bonus_cp == 1
+    char_record = record.metadata_for(character.id, campaign.record)
+    assert char_record.awards["bonus_cp"] == 1

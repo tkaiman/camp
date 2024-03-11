@@ -134,16 +134,14 @@ class AwardRecord(BaseModel, frozen=True):
     @property
     def needs_character(self) -> bool:
         """True if a player or logistics needs to associated a character with this record."""
-        if not self.character:
-            # We need a character assigned if any of the following fields is set:
-            return (
-                self.event_cp != 0
-                or self.backstory_approved is not None
-                or self.character_flags
-                or self.character_grants
-                or self.event_played
-            )
-        return False
+        # We need a character assigned if any of the following fields is set:
+        return (
+            self.event_cp != 0
+            or self.backstory_approved is not None
+            or self.character_flags
+            or self.character_grants
+            or self.event_played
+        )
 
 
 class CharacterRecord(BaseModel, frozen=True):
@@ -469,7 +467,11 @@ class PlayerRecord(BaseModel, frozen=True):
     def validate_character_records(self):
         """A character record exists for every character mentioned in an award."""
         for a in self.awards or []:
-            if a.character is not None and a.character not in self.characters:
+            if (
+                a.needs_character
+                and a.character is not None
+                and a.character not in self.characters
+            ):
                 raise ValueError(
                     f"Character record for {a.character} not properly initialized."
                 )
