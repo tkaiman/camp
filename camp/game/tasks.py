@@ -72,6 +72,7 @@ def _export_registrations(self: celery.Task, report_id: int, base_url: str) -> i
                 "author": __name__,
                 "manager": user.username if user else "(unknown)",
                 "created": datetime.date.today(),
+                "hyperlink_base": base_url,
             }
         )
         header_format = wb.add_format({"bold": True})
@@ -130,19 +131,19 @@ def _write_pc_regs(
         sheet.write(i, 3, r.get_attendance_display())
         sheet.write(i, 4, r.get_lodging_display())
         if char:
-            sheet.write_url(
-                i, 5, urljoin(base_url, char.get_absolute_url()), string=char.name
-            )
+            char_url = urljoin(base_url, char.get_absolute_url())
+            sheet.write_url(i, 5, char_url, string=char.name)
         else:
             sheet.write(i, 5, "No Character")
         sheet.write(i, 6, new_player)
         sheet.write(i, 7, new_character)
         sheet.write(i, 8, paid)
         sheet.write(i, 9, reg_date)
+        reg_url = urljoin(base_url, r.get_absolute_url())
         sheet.write_url(
             i,
             10,
-            urljoin(base_url, r.get_absolute_url()),
+            reg_url,
             string=f"Registration for {profile}",
         )
     sheet.autofit()

@@ -414,12 +414,13 @@ def trigger_event_report(request, pk, report_type):
             existing_report.delete()
 
     logging.info("Triggering generate_report task for %s, %s", pk, report_type)
+    hostname = request.build_absolute_uri("/")
     try:
         report, result = tasks.generate_report(
             report_type=report_type,
             event_id=pk,
             requestor=request.user.username,
-            base_url=request.get_host(),
+            base_url=hostname,
         )
     except KeyError:
         return HttpResponseBadRequest(f"Unknown report type {report_type}")
