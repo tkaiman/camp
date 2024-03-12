@@ -366,12 +366,12 @@ def myawards_view(request, slug):
                 messages.warning(request, "No valid awards selected.")
         elif request.method == "GET":
             if c := request.GET.get("character"):
-                try:
-                    context["selected_character"] = int(c)
-                except ValueError:
-                    pass
+                context["selected_character"] = c
 
-    context["characters"] = list(characters.filter(discarded_date=None))
+    characters = list(characters.filter(discarded_date=None))
+    context["characters"] = characters
+    if not characters:
+        context["selected_character"] = "new"
     charmap = {c.id: c for c in characters}
     context["claimable"] = list(claimable)
     context["unclaimable"] = list(unclaimable)
