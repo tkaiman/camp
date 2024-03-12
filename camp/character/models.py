@@ -52,9 +52,9 @@ class Character(RulesModel):
         related_name="characters",
         help_text="The user who owns this character. Not necessarily the character's portrayer.",
     )
-    discarded_date = models.DateTimeField(null=True, default=None)
+    discarded_date = models.DateTimeField(null=True, blank=True, default=None)
     discarded_by = models.ForeignKey(
-        User, null=True, default=None, on_delete=models.SET_NULL
+        User, null=True, blank=True, default=None, on_delete=models.SET_NULL
     )
 
     @property
