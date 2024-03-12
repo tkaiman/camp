@@ -47,21 +47,30 @@
     <p><label class="form-label" for="character-selector">Select a character to receive awards</label></p>
     <div class="row g-3">
       <div class="col-auto">
-        <select class="form-select form-select mb-3"
-                x-model="target_char"
-                id="character-selector" name="character">
+
           {% for c in characters %}
-          <option value="{{c.id}}">{{c}}</option>
+          <div class="form-check">
+            <input type="radio" name="character" id="character-{{c.id}}"
+                  value="{{c.id}}" class="form-check-input"
+                  x-model="target_char"></input>
+            <label for="character-{{c.id}}" class="form-check-label">{{c}}</label>
+          </div>
           {% endfor %}
-          <option value="">[New {{campaign}} Character]</option>
-        </select>
+          <div class="form-check">
+            <input type="radio" name="character" id="new-character-option"
+              class="form-check-input" required="true" x-model="target_char"
+                value="new"></input>
+            <label for="new-character-option"
+              class="form-check-label">New {{campaign}} Character</label>
+          </div>
+        </div>
       </div>
       <div class="col-auto">
-        <input class="mx-2 form-control" type="text" name="new_name" placeholder="New character name" :hidden="!!target_char" :required="!target_char" maxlength="255"></input>
+        <input class="mx-2 form-control" type="text" name="new_name" placeholder="New character name" :hidden="target_char != 'new'" :required="target_char == 'new'" maxlength="255"></input>
       </div>
       <div class="col-auto">
         <button class="btn btn-primary"
-                :disabled="selected.length == 0">
+                :disabled="selected.length == 0 || !target_char">
           Claim Awards
         </button>
       </div>

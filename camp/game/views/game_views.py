@@ -334,7 +334,7 @@ def myawards_view(request, slug):
                 # If a character was specified, it must be one this player owns from the
                 # appropriate campaign. If it's not specified, create one.
                 character_id = request.POST.get("character", None)
-                if character_id is None or character_id == "":
+                if character_id is None or character_id == "" or character_id == "new":
                     new_name = request.POST.get("new_name", "")
                     character = Character.objects.create(
                         name=new_name,
@@ -364,6 +364,12 @@ def myawards_view(request, slug):
                 characters = request.user.characters.filter(campaign=campaign)
             else:
                 messages.warning(request, "No valid awards selected.")
+        elif request.method == "GET":
+            if c := request.GET.get("character"):
+                try:
+                    context["selected_character"] = int(c)
+                except ValueError:
+                    pass
 
     context["characters"] = list(characters.filter(discarded_date=None))
     charmap = {c.id: c for c in characters}
