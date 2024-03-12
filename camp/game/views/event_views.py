@@ -41,6 +41,7 @@ def event_list(request):
 )
 def event_detail(request, pk):
     event = _get_event(pk)
+    timezone.activate(event.chapter.timezone)
     registration = event.get_registration(request.user)
     return render(
         request,
@@ -54,6 +55,7 @@ def event_detail(request, pk):
 )
 def event_edit(request, pk):
     event = _get_event(pk)
+    timezone.activate(event.chapter.timezone)
     if event.completed:
         messages.warning(request, "Events can't be edited once complete.")
         return redirect("event-detail", pk=pk)
@@ -97,7 +99,7 @@ def event_create(request, slug):
 @require_POST
 def event_cancel(request, pk):
     event = _get_event(pk)
-
+    timezone.activate(event.chapter.timezone)
     if event.completed:
         messages.warning(
             request, "Event is already marked complete, a little late for that."
@@ -120,6 +122,7 @@ def event_uncancel(request, pk):
         return redirect("event-update", pk=pk)
 
     event = _get_event(pk)
+    timezone.activate(event.chapter.timezone)
 
     if event.canceled_date:
         event.canceled_date = None
@@ -136,6 +139,7 @@ def event_uncancel(request, pk):
 @require_POST
 def mark_event_complete(request, pk):
     event = get_object_or_404(models.Event, pk=pk)
+    timezone.activate(event.chapter.timezone)
     event.mark_complete()
     return HttpResponseClientRefresh()
 
@@ -166,6 +170,7 @@ def register_view(request, pk):
     6. I don't have a profile yet / I want to review or edit my profile while registering
     """
     event = _get_event(pk)
+    timezone.activate(event.chapter.timezone)
 
     registration = event.get_registration(request.user)
     if not registration:
@@ -254,12 +259,10 @@ def register_view(request, pk):
 
 
 @login_required
+@require_POST
 def unregister_view(request, pk):
-    if request.method == "GET":
-        # Don't allow a registration to be unregistered via GET
-        return redirect("event-register", pk=pk)
-
     event = _get_event(pk)
+    timezone.activate(event.chapter.timezone)
     if not event.registration_window_open():
         # You can't cancel registration outside of the window.
         messages.warning(
@@ -295,6 +298,7 @@ def view_registration(request, pk, username):
     4. Print character sheet.
     """
     event = _get_event(pk)
+    timezone.activate(event.chapter.timezone)
     player = get_object_or_404(User, username=username)
     registration = event.get_registration(player)
     membership = Membership.objects.filter(game=request.game, user=player).first()
@@ -349,6 +353,7 @@ def list_registrations(request, pk):
     3. (After event): Attendance recording.
     """
     event = _get_event(pk)
+    timezone.activate(event.chapter.timezone)
 
     if request.method == "POST":
         # Handle bulk actions
@@ -400,6 +405,7 @@ def list_registrations(request, pk):
 @require_POST
 def trigger_event_report(request, pk, report_type):
     event = get_object_or_404(models.Event, pk=pk)
+    timezone.activate(event.chapter.timezone)
 
     if existing_report := _fetch_report(pk, report_type):
         if result := existing_report.result:

@@ -37,7 +37,7 @@ _FILENAME_TABLE = str.maketrans(
 
 
 def generate_report(
-    report_type, event_id, requestor, **kwargs
+    report_type, event_id, requestor, base_url, **kwargs
 ) -> tuple[models.EventReport, AsyncResult]:
     task: celery.Task
     match report_type:
@@ -47,20 +47,24 @@ def generate_report(
             raise KeyError(f"Unknown report type {report_type}")
     user = User.objects.filter(username=requestor).first()
     report = models.EventReport.objects.create(
-        event_id=event_id, requestor=user, report_type=report_type
+        event_id=event_id,
+        requestor=user,
+        report_type=report_type,
     )
     kwargs["report_id"] = report.id
+    kwargs["base_url"] = base_url
     result = task.apply_async(kwargs=kwargs, task_id=report.task_id)
     return report, result
 
 
 @shared_task(bind=True)
-def _export_registrations(self: celery.Task, report_id: int, base_url: str = "") -> int:
+def _export_registrations(self: celery.Task, report_id: int, base_url: str) -> int:
     report = models.EventReport.objects.get(pk=report_id)
     event = report.event
     all_regs = list(event.registrations.filter(canceled_date__isnull=True).all())
     stream = io.BytesIO()
     user = report.requestor
+
     with Workbook(stream, _WORKBOOK_OPTIONS) as wb:
         wb.set_properties(
             {

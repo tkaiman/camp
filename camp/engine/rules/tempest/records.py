@@ -42,6 +42,10 @@ class AwardCategory(StrEnum):
     )
     PLOT = "plot"  # Plot-based awards.
 
+    @property
+    def label(self) -> str:
+        return self.replace("-", " ").title()
+
 
 class AwardRecord(BaseModel, frozen=True):
     """Represents awards, normally from events.
@@ -118,15 +122,15 @@ class AwardRecord(BaseModel, frozen=True):
                 if self.player_flags:
                     pflags = []
                     for flag, value in self.player_flags.items():
-                        pflags.append(f"{flag}:{value:r}")
-                    parts.append(f"Player Flags: [{';'.join(pflags)}]")
+                        pflags.append(f"{flag}:{value!r}")
+                    parts.append(f"Player Flags: [{'; '.join(pflags)}]")
                 if self.character_flags:
                     pflags = []
                     for flag, value in self.character_flags.items():
-                        pflags.append(f"{flag}:{value:r}")
-                    parts.append(f"Character Flags: [{';'.join(pflags)}]")
+                        pflags.append(f"{flag}:{value!r}")
+                    parts.append(f"Character Flags: [{'; '.join(pflags)}]")
                 if self.character_grants:
-                    parts.append(f"Grants: [{';'.join(self.character_grants)}]")
+                    parts.append(f"Grants: [{'; '.join(self.character_grants)}]")
         if parts:
             return ", ".join(parts)
         return "Unknown"
@@ -410,8 +414,12 @@ class PlayerRecord(BaseModel, frozen=True):
             }
         )
 
-    def regenerate(self, campaign: CampaignRecord) -> PlayerRecord:
-        return PlayerRecord(user=self.user).update(campaign, self.awards)
+    def regenerate(
+        self, campaign: CampaignRecord, awards: list[AwardRecord] | None = None
+    ) -> PlayerRecord:
+        if awards is None:
+            awards = self.awards
+        return PlayerRecord(user=self.user).update(campaign, awards)
 
     def metadata_for(
         self, character_id: int, campaign: CampaignRecord

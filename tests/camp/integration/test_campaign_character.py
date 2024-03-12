@@ -41,6 +41,7 @@ def chapter(game):
         name="Test Chapter",
         slug="testchapter",
         game=game,
+        timezone="America/Denver",
     )
 
 

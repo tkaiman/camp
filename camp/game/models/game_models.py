@@ -830,6 +830,9 @@ class Award(RulesModel):
     def describe(self) -> str:
         return self.record.describe()
 
+    def describe_secret(self) -> str:
+        return self.record.describe(secrets=True)
+
     @property
     def game(self) -> Game:
         # This is needed to properly process the "add" permission
@@ -891,6 +894,33 @@ class Award(RulesModel):
     @property
     def needs_character(self) -> bool:
         return self.record.needs_character and not self.character
+
+    @property
+    def category_label(self) -> str:
+        if self.award_data:
+            category = AwardCategory(self.award_data.get("category", "unknown"))
+            return category.label
+        return "Unknown"
+
+    @transaction.atomic
+    def pop(self):
+        if self.applied_date is None:
+            return
+        player_data = PlayerCampaignData.retrieve_model(
+            self.player, self.campaign, update=False
+        )
+        award_record = self.record
+        player_record = player_data.record
+        if award_record not in player_record.awards:
+            raise ValueError("Award not found in player record")
+
+        awards = [a for a in player_record.awards if a != award_record]
+        new_record = player_record.regenerate(self.campaign.record, awards)
+        player_data.record = new_record
+        player_data.save()
+        self.applied_date = None
+        self.character = None
+        self.save()
 
     @transaction.atomic
     def claim(self, player: User, character=None):
