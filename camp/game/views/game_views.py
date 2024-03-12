@@ -413,7 +413,7 @@ def grant_award(request, slug):
 
         if email:
             # Check if we can resolve the email to a verified account.
-            if address := EmailAddress.objects.filter(email=email).first():
+            if address := EmailAddress.objects.filter(email__iexact=email).first():
                 if address.verified:
                     player = address.user
                     email = None
