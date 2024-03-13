@@ -577,6 +577,11 @@ class FeatureController(base_engine.BaseFeatureController):
                 reason=f"Max is {self.definition.ranks}, so can't increase to {current + value}",
                 amount=purchaseable,
             )
+
+        # Do we have unused bonus to apply?
+        if self.option_def and self.unused_bonus and self.can_take_new_option:
+            return Decision.NEEDS_OPTION
+
         # Does the character meet the prerequisites?
         if not (rd := self.meets_requirements):
             return rd
@@ -669,12 +674,12 @@ class FeatureController(base_engine.BaseFeatureController):
         return Decision.OK
 
     def increase(self, value: int) -> Decision:
-        if (oc := self.option_parent) and oc.unused_bonus:
-            if oc.model.choices is None:
-                oc.model.choices = {}
-            oc.model.choices[_OPTION_BONUS] = [self.full_id]
-            oc.reconcile()
-            return Decision(success=True, amount=1, mutation_applied=True)
+        if (
+            (oc := self.option_parent)
+            and oc.unused_bonus
+            and (choice_controller := oc.choices.get(_OPTION_BONUS))
+        ):
+            return choice_controller.choose(self.full_id)
         if not (rd := self.can_increase(value)):
             return rd
         if rd.needs_option:

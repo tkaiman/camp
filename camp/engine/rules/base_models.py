@@ -499,23 +499,25 @@ class BaseFeatureDef(BaseModel):
 
     def post_validate(self, ruleset: BaseRuleset) -> None:
         if self.requires:
-            ruleset.validate_identifiers(list(self.requires.identifiers()))
+            ruleset.validate_identifiers(
+                list(self.requires.identifiers()), path=self.def_path
+            )
         if self.parent:
-            ruleset.validate_identifiers([self.parent])
+            ruleset.validate_identifiers([self.parent], path=self.def_path)
             parent = ruleset.features[self.parent]
             parent._child_ids.add(self.id)
             self._parent_def = parent
         if self.supersedes:
-            ruleset.validate_identifiers([self.supersedes])
+            ruleset.validate_identifiers([self.supersedes], path=self.def_path)
             previous = ruleset.features[self.supersedes]
             previous._superseded_by = self.id
         if self.inherit_children:
-            ruleset.validate_identifiers(self.inherit_children)
+            ruleset.validate_identifiers(self.inherit_children, path=self.def_path)
             for uncle in self.inherit_children:
                 uncle_model = ruleset.features[uncle]
                 uncle_model._uncles.add(self.id)
         if self.extra_children:
-            ruleset.validate_identifiers(self.extra_children)
+            ruleset.validate_identifiers(self.extra_children, path=self.def_path)
             self._child_ids.update(self.extra_children)
 
 
@@ -626,7 +628,7 @@ class BaseRuleset(BaseModel, ABC):
         """
         return identifier in self.features or identifier in self.attribute_map
 
-    def validate_identifiers(self, identifiers: Identifiers) -> None:
+    def validate_identifiers(self, identifiers: Identifiers, path: str) -> None:
         id_list: list[str]
         match identifiers:
             case str():
@@ -643,7 +645,7 @@ class BaseRuleset(BaseModel, ABC):
             for id in parsed_req.identifiers():
                 if not self.identifier_defined(id):
                     raise ValueError(
-                        f'Required identifier "{id}" not found in ruleset.'
+                        f'Required identifier "{id}" not found in ruleset. ({path=})'
                     )
 
 
