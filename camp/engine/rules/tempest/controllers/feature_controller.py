@@ -19,7 +19,7 @@ from . import choice_controller
 
 _MUST_BE_POSITIVE = Decision(success=False, reason="Value must be positive.")
 _NO_RESPEND = Decision(success=False, reason="Respend not currently available.")
-_NO_PURCHASE = Decision(success=False, reason="Feature cannot be purchased.")
+_NO_PURCHASE = Decision(success=False, reason="")
 
 _SUBFEATURE_TYPES: set[str] = {
     "subfeature",
@@ -563,7 +563,7 @@ class FeatureController(base_engine.BaseFeatureController):
         purchaseable = self.purchaseable_ranks
         current = self.value
         if purchaseable <= 0:
-            return Decision(success=False)
+            return Decision.NO
         # If the parent feature has purchase limits for children, enforce it.
         if self.parent and self.parent.supports_child_purchases:
             if (remaining := self.parent.child_purchase_remaining) is not None:
