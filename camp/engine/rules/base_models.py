@@ -38,6 +38,8 @@ _REQ_SYNTAX = re.compile(
 FlagValue: TypeAlias = bool | int | float | str | None
 FlagValues: TypeAlias = list[FlagValue] | FlagValue
 
+_NOT_FOUND = object()
+
 
 class BaseModel(pydantic.BaseModel, extra="forbid"):
     """Base model for all ruleset models."""
@@ -62,9 +64,13 @@ class Attribute(BaseModel):
         return self.property_name or self.id.replace("-", "_")
 
 
-class BoolExpr(BaseModel, ABC):
+class BoolExpr(BaseModel, ABC, frozen=True):
     @abstractmethod
-    def evaluate(self, char: base_engine.CharacterController) -> Decision: ...
+    def evaluate(
+        self,
+        char: base_engine.CharacterController,
+        overrides: dict[str, int] | None = None,
+    ) -> Decision: ...
 
     def identifiers(self) -> set[str]:
         return set()
@@ -76,7 +82,11 @@ Identifiers: TypeAlias = str | set[str] | list[str] | Iterable[str] | None
 
 
 class Always(BoolExpr):
-    def evaluate(self, char: base_engine.CharacterController) -> Decision:
+    def evaluate(
+        self,
+        char: base_engine.CharacterController,
+        overrides: dict[str, int] | None = None,
+    ) -> Decision:
         return Decision.OK
 
 
@@ -86,12 +96,16 @@ ALWAYS = Always()
 class AnyOf(BoolExpr):
     any: list[BoolExpr]
 
-    def evaluate(self, char: base_engine.CharacterController) -> Decision:
+    def evaluate(
+        self,
+        char: base_engine.CharacterController,
+        overrides: dict[str, int] | None = None,
+    ) -> Decision:
         messages: list[str] = []
         for expr in self.any:
             if isinstance(expr, str):
                 raise TypeError(f"Expression '{expr}' expected to be parsed by now.")
-            if rd := expr.evaluate(char):
+            if rd := expr.evaluate(char, overrides=overrides):
                 return rd
             messages.append(rd.reason or "[unspecified failure reason]")
         return Decision(success=False, reason=f"AnyOf({'; '.join(messages)})")
@@ -109,11 +123,15 @@ class AnyOf(BoolExpr):
 class AllOf(BoolExpr):
     all: list[BoolExpr]
 
-    def evaluate(self, char: base_engine.CharacterController) -> Decision:
+    def evaluate(
+        self,
+        char: base_engine.CharacterController,
+        overrides: dict[str, int] | None = None,
+    ) -> Decision:
         for expr in self.all:
             if isinstance(expr, str):
                 raise TypeError(f"Expression '{expr}' expected to be parsed by now.")
-            if not (rd := expr.evaluate(char)):
+            if not (rd := expr.evaluate(char, overrides=overrides)):
                 return rd
         return Decision(success=True)
 
@@ -130,11 +148,15 @@ class AllOf(BoolExpr):
 class NoneOf(BoolExpr):
     none: list[BoolExpr]
 
-    def evaluate(self, char: base_engine.CharacterController) -> Decision:
+    def evaluate(
+        self,
+        char: base_engine.CharacterController,
+        overrides: dict[str, int] | None = None,
+    ) -> Decision:
         for expr in self.none:
             if isinstance(expr, str):
                 raise TypeError(f"Expression '{expr}' expected to be parsed by now.")
-            if expr.evaluate(char):
+            if expr.evaluate(char, overrides=overrides):
                 return Decision(success=False, reason=f"Not({expr})")
         return Decision(success=True)
 
@@ -193,14 +215,21 @@ class PropExpression(BoolExpr):
             prefixes=self.prefixes,
         )
 
-    def evaluate(self, char: base_engine.CharacterController) -> Decision:
+    def evaluate(
+        self,
+        char: base_engine.CharacterController,
+        overrides: dict[str, int] | None = None,
+    ) -> Decision:
         expr = self.unparse(
             prop=self.prop,
             slot=self.slot,
             option=self.option,
             prefixes=self.prefixes,
         )
-        ranks = char.get(expr)
+        if overrides and expr in overrides:
+            ranks = overrides[expr]
+        else:
+            ranks = char.get(expr)
         if self.less_than is not None:
             if ranks >= self.less_than:
                 return Decision(

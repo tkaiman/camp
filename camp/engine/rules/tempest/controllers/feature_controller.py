@@ -227,9 +227,12 @@ class FeatureController(base_engine.BaseFeatureController):
         return None
 
     def purchase_cost_string(
-        self, ranks: int = 1, cost: int | None = None
+        self,
+        ranks: int = 1,
+        cost: int | None = None,
+        grants: int | None = None,
     ) -> str | None:
-        if self.currency and self.cost_def is not None:
+        if self.currency and (self.cost_def is not None or cost is not None):
             if cost is None:
                 if self.is_option_template:
                     grants = 0
