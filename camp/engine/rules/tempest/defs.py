@@ -319,6 +319,7 @@ class Religion(BaseFeatureDef):
 
 class DevotionPower(BaseFeatureDef):
     type: Literal["devotion"] = "devotion"
+    cost: CostDef
     level: Literal["bonus", "basic", "advanced"]
     parent: str  # Parent is _required_
 

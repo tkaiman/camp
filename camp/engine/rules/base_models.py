@@ -38,8 +38,6 @@ _REQ_SYNTAX = re.compile(
 FlagValue: TypeAlias = bool | int | float | str | None
 FlagValues: TypeAlias = list[FlagValue] | FlagValue
 
-_NOT_FOUND = object()
-
 
 class BaseModel(pydantic.BaseModel, extra="forbid"):
     """Base model for all ruleset models."""
