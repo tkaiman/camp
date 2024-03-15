@@ -231,6 +231,7 @@ class ClassDef(BaseFeatureDef):
 
 class SkillDef(BaseFeatureDef):
     type: Literal["skill"] = "skill"
+    cost: CostDef  # Required
     category: str = "General Skills"
     uses: int | None = None
     rank_labels: dict[int, str] | None = None
@@ -274,6 +275,7 @@ class FlawDef(BaseFeatureDef):
 
 class PerkDef(BaseFeatureDef):
     type: Literal["perk"] = "perk"
+    cost: CostDef  # Required
     category: str = "General Perks"
     rank_labels: dict[int, str] | None = None
     creation_only: bool = False
