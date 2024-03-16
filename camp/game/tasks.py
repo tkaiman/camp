@@ -1,5 +1,6 @@
 import datetime
 import io
+from typing import Any
 from typing import Callable
 from typing import Iterable
 from urllib.parse import urljoin
@@ -7,7 +8,6 @@ from urllib.parse import urljoin
 import celery
 from celery import shared_task
 from celery.result import AsyncResult
-from traitlets import Any
 from xlsxwriter import Workbook
 
 from camp.accounts.models import User
