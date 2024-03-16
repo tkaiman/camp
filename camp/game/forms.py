@@ -384,7 +384,9 @@ class AwardPlotStep(_AwardStepTwo):
         character_flags = None
         grants = None
 
-        backdate = self.cleaned_data.get("backdate", timezone.now().date())
+        backdate = self.cleaned_data.get("backdate")
+        if not backdate:
+            backdate = timezone.now().date()
 
         if raw_player_flag:
             player_flags: dict[str, FlagValue] = {}
