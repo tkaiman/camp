@@ -286,7 +286,7 @@ class AwardEventStep(_AwardStepTwo):
         event_xp = max(min(event_max_xp, event_xp), 0)
 
         record = AwardRecord(
-            date=event.event_end_date,
+            date=event.event_end_date.date(),
             source_id=event.id,
             category=AwardCategory.EVENT,
             description=description,
