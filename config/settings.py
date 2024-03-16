@@ -242,6 +242,7 @@ if sentry_dsn := env.str("SENTRY_DSN", default=None):
             traces_sample_rate = 0.0
         if traces_sample_rate > 1:
             traces_sample_rate = 1.0
+    enable_tracing = env.bool("SENTRY_ENABLE_TRACING", default=False)
 
     sentry_sdk.init(
         dsn=sentry_dsn,
@@ -250,5 +251,6 @@ if sentry_dsn := env.str("SENTRY_DSN", default=None):
             DjangoIntegration(),
             CeleryIntegration(),
         ],
+        enable_tracing=enable_tracing,
         traces_sample_rate=traces_sample_rate,
     )
