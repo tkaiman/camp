@@ -234,6 +234,7 @@ CELERY_TASK_TIME_LIMIT = env.int("TASK_HARD_TIMEOUT_SECONDS", default=3600 * 2)
 # Sentry error reporting
 if sentry_dsn := env.str("SENTRY_DSN", default=None):
     import sentry_sdk
+    from sentry_sdk.integrations.celery import CeleryIntegration
     from sentry_sdk.integrations.django import DjangoIntegration
 
     if traces_sample_rate := env.float("SENTRY_SAMPLE_RATE", default=None):
@@ -244,6 +245,10 @@ if sentry_dsn := env.str("SENTRY_DSN", default=None):
 
     sentry_sdk.init(
         dsn=sentry_dsn,
-        integrations=[DjangoIntegration()],
+        send_default_pii=True,
+        integrations=[
+            DjangoIntegration(),
+            CeleryIntegration(),
+        ],
         traces_sample_rate=traces_sample_rate,
     )

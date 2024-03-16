@@ -1,14 +1,17 @@
 import datetime
 import io
+from typing import Callable
 from typing import Iterable
 from urllib.parse import urljoin
 
 import celery
 from celery import shared_task
 from celery.result import AsyncResult
+from traitlets import Any
 from xlsxwriter import Workbook
 
 from camp.accounts.models import User
+from camp.engine.rules.tempest.controllers.character_controller import TempestCharacter
 
 from . import models
 
@@ -34,6 +37,19 @@ _FILENAME_TABLE = str.maketrans(
         "*": "✳",
     }
 )
+
+
+_CHARACTER_TEXT_COLUMNS: dict[str, Callable[[TempestCharacter], Any]] = {
+    "Religion": lambda c: c.religion.display_name() if c.religion else "(Unset)",
+    "Culture": lambda c: c.culture.display_name() if c.culture else "(Unset)",
+    "Primary Breed": lambda c: (
+        c.primary_breed.display_name() if c.primary_breed else "(Unset)"
+    ),
+    "Subbreed": lambda c: c.subbreed.display_name() if c.subbreed else "",
+    "Primary Class": lambda c: (
+        c.primary_class.display_name() if c.primary_class else "(Unset)"
+    ),
+}
 
 
 def generate_report(
