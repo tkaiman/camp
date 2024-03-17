@@ -14,7 +14,9 @@ from xlsxwriter import Workbook
 
 from camp.accounts.models import User
 from camp.character.models import Sheet
+from camp.engine.rules.base_engine import PropertyController
 from camp.engine.rules.tempest.controllers.character_controller import TempestCharacter
+from camp.engine.rules.tempest.controllers.feature_controller import FeatureController
 from camp.game.models import Event
 
 from . import models
@@ -44,20 +46,161 @@ _FILENAME_TABLE = str.maketrans(
 )
 
 
+def _profession(char: TempestCharacter) -> str:
+    master = char.feature_controller("profession-master")
+    journeyman = char.feature_controller("profession-journeyman")
+    apprentice = char.feature_controller("profession-apprentice")
+
+    for option, controller in master.option_controllers().items():
+        if controller.value > 0:
+            return f"{option} [Master]"
+    for option, controller in journeyman.option_controllers().items():
+        if controller.value > 0:
+            return f"{option} [Journeyman]"
+    for option, controller in apprentice.option_controllers().items():
+        if controller.value > 0:
+            return f"{option} [Apprentice]"
+    return None
+
+
+def _qualifiers(char: TempestCharacter) -> str:
+    qualifiers = set()
+    if char.get("demon-blood"):
+        qualifiers.add("Demon")
+    if char.get("fae-blood"):
+        qualifiers.add("Fae")
+    if char.get("draconic-heritage-1"):
+        qualifiers.add("Dragon")
+    if char.get("mechanical-augmentation"):
+        qualifiers.add("Construct")
+        qualifiers.add("Automaton")
+    if char.get("druid") >= 10:
+        qualifiers.add("Beast")
+    if char.get("from-dusk-till-dawn") or char.get("curse-of-erasmus"):
+        qualifiers.add("Hollow")
+    return ", ".join(sorted(qualifiers))
+
+
+def _attr(attr) -> str:
+    def get_name(c: TempestCharacter) -> str:
+        match v := getattr(c, attr, None):
+            case None:
+                return None
+            case FeatureController():
+                return v.display_name()
+            case PropertyController():
+                return v.value
+            case _:
+                return str(v)
+
+    return get_name
+
+
+def _true_format(c):
+    return True if c.value > 0 else None
+
+
+def _controller(expr: str, formatter=_true_format) -> Callable[[TempestCharacter], Any]:
+    def get_controller(c: TempestCharacter) -> Any:
+        if v := c.controller(expr):
+            return formatter(v)
+        return None
+
+    return get_controller
+
+
+def _display_format(c):
+    return c.display_name() if c.value > 0 else None
+
+
+def _option_format(c):
+    if c.is_option_template:
+        options = list(c.option_controllers())
+        options.sort()
+        return "; ".join(options)
+    return None
+
+
+def _best_of(
+    exprs: list[str], formatter=_display_format
+) -> Callable[[TempestCharacter], Any]:
+    def get_controller(c: TempestCharacter) -> Any:
+        for e in reversed(exprs):
+            if (v := c.controller(e)) and v.value > 0:
+                return formatter(v)
+        return None
+
+    return get_controller
+
+
+def _craft(craftid):
+    return _best_of(
+        [
+            f"apprentice-{craftid}",
+            f"journeyman-{craftid}",
+            f"greater-{craftid}",
+            f"master-{craftid}",
+        ]
+    )
+
+
+def _passive_income(char: TempestCharacter) -> int | None:
+    # TODO: Move this logic into the feature definitions
+    income = 0
+    tax_evasion = char.get("tax-evasion") > 0
+    if char.get("profession-apprentice") > 0:
+        income += 4 if tax_evasion else 2
+    if char.get("profession-journeyman") > 0:
+        income += 6 if tax_evasion else 4
+    if char.get("profession-master") > 0:
+        income += 8 if tax_evasion else 6
+    if char.get("income") > 0:
+        income += 8 if tax_evasion else 7
+    if tax_evasion and char.get("manse") > 0:
+        # Manse doesn't grant *passive* income by itself,
+        # unless you have Tax Evasion. You can _request_ Wealth
+        # from it, though.
+        income += 1
+    if char.get("pit-master") > 0:
+        income += 2
+    # TODO: Add income from ACs
+    return income
+
+
 _CHARACTER_COLUMNS: dict[str, Callable[[TempestCharacter], Any]] = {
     "Level": lambda c: c.level.value,
-    "Religion": lambda c: c.religion.display_name() if c.religion else "(Unset)",
-    "Culture": lambda c: c.culture.display_name() if c.culture else "(Unset)",
-    "Primary Breed": lambda c: (
-        c.primary_breed.display_name() if c.primary_breed else "(Unset)"
-    ),
-    "Subbreed": lambda c: c.subbreed.display_name() if c.subbreed else "",
-    "Secondary Breed": lambda c: (
-        c.secondary_breed.display_name() if c.secondary_breed else "(Unset)"
-    ),
-    "Primary Class": lambda c: (
-        c.primary_class.display_name() if c.primary_class else "(Unset)"
-    ),
+    "Religion": _attr("religion"),
+    "Religion Level": lambda c: c.religion.level_label() if c.religion else None,
+    "Culture": _attr("culture"),
+    "Primary Breed": _attr("primary_breed"),
+    "Subbreed": _attr("subbreed"),
+    "Secondary Breed": _attr("secondary_breed"),
+    "Primary Class": _attr("primary_class"),
+    "Lores": _controller("lore", _option_format),
+    "Profession": _profession,
+    "Hobbies": _controller("chronic-hobbyist", _option_format),
+    "Qualifiers/Types": _qualifiers,
+    "Honor Debt": _controller("honor-debt", _option_format),
+    "Sight?": _best_of(["sight", "sight-beyond-sight", "sensitive"]),
+    "Locks?": _best_of(["basic-locks", "advanced-magical-locks"]),
+    "Traps?": _best_of(["basic-traps", "advanced-traps"]),
+    "Foraging": _best_of(["forage-1", "forage-2", "forage-3"]),
+    "Prospecting": _best_of(["prospect-1", "prospect-2", "prospect-3"]),
+    "Scavenging": _best_of(["scavenging-1", "scavenging-2", "scavenging-3"]),
+    "Tinkering": _craft("tinkering"),
+    "Alchemy": _craft("alchemy"),
+    "Enchanting": _craft("enchanting"),
+    "Arcane Ritual": _craft("arcane-ritual"),
+    "Divine Ritual": _craft("divine-ritual"),
+    "Tracking?": _controller("tracking"),
+    "Nightmares?": _controller("nightmares"),
+    "Rumormonger?": _controller("rumormonger"),
+    "Manse?": _controller("manse"),
+    "Patron?": _controller("patron"),
+    "Sources?": _controller("sources"),
+    "Fence?": _controller("fence"),
+    "Inheritance?": _controller("inheritance"),
+    "Passive Income": _passive_income,
     "Error": lambda c: None,
 }
 
