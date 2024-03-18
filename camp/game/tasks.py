@@ -316,15 +316,21 @@ def _write_pc_regs(
         [
             "Username",
             "Name",
+            "Link to Registration",
             "Minor?",
             "Attendance",
             "Lodging",
+            "Lodging Group",
             "Character",
             "New Player?",
             "New Character?",
             "Paid?",
             "Registered",
-            "Link to Registration",
+            "Medical",
+            "Emergency Contact",
+            "My Guardian",
+            "My Minors",
+            "Details",
         ]
         + list(_CHARACTER_COLUMNS),
         header_format,
@@ -345,11 +351,21 @@ def _write_pc_regs(
         j += 1
         sheet.write(i, j, str(profile))
         j += 1
+        reg_url = urljoin(base_url, r.get_absolute_url())
+        sheet.write_url(
+            i,
+            j,
+            reg_url,
+            string=f"Registration for {profile}",
+        )
+        j += 1
         sheet.write(i, j, age)
         j += 1
         sheet.write(i, j, r.get_attendance_display())
         j += 1
         sheet.write(i, j, r.get_lodging_display())
+        j += 1
+        sheet.write(i, j, r.lodging_group)
         j += 1
         if char:
             char_url = urljoin(base_url, char.get_absolute_url())
@@ -366,13 +382,15 @@ def _write_pc_regs(
         j += 1
         sheet.write(i, j, reg_date)
         j += 1
-        reg_url = urljoin(base_url, r.get_absolute_url())
-        sheet.write_url(
-            i,
-            j,
-            reg_url,
-            string=f"Registration for {profile}",
-        )
+        sheet.write(i, j, profile.medical)
+        j += 1
+        sheet.write(i, j, profile.emergency_contacts)
+        j += 1
+        sheet.write(i, j, profile.my_guardian)
+        j += 1
+        sheet.write(i, j, profile.my_minors)
+        j += 1
+        sheet.write(i, j, r.details)
         j += 1
         extra_columns = sheet_map.get(r.sheet_id, {"Error": "No Data"})
 
@@ -396,13 +414,19 @@ def _write_npc_regs(
         [
             "Username",
             "Name",
+            "Link to Registration",
             "Minor?",
             "Attendance",
             "Lodging",
+            "Lodging Group",
             "New Player?",
             "New NPC?",
             "Registered",
-            "Link to Registration",
+            "Medical",
+            "Emergency Contact",
+            "My Guardian",
+            "My Minors",
+            "Details",
         ],
         header_format,
     )
@@ -415,20 +439,42 @@ def _write_npc_regs(
         new_npc = r.npc_is_new
         reg_date = r.registered_date
 
-        sheet.write(i, 0, user.username)
-        sheet.write(i, 1, str(profile))
-        sheet.write(i, 2, age)
-        sheet.write(i, 3, r.get_attendance_display())
-        sheet.write(i, 4, r.get_lodging_display())
-        sheet.write(i, 5, new_player)
-        sheet.write(i, 6, new_npc)
-        sheet.write(i, 7, reg_date)
+        j = 0
+        sheet.write(i, j, user.username)
+        j += 1
+        sheet.write(i, j, str(profile))
+        j += 1
         sheet.write_url(
             i,
-            8,
+            j,
             urljoin(base_url, r.get_absolute_url()),
             string=f"Registration for {profile}",
         )
+        j += 1
+        sheet.write(i, j, age)
+        j += 1
+        sheet.write(i, j, r.get_attendance_display())
+        j += 1
+        sheet.write(i, j, r.get_lodging_display())
+        j += 1
+        sheet.write(i, j, r.lodging_group)
+        j += 1
+        sheet.write(i, j, new_player)
+        j += 1
+        sheet.write(i, j, new_npc)
+        j += 1
+        sheet.write(i, j, reg_date)
+        j += 1
+        sheet.write(i, j, profile.medical)
+        j += 1
+        sheet.write(i, j, profile.emergency_contacts)
+        j += 1
+        sheet.write(i, j, profile.my_guardian)
+        j += 1
+        sheet.write(i, j, profile.my_minors)
+        j += 1
+        sheet.write(i, j, r.details)
+        j += 1
     sheet.autofit()
 
 
