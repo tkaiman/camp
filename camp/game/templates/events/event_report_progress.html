@@ -41,7 +41,7 @@
     </button>
     {% endif %}
   </div>
-  {% if report and report.message %}
+  {% if report and not report.download_ready and report.message %}
     <span>{{report.message}}</span>
   {% endif %}
 </div>

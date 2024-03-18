@@ -51,12 +51,10 @@ def _profession(char: TempestCharacter) -> str:
     journeyman = char.feature_controller("profession-journeyman")
     apprentice = char.feature_controller("profession-apprentice")
 
-    for option, controller in master.option_controllers().items():
-        if controller.value > 0:
-            return f"{option} [Master]"
-    for option, controller in journeyman.option_controllers().items():
-        if controller.value > 0:
-            return f"{option} [Journeyman]"
+    if master.value > 0:
+        return f"{master.option} [Master]"
+    if journeyman.value > 0:
+        return f"{journeyman.option} [Journeyman]"
     for option, controller in apprentice.option_controllers().items():
         if controller.value > 0:
             return f"{option} [Apprentice]"
