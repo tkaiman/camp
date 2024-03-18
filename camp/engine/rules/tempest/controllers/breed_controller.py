@@ -293,7 +293,9 @@ class BreedAdvantageController(feature_controller.FeatureController):
         return base_cost
 
     def cost_string(self, **kw) -> str | None:
-        return self.purchase_cost_string(cost=self.cost_for(self.value))
+        if self.value > 0:
+            return self.purchase_cost_string(cost=self.cost_for(self.value))
+        return super().cost_string(**kw)
 
     @property
     def subbreed_id(self) -> str | None:
