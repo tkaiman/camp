@@ -165,7 +165,14 @@ def _passive_income(char: TempestCharacter) -> int | None:
     return income
 
 
+def _issues(char: TempestCharacter):
+    if issues := char.issues():
+        return f"{len(issues)} issues detected."
+    return None
+
+
 _CHARACTER_COLUMNS: dict[str, Callable[[TempestCharacter], Any]] = {
+    "Issues": _issues,
     "Level": lambda c: c.level.value,
     "Religion": _attr("religion"),
     "Religion Level": lambda c: c.religion.level_label() if c.religion else None,
