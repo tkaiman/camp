@@ -203,6 +203,11 @@ class AwardPlayerStep(forms.Form):
         return data
 
 
+class _CharacterFieldChoice(forms.ModelChoiceField):
+    def label_from_instance(self, obj):
+        return f"{obj} [{obj.id}]"
+
+
 class _AwardStepTwo(AwardPlayerStep):
     """Convert a few fields to hidden, and add a character selector."""
 
@@ -218,7 +223,7 @@ class _AwardStepTwo(AwardPlayerStep):
         widget=forms.HiddenInput,
         required=True,
     )
-    character = forms.ModelChoiceField(
+    character = _CharacterFieldChoice(
         queryset=None,
         required=False,
         empty_label="[Not bound to a character]",
