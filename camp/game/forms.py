@@ -369,10 +369,10 @@ class AwardPlotStep(_AwardStepTwo):
         help_text="Enter one or more character-level flag names for special unlocks. These are usually just the name of the feature being unlocked, with any spaces replaced with - dashes",
     )
     # Grants are not implemented yet.
-    # grants = forms.CharField(
-    #     required=False,
-    #     help_text="Enter one or more character bonus grants to add for free. For example, to grant 3 extra life points, enter lp:3",
-    # )
+    grants = forms.CharField(
+        required=False,
+        help_text="Enter one or more character bonus grants to add for free. For example, to grant 3 extra life points, enter lp:3",
+    )
 
     def create_award(self, campaign, request) -> models.Award:
         player = self.cleaned_data.get("player")
