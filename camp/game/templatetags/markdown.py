@@ -14,6 +14,11 @@ _MD = md.Markdown(
 )
 
 
+_ATTRIBUTES = {
+    "a": {"target", "href", "name"},
+}
+
+
 @register.filter()
 @mark_safe
 @stringfilter
@@ -24,4 +29,6 @@ def markdown(value, arg=None):
         }
     else:
         attr_values = None
-    return nh3.clean(_MD.convert(value), set_tag_attribute_values=attr_values)
+    return nh3.clean(
+        _MD.convert(value), set_tag_attribute_values=attr_values, attributes=_ATTRIBUTES
+    )
