@@ -21,6 +21,10 @@ class DryRun(Exception):
 
 
 EMAIL = "Email"
+GRANTS = "Grants"
+DESCR = "Description"
+CATEGORY = "Category"
+
 
 _DATE_FORMATS = [
     "%Y/%m/%d",
@@ -40,7 +44,7 @@ def DateType(string):
 
 
 class Command(BaseCommand):
-    help = "Import event attendance data from a CSV file."
+    help = "Import award data from a CSV file."
 
     def add_arguments(self, parser):
         parser.add_argument("campaign_id", type=str)
@@ -71,7 +75,6 @@ class Command(BaseCommand):
                 base_award = AwardRecord(
                     date=award_date or date.today(),
                     backstory_approved=backstory,
-                    category=category or AwardCategory.UNKNOWN,
                 )
 
                 for entry in csv.DictReader(infile):
@@ -80,9 +83,23 @@ class Command(BaseCommand):
                     if not email:
                         continue
 
-                    record_data = base_award.model_dump(
-                        mode="json", exclude_defaults=True
+                    this_category = entry.get(CATEGORY) or category
+                    description = entry.get(DESCR) or None
+                    grants = entry.get(GRANTS) or None
+
+                    self.stdout.write(
+                        f"Row: {email}, {this_category}, {grants}, {description}"
                     )
+
+                    award = base_award.model_copy(
+                        update={
+                            "category": this_category,
+                            "description": description,
+                            "character_grants": grants.split() if grants else None,
+                        }
+                    )
+
+                    record_data = award.model_dump(mode="json", exclude_defaults=True)
 
                     self.stdout.write(
                         f"Creating record for {email}:\n{pprint.pformat(record_data)}"
