@@ -9,8 +9,10 @@ from datetime import datetime
 from django.core.management.base import BaseCommand
 from django.db import transaction
 
+from camp.accounts.models import User
 from camp.engine.rules.tempest.records import AwardCategory
 from camp.engine.rules.tempest.records import AwardRecord
+from camp.game import models
 from camp.game.models import Campaign
 from camp.game.models import Chapter
 from camp.game.models.game_models import Award
@@ -21,9 +23,17 @@ class DryRun(Exception):
 
 
 EMAIL = "Email"
-GRANTS = "Grants"
-DESCR = "Description"
+USERNAME = "Username"
+CHAR = "Character"
 CATEGORY = "Category"
+DATE = "Date"
+PFLAGS = "Player Flags"
+CFLAGS = "Character Flags"
+GRANTS = "Character Grants"
+EVENT_XP = "Event XP"
+EVENT_CP = "Event CP"
+BONUS_CP = "Bonus CP"
+DESCR = "Description"
 
 
 _DATE_FORMATS = [
@@ -60,9 +70,6 @@ class Command(BaseCommand):
         campaign_id: str,
         chapter_id: str,
         infile: io.TextIOBase,
-        award_date: date | None = None,
-        backstory: bool | None = None,
-        category: AwardCategory | None = None,
         dry_run=False,
         **options,
     ):
@@ -71,42 +78,91 @@ class Command(BaseCommand):
             with transaction.atomic():
                 campaign = Campaign.objects.get(slug=campaign_id)
                 chapter = Chapter.objects.get(slug=chapter_id)
-
-                base_award = AwardRecord(
-                    date=award_date or date.today(),
-                    backstory_approved=backstory,
-                )
+                today = date.today()
 
                 for entry in csv.DictReader(infile):
-                    email = entry[EMAIL].strip()
+                    email = entry.get(EMAIL, "").strip()
+                    username = entry.get(USERNAME, "").strip()
+                    if award_date_str := entry.get(DATE):
+                        award_date = DateType(award_date_str)
+                    else:
+                        award_date = today
 
-                    if not email:
+                    if event_xp_str := entry.get(EVENT_XP):
+                        event_xp = int(event_xp_str)
+                    else:
+                        event_xp = None
+
+                    if event_cp_str := entry.get(EVENT_CP):
+                        event_cp = int(event_cp_str)
+                    else:
+                        event_cp = None
+
+                    if bonus_cp_str := entry.get(BONUS_CP):
+                        bonus_cp = int(bonus_cp_str)
+                    else:
+                        bonus_cp = None
+
+                    if grants_str := entry.get(GRANTS):
+                        grants = grants_str.split()
+                    else:
+                        grants = None
+
+                    if pflags_str := entry.get(PFLAGS):
+                        pflags = pflags_str.split()
+                    else:
+                        pflags = None
+
+                    if cflags_str := entry.get(CFLAGS):
+                        cflags = cflags_str.split()
+                    else:
+                        cflags = None
+
+                    if not (email or username):
                         continue
 
-                    this_category = entry.get(CATEGORY) or category
+                    category = entry.get(CATEGORY)
                     description = entry.get(DESCR) or None
-                    grants = entry.get(GRANTS) or None
 
-                    self.stdout.write(
-                        f"Row: {email}, {this_category}, {grants}, {description}"
-                    )
+                    match category:
+                        case AwardCategory.EVENT:
+                            event = models.Event.objects.filter(
+                                event_end_date=award_date,
+                                chapter=chapter,
+                            ).get()
+                            source_id = event.id
+                            if event_xp:
+                                event_xp = min(event_xp, 2 * event.logistics_periods)
+                        case _:
+                            source_id = None
 
-                    award = base_award.model_copy(
-                        update={
-                            "category": this_category,
-                            "description": description,
-                            "character_grants": grants.split() if grants else None,
-                        }
+                    award = AwardRecord(
+                        source_id=source_id,
+                        category=category,
+                        date=award_date,
+                        description=description,
+                        character_grants=grants,
+                        player_flags=pflags,
+                        character_flags=cflags,
+                        event_xp=event_xp,
+                        event_cp=event_cp,
+                        bonus_cp=bonus_cp,
                     )
 
                     record_data = award.model_dump(mode="json", exclude_defaults=True)
 
                     self.stdout.write(
-                        f"Creating record for {email}:\n{pprint.pformat(record_data)}"
+                        f"Creating record for {email or username}:\n{pprint.pformat(record_data)}"
                     )
+                    if username:
+                        user = User.objects.filter(username=username).first()
+                    else:
+                        user = None
+
                     Award.objects.create(
                         campaign=campaign,
                         email=email,
+                        user=user,
                         award_data=record_data,
                         chapter=chapter,
                     )
