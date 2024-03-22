@@ -1,5 +1,6 @@
 name: Gift of Unbreakable Flesh
 requires: patron
+ranks: 4
 cost:
   ranks:
     1: 2
