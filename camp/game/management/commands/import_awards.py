@@ -39,6 +39,7 @@ DESCR = "Description"
 _DATE_FORMATS = [
     "%Y/%m/%d",
     "%Y-%m-%d",
+    "%m/%d/%Y",
 ]
 
 
