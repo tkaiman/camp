@@ -56,4 +56,5 @@ repos:
             "requirements.txt",
             "-o",
             "requirements.txt",
+            "--without-hashes",
           ]
