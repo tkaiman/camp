@@ -59,8 +59,8 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument("campaign_id", type=str)
-        parser.add_argument("chapter_id", type=str)
         parser.add_argument("infile", type=argparse.FileType("r"))
+        parser.add_argument("--chapter_id", type=str, default=None)
         parser.add_argument("--category", type=AwardCategory)
         parser.add_argument("--backstory", action=argparse.BooleanOptionalAction)
         parser.add_argument("-d", "--award_date", type=DateType)
@@ -69,16 +69,19 @@ class Command(BaseCommand):
     def handle(
         self,
         campaign_id: str,
-        chapter_id: str,
         infile: io.TextIOBase,
         dry_run=False,
+        chapter_id: str | None = None,
         **options,
     ):
         committed = False
         try:
             with transaction.atomic():
                 campaign = Campaign.objects.get(slug=campaign_id)
-                chapter = Chapter.objects.get(slug=chapter_id)
+                if chapter_id is not None:
+                    chapter = Chapter.objects.get(slug=chapter_id)
+                else:
+                    chapter = None
                 today = date.today()
 
                 for entry in csv.DictReader(infile):
@@ -92,17 +95,17 @@ class Command(BaseCommand):
                     if event_xp_str := entry.get(EVENT_XP):
                         event_xp = int(event_xp_str)
                     else:
-                        event_xp = None
+                        event_xp = 0
 
                     if event_cp_str := entry.get(EVENT_CP):
                         event_cp = int(event_cp_str)
                     else:
-                        event_cp = None
+                        event_cp = 0
 
                     if bonus_cp_str := entry.get(BONUS_CP):
                         bonus_cp = int(bonus_cp_str)
                     else:
-                        bonus_cp = None
+                        bonus_cp = 0
 
                     if grants_str := entry.get(GRANTS):
                         grants = grants_str.split()
@@ -124,18 +127,22 @@ class Command(BaseCommand):
 
                     category = entry.get(CATEGORY)
                     description = entry.get(DESCR) or None
-
+                    source_id = None
                     match category:
                         case AwardCategory.EVENT:
-                            event = models.Event.objects.filter(
-                                event_end_date=award_date,
-                                chapter=chapter,
-                            ).get()
-                            source_id = event.id
-                            if event_xp:
-                                event_xp = min(event_xp, 2 * event.logistics_periods)
-                        case _:
-                            source_id = None
+                            event_filter = models.Event.objects.filter(
+                                event_end_date__year=award_date.year,
+                                event_end_date__month=award_date.month,
+                                event_end_date__day=award_date.day,
+                            )
+                            if chapter:
+                                event_filter = event_filter.filter(chapter=chapter)
+                            if event := event_filter.first():
+                                source_id = event.id
+                                if event_xp:
+                                    event_xp = min(
+                                        event_xp, 2 * event.logistics_periods
+                                    )
 
                     award = AwardRecord(
                         source_id=source_id,
@@ -163,7 +170,7 @@ class Command(BaseCommand):
                     Award.objects.create(
                         campaign=campaign,
                         email=email,
-                        user=user,
+                        player=user,
                         award_data=record_data,
                         chapter=chapter,
                     )
