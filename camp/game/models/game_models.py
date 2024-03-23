@@ -469,7 +469,7 @@ class Ruleset(RulesModel):
 
     @cached_property
     def ruleset(self) -> camp.engine.rules.base_models.BaseRuleset:
-        if self.remote_data:
+        if self.remote_ok and self.remote_data:
             return _deserialize_ruleset(self.id, self.remote_last_updated)
         if not self.package:
             raise ValueError(f"No package specified for ruleset {self.name}")
