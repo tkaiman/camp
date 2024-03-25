@@ -219,12 +219,27 @@ class DeleteRulesetView(AutoPermissionRequiredMixin, DeleteView):
 @permission_required("game.change_ruleset", objectgetter(Ruleset), raise_exception=True)
 @require_POST
 def fetch_ruleset_view(request, pk):
-    ruleset = Ruleset.objects.get(pk=pk)
+    ruleset = get_object_or_404(Ruleset, pk=pk)
     remote_loader.fetch_ruleset(ruleset)
     ruleset.save()
     return render(
         request, "game/ruleset_remote_status.html", context={"ruleset": ruleset}
     )
+
+
+@permission_required("game.change_ruleset", objectgetter(Ruleset), raise_exception=True)
+@require_POST
+def clear_ruleset_view(request, pk):
+    ruleset = get_object_or_404(Ruleset, pk=pk)
+    if not ruleset.remote_data:
+        return http.HttpResponse("No remote data.")
+    ruleset.remote_ok = None
+    ruleset.remote_data = ""
+    ruleset.remote_error = ""
+    ruleset.remote_last_updated = None
+    ruleset.remote_last_attempt = None
+    ruleset.save()
+    return http.HttpResponse(f"Cleared remote data for {ruleset}")
 
 
 class CreateGameRoleView(AutoPermissionRequiredMixin, CreateView):
