@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import datetime
+import os
 from functools import cached_property
 from functools import lru_cache
 from typing import Any
@@ -473,6 +474,9 @@ class Ruleset(RulesModel):
             return _deserialize_ruleset(self.id, self.remote_last_updated)
         if not self.package:
             raise ValueError(f"No package specified for ruleset {self.name}")
+        # During local development, allow loading from a local path.
+        if os.sep in self.package and _settings.DEBUG:
+            return load_ruleset(self.package)
         # Package loading behavior is triggered by prefixing a package with a $ character.
         return load_ruleset(f"${self.package}")
 
