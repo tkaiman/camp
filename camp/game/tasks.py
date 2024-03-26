@@ -189,7 +189,7 @@ _CHARACTER_COLUMNS: dict[str, Callable[[TempestCharacter], Any]] = {
     "Qualifiers/Types": _qualifiers,
     "Honor Debt": _controller("honor-debt", _option_format),
     "Sight?": _best_of(["sight", "sight-beyond-sight", "sensitive"]),
-    "Locks?": _best_of(["basic-locks", "advanced-magical-locks"]),
+    "Locks?": _best_of(["basic-locks"]),
     "Traps?": _best_of(["basic-traps", "advanced-traps"]),
     "Foraging": _best_of(["forage-1", "forage-2", "forage-3"]),
     "Prospecting": _best_of(["prospect-1", "prospect-2", "prospect-3"]),

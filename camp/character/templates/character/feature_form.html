@@ -45,31 +45,33 @@
     <p>You have {{ feature.unused_bonus }} unused bonus rank(s). Your next purchase is free.</p>
     {% endif %}
 
-    <div class="d-print-none">
-    <form method="post" id="purchaseForm">
-        {% csrf_token %}
-            {{ purchase_form | crispy }}
-            {% if purchase_form.show_remove_button %}
-            <button type="submit" id="removeButton"
-                    name="remove" value="1"
-                    class="btn btn-danger">
-                Remove
-            </button>
-            {% else %}
-            <button type="submit" id="purchaseButton" name="purchase"
-                    class="btn btn-{{purchase_form.button_level}}">
-                {{purchase_form.button_label}}
-            </button>
-            {% endif %}
+    {% if not feature.hidden %}
+        <div class="d-print-none">
+        <form method="post" id="purchaseForm">
+            {% csrf_token %}
+                {{ purchase_form | crispy }}
+                {% if purchase_form.show_remove_button %}
+                <button type="submit" id="removeButton"
+                        name="remove" value="1"
+                        class="btn btn-danger">
+                    Remove
+                </button>
+                {% else %}
+                <button type="submit" id="purchaseButton" name="purchase"
+                        class="btn btn-{{purchase_form.button_level}}">
+                    {{purchase_form.button_label}}
+                </button>
+                {% endif %}
+            </div>
+        </form>
+        {% elif no_purchase_reason %}
+        <p>You can not currently purchase this because:</p>
+        <p>{{ no_purchase_reason | markdown }}</p>
+        {% endif %}
         </div>
-    </form>
-    {% elif no_purchase_reason %}
-    <p>You can not currently purchase this because:</p>
-    <p>{{ no_purchase_reason | markdown }}</p>
     {% endif %}
-    </div>
 
-    {% if explain_ranks %}
+    {% if explain_ranks and not feature.hidden %}
     <div class="d-print-none">
     <h3>Details</h3>
     {% for explanation in explain_ranks %}
@@ -78,7 +80,7 @@
     </div>
     {% endif %}
 
-    {% if feature.granted_features %}
+    {% if feature.granted_features and not feature.hidden %}
     <div class="d-print-none">
     <h3>Granted Features</h3>
     <ul>
@@ -89,7 +91,7 @@
     </div>
     {% endif %}
 
-    {% if feature.discounted_features %}
+    {% if feature.discounted_features and not feature.hidden %}
     <div class="d-print-none">
     <h3>Discounted Features</h3>
     <ul>
