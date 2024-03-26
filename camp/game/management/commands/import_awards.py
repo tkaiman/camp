@@ -113,12 +113,12 @@ class Command(BaseCommand):
                         grants = None
 
                     if pflags_str := entry.get(PFLAGS):
-                        pflags = pflags_str.split()
+                        pflags = {f: True for f in pflags_str.split()}
                     else:
                         pflags = None
 
                     if cflags_str := entry.get(CFLAGS):
-                        cflags = cflags_str.split()
+                        cflags = {f: True for f in cflags_str.split()}
                     else:
                         cflags = None
 
