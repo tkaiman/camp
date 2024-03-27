@@ -389,6 +389,35 @@ def undo_view(request, pk):
     return redirect("character-detail", pk=pk)
 
 
+@permission_required(
+    "character.view_character", fn=objectgetter(Character), raise_exception=True
+)
+@require_POST
+def copy_view(request, pk):
+    with transaction.atomic():
+        character = get_object_or_404(Character, id=pk)
+        sheet = character.primary_sheet
+        model = sheet.controller.model
+        name = request.POST.get("name", f"Copy of {character.name}")
+        new_character = Character.objects.create(
+            owner=request.user,
+            campaign=None,
+            game=request.game,
+            name=name,
+        )
+        new_sheet = new_character.primary_sheet
+        controller = new_sheet.controller
+        new_model = model.model_copy(
+            update={
+                "name": name,
+            },
+        )
+        controller.model = new_model
+        new_sheet.controller = controller
+        new_sheet.save()
+    return redirect(new_character)
+
+
 def _features(
     controller: CharacterController,
     feats: Iterable[BaseFeatureController],

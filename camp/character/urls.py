@@ -26,6 +26,7 @@ urlpatterns = [
     path("<int:pk>/set/", views.set_attr, name="character-set-attr"),
     path("<int:pk>/name/", views.set_name, name="character-set-name"),
     path("<int:pk>/undo/", views.undo_view, name="character-undo"),
+    path("<int:pk>/copy/", views.copy_view, name="character-copy"),
     path(
         "<int:pk>/f/<feature:feature_id>/",
         views.feature_view,
