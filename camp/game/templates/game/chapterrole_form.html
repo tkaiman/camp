@@ -10,11 +10,6 @@ Assign New Role
 {% endblock %}{% endblock %}
 
 {% block content %}
-{% if object %}
-<h1>Update role for {{ object.user }}</h1>
-{% else %}
-<h1>Assign New Role</h1>
-{% endif %}
 <form method="post">{% csrf_token %}
     {{ form | crispy }}
     <input type="submit" class="btn btn-primary" value="Save">

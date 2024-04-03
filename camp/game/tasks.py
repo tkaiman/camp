@@ -76,7 +76,11 @@ def _qualifiers(char: TempestCharacter) -> str:
         qualifiers.add("Automaton")
     if char.get("druid") >= 10:
         qualifiers.add("Beast")
-    if char.get("from-dusk-till-dawn") or char.get("curse-of-erasmus"):
+    if (
+        char.get("from-dusk-till-dawn")
+        or char.get("curse-of-erasmus")
+        or char.get("gift-of-erasmus")
+    ):
         qualifiers.add("Hollow")
     return ", ".join(sorted(qualifiers))
 
@@ -325,6 +329,7 @@ def _write_pc_regs(
         0,
         [
             "Username",
+            "Email",
             "Name",
             "Link to Registration",
             "Minor?",
@@ -358,6 +363,9 @@ def _write_pc_regs(
 
         j = 0
         sheet.write(i, j, user.username)
+        j += 1
+        if email := _get_email(user):
+            sheet.write_url(i, j, f"mailto:{email}", string=email)
         j += 1
         sheet.write(i, j, str(profile))
         j += 1
@@ -423,6 +431,7 @@ def _write_npc_regs(
         0,
         [
             "Username",
+            "Email",
             "Name",
             "Link to Registration",
             "Minor?",
@@ -451,6 +460,9 @@ def _write_npc_regs(
 
         j = 0
         sheet.write(i, j, user.username)
+        j += 1
+        if email := _get_email(user):
+            sheet.write_url(i, j, f"mailto:{email}", string=email)
         j += 1
         sheet.write(i, j, str(profile))
         j += 1
@@ -490,6 +502,18 @@ def _write_npc_regs(
 
 def _filenameize(string: str) -> str:
     return string.translate(_FILENAME_TABLE)
+
+
+def _get_email(user) -> str | None:
+    best_email = None
+    for e in user.emailaddress_set.order_by("-primary", "-verified"):
+        if e.primary:
+            best_email = e.email
+        elif best_email is None:
+            best_email = e.email
+    if best_email is None:
+        best_email = user.email
+    return best_email or None
 
 
 @shared_task(ignore_result=True)
