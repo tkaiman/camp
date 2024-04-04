@@ -2,6 +2,7 @@ from pathlib import Path
 
 import environs
 from django.contrib.messages import constants as message_constants
+from django_recaptcha import constants as recaptcha_constants
 
 env = environs.Env()
 env.read_env()
@@ -62,6 +63,7 @@ INSTALLED_APPS = [
     "rules.apps.AutodiscoverRulesConfig",
     "django_htmx",
     "django_celery_results",
+    "django_recaptcha",
     # Social auth providers. See here for the full available list:
     # https://django-allauth.readthedocs.io/en/latest/installation.html
     "allauth.socialaccount.providers.discord",
@@ -202,6 +204,12 @@ ACCOUNT_RATE_LIMITS = {
     # NOTE: Login is already protected via `ACCOUNT_LOGIN_ATTEMPTS_LIMIT`
 }
 ACCOUNT_SIGNUP_ENABLED = env.bool("SIGNUP_ENABLED", default=True)
+ACCOUNT_FORMS = {
+    "signup": "camp.accounts.forms.SignupForm",
+    "reset_password": "camp.accounts.forms.ResetPasswordForm",
+    "add_email": "camp.accounts.forms.AddEmailForm",
+}
+
 
 MESSAGE_TAGS = {
     message_constants.DEBUG: "primary",
@@ -230,6 +238,18 @@ CELERY_TASK_SERIALIZER = "json"
 CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
 CELERY_TASK_SOFT_TIME_LIMIT = env.int("TASK_SOFT_TIMEOUT_SECONDS", default=3600)
 CELERY_TASK_TIME_LIMIT = env.int("TASK_HARD_TIMEOUT_SECONDS", default=3600 * 2)
+
+
+# ReCaptcha
+
+RECAPTCHA_PUBLIC_KEY = env.str(
+    "RECAPTCHA_PUBLIC_KEY", default=recaptcha_constants.TEST_PUBLIC_KEY
+)
+RECAPTCHA_PRIVATE_KEY = env.str(
+    "RECAPTCHA_PRIVATE_KEY", default=recaptcha_constants.TEST_PRIVATE_KEY
+)
+if DEBUG:
+    SILENCED_SYSTEM_CHECKS = ["django_recaptcha.recaptcha_test_key_error"]
 
 
 # Sentry error reporting
