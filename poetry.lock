@@ -575,20 +575,24 @@ bcrypt = ["bcrypt"]
 
 [[package]]
 name = "django-allauth"
-version = "0.50.0"
+version = "0.61.1"
 description = "Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication."
 optional = false
-python-versions = "*"
+python-versions = ">=3.7"
 files = [
-    {file = "django-allauth-0.50.0.tar.gz", hash = "sha256:ee3a174e249771caeb1d037e64b2704dd3c56cfec44f2058fae2214b224d35e8"},
+    {file = "django-allauth-0.61.1.tar.gz", hash = "sha256:5b4ae515ea74f54f0041210692eee10c309ad15ddbbd03d3620693c75e3f7945"},
 ]
 
 [package.dependencies]
-Django = ">=2.0"
+Django = ">=3.2"
 pyjwt = {version = ">=1.7", extras = ["crypto"]}
 python3-openid = ">=3.0.8"
-requests = "*"
+requests = ">=2.0.0"
 requests-oauthlib = ">=0.3.0"
+
+[package.extras]
+mfa = ["qrcode (>=7.0.0)"]
+saml = ["python3-saml (>=1.15.0,<2.0.0)"]
 
 [[package]]
 name = "django-cache-url"
@@ -1976,4 +1980,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12.0"
-content-hash = "1af068ebab83deef76c7ad69fb6a2613c3d26615236f2c5a95697c5a560c8c7c"
+content-hash = "029d6d6de4285b1262724f425b76a31957ba25f9943d233df0add31dd2d79d19"
