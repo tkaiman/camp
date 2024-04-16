@@ -16,10 +16,10 @@ force_single_line = true
 
 [tool.poetry.dependencies]
 python = "^3.12.0"
-crispy-bootstrap5 = "==0.6"
+crispy-bootstrap5 = "^2024.2"
 django = "4.2.11"
 django-allauth = "^0.61.1"
-django-crispy-forms = "==1.14.0"
+django-crispy-forms = "^2.1"
 django-debug-toolbar = "^4.3.0"
 whitenoise = "==6.0.0"
 environs = { extras = ["django"], version = "==9.5.0" }
