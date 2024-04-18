@@ -164,9 +164,15 @@ class Sheet(RulesModel):
     def controller(self) -> camp.engine.rules.base_engine.CharacterController:
         if self._controller is None:
             metadata = None
+            flags = {}
             if self.character.campaign is not None:
                 metadata = self.character.metadata
-            self._controller = self.ruleset.engine.load_character(self.data, metadata)
+                flags = {"freeplay": False}
+            else:  # This is a freeplay character
+                flags["freeplay"] = True
+            self._controller = self.ruleset.engine.load_character(
+                self.data, metadata, flags
+            )
         return self._controller
 
     @controller.setter
