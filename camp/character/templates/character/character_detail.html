@@ -21,6 +21,13 @@
                     Delete Character
                     {% endif %}
                 </a></li>
+                {% if controller.can_respend %}
+                <li><a class="dropdown-item btn-secondary-outline" role="button"
+                        hx-post="{% url 'character-apply' character.pk %}"
+                        hx-confirm="This will remove ALL choices you have made on this character."
+                        hx-vals='{"mutation": {"type": "respend"}}'
+                    >Apply Full Character Respend</a></li>
+                {% endif %}
                 {% if undo %}
                 <li><a class="dropdown-item btn-secondary-outline" role="button" data-bs-toggle="modal" data-bs-target="#undoModal">{{undo}}</a></li>
                 {% else %}

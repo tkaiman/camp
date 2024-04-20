@@ -24,6 +24,7 @@ from django.views.decorators.http import require_POST
 from django.views.generic import CreateView
 from django.views.generic import DetailView
 from django.views.generic import ListView
+from django_htmx.http import HttpResponseClientRefresh
 from rules.contrib.views import AutoPermissionRequiredMixin
 from rules.contrib.views import objectgetter
 from rules.contrib.views import permission_required
@@ -35,6 +36,7 @@ from camp.engine.rules.base_engine import BaseFeatureController
 from camp.engine.rules.base_engine import CharacterController
 from camp.engine.rules.base_models import ChoiceMutation
 from camp.engine.rules.base_models import Mutation
+from camp.engine.rules.base_models import MutationAdapter
 from camp.engine.rules.base_models import PropExpression
 from camp.engine.rules.base_models import RankMutation
 from camp.engine.rules.base_models import dump_mutation
@@ -171,6 +173,28 @@ def set_attr(request, pk):
     else:
         messages.error(request, "Error validating character: %s" % d.reason)
     return redirect("character-detail", pk=pk)
+
+
+@permission_required(
+    "character.change_character", fn=objectgetter(Character), raise_exception=True
+)
+@require_POST
+def apply_view(request, pk):
+    character: Character = get_object_or_404(Character, pk=pk)
+    if character.is_discarded:
+        messages.warning(request, "Can't update discarded character.")
+        return redirect(character)
+    sheet = character.primary_sheet
+    controller = cast(TempestCharacter, sheet.controller)
+    mutation = MutationAdapter.validate_json(request.POST.get("mutation", "{}"))
+
+    # TODO: Certain mutations may need additional privileges.
+
+    if result := _apply_mutation(mutation, sheet, controller):
+        messages.success(request, result.reason or "Change applied.")
+    else:
+        messages.error(request, result.reason or "Could not apply change.")
+    return HttpResponseClientRefresh()
 
 
 @permission_required(

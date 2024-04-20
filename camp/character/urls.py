@@ -32,4 +32,5 @@ urlpatterns = [
         views.feature_view,
         name="character-feature-view",
     ),
+    path("<int:pk>/apply/", views.apply_view, name="character-apply"),
 ]

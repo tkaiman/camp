@@ -105,7 +105,7 @@ pyyaml = "^6.0"
 type = "git"
 url = "https://github.com/kw/camp-engine.git"
 reference = "HEAD"
-resolved_reference = "6c4470b4036196d78b6289f191354031657d7ff7"
+resolved_reference = "81fd947d9df756f95b47d5103442d7c9df99084a"
 
 [[package]]
 name = "celery"
