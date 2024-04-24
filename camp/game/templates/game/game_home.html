@@ -17,7 +17,6 @@
     {% regroup claimable_awards by campaign as campaign_list %}
     <ul>
     {% for campaign, awards in campaign_list %}
-        {# TODO: Make the claims page and link it from here. #}
         <li>{{ campaign }} Awards: <a class="link-body-emphasis"
             href="{% url 'myawards' campaign.slug %}">
             <b>{{claimable_awards|length}}</b> unclaimed.</a></li>
@@ -32,7 +31,10 @@
 
 {% regroup character_list by campaign as campaign_list %}
 {% for campaign, characters in campaign_list %}
-<h2 class="my-2">{{campaign|default:"Freeplay"}} Characters</h2>
+<h2 class="my-2">
+    {% if campaign %}
+        <a class="link-body-emphasis" href="{% url 'campaign-detail' campaign.slug %}">{{campaign}}</a> Characters
+    {% else %}Freeplay Characters{% endif %}</h2>
     {% for character in characters %}
     <li><a href="{% url 'character-detail' character.id %}" hx-boost="false">
         {{ character }}

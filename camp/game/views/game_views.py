@@ -1,3 +1,6 @@
+import logging
+from typing import Any
+
 from allauth.account.models import EmailAddress
 from django import http
 from django.contrib import messages
@@ -20,10 +23,13 @@ from django.views.generic import UpdateView
 from rules.contrib.views import AutoPermissionRequiredMixin
 from rules.contrib.views import objectgetter
 from rules.contrib.views import permission_required
+from sentry_sdk import capture_exception
 
 from camp.accounts.models import Membership
 from camp.character.models import Character
 from camp.engine.rules.base_engine import Engine
+from camp.engine.rules.tempest import Ruleset as TempestRuleset
+from camp.engine.rules.tempest.campaign import CampaignRecord
 from camp.engine.rules.tempest.records import AwardCategory
 
 from .. import forms
@@ -298,6 +304,41 @@ class DeleteGameRoleView(AutoPermissionRequiredMixin, DeleteView):
 
 class CampaignView(AutoPermissionRequiredMixin, DetailView):
     model = Campaign
+
+    def get_context_data(self, **kwargs) -> dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        if self.request.user.is_authenticated:
+            try:
+                campaign: Campaign = context["campaign"]
+                ruleset: TempestRuleset = campaign.ruleset.ruleset
+
+                crecord: CampaignRecord = campaign.record
+                context["max_level"] = max_level = ruleset.xp_table.evaluate(
+                    crecord.max_xp
+                )
+                context["floor_level"] = floor_level = ruleset.xp_table.evaluate(
+                    crecord.floor_xp
+                )
+                context["max_next_xp"] = (
+                    ruleset.xp_table.reverse_lookup(max_level + 1) - crecord.max_xp
+                )
+                context["floor_next_xp"] = (
+                    ruleset.xp_table.reverse_lookup(floor_level + 1) - crecord.floor_xp
+                )
+
+                pcd = PlayerCampaignData.retrieve_model(self.request.user, campaign)
+                context["precord"] = precord = pcd.record
+                context["player_level"] = plevel = ruleset.xp_table.evaluate(precord.xp)
+                context["player_next_xp"] = (
+                    ruleset.xp_table.reverse_lookup(plevel + 1) - precord.xp
+                )
+
+            except Exception as exc:
+                capture_exception(exc)
+                logging.exception(
+                    "Failed to load campaign player data for %s", self.user
+                )
+        return context
 
 
 class CreateCampaignView(AutoPermissionRequiredMixin, CreateView):

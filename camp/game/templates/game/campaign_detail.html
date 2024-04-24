@@ -17,15 +17,25 @@
 
 {% with record=campaign.record %}
 
+<h1>Campaign Data</h1>
 <ul>
   <li>Season: {{record.season}}</li>
-  <li>Campaign Max XP: {{record.max_xp}}</li>
+  <li>Campaign Max XP: {{record.max_xp}} (level {{max_level}}, next in {{max_next_xp}} XP)</li>
   <li>Campaign Max Event CP: {{record.max_cp}}</li>
   <li>Campaign Max Bonus CP: {{record.max_bonus_cp}}</li>
-  <li>Campaign Floor XP: {{record.floor_xp}}</li>
+  <li>Campaign Floor XP: {{record.floor_xp}} (level {{floor_level}} next in {{floor_next_xp}} XP)</li>
   <li>Campaign Floor Event CP: {{record.floor_cp}}</li>
-  <li>Last Event Completed: {{record.last_event_date}}</li>
+  <li>Last Event: {{record.last_event_date}}</li>
+  {% if user.is_authenticated %}
+  <li>Your XP: {{precord.xp}} (level {{player_level}}, next in {{player_next_xp}} XP)</li>
+  {% endif %}
 </ul>
+
 {% endwith %}
+
+{% if user.is_authenticated %}
+<a class="btn btn-primary" role="button" href="{% url 'myawards' campaign.slug %}">View My Awards</a>
+{% endif %}
+
 
 {% endblock content %}

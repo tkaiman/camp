@@ -671,11 +671,12 @@ class Campaign(RulesModel):
             return self.name
         return "Untitled Campaign"
 
-    rules_permissions = {
-        "add": can_manage_game,
-        "change": can_manage_game,
-        "view": can_manage_game,
-    }
+    class Meta:
+        rules_permissions = {
+            "add": can_manage_game,
+            "change": can_manage_game,
+            "view": always_allow,
+        }
 
 
 class GameRole(RulesModel):
