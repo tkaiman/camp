@@ -6,7 +6,13 @@
     <div class="card-body">
         {% if card.name %}
         <h3 class="card-title">{{card.name | markdown}}</h3>
+        {% endif %}
 
+        {% if card.requires_description %}
+        <details open class="d-print-none">
+            <summary><strong>Prerequisites</strong></summary>
+            {{ card.requires_description | markdown }}
+        </details>
         {% endif %}
 
         {% if card.should_format_as_card %}
