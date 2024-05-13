@@ -34,6 +34,7 @@ EVENT_XP = "Event XP"
 EVENT_CP = "Event CP"
 BONUS_CP = "Bonus CP"
 DESCR = "Description"
+SP = "SP"
 
 
 _DATE_FORMATS = [
@@ -122,6 +123,11 @@ class Command(BaseCommand):
                     else:
                         cflags = None
 
+                    if sp_str := entry.get(SP):
+                        sp = int(sp_str) if sp_str else None
+                    else:
+                        sp = None
+
                     if not (email or username):
                         continue
 
@@ -155,6 +161,7 @@ class Command(BaseCommand):
                         event_xp=event_xp,
                         event_cp=event_cp,
                         bonus_cp=bonus_cp,
+                        sp=sp,
                     )
 
                     record_data = award.model_dump(mode="json", exclude_defaults=True)

@@ -1,4 +1,5 @@
 import re
+from typing import Any
 
 from django import forms
 from django.db import transaction
@@ -232,6 +233,10 @@ class _AwardStepTwo(AwardPlayerStep):
     description = forms.CharField(
         required=False, help_text="(Optional) Enter a description for this award"
     )
+    service_points = forms.IntegerField(
+        required=False,
+        help_text="Change in service points (positive to add, negative to spend)",
+    )
     step = forms.IntegerField(initial=2, widget=forms.HiddenInput())
 
     def __init__(self, *args, character_query: QuerySet[Character] | None, **kwargs):
@@ -240,6 +245,14 @@ class _AwardStepTwo(AwardPlayerStep):
             del self.fields["character"]
         else:
             self.fields["character"].queryset = character_query
+
+    def _record_fields(self) -> dict[str, Any]:
+        character = self.cleaned_data.get("character")
+        return {
+            "description": self.cleaned_data.get("description"),
+            "sp": self.cleaned_data.get("service_points") or None,
+            "character": character.id if character else None,
+        }
 
     def create_award(self, request) -> models.Award:
         raise NotImplementedError
@@ -278,7 +291,6 @@ class AwardEventStep(_AwardStepTwo):
         player = self.cleaned_data.get("player")
         email = self.cleaned_data.get("email")
         character = self.cleaned_data.get("character")
-        description = self.cleaned_data.get("description")
         event: models.Event = self.cleaned_data["event"]
         event_xp: int = self.cleaned_data["event_xp"]
         event_cp: int = 1 if self.cleaned_data["event_cp"] else 0
@@ -290,16 +302,16 @@ class AwardEventStep(_AwardStepTwo):
         event_max_xp = int(event.logistics_periods * _XP_PER_HALFDAY)
         event_xp = max(min(event_max_xp, event_xp), 0)
 
+        record_fields = self._record_fields()
         record = AwardRecord(
             date=event.event_end_date.date(),
             source_id=event.id,
             category=AwardCategory.EVENT,
-            description=description,
-            character=character.id if character else None,
             event_xp=event_xp,
             event_cp=event_cp,
             event_played=(attendance == "pc"),
             event_staffed=(attendance == "npc"),
+            **record_fields,
         )
 
         with transaction.atomic():
@@ -378,7 +390,6 @@ class AwardPlotStep(_AwardStepTwo):
         player = self.cleaned_data.get("player")
         email = self.cleaned_data.get("email")
         character = self.cleaned_data.get("character")
-        description = self.cleaned_data.get("description")
         grant_backstory = self.cleaned_data["backstory"]
         bonus_cp = self.cleaned_data["bonus_cp"]
         raw_player_flag = self.cleaned_data.get("player_flags")
@@ -405,11 +416,10 @@ class AwardPlotStep(_AwardStepTwo):
         if raw_grants:
             grants = FLAG_SEP.split(raw_grants)
 
+        record_fields = self._record_fields()
         record = AwardRecord(
             date=backdate,
             category=AwardCategory.PLOT,
-            description=description,
-            character=character.id if character else None,
             bonus_cp=bonus_cp,
             # False means "revoke backstory approval", which we
             # won't use here at present (prefer to delete the award)
@@ -417,6 +427,7 @@ class AwardPlotStep(_AwardStepTwo):
             player_flags=player_flags,
             character_flags=character_flags,
             character_grants=grants,
+            **record_fields,
         )
 
         with transaction.atomic():
@@ -429,8 +440,9 @@ class AwardPlotStep(_AwardStepTwo):
                 award_data=record.model_dump(mode="json"),
             )
 
-            if player and character:
-                award.apply()
+            if player:
+                if (record.needs_character and character) or not record.needs_character:
+                    award.apply()
         return award
 
 

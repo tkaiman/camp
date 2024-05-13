@@ -59,6 +59,7 @@ def home_view(request):
             owner=request.user,
             discarded_date=None,
         ).order_by("-campaign", "name")
+        Award.autoclaim(request.user)
         claimable, unclaimable = Award.unclaimed_for(request.user)
         context["claimable_awards"] = claimable.all()
         context["unclaimable_award_count"] = unclaimable.count()
@@ -391,6 +392,7 @@ def myawards_view(request, slug):
     context["campaign"] = campaign = get_object_or_404(Campaign, slug=slug)
 
     with transaction.atomic():
+        Award.autoclaim(request.user, campaign)
         claimable, unclaimable = Award.unclaimed_for(request.user, campaign)
         characters = request.user.characters.filter(campaign=campaign)
 
@@ -524,6 +526,20 @@ def grant_award(request, slug):
             events = Event.objects.filter(campaign=campaign, completed=True).order_by(
                 "-event_end_date"
             )
+            if player:
+                player_data = PlayerCampaignData.retrieve_model(
+                    player,
+                    campaign,
+                    update=False,
+                )
+                record = player_data.record
+                credited_events = {
+                    int(a.source_id)
+                    for a in record.awards
+                    if (a.category == AwardCategory.EVENT and a.source_id is not None)
+                }
+                events = events.exclude(id__in=credited_events)
+
             form = forms.AwardEventStep(
                 data=data,
                 initial=initial,

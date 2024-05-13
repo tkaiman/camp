@@ -84,6 +84,8 @@
       <a class="link-success" href="{% url 'account_email' %}">Verify</a> to claim these awards.</p>
 {% endif %}
 
+<h2>Service Points: {{player.sp}}</h2>
+
 <h2>Award History</h2>
 <table class="table table-striped">
   <thead>
@@ -98,10 +100,16 @@
     {% for a, char in award_history %}
     <tr>
       <td>{{a.date}}</td>
-      <td><a href="{% url 'character-detail' char.id %}"
-        hx-boost="false" class="link-body-emphasis">
-        {{char.name}}
-      </a></td>
+      <td>
+        {% if char %}
+          <a href="{% url 'character-detail' char.id %}"
+          hx-boost="false" class="link-body-emphasis">
+          {{char.name}}
+        </a>
+        {% else %}
+        &mdash;
+        {% endif %}
+      </td>
       <td>{{a.category.name.title}}</td>
       <td>{{a.describe}}</td>
     </tr>

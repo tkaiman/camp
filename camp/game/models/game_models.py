@@ -1029,6 +1029,16 @@ class Award(RulesModel):
         self.save()
         self.apply()
 
+    @classmethod
+    @transaction.atomic
+    def autoclaim(cls, player: User, campaign: Campaign | None = None):
+        claimable, _ = cls.unclaimed_for(player, campaign)
+        for award in claimable:
+            record = award.record
+            if record.needs_character:
+                continue
+            award.claim(player)
+
     def apply(self):
         if self.applied_date:
             raise ValueError("Already applied")
