@@ -250,7 +250,7 @@ class _AwardStepTwo(AwardPlayerStep):
         character = self.cleaned_data.get("character")
         return {
             "description": self.cleaned_data.get("description"),
-            "sp": self.cleaned_data.get("service_points") or None,
+            "sp": self.cleaned_data.get("service_points") or 0,
             "character": character.id if character else None,
         }
 
