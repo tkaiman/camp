@@ -124,9 +124,9 @@ class Command(BaseCommand):
                         cflags = None
 
                     if sp_str := entry.get(SP):
-                        sp = int(sp_str) if sp_str else None
+                        sp = int(sp_str) if sp_str else 0
                     else:
-                        sp = None
+                        sp = 0
 
                     if not (email or username):
                         continue
