@@ -52,8 +52,8 @@ class SignupForm(allauth_forms.SignupForm):
 
 
 class ResetPasswordForm(allauth_forms.ResetPasswordForm):
-    captcha = _recaptcha_field(action="reset-password")
+    captcha = _recaptcha_field(action="reset_password")
 
 
 class AddEmailForm(allauth_forms.AddEmailForm):
-    captcha = _recaptcha_field(action="add-email")
+    captcha = _recaptcha_field(action="add_email")
