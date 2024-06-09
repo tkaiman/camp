@@ -242,7 +242,9 @@ CELERY_TASK_TIME_LIMIT = env.int("TASK_HARD_TIMEOUT_SECONDS", default=3600 * 2)
 
 
 # ReCaptcha
-
+# Version strings: v2i, v2c, v3
+RECAPTCHA_VERSION = env.str("RECAPTCHA_VERSION", default="v2c")
+RECAPTCHA_REQUIRED_SCORE = env.float("RECAPTCHA_REQUIRED_SCORE", default=0.85)
 RECAPTCHA_PUBLIC_KEY = env.str(
     "RECAPTCHA_PUBLIC_KEY", default=recaptcha_constants.TEST_PUBLIC_KEY
 )
