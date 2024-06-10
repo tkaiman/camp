@@ -45,10 +45,12 @@ def _recaptcha_field(action=None) -> ReCaptchaField:
     )
 
 
+class LoginForm(allauth_forms.LoginForm):
+    captcha = _recaptcha_field(action="login")
+
+
 class SignupForm(allauth_forms.SignupForm):
     captcha = _recaptcha_field(action="signup")
-
-    field_order = ["username", "email", "password1", "captcha"]
 
 
 class ResetPasswordForm(allauth_forms.ResetPasswordForm):

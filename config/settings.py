@@ -206,6 +206,7 @@ ACCOUNT_RATE_LIMITS = {
 }
 ACCOUNT_SIGNUP_ENABLED = env.bool("SIGNUP_ENABLED", default=True)
 ACCOUNT_FORMS = {
+    "login": "camp.accounts.forms.LoginForm",
     "signup": "camp.accounts.forms.SignupForm",
     "reset_password": "camp.accounts.forms.ResetPasswordForm",
     "add_email": "camp.accounts.forms.AddEmailForm",
