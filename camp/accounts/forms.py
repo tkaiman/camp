@@ -34,7 +34,10 @@ def _recaptcha_field(action=None) -> ReCaptchaField:
         case "v2c":
             widget = rcwidgets.ReCaptchaV2Checkbox(attrs=RECAPTCHA_ATTRS)
         case "v3":
-            widget = rcwidgets.ReCaptchaV3(attrs=RECAPTCHA_ATTRS, action=action)
+            attrs = RECAPTCHA_ATTRS.copy()
+            if score := settings.RECAPTCHA_SCORES.get(action):
+                attrs["required_score"] = score
+            widget = rcwidgets.ReCaptchaV3(attrs=attrs, action=action)
         case _:
             raise ValueError(
                 f"Invalid recaptcha version setting {settings.RECAPTCHA_VERSION}"
