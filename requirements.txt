@@ -3,7 +3,7 @@ annotated-types==0.6.0 ; python_full_version >= "3.12.0" and python_full_version
 anyio==4.3.0 ; python_full_version >= "3.12.0" and python_full_version < "4.0.0"
 asgiref==3.8.1 ; python_full_version >= "3.12.0" and python_full_version < "4.0.0"
 billiard==4.2.0 ; python_full_version >= "3.12.0" and python_full_version < "4.0.0"
-camp-engine @ git+https://github.com/kw/camp-engine.git@f46f0d3422d5f4cd72c28c3f814c7c4968418e13 ; python_full_version >= "3.12.0" and python_full_version < "4.0.0"
+camp-engine @ git+https://github.com/kw/camp-engine.git@b7d936293df7c1f410b0d16a1425617e6b88677c ; python_full_version >= "3.12.0" and python_full_version < "4.0.0"
 celery==5.3.6 ; python_full_version >= "3.12.0" and python_full_version < "4.0.0"
 celery[redis]==5.3.6 ; python_full_version >= "3.12.0" and python_full_version < "4.0.0"
 certifi==2024.2.2 ; python_full_version >= "3.12.0" and python_full_version < "4.0.0"
