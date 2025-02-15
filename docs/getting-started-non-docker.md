@@ -12,12 +12,12 @@ work to try out the Docker instructions.
 
 ### Requirements
 
-* Python 3.12
-* [Poetry](https://python-poetry.org/docs/#installation) package manager
-* **Mac**
-  * X Code, possibly Homebrew
-* **Windows**
-  * [Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+- Python 3.12
+- [Poetry](https://python-poetry.org/docs/#installation) package manager
+- **Mac**
+  - X Code, possibly Homebrew
+- **Windows**
+  - [Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 
 ### Setup
 
@@ -37,7 +37,7 @@ python3 -m poetry install
 Once your poetry environment is installed, use:
 
 ```sh
-poetry shell
+eval $(poetry env activate)
 ```
 
 To work inside the virtual environment. For more information on what this means,
