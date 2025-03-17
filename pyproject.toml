@@ -38,6 +38,7 @@ time-machine = "^2.13.0"
 httpx = { extras = ["http2"], version = "^0.27.0" }
 puremagic = "^1.21"
 camp-engine = { git = "https://github.com/kw/camp-engine.git" }
+# camp-engine = { path = "../camp-engine", develop = true }
 django-recaptcha = "^4.0.0"
 
 [tool.poetry.group.dev.dependencies]
