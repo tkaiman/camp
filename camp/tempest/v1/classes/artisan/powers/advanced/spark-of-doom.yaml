@@ -1,0 +1,12 @@
+name: Spark of Doom
+tags: [artificer]
+incant: Focus Quick 100
+call: Wounding 2 by Lightning
+target: Individual
+delivery: Spell-Ball
+accent: Lightning
+duration: Short Rest
+refresh: Long Rest
+effect: Wounding
+description: |
+  Carefully, the Artisan breaks down a Forgesource, altering it to expend its charges directly into Materia. The Artisan must work on the Forgesource for a Focus Quick 100 to complete the alterations. Until the Artisan completes a Short Rest, they can touch a Spell-Ball to the Forgesource to charge it with Lightning Power. Charging takes a Focus Quick Count of 30, and each Spell-Ball does "Wounding 2 by Lightning". The same Forgesource may charge multiple Spell-Balls in this way, but after the power expires the Artisan should deposit the Forgesource in the Ashbin when possible.

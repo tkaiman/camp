@@ -1,10 +1,18 @@
 name: Rekindle
-incant: '"... to rekindle the precious flame of life.”'
-call: '“Grant Life to Corpse 5th level or Lower by Radiance”'
-target: Corpse
+incant: Standard
+call: '“Grant Life to 5th level or Lower by Radiance” or "Grant Life to [Devotion] by Radiance"'
+target: Individual (Dead)
 delivery: Touch
 accent: Radiance
 duration: Instantaneous
+refresh: Spell
 effect: Grant Life, Refresh
 description: |
-  This spell will return the target to life if they are 5th level or lower. If the spell is successful, the Cleric can add five points into their Healing Touch pool if they have one. Characters returned to life in this way will have 1 Life Point.
+  This spell will return the target to life with 1 Life Point if they are 5th level or lower. If the spell
+  fails because the target is not fifth level or lower, the spell immediately Refreshes.
+
+  Alternatively, the Spell can be used to bring a character back to life, with 1 Life Point, as long as they
+  share the same Devotion as the Cleric.
+
+  Note: The Cleric can only cast the version of this spell that returns an individual that shares their
+  Devotion once per Long Rest.

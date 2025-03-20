@@ -1,12 +1,12 @@
 name: Sources
 incant: None
 call: None
-target: Resources
+target: None
 delivery: None
 accent: None
-duration: Instantaneous
+duration: Special
 refresh: Event
-effect: Special
+effect: None
 description: |
   The Socialite has access to closed markets before gatherings via business partners and associates.
 

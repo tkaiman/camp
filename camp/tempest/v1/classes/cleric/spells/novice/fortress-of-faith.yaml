@@ -1,10 +1,14 @@
 name: Fortress of Faith
-incant: '"... to save myself in times of need.”'
-call: '“Imprison to Self by Force”, “Dispel Imprisoned”'
+incant: Standard
+call: '“Imprison to Self by Force”, “Cure Imprisoned”'
 target: Self
 delivery: None
 accent: Force
 duration: Long Rest
-effect: Imprison, Dispel Imprisoned
+effect: Imprison, Cure
 description: |
-  After the incantation is successfully completed, the caster gains the power to cross their hands in front of their chest and call “Imprison Self by Force.” to lock themself into a prison of power, ideally protecting themselves from harm. At any time after imprisoning themself, the Cleric can call “Dispel Imprisoned” to drop the Fortress. The ability to put up the Fortress will only last until the completion of the next Long Rest once the spell is cast.
+  After the incantation is successfully completed, the caster gains the power to cross their hands
+  in front of their chest once and call “Long Imprison to Self by Force.” to lock themself into a
+  prison of power, ideally protecting themselves from harm. At any time after imprisoning themself,
+  the Cleric can call “Cure Imprisoned” to drop the Fortress. The ability to put up the Fortress will
+  only last until the completion of the next Long Rest once the spell is cast.

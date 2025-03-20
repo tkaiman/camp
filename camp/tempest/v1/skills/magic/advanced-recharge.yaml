@@ -1,0 +1,9 @@
+name: Advanced Recharge
+cost: 2
+ranks: 4
+requires:
+  any:
+    - basic-faith
+    - basic-arcane
+description: |
+  The character is adept at tapping into their power source. Once per Event, when the character Refreshes Spell-Slots at a special location (Arcane Locus for Mage etc.) rather than add three temporary Novice Spell-Slots, the character can add one temporary Spell-Slot from their highest Tier.

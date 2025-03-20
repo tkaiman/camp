@@ -1,0 +1,22 @@
+name: Arcane Barrage
+incant: Standard
+call: '"Wounding 1 by Force"'
+target: Self
+delivery: Spell-Ball
+accent: Force
+duration: Short Rest or Until Expended
+refresh: Spell
+effect: Wounding
+description: |
+  After this spell is cast, the caster gains the ability to charge a Spell-Ball
+  with power by simply holding it and calling "Spell-Ball Charged!" Each Spell-Ball
+  charged in this way will do Wounding 1 when it strikes. Only one Spell-Ball can
+  be charged at a time, and Arcane Barrage goes down if the caster completes a
+  Short Rest, casts another Spell, or charges a fifth Spell-Ball using Arcane
+  Barrage. Unlike most spells that charge multiple Spell-Balls, Warcaster applies
+  to all balls of this spell.
+
+  Enhancement: Adept Slot: The caster can charge 10 Spell-Balls with Wounding 2.
+  Enhancement: Greater Slot: The caster can charge 15 Spell-Balls with Wounding 3
+  and the caster may replace the Accent with the Arcane, Mind, or Will Accent,
+  changing the accent on each attack.

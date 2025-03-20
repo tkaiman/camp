@@ -1,7 +1,7 @@
 name: Aegis of the Veil / Sundering of the Veil
 tags: [mystic]
-incant: Draw a unique and complex sigil in sand or dirt, mark the target’s forehand with the same sigil.
-call: '“Short Grant Minus One Dark Territory” or “Short Grant Plus One Dark Territory”'
+incant: None
+call: "“Short Grant Minus One Dark Territory” or “Short Grant Plus One Dark Territory”"
 target: Individual
 duration: Short Rest
 delivery: Touch
@@ -9,8 +9,7 @@ refresh: Long Rest
 accent: None
 effect: Grant Dark Territory
 description: |
-  While drawing on the veil between worlds, the Artisan may choose to imbue some of this energy into a sigil. While doing this, the Artisan focuses their intent to either draw the veil tighter closed. Cloaked in shadow, the Mystic attempts to draw away the gaze of those who would do harm. The Artisan calls upon the deep magics of the realms to draw closed the veil dividing this world and the outer Void. This protection extends only to a single individual, but it is enough to divert the attention of dark forces away from the target while they engage in Enchanting and Ritual Magic. Alternatively, even a mere candle can be viewed at a great distance in the dead of the night. The Artisan calls upon the deep magics of the realms to throw wide the veil dividing this world and the outer Void. This beacon extends only to a single individual, but it is enough to attract the attention of dark forces to the target while they engage in Enchanting and Ritual Magic.
-
-  Once the target is appropriately marked, the target’s Dark Territory modifier is modified as per the Artisan’s choice by one until their next Short Rest. This may reduce their modifier below zero. The target may only be the recipient of this boon once per Event from any source.
-
-  If the Mystic weaves a vial of Rare Minerals into the sigil, sacrificing it in the process, the change in Dark Territory will be 2.
+  While drawing on the veil between worlds, the Artisan may choose to imbue some of this energy into a sigil. While doing this, the Artisan focuses their intent to draw the veil tighter closed. Cloaked in shadow, the Artisan attempts to draw away the gaze of those who would do harm. The Artisan calls upon the deep magics of the realms to draw closed the veil dividing this world and the outer Void. This protection extends only to a single individual, but it is enough to divert the attention of dark forces away from the target while they engage in Enchanting and Ritual Magic.
+  Alternatively, even a mere candle can be viewed at a great distance in the dead of the night. The Artisan calls upon the deep magics of the realms to throw wide the veil dividing this world and the outer Void. This beacon extends only to a single individual, but it is enough to attract the attention of dark forces to the target while they engage in Enchanting and Ritual Magic.
+  Once the target is appropriately marked, the target’s Dark Territory modifier is modified as per the Artisan’s choice by one until their next Short Rest. The target may only be the recipient of this boon once per Event from any source.
+  **Enhancement**: Sacrifice 3 Rare Minerals: The change in Dark Territory will be 2.

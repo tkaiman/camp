@@ -1,11 +1,13 @@
 name: Peacebind
 incant: "“Let your weapons be bound”"
-call: "“Long Obey: Use no weapons nor offensive spells in this building until physically or magically attacked.”"
+call: "“Long Obey by Will: Use no weapons nor offensive spells in this building until attacked.”"
 target: Individual
 delivery: Touch
-accent: None
+accent: Will
 duration: Long Rest
 refresh: Immediate
 effect: Obey
 description: |
-  Peacebind is used to attempt to make a location safe. It cannot shut down all attacks, but it does give some measure of security. As a Touch-range Power, it can only be used on the helpless or willing, and often Ambassadors will make it clear that in order to enter a specific meeting or area, a Peacebinding is a requirement. The wording of the Call can be adjusted from “building” to anything like “tent”, “structure”, or “corral” for clarity: basically anything with obvious and exactly marked physical borders that is of a contained size.
+  Peacebind encourages a safe location. It cannot shut down all attacks, but it does give some measure of security.
+
+  Peacebind can only be used on a Helpless or Willing target because it is a Touch Power, and occasionally situations will make it clear Peacebinding is a requirement to enter a specific meeting or area. The wording of the Call can be adjusted from “building” to “tent”, “structure”, “corral”, etc. for clarity, so long as it is a contained area with obviously marked physical borders.

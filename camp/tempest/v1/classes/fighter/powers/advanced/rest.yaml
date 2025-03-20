@@ -6,6 +6,10 @@ delivery: None
 accent: Will
 duration: Special
 refresh: Long Rest
-effect: Grant, Heal
+effect: Grant Resistance, Heal
 description: |
-  Once per Long Rest, the character may choose to activate this power while Dying. When activated, the character, while dying, gains _resistance_ to Death Blows and Death Effects. In addition, after the character has been _dying_ for a Slow Count of 120, she may heal herself for 1 Life Point. The character need not be conscious to use this Power.
+  Once per Long Rest, the character may choose to activate this power while Dying.
+  When activated, the character, while dying, gains _resistance_ to Death Blows and
+  Death Effects. In addition, after the character has been _dying_ for a Slow Count
+  of 120, they may heal themselves for 1 Life Point. The character need not be
+  conscious to use this Power.

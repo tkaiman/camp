@@ -4,7 +4,7 @@ description: |
   Gheist, cursed spirits and broken flesh, are commonly known as “eaters of the dead”, devouring whole individuals in a single sitting. The gheist gains the Consume power below:
 subcard:
   name: Consume [Breed]
-  incant: Mimicking eating the a dead body for a Focus Quick 100
+  incant: Mimicking eating the a dead body for a Focus Slow 30
   call: “Shatter Corpse to Living, Heal Three to Self by Hunger”
   target: Individual
   delivery: RP

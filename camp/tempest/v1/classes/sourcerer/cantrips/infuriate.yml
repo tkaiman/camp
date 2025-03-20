@@ -1,11 +1,11 @@
 name: Infuriate
-incant: '"...to enrage my foes."'
+incant: Standard
 call: Taunt 1 by [Eldritch Accent]
-target: Indiviudal
-delivery: Packet (Spell-Packet)
-accent: '[Eldritch Accent]'
+target: Individual
+delivery: Spell-Packet
+accent: Eldritch Accent
 duration: Short Rest
 refresh: Focus Quick 100
-effect: Taunt
-description: |
-  A creature struck by this packet suddenly sees the caster as an arch-enemy and hated nemesis
+effect: Grant Protect
+description:
+  A creature struck by this Spell-Packet suddenly sees the caster as an arch-enemy and hated nemesis.

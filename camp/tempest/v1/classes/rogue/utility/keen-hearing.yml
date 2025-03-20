@@ -1,10 +1,10 @@
 name: Keen Hearing
 requires: rogue:6
 incant: Focus Quick 100
-call: '“By My Voice, Expose Living”'
+call: '“By My Voice, Subtle Expose Living”'
 target: Area
 delivery: Voice
-accent: Sound
+accent: None
 duration: Instantaneous
 refresh: Short Rest
 effect: Expose

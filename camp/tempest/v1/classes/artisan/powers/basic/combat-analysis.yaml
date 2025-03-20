@@ -1,14 +1,12 @@
 name: Combat Analysis
 tags: [artificer]
-incant: "Quite Fascinating..."
-call: "Grant Protect vs Weapon by Mind"
+incant: Focus Quick 30
+call: "Counter, Dodge"
 target: Self
-duration: Instantaneous
+duration: Short Rest (or combat ends)
 delivery: None
-accent: Mind
+accent: None
 refresh: Short Rest
-effect: Grant Protect
+effect: Counter
 description: |
-  Once per Short Rest, point at a foe, and call out “Quite fascinating…” and then put
-  a hand to your chin and call out “Grant Protect vs Weapon by Mind” to give yourself
-  a defense against a foe.
+  Once per Short Rest the Artisan must watch an enemy or group of enemies carefully for a Quick Count of 30. Doing so allows the Artisan to Counter one Weapon attack by a member of that group. The Call is “Counter, Dodge”. If the Counter is not used before the Artisan goes out-of-combat or the Artisan completes a Short Rest, it is lost.

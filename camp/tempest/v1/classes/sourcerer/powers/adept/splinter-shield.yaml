@@ -1,11 +1,11 @@
 name: Splinter Shield
-incant: '"... to rend metal and warp wood.”'
-call: '“Shatter Shield by [Eldritch Accent]”, “[Name or Description]: 4 by [Eldritch Accent]”'
+incant: Standard
+call: Shatter Shield by [Eldritch Accent], Grant 5 Barrier to Self
 target: Individual
-delivery: Packet (Spell-Ball), Verbal
-accent: '[Eldritch Accent]'
+delivery: Spell-Ball, Verbal
+accent: Eldritch Accent
 duration: Instantaneous
 refresh: Spell
-effect: Shatter, Damage
+effect: Shield Shatter, Grant Barrier
 description: |
-  When this spell is cast, Splinter Shield charges a spell-ball with “Shatter Shield by [Eldritch Accent]”. As long as the Packet was not Countered (or call of “No Effect”), the Sourcerer may immediately call “[Name or Description] 4 by [Eldritch Accent],” to the Individual struck by this spell.
+  When this spell is cast, Splinter Shield charges a Spell-Ball with “Shatter Shield by [Eldritch Accent]”. As long as the attack hits and was not Prevented, the Sourcerer may immediately grant themself 5 Barrier.

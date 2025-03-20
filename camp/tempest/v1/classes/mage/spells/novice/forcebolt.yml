@@ -1,0 +1,15 @@
+name: Forcebolt
+incant: Standard
+call: "Wounding 4 by Force"
+target: Individual
+delivery: Spell-Ball
+accent: Force
+duration: Instantaneous
+refresh: Spell
+effect: Wounding
+description: |
+  Forcebolt charges a Spell-Ball with a pure magical energy, doing Wounding
+  4 by Force.
+
+  Enhancement: Expend all current points of Summoned Armor during
+  Incantation (minimum 1): An additional two Spell-Balls are charged (Total 3).

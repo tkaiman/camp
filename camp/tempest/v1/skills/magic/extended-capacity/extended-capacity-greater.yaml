@@ -1,5 +1,5 @@
 name: Extended Capacity (Greater)
-cost: 4
+cost: 6
 ranks: 3
 requires:
   any:

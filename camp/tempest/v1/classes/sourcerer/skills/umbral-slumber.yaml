@@ -1,0 +1,12 @@
+name: Umbral Slumber
+cost: 1
+requires: sourcerer:10
+incant: None
+call: Grant Insubstantial, Cure Insubstantial
+target: Self
+delivery: None
+accent: None
+duration: Special
+refresh: Immediate
+effect: Grant Insubstantial, Cure
+description: The Sourcerer may post an information card on their bunk or bed, stating to others that they are insubstantial while in that bed. This Power can only be activated by Focusing while in the bed for a Slow Count of 60. It then lasts until the Sourcerer says “Cure Insubstantial” and takes down the card, or leaves the bed.

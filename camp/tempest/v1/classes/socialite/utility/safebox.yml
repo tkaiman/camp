@@ -6,15 +6,13 @@ delivery: Touch
 accent: None
 duration: Event
 refresh: Long Rest
-effect: Special
+effect: None
 description: |
-  After a few moments of tinkering the Socialite can trigger a container to become a Safebox the next time it is closed. A Safebox’s contents are generally unreachable unless all parties involved in its creation agree that it should be opened. Certain Powers (Dispel Magic, Ritual Disjunction, etc) will get past the safeguards.
+  After a few moments of tinkering the Socialite can trigger a container to become a Safebox the next time it is closed. A Safebox’s contents are generally unreachable unless all parties involved in its creation agree that it should be opened. Certain Powers (Item Disjunction, etc) will get past the safeguards. The Safebox’s maximum dimensions are 2’x2’x3’.
 
-  The Safebox needs to be created at a Tinkering Station with an Item Info Card containing the following:
+  The Safebox needs to be created with an Item Info Card containing the following:
 
-  * Attach the item information card to the Safebox when complete
-  * The Safebox’s maximum dimensions are 2’x2’x3’
-  * The Safebox gains Inherent Shatter immunity
+  * The Safebox becomes a box if Item Disjunction is used on it.
+  * The Safebox gains Inherent Shatter immunity.
   * Two people (one of them may be the Socialite) present during its creation must be listed on the card
-  * “Generic Forged Item” may create ‘keys’ that add additional names to the Information Card
-  * Add a black keyhole Sigil and write “Only opens once all listed parties touch the box and say ‘Open’”
+  * Add a black keyhole Sigil and write “Only opens once all listed parties touch the box at the same time and say ‘Open.’”

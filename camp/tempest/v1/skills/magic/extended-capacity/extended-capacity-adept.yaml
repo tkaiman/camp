@@ -1,6 +1,6 @@
 name: Extended Capacity (Adept)
-cost: 3
-ranks: 3
+cost: 4
+ranks: 4
 requires:
   any:
     - arcane.spell_slots@2

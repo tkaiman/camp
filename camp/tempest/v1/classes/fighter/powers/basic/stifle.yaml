@@ -8,4 +8,6 @@ duration: Short Rest
 refresh: Short Rest
 effect: Silence
 description: |
-  While wielding a projectile weapon, the Fighter may expend a Spike to make a projectile attack and call “Short Silence” against an opponent, as the projectile neatly pierces the opponent’s neck. The strike should not actually target the player’s neck.
+  While wielding a projectile weapon, the Fighter may make a projectile attack
+  and call “Short Silence” against an opponent, as the projectile neatly pierces
+  the opponent’s neck. The strike should not actually target the player’s neck.

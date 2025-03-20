@@ -1,12 +1,12 @@
 name: Warming Elixir / Cooling Draught
 tags: [crafter]
-incant: 'RP: Prepare a drink'
-call: '“Grant Protect vs Ice by Flame” or “Grant Protect vs Flame by Ice”'
+incant: Prepare a drink
+call: "“Grant Protect vs Ice by Flame” or “Grant Protect vs Flame by Ice”"
 target: Individual
 duration: Until Used
 refresh: Short Rest
-accent: Flame or Ice
+accent: Flame, Ice
 delivery: Explanation
 effect: Grant Protect
 description: |
-  The Artisan brews a potion expending 1 Bloom to receive the boon. When brewing, the Artisan chooses the effect and must choose the same effect for all who receive the benefit. The brew is only potent for a short time and must be consumed immediately after the Artisan finishes brewing it. After drinking the brew, up to 4 participants are granted “Grant Protect vs Ice by Flame” or “Grant Protect vs Flame by Ice.”
+  The Artisan brews a potion expending 1 Bloom to receive the boon. When brewing, the Artisan chooses the effect and must choose the same effect for all who receive the benefit. The brew is only potent for a short time and must be consumed immediately after the Artisan finishes brewing it. After drinking the brew, up to 4 participants are granted “Grant Protect vs Ice by Flame” or “Grant Protect vs Flame by Ice.” The Bloom should be deposited in an Ashbin when possible.

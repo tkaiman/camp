@@ -7,4 +7,4 @@ requires:
     - weapon-specialization+Bow
     - weapon-specialization+Crossbow
 description: |
-  Each time the Character strikes a shield with a projectile weapon, the character can expend a Spike to do Shield-Breaking.
+  Each time the Character strikes a shield with a projectile weapon, the character can expend a Spike to call “Shatter” on a shield.

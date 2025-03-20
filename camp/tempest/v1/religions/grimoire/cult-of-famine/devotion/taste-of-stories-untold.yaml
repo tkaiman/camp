@@ -1,0 +1,25 @@
+name: The Taste of Stories Untold
+level: advanced
+cost: 3
+requires:
+  any:
+    - power@2
+    - spell@2
+description: |
+  The Third Circle is a tempting goblet, and often, those pious to the Cult find themselves consuming rampantly, mirroring closely the Ghouls they ardently shepherd against. Those who are able to focus on their temperance and control, can savor each taste of blood, bone and flesh, and extract from that the very essence of a departed individual.
+subcard:
+  name: Taste of Stories Untold [Devotion]
+  incant: None
+  call: "“Subtle Discern to [Corpse / Marshal Spirit] by Mind: [Yes/No question]”"
+  target: One Corpse
+  delivery: Touch
+  accent: Mind
+  duration: Special
+  refresh: Long Rest
+  effect: Discern
+  description: |
+    Immediately after using Devour the Sinful, but before shattering the corpse, the Erasmian can dig through the mind of the Corpse looking for answers that the corpse may have. The Erasmian will be able to ask 3 questions that must be yes/no questions and the call for each question is “Subtle Discern to [Corpse / Marshal Spirit] by Mind: [Yes/No question].”
+
+    Once a corpse has been asked the questions, the gheist cannot use this power on that same corpse again. The power will end immediately if the gheist gets out of touch range of the corpse or speaks for any reason other than to ask more Taste the Mind questions of the corpse.
+
+    Note: Most corpses only last 180 seconds before they dissipate, and this power does not halt that count.

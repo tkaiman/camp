@@ -1,11 +1,17 @@
 name: Bowyer
 incant: Focus Quick 100
-call: '“Rebuild: [Projectile Weapon] by Force”'
+call: '“Rebuild: [Projectile Weapon] by Force”, "Grant +1 Spike Damage"'
 target: Projectile Weapon
-delivery: RP
+delivery: Touch
 accent: Force
 duration: Instantaneous
 refresh: Immediate
-effect: 'Rebuild: [Projectile Weapon]'
+effect: Rebuild, Grant Spike Damage
 description: |
-  The Fighter can spend a Focus Quick 100 Rebuilding a projectile weapon (such as a bow or crossbow) that has been Shattered.
+  The Fighter can spend a Focus Quick 100 Rebuilding a projectile
+  weapon (such as a bow or crossbow) that has been Shattered.
+
+  In addition, out of combat, the Fighter may prepare ahead of time
+  tending to their projectile weapons and ammunition, spending a Focus
+  Quick 100 to give themselves a +1 Bonus Spike Damage on their first
+  spike used with their projectile weapon.

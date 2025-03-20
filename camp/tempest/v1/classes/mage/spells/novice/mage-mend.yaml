@@ -1,10 +1,12 @@
 name: Mage Mend
-incant: "... to make this armor whole again."
-call: "Mend Armor 5 by Force"
+incant: Standard
+call: "Mend 5 by Force"
 target: Individual
-delivery: Packet (Spell-Ball)
+delivery: Spell-Ball or Touch
 accent: Force
 duration: Instantaneous
+refresh: Spell
 effect: Mend
 description: |
-  The target of this spell will mend 5 Armor Points.
+  The target of this spell will Mend 5 Armor Points. If the Mage
+  chooses Touch Delivery it may be enhanced by Replicate Enhancement.

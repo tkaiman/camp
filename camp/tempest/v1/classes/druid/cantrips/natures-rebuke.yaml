@@ -1,0 +1,11 @@
+name: Nature’s Rebuke
+incant: Standard
+call: “1 [Poison or Disease]”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Packet
+refresh: Immediate
+accent: Poison, Disease
+effect: Damage
+description:
+  The Druid is able to release a small bit of contagion or poison to harm their foes.

@@ -1,0 +1,15 @@
+name: Wyvern’s Tooth and Claw
+cost: 8
+requires:
+  - druid:3
+  - red-in-tooth-and-claw
+incant: None
+call: None
+target: Self
+accent: None
+duration: Passive
+delivery: None
+refresh: None
+effect: None
+description:
+  The Druid can manifest up to two Natural Long Weapons or one Natural Great Weapon proficiently.

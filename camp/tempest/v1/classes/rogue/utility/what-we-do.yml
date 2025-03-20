@@ -1,0 +1,18 @@
+name: What We Do
+choices:
+  skill:
+    name: Basic Rogue Skills
+    matcher:
+      id:
+        - basic-locks
+        - basic-traps
+incant: None
+call: None
+target: None
+delivery: None
+accent: None
+duration: None
+refresh: None
+effect: None
+description: |
+  The Rogue can take either the Basic Lock Skill or the Basic Trap Skill at no cost.

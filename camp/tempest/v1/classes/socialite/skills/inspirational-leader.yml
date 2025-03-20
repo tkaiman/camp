@@ -1,21 +1,22 @@
 name: Inspirational Leader
 cost: 4
 requires: socialite:7
-incant: RP for about 2 minutes, Rousing Speech
+incant: Inspirational speech of at least two minutes
 call: Special
 target: Individuals
-delivery: Verbal
+delivery: Touch
 accent: Will
-duration: Short Rest, Special
-refresh: Event
-effect: Grant, Refresh
+duration: Short Rest
+refresh: Long Rest
+effect: Grant
 description: |
   Whether walking the lines before a battle, delving into a dungeon, or starting off a council meeting, Socialites know how to inspire allies.
 
-  The Socialite gains charges equal to their Socialite class level after inspiring their allies with rousing words of victory for a couple minutes. By spending about 15 seconds roleplaying encouraging an ally, the Socialite may spend a charge to do one of the following:
+  The Socialite should give a speech lasting at least two minutes. It may include tactical or strategic information, but it must also attempt to inspire and motivate. This speech is an Incantation, so the Socialite cannot move their foot, must have one hand free, and cannot be disturbed while giving it (or else begin again). Once that rousing speech is completed, the Socialite can inspire individuals who listened to the speech. For each individual who the Socialite believes was motivated by the speech, the Socialite can give them a few individual words of encouragement, and give one of the following boons by Touch:
 
-  * “[Name or Description] Grant 1 Spike by Will”
-  * “[Name or Description] Grant 3 Barrier by Will”
-  * “[Name or Description] Grant Protect vs Fear by Will”
 
-  Unspent charges will expire after a Short Rest, or if the Socialite becomes Helpless.
+  * “Short Grant 1 Bonus Maximum Spike”
+  * “Short Grant 5 Barrier by Will”
+  * “Grant Protect vs Packets by Will”
+
+  The Socialite may give themself any or all of these boons upon completion of the speech.

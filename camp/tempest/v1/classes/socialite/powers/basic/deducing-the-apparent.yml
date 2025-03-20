@@ -1,19 +1,19 @@
 name: Deducing the Apparent
 incant: None
-call: "“[Name of Description] Subtle Discern: [Question]”"
+call: "“[Name of Description] Subtle Discern by Mind: [Question]”"
 target: Individual
 delivery: Verbal
-accent: None
+accent: Mind
 duration: Instantaneous
-refresh: Immediate
+refresh: Long Rest
 effect: Discern
 description: |
-  Keen observations about individuals reveal hidden information to a Socialite. When out of combat and within conversational distance, the Socialite may ask a number of the following questions equal to their levels in Socialite per Long Rest:
+  Keen observations about individuals reveal hidden information to a Socialite. When out of combat and within conversational distance, the Socialite may Subtly Discern a number of the following questions equal to their Class Levels in Socialite per Long Rest:
 
   * “Have you killed a living creature in the last hour?”
   * “Do you think of yourself as a generally honest person?”
   * “Where did you most recently come from?”
-  * “What Class Archetype are you?”
+  * “In which Base Class do you have the most levels?”
   * “What are your Professions?”
   * “What Culture are you from?”
   * “What Religion do you practice?”

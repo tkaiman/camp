@@ -1,12 +1,12 @@
 name: Slice
 ranks: 3
 incant: None
-call: '“Wounding [X]”'
+call: '“Wounding [X]” "[X]"'
 target: Individual
 delivery: Weapon
 accent: None
 duration: Instantaneous
 refresh: Short Rest
-effect: Wounding
+effect: Wounding, Damage
 description: |
-    The character can do one melee attack that will do Wounding damage equal to their Spike damage. If this attack is done from behind the Rogue may Refresh a Spike.
+    The character can do one melee attack that will do Wounding damage equal to their Spike Damage. If this attack is done from behind the Rogue may drop the Wounding Effect to make an attack that does double their Spike Damage.

@@ -1,0 +1,55 @@
+name: Opus
+requires: artisan:10
+grant_if:
+  opus-reforge: artisan.specialization+crafter
+  opus-aetheric-infusion: artisan.specialization+artificer
+  opus-eureka: artisan.specialization+mystic
+description: |
+  The Artisan gains one of: Aetheric Infusion if they are an Artificer, Artisan’s Reforge if they are a Crafter, or Eureka! If they are a Mystic. The Artisan may only have one Opus Power. If the Artisan’s Specialization changes, a different Opus Power will automatically replace their current one.
+
+  * Crafter: [Reforge](../opus-reforge/)
+  * Artificer: [Aetheric Infusion](../opus-aetheric-infusion/)
+  * Mystic: [Eureka!](../opus-eureka/)
+---
+id: opus-reforge
+type: subfeature
+display_type: Opus
+name: Artisan’s Reforge
+call: None, “Rebuild [Armor, Shield, Weapon]”
+target: One Schematic, One Item
+delivery: Touch
+duration: Instantaneous
+refresh: Immediate
+tags: [crafter]
+description: |
+  The Artisan may reduce the Basic Resource cost of listed Basic Resources in crafting formulae by 1, to a minimum of 1 of each listed Basic Resource.
+  The Artisan can Rebuild equipment at a Tinker’s Forge at no Resource cost. In addition, at-will, the Artisan can expend 10 points of Living Iron to Rebuild a weapon, suit of armor, or shield after the Living Iron Pool Incantation is complete.
+  Finally, the Artisan’s Living Iron pool is doubled.
+---
+id: opus-aetheric-infusion
+type: subfeature
+display_type: Opus
+name: Aetheric Infusion
+tags: [artificer]
+description: |
+  The Artificer can do any of the following at-will.
+    * Expend a Mithril Ore to Touch another and Call “ Short Grant resistance to Shatter.”
+    * Expend an Eternal Blossom to charge 5 Spell-Balls with “Heal to Full”. Balls must be thrown separately.
+    * Expend a Raw Scale to Touch another and give the explanation: “Instruction: Until you complete a Short Rest, your Armor is considered Natural Armor.”
+  Expended Resources should be placed in an Ashbin as soon as possible.
+---
+id: opus-eureka
+type: subfeature
+display_type: Opus
+name: Eureka!
+tags: [mystic]
+incant: None
+call: '"Grant Long Rest by Inspiration", Explanation'
+target: Individual
+delivery: Touch
+accent: Inspiration
+duration: Instantaneous
+refresh: Event
+effect: Grant Long Rest
+description: |
+  Once per Event, the Artisan may Touch a willing or helpless target and call “Grant Long Rest by Mind.”

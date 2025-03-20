@@ -1,7 +1,6 @@
 name: Riposte
-requires: parry-blow
 incant: None
-call: '“Refresh Spike by Will”'
+call: "“Refresh Spike by Will”"
 target: Self
 delivery: None
 accent: Will
@@ -9,4 +8,5 @@ duration: Passive
 refresh: None
 effect: Refresh
 description: |
-  Whenever the Fighter uses a power that uses the call “Counter, Parry”, she may Refresh an expended Spike.
+  Whenever the Fighter uses a power that uses the call “Counter, Parry”,
+  they may Refresh an expended Spike.

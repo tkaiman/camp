@@ -1,0 +1,21 @@
+name: Sap of Life
+incant: Standard
+call: “[Name or Description] 1 Final”, “Grant [X] Life Tap Pool”
+target: Individuals (up to eight and the caster)
+duration: Instantaneous
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Damage, Grant Life Tap Pool
+description: |
+  This Spell can be cast on up to six other individuals (and the Druid), but must
+  be cast out-of-combat. The Druid must explain that each person in the casting will
+  lose one Life Point if they consent. Once the Incantation is complete, the Druid
+  asks each target (other than themself) in turn whether they are willing to give up
+  life for this Spell. This can be “Are you willing to sacrifice your blood for the
+  good of many?” or “May I have a sip of you?” or any similar question.
+
+  As each one says they consent, the Druid will say “[Name or Description] 1 Final”.
+  For each Life Point given up, the Druid adds 1 point to their Life Tap Pool. If they
+  Sacrifice a Life Point themself, they add 2 more. This can add up to 10 points back
+  into the Druid’s Life Tap Pool.

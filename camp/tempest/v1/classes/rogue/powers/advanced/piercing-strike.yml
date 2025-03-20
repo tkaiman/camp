@@ -1,10 +1,10 @@
 name: Piercing Strike
 incant: None
-call: '“Piercing [X]”'
+call: '“Piercing 8”'
 target: Individual
 delivery: Weapon
 accent: None
 duration: Instantaneous
 refresh: Short Rest
 effect: Piercing
-description: One basic Spike attack from behind that the Rogue makes can be given the Piercing Effect.
+description: The Rogue can expend a Spike to do an attack from behind that does Piercing 8.

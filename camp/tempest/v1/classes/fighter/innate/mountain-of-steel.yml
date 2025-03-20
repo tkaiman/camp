@@ -1,0 +1,16 @@
+name: Mountain of Steel
+requires: fighter:8
+incant: None
+call: "Refresh Parry Blow"
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Event
+effect: Refresh
+description: |
+  Once per Event while the Fighter has at least 5 Points of current Physical
+  Armor (not Barrier, Summoned, or Natural armors) the Fighter gains the Power
+  until they take a Short Rest to sacrifice all their current Armor Points (minimum 5)
+  to Refresh the Parry Blow Archetype Power instantly. The character should
+  call “Refresh, Parry Blow” when they use this power.

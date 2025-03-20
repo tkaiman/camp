@@ -1,0 +1,12 @@
+name: Gut Shot
+ranks: 2
+incant: None
+call: '“Short Weakness”'
+target: Individual
+delivery: Weapon (Thrown)
+accent: None
+duration: Short Rest
+refresh: Short Rest
+effect: Weakness
+description: |
+    The Rogue can throw a weapon into the innards and offal of an opponent, causing it to be weakened

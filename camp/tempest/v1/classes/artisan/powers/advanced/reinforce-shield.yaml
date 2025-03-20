@@ -1,0 +1,12 @@
+name: Reinforce Shield
+tags: [artificer]
+incant: None
+call: “Grant Protect vs. Shatter Shield”
+target: Individual
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Immediate
+effect: Grant Protect
+description: |
+  Whenever the Artisan uses the Rebuild Effect on a Shield, they can also Grant “Protection vs. Shatter Shield” to the shield’s wielder. If no one is wielding the shield, the Artisan may either choose not to Grant the Protect, or can take it themself.

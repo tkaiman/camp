@@ -1,11 +1,13 @@
 name: Everflowing Shield
-incant: '"... to protect my body with eldritch forces.”'
+incant: Standard
 call: Grant 3 Barrier
 target: Self
 delivery: None
 accent: None
 duration: Short Rest
-refresh: Spell, Focus Quick 100
+refresh: Spell
 effect: Grant Barrier
 description: |
-  While the Sourcerer has this enchantment active, they may Focus for Quick 100 and gain three Barrier.
+  While the Sourcerer has this enchantment active, they may Focus for Quick 100 and gain three Barrier at-will.
+
+  Enhancement: If the Sourcerer’s [Eldritch Accent] on the source they are using when they use the Focus Q 100 is Ice, they instead may gain four Barrier.

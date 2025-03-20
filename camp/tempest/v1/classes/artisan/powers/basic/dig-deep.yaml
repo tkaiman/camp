@@ -1,7 +1,7 @@
 name: Dig Deep
 tags: [mystic]
 incant: Focus Quick 30
-call: "Short Imbue Refresh All Spikes"
+call: "Short Imbue with Refresh All Spikes"
 target: Other Individual
 delivery: Touch
 accent: None
@@ -9,14 +9,4 @@ duration: Short Rest
 refresh: Long Rest
 effect: Imbue
 description: |
-  The Artisan gathers a number of people equal to their Artisan Level and refreshes the energy of the group by Focusing for a Slow 30. At the completion of this, the Artisan can imbue a reserve of energy within their allies that will let their allies Refresh all their expended Spikes.
-subcard:
-  name: Big Damn Hero
-  incant: Inspiring RP / Battlecry
-  call: '“Refresh All Spikes”'
-  target: Self
-  delivery: None
-  accent: None
-  duration: Instantaneous
-  refresh: None
-  effect: Refresh
+  The Artisan can give a short speech (an Incantation) to up to six other individuals. They all gain the ability to refresh all their Spikes once before they complete a Short Rest.

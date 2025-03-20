@@ -1,0 +1,16 @@
+name: Depth of Connection
+cost: 2
+level: basic
+description: _“Pain, as all experiences, is shared within the universal consciousness.”_
+subcard:
+  name: Depth of Connection [Devotion]
+  incant: “Of our body to our body through our shared self.”
+  call: “[Name or Description] Heal 1 by Mind”
+  target: Individual(s)
+  delivery: Verbal
+  accent: Mind
+  duration: Special
+  refresh: Short Rest
+  effect: Heal
+  description: |
+    This power transfers the healing energy from one part of the Greater Self to another. The user of the power Sacrifices 1 Life Point to call “[Name or Description] Heal 1 by Mind.” This ability may be used at-will, across multiple targets, until the user receives any Healing, in which case causes this power to end.

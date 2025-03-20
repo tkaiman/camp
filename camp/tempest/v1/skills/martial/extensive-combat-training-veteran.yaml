@@ -1,0 +1,17 @@
+name: Extensive Combat Training - Veteran
+cost: 6
+requires: martial
+ranks: 1
+choices:
+  utility:
+    name: Additional Power
+    controller: accessible-powers
+    limit_is_per_rank: true
+    matcher:
+      type: power
+      tier: 3
+description:
+  The character may choose an additional Veteran Tier Power from a non-casting class that they
+  have levels in. The Power cannot be one the character already has. This is just like an
+  additional Tier Power from the class. The Power must be of a Tier they could normally take
+  without using Agile Learner.

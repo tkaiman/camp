@@ -1,0 +1,26 @@
+name: Divine Hunger
+level: advanced
+cost: 3
+requires:
+  any:
+    - spell@2
+    - power@2
+description: |
+  “Notice as the knot in thy stomach grows tighter, and the hunger bites deeper, your arm finds more purpose. Thy hunger is thy fervor. Use it.”
+subcard:
+  name: Divine Hunger [Devotion]
+  incant: RP Focus Quick 100, Praying to Famine and drawing strength from it.
+  call: None
+  target: Self
+  delivery: RP
+  accent: None
+  duration: Short Rest
+  refresh: Long Rest
+  effect: Special
+  description: |
+    The character enters a stare of divine fervor, centered around their own hunger. After completing their prayer, the “Devour the Sinful” power gains the following bonus effects.
+
+    - It may be used on Undead
+    - Its refresh becomes quick 100
+    - The RP duration of it's Incant becomes Q10
+    - Whenever you successfully Shatter a corpse using it, you receive Short +1 Spike Damage. This bonus does not stack with itself.

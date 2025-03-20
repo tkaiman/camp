@@ -1,0 +1,6 @@
+name: Utilitarian
+cost: 4
+requires: fighter:6
+grants: fighter.utilities:1
+description: |
+  The Fighter learns an additional Utility Power from the Fighter Utility Powers.

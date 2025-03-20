@@ -1,5 +1,15 @@
 name: Greater Healing Touch
-cost: 3
+cost: 4
 requires: cleric:9
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: Special
 description: |
-  The depth of the Cleric’s devotion to their cause deepens, and with it, new boons are born from the mastery of novice skills. The Cleric now gains four points to their healing pool per cleric level for the Healing Touch Archetype Power Instead of three.
+  The depth of the Cleric’s devotion to their cause deepens, and with it, new boons are born from
+  the mastery of novice skills. The Cleric now gains one additional point to their healing pool
+  per cleric level for the Healing Touch Innate Power.

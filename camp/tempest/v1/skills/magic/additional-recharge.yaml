@@ -1,9 +1,0 @@
-name: Additional Recharge
-cost: 5
-ranks: 4
-requires:
-  any:
-    - basic-arcane
-    - basic-faith
-description: |
-  The character is adept at tapping into their power source. The character may add 4 Novice spell slots to their Arcane or Divine spell slot refresh pool, chosen at the time the skill is purchased. Meaning, the total number of Novice spell slots they can refresh per Long Rest, using the relevant innate Powers, increases by 4.

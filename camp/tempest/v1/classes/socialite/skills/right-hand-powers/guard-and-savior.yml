@@ -1,0 +1,15 @@
+name: Guard and Savior
+cost: 1
+requires:
+  - socialite:8
+  - the-right-hand
+incant: None
+call: '“Long Imbue Touch Heal 5 to [Socialite’s Name]”'
+target: Individual
+delivery: Touch
+accent: None
+duration: Long Rest
+refresh: Short Rest
+effect: Imbue Heal
+description: |
+  After the Socialite gives the Bodyguard instructions on when to use this Power, they should give the Call and any additional explanation needed. This lets the Bodyguard Heal the Socialite for 5 Points by Touch. Once used, the Socialite can give the Power again as long as they have completed a Short Rest. Remember that one can not have more than one Imbued Power at a time.

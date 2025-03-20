@@ -2,18 +2,8 @@ name: Tanner
 tags: [crafter]
 grants: scavenging-1
 description: |
-  The Artisan gains their next rank of Scavenging (3), ignoring any Level prerequisites, refunding a rank if this would put them over 3.
+  The Artisan gains Scavenging I, refunding as necessary. Additionally, you may take Scavenging III before reaching 10th level.
 
   The Artisan knows their way around a knife and hide. Tanners may instantly Scavenge a creature not already being Scavenged by another. The Artisan may call "Counter, Tanner" to any damage received while waiting for their token.
 
-  **Note**: The Artisan loses their ability to Counter once they receive their token, or if they take any actions other than waiting to receive their loot. The Counter does not prevent any damage taken from the Scavenging itself.
-
-  ---
-
-  ### CMA Notes
-
-  Only Prospect I will be granted, but the character will receive the appropriate refund
-  if it is already known so that you can buy Prospect II or Prospect III instead. If you
-  have this power, the level requirement for Prospect III is waived.
-
-# See https://github.com/kw/camp/issues/99 for more details.
+  **Note**: This Power ends once they receive their token, or if they take any actions other than waiting to receive their loot. The Counter does not prevent any damage taken from the Scavenging itself. The Counter does not stop Effects.

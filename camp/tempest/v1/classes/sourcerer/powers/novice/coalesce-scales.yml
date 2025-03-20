@@ -1,11 +1,16 @@
 name: Coalesce Scales
-incant: '"... to shroud myself in the Scales of [Eldritch Accent].”'
-call: Grant 4 Barrier by [Eldritch Accent] to Self
+incant: Standard
+call: Grant 3 Barrier by [Eldritch Accent] to Self
 target: Self
 delivery: None
-accent: '[Eldritch Accent]'
+accent: Eldritch Accent
 duration: Instantaneous
 refresh: Spell
-effect: Grant
-description:
-   This spell grants 4 Barrier by [Eldritch Accent] to the caster. This Spell will grant 6 Barrier if cast with an Adept spell slot, 8 Barrier if cast with a Greater spell slot, and 10 Barrier if cast with a Master spell slot.
+effect: Grant Barrier
+description: |
+   This spell Grants 3 Barrier by [Eldritch Accent] to the caster.
+
+   Enhancement: If the Sourcerer’s [Eldritch Accent] is Lightning double the Barrier received.
+   Enhancement: Adept Spell-Slot: Grants 5 Barrier.
+   Enhancement: Greater Spell-Slot: Grants 7 Barrier.
+   Enhancement: Master Spell-Slot: Grants 9 Barrier.

@@ -9,4 +9,6 @@ duration: Passive
 refresh: None
 effect: Grant Plus Armor
 description: |
-  Whenever the Fighter is physically representing and using at least 4 Armor Points of physical armor, she is Granted +1 Armor, increasing her Maximum Armor Points.
+  Whenever the Fighter is physically representing and using at least 4 Armor
+  Points of physical armor, they are Granted +1 Armor, increasing their Base
+  Maximum Armor Points.

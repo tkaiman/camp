@@ -1,7 +1,7 @@
 name: Abduct
 cost: 8
 description: |
-  Mythids, when forced into the outskirts of society, are prone to lone hunting tactics and will use ambush tactics to acquire food and other necessities. The Mythid may use the Abduct Power, below:
+   Mythids, when forced into the outskirts of society, are prone to lone hunting tactics and will use ambush tactics to acquire food and other necessities. The Mythid may use the Abduct Power, below:
 subcard:
   name: Abduct [Breed]
   incant: A loud cackle or some other startling noise
@@ -11,6 +11,8 @@ subcard:
   accent: Fear
   duration: Short Rest
   refresh: Long Rest
-  effect: Sleep, Strengthened
+  effect: Sleep
   description: |
-    After unleashing a loud startling noise the character may swing a weapon causing the target to fall asleep. Provided that this power is not resisted, misses, or negated in any way, the mythid becomes Strengthened while carrying the target of Abduct, and may pick up the body of their target immediately by saying “Strengthened, I pick you up.” The mythid may not attempt to harm the target of Abduct until they can reasonably assume they are unwatched by any others.
+    After unleashing a loud startling noise the character may swing a weapon causing the target to fall asleep. Provided that this power is not resisted,
+    misses, or negated in any way, the mythid may carry the target with only one hand free and may move at a jog. The mythid may not attempt to harm the
+    target of Abduct until they can reasonably assume they are unwatched by any others.

@@ -1,0 +1,18 @@
+name: Architectural Study
+tags: [crafter]
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Long Rest
+effect: None
+description: |
+  First, the Artisan has enough knowledge of architecture to help out with the “Building Mini-game” when a building is being erected. After the Artisan helps out or takes part in the “Building Mini-game”, they find a number of efficiencies or deals to earn 1 Wealth per tile that is required for the final minigame solution, and this will be paid to the Artisan upon completion of the puzzle. While trying figure out the solution, the Artisan can give up 1 Wealth of their reimbursement each time they ask one of the following questions of Staff:
+
+  - Can [this tile] go [here]?
+  - Which is the last tile of the puzzle?
+  - Does the path cross itself?
+
+  The Artisan may not give up more Wealth than they would be getting (i.e. no more than one per tile).

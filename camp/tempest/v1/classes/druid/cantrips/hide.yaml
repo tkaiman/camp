@@ -1,0 +1,10 @@
+name: Hide
+incant: Standard
+call: “Grant 1 Barrier”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Grant Barrier
+description: As long as the Druid has no points of Barrier, they can grant themself one point of Barrier.

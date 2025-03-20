@@ -1,16 +1,15 @@
 name: Ensnare
-tags: [waning-moon]
-incant: "...I ensnare your legs."
-call: '"Short Root by Poison", "Short Root by Ice"'
+incant: Standard
+call: "Short Root by Ice"
 target: Individual
-delivery: Weapon
-accent: Poison, Ice
+delivery: Spell-Ball
+accent: Ice
 duration: Short Rest
+refresh: Spell
 effect: Root
 description: |
-  When this spell is cast, the Druid empowers their next strike with the entangling vines of the forest,
-  causing the victim to take a “Short Root by Poison.” If the weapon used for this strike is a natural
-  weapon (such as a Claw), the wielder of the weapon may use that charge any time they wish, until they
-  complete a Short Rest.
+  When this spell is cast, the Druid calls the icy tendrils of the earth to reach up
+  and grab a hold of their enemy, causing the victim to take a “Short Root by Ice.”
 
-  If the Druid is in the Form of the Waning Moon, they may instead call “Quick Root by Ice” twice.
+  Enhancement: Adept Spell-Slot: The Delivery becomes Verbal and the Call
+  is “[Name or Description] Short Root by Ice”.

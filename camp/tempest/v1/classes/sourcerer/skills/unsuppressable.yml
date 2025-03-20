@@ -1,8 +1,8 @@
 name: Unsuppressable [Class]
-cost: 3
+cost: 4
 requires: sourcerer:5
 incant: None
-call: "Concentration"
+call: Concentration
 target: Self
 duration: Passive
 delivery: None
@@ -10,6 +10,6 @@ refresh: None
 accent: None
 effect: Special
 description: |
-  The Sourcerer is adept at protecting their mind against the distractions of combat and is able to recite incantations when others may be interrupted. If the Sourcerer has any amount of active Barrier remaining after being affected by a power or attack, they may continue Sourcerer incantations while being struck by damage and Effects, as long as those Effects do not otherwise prevent casting.
+  The caster need not stop casting or restart their Sourcerer Spells when being struck or hit with Effects during Incantations. They should call “Concentration” at the completion of their Incantation, along with any relevant defenses.
 
-  The caster need not stop casting or restart their Sourcerer Spells when being struck during incantations. They should call “Concentration” at the completion of their incantation, along with any relevant defenses.
+   Note that while this Power affects Incantations, it does not stop non-Incantation Focus requirements such as for Refresh or the cooldown time on various Spells.

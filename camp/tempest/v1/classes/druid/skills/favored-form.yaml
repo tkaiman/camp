@@ -1,0 +1,14 @@
+name: Favored Form
+cost: 4
+requires: druid:2
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+effect: None
+description:
+  The character chooses one of the three Forms (Hulking Bear, Hunting
+  Panther, Striking Serpent) and can cast one Form Spell that grants
+  that Form without expending a Spell-Slot.

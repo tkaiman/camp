@@ -1,11 +1,15 @@
 name: Curing Prayer
-incant: '"... to cure you.”'
+incant: Standard
 call: '“Cure [Condition] By Radiance”'
-target: Individual
-delivery: Packet
+target: Other Individual
+delivery: Spell-Packet
 accent: Radiance
 duration: Instantaneous
 refresh: Immediate
 effect: Cure
 description: |
-  This spell can only be cast out of combat. The Cleric may Cure any condition other than Taint, Resistance, and Immunity. **Note**: During particular marshaled encounters, such as mods, planar travel, etc, this spell may not be available, as the entire encounter may be considered “In-combat.”
+  This spell can only be cast out of combat. The Cleric may Cure any condition other than Taint, Resistance,
+  and Immunity.
+
+  **Note**: During particular marshaled encounters, such as mods, planar travel, etc, this spell may not be
+  available, as the entire encounter may be considered “In-combat.”

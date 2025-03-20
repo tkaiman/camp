@@ -1,0 +1,16 @@
+name: Never Stop Learning
+requires: socialite:6
+incant: None
+call: '“[Name or Description] Subtle Discern: What in-game Skill are you demonstrating and how does it work?”'
+target: Individual
+delivery: Verbal
+accent: None
+duration: Long Rest
+refresh: Long Rest
+effect: Discern
+description: |
+  After engaging another in interaction for a minute or two, the Socialite can use a Discern to determine if the other character is demonstrating an in-game Core Skill.  A Core Skill is a Skill from the Core Rulebook’s “Skills” section, and therefore unlisted “secret”, and Class Skills may not be duplicated.
+
+  This might be showing the Socialite how to use a Long weapon, or might be expounding on a particular type of Lore. If, after the interaction, and the Discern, the target gives the name of a Skill, the Socialite can “have” that Skill until they complete a Long Rest. This may require further questions on the part of the Socialite to determine how the Skill actually works mechanically and these can be asked as Discerns or the Socialite may give an “Instruction: Tell me how that Skill works.”
+
+  The Skill is gained at whatever Rank is explained by the target. If the answer that comes back from the Discern is not an in-game Skill (the name need not match perfectly), no Skill is gained, but this Power can be Refreshed by completing a Short Rest. The Socialite may need to direct the mind of the target to thinking of the Skill in question in order to most effectively use this Power.

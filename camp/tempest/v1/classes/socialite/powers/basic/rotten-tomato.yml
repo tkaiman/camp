@@ -2,10 +2,12 @@ name: Rotten Tomato
 incant: 'RP: Verbal Insult'
 call: '“Quick Berserk by Will”'
 target: Individual
-delivery: Packet (Spell-Ball)
+delivery: Spell-Ball
 accent: Will
 duration: Quick 100
 refresh: Long Rest, Special
 effect: Berserk
 description: |
-  Sticks and stones may break bones, but words can still hurt. The Socialite has learned to weave insults to make even the most stoic enraged. By spending a Spike, the Socialite may call “Quick Berserk by Will.” If the materia is completely red, this power refreshes on a Short Rest. If it is any other color, it refreshes on a Long Rest.
+  Sticks and stones may break bones, but words still hurt my feelings.
+
+  The Socialite has learned to weave insults to make even the most stoic enraged. By spending a Spike, the Socialite may call “Quick Berserk by Will.” If the materia is completely red (or looks like a tomato), this Power refreshes on a Short Rest, otherwise it refreshes on a Long Rest. Note that the insult is the Incantation, so the character’s foot must be planted, one hand free, etc. just like a normal Incantation.

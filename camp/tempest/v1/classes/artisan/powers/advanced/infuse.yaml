@@ -1,15 +1,12 @@
 name: Infuse
 tags: [crafter, artificer]
 incant: Focus Quick 100
-call: '“Short Grant [Accent]”, Explanation'
-target: Individual
+call: None
+target: Weapon
 delivery: Touch
-accent: Var
-duration: Short Rest
+accent: None
+duration: Event
 refresh: Short Rest
-effect: Grant Accent
+effect: Special
 description: |
-  The Artisan unravels an Energy Foundation Resource Infusion to treat a weapon, giving it
-  properties beyond its normal. This procedure allows the targeted weapon to change to the
-  chosen Accent at-will for weapon attacks until they complete a Short Rest. The Artisan may,
-  at the time of infusion, choose one of Acid, Flame, Ice, or Lightning.
+  The Artisan unravels a Foundation Resource - Energy (Infusion) to alter and empower a weapon, giving it properties beyond its normal. This process must be done out-of-combat and should take Focus for a Quick Count of 100. The weapon should be given a tag that shows it having the following properties: It has a +1 bonus to Spike damage and can be used with any of the four elemental Accents (Acid, Flame, Ice, or Lightning) as desired. The tag should be given an expiration that matches the day after the Event finishes. The Foundation Resource Infusion should be deposited in an Ashbin when possible.

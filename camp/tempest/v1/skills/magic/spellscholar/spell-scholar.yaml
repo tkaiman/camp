@@ -1,0 +1,19 @@
+name: Spell-Scholar
+cost: 4
+ranks: 12
+requires:
+  any:
+    - basic-arcane
+    - basic-faith
+choices:
+  spell:
+    name: Spell
+    limit: 1
+    limit_is_per_rank: true
+    matcher:
+      type: spell
+      parent:
+        type: class
+    controller: sphere-grant
+description: |
+  The character chooses one spell-casting class and adds 1 to the number of Known Spells that they have access to in that class.

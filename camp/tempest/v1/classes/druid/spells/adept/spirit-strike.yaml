@@ -1,13 +1,17 @@
 name: Spirit Strike
-tags: [rising-sun]
-incant: "...I strike the intangible"
-call: "2 to Insubstantial"
+incant: Standard
+call: "Short Imbue Weapon with [6 to Insubstantial]"
 target: Individual
-delivery: Weapon
+delivery: Touch, Weapon
 duration: Instantaneous, Short Rest
-effect: None, only damage
+refresh: Spell, None
+effect: Imbue, Damage
 description: |
-  The Druid can use this spell to briefly cause their melee weapons to pierce the veil between
-  this world and the next. The Druid gains a number of charges of “2 to Insubstantial” equal to their Maximum Life Points.
+  The Druid can use this spell to give the power to strike through the veil and
+  harm the incorporeal. The imbued target can inflict one attack that does 6
+  damage to Insubstantial creatures.
 
-  If the Druid is in the Form of the Rising Sun, the Druid may call “2 to Insubstantial” at-will until their next Short Rest.
+  Enhancement: Greater Spell-Slot: The spell can, instead, do “Short Imbue Weapon
+  with [Cure Insubstantial to Insubstantial]”.
+  Enhancement: Master Spell-Slot: The spell can, instead, do “Short Imbue Weapon
+  with [Drain to Insubstantial]”.

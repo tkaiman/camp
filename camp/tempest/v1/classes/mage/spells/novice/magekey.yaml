@@ -1,12 +1,13 @@
 name: Magekey
-incant: "... to end your imprisonment."
+incant: Standard
 call: "Dispel Imprisoned by Force"
 target: Individual
-delivery: Packet (Spell-Ball)
+delivery: Spell-Ball
 accent: Force
 duration: Instantaneous
-effect: Dispel Imprisoned
+refresh: Spell
+effect: Dispel
 description: |
-  Magekey allows the caster to end the Imprisoned Condition on one Individual.
-  This can be to save a friend or to end the protection on a foe. This cannot be
-  used while the Mage themself is *imprisoned*.
+  Magekey allows the caster to end the imprisoned Condition on one Individual.
+  This can be to save a friend or to end the protection on a foe. This
+  cannot be used while the Mage themself is imprisoned.

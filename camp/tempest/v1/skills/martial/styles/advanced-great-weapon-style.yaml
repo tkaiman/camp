@@ -1,5 +1,5 @@
 name: Advanced Great Weapon Style
-cost: 3
+cost: 1
 requires: great-weapons
 description: |
   The character has trained significantly with Great Weapons and can perform feats of strength otherwise impossible for others.

@@ -1,12 +1,17 @@
 name: Inspiration
-incant: "RP: about 5 minutes"
-call: '“By My Voice, [Grant 2 Barrier or Refresh One Novice Spell] to Members of [Group Name]"'
-target: Individuals, Members of [Group Name]
+incant: None
+call: Special
+target: Individuals (Members of [Group Name])
 delivery: Voice
+accent: None
 duration: Instantaneous
-refresh: Short Rest, Long Rest
-effect: Grant Barrier, Refresh
+refresh: Immediate, Long Rest
+effect: Imbue, Refresh, Grant Barrier
 description: |
-  A Socialite may speak with members of a group that they are the "Heart" of and grant them 2 Barrier once per Short rest. Alternatively, once per Long Rest, the Socialite may instead Refresh a Novice Spell-Slot once per each member of the group.
+  A group trusts their Heart and can be emboldened by their words. The Heart may speak to each individual in their Heart-group once per Long Rest and give them a special boon. Each individual can only be given the boon once per Long Rest. The Socialite may choose from the following three options:
 
-  The Socialite's roleplay may be any suitably motivating activity including a rousing speech, a back and forth discussion of battle tactics, a sermon, an assurance of purpose, a group hug (remember physical consent rules), or a heart to heart where the socialite explains how much the targets of the ability all mean to the Socialite. Regardless of the type of roleplay, it requires attention and focus from all members looking to receive the benefits.
+  - “Imbue Weapon with Wounding 3, and Refresh one Basic or Advanced Long Rest Power”
+  - “Imbue Packet with Wounding 5, and Refresh one Novice or Adept Spell-Slot.”
+  - “Grant 3 Barrier”
+
+    The accompanying roleplay must be a suitably motivating activity such as a rousing speech, back and forth discussion of battle tactics, a sermon, an assurance of purpose, a hug (remember physical consent rules), or a heart to heart where the Socialite gushes about how much the person means to them.

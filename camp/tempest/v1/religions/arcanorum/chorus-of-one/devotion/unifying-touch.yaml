@@ -1,0 +1,17 @@
+name: Unifying Touch
+cost: 3
+level: advanced
+description: |
+  _“Pain, as all experiences, is shared within the universal consciousness.”_
+subcard:
+  name: Unifying Touch [Devotion]
+  incant: RP Slow 60
+  call: “Grant Life by Mind”
+  target: Individual Corpse
+  delivery: Touch
+  accent: Mind
+  duration: Instantaneous
+  refresh: Long Rest
+  effect: Grant Life
+  description: |
+    This power transfers the life force from one part of the Greater Self to another. The user of the power must roleplay with the target of the power for a slow 60 explaining why the target of the power is more important to the Greater Self than they are at this particular point in time and justify their transfer of lifeforce. At the end of the roleplay they will then state “Grant Life by Mind'' reanimating the target. This will bring the corpse back to the living with 1 Life Point. Upon using this power you suffer a Death Final effect.

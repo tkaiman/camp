@@ -1,11 +1,12 @@
 name: Fortitude
-incant: Focus Quick 100
-call: Cure Disable and Disarm by Will
+incant: None
+call: '"Counter, Fortitude", or "Cure disabled"'
 target: Self
 delivery: None
-accent: Will
+accent: None
 duration: Instantaneous
 refresh: Short Rest
-effect: Cure
+effect: Counter, Cure
 description: |
-  If the character is _disabled_ or _disarmed_, she may Focus Quick 100 to Cure both the _disabled_ and _disarmed_ Conditions on herself.
+  Fortitude can be used to Counter any Disable or Disarm Effect.
+  Alternatively, the Fighter can Cure the disabled Condition on themself.

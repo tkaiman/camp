@@ -1,0 +1,14 @@
+name: Earth's Vitality
+requires: druid:5
+incant: None
+call: "Long Grant +1 Maximum Life Point"
+target: Self
+delivery: None
+accent: None
+duration: Long Rest
+refresh: Long Rest
+effect: Grant Maximum Life Points
+description:
+  The Druid gains Long Grant +1 Maximum Life Points after spending at least 5 minutes
+  communing with Nature outside. They may do this while taking a nature walk, mediating
+  in their Grove, or other such activities.

@@ -1,6 +1,5 @@
 name: Warcaster
 cost: 5
-# TODO(#15): Actually requires one novice-level slot
 requires:
   any:
     - arcane.spell_slots@1

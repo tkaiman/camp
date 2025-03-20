@@ -1,13 +1,13 @@
 name: Curiosity Killed the Cat
-incant: Focus Slow 120
-call: "“[Name or Description] 4” or “[Name or Description] 6 by Flame”"
-target: Individual
-delivery: Verbal
-accent: Flame
-duration: Instantaneous, Long Rest
-refresh: Upon Discharge
-effect: None, only damage
+incant: None
+call: None
+target: Item (box)
+delivery: Touch
+accent: None
+duration: Event or Until Discharged
+refresh: Immediate
+effect: Damage
 description: |
-  The Socialite can booby trap a personal container, but can only have one trapped container at a time. Over a Slow 120 the character roleplays setting up the device and decides whether it is a mechanical or chemical trap. The trap is considered active and must be disabled normally if the container is searched before the next Long Rest. The trap is automatically disarmed if the Socialite opens the container or at a Long Rest.
+  The Socialite can booby trap a personal container, but can only have one trapped container at a time. The character should spend at least two minutes roleplaying the process of setting up the device and making the information card. The Socialite decides whether it is a mechanical or chemical trap. The trap is considered active and must be disabled normally if the container is searched before the next Long Rest. The info card should follow all the normal guidelines for trap information cards. The trap does not harm the Socialite if it goes off, and the Socialite can open the box and use it as long as the snap doesn’t go off; this can be used for adjusting and re-setting the trap.
 
-  A triggered trap will make a snap and deal 4 (mechanical) or 6 (chemical) damage to the searcher. Chemical traps will also destroy all flammable objects in the container. Like the Tinkering Power “Triggered Base Trap”, the trap is represented by a mousetrap, party popper, and/or snaps.
+  A triggered trap will make a snap and deal 10 (Mechanical) or 16 (Chemical) damage to the one who sets it off. Chemical traps will also destroy all flammable objects in the container, and it should say this on the information card. Like the Tinkering Power “Triggered Base Trap”, the trap is represented by a mousetrap, party popper, and/or snaps that should be rigged to make noise if the box is opened.

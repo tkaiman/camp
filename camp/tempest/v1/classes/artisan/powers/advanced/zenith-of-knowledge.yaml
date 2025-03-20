@@ -1,0 +1,21 @@
+name: Zenith of Knowledge
+tags: [mystic]
+incant: None
+call: “Short Obey by Will, Tell me one of your most important secrets that I do not know.”
+target: Individual or Lantern Spirit
+delivery: Verbal
+accent: Will
+duration: Short Rest
+refresh: Long Rest
+effect: Obey
+description: |
+  After completing a Ritual where the Artisan Mystic is the Primary Ritualist, the Artisan may ask one of the following questions of the Lantern Spirit guiding the ritual, which the Lantern Spirit should attempt to answer honestly:
+
+  - “What is the effect of the next card in the deck (either higher or lower)?”
+  - “What downsides to this ritual being cast may I not have considered that you can think of?”
+  - “Provide me a potentially helpful cryptic phrase, vision, or short story.”
+
+  Or instead, the Ritualist may target one of the ritual’s Participants with a verbal Obey Effect:
+
+  - Short Obey by Will, “Tell me one of your most important secrets that I do not know.”
+  - Long Obey by Will, “Tell no one of this Ritual or what took place here.”

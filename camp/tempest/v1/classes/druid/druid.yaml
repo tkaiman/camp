@@ -47,7 +47,7 @@ description: |
   > “By dawning growth that blooms in Spring, from budding earth and insect sting.  
   > By Summer’s heat in brightest day, from stalking beast and fleeing prey.  
   > By spirits of the fallen leaf, from Autumn fires’ ashen grief.  
-  > By torrent’s chill and dying light, from howling storm and Winter’s bite…”  
+  > By torrent’s chill and dying light, from howling storm and Winter’s bite…”
 ---
 id: budding-wisdom-1
 type: subfeature
@@ -68,8 +68,6 @@ name: Budding Endurance
 description: "Additional Recharge (5)"
 category: Druid Starting Skills
 display_type: Path
-grants:
-  - additional-recharge
 ---
 id: budding-wisdom-3
 type: subfeature

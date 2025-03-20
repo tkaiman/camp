@@ -1,13 +1,13 @@
 name: Eldritch Bolt
-incant: '"... to craft Eldritch Bolts.”'
+incant: Standard
 call: 1 [Eldritch Accent]
 target: Individual
-delivery: Packet (Spell-Packet)
-accent: '[Eldritch Accent]'
+delivery: Spell-Packet
+accent: Eldritch Accent
 duration: Instantaneous
 refresh: Immediate
-effect: Refresh
+effect: Damage
 description: |
- This minor cantrip charges a packet of materia with the Element of the Eldritch Source’s Accent which will do 1 point of that Accent damage to those it hits.
+ This minor cantrip charges a Spell-Packet of materia with the Element of the Eldritch Source’s Accent which will do 1 point of that Accent’s damage to those it hits.
 
- The caster may expend a Spike to charge a number of additional packets of “1 [Eldritch Accent]” equal to the caster’s Sourceror class-level, to a maximum of ten.
+ Enhancement: Expend a Spike: The Cantrip charges additional Spell-Packets equal to the Sourcerer’s Class-Level.

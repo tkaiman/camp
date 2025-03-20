@@ -1,0 +1,12 @@
+name: Devotion's Strike
+incant: Standard
+call: "Imbue Weapon with 2 [Devotion Accent]"
+target: Individual (Other)
+delivery: Touch
+accent: None
+duration: Until Used
+refresh: Immediate
+effect: Imbue Accent
+description:
+  This gives another person (not the Cleric) the power to do a single Weapon attack
+  that is Accented with the Cleric's Devotion Accent. The Imbue call may not be altered.

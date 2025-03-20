@@ -1,0 +1,11 @@
+name: Acquired Tolerance
+incant: None
+call: '”Counter, Acquired Tolerance”'
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: Short Rest
+effect: Counter
+description: |
+    The Rogue has spent time taking micro-doses of poison in order to build up a mild resistance. Once per Short Rest, the Rogue may Counter one Poison-accented Attack or Effect.

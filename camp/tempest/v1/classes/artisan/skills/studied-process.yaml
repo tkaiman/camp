@@ -12,17 +12,11 @@ effect: Special
 option:
   values:
     - Alchemy
-    - Arcane Ritual Magic
-    - Divine Ritual Magic
     - Enchanting
     - Tinkering
 description: |
-  After many hours spent honing and perfecting their craft, the Artisan has found certain shortcuts
-  and efficiencies in the everyday Plans they create. Choose one Craft: Alchemy, Arcane Ritual Magic,
-  Divine Ritual Magic, Enchanting, or Tinkering. While producing their chosen craft, the Artisan may
-  call “Studied Process” at the beginning of their crafting attempt to reduce all mentions of “turns
-  of the hourglass” by half, to a minimum of one half turn of the hourglass per mention. This power
-  may be purchased more than once, choosing another craft each time.
+  The Artisan has found shortcuts and efficiencies in Plans after many hours spent honing and perfecting their craft.
 
-  **Note**: This Power stacks with other time reduction skills for crafting, however, no
-  repetitions / turns can be reduced below 1 each.
+  Choose one Craft: Alchemy, Enchanting, or Tinkering. The Artisan may reduce all mentions of “turns of the hourglass” by half, and single turns of the hourglass are reduced to a Quick Count of 30. All other repeated actions are reduced by half (rounded up). This power may be purchased once for each Craft.
+
+  **Note**: This Power stacks with other time reduction skills for crafting, however, the reductions from this Power are calculated first.

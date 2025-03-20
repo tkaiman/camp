@@ -1,18 +1,20 @@
 name: Mark for Death
-incant: "RP: Make, post, and maintain wanted posters"
-call: “Grant Protect vs Damage from [Target] to Self”
+incant: None
+call: '“Counter, Death Mark”'
 target: Individual
 delivery: None
 accent: None
 duration: Event
 refresh: Event
-effect: Grant Resistance
+effect: Discern
 description: |
-  The Socialite may pay 10 Wealth to Plot to place a Bounty of 20 Wealth on a named individual. Once the payment is accepted, the Socialite must post the individual’s name, likeness, and description in at least three conspicuous locations to make the Bounty active. If the Socialite is aware of posters being removed and does not replace them, the Protect (described below) and Bounty both end.
+  The Socialite may place a contract on a named individual by going to the Plot Staff and paying a bounty of 25 Wealth to make a 50 Wealth bounty (Staff will provide the other 25). This bounty will be held in escrow by Plot Staff, and may be added to by characters and NPCs as outlined below.
 
-  The following effects are in play for the duration of the Bounty:
+  Until the end of the Event, any character who knows about the bounty may provide proof to the Plot Staff of the death of the target, and collect the bounty.
 
-  * Characters with proof of the target’s death may collect the Bounty from Plot
-  * The Socialite may call “Grant Protect vs Damage from [Target] to Self” each time they Short Rest, but may only have one bonus against a single target at any one time
 
-  A Socialite with Mark for Death may pay 5 Wealth to Plot to add 10 to a Bounty on a poster, other than their own, without expending their power.
+  * The Socialite may call “Counter, Death Mark” if they are attacked (damage or Effects) by the bounty’s target. They can do this once per Short Rest.
+
+  For this bounty to be active, the Socialite must post the individual’s name, likeness, and description in at least three conspicuous locations, as well as giving instructions for collecting the bounty and the requirement for proof. If members of Staff notice that the posters have been gone for a reasonable amount of time without being replaced, they can decide to cancel the bounty, and the Socialite may return to Staff to collect the original ante’d wealth.
+
+  Another Socialite with Mark for Death may pay 5 Wealth to add an additional 10 to a Bounty other than their own, without expending their power by visiting Plot and naming the specific Bounty they wish to add their name to. However, they must also conspicuously add their name to each of the three posters of the original Bounty before doing so.

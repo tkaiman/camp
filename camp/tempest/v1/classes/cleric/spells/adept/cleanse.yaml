@@ -1,10 +1,14 @@
 name: Cleanse
-incant: '"... to cleanse you of all corruption.”'
+incant: Standard
 call: '“Cure all Conditions By Radiance”'
 target: Individual
 delivery: Touch
 accent: Radiance
 duration: Instantaneous
+refresh: Spell
 effect: Cure
 description: |
-  The Cleric ends all Conditions on the character, including those that might be beneficial to the target. Casting this spell will add three points to the Cleric’s Healing Touch pool if they have one. if the caster has the Peacecaster skill, instead the caster will add four points into their Healing Touch pool if they have one.
+  The Cleric ends all Conditions on the character, including those that might be beneficial to the target.
+  Casting this spell will add three points to the Cleric’s Healing Touch pool if they have one. If the
+  caster has the Peacecaster skill, instead the caster will add four points into their Healing Touch
+  pool if they have one.

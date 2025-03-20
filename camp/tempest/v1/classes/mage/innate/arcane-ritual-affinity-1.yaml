@@ -1,9 +1,20 @@
 name: Arcane Ritual Affinity
 requires: mage:3
+incant: None
+call: None
+target: None
+accent: None
+delivery: None
+duration: Passive
+refresh: None
+effect: None
 discounts:
   apprentice-arcane-ritual: 1
 description: |
-  The Mage can use their understanding of Arcane magic to help navigate the complexities of Arcane Ritual magic.
-  The Apprentice Arcane Ritual Magic skill costs them one fewer Character Point. Once they achieve 7th level Mage
-  they can purchase Journeyman Arcane Ritual Magic skill for one fewer Character Point. If they have already purchased
-  either of these skills, they get one Character Point back for each.
+  The Mage can use their understanding of Arcane magic to help navigate the
+  complexities of Arcane Ritual magic. The Apprentice Arcane Ritual Magic
+  skill costs them one fewer Character Point. Once they achieve 7th level Mage
+  they can purchase Journeyman Arcane Ritual Magic skill for one fewer Character
+  Point. If the Mage has already purchased either of these skills, they get one
+  Character Point back for each. Once they achieve 12th level Mage, they can
+  purchase Greater Arcane Ritual Magic skill for one fewer Character Point.

@@ -1,10 +1,11 @@
 name: Wrest Control
-incant: 'Focus Quick 100, "...to subjugate the mindless that stand before me."'
+incant: Standard
 call: "[Name of Description] Short Dominate to Construct by Arcane"
 target: One Construct
 duration: Short Rest
 delivery: Verbal
 accent: Arcane
+refresh: Spell
 effect: Dominate
 description: |
   Calling upon their deep understandings of the Weave, the Mage can intuit

@@ -1,17 +1,12 @@
 name: Borrow Knowledge
 tags: [mystic]
-incant: Explanation
-call: '“Grant Power By Mind”, Explanation'
+incant: None
+call: "“Subtle Discern by Mind: What Lore Skills do you have?”"
 target: Touch
 duration: Short Rest
-delivery: RP
+delivery: Touch
 accent: Mind
 refresh: Short Rest
-effect: Grant Power
+effect: Discern
 description: |
-  Out of combat, the Artisan sits down with a willing creature and puts their hands near the
-  other’s temples (remember not to touch unless consent has already been explicitly
-  established). They should walk the target through a meditation, or explain how they are
-  sifting through the other’s skills and talents. When they are done with the role-play, the
-  Artisan gains all the Lore skills the target of this Power until completing their next Short
-  Rest. The target of the power loses those skills until they complete a Short Rest.
+  Out of combat, the Artisan sits down with a willing creature and puts their hands near the other’s temples (remember not to touch unless consent has already been explicitly established). They should walk the target through a meditation, or explain how they are sifting through the other’s Skills and talents. When they are done with the role-play, the Artisan Discerns all the Lore Core Skills the target has, and gains all those Skills until they complete a Short Rest.

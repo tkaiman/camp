@@ -1,9 +1,9 @@
 name: Size Up
-incant: Focus Quick 100
-call: '“[Name or Description], Subtle Discern: Do you have [X] or more Wealth on you right now?”'
+incant: None
+call: '“[Name or Description], Subtle Discern by Mind: Do you have [X] or more Wealth on you right now?”'
 target: Individual
 delivery: Verbal
-accent: None
+accent: Mind
 duration: Instantaneous
 refresh: Immediate
 effect: Discern

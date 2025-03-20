@@ -1,6 +1,6 @@
 name: Jury Rig
 tags: [artificer]
-incant: Focus Quick 100
+incant: Focus Quick 40
 call: Mend 5
 target: Individual
 delivery: Touch
@@ -9,5 +9,6 @@ refresh: Long Rest
 accent: None
 effect: Mend
 description: |
-  By focusing for a Quick 100 while fixing and readjusting a character’s armor the Artisan can
-  Mend Armor for 5 points. If the Artisan expends a Patch Kit, they may refresh this ability.
+  By Focusing for a Quick 30 while fixing and readjusting a character’s armor, the Artisan can Mend Armor for 5 points.
+
+  **Enhancement**: Expend two ingots or a Patch Kit: The Power refreshes immediately. Put the expended resources in the earliest convenient Ashbin.

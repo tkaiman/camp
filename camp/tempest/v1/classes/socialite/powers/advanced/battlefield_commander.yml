@@ -1,21 +1,22 @@
 name: Battlefield Commander
-incant: RP for about 30 seconds, Rousing Speech
+incant: Focus Quick 100
 call: “[Name or Description], [Effect] by Will”
-target: Individuals
-delivery: Verbal
-accent: Will
+target: Other Individual
+delivery: Touch
+accent: None
 duration: Short Rest
 refresh: Long Rest
-effect: Grant
+effect: Imbue, Mend, Heal, Grant Protect
 description: |
   When pressed into combat, the Socialite is best able to serve while heavily guarded and calling the shots from the back. Their quick wit and observant nature are cornerstones of the Socialite’s battlefield prowess. Weaving inspiring words to benefit their allies is what they do best.
 
-  The Socialite may use the following abilities to grant boons a number of times equal to their Socialite Class Level:
+  The Socialite may use the following abilities to grant boons to their allies. The Socialite must Focus for a Quick Count of 100 to grant each one and the Socialite cannot grant themself boons.
 
-  * Short Grant +1 to Spike Damage
-  * Mend 3 Armor
-  * Heal 1
-  * Grant Protect vs Packets
-  * Grant Protect vs [Fear / Will]
 
-  This power ends when the Socialite completes a Short Rest, or has given out a number of boons equal to their Socialite class-level.
+  * “Imbue Weapon with 3”
+  * “Mend 3 Armor”
+  * “Heal 1”
+  * “Grant Protect vs Packets”
+  * “Grant Protect vs [Mind/Will/Fear]”
+
+  Once the first boon is granted, the Socialite may grant additional boons at-will (with a Focus Quick 100 Count) until they take a Rest or take damage.

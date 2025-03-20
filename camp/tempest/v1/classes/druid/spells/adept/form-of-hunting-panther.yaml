@@ -1,0 +1,32 @@
+name: Form of the Hunting Panther
+tags: [form]
+incant: Standard
+call: “Grant Form of the Hunting Panther to Self”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant Power
+description: |
+  This Spell can only be cast while out of combat. The Druid is inhabited by the
+  essence of the panther, the perfect predator. The panther is darkness and shadow,
+  slipping in for the kill. While in the Form of the Hunting Panther, the character
+  cannot cast Spells of any kind, but can activate the Powers of items and can cast the
+  Enchanted Thorn Cantrip, but no others. The Druid has the following benefits:
+
+    * +2 Base Spike Damage.
+    * May manifest and Wield up to two Natural Short weapons proficiently.
+    * May Counter the Damage and Effects caused by a fall by sacrificing 1 Life Point and Calling “Counter, Catfall.”
+    * Gain the benefits of the Adept Druid Spell Eyes of the Crow.
+    * May do a Weapon attack at-will that does “Death to Helpless.”
+    * May add the Panther Accents to any Claw Weapon attack Accent or substitute another existing accent on a Claw Weapon attack.
+    * Panther Accents: [Disease, Agony]
+
+  The Panther has the following additional abilities:
+
+    *Expend a Spell-Slot to make a Weapon attack from behind that does 5 per Tier expended.
+    * Expend a Novice Spell-Slot to make a Weapon attack that does “Quick Slow by [Panther Accent]”
+    * Expend a Novice Spell-Slot to make a Weapon attack that does “Quick Root”
+    * Expend an Adept Spell-Slot to do a Weapon attack that does “Silence by [Panther Accent]”
+    * Expend an Adept Spell-Slot to Counter a Weapon or Materia attack by Calling “Counter, Dodge”

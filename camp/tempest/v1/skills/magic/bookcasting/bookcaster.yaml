@@ -1,0 +1,15 @@
+name: Bookcaster
+cost: 1
+ranks: unlimited
+requires:
+  any:
+    - all:
+      - basic-arcane
+      - -sourcerer
+    - basic-faith
+description: |
+  Upon selecting this ability, the character selects a spell from any spell list they
+  have access to through their classes, of a Tier they would normally be able to access.
+  The character may cast this spell when they are out of combat by expending a spell slot
+  and reading the incantation a full five times or actively studying their spell book for
+  a full minute, while satisfying all the normal requirements of the spell.

@@ -1,14 +1,14 @@
 name: The Right Hand
 cost: 1
 requires: socialite:2
-incant: RP
-call: "“Long Grant Bodyguard Qualifier by Contract”"
+incant: None
+call: "“Long Grant Bodyguard Type by Mind”"
 target: Individual
 delivery: Touch
 accent: Contract
 duration: Long Rest
 refresh: Long Rest
-effect: Special
+effect: Grant Type
 child_purchase:
   basis: socialite
   limit:
@@ -22,10 +22,8 @@ child_purchase:
 description: |
   The Socialite is a creature of beauty, a flower in a field, and a damsel in distress… when they want to be. Otherwise they have a Bodyguard.
 
-  After a detailed conversation and a written contract, a Socialite may bind their target into an agreement to protect them from harm. This contract is valid for at least a Long Rest, but may be extended automatically and indefinitely.
+  After a detailed conversation and a written contract, a Socialite may bind their target into an agreement to protect them from harm. The contract must stipulate that the Bodyguard will only provide that service for one individual: the Socialite. This contract is valid for at least a Long Rest, but may be extended automatically and indefinitely. A Socialite may only retain one Bodyguard at a time, unless they have purchased a Power such as “Additional Bodyguard” which overrides this limitation. The Power can be ended at any time either by the stipulations of the contract or by mutual agreement of Bodyguard and Socialite.
 
-  Bodyguarding is serious work. An individual may only act as a Bodyguard for one person at a time, and Socialites may only retain one Bodyguard at a time.
+  Socialites that have purchased The Right Hand may purchase one Power from the Right Hand Powers list for Character Points, and may purchase another every 3 levels (4th, 7th, 10th, 13th, etc.) of Socialite they have.
 
-  Socialites with The Right Hand may select one power from the Right Hand Powers list, plus an additional for every three Socialite class levels after the first. Listed CP costs must be paid.
-
-  **For Example**: _Jabberwock takes The Right Hand at Socialite level 2. He immediately gains one class power for which he meets the prerequisites and which has Requirement: The Right Hand. When Jabberwock takes his 4th level in Socialite, he will pick an additional class power for which he meets the requirements and which has Requirement: The Right Hand. This is true for level 7, 10, 13, etc._
+  **For Example:** *Lord Kendrynn takes The Right Hand at Socialite level 2. He immediately gains one class power for which he meets the prerequisites and which has Requirement: The Right Hand. When Lord Kendrynn takes his 4th level in Socialite, he will pick an additional class power for which he meets the requirements and which has Requirement: The Right Hand. This is true for level 7, 10, 13, etc.*

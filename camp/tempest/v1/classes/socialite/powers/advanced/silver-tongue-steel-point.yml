@@ -2,10 +2,10 @@ name: Silver Tongue, Steel Point
 incant: 'RP: One minute of conversation'
 call: '“Wounding [X]”'
 target: Individual
-delivery: Packet (Spell-Ball)
+delivery: Spell-Ball
 accent: None
 duration: Instantaneous
 refresh: Long Rest
 effect: Wounding
 description: |
-  This power may only be used out of combat. The Socialite may spend 2 Spikes after engaging in at least one minute of conversation with the target. Upon activating this power, the Socialite may call “Wounding [X]”, where X is equal to the number of class levels in Socialite the character has.
+  This power may only be used out of combat and after the Socialite has engaged their target in at least one minute of conversation. Spend 2 Spikes and call “Wounding [X]”, where X is equal to the user’s Socialite Class Levels.

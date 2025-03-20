@@ -1,0 +1,17 @@
+name: Flexible Form
+cost: 6
+requires:
+  - druid:6
+  - favored-form
+incant: None
+call: None
+target: Self
+accent: None
+duration: Instantenous
+delivery: None
+refresh: Long Rest
+effect: None
+description:
+  Once per Long Rest, the Druid can cast one Form Spell from their Favored Form
+  without expending a Spell-Slot and without the “out-of-combat” restriction. This
+  is often used to pop out of the Form, cast other Spells, and then dive right back in.

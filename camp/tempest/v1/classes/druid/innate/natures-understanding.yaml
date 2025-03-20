@@ -1,0 +1,22 @@
+name: Nature's Understanding
+requires: druid:2
+incant: Standard
+call: “[Name or Description] Discern [to Animal/Beast] [Question] by Will”
+target: Individual
+delivery: Verval
+accent: Will
+duration: Special
+refresh: Short Rest
+effect: Discern
+description: |
+  This power allows the character to determine if a targeted creature is a beast of nature, and its intent.
+  The power lasts until the Druid moves their right foot or takes a Short Rest, whichever comes first.
+  Until it ends, the Druid can ask any of the following questions as often as desired of any number of targets
+  that they can see, but may only ask each target each question once.
+
+  - “Do you have the [Animal/Beast] Type?”
+  - “What kind of [Animal/Beast] are you?”
+  - “Why are you here?”
+  - “What are you feeling?”
+  - “Do you mean me harm?”
+  - “What is one of your Vulnerabilities?”

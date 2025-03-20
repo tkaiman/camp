@@ -1,7 +1,7 @@
 name: Intoxicating Aura
-incant: "RP: about 5 minutes: Short Performance"
-call: "“By My Voice: Short Intoxicate to those who watched my Performance”"
-target: Special
+incant: None
+call: "“By My Voice to those who watched my Performance: Short Intoxicate”"
+target: Individual
 delivery: Voice
 accent: None
 duration: Short Rest

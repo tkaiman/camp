@@ -1,0 +1,6 @@
+name: Cantrip Scholar
+cost: 4
+requires: cleric:6
+grants: cleric.cantrips:1
+description: |
+  The Cleric learns an additional Cantrips from the Cleric Cantrip list.

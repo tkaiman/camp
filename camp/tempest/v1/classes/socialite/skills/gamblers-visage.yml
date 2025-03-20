@@ -1,0 +1,13 @@
+name: Gambler's Visage
+cost: 2
+requires: socialite:2
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: None
+description: |
+  The Socialite may always choose to answer “Unreadable” to any Discern that attempts to determine their emotional state, whether they intend harm to another, or whether they are cheating at a game.

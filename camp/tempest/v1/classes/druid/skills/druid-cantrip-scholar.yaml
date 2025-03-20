@@ -1,0 +1,6 @@
+name: Cantrip Scholar
+cost: 4
+requires: druid:6
+grants: druid.cantrips:1
+description:
+  The Druid learns an additional Cantrips from the Druid Cantrip list.

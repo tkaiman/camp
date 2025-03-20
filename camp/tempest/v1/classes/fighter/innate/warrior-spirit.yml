@@ -1,0 +1,20 @@
+name: Warrior Spirit
+requires: fighter:10
+incant: None
+call: Special
+target: Self
+delivery: None
+accent: None
+duration: Long Rest
+refresh: Long Rest
+effect: Grant Damage, Counter
+description: |
+  At the beginning of an Event, and after finishing a Long Rest, the Fighter
+  may choose one of the following bonuses that last until the next Long Rest:
+
+  * While Wielding a Melee Weapon with one hand, you may add the Piercing
+  effect to one Spike attack once and increase the Base Spike Damage of that attack by 5.
+  * While Wielding a Great Weapon in both hands, you may add +1 to your Melee Base Damage.
+  * While Wielding a Projectile Weapon, you may add the Wounding Effect to your normal shots
+  that utilize the Aiming mechanic, these shots also gain +1 Base Damage.
+  * While Wielding a Shield, you gain a Counter vs Shatter after completing a Short Rest.

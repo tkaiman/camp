@@ -1,12 +1,12 @@
 name: Icy Veins
-incant: '"... to bestow myself with icy blood.”'
-call: Short Imbue Icy Blood to Self
+incant: Standard
+call: Short Grant Icy Blood
 target: Self
 delivery: None
-accent: Flame
+accent: None
 duration: Short Rest
 refresh: Spell
-effect: Imbue Icy Blood
+effect: Grant Power
 description:
    Once cast, the Sourcerer gains the Icy Blood ability until their next Short Rest.
 subcard:

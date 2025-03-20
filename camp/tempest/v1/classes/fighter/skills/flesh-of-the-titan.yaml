@@ -2,7 +2,6 @@ name: Flesh of the Titan
 cost: 4
 requires:
   - fighter:9
-  - healthy
 incant: None
 call: None
 target: Self
@@ -10,6 +9,7 @@ delivery: None
 accent: None
 duration: Passive
 refresh: None
-effect: Special
+effect: Grant Healing
 description: |
-  Whenever the character is given healing by a power from another, she heals an additional Life Point. Thus, two points of Healing would heal the Fighter three.
+  Whenever the Fighter is Healed by another, they are Healed an additional
+  Life Point. Thus, two points of Healing would heal the Fighter three Life Points.

@@ -9,5 +9,6 @@ refresh: Long Rest
 accent: Lightning
 effect: Grant Protect
 description: |
-  The Artisan may focus while holding a Forgesource to grant a Protect against Packets once per
-  Long Rest. If the Artisan expends the Forgesource, they may immediately Refresh this ability.
+  The Artisan may focus while holding a Forgesource to Grant a Protect vs Materia.
+
+  **Enhancement**: Expend the Forgesource: Target becomes up to four individuals and the Artisan.

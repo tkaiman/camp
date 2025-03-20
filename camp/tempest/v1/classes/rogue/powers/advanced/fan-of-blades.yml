@@ -1,12 +1,14 @@
 name: Fan of Blades
-ranks: 3
+ranks: 2
 incant: None
-call: '“Double 3”'
+call: '“Wounding 4”'
 target: Individual
 delivery: Thrown Weapon
 accent: None
 duration: Instantaneous
 refresh: Short Rest
-effect: Double
+effect: Wounding
 description: |
-    The rogue may throw several weapons in rapid succession with exceptional accuracy. The Rogue may make an attack with a thrown weapon with the call “Double 3.” This call may not be altered.
+    The Rogue may throw several weapons in rapid succession with exceptional accuracy. The Rogue may make up to three consecutive attacks with Thrown Weapons with the call “Wounding 4”.
+
+    If the character has 11 Rogue levels, the number of consecutive throws becomes 4. With 15 levels of Rogue, the number of consecutive throws becomes 5.

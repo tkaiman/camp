@@ -1,12 +1,13 @@
 name: Disarming Strike
-ranks: 2
+ranks: 5
 incant: None
-call: '“Quick Disarm [Item]”'
+call: '“Quick Disarm [Item] by Force”'
 target: Individual
 delivery: Weapon
-accent: None
+accent: Force
 duration: Quick 100
 refresh: Short Rest
 effect: Disarm
 description: |
-  While striking an opponent or their equipment with a weapon, the fighter may expend a Spike to call out “Quick Disarm [Item]”. If the Disarming Strike is used while hitting a limb, the item held by that limb must be the one identified. If the Disarming Strike is used while hitting a piece of equipment, that equipment must be the one identified. If the Disarming Strike hits some other target (body, cloak, etc.) the Fighter may identify any one held item.
+  While striking an opponent or their equipment with a weapon, the fighter
+  may expend a Spike to call out “Quick Disarm [Item] by Force”.

@@ -6,6 +6,6 @@ delivery: None
 accent: Poison
 duration: Until Used
 refresh: Short Rest
-effect: Protect
+effect: Grant Protect
 description: |
-  Thin lace gloves do very little to protect against exposure to the poisons that Socialites sprinkle into selective drinks and foodstuffs at their high brow establishments. To one end, this exposure can be quite deadly, but some Socialites have acquired a taste for the almondy brush of death. When applying a poison to a weapon the Socialite may gain a Protect vs Poison by Poison. When applying a poison to a food or drink, the socialite may gain a Protect vs Ingested Poison by Poison.
+  Thin lace gloves do very little to protect against exposure to the poisons sprinkled into drinks and foodstuffs. To one end, this exposure can be quite deadly, but some Socialites have acquired a taste for the almondy brush of death. The Socialite may gain a Protect vs. Poison by Poison when applying toxin to a weapon, or a Protect vs Ingested Poison by Poison when applying it to food/drink.

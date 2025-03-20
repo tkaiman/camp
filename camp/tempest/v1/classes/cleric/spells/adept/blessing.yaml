@@ -1,11 +1,14 @@
 name: Blessing
-incant: '"... to bless you.”'
-call: '“Short Grant 1 Spike by Radiance” or “Grant 2 Barrier by Radiance”'
+incant: Standard
+call: '“Short Grant +1 Maximum Spike by Radiance” or “Grant 3 Barrier by Radiance”'
 target: Self and up to six Individuals
 delivery: Touch
 accent: Radiance
-duration: Until Used
+duration: Short Rest, Instantaneous
 refresh: Spell
-effect: Grant Spike, Grant Barrier, Refresh
+effect: Grant Maximum Spikes, Grant Barrier
 description: |
-  This spell can be cast on the caster and up to six people who are within Touch range of the caster and can only be cast out of combat. This spell can be cast one of two ways: offensive or defensive. An offensive Bless will grant each beneficiary an additional Spike. A defensive Bless will grant each target two points of Barrier. Either casting will add two points into their Healing Touch pool if they have one. If the caster has the Peacecaster skill, instead the caster will add three points into their Healing Touch pool if they have one.
+  This spell can be cast on the caster and up to six people who are within Touch range of the
+  caster and can only be cast out of combat. This spell can be cast one of two ways: offensive
+  or defensive. An offensive Bless will grant each beneficiary an additional Maximum Spike. A
+  defensive Bless will grant each target three points of Barrier.

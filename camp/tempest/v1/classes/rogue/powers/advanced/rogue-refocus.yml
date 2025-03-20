@@ -1,0 +1,12 @@
+name: Refocus
+ranks: 5
+incant: Focus Quick 100
+call: '"Refresh All Spikes by Will"'
+target: Self
+delivery: None
+accent: Will
+duration: Instantaneous
+refresh: Long Rest
+effect: Refresh
+description:
+  The Rogue refreshes their Spikes to their current Maximum.

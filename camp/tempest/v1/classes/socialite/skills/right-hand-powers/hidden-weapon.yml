@@ -4,14 +4,25 @@ requires:
   - socialite:6
   - the-right-hand
 incant: None
-call: '“[Name or Description] Imbue: ‘Obey: Ignore this concealed weapon.’”'
+call: '“Grant Power: Concealed Weapon”, Explanation'
 target: Individual
-delivery: Verbal
+delivery: Touch
 accent: None
-duration: Short Rest
+duration: Long Rest
 refresh: Long Rest
-effect: 'Imbue: Obey'
+effect: Grant Power
 description: |
-  Bodyguards aren’t particularly useful if they cannot defend the Socialite, and so the pair are used to taking advantage of the Socialite’s quick diversions to sneak in contraband weapons in places they are normally forbidden.
+  Bodyguards aren’t particularly useful if they cannot defend the Socialite. The pair are used to taking advantage of the Socialite’s quick diversions to sneak weapons into places they are normally forbidden. To use this Power, the Socialite must give the Bodyguard a brightly colored cloth to attach or tie to a weapon. At this time, the Power should be explained to the Bodyguard.
 
-  Choose one weapon the Bodyguard is making an attempt to sneak into a place weapons have been forbidden. For the duration of a Short Rest, the Bodyguard may use “[Name or Description] Obey: Ignore this concealed weapon.” If the bodyguard enters combat, the power ends.
+subcard:
+  name: Concealed Weapon
+  incant: None
+  call: '"By My Voice Long Obey: Ignore the [color] flagged weapon by Mind."'
+  target: Individuals
+  delivery: Voice
+  accent: Mind
+  duration: Long Rest
+  refresh: None
+  effect: Obey
+  description: |
+    The Bodyguard may use “By My Voice Obey: Ignore the [color] flagged weapon by Mind.” The Bodyguard cannot use, or allow others to use, the weapon in combat until the flag has been removed.

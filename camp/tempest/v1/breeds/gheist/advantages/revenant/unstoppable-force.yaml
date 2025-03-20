@@ -5,10 +5,10 @@ description: |
 subcard:
   name: Unstoppable Force [Breed]
   incant: RP
-  call: “Shatter [Target] by Strength”
+  call: “Shatter [Target] by Force”
   target: Door, Wall, or other large obstacle
   delivery: RP
-  accent: Strength
+  accent: Force
   duration: Instantaneous
   refresh: Instantaneous
   effect: Shatter

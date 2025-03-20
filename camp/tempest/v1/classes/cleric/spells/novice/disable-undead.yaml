@@ -1,10 +1,15 @@
 name: Disable Undead
-incant: '"... to hold the unholy dead.”'
-call: '“Disable [Right/Left] Arm to Undead by Radiance” x2'
-target: Undead Individual
-delivery: Packet (Spell-Ball)
+incant: Standard
+call: "“Disable [Right/Left] Arm to Undead by Radiance”"
+target: Individual (Undead)
+delivery: Spell-Ball
 accent: Radiance
 duration: Permanent
+refresh: Spell
 effect: Disable
 description: |
-  With the power of their faith, the Cleric can destroy the arms of an undead attacker. This spell charges two spell-balls, which must be thrown separately. If the caster expends a Spike three Spell balls are charged, and the Cleric may target an undead’s legs, in addition to the arms.
+  With the power of their faith, the Cleric charges two Spell-Balls, that can destroy the arms
+  of an undead foe.
+
+  Enhancement: Expend a Spike: Three Spell-Balls are charged, and the Cleric may target an undead’s legs,
+  in addition to the arms.

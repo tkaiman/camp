@@ -1,5 +1,6 @@
 name: Quality Control
-cost: 3
+cost: 2
+ranks: 5
 requires: artisan:8
 incant: None
 call: "[Name or Description] Quality Control"

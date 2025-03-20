@@ -1,13 +1,18 @@
 name: Field Maintenance
-cost: 4
+cost: 3
 requires: fighter:5
 incant: RP Focus Quick 100
 call: "Mend [X] to Self"
 target: Self
-delivery: RP
+delivery: Touch
 accent: None
 duration: Instantaneous
 refresh: Long Rest
 effect: Mend
 description: |
-  Knowing how to properly maintain one’s equipment can mean the difference between life and death. The Fighter gains a pool of Maintenance Points equal to 10 plus their Fighter class-level that refreshes upon the completion of a Long Rest. They may spend a Focus Quick 100 roleplaying patching their own armor or shield and use any amount of Points to apply them as Mending to their worn armor or wielded shield. When the character uses the Reinforce power, they gain two Maintenance Points.
+  Knowing how to properly maintain one’s equipment can mean the difference
+  between life and death. The Fighter gains a pool of Maintenance Points equal
+  to 10 plus their Fighter Class-Level that refreshes upon the completion of a
+  Long Rest. They may spend a Focus Quick 100 roleplaying patching their own
+  armor and use any amount of Points to apply them as Mending to their worn
+  armor. When the character uses the Reinforce Skill, they gain two Maintenance Points.

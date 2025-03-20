@@ -1,0 +1,15 @@
+name: Adept Mage Power
+incant: Standard
+call: "Refresh Advanced Short Rest Base Class Power or Novice Spell Slot"
+target: Individual
+delivery: Touch
+accent: Force
+duration: Instantaneous
+refresh: Spell
+effect: Refresh
+description:
+  The Mage reinvigorates a martial target transforming Arcane energy into strength for
+  the target to power through. The target of this spell immediately refreshes one Advanced
+  Tier (or lower) Base Class Martial Power with a recovery period of Short Rest or one
+  Novice Spell slot of any type. The same target may only be affected by any particular
+  Mage’s Adept Mage Power spell once per Long Rest.

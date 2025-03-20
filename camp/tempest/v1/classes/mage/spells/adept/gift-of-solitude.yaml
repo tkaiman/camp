@@ -1,15 +1,16 @@
 name: Gift of Solitude
-incant: "...to give the gift of solitude"
-call: '"Short Imbue Repel", Explanation'
+incant: Standard
+call: '"Short Grant Power", Explanation'
 target: Individuals
 duration: Short Rest
 delivery: Touch
 accent: None
+refresh: Spell
 effect: Imbue Repel
 description: |
   The caster may identify up to three individuals who are given the Gift of Solitude may,
   up to three times before completing a Short Rest, verbally repel nearby attackers,
-  giving them room to breathe. The target receives the following Power:
+  giving them room to breathe. The target receives the Alone But Not Lonely Power below:
 subcard:
   incant: None
   call: "[Name or Description]: Quick Repel by Force"

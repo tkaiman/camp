@@ -1,6 +1,7 @@
 name: Battlemind
+ranks: 2
 incant: Focus Slow 60
-call: '“Short Grant 2 Maximum Spikes by Will”'
+call: '“Short Grant +2 Bonus Maximum Spikes by Will”'
 target: Self
 delivery: None
 accent: Will
@@ -8,4 +9,6 @@ duration: Short Rest
 refresh: Long Rest
 effect: Grant Maximum Spikes
 description: |
-  By spending a Slow Count of 60 concentrating and meditating, the Fighter can put herself into a mental state ready for combat. Until she takes a Short Rest, her Maximum (and current) Spikes goes up by two.
+  By spending a Focus Slow Count of 60 concentrating and meditating, the
+  Fighter can put themselves into a mental state ready for combat. Until
+  they take a Short Rest, their Maximum (and current) Spikes increases by two.

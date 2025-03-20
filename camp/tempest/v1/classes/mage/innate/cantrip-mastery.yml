@@ -1,0 +1,12 @@
+name: Cantrip Mastery
+requires: mage:8
+incant: None
+call: None
+target: None
+delivery: None
+accent: Force
+duration: Passive
+refresh: None
+effect: Grant Plus Damage
+description: |
+  All damaging Cantrips cast by the Mage do one additional point of damage.

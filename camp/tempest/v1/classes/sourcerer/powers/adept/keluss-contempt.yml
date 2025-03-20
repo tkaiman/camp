@@ -1,0 +1,15 @@
+name: Kelus's Contempt
+incant: Standard
+call: "[Name or Description]: Wounding 3 by [Eldritch Accent]"
+target: Self, Individual
+delivery: None, Verbal
+accent: Eldritch Accent
+duration: Short Rest, Immediate
+refresh: Spell
+effect: Wounding, Piercing
+description: |
+  The caster charges their aura with violent points of concussive force, whenever the Caster is hit by a melee attack that deals damage, they may immediately Call “[Name or Description] Wounding 3 by [Eldritch Accent]” to the person who struck them once per strike, up to 3 times before the spell is expended.  
+
+  Enhancement: If the Sourcerer’s [Eldritch Accent] is Lightning they instead do Wounding 4.
+  Enhancement: Greater Spell-Slot: Ten charges are gained instead of three.
+  Enhancement: Master Spell-Slot: Ten charges are gained instead of three,  and the call becomes Piercing.

@@ -1,0 +1,20 @@
+name: Holy Armor
+requires: cleric:9
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: Grant Maximum Summoned Armor
+description: |
+  The Cleric's deity shows them favor through power infused into the Cleric's summoned armors.
+  For every 3 points of summoned armor that the character creates with a Power (including Spells),
+  the armor's Maximum increases by one additional point.
+
+  This Bonus does not stack with other sources that add to Summoned Armor and have no effect on
+  Natural or Physical Armor.
+
+  For Example: If a Power were used (such as Divine Armor), that would normally Grant 4 Summoned
+  Armor to the caster, it would instead Grant 5 Points of Summoned Armor.

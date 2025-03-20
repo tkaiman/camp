@@ -1,0 +1,16 @@
+name: Heartseeker Shot
+ranks: 3
+incant: None
+call: '"15", or "10 Wounding"'
+target: Individual
+delivery: Projectile Wounding
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Damage, Wounding
+description: |
+  The Fighter lets loose a deadly shot killing in a single shot powerful
+  enemies. This Power, which only may be used with a projectile weapon,
+  deals 15 or may instead deal 10 Wounding.
+
+  This call may not be modified. Though it may be copied with Twin Shot.

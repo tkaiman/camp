@@ -1,0 +1,14 @@
+name: Shot Placement
+ranks: 2
+incant: None
+call: "[4/8]"
+target: Individual
+delivery: Weapon
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Damage
+description:
+  The Fighter can make one melee attack that will do 4 points of damage.
+  If the Character performs the attack with a Great Weapon, the damage
+  is 8 instead.

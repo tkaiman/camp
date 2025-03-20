@@ -1,0 +1,32 @@
+name: Expert Craft
+requires: artisan:9
+grants:
+  - fortunate-finder
+choices:
+  craft:
+    name: Greater Craft
+    description: |
+      If Crafter is your current specialty and you have at least 9 tagged Crafter
+      powers, you can receive a Greater craft for free. You must also have the
+      pre-requisite Journeyman skill.
+    matcher:
+      id:
+        - greater-alchemy
+        - greater-enchanting
+        - greater-tinkering
+    requires: artisan.specialization+crafter:7
+    choice_requires:
+      greater-alchemy: journeyman-alchemy
+      greater-enchanting: journeyman-enchanting
+      greater-tinkering: journeyman-tinkering
+description: |
+  **Skills and Options**: The Artisan gains a rank of the Fortunate Finder Character Option.
+  If the Artisan meets the following criteria:
+  - Artisan is the Crafter Specialization
+  - At least 7 [Crafter] tagged Powers (Basic, Advanced, Veteran, Utility)
+  - Possesses the prerequisite Journeyman Skill
+
+  Then the Artisan also gains one of the following for free:
+  - Greater Alchemy (5)
+  - Greater Enchanting (5)
+  - Greater Tinkering (5)

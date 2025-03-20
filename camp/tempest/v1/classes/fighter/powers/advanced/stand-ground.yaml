@@ -1,12 +1,14 @@
 name: Stand Ground
 tags: [reinforce]
+ranks: 2
 incant: None
-call: Resist
+call: "Counter, Stand Ground"
 target: Self
 delivery: None
-accent: Will
+accent: None
 duration: Instantaneous
 refresh: Short Rest
-effect: Resist
+effect: Counter
 description: |
-  Boots firmly digging into the dirt, the Fighter is adept at staying in the fray and may Resist one Repel, Slow, or Root per Short Rest.
+  Boots firmly digging into the dirt, the Fighter is adept at staying in the
+  fray and may Counter one Repel, Slow, or Root Effect.

@@ -1,0 +1,13 @@
+name: Lifethrive
+incant: Standard
+call: “[Name or Description] Heal 8”
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Spell
+accent: None
+effect: Heal
+description:
+  The Druid can cause life all around to infuse an individual, healing them
+  even at a distance. If the Druid is standing in their Grove when the Spell is
+  cast, they are also Granted 4 points into their Life Tap pool.

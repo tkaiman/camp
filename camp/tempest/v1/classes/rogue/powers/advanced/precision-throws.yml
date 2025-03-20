@@ -1,12 +1,14 @@
 name: Precision Throws
 ranks: 2
 incant: None
-call: '“Grant Wounding”'
-target: Individual
-delivery: Weapon
+call: '“Grant Precision Throws”, “Wounding [X]”'
+target: Self, Individual
+delivery: None, Weapon (Thrown)
 accent: None
-duration: Short Rest
-refresh: Long Rest
-effect: Wounding
+duration: Short Rest, Instantaneous
+refresh: Long Rest. Immediate
+effect: Grant Precision Throws, Wounding
 description: |
-    Once used, this power can continue to be used until the end of the Rogue completes a Short Rest. Thrown weapons the Rogue uses gain the Wounding effect, however, their damage is limited to a maximum of 2. A Rogue may choose to not use the Wounding effect on a thrown attack if they wish to receive a higher damage from a different source.
+    Once used, this Power grants the Rogue the ability to, at-will, imbue their Thrown Weapon attacks with the Wounding Effect, however, their damage on that attack is then limited to a maximum of 2. This power will only last until the Rogue receives or completes a Short Rest.
+
+    Note: The Rogue may choose to forgo the Imbue on any given attack, which also removes the damage restriction for that single attack.

@@ -1,0 +1,6 @@
+name: Utilitarian
+cost: 4
+requires: socialite:6
+grants: socialite.utilities:1
+description: |
+  The Socialite learns an additional Utility Power from the Socialite Utility Powers.

@@ -1,14 +1,14 @@
 name: Whispers in the Dark
-incant: '"...to observe aetheric flows."'
-call: None
+incant: Standard
+call: "[Name or Description] Discern by [Eldritch Accent]: [Question]"
 target: Indiviudal
 delivery: Verbal
-accent: None
+accent: Eldritch Accent
 duration: Instantaneous
 refresh: Focus Quick 100
 effect: Discern
 description: |
-  This power taps into the innate understanding of the Dark common to Sourcerers.
+  This power taps into the innate understanding of the flows of the aether common to Sourcerers. The Sourcerer may ask each of these questions of a target per cast, but must recast to repeat a question.
 
   * “[Name or Description] Discern: What is one of your Vulnerabilities?
   * “[Name or Description] Discern: What is one of your Resistances?

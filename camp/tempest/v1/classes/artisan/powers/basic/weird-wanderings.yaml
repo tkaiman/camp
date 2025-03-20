@@ -8,9 +8,5 @@ choices:
       tier: 1
       parent: -artisan
       refresh: ^Spell
-      effect: ^Refresh
 description: |
-  The Artisan can choose one Basic-tier Power from any other Basic Class (other than Artisan).
-  The Power will have the same incant, requirements, etc. as it did in the original class.
-  The Power cannot have a Refresh of “Spell”, nor can the Power chosen be one that causes
-  the Refresh Effect.
+  When this power is chosen the Artisan can choose one Basic-Tier Power from any other non-Artisan Base Class. This choice is permanent, and the Power will have the same Incantation, requirements, etc. as it did in the original class. The Power cannot have a Refresh of “Spell”.

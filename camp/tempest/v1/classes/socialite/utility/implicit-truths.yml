@@ -1,8 +1,19 @@
 name: Implicit Truths
+incant: None
+call: None
+target: Spirit
+delivery: Verbal
+accent: None
+duration: Instantaneous
+refresh: Long Rest
+effect: None
 grants: insight
 description: |
-  The Socialite is familiar with the ways and means of many puzzles, be it by book education, or a more practical one. They gain the Insight Perk.
+  By book education or more practical means, the Socialite is familiar with the ways of many puzzles.
 
-  In addition, once per Long Rest, the Socialite may ask of a nearby Spirit if there is a practical timed aspect to the situation they are in, such as a timer that resets their work, or an amount of time the puzzle must be completed in.
+  The Socialite gains the Insight Perk.
 
-  In addition, the Socialite may ask a Spirit if an action they are about to take is likely to end disastrously once per Long Rest.
+  In addition, whenever the Socialite uses Insight, they can ask these two specific additional questions of a nearby Lantern Spirit:
+
+  * “Is there a timer that resets their work, time limit on the puzzle, or other practical timed aspect to the situation?”
+  * “Is an action they are about to take likely to end disastrously?”

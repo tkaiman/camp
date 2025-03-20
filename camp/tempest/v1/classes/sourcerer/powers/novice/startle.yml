@@ -1,0 +1,11 @@
+name: Startle
+incant: Standard
+call: Quick Disarm [Item] by Illusion
+target: Individual
+delivery: Spell-Ball
+accent: Illusion
+duration: Quick 100
+refresh: Spell
+effect: Disarm
+description:
+   The Sourcerer charges three Spell-Balls with the power to briefly disarm individuals.  A creature stuck by the spell has the named item or item held by the named limb warped by their perception to appear as a dangerous object, forcing them to shed the item as quickly as possible, and avoid picking it up for the duration.

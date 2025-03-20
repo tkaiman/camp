@@ -1,0 +1,11 @@
+name: Incandescent Spire
+incant: Standard
+call: Short Grant Incandescent Spire
+target: Self
+delivery: None
+accent: None
+duration: Short Rest
+refresh: Spell
+effect: Grant Power
+description:
+   Until the Sorcerer completes a Short Rest, the Sourcerer may at-will roleplay setting a particular materia alight for a Focus Quick 30 and then add their Spike Damage Bonus to the next damaging Spell-Packet (not Spell-Ball) they throw. Only Spell-Packets that will cause Flame-Accented damage will gain this damage bonus.

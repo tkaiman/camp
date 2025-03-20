@@ -1,17 +1,17 @@
 name: Aesthetic Suggestion
-incant: 'RP: Talking with the crafter for the duration of their crafting process.'
+incant: None
 call: Explanation
 target: Other Individual
-delivery: RP
+delivery: Verbal
 duration: Instantaneous
 refresh: Long Rest
-effect: Special
+effect: None
 description: |
-  The Socialite gives a crafter a few words of encouragement, and some little tips on how to improve the quality of their crafting. When this Power is used on a person who is making a crafting attempt (which cannot be the Socialite themself), the crafter is able to make their next Recipe with increased quality: this will allow the crafter to submit a crafted item for a minor boon from the list below. The Socialite cannot target themself, and each ability can only be used once per craft.
+  The Socialite bestows a few words of encouragement and some tips on how to improve the quality during a Crafter’s process. The Crafter (who cannot be the Socialite) is able to improve their Plan with a minor boon from the list below. Each ability can only be used once per craft, and the effect only lasts til the end of the Event. As part of the RP, the exact benefit and its duration must be explained.
 
-  The Crafter may add or remove one Dark Territory from the crafting process of an Enchant or Ritual, they must be a Participant of the Ritual or Enchantment to use this ability.
 
-  * If the crafted item is a weapon, the wielder may add +1 to Spike Damage once per Short Rest until the end of the event, or the weapon changes hands.
-  * If the crafted item is a piece of armor or shield, the wielder may call “Resist” to one Shatter or Shield-Breaking Effect until the end of the Event.
-  * If the crafted item is a Trap or damage dealing Alchemy, the damage of the crafted item(s) is doubled until the end of the Event.
-  * If the crafted item produces a healing effect, the healing effect is increased by +3 until the end of the Event.
+  * Ritual/Enchantment: As a Participant, add or remove one Dark Territory
+  * Weapon:  +1 Bonus Spike Damage to one attack per Short Rest. Ability is lost if the weapon changes hands
+  * Armor/Shield: The wielder may call “Resist Shatter” once
+  * Trap/Damage Dealing Alchemy: The damage of the item(s) is doubled
+  * Healing: The healing effect of the crafted item is increased by +3

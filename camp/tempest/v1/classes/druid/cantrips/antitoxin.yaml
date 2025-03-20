@@ -1,5 +1,5 @@
 name: Antitoxin
-incant: "...I shield myself from nature's sting."
+incant: Standard
 call: "Grant Protect vs Poison"
 target: Self
 delivery: None

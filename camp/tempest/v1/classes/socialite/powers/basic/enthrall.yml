@@ -1,5 +1,5 @@
 name: Enthrall
-incant: 'RP: 1 minute of conversation with another.'
+incant: None
 call: '“[Name or Description] Short Charm by Will”'
 target: Individual
 delivery: Verbal
@@ -8,4 +8,4 @@ duration: Short Rest
 refresh: Long Rest
 effect: Charm
 description: |
-  The Socialite has learned the benefits of flattery. Their honeyed words are the stuff of legend. After a minute of flattery the Socialite may call “Short Charm by Will” to the target of their flattery.
+  Who doesn’t love a bit of flattery? A Socialite’s honeyed words are the stuff of legend. After showering a mark with compliments for a minute the Socialite may call “Short Charm by Will” to the target of their wiles.

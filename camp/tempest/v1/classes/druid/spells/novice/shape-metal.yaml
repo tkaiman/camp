@@ -1,0 +1,14 @@
+name: Shape Metal
+incant: Standard
+call: “Short Imbue Touch with [Mend 4]”
+target: Individual
+duration: Short Rest
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Imbue
+description:
+  The Druid can give another the power to shape metal, molding armor over itself
+  to repair rents and tears. The Druid must sacrifice an Ingot during the casting
+  of the Spell, infusing it into the target. The target will be able to do a
+  Mend 4 once by Touch.

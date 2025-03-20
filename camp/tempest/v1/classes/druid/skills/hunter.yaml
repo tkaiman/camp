@@ -1,0 +1,15 @@
+name: Hunter
+cost: 1
+requires: druid:2
+grants: projectile-weapons
+incant: None
+call: None
+target: Self
+accent: None
+duration: Passive
+delivery: None
+refresh: None
+effect: None
+description: |
+  The Druid gains the Projectile Weapon Skill, but does not gain proficiency with crossbows.
+  Anything that lists Projectile Weapon Skill as a prerequisite works normally.

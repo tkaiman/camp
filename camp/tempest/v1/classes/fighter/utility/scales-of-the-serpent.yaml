@@ -1,0 +1,19 @@
+name: Scales of the Serpent
+requires: medium-armor
+grants: heavy-armor
+incant: None
+call: "Counter, Scales of the Serpent"
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Counter
+description: |
+  The Fighter gains the Heavy Armor skill.
+
+  The flexibility of Heavy armor is often overlooked, but veterans used to
+  wearing these sorts of armor know that each scale is part of a whole, greater
+  than its pieces. As long as the character is physically representing and using
+  at least 7 points of physical armor, and has at least one point of armor
+  remaining, they may, once per Short Rest, choose to Counter one Wounding attack.

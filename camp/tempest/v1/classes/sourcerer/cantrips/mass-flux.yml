@@ -1,0 +1,11 @@
+name: Mass Flux
+incant: Standard
+call: Disarm Shield by [Eldritch Accent]
+target: Individual
+delivery: Spell-Packet
+accent: Eldritch Accent
+duration: Instantaneous
+refresh: Immediate
+effect: Disarm
+description:
+   When the Sourcerer casts this Cantrip and expends a Spike, it changes the mass of the struck shield, pulling it to the ground for a moment.

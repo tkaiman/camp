@@ -1,9 +1,9 @@
 name: Don’t You Know Who I Am?
-incant: 'RP: Short sentence.'
+incant: None
 call: '“It Has Been Told [True Statement]”'
 target: Individual
 delivery: Verbal
-accent: Mind
+accent: None
 duration: Instantaneous
 refresh: Short Rest
 effect: '“It Has Been Told”'

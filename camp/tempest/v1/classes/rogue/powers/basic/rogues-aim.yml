@@ -9,4 +9,4 @@ duration: Instantaneous
 refresh: Short Rest
 effect: Wounding
 description: |
-    The Rogue may add the Wounding effect to one thrown weapon once per Short Rest. If the attack already has Wounding this changes the Wounding effect to Double. This call can’t otherwise be modified in any way.
+    The Rogue may add the Wounding effect to one thrown weapon once per Short Rest.

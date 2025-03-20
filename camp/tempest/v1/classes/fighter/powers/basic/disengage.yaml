@@ -1,4 +1,5 @@
 name: Disengage
+ranks: 3
 incant: None
 call: '“Quick Repel by Will” or “[Name or Description] Quick Repel by Will”'
 target: Individual
@@ -8,4 +9,7 @@ duration: Quick 100
 refresh: Short Rest
 effect: Repel
 description: |
-  The Fighter can either make a weapon attack and cause the target to stay away from her for a short time or if she is wielding a projectile weapon in hand when the Power is used, can use this Power with a Verbal delivery instead, indicating the target’s name or description to cause them to be repelled.
+  The Fighter can either make a weapon attack and cause the target to stay away
+  from them for a short time or if they are wielding a projectile weapon in hand
+  when the Power is used, can use this Power with a Verbal delivery instead,
+  indicating the target’s name or description to cause them to be repelled.

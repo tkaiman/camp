@@ -4,7 +4,8 @@ requires:
   - arcane.spell_slots
   - divine.spell_slots
 description: |
-  The character has learned how to pair the meditative cycles of arcane re-attunement and
-  the prayers of divine refreshment. When the character would use a Short Rest power that
-  refreshes her spell slots (ex: Arcane Study, Refreshing Prayer, etc.) she may refresh
-  both Arcane and Divine spell slots with the same Short Rest.
+  The character has learned how to pair the meditative cycles of arcane re-attunement and the
+  prayers of divine refreshment. When the character would use a Long Rest Power that refreshes
+  their spell slots (ex: Arcane Study, Refreshing Prayer, etc.) they may refresh both Arcane and
+  Divine spell slots with the same Short Rest, allowing the character to expend both refreshing
+  Powers at the same time.

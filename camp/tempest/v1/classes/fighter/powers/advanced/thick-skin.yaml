@@ -1,11 +1,14 @@
 name: Thick Skin
+tags: [reinforce]
+ranks: 3
 incant: None
 call: '“Grant Protect vs Melee Weapons”'
 target: Self
 delivery: None
 accent: None
-duration: Until Used
+duration: Short Rest
 refresh: Short Rest
 effect: Grant Protect
 description: |
-  The Fighter may grant herself a Protect vs. Melee Weapons upon the completion of a Short Rest.
+  The Fighter may grant themself a Protect vs. Melee Weapons
+  upon the completion of a Short Rest.

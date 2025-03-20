@@ -1,5 +1,5 @@
 name: Batch Process
-cost: 3
+cost: 4
 requires: artisan:7
 incant: None
 call: Batch Process
@@ -17,11 +17,8 @@ option:
     - Enchanting
     - Tinkering
 description: |
-  Artisans, being masters of their trade, craft some plans so often that the patterns have
-  become mere muscle memory, and are so rote that it becomes trivial to build several copies
-  in parallel. Choose one Craft: Alchemy, Arcane Ritual Magic, Divine Ritual Magic, Enchanting,
-  or Tinkering. While producing their chosen craft, the Artisan may call “Batch Process” at the beginning of their crafting attempt to double the number of outputs from the crafting plan.
-  This requires that the Artisan expend double the appropriate resources for the plan they are crafting.
+  Masters of their trade, Artisans craft some Plans so often that the patterns have become rote muscle memory, making it trivial to build several copies in parallel.
 
-  **Note**: The crafting process that requires a Dark Territory card pull, a card must be
-  pulled twice. The first card must be resolved before the second card is pulled, and both cards should be pulled from the same hand.
+  Choose one Craft: Alchemy, Arcane Ritual Magic, Divine Ritual Magic, Enchanting, or Tinkering. The Artisan may call “Batch Process” at the beginning of their crafting attempt to double the number of outputs from the crafting plan. This requires that the Artisan expend double the appropriate resources for the plan they are crafting.
+
+  Note: Crafting processes requiring a Dark Territory card pull must be pulled twice from the same hand. Resolve the first card before the second is pulled.

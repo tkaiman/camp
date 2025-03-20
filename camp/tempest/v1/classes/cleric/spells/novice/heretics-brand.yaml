@@ -1,10 +1,15 @@
 name: Heretic's Brand
-incant: '“... to cull the heretic.”'
-call: '“2 Radiance to [Devotion]” or “Wounding 2 by Radiance to [Devotion]”'
+incant: Standard
+call: '“3 Radiance” or “Wounding 3 to [Devotion] by Radiance”'
 target: Individual
-delivery: Packet (Spell Ball) x2
+delivery: Spell-Ball
 accent: Radiance
 duration: Instantaneous
-effect: Wounding
+refresh: Spell
+effect: Damage, Wounding
 description: |
-  Tapping into the depths of their devotion, the caster pulls forth a spark of power to harm followers of other devotions. This spell charges 2 spell balls which must be thrown separately. If the caster expends a Spike, they may call “Wounding 2 by Radiance to [Devotion]. Note: Undevoted is a legal Devotion.
+  Tapping into the depths of their Devotion, the caster pulls forth a spark of power to
+  charge 2 Spell-Balls to harm others, especially the followers of other Devotions. The caster
+  may add the Qualifier "to [Devotion]" and make the Call "Wounding 3 [to Devotion]".
+
+  Note: Recall that Undevoted is a valid Devotion.

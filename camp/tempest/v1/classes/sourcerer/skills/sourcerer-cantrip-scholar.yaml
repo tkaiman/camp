@@ -1,0 +1,6 @@
+name: Cantrip Scholar
+cost: 4
+requires: sourcerer:6
+grants: sourcerer.cantrips:1
+description: |
+  The Sourceror learns an additional Cantrips from the Sourceror Cantrip list.

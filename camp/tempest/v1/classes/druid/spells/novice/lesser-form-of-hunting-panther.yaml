@@ -1,0 +1,26 @@
+name: Lesser Form of the Hunting Panther
+tags: [form]
+incant: Standard
+call: “Grant Lesser Form of the Hunting Panther to Self”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant Power
+description: |
+  This Spell can only be cast while out of combat. The Druid is inhabited by the essence
+  of the panther, the perfect predator. The panther is darkness and shadow, slipping in
+  for the kill. While in the Lesser Form of the Hunting Panther, the character cannot cast
+  Spells of any kind, but can activate the Powers of items and can cast the Enchanted Thorn
+  Cantrip, but no others. The Druid has the following benefits:
+
+    * +1 Base Spike Damage.
+    * May manifest and Wield up to two Natural Short weapons proficiently.
+    * May Counter the Damage and Effects caused by a fall by Sacrificing 2 Life Points and Calling “Counter, Catfall”.
+
+  The Panther has the following additional abilities:
+
+    * Expend a Spell-Slot to make a Weapon attack from behind that does 5 per Tier expended.
+    * Expend a Novice Spell-Slot to make a Weapon attack that does “Short Slow by Agony”
+    * Expend a Novice Spell-Slot to make a Weapon attack that does “Quick Root”

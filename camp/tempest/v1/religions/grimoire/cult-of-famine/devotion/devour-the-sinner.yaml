@@ -1,0 +1,17 @@
+name: Devour the Sinner
+cost: 6
+level: basic
+description: |
+  Gnawing is the hunger of Famine. The character gains the Devour the Sinful power below.
+subcard:
+  name: Devour the Sinner [Devotion]
+  incant: Mimicking eating the a dead body for a Focus Quick 100
+  call: “Shatter Corpse to Living, Heal Three to Self”
+  target: Individual
+  delivery: RP
+  accent: None
+  duration: Instantaneous
+  refresh: Short Rest
+  effect: Shatter, Healing
+  description: |
+    This Power allows the Character to mimic eating a living humanoid corpse, shattering the corpse and healing three life points. This power may only be used on humanoids, including any Breed (or combination of) and some other targets (Gnolls, Goblins or Kobolds as some examples.)

@@ -1,0 +1,11 @@
+name: Spitting Venom
+incant: Standard
+call: "Short Weakness by Poison"
+target: Individual
+duration: Short Rest
+delivery: Spell-Ball
+refresh: Spell
+accent: Poison
+effect: Weakness
+description: |
+  This Spell infuses two Spell-Balls with highly potent poison: anyone struck will become weakened.

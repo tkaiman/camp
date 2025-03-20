@@ -9,4 +9,6 @@ duration: Instantaneous
 refresh: Short Rest
 effect: Wounding
 description: |
-  The Fighter can make one melee attack that will do Wounding damage equal to her Base Damage plus two. If the Character is wielding a Great Weapon and no other weapons or shields, the damage is equal to her Base Damage plus three.
+  The Fighter can make one melee attack that will do Wounding damage equal
+  to their Base Damage plus two. If the Character is wielding a Great Weapon
+  and no other weapons or shields, the damage is equal to their Base Damage plus three.

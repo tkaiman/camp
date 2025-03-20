@@ -1,5 +1,5 @@
 name: Blade Blessing
-incant: “... to give this one a blade blessing.”
+incant: Standard
 call: '"Grant Protect vs Uncalled Damage"'
 target: Individual
 delivery: Touch
@@ -8,4 +8,5 @@ duration: Until Used
 refresh: Immediate
 effect: Grant Protect
 description: |
-  This Protect can be used to stop any hit that has no Call. This is always going to be an attack with no Effects and no Accent that would do 1 point of damage.
+  This Protect can be used to stop any hit that has no Call. This is always going to be an attack
+  with no Effects and no Accent that would do 1 point of damage.

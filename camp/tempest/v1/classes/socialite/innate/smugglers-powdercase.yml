@@ -1,0 +1,14 @@
+name: Smuggler’s Powdercase
+requires: socialite:5
+incant: None
+call: None
+target: None
+delivery: None
+accent: None
+duration: Passive
+refresh: Immediate
+effect: None
+description: |
+  The Socialite may designate one pouch (no more than 8” in any one dimension) as their Powdercase. The Powdercase can only contain Wealth, Hide, Harvest, Ore, Rare Minerals, Bloom, and Night Prizes. Once marked with a Halo Sigil, the contents of the pouch are immune to searches and Powers and are excluded when answering Discern questions. The Power does not need to be announced, and can be ignored by the Socialite.
+
+  The Socialite may only hold a maximum of 200 wealth in this pouch until they reach Socialite level 10 in Socialite and then there is no limit. Any amount of Hide, Harvest, Ingots, Rare Minerals, Bloom, and Night Prizes may be contained in this pouch up to the physical space limits of the pouch. Once the character has 15 levels of Socialite, Mithril Ore, Eternal Blossom, and Raw Scales may be held in the Smuggler’s Powdercase as well.

@@ -1,0 +1,19 @@
+name: Living Iron
+requires: artisan:2
+incant: “By the power of my craft I repair what is broken” or Focus Quick 30 while miming repairing armor
+call: "Mend [X]"
+target: Armor or Shield
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Immediate
+effect: Mend
+description: |
+  The Artisan gains a Living Iron pool equal to 3 x Artisan’s Class Level. This pool resets every Long Rest. The Artisan may subtract from their Living Iron pool when the power is used to Mend armor (Physical, Summoned, or Natural) up to the Artisan’s class-level.
+  Example: A 4th level Artisan has 12 total points of Mending per Long Rests, and can Mend up to 4 points per use of the Power.
+  Artificers gain additional points to their Living Iron pool based on the amounts below. Artisans that are Artificers gain bonuses based on how many tagged [Artificer] powers they have from all their classes.
+
+  - 5+         [Artificer] Artisan Powers - Living Iron pool is 4 x Artisan’s Class levels
+  - 7+         [Artificer] Artisan Powers - Living Iron pool is 5 x Artisan's Class levels
+  - 10+         [Artificer] Artisan Powers - Living Iron pool is 6 x Artisan's Class levels
+  - 15+         [Artificer] Artisan Powers - Living Iron pool is 7 x Artisan's Class levels

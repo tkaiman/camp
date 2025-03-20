@@ -16,18 +16,9 @@ choices:
         - apprentice-arcane-ritual
         - apprentice-divine-ritual
 description: |
-  The Artisan gains the Apprentice Arcane Ritual Magic or Apprentice Divine Ritual
-  Magic skill.
+  The Adept Ritualist gains the following benefits at various Artisan Levels:
 
-  For the purposes of Rituals, the Adept Ritualist counts as two Participants. For
-  Rituals that give greater benefits for higher numbers of Ritualists (rather than
-  those that need more than one Ritualist to perform all the functions), the Artisan
-  also counts as two Ritualists (Primary & Secondary, or Secondary x2) once they
-  reach 7th level Artisan.
-
-  Once they reach 3rd level Artisan, once per Long Rest, they may choose any one
-  Basic Resource (Bloom, Hide, Ingots, or Coin) required for a Ritual and proceed
-  with one less of that Resource, to a minimum of 1.
-
-  **Note**: if the Resource has some part of the Ritual to perform, a stand-in item
-  must be used (such as rocks for Ingots, for example).
+  - Level 1 - The Artisan may count as two Participants in Rituals, taking up the available slots and giving benefits.
+  - Level 3 - If the Artisan is acting as a Ritualist, reduce one Basic Resource (Bloom, Hide, Ingots, or Coin) required for a Ritual to a minimum of 1, once per Long Rest. Place a stand in item if the Resource has a part in the Ritual
+  - Level 7 - As above, the Artisan may count as two Ritualists. They may not perform functions of multiple Ritualists.
+  - Level 13 - Each LP the Artisan gives up in a Ritual counts as 2 for the purposes of collecting LP.

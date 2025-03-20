@@ -1,0 +1,6 @@
+name: Cantrip Scholar
+cost: 4
+requires: mage:6
+grants: mage.cantrips:1
+description: |
+  The Mage learns an additional Mage Cantrip from the Mage Cantrip list.

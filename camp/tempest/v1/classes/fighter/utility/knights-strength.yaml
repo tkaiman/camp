@@ -1,0 +1,14 @@
+name: Knight's Strength
+incant: None
+call: "Knight's Strength"
+target: Self
+delivery: None
+accent: None
+duration: Special
+refresh: Short Rest
+effect: Grant Spike Damage
+description: |
+  The Fighter can gain a short burst of strength. This will last long enough
+  to complete one carry, pull one person out of a trap or murk, open one
+  portcullis, etc.  Alternatively, the Fighter may use this power to gain +1
+  Bonus Spike Damage on their next spike attack with a weapon.

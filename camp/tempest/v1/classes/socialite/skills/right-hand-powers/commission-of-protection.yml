@@ -1,15 +1,15 @@
 name: Commission of Protection
-cost: 3
+cost: 2
 requires: the-right-hand
-incant: 'RP: Present Token, None'
-call: 'None, “Grant 1 Barrier to Bodyguard”'
+incant: None
+call: '“Grant 1 Barrier to Bodyguard”'
 target: Individual
 delivery: Touch
 accent: None
-duration: Passive, Permanent
-refresh: Quick 100
+duration: Instantaneous
+refresh: Focus Quick 100
 effect: Grant Barrier
 description: |
-  Out of Combat, the Socialite can present the Bodyguard with their favor: a trinket, token, necklace, or similar adornment.
+  A Bodyguard wearing the favor of their charge feels the weight of responsibility and can shrug off wounds in the name of duty. A trinket, token, necklace or similar adornment needs to be gifted to the Bodyguard during a time of peace (out of combat) so they may be reminded of what they fight for later. At this same time, the Bodyguard should be reminded about the effects of this Power.
 
-  While the Bodyguard visibility wears the token, the Socialite may, at-will, Grant One Barrier to the Bodyguard if their Bodyguard doesn’t already have a Barrier.
+  The Socialite may, “Grant One Barrier to Bodyguard” at-will (after the Refresh) while the Bodyguard is visibly displaying the object of their ward’s favor. Out-of-combat, the Socialite can Grant 3 Barrier all at once by Calling “Grant Three Barrier to Bodyguard”. Stacking limits will still apply.

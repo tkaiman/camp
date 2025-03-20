@@ -1,0 +1,32 @@
+name: Form of the Hulking Bear
+tags: [form]
+incant: Standard
+call: “Grant Form of the Hulking Bear to Self”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant Power
+description: |
+  This Spell can only be cast while out of combat. The Druid is inhabited by
+  the essence of the Bear Spirit. Powerful and capable of taking enormous punishment,
+  the Bear can ride any front line. While in the Form of the Hulking Bear, the
+  character cannot cast Spells of any kind or use physical or summoned armor, but
+  can activate the Powers of items and can cast the Hide Cantrip, but no others.
+  The Druid has the following benefits:
+
+    * +3 Life Points
+    * 5 points of Natural Armor
+    * May manifest and Wield up to two Natural Short or Long weapons proficiently.
+    * May add the “Force” Accent to any Claw Weapon attack that does not have an Accent.
+
+
+  The Bear has the following additional abilities:
+
+    * Expend a Novice Spell-Slot to Counter a damaging Weapon attack. The Call is “Counter: Bearhide!”.
+    * Expend a Novice Spell-Slot to Heal themself for 3 Life Points. The Call is “Heal 3”.
+    * Expend a Novice Spell-Slot to do a Weapon attack that does “Taunt 3 [No Accent, Force]”
+    * Expend an Adept Spell-Slot to Grant themself +1 Bonus Spike Damage until they leave the Form.
+    * Expend an Adept Spell-Slot to Cure themself of one Condition. The Call for this is "Cure [Condition]"
+      and the Bear can do this while unable to speak, but not while unable to use Powers.

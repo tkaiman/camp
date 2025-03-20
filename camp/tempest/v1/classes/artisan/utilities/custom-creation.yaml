@@ -8,20 +8,24 @@ delivery: Touch
 accent: None
 refresh: Immediate
 effect: Special
+grants: apprentice-enchanting
 description: |
-  This Power has two uses, which can be used at the same time, or separately. The Artisan
-  can alter the structure of any item they have Crafted that has an associated item card
-  and requires Attunement. Spending a few seconds focusing on the item, they can add a
-  requirement to the Attunement of any kind they desire. This might be “Can only be
-  Attuned to Tristan Mageborn” or it might be something more generic such as “Can only be
-  Attuned to a worshiper of Evandra”. The requirement is only relevant in order to Attune
-  to the item; Attunement is not lost if the Attuned owner loses that requirement later
-  (such as converting to a different god).
+  **Skills and Options**: The Artisan gains the Apprentice Enchanting (3) skill.
 
-  The Power can also be used to add a specific limitation to an item that requires
-  Attunement and has an information card. This limitation might be “Can only be activated
-  by Humans” or “To activate the item, the character must yell ‘I love Evandra!’” The
-  limitation is up to the Crafter. Limitations that require abusive behavior or
-  non-consensual behavior immediately fail.
+  This Power has two uses which may be used separately or simultaneously. The Artisan spends a few seconds focusing on the item to alter its structure, allowing them to add or alter Attunement requirements.
+
+  **Item Requirements**:
+
+  - Crafted by the Artisan
+  - Has a card
+  - Requires Attunement
+
+  ### <u>Power Use #1 - Add Attunement</u>
+
+  After focusing, the Artisan may add any kind of Attunement requirement. Examples include something as specific as “Can only be Attuned to Tristan Mageborn” and as generic as “Can only be Attuned to a worshiper of The Tower”. Attunement is not lost if the required trait changes (such as converting to a different god).
+
+  ### <u>Power Use #2 - Add Limitation</u>
+
+  After focusing, the Artisan may add a specific limitation to an item’s activation and use. This limitation might be “Can only be activated by Humans” or “To activate the item, the character must yell ‘I love soup!’” Limitations requiring abusive or non-consensual behavior immediately fail.
 
   For either use of this Power, the item’s card must be updated with the information.

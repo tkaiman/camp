@@ -1,0 +1,12 @@
+name: Sinister Strike
+requires: rogue:10
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Grant Base Damage
+description: |
+    Once per Short Rest when they would be able to perform a Backstab, the Rogue instead performs a Sinister Strike which doubles the damage the attack normally would do. This damage bonus is calculated after the bonus granted by Backstab.

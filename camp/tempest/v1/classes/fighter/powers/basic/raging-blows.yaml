@@ -1,12 +1,15 @@
 name: Raging Blows
 ranks: 2
-incant: None
-call: '“Shield-Breaking”'
+incant: RP, roar loudly "That Shield Can't Stop Me!"
+call: '“Shatter Shield”'
 target: Shield
 delivery: Weapon
 accent: None
 duration: Instantaneous
 refresh: Short Rest
-effect: Shield-Breaking
+effect: Shatter
 description: |
-  If wielding a great weapon with two hands and no other weapons or shields, the character can do four consecutive Shield-Breaking attacks without expending a Spike. Remember that Shield-Breaking attacks should only be called if the attack hits a shield, and has no effect on anything but shields.
+  If wielding a great weapon with two hands, the character may Call "Shatter Shield"
+  after doing the Incantation (remember while doing Incantations a foot must be planted.)
+
+  Enhancement: You may expend a spike to ignore the Incantation.

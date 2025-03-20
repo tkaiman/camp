@@ -1,0 +1,67 @@
+name: The Learned One
+requires: artisan:4
+choices:
+  specialization:
+    name: Specialization
+    description: Choose a specialization to learn from
+    matcher:
+      id: [learned-one-artificer, learned-one-crafter, learned-one-mystic]
+  artificer:
+    name: Artificer Specialization
+    matcher:
+      id:
+        - basic-shields
+        - basic-traps
+        - medium-armor
+    choice_requires:
+      medium-armor: light-armor
+    requires: learned-one-artificer
+  crafter:
+    name: Crafter Specialization
+    matcher:
+      id: [journeyman-alchemy, journeyman-enchanting, journeyman-tinkering]
+    choice_requires:
+      journeyman-alchemy: apprentice-alchemy
+      journeyman-enchanting: apprentice-enchanting
+      journeyman-tinkering: apprentice-tinkering
+    requires: learned-one-crafter
+  mystic:
+    name: Mystic Specialization
+    matcher:
+      id:
+        [advanced-medicine, journeyman-arcane-ritual, journeyman-divine-ritual]
+    choice_requires:
+      advanced-medicine: basic-medicine
+      journeyman-arcane-ritual: apprentice-arcane-ritual
+      journeyman-divine-ritual: apprentice-divine-ritual
+    requires: learned-one-mystic
+description: |
+  The Artisan gains one of the following skills for free, but can only select the skills if they satisfy the existing prerequisites for the skill or already have the skill (to gain a CP refund).  Depending on which skill is selected, your number of tagged [Artificer], [Mystic], or [Crafter] powers will count as one higher.
+
+    * [Artificer]- Basic Shields (4), Basic Traps (5), Medium Armor (4)
+    * [Crafter]- Journeyman Alchemy (4), Journeyman Enchanting (4), Journeyman Tinkering (4)
+    * [Mystic]- Advanced Medicine (4), Journeyman Arcane Ritual Magic (4), Journeyman Divine Ritual Magic (4)
+---
+id: learned-one-artificer
+parent: the-learned-one
+type: subfeature
+display_type: Learnings
+name: Learned Artificer
+tags: [artificer]
+description: Gain Basic Shields, Basic Traps, or Medium Armor
+---
+id: learned-one-crafter
+parent: the-learned-one
+type: subfeature
+display_type: Learnings
+name: Learned Crafter
+tags: [crafter]
+description: Learn a Journeyman Craft
+---
+id: learned-one-mystic
+parent: the-learned-one
+type: subfeature
+display_type: Learnings
+name: Learned Mystic
+tags: [mystic]
+description: Learn Advanced Medicine or Journeyman Rituals

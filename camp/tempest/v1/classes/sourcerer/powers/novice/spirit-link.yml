@@ -1,0 +1,13 @@
+name: Spirit Link
+incant: Standard
+call: Grant Protect vs [Disable, Root, and Slow], Counter, Spirit Link
+target: Self
+delivery: None
+accent: None
+duration: Short Rest
+refresh: Spell
+effect: Grant Protect, Counter
+description: |
+   This spell weaves the Sourcerer’s power over them, locking their Eldritch Source to them. Until their next Short Rest, any time they are affected by any Disarm, Disable, or Obey Effect that would cause them to drop or give away their Source, they may expend a Spike to Counter it by calling “Counter, Spirit Link”.
+
+   In addition, when the Spell is cast, the Sourcerer gains one Protect against Disable, Root, and Slow.

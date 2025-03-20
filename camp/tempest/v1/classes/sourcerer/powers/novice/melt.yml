@@ -1,13 +1,17 @@
 name: Melt
-incant: '"... to rain acid down upon you.”'
-call: '[Name or Description] Shield Breaking by Acid'
-target: Self
-delivery: None
-accent: None
-duration: Special (Short Rest)
+incant: Standard
+call: Dispel All Barrier by Acid, Dispel All Protects by Acid, Wounding 3 by Acid
+target: Individual
+delivery: Spell-Ball
+accent: Acid
+duration: Instantaneous
 refresh: Spell
-effect: None
+effect: Dispell, Wounding
 description: |
-   While this spell is active, when the Sourcerer strikes a target with a Spell-Packet from a Cantrip with the Acid Accent, they may immediately call “[Name or Description] Shield-Breaking by Acid” against that same target.
+  The Sourcerer charges two Spell-Balls that can do one of three things. The Spell-Balls need not have the same Call:
 
-   This Spell ends when the caster completes a Short Rest, moves their right foot, becomes unable to use Powers, or is reduced to zero Life Points.
+  “Dispel All Barrier by Acid”
+  “Dispel All Protects by Acid”
+  “Wounding 3 by Acid”
+
+  Enhancement: Expend a Spike: The caster may also choose “Shatter Physical Armor by Acid”

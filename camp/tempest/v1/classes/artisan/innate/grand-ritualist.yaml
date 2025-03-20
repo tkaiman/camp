@@ -1,0 +1,9 @@
+name: Grand Ritualist
+requires: artisan:7
+description: |
+  Mystics gain the ability to modify the Dark Territory of any ritual they are a Participant or Ritualist of, increasing or decreasing it by up to 1 if they are a Participant or up to 2 if they are the Ritualist. Additionally, after completing a ritual successfully, the Mystic gains 5 points of Summoned Armor that last for a Short Rest.
+  Artisans that are of the Specialization Mystic may Grant each Participant of a ritual where they are the Primary Ritualist a number of Counters to Damage that do not interrupt the ritual when used. The Artisan may do this once per Long Rest. These Counters last until the next Short Rest, the end of the Ritual or until used whichever is first. The ritualist must explain these counters expire after the ritual has been completed.
+  5+         [Mystic] Artisan Powers: Short Grant 1 Counter to Damage
+  8+         [Mystic] Artisan powers: Short Grant 2 Counter to Damage
+  11+         [Mystic] Artisan powers: Short Grant 3 Counter to Damage
+  15+         [Mystic] Artisan PowerS: Short Grant 4 Counter to Damage

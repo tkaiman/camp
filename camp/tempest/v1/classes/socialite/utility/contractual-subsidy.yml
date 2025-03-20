@@ -1,0 +1,10 @@
+name: Contractual Subsidy
+incant: None
+call: None
+target: Special
+delivery: None
+duration: Special
+refresh: Event
+effect: None
+description:
+  After a contract has been signed between the Socialite and an NPC in which the Socialite is making a payment of goods or non-building, non-unique resources, the Socialite can show the contract to Staff in order to be refunded 25% of the value of the contract (although not necessarily in kind… Staff can give the refund in any Resource including Wealth). This represents the Socialite finding subsidies, investors, or even loopholes to get the best of the bargain. If the contract is a recurring one that happens every Event, this Power is stuff usable for one transaction per Event. If the total amount refunded by Staff is 10 or less Wealth in value, this Power Refreshes and can be used one additional time in that Event.

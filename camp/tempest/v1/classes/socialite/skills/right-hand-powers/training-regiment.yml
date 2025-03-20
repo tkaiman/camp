@@ -1,0 +1,14 @@
+name: Training Regiment
+cost: 2
+requires:
+  - the-right-hand
+incant: None
+call: '“Refresh 1 Short Rest Martial Power”'
+target: Individual (Bodyguard)
+delivery: Touch
+accent: None
+duration: Long Rest
+refresh: Long Rest
+effect: Grant Power
+description: |
+  Through training with their Bodyguard, the Socialite learns their potential and drives them to excel martially even when the Bodyguard is at a breaking point. The Bodyguard may Refresh 1 Short Rest martial power after a quick pep talk with the Socialite.

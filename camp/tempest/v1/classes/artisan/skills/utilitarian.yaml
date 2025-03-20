@@ -1,0 +1,5 @@
+name: Utilitarian
+cost: 4
+requires: artisan:6
+grants: artisan.utilities:1
+description: The Artisan learns an additional Utility Power from the Artisan Utility Powers.

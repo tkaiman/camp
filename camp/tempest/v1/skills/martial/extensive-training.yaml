@@ -1,5 +1,6 @@
 name: Extensive Training
 cost: 6
+ranks: 2
 requires: martial
 choices:
   utility:

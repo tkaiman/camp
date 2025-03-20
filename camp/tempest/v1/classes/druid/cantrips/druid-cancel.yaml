@@ -1,0 +1,15 @@
+name: Cancel
+incant: Standard
+call: None
+target: Self
+duration: Instantaneous
+delivery: Touch
+refresh: Immediate
+accent: None
+effect: Refresh
+description:
+  This minor cantrip takes the power out of a Spell-Ball (or multiple Spell-Balls) that
+  has already been charged and returns that power to the caster. The Spell-Ball becomes
+  inert, and the caster refreshes the spell-slot that was used to charge the Spell-Ball.
+  If the spell charges more than one Spell-Ball, all the Spell-Balls must still be
+  charged in order to cancel the spell.

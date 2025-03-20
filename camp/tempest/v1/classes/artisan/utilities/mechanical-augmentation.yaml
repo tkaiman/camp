@@ -1,13 +1,11 @@
 name: Mechanical Augmentation
 tags: [artificer]
+call: None
+target: Self
+delivery: None
+duration: Short Rest
+refresh: Long Rest
 description: |
-  Once per Power per Long Rest, when the Artisan targets themselves with a Basic or Advanced
-  Artisan power that would require expending a Forgesource, they may instead spend a Spike.
+  The Artisan can mechanically augment themselves, becoming a powered construct. They must have a Forgesource that is not being used for other things with them the entire time the Power is activated. While Augmented the Artisan have the Construct and Automaton Qualifiers (Not Types).
 
-  In addition, after a Short Rest, the Artisan may gain a Protect from one of the following:
-  Poison, Agony, or Fear. As long as they have this Protect they are Inherently Slowed.
-
-  Finally, the Artisan gains the “Construct” and “Automaton” Qualifiers (not the Type), which
-  makes them subject to calls with those targets.
-
-  **For Example**: “5 To Construct by Time” would affect the Artisan.
+  In addition, when using a Power that targets themselves, Mechanically Augmented Artisans may use a Spike in lieu of a Forgesource once per Power. The Artisan is inherently slowed as their body is infused with mechanical features. The Artisan may spend 4 points of Living Iron to Counter Poison, Agony, and Fear Accents.

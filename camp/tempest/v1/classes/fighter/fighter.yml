@@ -11,7 +11,8 @@ multiclass_features:
   - short-weapons
 level_grants:
   3: fighter-bonus-lp
-  7: fighter-bonus-spike
+  6: fighter-bonus-damage
+  9: fighter-bonus-spike
 choices:
   the-path-of-combat:
     starting_class: true
@@ -36,6 +37,13 @@ name: +1 Base Max Life Points
 category: Fighter Class Bonuses
 display_type: Bonus
 grants: lp:1
+---
+id: fighter-bonus-damage
+type: subfeature
+display_type: Bonus
+parent: fighter
+name: +1 Spike Damage Bonus
+category: Fighter Class Bonuses
 ---
 id: fighter-bonus-spike
 type: subfeature

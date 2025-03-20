@@ -1,13 +1,13 @@
 name: It's Not Safe to Go Alone
 cost: 1
 requires: the-right-hand
-incant: 'RP: Supporting the individual and their combat abilities.'
-call: '“[Bodyguard’s Name or Description] Grant Protect vs Damage below 4”'
+incant: None
+call: '“[Bodyguard’s Name or Description] Grant Protect vs Damage”'
 target: Individual
 delivery: Verbal
 accent: None
-duration: Instantaneous
+duration: Until Used
 refresh: Short Rest
 effect: Grant Protection
 description: |
-  The Socialite isn’t known to wander around on their own, and when their Bodyguard is with them, they do what they can to keep them safe as well. Out of Combat, once per Short Rest, after complimenting their bodyguard and otherwise strengthening their kinship, the Socialite may grant their Bodyguard a Protect vs Damage below 4.
+  Socialites don’t make a habit of wandering around on their own, and seeing to their Bodyguard’s safety is mutually beneficial. Once per Short Rest the Socialite may bolster a Bodyguard. The Socialite grants a Protect vs. Damage. The Socialite may not give this Protect to the same Bodyguard more than once per Long Rest.

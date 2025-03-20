@@ -1,20 +1,16 @@
 name: Armor Upkeep Specialist
 tags: [artificer, crafter]
-incant: RP Focus Quick 100
+incant: Focus Quick 100
 call: "Mend Armor to Full"
-target: Field Patch Kit
+target: "Tinkering Craft: Field Patch Kit"
 delivery: Touch
-duration: Permanent
-refresh: Event, Long Rest
+duration: Instantaneous
+refresh: Long Rest
 accent: None
-effect: Special
+effect: Mend
 description: |
-  The Artisan can alter the creation of a Field Patch Kit they are crafting. If this process is
-  used, the resulting creation is called a "Specialist Field Patch Kit" with an expiration of 1
-  year. This item, once per Long Rest, is not consumed on use when the Artisan personally uses
-  it and mends the armor to full instead of the normal amount. If any other person uses the
-  item it is consumed as normal. If this Power is lost or removed, the Specialist Field Patch
-  Kit will only function as a standard Patch Kit. Maintaining the Specialist Field Patch Kit
-  requires dedicated attention, thus the Artisan may only have 1 at a time.
+  The Artisan can alter a Field Patch Kit they are crafting, instead creating a "Specialist Field Patch Kit" with a 1 year expiration. The Specialist Field Patch Kit can mend armor to full once per Long Rest. This use does not consume the Kit if the Artisan who created it does the repair.
+
+  Maintaining the Specialist Field Patch Kit requires dedicated attention, so the Artisan can only manage one Kit at a time. Furthermore, it will revert to a normal Field Patch Kit if this Power is lost or removed.
 
   The item’s card must be updated with these special features.

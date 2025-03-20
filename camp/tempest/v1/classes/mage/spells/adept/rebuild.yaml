@@ -1,10 +1,11 @@
 name: Rebuild
-incant: "...to make this item whole again."
+incant: Standard
 call: "Rebuild [item] by Force"
 target: Shattered Item
 duration: Instantaneous
 delivery: Touch
 accent: Force
+refresh: Spell
 effect: Rebuild
 description: |
   The Mage can bring back to usefulness an item that has been Shattered or

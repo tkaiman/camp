@@ -1,6 +1,8 @@
 name: Resolve
+tags: [reinforce]
+ranks: 2
 incant: None
-call: '“Counter, Resolve”'
+call: '“Altered, Resolve”'
 target: Self
 delivery: None
 accent: None
@@ -8,4 +10,7 @@ duration: Instantaneous
 refresh: Long Rest
 effect: Counter
 description: |
-  After being affected by an Effect or Damage that would take the character to 0 Life Points or kill the character, the character may call “Resolve” and Counter that Effect or Power. This power is so draining that it reduces the character to 1 Life Point.
+  After being affected by an Effect or Damage that would take the character
+  to 0 Life Points or kill the character, the character may call “Altered, Resolve”
+  and Counter that Effect or Power. This power is so draining that it reduces
+  the character to 1 Life Point.

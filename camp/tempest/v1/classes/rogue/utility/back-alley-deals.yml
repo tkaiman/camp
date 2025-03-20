@@ -6,10 +6,12 @@ delivery: Special
 accent: None
 duration: Instantaneous
 refresh: Event
-effect: Special
+effect: None
 grants: fence
 description: |
-    The Rogue gains the Fence Skill (3). In addition, the Rogue has a number of shady underworld contacts who can provide various favors and services. Once per Event, the Rogue can go to Staff, and bring up to three allies, and ask for one of each the following favors, pay the required cost, and get what they are looking for:
+    The Rogue gains the Fence Skill (3).
+
+    In addition, the Rogue has a number of shady underworld contacts who can provide various favors and services. Once per Event, the Rogue can go to Staff, and ask for one of each the following favors, pay the required cost, and get what they are looking for:
 
     - **Bard** - Spread rumor information: 6 Wealth.
     - **Barkeep** - Get rumor information on one named individual: 10 Wealth.

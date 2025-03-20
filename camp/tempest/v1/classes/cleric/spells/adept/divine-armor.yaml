@@ -1,10 +1,17 @@
 name: Divine Armor
-incant: '"... to grant me divine armor.”'
-call: '“Grant 3 Summoned Armor to Self by Radiance”, “Grant Protect vs Melee Weapons”'
+incant: Standard
+call: '“Long Grant 4 Summoned Armor by Radiance”, “Grant Protect vs Melee Weapons”, "Long Grant +2 Maximum Physical Armor by Radiance"'
 target: Self
 delivery: None
 accent: Radiance
-duration: Long Rest, Until Discharged
-effect: Grant Summoned Armor, Grant Protect, Grant Plus Armor
+duration: Long Rest, Until Used
+effect: Grant Summoned Armor, Grant Maximum Physical Armor, Grant Protect
 description: |
-  The caster grants themself 3 Summoned Armor Points. This is considered a new “suit” or armor and is not stackable with other sources of summoned armor. This spell also grants a single Protection from Melee Weapons to the Cleric. The recipient should call out “Protect” to Counter a melee weapon attack. If instead of granting summoned armor the cleric is wearing physical worn armor, this spell instead grants the cleric +2 Maximum Armor.
+  The caster grants themself 4 Summoned Armor Points. This is considered a new “suit” or armor and
+  is not stackable with other sources of Summoned Armor.
+
+  If instead of granting Summoned Armor the Cleric is wearing Physical Armor, this Spell instead
+  grants the Cleric +2 Maximum Armor.
+
+  Either way, This spell also grants a single Protection from Melee Weapons to the Cleric. The recipient
+  should call out “Protect” to Counter a melee weapon attack.

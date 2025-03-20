@@ -1,0 +1,13 @@
+name: Message of the Flowers
+requires: druid:3
+incant: None
+call: None
+target: Bloom or Night Prize Patch
+delivery: None
+duration: Event
+accent: None
+refresh: Immediate
+effect: None
+description:
+  The Druid may leave a note locked with a black key sigil and
+  "Has Foraging Skill" on it at any Bloom or Night Prize Patch.

@@ -1,10 +1,12 @@
 name: Spell-Warding
-incant: '"... to draw a curtain against arcane forces.”'
-call: '“Grant Protect vs Packets by Radiance”'
+incant: Standard
+call: '“Grant Protect vs Materia by Radiance”'
 target: Individual
-delivery: Touch
+delivery: Spell-Ball
 accent: Radiance
 duration: Until Used
+refresh: Spell
 effect: Grant Protect
 description: |
-  This spell allows the Cleric to protect up to two individuals from packet attacks. When cast, the Cleric gains two charges of the spell. Each charge may be used to give Protection vs Packets to a target. If the caster uses any other Power before using the charges to give a Protect, the unused charges are lost. The target should call out “Protect” when they use this protection.
+  When cast the spell allows the Cleric to charge two Spell-Balls with the ability to Protect
+  individuals from attacks by Materia.

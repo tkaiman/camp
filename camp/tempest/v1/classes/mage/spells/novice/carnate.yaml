@@ -1,12 +1,15 @@
 name: Carnate
-incant: "... to give this being form."
-call: "Cure Insubstantial to Insubstantial by Will"
+incant: Standard
+call: '"Cure Insubstantial to Insubstantial by Will", “[Name or Description] Piercing 5 by Will to Insubstantial.”'
 target: Insubstantial Individual or Object
 duration: Instantaneous
-delivery: Packet (Spell-Ball)
+delivery: Spell-Ball
 accent: Will
-effect: Cure Insubstantial
+refresh: Spell
+effect: Cure, Piercing
 description: |
-  The Mage can use this spell to shove an incorporeal creature or object fully onto their plane,
-  making it vulnerable to many normal attacks. If the Carnate spell-ball is Prevented, one more
-  spell-ball can be charged with this same spell by calling “Spell-ball Charged!”.
+  The Mage can use this spell to shove an incorporeal creature or object fully
+  onto their plane, making it vulnerable to many normal attacks. If the Carnate
+  Spell-Ball is Prevented, one more Spell-Ball can be charged with this same spell
+  by calling “Spell-Ball Charged!”. If the second Carnate Spell-Ball is also
+  Prevented the Mage may call “[Name or Description] 5 Piercing by Will to Insubstantial.”

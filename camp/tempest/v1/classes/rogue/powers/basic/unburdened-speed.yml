@@ -1,7 +1,7 @@
 name: Unburdened Speed
 incant: None
 call: '“Counter, Dodge”'
-target: One attack by Packet or Weapon
+target: Self
 delivery: None
 accent: None
 duration: Instantaneous

@@ -1,17 +1,12 @@
 name: Perspicacity
 tags: [artificer, mystic]
 incant: Focus Quick 100
-call: '“[Name or Description] Subtle Discern: What is one of your Vulnerabilities?”'
+call: "“[Name or Description] Subtle Discern by Mind: What is one of your Vulnerabilities?”"
 target: Individual
 duration: Instantaneous
 delivery: Verbal
 refresh: Immediate
-accent: None
+accent: Mind
 effect: Discern
 description: |
-  The Artisan can examine a particular foe intently while Focusing to
-  try and determine its weaknesses. Note that in mass melees and high
-  pressure/speed situations, it may be impossible to Discern things
-  properly and no or erroneous answers may occur. Note that
-  vulnerability is a Condition, so unless the target has a specific
-  vulnerability Condition, the answer will come back as “None.”
+  The Artisan can Focus on a particular foe to determine its weaknesses (must be a vulnerability Condition). Note that in mass melees and high pressure/speed situations, Discerning is hard and erroneous/no answer may occur.

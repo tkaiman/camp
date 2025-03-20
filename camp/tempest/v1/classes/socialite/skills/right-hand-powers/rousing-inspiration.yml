@@ -1,9 +1,9 @@
 name: Rousing Inspiration
-cost: 3
+cost: 2
 requires:
   - socialite:6
   - the-right-hand
-incant: 'RP: Encouraging their bodyguard to keep fighting.'
+incant: None
 call: '“[Bodyguard’s Name or Description] Refresh Two Spikes”'
 target: Individual
 delivery: Verbal
@@ -12,4 +12,4 @@ duration: Instantaneous
 refresh: Short Rest
 effect: Refresh
 description: |
-  Having a healer dedicated to your health is nice, but having somebody simply to encourage you to keep fighting helps as well. Most Socialites are experts in knowing exactly what to say to keep a stalwart soldier fighting... or goading them on into cleaning up a fight, at least. By giving a quick verbal encouragement, the Socialite can let the Bodyguard Refresh Two expended Spikes.
+  When muscles tire and the will to continue flags, a voice of encouragement can be the best thing at your back. Most Socialites are experts in knowing exactly what to say to keep a stalwart soldier fighting… or goading them on into cleaning up a fight, at least. The Socialite Refreshes two of their Bodyguard’s Spikes with quick verbal encouragement.

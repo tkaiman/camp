@@ -1,13 +1,16 @@
 name: Reinforce
-cost: 3
+cost: 4
 requires: fighter:3
 incant: None
 call: None
 target: Self
-delivery: RP
+delivery: None
 accent: None
 duration: Instantaneous
 refresh: Long Rest
 effect: Refresh
 description: |
-  Whenever the Fighter's physical armor is repaired by any type of crafted Patch Kit they may Refresh all powers with the **[Reinforce]** tag. The Fighter can benefit from this ability a number of times equal to their Fighter class-levels per Long Rest.
+  Whenever the Fighter's physical armor is repaired by any type of crafted
+  Patch Kit they may Refresh all powers with the **[Reinforce]** tag. The
+  Fighter can benefit from this ability a number of times equal to their
+  Fighter class-levels per Long Rest.

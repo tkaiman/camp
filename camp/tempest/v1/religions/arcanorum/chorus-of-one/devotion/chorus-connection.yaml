@@ -1,0 +1,30 @@
+name: Connection
+cost: 3
+level: advanced
+description: |
+  _“Followers of the Chorus have been known to meld even their physical well-being into a shared whole, providing succor through their connection to the universal spirit.”_
+subcard:
+  name: Connection [Devotion] [Novice]
+  incant: |
+    _“With mind and heart
+    I seek to deepen our connection
+    Communing in wholeness as one.”_
+  call: “Grant Connection”, Explanation
+  target: Individual(s)
+  delivery: Touch
+  accent: Mind
+  duration: Long Rest
+  refresh: Spell
+  effect: Heal, Mend, Grant Spike
+  description: |
+    This spell can only be cast out of combat and the caster and target(s) can only have one **Connection** active at a time, and thus cannot cast nor be the target of this spell while they have a **Connection**.
+
+    The target(s) that the caster connects to should sit down with the caster and meditate together for a few moments. The caster should explain that the two are now linked, a unity, a chorus of two, and that they can help each other. Both the caster and the target(s) have the following three Powers until they complete a Long Rest, or use a number of charges equal to double their Maximum Life Points. These Powers may only be used on each other.
+
+    **Transfer Health**: After incanting _“I call on our connection,”_ they may use one Charge and Sacrifice 1 Life Point to Touch a connected target and call “Heal 1 by Mind.” This cannot be used if the user is at 0 Life Points.
+
+    **Transfer Steel**: After incanting _“I call on our connection,”_ they may use one Charge and Sacrifice 1 Armor Point to Touch a connected target and call “Mend 1 by Mind.” This cannot be used if the user is at 0 Armor Points.
+
+    **Transfer Might**: After incanting _“I call on our connection,”_ they may use one Charge and Sacrifice 1 Spike to Touch a connected target and call “Grant 1 Spike.” This cannot be used if the user has 0 Spikes remaining.
+
+    This spell, when cast with an Adept-tier spell-slot can include an additional target, making the connection with the caster and two others. A Greater-tier spell-slot allows up to three targets and the caster. A Master-tier spell-slot will join up to five targets and the caster.

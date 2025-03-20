@@ -1,14 +1,24 @@
 name: Safe Return
-incant: '"... to return to safety.”'
-call: '“Insubstantial” “Dispel Insubstantial”'
+incant: Standard
+call: '“Grant Insubstantial”, “Cure Insubstantial”'
 target: Self
 delivery: None
 accent: None
 duration: Special
+refresh: Spell
 effect: Grant Insubstantial, Cure
 description: |
-  After completing the incantation, the caster will become insubstantial. They can then walk directly to a nearby area (within 10 minutes walk) which they have previously been to, that is consecrated or holy to their Greater Power. Alternatively, they can go to an area protected by a Haven to which they are connected (as per the Haven Ritual).
+  After completing the incantation, the caster will become Insubstantial. They can then walk
+  directly to a nearby area (within 10 minutes walk) which they have previously been to, that
+  is consecrated or holy to their Devotion. Alternatively, they can go to an area protected by
+  a Haven to which they are connected (as per the Haven Ritual).
 
-  When they arrive and enter they lose their insubstantial Condition and should call “Dispel Insubstantial”. They should carefully read the Haven information card before entering a Haven, as some have special requirements or prohibitions.
+  When they arrive and enter they lose their insubstantial Condition and should call “Cure
+  Insubstantial.” They should carefully read the Haven information card before entering a Haven,
+  as some have special requirements or prohibitions.
 
-  If they are unable to enter the Haven (if it is proofed against insubstantial creatures, for example) and have no other viable options (i.e. is only connected to one Haven) they must immediately call the Dispel Insubstantial and end the spell, leaving them outside the Haven. If they are connected to multiple Havens, they can choose, walk to, and attempt to enter the next one, until all possibilities have been exhausted.
+  If they are unable to enter the Haven (if it is proofed against insubstantial creatures, for example)
+  and have no other viable options (i.e. is only connected to one Haven) they must immediately call
+  the “Cure Insubstantial” and end the spell, leaving them outside the Haven. If they are connected
+  to multiple Havens, they can choose, walk to, and attempt to enter the next one, until all
+  possibilities have been exhausted.

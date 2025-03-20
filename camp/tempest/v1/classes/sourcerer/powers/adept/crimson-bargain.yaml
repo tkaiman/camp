@@ -1,11 +1,11 @@
 name: Crimson Bargain
-incant: '"... to draw power from flesh.”, Quick 30 RP'
-call: '“Refresh 1 Spike by Agony”'
+incant: Standard
+call: Short Grant Crimson Bargain, Refresh 1 Spike by Agony
 target: Self
 delivery: None
 accent: Agony
 duration: Short Rest
 refresh: Spell
-effect: Refresh Spike
+effect: Refresh
 description: |
-  Once cast, the Sourcerer may roleplay for a Quick 30 drawing their power from their blood and Sacrifice two Life Points to Refresh one Spike by Agony. This Power lasts until the Sourcerer becomes Incapacitated or the Sourcerer completes a Rest. The character may not Sacrifice their last Life Point.
+  Once cast, the Sourcerer may roleplay for a Quick 30 drawing their power from their blood and Sacrifice two Life Points to Refresh one Spike by Agony. This can be done as often as desired until the Sourcerer completes a Short Rest and ends the Spell.

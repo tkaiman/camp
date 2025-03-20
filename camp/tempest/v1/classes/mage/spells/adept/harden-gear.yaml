@@ -1,0 +1,12 @@
+name: Harden Gear
+incant: Standard
+call: '"Grant Protect vs Shatter by Force", "Grant 5 Barrier by Force"'
+target: Individual
+duration: Until Used
+delivery: Touch
+accent: Force
+refresh: Spell
+effect: Grant Protect, Grant Barrier
+description: |
+  The target individual's gear gains a Protect against Shatter effects.
+  Additionally, the individual gains 5 Barrier.

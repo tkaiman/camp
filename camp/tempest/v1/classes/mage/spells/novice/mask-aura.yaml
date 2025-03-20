@@ -1,14 +1,16 @@
 name: Mask Aura
-incant: "... to mask your aura from others' sight."
-call: "Short Obfuscate: Discern by Will"
+incant: Standard
+call: "Short Grant Counter vs Discerns by Mind"
 target: Individual
 delivery: Touch
-accent: Will
+accent: None
 duration: Short Rest
-effect: Obfuscate
+refresh: Spell
+effect: Grant Counter
 description: |
-  The Mage may put a protective bubble around one individual, rendering that individual *Obfuscated* to
-  Discern Powers. Mask Aura can only be cast out of combat in a quiet and generally peaceful area and
-  the Effect must be explained clearly to the recipient. In response to any Discern Effects, the
-  character may decline to answer or answer however they wish a number of times equal to their Maximum
-  Life Points.
+  The Mage may put a protective bubble around one individual, making the character difficult
+  to Discern. Whenever the recipient is targeted by a Discern by Mind, they must answer
+  “Counter, Masked”. This protection lasts until the recipient completes or otherwise
+  receives the effect of a Short (or Long) Rest, regardless of the number of Discerns
+  they Counter. Mask Aura can only be cast out of combat in a quiet and generally
+  peaceful area and the effects of the Spell must be explained clearly to the recipient.

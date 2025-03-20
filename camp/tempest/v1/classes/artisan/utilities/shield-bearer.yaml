@@ -1,10 +1,13 @@
 name: Shield Bearer
 tags: [artificer]
+incant: None
 grants: basic-shields
+call: “Counter, Shield Bearer”
+target: Self
+delivery: None
+duration: Instantaneous
+refresh: Immediate
 description: |
-  The Artisan gains the Basic Shield Skill (4).
+  The Artisan gains the Basic Shield Skill (4)
 
-  Additionally, while using a shield the shield may not be disarmed.
-  If the shield would otherwise be affected by a Disarm Effect, the
-  Artisan may instead take two damage (not negatable) to Counter the
-  Disarm Effect.
+  The Artisan may Sacrifice 2 Life Points to Counter any Disarm Effect against the shield.

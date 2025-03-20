@@ -1,18 +1,19 @@
 name: Dispel Magic
-incant: "... to dispel magic."
+incant: Standard
 call: See below
 target: Individual or Object
 duration: Instantaneous
-delivery: Packet (Spell-Ball)
+delivery: Spell-Ball
 accent: None
-effect: Dispel
+refresh: Spell
+effect: Various
 description: |
   This powerful spell can be used to end the duration of many Spells or Powers,
   including Spells like Elemental Node or protective circles. It can be used in
   one of the following ways:
 
     * Harm Constructs: “Piercing 3 to Construct.” If the caster expends a Spike
-      an additional Spell ball is charged.
+      an additional Spell-ball is charged.
     * Dispel any of the following: “Dispel Protects”, “Dispel Summoned Armor”,
       “Dispel Barrier”, or a specific Condition: “Dispel [Condition]”.
     * Dispel all Conditions caused by a specific Accent: “Dispel [Accent].”

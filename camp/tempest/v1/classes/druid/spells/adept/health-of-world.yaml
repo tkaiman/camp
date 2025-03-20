@@ -1,0 +1,15 @@
+name: Health of the World
+incant: Standard
+call: “Grant [5/10] Life Tap”
+target: Individual, Self
+duration: Instantaneous, Short Rest
+delivery: Touch, None
+refresh: Spell
+accent: None
+effect: Grant Life Tap
+description: |
+  The Druid may cast this spell to add 5 points to their Life Tap pool
+  or the Life Tap pool of another Druid.
+
+  If the Druid does not know any Form spells, they may choose to add 10 points
+  to their Life Tap pool or the Life Tap pool of another Druid.

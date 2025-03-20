@@ -1,0 +1,12 @@
+name: Empower Friends
+tags: [mystic]
+incant: "RP: See Description"
+call: "“Refresh One Novice Spell Slot”, “Refresh One Adept Spell Slot”"
+target: Up to Two Other Individuals
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Long Rest
+effect: Refresh
+description: |
+  The Artisan may use their knowledge of the mystical forces to refresh the spell slots of up to two other individuals. The Artisan restores 1 Novice and 1 Adept spell slot in total. These slots may be Arcane or Divine and may be from Base or Advanced Classes. The Artisan should roleplay an incantation of meaning to their character that lasts approximately 30 seconds or longer to use this Power. This Power may not be refreshed by any means outside of receiving a Long Rest.

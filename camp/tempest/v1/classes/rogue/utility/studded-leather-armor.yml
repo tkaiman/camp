@@ -1,3 +1,13 @@
 name: Studded Leather Armor
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: Grant Maximum Armor
 description: |
-  Whenever the Rogue is physically representing and using 4 or less Armor Points of physical armor, they gain one additional point to their maximum Armor Points.
+  Whenever the Rogue is physically representing and using 4 or fewer Armor Points of physical armor, they gain one additional point to their Base Maximum Armor Points.
+
+  This bonus becomes +2 when the character reaches 15th Level Rogue.

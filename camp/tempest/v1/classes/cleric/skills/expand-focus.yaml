@@ -1,5 +1,14 @@
 name: Expand Focus
 cost: 3
 requires: cleric:6
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Immediate
+effect: Grant Accent, Grant Qualifier
 description: |
-  The Cleric may expend a Spike to alter the “to Undead” Qualifier and Accent on a spell they cast to “to Demon by Radiance” or “to Angel by Darkness.” The spell must come from the Basic Class: Cleric Spell List.
+  The Cleric may expend a Spike to alter the “to Undead” Qualifier and Accent on a spell they cast
+  to “to Demon by Radiance” or “to Angel by Darkness.” The spell must come from the Cleric Base Class Spell List.

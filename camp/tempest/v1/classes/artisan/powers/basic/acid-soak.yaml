@@ -1,0 +1,12 @@
+name: Acid Soak
+tags: [artificer]
+incant: RP, Focus Quick 100
+call: “Wounding 8 by Acid”
+target: Individual
+delivery: Packet (Spell-Ball)
+accent: Acid
+duration: Instantaneous
+refresh: Short Rest
+effect: Wounding
+description: |
+  Carefully, the Artisan processes a number of reagents in sinister ways, adding their lethal humours to soak a Spell-Ball full of Materia in a solution that will react over a few seconds, making for a powerfully acidic projectile. The Artisan must work on the Spell-Ball for a Focus Quick 100, sacrificing three Night Prizes, and may then throw it at any time. If the Spell-Ball leaves their hand or touches any object other than their hand, it will discharge. The Night Prizes should be deposited in an Ashbin when convenient.

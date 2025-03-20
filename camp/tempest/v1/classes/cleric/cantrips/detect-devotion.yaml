@@ -1,11 +1,13 @@
 name: Detect Devotion
-incant: '"... to detect the faithful.”'
+incant: Standard
 call: '“[Name or Description], Subtle Discern by Radiance: Are you a follower of [Devotion]?”'
-target: Individual
+target: Idividual (Other)
 delivery: Verbal
-accent: None
+accent: Radiance
 duration: Instantaneous
 refresh: Immediate
 effect: Discern
 description: |
-  This divination spell will let the Cleric know if a particular creature is a believer of a specific religion or deity, depending on how the spell is cast. The spell may not always result in information, due to the frenetic nature of combat. This spell may be cast upon a living, unconscious, or dead creature, or a spirit.
+  This divination spell will let the Cleric know if a particular creature is a believer of a specific
+  Religion or Deity, depending on how the spell is cast. The spell may not always result in information, due
+  to the frenetic nature of combat. This spell may be cast upon a living, unconscious, dead creature, or spirit.

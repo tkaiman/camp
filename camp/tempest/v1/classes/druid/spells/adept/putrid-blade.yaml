@@ -1,0 +1,13 @@
+name: Putrid Blade
+incant: Standard
+call: “Imbue Weapon with [Short Taint by Disease]”
+target: Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Imbue
+description:
+  The Druid can summon the powers of rot and decay, infusing them into an
+  individual, tainting them, stopping healing from being effective and
+  possibly killing the victim of the attack.

@@ -1,0 +1,11 @@
+name: Expert Deflect
+incant: None
+call: "“Counter, Deflect!”"
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Focus Quick 100
+effect: Counter
+description: |
+  The Rogue can Counter any thrown weapon or projectile attack as long as the Rogue catches or deflects with their hands the Thrown Weapon or Projectile before it hits a part of the Rogue that isn’t their hands.

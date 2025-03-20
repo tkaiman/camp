@@ -1,0 +1,15 @@
+name: Rogue's Touch
+incant: None
+call: "“Rogue's Touch”"
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Immediate
+effect: Imbue
+description: |
+  While attempting a mundane lock, the character can call “Rogue’s Touch” if there is some negative effect to failing the lock, or failing to pick it in a certain amount of time. This will not Counter the negative effect, but will allow the character to try again from the beginning.
+
+  So if the Rogue had to pick a lock within one minute or take a Death Effect, they could take the minute, and as soon as the fact that there was a consequence for failure announced, they could call “Rogue’s Touch” and take another minute. If they do not immediately re-start the attempt or if they totally disengage from the lock, the consequence occurs.
+
+  At 10th level, the Rogue may do this twice on the same lock.

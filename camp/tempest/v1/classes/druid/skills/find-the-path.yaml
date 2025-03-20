@@ -1,5 +1,5 @@
 name: Find the Path
-cost: 2
+cost: 1
 requires: druid:2
 incant: “By dawning growth that blooms in Spring I ask the forest for a path forward.”
 call: "Short Grant Tracking to Self"
@@ -9,7 +9,7 @@ accent: None
 duration: Short Rest
 refresh: Long Rest
 effect: Grant Tracking
-# TODO: Implement the "refund if you buy Tracking" clause.
+# TODO: Implement the "refund if you buy Tracking" clause. This is Not a Sami Note, it was already here.
 description: |
   Upon using this power, the character may ask the trees what they have seen,
   and follow specific paths. They can see and follow green flags marked with a

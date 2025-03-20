@@ -1,15 +1,12 @@
 name: Submerge
-tags: [waning-moon]
-incant: "...I fill my foe's lungs with water."
-call: Short Silence by Ice
+incant: Standard
+call: "Short Silence by Ice"
 target: Individual
-delivery: Weapon
+delivery: Spell-Ball
 accent: Ice
 duration: Short Rest
 effect: Silence
-description: |
-  This spell charges the Druid’s melee weapon to curse the victim with a drowning death. Once cast, the Druid may
-  do a single melee attack for “Short Silence by Ice.”
-
-  If the Druid is in the Form of the Waning Moon, then the Druid may follow up with a single swing of ”2 Ice”
-  against the target of the Silence effect, even if the Silence was Countered.
+refresh: Spell
+description:
+  This spell charges a Spell-Ball to curse the victim with lungs full of freezing
+  water causing "Short Silence by Ice."

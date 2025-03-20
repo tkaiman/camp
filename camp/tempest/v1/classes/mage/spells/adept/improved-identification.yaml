@@ -1,12 +1,22 @@
 name: Improved Identification
-incant: "...to reveal the secrets and portents of this item."
-call: "Discern: What are all the magical properties of this item?"
-target: Any number of non-relic special items
+incant: Standard
+call: "Discern to [Item] by Arcane: Identification"
+target: Any number of special items
 duration: Instantaneous
 delivery: Touch
-accent: None
+accent: Arcane
+refresh: Spell
 effect: Discern
 description: |
-  The Mage may learn all of the magical properties of all designated non-relic items. Although it is easy for anyone to determine if an item is magical or special in nature and read the information card to discover obvious properties, this spell will allow the player to look at the folded information card (even if they don’t meet the requirements on the outside) to know its exact properties. If any card says “Relic” on the public portion, this spell will not function on it. Only the caster will be allowed to read the properties, although if they choose to, they can open each item card to make the properties discoverable to anyone.
+  The Mage may learn all of the magical properties of all designated non-relic items.
+  Although it is easy for anyone to determine if an item is magical or special in nature
+  and read the information card to discover obvious properties, this spell will allow
+  the player to look at the folded information card (even if they don’t meet the
+  requirements on the outside) to know its exact properties.
 
-  **Note**: By game-design, Identify may have other specific uses.
+  Only the caster will be allowed to read the properties, although if they choose to,
+  they can open each item card to make the properties discoverable to anyone.
+
+  Note: While this spell allows relics to be identified, the object may still be
+  Obfuscated or otherwise masked, and Identification may not reveal all its properties.
+  In addition, by game-design, Improved Identify may have other specific uses.

@@ -4,8 +4,8 @@ call: "“Dispel [Mind or Will] by Will”"
 target: Self
 delivery: None
 accent: Will
-duration: Instantatious
+duration: Instantateous
 refresh: Short Rest
 effect: Dispel
 description: |
-  The Socialite can keep a certain part of their mind separate and inviolate. This part will watch over the character’s personality, even if that personality is suborned by enchantment magic. While under the effect of a condition using the Mind or Will accents, the character may at any time call “Dispel [Mind or Will] by Will”. This can be done even if the character has been ordered not to.
+  The Socialite can keep a certain part of their mind separate and inviolate. This part will watch over the character’s personality, even if that personality is suborned by enchantment magic. While under the effect of a Condition using the Mind or Will accents, the character may at any time call “Dispel [Mind or Will] by Will”. This can be done even if the character has been ordered not to.

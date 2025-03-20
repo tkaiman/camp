@@ -1,11 +1,11 @@
 name: Improvised Weapon
-incant: 'RP: Mime throwing a non-weapon object.'
+incant: None
 call: '“[Name or Description] [X]”'
 target: Individual
 delivery: Verbal
 accent: None
 duration: Instantaneous
 refresh: Short Rest
-effect: None, only damage
+effect: Damage
 description: |
-    In the right hands, anything is a weapon - a pencil, a cup, or even a coin. The Rogue may use a Spike to “Throw” non-weapon object as a weapon once to call “[Name or Description] [X],” where X is the Rogue’s current Spike Damage.
+    In the right hands, anything is a weapon - a pencil, a cup, or even a coin. The Rogue may use a Spike to “Throw” a non-weapon object as a weapon once to call “[Name or Description] [X],” where X is the Rogue’s current Spike Damage. The player should generally mime throwing an object and be careful not to throw anything that can cause actual harm.

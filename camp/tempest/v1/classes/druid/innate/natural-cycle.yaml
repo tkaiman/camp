@@ -1,0 +1,22 @@
+name: Natural Cycle
+requires: druid:9
+incant: None
+call: None
+target: None
+accent: None
+duration: Instantenous
+delivery: None
+refresh: Event
+effect: None
+description: |
+  Once per Event, after the Druid believes they have killed a creature (including and most
+  often through a successful Deathblow) they remove the restriction on their ability to Grant Life.  
+  This restriction to return someone to life in a particular Long Rest common among spells that
+  have the Grant Life effect. This power will only lift the restriction once, and one it has
+  does so, will not do so again.
+
+  If the Druid knows the target was not killed this power fails to refresh their ability to Grant Life
+  to another, however, the power is not wasted.
+
+  Note: This power does not refresh the Spell-Slot used to Grant Life, it just removes the restriction
+  the spell or power might have against doing so.

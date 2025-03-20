@@ -1,9 +1,9 @@
 name: Dominate Creature
-incant: "... to dominate the mind, bending it to my will."
+incant: Standard
 call: "Short Dominate by Mind"
 target: Individual
 duration: Short Rest
-delivery: Packet (Spell-Ball)
+delivery: Spell-Ball
 accent: Mind
 effect: Dominate
 description: |

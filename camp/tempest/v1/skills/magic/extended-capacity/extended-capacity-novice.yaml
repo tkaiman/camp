@@ -1,6 +1,6 @@
 name: Extended Capacity (Novice)
-cost: 2
-ranks: 3
+cost: 3
+ranks: 4
 requires:
   any:
     - basic-arcane

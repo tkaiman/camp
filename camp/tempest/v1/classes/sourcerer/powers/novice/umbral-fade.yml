@@ -1,9 +1,9 @@
 name: Umbral Fade
-incant: '"... to gather shadows and fade away.”'
+incant: Standard
 call: Short Grant Insubstantial by Darkness, Cure Insubstantial
 target: Self
 delivery: None
-accent: None
+accent: Darkness
 duration: Short
 refresh: Spell
 effect: Grant Insubstantial, Cure Insubstantial

@@ -1,0 +1,13 @@
+name: Warpfire
+incant: Standard
+call: Wounding 4 by [Eldritch Accent], Wounding 6 by Flame, Piercing 4 by Arcane
+target: Individual
+delivery: Spell-Ball
+accent: Eldritch Accent, Flame, Arcane
+duration: Instantaneous
+refresh: Spell
+effect: Wounding, Piercing
+description: |
+   When this spell is cast, Warpfire charges a Spell-Ball with Wounding 4 by [Eldritch Accent]. If the Eldritch Accent is Flame, the Spell does Wounding 6 instead. If the Eldritch Accent is Arcane, the Spell does Piercing 4 instead.
+
+   Enhancement: Adept Spell-Slot: Two additional Spell-Balls are charged.

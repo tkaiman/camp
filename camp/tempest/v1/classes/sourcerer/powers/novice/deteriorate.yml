@@ -1,11 +1,13 @@
 name: Deteriorate
-incant: '"... to erode your armor.”'
-call: Shatter Armor by Acid
+incant: Standard
+call: Dispel Summoned Armor by Acid, Shatter Armor by Force
 target: Individual
-delivery: Packet (Spell-Ball)
+delivery: Spell-Ball
 accent: Acid
 duration: Instantaneous
 refresh: Spell
-effect: Shatter
+effect: Dispel, Shatter
 description: |
-   When this spell is cast, Deteriorate charges one spell-ball with “Shatter Armor by Acid.”
+   When this Spell is cast, Deteriorate charges one Spell-Ball with “Dispel Summoned Armor by Acid.”
+
+   Enhancement: If the Sourcerer’s Eldritch Accent of their Source is Acid, this charges two Spell-Balls and they may call “Shatter Armor by Force” instead.

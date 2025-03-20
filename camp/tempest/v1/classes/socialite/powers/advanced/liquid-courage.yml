@@ -1,13 +1,13 @@
 name: Liquid Courage
-incant: 'RP: Drink a shot'
-call: '“Protect vs Will, Fear and Poison by Poison”'
+incant: None
+call: '“[Name or Description] Grant Protect vs Will, Fear, and Poison by Poison”'
 target: Individual
 delivery: Ingested
 accent: Poison
 duration: Until Used
 refresh: Short Rest
-effect: Protect
+effect: Grant Protect
 description: |
-  As a master of poisons, the Socialite knows the best defense against such poisons. They have developed their own potent brew that helps negate such negative effects. The Socialite lines up a round of shots of their own brew and gathers up to 6 people round the table.
+  As a master of poisons, the Socialite knows the best defense against their own tools.
 
-  Each person who consumes the viscous brew gains a Protect vs Will, Fear, and Poison by Poison as the liquid coats the inside of each person’s stomach and sturdies their mind.
+  Having developed their own potent brew to counter toxic effects, the Socialite may line up a round of shots for up to 6 people. Each person who consumes the brew gains a Protect vs Will, Fear, and Poison by Poison as the liquid coats the inside of their stomach and sturdies their mind.

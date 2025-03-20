@@ -1,10 +1,11 @@
 name: Mageskin
-incant: "... to protect the flesh"
-call: "Grant 2 Barrier and Grant Protect vs Weapon by Force"
+incant: Standard
+call: "Grant 2 Barrier and Protect vs Weapon by Force"
 target: Individual
 delivery: Touch
 accent: Force
 duration: Until Used
+refresh: Spell
 effect: Grant Barrier, Grant Protect
 description: |
-  Mageskin summons two points of Barrier for the target and grants them one Protect against Weapons by Force.
+  Mageskin summons two points of Barrier for the individual one Protect against Weapons for the individual.

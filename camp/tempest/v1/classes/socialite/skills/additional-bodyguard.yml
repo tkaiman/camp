@@ -10,6 +10,6 @@ delivery: None
 accent: None
 duration: Instantaneous
 refresh: Immediate
-effect: Refresh
+effect: None
 description: |
-  The Socialite has mastered the arts of social manipulation such that they may have an additional Bodyguard. The Socialite may use The Right Hand power to designate one other individual as their Bodyguard.
+  The Socialite has mastered the arts of social manipulation such that they may have an additional Bodyguard. The Socialite may use The Right Hand power to designate one other individual as their Bodyguard. Purchasing this Power also grants the Socialite the privilege of purchasing another Right Hand Power.

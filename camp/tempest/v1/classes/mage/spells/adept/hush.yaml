@@ -1,13 +1,16 @@
 name: Hush
-incant: "...to bring forth silence."
+incant: Standard
 call: "Short Silence by Will"
 target: Individual
 duration: Short Rest
-delivery: Packet (Spell-Ball)
+delivery: Spell-Ball
 accent: Will
+refresh: Spell
 effect: Silence
 description: |
-  When this spell is cast, Hush charges two spell-balls with “Short Silence by
+  When this spell is cast, Hush charges two Spell-Balls with “Short Silence by
   Will.” The target of this spell is rendered unable to make vocal noises for
   the duration, including casting (but not including out of game calls or
-  responses). If the caster expends a Spike an additional Spell ball is charged.
+  responses).
+
+  Enchancement: If the caster expends a Spike an additional Spell-ball is charged.

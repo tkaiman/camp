@@ -1,10 +1,12 @@
 name: Lucent Guard
-incant: '"... to grant protection from weapons.”'
-call: '“Grant Protect vs Melee Weapons By Radiance”, “Grant 3 Barrier to Self”'
-target: Individual
-delivery: Touch
+incant: Standard
+call: '“Grant Protect vs Weapons By Radiance”, “Grant 3 Barrier by Radiance”'
+target: Individual, Self
+delivery: Touch, None
 accent: Radiance
-duration: Until Discharged
+duration: Until Used
+refresh: Spell
 effect: Grant Protect, Grant Barrier
 description: |
-  This spell grants a single Protection from Melee Weapons. The recipient should call out “Protect” to counter a melee weapon attack. The Cleric also gains 3 points of Barrier themselves on casting this spell.
+  This spell grants a single Protection from Weapons. The Cleric also gains 3 points of Barrier
+  themselves on casting this spell.

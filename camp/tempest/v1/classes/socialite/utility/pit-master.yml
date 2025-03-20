@@ -6,16 +6,19 @@ delivery: Verbal
 accent: None
 duration: Instantaneous
 refresh: Short Rest
-effect: Taunt, Instruction
+effect: None
 description: |
-  The Socialite gains 2 wealth per Event at check-in.
+  The Socialite gains 2 Wealth per Event at Logistics check-in.
 
-  To declare the duel the Socialite calls the following at thematically appropriate moments:  “I declare this duel honorable and just!”, “Duelists, are you ready?”, “Fight!”, “Winner!”
+  Additionally, the Socialite can serve as an intermediary between two combatants who wish to beat each other to a pulp. The Socialite declares the fight and ensures everyone knows the rules. Once the two duelists accept the duel, the Pit Master has a few Instructions to give. This need not be verbatim:
 
-  Additionally, the Socialite can serve as an intermediary between two combatants who wish to beat each other to a pulp. The Socialite declares the fight and ensures everyone knows the rules. At the moment the Socialite declares the fight, the participants should take stock of their abilities. When the fight concludes and a winner is declared by the Socialite, the Socialite may refresh all the abilities the winner used during the fight.
+  “Instruction to [Names of Duelists]: You will be unable to use Powers or make attacks on anyone but each other until this duel ends. The duel ends when I declare a winner, when one of you takes damage or an Effect from someone not in this duel, or one of you admit defeat to the other. When the duel ends, you will have all the same Powers, Life Points, and Armor Points you have right now, regardless of what is used during the duel; only expended Resources will remain expended.”
 
-  Upon use of this power, the Socialite may take stock of the powers and abilities of two willing combatants and allow them to engage in a mediated fight. Once the two duelists accept the duel, they gain the Short Inherent Taunt 1 condition to each other.
+  The duel is declared by the Socialite with the following calls at thematically appropriate moments:
 
-  If the duel is interrupted for any reason, including any combatant leaving the Duel area, it immediately ends.
+  * “I declare this duel honorable and just!”
+  * “Duelists, are you ready?”
+  * “Fight!”
+  * “Winner!”
 
-  Once the duel is concluded, the Socialite must Call ”Instruction: Return to your state when the duel began.”
+  If the Socialite knows that the duel has ended, they must inform the duelists.

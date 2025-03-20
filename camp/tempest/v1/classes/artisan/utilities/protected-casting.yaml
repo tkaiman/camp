@@ -1,22 +1,16 @@
 name: Protected Casting
 tags: [mystic]
+incant: None
+call: Explanation
+target: One Circle
+delivery: Touch
+duration: Special
+refresh: Long Rest
 description: |
-  When casting a ritual, the Artisan and additional Participants up to the Ritualist’s levels in Artisan,are shrouded by a magic circle. The circle is only big enough to encompass the Ritual itself. The circle becomes active when the ritual begins, and dissipates immediately when the ritual ends. Once the circle is up, the Artisan and each additional Participant gains a number of Counters vs Weapons equal to one third their Artisan class-levels. These protections will prevent disruption of the ritual by weapon delivered damage and effects - the Artisan/Participant need only say “Counter, Protected Casting” when struck to acknowledge the attack, but the ritual remains undisrupted.
+  The Artisan can protect a ritual from disturbance with a small rite of consecration. First, the Artisan lays down a white rope or cord that is no longer than 100 feet long that has been laid down to make a continuous shape (usually a circle). Then the Artisan walks the perimeter of the rope, chanting and speaking words of mystic significance. During this time, the Artisan should also explain to the others who will take part in the Ritual how the Weapon and Materia resistance works (see below). This should take at least 30 seconds.
 
-  These defenses are lost when the circle dissipates. The Artisan is responsible for providing the physical representation of this, otherwise the circle does not form.
+  Anyone not there for the explanation, will not get the benefit. At the completion of this invocation, the caster should touch the completed circle, and declare the casting complete, at which point the lain rope cannot be purposefully moved by anyone other than the caster, and anyone who attempts to do so should be informed by use of “Instruction: You may not move the rope.” or similar. This does not prevent people from crossing the threshold of the cord, rope, or the like.
 
-  Further, before the ritual, the Artisan may perform a Focus Slow 120 to draw out the power of a Forgesource, sacrificing it in the process to gain a number of uses of Repulsive Ritualist equal to half their Artisan level.
-subcard:
-  name: Repulsive Ritualist [Utility] [Mystic]
-  incant: None
-  call: '“[Name or Description] Short Obey by Fear: Do not intentionally disrupt this ritual.”'
-  target: Individual
-  duration: Short Rest
-  delivery: Verbal
-  refresh: Long Rest
-  accent: Fear
-  effect: Repel
-  description: |
-    While the Artisan is a ritualist actively engaged in a ritual, they can Repel other creatures who come near. The Artisan may use this Power without disrupting the ritual they are working on, even if the Ritual would normally be disrupted by the Ritualist using Powers.
+  Should the rope be moved purposefully by the caster, the Power ends. This should be communicated to others trying to touch or manipulate it. The circle can be Dispelled by Dispel Magic and similar magic. The circle’s power ends as soon as a ritual completes inside it, or when moved by the caster, whichever comes first.
 
-    **Note**: the use of this Power may not be enough to stop them from disrupting a Ritual.
+  While inside the cord and engaged in a Ritual casting, all Ritualists and Participants actively involved in a Ritual have resistance to Weapons and Materia from sources not involved with the ritual and taking damage from Weapons and Materia will not disrupt the Ritual.

@@ -1,11 +1,12 @@
 name: Bright Bolt
-incant: '"... for a bright bolt.”'
+incant: Standard
 call: '“1 Radiance”'
 target: Individual
-delivery: Packet (Spell-Packet)
+delivery: Spell-Packet
 accent: Radiance
 duration: Instantaneous
 refresh: Immediate
-effect: None, damage only
+effect: Damage
 description: |
-  This minor cantrip charges a spell-packet of materia with an explosive burst of tangible light which will do 1 point of damage to those that it hits.
+  This minor cantrip charges a Spell-Packet with an explosive burst of tangible light which
+  will do 1 point of damage to those that it hits.

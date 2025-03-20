@@ -1,0 +1,34 @@
+name: Grove
+requires: druid:10
+incant: "RP: Sanctification Rite of Druid’s Creation"
+call: None
+target: One Location
+duration: Event
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Imbue
+description: |
+  The Druid can create a special area that is their grove. To do this, the Druid should do
+  a small sanctification rite of their choosing, role-playing creating a connection with the
+  grove for at least a minute. The grove will last until the beginning of the next Event (even
+  if the Druid is not in attendance). The area must either be marked off with a border of green
+  material (rope, engineering tape, etc.) not to exceed 100ft long, or be an obvious area (such
+  as an actual clearing).
+
+  The area may not have any permanent structures in it but may overlap with Druid groves that already
+  exist, as long as the other Grove’s owner consents. The area should have some natural significance
+  or beauty; just putting it on the lawn in front of the Tavern may cause Staff to claim the Grove is
+  defunct. The Druid must provide an easily visible item card for the grove, indicating that it is a
+  special place, its effects, the name of the Druid who created it, and any others presently attuned to
+  it, which must be posted somewhere easily visible in the center of the grove itself.
+
+  The grove has a number of properties:
+
+    * The plants and vegetation there grow particularly well, as if perfectly watered with plenty of sunlight.
+    * Plants and small animals within the grove are cheered, and generally feel safe and happy.
+    * Plants and small animals within the grove are unusually hardy and difficult to be blighted, diseased,
+      or harmed by outside magic.
+    * The area is considered a Natural Locus, and should be conspicuously noted as such on the card.
+    * The first time that the Druid discorporates during the given Event, they may Sacrifice an Eternal Blossom
+      to resurrect with 1 Life Point at their Grove instead of visiting the Keepers.

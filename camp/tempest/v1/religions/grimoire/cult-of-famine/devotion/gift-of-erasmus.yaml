@@ -1,0 +1,8 @@
+name: The Gift of Erasmus
+cost: 0
+level: basic
+soft_requires: gheist
+description: |
+  The character gains the Hollow type. If this Devotion Power is taken after character creation, the Character may choose to reselect their breed Challenges and Advantages, but must include Gheist as one of their Breeds.
+
+# TODO: Implement breed change mechanic.

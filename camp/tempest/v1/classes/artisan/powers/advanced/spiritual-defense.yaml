@@ -1,0 +1,9 @@
+name: Spiritual Defense
+tags: [mystic]
+call: “Counter, Spiritual Defense”
+target: Self
+delivery: None
+duration: Instantaneous
+refresh: Short Rest
+description: |
+  The Artisan’s very spirit itself has been strengthened through their dabbling in Mystical forces. When targeted with a Power or attack that has the “to Living”, “to Substantial”, or “to [Artisan’s Devotion]” qualifiers the Mystic may call “Counter, Spiritual Defense” and negate the attack. If the Mystic believes they know the name of the creature that attacked the Mystic, the Mystic may also gain five Barrier when they use this Power. The Mystic being correct about the target’s name is inconsequential for this Power, only that the Mystic has a good faith belief that the name is correct.

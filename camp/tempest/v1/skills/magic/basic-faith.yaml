@@ -1,18 +1,5 @@
 name: Basic Faith
 cost: 4
-requires: level:1
-choices:
-  spell:
-    name: Novice Divine Spell
-    limit: 4
-    matcher:
-      type: spell
-      sphere: divine
-      tier: 1
-      parent:
-        type: class
-    controller: sphere-grant
-    controller_data:
-      sphere: divine
+# TODO: Implement (If needed, almost nobody should need this)
 description: |
-  The character learns how to record Divine spells into a spellbook and Prepare them. They can add four Novice-tier Divine spells into their spellbook. If the character has levels in a Divine spell-casting class, these spells must all be spells from one of those classes. This skill confers no actual spell-slots or preparation slots.
+  The character learns how to record Divine spells into a spellbook. They will know one Spell, or however many are listed in their Divine spellcasting class, whichever is more. If the character has levels in a Divine spell-casting class, these spells must all be spells from one of those classes. If the character has no spell-casting class, they may choose from any Base Class’s spell list. This skill confers no actual spell-slots or preparation slots.

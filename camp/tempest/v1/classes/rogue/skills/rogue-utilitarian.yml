@@ -1,0 +1,6 @@
+name: Utilitarian
+cost: 4
+requires: rogue:6
+grants: rogue.utilities:1
+description: |
+  The Rogue learns an additional Utility Power from the Rogue Utility Powers.

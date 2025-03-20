@@ -1,0 +1,15 @@
+name: Mage Power
+incant: Standard
+call: "Refresh Basic Short Rest Base Class Martial Power"
+target: Individual
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Spell
+effect: Refresh
+description:
+  The Mage reinvigorates a martial target transforming Arcane energy into
+  strength for the target to power through. The target of this spell
+  immediately refreshes one Basic Base Class Martial Power with a recovery
+  period of Short Rest. The same target may only be affected by any
+  particular Mage’s Mage Power spell once per Long Rest.

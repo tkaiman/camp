@@ -3,6 +3,8 @@ requires: profession-journeyman
 grants:
   - profession-master
 description: |
-  The Socialite has mastered their trade and expanded their business throughout the region. They gain the Profession - Master skill.
+  The Socialite has mastered their trade and expanded their business throughout the region.
 
-  In addition, they have the complete support of a small caravan who will take them wherever they would like, so long as they are willing to flex their chosen trade or charismatic acumen for them from time to time. This caravan counts as an additional movement action during BGEs, and may be used in conjunction with Steed.
+  In addition, they have the complete support of a small caravan who will take them wherever they would like… so long as they are willing to flex their chosen trade or charismatic acumen for them from time to time.  While this has no hard mechanical effect the Socialite should feel free to bring it up when scenes are being narrated where it may be helpful to have such transportation.
+
+  Finally, the Socialite gains the caravan often comes with odd stories and tales from the outside world, which they gladly share with the Socialite, this mechanically is represented by the power to refresh, Bits and Pieces if they have the Perk, once per event.

@@ -1,10 +1,16 @@
 name: Burn
-incant: '"... to burn my enemies with divine heat.”'
-call: '“Quick Disarm [Left Arm/Right Arm/Both Arms] by Flame.”'
+incant: Standard
+call: '“Quick Disarm [Left/Right/Both] Arm(s) by Flame.”'
 target: Individual
-delivery: Packet (Spell-Ball)
+delivery: Spell-Ball
 accent: Flame
 duration: Quick 100
+refresh: Spell
 effect: Disarm
 description: |
-  The Cleric calls down holy flame to cause another’s equipment to burn. Any hand that is holding an item will cause that equipment to be disarmed. The caster should only call out arms that they can tell are holding items. If the caster cannot tell whether the hand is empty or not, that arm shouldn’t be called, and is not disarmed. If the caster expends a Spike an additional Spell ball is charged.
+  The Cleric calls down holy flame to cause another’s equipment to burn. Any hand that is holding an
+  item will cause that equipment to be disarmed. The caster should only call out arms that they can
+  tell are holding items. If the caster cannot tell whether the hand is empty or not, that arm
+  shouldn’t be called.
+
+  Enhancement: Expend a Spike: An additional Spell-Ball is charged.

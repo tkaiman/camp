@@ -1,10 +1,15 @@
 name: Heal
-incant: '"... to heal you.”'
+incant: Standard
 call: '“Heal 3 by Radiance”'
 target: Individual
-delivery: Packet (Spell-Ball)
+delivery: Spell-Ball
 accent: Radiance
 duration: Instantaneous
+refresh: Spell
 effect: Heal
 description: |
-  The caster heals the target of the spell for 3 Life Points. With this spell, the caster can add two points to a Cleric’s Healing Touch pool if they have one. If the caster has the Peacecaster skill, instead the caster will add three points into their Healing Touch pool if they have one.
+  The caster heals the target of the spell for 3 Life Points. This spell also adds 2 points
+  to the Cleric’s Healing Touch pool or 3 if they have Peacecaster.
+
+  Enhancement: Adept Spell-Slot: Heals for 10.
+  Enhancement: Greater Spell-Slot: Heals for 20.

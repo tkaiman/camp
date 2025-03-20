@@ -5,7 +5,7 @@ sphere: arcane
 starting_features:
   - basic-arcane
   - basic-scholarship
-  - novice-spell-scholar
+  - bookcaster:2
   - lore
 multiclass_features:
   - basic-arcane
@@ -21,6 +21,7 @@ choices:
         - mage-magical-specialty-1
         - mage-magical-specialty-2
         - mage-magical-specialty-3
+        - mage-magical-specialty-4
 description: |
   The Mage is truly a power to be reckoned with. Their offensive magic is effective and lethal
   and their defensive magic is some of the most potent available. There are few classes that
@@ -52,7 +53,7 @@ description: |
   > “I conjure words of arcane might, from studied tomes in candlelight,  
   > I draw my strength from sky and land. Gather now within my hand.  
   > From planes beyond, my power's Source, By Word and Will I give it force.  
-  > My Word as law, my Will supreme, I fuse the strength of truth and dream…”  
+  > My Word as law, my Will supreme, I fuse the strength of truth and dream…”
 ---
 id: mage-spikes-bonus
 type: subfeature
@@ -66,26 +67,34 @@ id: mage-magical-specialty-1
 type: subfeature
 parent: mage
 name: Spellcasting Specialist
-description: Grants Spell Preparation, Extended Capacity - Novice, Library Use
+description: Grants Extended Capacity - Novice x2
 category: Mage Starting Skills
 display_type: Path
 grants:
-  - spell-preparation
-  - extended-capacity-novice
-  - library-use
+  - extended-capacity-novice:2
 ---
 id: mage-magical-specialty-2
 type: subfeature
 parent: mage
-name: Bookcasting Specialist
-description: Grants Additional Recharge, Novice Bookcaster
+name: Generalist
+description: Grants Advanced Recharge, Bookcaster x2
 category: Mage Starting Skills
 display_type: Path
 grants:
-  - additional-recharge
-  - novice-bookcaster
+  - advanced-recharge
+  - bookcaster:2
 ---
 id: mage-magical-specialty-3
+type: subfeature
+parent: mage
+name: Bookcasting Specialist
+description: Grants Bookcaster x2
+category: Mage Starting Skills
+display_type: Path
+grants:
+  - bookcaster:6
+---
+id: mage-magical-specialty-4
 type: subfeature
 parent: mage
 name: Cantrip Specialist

@@ -9,10 +9,16 @@ duration: Instantaneous
 refresh: Immediate
 effect: Refresh
 description: |
-  This Power gives the Cleric a limited ability to Refresh spent spell-slots. The Cleric can spend a Short Rest in prayer, either alone or with others, re-focusing on their faith and religion.
+  The Cleric can pray to their divinity or religion to rebuild focus and refresh their
+  Divine Spell-slots. The Cleric can spend a Short Rest studying their spell-book, meditating,
+  or speaking to their higher powers.
 
-  Between Long Rests, the Cleric can refresh a number of Divine Novice spell-slots equal to two times their total levels in their Divine-casting Classes. This power may be used to refresh spells from any of this character’s Divine spellcasting classes, but this power does not stack with similar powers from those classes.
+  The Cleric can perform this special study and refresh all of their expended Divine spell-slots.
+  If the Cleric has used any other Innate Power from another class to refresh their Divine
+  spell-slots this long rest they may not use Refreshing Prayer.
 
-  This can be done in any increment and the Cleric can refresh a Divine Adept spell-slot in the place of two Divine Novice spell-slots. Greater spell-slots take the place of three Novice spell-slots, and Master spell-slots take the place of four Novice spell-slots.
-
-  Additional benefits come if this Power is used in an area of sacred faith (such as consecrated ground), with a personal rite (determined by the Cleric). Up to three times per Long Rest, if the Cleric uses this Power in that way, they can Refresh a Divine Novice spell-slot that does not count toward the total Refresh limit between Long Rests. This may occur in addition to Refreshing other spell-slots as normal.
+  Alternatively, if the Cleric prays in an area of sacred faith (such as consecrated ground),
+  especially an area sacred to the Cleric’s religion or divinity, the Cleric gains three additional
+  Novice-tier Spell-Slots (These may exceed the normal maximum slots the Cleric would have).
+  These Spell-Slots last until the Cleric completes a Long Rest. Additional benefits may be
+  possible (see the Character Options chapter for more details).

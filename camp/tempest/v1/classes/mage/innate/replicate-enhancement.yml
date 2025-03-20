@@ -1,0 +1,18 @@
+name: Replicate Enhancement
+requires: mage:2
+incant: None
+call: None
+target: None
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Immediate
+effect: None
+description: |
+  When casting a non-damaging touch Mage spell, the number of targets is
+  increased by one. The spell must have a target of Individual, shield, or
+  armor, the listed Delivery must be Touch (Spells cast as Touch do not
+  get this benefit).
+
+  Once they achieve 7th level Mage they may add one additional target
+  per cast. At 12th, they gain a third additional target.

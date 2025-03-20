@@ -1,0 +1,14 @@
+name: Enchanted Thorn
+incant: Standard
+call: “1”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Packet
+refresh: Immediate
+accent: None
+effect: Damage
+description:
+  The Druid is able to create a wooden thorn that can be thrown as a Thrown Weapon.
+  The caster can use any Powers or other abilities (like Spikes) on the thorn. When
+  the Spell-Packet strikes, however, it will act as a Spell-Packet, not a Weapon and
+  will be defended against appropriately.

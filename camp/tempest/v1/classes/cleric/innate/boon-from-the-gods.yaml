@@ -1,0 +1,38 @@
+name: Boon from the Gods
+requires: cleric:10
+incant: None
+call: 'Explanation, "Refresh [Power] by Radiance"'
+target: Other Individual
+delivery: Verbal
+accent: Radiance
+duration: Instantaneous
+refresh: Event
+effect: Refresh
+description: |
+  After having an extended conversation with a mortal representative of their Devotion (such as a
+  Divine Hand, Divine Shield, Exemplar, Inquisitor, or future roles or classes with the [Religious]
+  tag), the Cleric may be granted the blessing of that representative and receive the grace of their
+  shared divine faith.
+
+  The granting representative has the sole discretion to decide if the Cleric has earned their
+  favor in this way.
+  Should the representative decide the Cleric is worthy, they may use any unexhausted Power they
+  have normally with a target of Self or Individual on the Cleric and immediately refresh the power
+  as though they hadn’t used it. In all other ways, the power works normally on the Cleric.
+
+  This power should be explained to the representative including the ability to not grant the blessing.
+
+  In addition, this Power can be used with a supernatural Entity such as an Angel, Demon, or even the Deity
+  of their Devotion. In this particular circumstance the Entity might use the connection to confer a measure
+  of divine power, should they deem the Cleric worthy and their situation commensurate.
+
+  Simple prayer generally is not enough to ask for such a Boon through this power, and the Entity must be
+  present with the Cleric: often the Commune Divine Ritual is used for this purpose.
+
+  Note: One common boon requested of Entities is to Refresh all Novice, Adept, and Greater spell slots spent
+  previously. This is generally granted as long as the Cleric has been performing their duties with rigor and
+  following the Tenets of their Devotion faithfully.
+
+  However, what is granted is up to the Entities discretion and may vary greatly, as are the consequences of
+  being found unworthy or the presumption of the request. Asking powerful Entities for boons is not without risk,
+  especially Entities known to be fickle or exacting.

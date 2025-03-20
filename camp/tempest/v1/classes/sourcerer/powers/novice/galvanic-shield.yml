@@ -1,0 +1,13 @@
+name: Galvanic Shield
+incant: Standard
+call: Short Grant Galvanic Shield by Lightning
+target: Self
+delivery: None
+accent: Lightning
+duration: Short Rest
+refresh: Spell
+effect: Grant Power, Grant Barrier
+description: |
+  Until the Sourcerer’s next Short Rest, each time the caster lands a Lightning-Accented Cantrip or Spell on a foe, the caster may Call “Grant 1 Barrier by Lightning” to themself.
+
+   **Note**: Recall that the Stacking Limit for Barrier from different sources is 3, including separate applications from this spell.

@@ -1,0 +1,11 @@
+name: Mystic Mirror
+incant: Standard
+call: Grant Protect vs Materia,  Imbue [Call]
+target: Self, Individual
+delivery: None, Spell-Ball
+accent: None, Eldritch Accent
+duration: Until Used
+refresh: Spell
+effect: Grant Protection, Imbue
+description: |
+  This spell grants a Protection vs Materia to the Sourcerer. They may charge a Spell-Ball with the exact Call that the Prevented attack had, although when the Sourcerer throws their Spell-Ball, its Accent will be one of their Eldritch Accents.

@@ -1,0 +1,18 @@
+name: Red in Tooth and Claw
+cost: 2
+requires: druid:1
+incant: None
+call: None
+target: Self
+accent: None
+duration: Passive
+delivery: None
+refresh: None
+effect: None
+description:
+  Early in every Druid’s life comes the time in which they must defend
+  themselves, whether from the natural denizens of forest, or the “civilized”
+  of the cities. Many learn that always having a means of defense at a moment’s
+  notice can mean the difference between life and death. The Druid may manifest
+  up to two Short Claws as Natural weapons and can use them proficiently. These
+  claws should be no longer than 36” long.

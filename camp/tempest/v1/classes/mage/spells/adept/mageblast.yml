@@ -1,0 +1,11 @@
+name: Mageblast
+incant: Standard
+call: "Wounding 10 by Force"
+target: Individual
+delivery: Spell-Ball
+accent: Force
+duration: Instantaneous
+refresh: Spell
+effect: Wounding
+description:
+  This powerful bold does 10 points of Force damage to those it hits.

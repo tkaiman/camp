@@ -1,11 +1,15 @@
 name: Rapid Shot
+ranks: 3
 incant: None
-call: '“Wounding [X]” or “Piercing 3“'
+call: “Wounding [X]”
 target: Individual
 delivery: Weapon
 accent: None
 duration: Instantaneous
 refresh: Short Rest
-effect: Wounding, Piercing
+effect: Wounding
 description: |
-  While wielding a projectile weapon, if the fighter lands (hits the target, even if Countered) two consecutive shots on the same target, they may expend a Spike to make the second shot Wounding [X] where X is the Fighter’s Spike Damage. If the attack was already Wounding due to another Effect or Power, the call is “Piercing 3” instead.
+  While wielding a projectile weapon, if the Fighter lands (hits the target,
+  or their equipment, even if Prevented) two consecutive damaging shots on the
+  same target, they may expend a Spike to make the second shot Wounding [X]
+  where X is the damage called for the first shot.

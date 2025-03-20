@@ -1,0 +1,16 @@
+name: Armored Shell II
+requires:
+  - fighter:10
+  - armored-shell
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: None
+description:
+  Once the Fighter reaches 10th level, they gain +1 to their Armor Point
+  total as long as they are wearing at least one point of Physical Armor.
+  This increases to +2 when the character reaches 15th level Fighter.

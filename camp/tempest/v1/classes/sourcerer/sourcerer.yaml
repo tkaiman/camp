@@ -4,12 +4,12 @@ category: Basic Class
 sphere: arcane
 starting_features:
   - basic-arcane
-  - warcaster
+  - advanced-recharge
 multiclass_features:
   - basic-arcane
 level_grants:
   2: cancel
-  7: sourc-spikes-bonus
+  9: sourc-spikes-bonus
 choices:
   contract-with-other:
     starting_class: true
@@ -57,8 +57,8 @@ display_type: Path
 parent: sourcerer
 name: Power Contract
 category: Sourcerer Starting Skills
-grants: extended-capacity-novice:3
-description: Extended Capacity - Novice x3
+grants: extended-capacity-novice:2
+description: Extended Capacity - Novice x2
 ---
 id: contract-with-other-2
 type: subfeature

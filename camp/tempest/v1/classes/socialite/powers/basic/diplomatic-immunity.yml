@@ -1,11 +1,11 @@
 name: Diplomatic Immunity
 incant: '“By the ancient laws, I call for parley!”'
-call: '“Short Grant Insubstantial to Self by Will”, “Cure Insubstantial to Self by Will”'
+call: '“Short Grant Insubstantial”, “Cure Insubstantial”'
 target: Self
 delivery: None
-accent: Will
+accent: None
 duration: Short Rest
 refresh: Long Rest
-effect: Grant Insubstantial
+effect: Grant Insubstantial, Cure
 description: |
-  The Socialite must raise their hands in the air, palms open, with nothing held in either hand other than a white flag (not required, but allowed). As long as their hands are visible, and not holding anything other than the white flag, and does not move their feet, they may remain Insubstantial. The character cannot benefit from Rests while this Power is active.
+  Upon raising hands while holding nothing but a white flag (optional), the Socialite may call “Short Grant Insubstantial.” They must call “Cure Insubstantial” on themselves upon lowering and/or obscuring their hands or moving their feet. The character cannot benefit from Rests while this Power is active.

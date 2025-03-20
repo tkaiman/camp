@@ -1,15 +1,17 @@
 name: Third Hand
-cost: 2
+cost: 1
 requires:
   - socialite:6
   - the-right-hand
-incant: 'RP: Explaining how they are going to hold the spell for the bodyguard'
-call: '“Charged”, Explanation'
+incant: None
+call: 'Explanation'
 target: Self
 delivery: None
 accent: None
 duration: Short Rest
-refresh: Short Rest
-effect: Special
+refresh: Long Rest
+effect: None
 description: |
-  The Socialite is able to hold charged spell packets that the Bodyguard has cast beforehand. While the Socialite is holding the Spell Packet, they are subject to all casting rules for packets. Until the packet is retrieved by the Socialites Bodyguard, or a Short Rest, the Socialite may freely carry the charged spell packet as if they had cast the spell themselves. The Bodyguard that cast the spell must be the bodyguard that retrieves the spell.
+  After a brief inspection of the Bodyguard’s materia, and an explanation of this Power, the Socialite becomes able to hold charged Packets (of either kind) that their Bodyguard has cast. The Socialite and the Bodyguard can pass Packets back and forth without them being discharged. The Socialite cannot use the Packets, only hold them. Packets held by the Socialite will not discharge or lose their charge if the Bodyguard casts other Spells. The Socialite is subject to all the rules for holding the Packet, but once the Socialite completes a Short Rest and this Power ends, any Packets still being held will also become inert. When the Packet is passed back and forth, the two should remind each other of the Call held within the Packet.
+
+  **For Example:** *Trobriand is the Bodyguard for Jheshyra, who has activated Third Hand. Trobriand, an Artificer, creates a charged Packet with Acid-Soak. He hands it to Jheshyra and says “Reminder: Wounding 8 by Acid”. He then does some other things, including creating other Packets and throwing them, before asking for the Packet back. Jheshyra hands him the Spell-Ball and says “Reminder: Wounding 8 by Acid”.*
