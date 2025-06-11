@@ -40,18 +40,13 @@ puremagic = "^1.21"
 camp-engine = { git = "https://github.com/kw/camp-engine.git" }
 # camp-engine = { path = "../camp-engine", develop = true }
 django-recaptcha = "^4.0.0"
+psycopg = { extras = ["binary"], version = "^3.1" }
 
 [tool.poetry.group.dev.dependencies]
 ipython = "~=8.2"
 pre-commit = "*"
 pytest = "^7.1"
 pytest-django = "^4.8.0"
-
-[tool.poetry.group.postgres]
-optional = true
-
-[tool.poetry.group.postgres.dependencies]
-psycopg = { extras = ["binary"], version = "^3.1.18" }
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = 'config.settings'
