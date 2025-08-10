@@ -85,7 +85,24 @@
     <h3>Granted Features</h3>
     <ul>
     {% for subfeat in feature.granted_features %}
-    <li><a href="{% url 'character-feature-view' character.id subfeat.full_id %}">{% name_without_tags subfeat feature.id %}</a></li>
+    <li><a href="{% url 'character-feature-view' character.id subfeat.full_id %}"
+           data-bs-toggle="tooltip" 
+           data-bs-html="true"
+           data-bs-placement="top"
+           data-bs-custom-class="skill-tooltip"
+           data-bs-title="
+           <div class='tooltip-content'>
+             <strong>{{ subfeat.display_name }}</strong>
+             {% if subfeat.purchase_cost_string %}
+             <br><strong>Cost:</strong> {{ subfeat.purchase_cost_string }}
+             {% endif %}
+             {% if subfeat.power_card and subfeat.power_card.effect %}
+             <br><strong>Effect:</strong> {{ subfeat.power_card.effect }}
+             {% endif %}
+             {% if subfeat.power_card and subfeat.power_card.description %}
+             <br><strong>Description:</strong> {{ subfeat.power_card.description|truncatechars:200 }}
+             {% endif %}
+           </div>">{% name_without_tags subfeat feature.id %}</a></li>
     {% endfor %}
     </ul>
     </div>
@@ -96,7 +113,25 @@
     <h3>Discounted Features</h3>
     <ul>
     {% for subfeat, amount in feature.discounted_features %}
-    <li><a href="{% url 'character-feature-view' character.id subfeat.full_id %}">{{ subfeat.display_name }}: {{amount}}</a></li>
+    <li><a href="{% url 'character-feature-view' character.id subfeat.full_id %}"
+           data-bs-toggle="tooltip" 
+           data-bs-html="true"
+           data-bs-placement="top"
+           data-bs-custom-class="skill-tooltip"
+           data-bs-title="
+           <div class='tooltip-content'>
+             <strong>{{ subfeat.display_name }}</strong>
+             <br><strong>Discount:</strong> {{amount}}
+             {% if subfeat.purchase_cost_string %}
+             <br><strong>Original Cost:</strong> {{ subfeat.purchase_cost_string }}
+             {% endif %}
+             {% if subfeat.power_card and subfeat.power_card.effect %}
+             <br><strong>Effect:</strong> {{ subfeat.power_card.effect }}
+             {% endif %}
+             {% if subfeat.power_card and subfeat.power_card.description %}
+             <br><strong>Description:</strong> {{ subfeat.power_card.description|truncatechars:200 }}
+             {% endif %}
+           </div>">{{ subfeat.display_name }}: {{amount}}</a></li>
     {% endfor %}
     </ul>
     </div>
@@ -121,7 +156,25 @@
             <input type="hidden" name="choice" value="{{choice.id}}">
             <ul>
                 {% for f, name in choice.taken.items %}
-                <li><a href="{% url 'character-feature-view' character.id f %}">{{ name }}</a>
+                <li><a href="{% url 'character-feature-view' character.id f %}"
+                       data-bs-toggle="tooltip" 
+                       data-bs-html="true"
+                       data-bs-placement="top"
+                       data-bs-custom-class="skill-tooltip"
+                       data-bs-title="
+                       <div class='tooltip-content'>
+                         <strong>{{ name }}</strong>
+                         <br><strong>Type:</strong> Choice Selection
+                         {% if f.purchase_cost_string %}
+                         <br><strong>Cost:</strong> {{ f.purchase_cost_string }}
+                         {% endif %}
+                         {% if f.power_card and f.power_card.effect %}
+                         <br><strong>Effect:</strong> {{ f.power_card.effect }}
+                         {% endif %}
+                         {% if f.power_card and f.power_card.description %}
+                         <br><strong>Description:</strong> {{ f.power_card.description|truncatechars:200 }}
+                         {% endif %}
+                       </div>">{{ name }}</a>
                     {% if f in choice.removable %}
                         <button type="submit" class="btn btn-danger btn-sm d-print-none" name="selection" value="{{f}}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -150,7 +203,24 @@
     <ul class="list-group">
         {% for f in subfeatures %}
         <li class="list-group-item">
-            <a href="{% url 'character-feature-view' character.id f.full_id %}">
+            <a href="{% url 'character-feature-view' character.id f.full_id %}"
+               data-bs-toggle="tooltip" 
+               data-bs-html="true"
+               data-bs-placement="top"
+               data-bs-custom-class="skill-tooltip"
+               data-bs-title="
+               <div class='tooltip-content'>
+                 <strong>{{ f.display_name }}</strong>
+                 {% if f.purchase_cost_string %}
+                 <br><strong>Cost:</strong> {{ f.purchase_cost_string }}
+                 {% endif %}
+                 {% if f.power_card and f.power_card.effect %}
+                 <br><strong>Effect:</strong> {{ f.power_card.effect }}
+                 {% endif %}
+                 {% if f.power_card and f.power_card.description %}
+                 <br><strong>Description:</strong> {{ f.power_card.description|truncatechars:200 }}
+                 {% endif %}
+               </div>">
                 {% name_without_tags f feature.id %}
                 {% for level, badge in f.badges %}
                 <span class="badge bg-{{level}}">{{badge}}</span>
@@ -161,7 +231,24 @@
             <ul>
                 {% for sf in f.subfeatures %}
                 <li>
-                    <a href="{% url 'character-feature-view' character.id sf.full_id%}">
+                    <a href="{% url 'character-feature-view' character.id sf.full_id%}"
+                       data-bs-toggle="tooltip" 
+                       data-bs-html="true"
+                       data-bs-placement="top"
+                       data-bs-custom-class="skill-tooltip"
+                       data-bs-title="
+                       <div class='tooltip-content'>
+                         <strong>{{ sf.display_name }}</strong>
+                         {% if sf.purchase_cost_string %}
+                         <br><strong>Cost:</strong> {{ sf.purchase_cost_string }}
+                         {% endif %}
+                         {% if sf.power_card and sf.power_card.effect %}
+                         <br><strong>Effect:</strong> {{ sf.power_card.effect }}
+                         {% endif %}
+                         {% if sf.power_card and sf.power_card.description %}
+                         <br><strong>Description:</strong> {{ sf.power_card.description|truncatechars:200 }}
+                         {% endif %}
+                       </div>">
                         {% name_without_tags sf f.id %}
                         {% for level, badge in sf.badges %}
                         <span class="badge bg-{{level}}">{{badge}}</span>
@@ -186,7 +273,24 @@
         <ul class="list-group list-group-flush">
             {% for f in group.available %}
                 <li class="list-group-item">
-                    <a href="{% url 'character-feature-view' character.id f.full_id%}">
+                    <a href="{% url 'character-feature-view' character.id f.full_id%}"
+                       data-bs-toggle="tooltip" 
+                       data-bs-html="true"
+                       data-bs-placement="top"
+                       data-bs-custom-class="skill-tooltip"
+                       data-bs-title="
+                       <div class='tooltip-content'>
+                         <strong>{{ f.display_name }}</strong>
+                         {% if f.purchase_cost_string %}
+                         <br><strong>Cost:</strong> {{ f.purchase_cost_string }}
+                         {% endif %}
+                         {% if f.power_card and f.power_card.effect %}
+                         <br><strong>Effect:</strong> {{ f.power_card.effect }}
+                         {% endif %}
+                         {% if f.power_card and f.power_card.description %}
+                         <br><strong>Description:</strong> {{ f.power_card.description|truncatechars:200 }}
+                         {% endif %}
+                       </div>">
                         {% name_without_tags f feature.id group.type %}
                         {% if f.purchase_cost_string %}
                         ({{ f.purchase_cost_string }})
@@ -214,7 +318,24 @@
                         {% endif %}
                         {% for f in available %}
                         <li class="list-group-item">
-                            <a href="{% url 'character-feature-view' character.id f.full_id%}">
+                            <a href="{% url 'character-feature-view' character.id f.full_id%}"
+                               data-bs-toggle="tooltip" 
+                               data-bs-html="true"
+                               data-bs-placement="top"
+                               data-bs-custom-class="skill-tooltip"
+                               data-bs-title="
+                               <div class='tooltip-content'>
+                                 <strong>{{ f.display_name }}</strong>
+                                 {% if f.purchase_cost_string %}
+                                 <br><strong>Cost:</strong> {{ f.purchase_cost_string }}
+                                 {% endif %}
+                                 {% if f.power_card and f.power_card.effect %}
+                                 <br><strong>Effect:</strong> {{ f.power_card.effect }}
+                                 {% endif %}
+                                 {% if f.power_card and f.power_card.description %}
+                                 <br><strong>Description:</strong> {{ f.power_card.description|truncatechars:200 }}
+                                 {% endif %}
+                               </div>">
                                 {% name_without_tags f feature.id group.type %}
                                 {% if f.purchase_cost_string %}
                                 ({{ f.purchase_cost_string }})

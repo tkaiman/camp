@@ -112,7 +112,24 @@
             <div class="row row-cols-auto">
                 {% for f in group.taken %}
                     <div class="col card">
-                        <a href="{% url 'character-feature-view' character.id f.full_id %}">
+                        <a href="{% url 'character-feature-view' character.id f.full_id %}"
+                           data-bs-toggle="tooltip" 
+                           data-bs-html="true"
+                           data-bs-placement="top"
+                           data-bs-custom-class="skill-tooltip"
+                           data-bs-title="
+                           <div class='tooltip-content'>
+                             <strong>{{ f.display_name }}</strong>
+                             {% if f.purchase_cost_string %}
+                             <br><strong>Cost:</strong> {{ f.purchase_cost_string }}
+                             {% endif %}
+                             {% if f.power_card and f.power_card.effect %}
+                             <br><strong>Effect:</strong> {{ f.power_card.effect }}
+                             {% endif %}
+                             {% if f.power_card and f.power_card.description %}
+                             <br><strong>Description:</strong> {{ f.power_card.description|truncatechars:200 }}
+                             {% endif %}
+                           </div>">
                             {% name_without_tags f group.type %}
                             {% for level, badge in f.badges %}
                             <span class="badge bg-{{level}} d-print-none">{{badge}}</span>
@@ -122,7 +139,24 @@
                         <ul>
                             {% for sf in f.subfeatures %}
                             <li>
-                                <a href="{% url 'character-feature-view' character.id sf.full_id%}">
+                                <a href="{% url 'character-feature-view' character.id sf.full_id%}"
+                                   data-bs-toggle="tooltip" 
+                                   data-bs-html="true"
+                                   data-bs-placement="top"
+                                   data-bs-custom-class="skill-tooltip"
+                                   data-bs-title="
+                                   <div class='tooltip-content'>
+                                     <strong>{{ sf.display_name }}</strong>
+                                     {% if sf.purchase_cost_string %}
+                                     <br><strong>Cost:</strong> {{ sf.purchase_cost_string }}
+                                     {% endif %}
+                                     {% if sf.power_card and sf.power_card.effect %}
+                                     <br><strong>Effect:</strong> {{ sf.power_card.effect }}
+                                     {% endif %}
+                                     {% if sf.power_card and sf.power_card.description %}
+                                     <br><strong>Description:</strong> {{ sf.power_card.description|truncatechars:200 }}
+                                     {% endif %}
+                                   </div>">
                                     {% name_without_tags sf f.id %}
                                     {% for level, badge in sf.badges %}
                                     <span class="badge bg-{{level}} d-print-none">{{badge}}</span>
@@ -310,7 +344,24 @@
                 <ul class="list-group list-group-flush">
                     {% for f in group.available %}
                         <li class="list-group-item">
-                            <a href="{% url 'character-feature-view' character.id f.full_id%}">
+                            <a href="{% url 'character-feature-view' character.id f.full_id%}"
+                               data-bs-toggle="tooltip" 
+                               data-bs-html="true"
+                               data-bs-placement="top"
+                               data-bs-custom-class="skill-tooltip"
+                               data-bs-title="
+                               <div class='tooltip-content'>
+                                 <strong>{{ f.display_name }}</strong>
+                                 {% if f.purchase_cost_string %}
+                                 <br><strong>Cost:</strong> {{ f.purchase_cost_string }}
+                                 {% endif %}
+                                 {% if f.power_card and f.power_card.effect %}
+                                 <br><strong>Effect:</strong> {{ f.power_card.effect }}
+                                 {% endif %}
+                                 {% if f.power_card and f.power_card.description %}
+                                 <br><strong>Description:</strong> {{ f.power_card.description|truncatechars:200 }}
+                                 {% endif %}
+                               </div>">
                                 {% name_without_tags f group.type %}
                                 {% if f.purchase_cost_string %}
                                 ({{ f.purchase_cost_string }})
@@ -341,7 +392,24 @@
                                     {% endif %}
                                     {% for f in available %}
                                     <li class="list-group-item">
-                                        <a href="{% url 'character-feature-view' character.id f.full_id%}">
+                                        <a href="{% url 'character-feature-view' character.id f.full_id%}"
+                                           data-bs-toggle="tooltip" 
+                                           data-bs-html="true"
+                                           data-bs-placement="top"
+                                           data-bs-custom-class="skill-tooltip"
+                                           data-bs-title="
+                                           <div class='tooltip-content'>
+                                             <strong>{{ f.display_name }}</strong>
+                                             {% if f.purchase_cost_string %}
+                                             <br><strong>Cost:</strong> {{ f.purchase_cost_string }}
+                                             {% endif %}
+                                             {% if f.power_card and f.power_card.effect %}
+                                             <br><strong>Effect:</strong> {{ f.power_card.effect }}
+                                             {% endif %}
+                                             {% if f.power_card and f.power_card.description %}
+                                             <br><strong>Description:</strong> {{ f.power_card.description|truncatechars:200 }}
+                                             {% endif %}
+                                           </div>">
                                             {% name_without_tags f group.type f.category_tags %}
                                             {% if f.purchase_cost_string %}
                                             ({{ f.purchase_cost_string }})
