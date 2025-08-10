@@ -86,7 +86,7 @@
     <ul>
     {% for subfeat in feature.granted_features %}
     <li><a href="{% url 'character-feature-view' character.id subfeat.full_id %}"
-           data-bs-toggle="tooltip" 
+           data-bs-toggle="tooltip"
            data-bs-html="true"
            data-bs-placement="top"
            data-bs-custom-class="skill-tooltip"
@@ -114,7 +114,7 @@
     <ul>
     {% for subfeat, amount in feature.discounted_features %}
     <li><a href="{% url 'character-feature-view' character.id subfeat.full_id %}"
-           data-bs-toggle="tooltip" 
+           data-bs-toggle="tooltip"
            data-bs-html="true"
            data-bs-placement="top"
            data-bs-custom-class="skill-tooltip"
@@ -157,7 +157,7 @@
             <ul>
                 {% for f, name in choice.taken.items %}
                 <li><a href="{% url 'character-feature-view' character.id f %}"
-                       data-bs-toggle="tooltip" 
+                       data-bs-toggle="tooltip"
                        data-bs-html="true"
                        data-bs-placement="top"
                        data-bs-custom-class="skill-tooltip"
@@ -204,7 +204,7 @@
         {% for f in subfeatures %}
         <li class="list-group-item">
             <a href="{% url 'character-feature-view' character.id f.full_id %}"
-               data-bs-toggle="tooltip" 
+               data-bs-toggle="tooltip"
                data-bs-html="true"
                data-bs-placement="top"
                data-bs-custom-class="skill-tooltip"
@@ -232,7 +232,7 @@
                 {% for sf in f.subfeatures %}
                 <li>
                     <a href="{% url 'character-feature-view' character.id sf.full_id%}"
-                       data-bs-toggle="tooltip" 
+                       data-bs-toggle="tooltip"
                        data-bs-html="true"
                        data-bs-placement="top"
                        data-bs-custom-class="skill-tooltip"
@@ -274,7 +274,7 @@
             {% for f in group.available %}
                 <li class="list-group-item">
                     <a href="{% url 'character-feature-view' character.id f.full_id%}"
-                       data-bs-toggle="tooltip" 
+                       data-bs-toggle="tooltip"
                        data-bs-html="true"
                        data-bs-placement="top"
                        data-bs-custom-class="skill-tooltip"
@@ -319,7 +319,7 @@
                         {% for f in available %}
                         <li class="list-group-item">
                             <a href="{% url 'character-feature-view' character.id f.full_id%}"
-                               data-bs-toggle="tooltip" 
+                               data-bs-toggle="tooltip"
                                data-bs-html="true"
                                data-bs-placement="top"
                                data-bs-custom-class="skill-tooltip"
