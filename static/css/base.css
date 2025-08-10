@@ -2,3 +2,22 @@
   --bs-tooltip-bg: var(--bs-body-bg);
   --bs-tooltip-color: var(--bs-body-color);
 }
+
+.skill-tooltip {
+  --bs-tooltip-bg: #2c3e50;
+  --bs-tooltip-color: #ecf0f1;
+  --bs-tooltip-border-radius: 8px;
+  --bs-tooltip-padding-x: 12px;
+  --bs-tooltip-padding-y: 8px;
+  --bs-tooltip-font-size: 0.875rem;
+  --bs-tooltip-max-width: 300px;
+}
+
+.skill-tooltip .tooltip-content {
+  text-align: left;
+  line-height: 1.4;
+}
+
+.skill-tooltip .tooltip-content strong {
+  color: #3498db;
+}
