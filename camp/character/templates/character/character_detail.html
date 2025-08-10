@@ -113,7 +113,7 @@
                 {% for f in group.taken %}
                     <div class="col card">
                         <a href="{% url 'character-feature-view' character.id f.full_id %}"
-                           data-bs-toggle="tooltip" 
+                           data-bs-toggle="tooltip"
                            data-bs-html="true"
                            data-bs-placement="top"
                            data-bs-custom-class="skill-tooltip"
@@ -140,7 +140,7 @@
                             {% for sf in f.subfeatures %}
                             <li>
                                 <a href="{% url 'character-feature-view' character.id sf.full_id%}"
-                                   data-bs-toggle="tooltip" 
+                                   data-bs-toggle="tooltip"
                                    data-bs-html="true"
                                    data-bs-placement="top"
                                    data-bs-custom-class="skill-tooltip"
@@ -345,7 +345,7 @@
                     {% for f in group.available %}
                         <li class="list-group-item">
                             <a href="{% url 'character-feature-view' character.id f.full_id%}"
-                               data-bs-toggle="tooltip" 
+                               data-bs-toggle="tooltip"
                                data-bs-html="true"
                                data-bs-placement="top"
                                data-bs-custom-class="skill-tooltip"
@@ -393,7 +393,7 @@
                                     {% for f in available %}
                                     <li class="list-group-item">
                                         <a href="{% url 'character-feature-view' character.id f.full_id%}"
-                                           data-bs-toggle="tooltip" 
+                                           data-bs-toggle="tooltip"
                                            data-bs-html="true"
                                            data-bs-placement="top"
                                            data-bs-custom-class="skill-tooltip"
