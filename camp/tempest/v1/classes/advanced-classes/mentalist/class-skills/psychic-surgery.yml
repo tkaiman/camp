@@ -1,0 +1,17 @@
+name: Psychic Surgery
+requires: mentalist:1
+cost: 1
+incant: "RP: Psychic Surgery, Explanation"
+call: None
+target: Other Individual
+duration: Permanent
+delivery: Touch
+refresh: Short Rest
+accent: Mind
+effect: None
+description: |
+  This Power can only be used out of combat, in an area of relative peace and calm. With this Power a Mentalist can perform psychic surgery on others, creating any one of a number of effects. These procedures must be purchased separately as the Mentalist learns the craft. All Psychic Surgery Procedures are only usable Out of Combat unless otherwise noted in the power.
+
+  During the roleplay the Mentalist must explain the effects of the given Procedure, including that all effects and alterations are with the Mind Accent when a simple Call does not suffice. If the patient has resistance or immunity to the Mind Accent, the surgery and all additional procedures fail immediately.
+
+  Note: Not only must the target of this power be Willing or Helpless, but the portrayer and the Mentalist must negotiate an acceptable outcome per best roleplaying consent practices.

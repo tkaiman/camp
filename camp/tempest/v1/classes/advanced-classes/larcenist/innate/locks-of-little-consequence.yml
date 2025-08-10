@@ -1,0 +1,14 @@
+name: Locks of Little Consequence
+requires: larcenist:1
+incant: "RP: Quick 10 using tools on the lock."
+call: "“It Can Be Seen: I have opened this lock.”"
+target: One Lock
+duration: Instantaneous
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: Special
+description: |
+  The Larcenist is a practiced hand at lockpicking, and spends idle time picking locks for fun and sport - for when the time comes, speed and efficacy are paramount.
+
+  In addition, this Power refreshes when the Larcenist successfully manually picks a lock with tools.

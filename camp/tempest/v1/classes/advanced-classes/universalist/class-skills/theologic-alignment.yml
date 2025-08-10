@@ -1,0 +1,16 @@
+name: Theologic Alignment
+cost: 3
+requires:
+  - universalist:2
+  - any:
+      - healing-touch
+      - life-tap
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: For the Cleric Healing Touch power and Druid Life Tap power, the character’s Mage or Sourceror class-levels also count as Cleric and Druid class-levels. This stacks with the Grand Theory of Everything.

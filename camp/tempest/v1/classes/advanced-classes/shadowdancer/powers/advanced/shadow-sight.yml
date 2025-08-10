@@ -1,0 +1,15 @@
+name: Shadow Sight
+incant: RP Focus Q100, concentrating on the shadows of the objects they wish to perceive.
+call: None
+target: Self
+duration: Instantaneous, Passive
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Grant Insight, Grant Sight
+description: |
+  While everyday objects and people take great measures to conceal the reality of themselves, few pay attention to have their shadow-selves dance about them. The Shadowdancer is aware that where the mask of light is often impenetrable, the shadow self is all too eager to spill its secrets.
+
+  The Shadowdancer may, if a creature or object is casting a significant shadow, choose to scrutinize this shadow and ask it a simple question, sure that the answer will be true. After completing a Focus Quick 100, the Shadowdancer may ask a question per the skill “Insight” to a Marshal. This ability is refreshed when the Shadowdancer exits the insubstantial condition.
+
+  In addition, at night, or when entirely in shadow, the Shadowdancer gains the Sight Perk, or if they already have Sight, Sight Beyond Sight is granted instead.

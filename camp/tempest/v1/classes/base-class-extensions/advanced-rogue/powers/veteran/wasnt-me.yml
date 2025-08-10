@@ -1,0 +1,11 @@
+name: Wasn't Me
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Obfuscate
+description:
+  The Rogue is permanently inherently obfuscated against questions that seek to determine if the Rogue has committed a crime.  Finally, the Rogue is also inherently obfuscated against all Expose Effects.

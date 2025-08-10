@@ -1,0 +1,12 @@
+name: Universal Adept Spell
+ranks: 10
+choices:
+  spell:
+    name: Base Class Adept Spell
+    limit_is_per_rank: true
+    matcher:
+      type: spell
+      attrs: { tier: 2 }
+      parent:
+        class_type: basic
+description: Instead of choosing a Universalist Adept Spell when they would receive one from taking a Universalist level, the character may instead take a Adept Spell from any of the Base Classes.

@@ -1,0 +1,12 @@
+name: Spell Blocking Blade
+tags: [reinforce]
+incant: None
+call: "Resist"
+target: Self
+duration: Passive
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Grant Resistance
+description:
+  Until the next Short Rest, Materia that strike the Fighter's weapon can be Resisted.

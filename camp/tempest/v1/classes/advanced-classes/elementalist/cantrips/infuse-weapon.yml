@@ -1,0 +1,11 @@
+name: Infuse Weapon
+incant: Standard
+call: “Short Grant [Acid / Flame / Ice / Lightning].”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Immediate
+accent: None
+effect: Grant Accent
+description:
+  While the Elementalist themselves might not be a profound swordsman, they know the value of mundane weapons and can grant those weapons elemental energy to better assist in a fight. The Elementalist grants themselves the ability to swing for a selected elemental accent until their next short rest.

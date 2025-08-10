@@ -1,0 +1,15 @@
+name: No Defense
+incant: Aiming for Quick 30
+call: “Grant Vulnerability to Unaccented Attacks”
+target: Individual
+duration: Instantaneous
+delivery: Projectile or Thrown
+refresh: Short Rest
+accent: None
+effect: Grant Vulnerability
+description: |
+  Using intimate knowledge of their foes, the Ranger can seek out the gaps in their quarries' defenses reliably, allowing attacks that would normally be deflected away to find their way home.
+
+  After Aiming for a Q30, the Ranger may make a devastating shot against a member of their Foe Type leaving them exposed to further attacks - calling “Grant Vulnerability to Unaccented Attacks.”
+
+  Note: Recall that a creature normally immune to a damage source, when granted vulnerability, the two conditions cancel out, unless the target is Inherently immune, in which case the vulnerability is negated.

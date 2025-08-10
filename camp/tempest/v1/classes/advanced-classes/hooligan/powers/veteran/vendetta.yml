@@ -1,0 +1,15 @@
+name: Vendetta
+incant: None
+call: “[Name or Description], Short Grant +1 Bonus Spike Damage”
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Long Rest
+accent: None
+effect: Grant Bonus Spike Damage
+description: |
+  The Hooligan can verbally mark a single individual for Death until the Hooligan’s next Short Rest, gaining the ability to empower those attacking that target.
+
+  When the Hooligan activates Vendetta, until their next Short Rest, they gain a number of Vendetta Charges equal to twice their class-level in Hooligan.
+
+  When an attack hits and is not prevented against the character who the Hooligan has a vendetta for, the Hooligan may expend a Vendetta Charge to call “[Name or Description], Short Grant +1 Bonus Spike Damage” to the individual who hit the target of the Vendetta. The Hooligan must be able to see the attack land and be able to identify who made the attack and that it was, indeed, their vendetta.  

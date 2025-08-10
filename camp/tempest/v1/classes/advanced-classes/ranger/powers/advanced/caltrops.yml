@@ -1,0 +1,13 @@
+name: Caltrops
+incant: None
+call: “Short Disable Both Legs by Agony”
+target: Individual
+duration: Short Rest
+delivery: Spell-Packet, Verbal
+refresh: Short Rest
+accent: Agony
+effect: Disable
+description: |
+  Materia is a rather common sight among the theater of war, though some cunning rangers like to hide surprises in them: sharp, nefarious surprises.
+
+  The Ranger may gather up to five Spell-Packets and throw the whole amount of them in a single toss at a nearby target’s legs. If any of them contact an individual or another individual steps on those Spell-Packets before the Ranger completes a Short Rest, the Ranger may call out “Short Disable Both Legs by Agony.” The ranger may call this effect only against the first individual who steps on them and only if the Ranger is there to make the call. A Ranger may use this power two times per Short Rest.

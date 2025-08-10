@@ -1,0 +1,4 @@
+type: utility
+parent: fighter
+category: Fighter Utility Powers
+requires: advanced-fighter:1

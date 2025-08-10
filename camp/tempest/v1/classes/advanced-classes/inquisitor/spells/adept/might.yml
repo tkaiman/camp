@@ -1,0 +1,11 @@
+name: Might
+incant: Standard
+call: “Long Grant +1 Bonus Spike Damage”
+target: Self
+duration: Long Rest
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Plus Spike Damage
+description: |
+  The Inquisitor calls upon their god to grant but a sliver of their Divine strength. The Inquisitor swells with the strength of the Divine and is able to perform feats of strength previously unimaginable. The Inquisitor gains and +1 Bonus Spike Damage, and can perform feats of strength at will for the duration of the spell, such as breaking doors, carrying great weights with one hand while running, etc.

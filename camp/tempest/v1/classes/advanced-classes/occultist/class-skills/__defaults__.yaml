@@ -1,0 +1,4 @@
+type: skill
+parent: occultist
+requires: occultist
+category: Occultist Class Skills

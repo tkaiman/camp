@@ -1,0 +1,13 @@
+name: The Distraction
+incant: "RP: Engage the target in brief (minimum Quick 30) conversation"
+call: "“[Name or Description] Quick Obey by Will: Ignore my [friend or friends] unless they attack while we talk.”"
+target: Individual
+duration: Quick 100
+delivery: Verbal
+refresh: Short Rest
+accent: Will
+effect: Obey
+description: |
+  While Larcenists frequently work alone, very few of them will say there is no value in teamwork. As such, many have developed tactics to draw attention away from their compatriots - whether those compatriots are sneaking up, doing something the target might not like, or getting away.
+
+  The Larcenist chats with the target about anything or nothing, but after a moment of talking they can use this power. The Larcenist must continue to talk during the duration of this power, facing the consequences of their friend’s actions (if known by the target!) after the conversation.

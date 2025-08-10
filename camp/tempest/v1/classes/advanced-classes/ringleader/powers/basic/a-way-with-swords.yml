@@ -1,0 +1,10 @@
+name: A Way with Swords
+ranks: 3
+choices:
+  power:
+    name: Fighter Basic Power
+    matcher:
+      parent: fighter
+      type: power
+      attrs: { tier: 1 }
+description: The Ringleader may select a Basic Power from the Fighter Base class.

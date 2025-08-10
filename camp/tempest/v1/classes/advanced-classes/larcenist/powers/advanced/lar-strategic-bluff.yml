@@ -1,0 +1,13 @@
+name: Strategic Bluff
+incant: None
+call: "“Short Obey by Fear: Don’t move or make noise until my weapon stops touching you”"
+target: Individual
+duration: Short Rest
+delivery: Weapon
+refresh: Short Rest
+accent: Fear
+effect: Obey
+description: |
+  While out of combat, the Larcenist places a weapon against the target’s back; while holding the blade to the intended target, the victim is frozen in fear.
+
+  The threat of the blade on their skin is enough to ensure they don’t make any sudden moves and respect what could be their demise. While completely harmless in truth, with the combination of the Larcenist’s reputation and the well placed deception, the victim is frozen in fear as they try to piece out what to do next.

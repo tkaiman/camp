@@ -1,0 +1,15 @@
+name: Gigacharge
+incant: Standard
+call: “Wounding [X] by [Lightning or Force]”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Force/Lightning
+effect: Wounding, Barrier, Dispel
+description: |
+  The Universalist uses their own magical barrier to blast a foe: they channel all barrier they have, turning that energy against their foe.
+
+  When this spell is cast, the Universalist Sacrifices all Barrier they currently possess. They then may immediately charge a spell-ball with Wounding [X] by Lightning or Force, where [X] is the amount of Barrier sacrificed, plus 4.
+
+  If the Universalist has a Source providing the Eldritch Accent of Lightning or Illusion they do not need to Sacrifice their current Barrier and instead simply do Wounding 4 plus the current amount of Barrier they have to the target.

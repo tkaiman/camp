@@ -1,0 +1,19 @@
+name: Willproof
+requires:
+  - mentalist:2
+  - psychic-surgery
+cost: 3
+tags: [psychic-surgery-procedure]
+incant: RP, Psychic Surgery
+call: 'Explanation, "Grant Protect vs Charm and Dominate", "[Name or Description] Silence"'
+target: Other Individual
+duration: Until Used
+delivery: Touch, Verbal
+refresh: Long Res
+accent: Mind
+effect: Grant, Silence, Sleep
+description: |
+  The Mentalist helps the patient set up blocks in their mind to stop the influence of others. This takes the form of two Grant effects.
+
+    * The patient is Granted a single Protect vs Charm and Dominate.
+    * A trigger is created in the patient’s mind. If the patient is successfully Charmed or Dominated, they may immediately either call a Verbal "[Name or Description] Silence by Mind" on the source of that Charm or Dominate Effect OR can choose to take a "Sleep by Mind" on themselves.

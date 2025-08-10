@@ -1,0 +1,14 @@
+name: These Colors Are Ours
+requires: hooligan:4
+incant: "RP: A team specific chant out loud by all members/targets."
+call: “Short Grant +2 Bonus Spike Damage”
+target: Individuals
+duration: Short Rest
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: None
+description: |
+  Hooligans are inspired by their friends and fellows, and as such have a tendency to turn into quite the force when their band of compatriots shows their allegiance in force.
+
+  The Hooligan may lead a chant or cheer unique to their Crew, in a huddle. If the group chants along and each individual has a clear indication that they belong together (such as a belt flag, tabard or symbol), the Crew member may add +2 Bonus Spike Damage to their Spikes for a Short Rest. After finishing the cheer, the Hooligan may call “Short Grant +2 Bonus Spike Damage” to each Crew member that participated.

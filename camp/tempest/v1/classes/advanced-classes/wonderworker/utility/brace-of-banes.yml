@@ -1,0 +1,13 @@
+name: Brace of Banes
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description: |
+  In many cultures, Wonderworkers serve as the premier monster hunters in a community, and as such they learn to better use the weaknesses of the monsters that they hunt.
+
+  Whenever the Wonderworker is Granted an Accent on their attacks, they gain +2 Spike Bonus Damage when using that Accent.

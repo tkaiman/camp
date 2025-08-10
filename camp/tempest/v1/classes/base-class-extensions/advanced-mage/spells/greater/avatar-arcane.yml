@@ -1,0 +1,16 @@
+name: Avatar Arcane
+incant: Standard
+call: “Short Grant Avatar Arcane”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant Power
+description: |
+  The Mage taps into the leylines, drawing them into themself. They must find a place that resonates with them, where they feel the leylines, and cast this Spell out of combat. Until they complete a Short Rest or are affected by a Dispel Effect of any kind, they have the following benefits:
+
+    * The number of targets the Mage can affect with Replicate Enhancement goes up by two.
+    * The damage from all damaging Base Class Mage Cantrips goes up by 1 per Spell-Packet.
+    * The damage from all damaging Base Class Mage Spells goes up by 1 per Tier of the Spell.
+    * The Mage can Resist any Materia attack with “Resist!” as long as they have a Charged Spell-Ball. This causes the Spell-Ball to lose its charge.

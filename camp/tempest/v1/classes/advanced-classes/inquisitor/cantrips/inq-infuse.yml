@@ -1,0 +1,13 @@
+name: Infuse
+incant: Standard
+call: “… divine and right, I wield and shape creation’s light, With fervent plea and ardent zeal, I summon strength for woe and weal, To bring you in, to guide your way, so that our cause might win the day.”, Explanation
+target: Individual
+delivery: Touch
+accent: "[Devotion Accent]"
+duration: Short Rest
+refresh: Immediate
+effect: Grant Accent
+description: |
+  The Inquisitor may choose to summon the Divine aid of their Religion to grant access to their faith’s Accent. The Inquisitor anoints the target with the Alchemical Item Holy Oil while incanting the spell, sacrificing the Oil in the process. After, the target is able to utilize the accent of the caster’s Religion until the target completes a Short Rest. This Accent is able to be used, at-will, on any weapon attack, spell, or power that does not already have an Accent. After casting and anointing the target in Holy Oil, the Inquisitor should deposit it in the Ashbin at their earliest convenience.
+
+  For Example: Dravis, a believer in the Ember Light, casts Infuse upon his longtime companion Panth. After explaining the powers’ effects, Panth is able to call “1 Flame” instead of swinging his uncalled damage. In addition, many of Panth’s powers, being a fighter, are naturally unaccented, and so they are likewise affected. Panth uses his Brutal Blow against an Ice elemental, swinging for 5 Flame, to great effect, slaying the elemental instantly.

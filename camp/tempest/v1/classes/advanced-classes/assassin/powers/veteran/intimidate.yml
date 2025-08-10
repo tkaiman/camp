@@ -1,0 +1,13 @@
+name: Intimidate
+incant: None
+call: "“[Name or Description] Quick Obey by Mind: Flee”"
+target: Individuals
+duration: Quick 100
+delivery: Verbal
+refresh: Short Rest
+accent: Mind
+effect: Obey
+description: |
+  Those that deal regularly with death know that a good portion of any job hinges on the reputation of those who have undertaken the contract. A well-guarded target is only as protected as their willingness to stand before the certain death that comes in the night.
+
+  The Assassin may attempt to use this to their advantage by selecting up to three targets in roughly melee range of the Assassin who are aware of the assassin and call “Quick Obey by Mind: Flee” against all three.  The Assassin may name all three targets at once if it will allow for greater clarity (i.e. “Barbara, Casey, Jimmy: All three of you, Quick  Obey by Mind: Flee”).

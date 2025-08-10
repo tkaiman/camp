@@ -1,0 +1,16 @@
+name: Way of the Artisan
+tags: [artificer]
+ranks: 3
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: None
+level_grants:
+  1: artisan.utilities
+  2: artisan.utilities
+  3: artisan.utilities
+description: The Artisan may choose an additional Utility Power.

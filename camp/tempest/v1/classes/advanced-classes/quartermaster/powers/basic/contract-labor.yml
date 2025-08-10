@@ -1,0 +1,14 @@
+name: Contract Labor
+tags: [crafter]
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: None
+description: |
+  Not all quartermasters can personally fulfill all orders, and even if they can, a guildhouse or tavern full of adventurers is not always a conducive environment for mass crafting. Buildings such as an Ironworks, Witch’s Hut, or Arcane Tower tend to have crafting facilities and personnel for specific crafts (Tinkering, Alchemy, and Enchanting), and if you’re willing to spend some time earning your keep for the management, arrangements can be made.
+
+  While you perform a 4-hour NPC shift, NPC laborers will craft for you at-cost, assuming the necessary facilities exist at your location. You must bring the necessary resources with you. Your shift grants you a labor budget of 20 Apprentice crafting processes. You may trade 2 of those up for a Journeyman process or 5 for a Greater process. Master-level workers are not available for use with this ability by default, but if they become available, a single Master-level recipe takes your entire labor budget. Contract Labor can’t be used to create Signature Items, and the laborers will refuse to perform crafting that involve Dark Territory draws.

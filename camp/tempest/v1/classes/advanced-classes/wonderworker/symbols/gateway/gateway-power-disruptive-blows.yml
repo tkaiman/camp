@@ -1,0 +1,10 @@
+name: Disruptive Blows [The Weapon]
+incant: None
+call: "“Short Disable [Limb]”, “Short Silence”"
+target: Individual
+duration: Short Rest
+delivery: Weapon
+refresh: Short Rest
+accent: None
+effect: Disable, Silence
+description: Sometimes, stopping an opponent from doing what they want to do is the shortest path to the end of a fight. The Wonderworker may make two attacks, which must be made before the Wonderworker completes a Short Rest, in any combination of “Short Disable [Limb]” or “Short Silence.”

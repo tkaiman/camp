@@ -1,0 +1,12 @@
+name: Crimson Fever
+ranks: 2
+incant: Focus Quick 30
+call: “Quick Drain by Poison”
+target: Individual
+duration: Quick 100
+delivery: Weapon
+refresh: Short Rest
+accent: Poison
+effect: Drain
+description:
+  The Assassin may roleplay coating their weapon with a poisonous substance for a Focus Quick 30, then on their next melee attack from behind using that weapon, they may Call “Quick Drain by Poison.”

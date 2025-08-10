@@ -1,0 +1,13 @@
+name: Divine Protection
+incant: Standard
+call: “By my Voice Expose Followers of [Religion/Deity]”,  “Grant Protect vs Verbal and Voice”
+target: Individual
+duration: Event
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Protect
+description: |
+  The Inquisitor invokes their god and creates a barrier around the touched target, giving that person a Protect which can be used either against a Verbal or Voice delivered Effect or attack. The Inquisitor may expose individuals that follow the same religion or deity as the Inquisitor.  The Inquisitor is granted the ability to grant this protection to an additional Exposed individual.
+
+  The Inquisitor may spend a Spike to target an additional individual (in addition to the Exposed individual).

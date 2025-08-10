@@ -1,0 +1,14 @@
+name: True Aim
+requires: ranger:5
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: None
+description: |
+  The Ranger’s expertise with their Ranger’s Mark power is at another level.  In addition to the normal Ranger’s Mark Innate Power’s abilities, the Ranger may Aim and spend a Spike to add their Spike Damage to the attack twice with a projectile weapon.
+
+  The Ranger must still follow all normal requirements for Ranger’s Mark and Aim. For example, if the Ranger’s Base Damage is 2 and Spike Damage is +1 (the base Spike Damage), they would call “4”.

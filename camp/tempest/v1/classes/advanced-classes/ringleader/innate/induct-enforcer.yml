@@ -1,0 +1,24 @@
+name: Induct Enforcer
+requires: ringleader:1
+incant: "RP: Induction Conversation / Ceremony"
+call: "“Grant Qualifier: Enforcer of [Ringleader’s Name]”"
+target: Individual
+duration: Event
+delivery: Touch
+refresh: Event
+accent: None
+effect: Grant Qualifier
+child_purchase:
+  basis: ringleader
+description: |
+  The Ringleader’s rise to power starts with a look of respect from their peers. Each Ringleader’s dynamic with the group they lead may be different, but the end goal is the same: Gather the best of the best together, and throw them at a problem with the promise of food thereafter.
+
+  The Enforcer may extend a formal invitation, verbal or otherwise, after spending 5-10 minutes discussing the role with the Enforcer(s) in prospect. Prospects must accept of their own free will, automatically immune from any compulsions to join. This may be done as a private conversation with an individual, or together as a group or team, at the Ringleader’s discretion.
+
+  If the prospect accepts, they gain the Qualifier: Enforcer of [Ringleader’s Name]. The character may only be the Enforcer to one Ringleader at a time. They may leave at any time by informing the Ringleader, or the Ringleader chooses to release them. If the Enforcer wishes to be an Enforcer to a different Ringleader, they must inform the first that they are leaving their employment. Doing so will remove their Qualifier  and allow them to change Ringleaders.
+
+  The Ringleader is able to induct a number of individuals as Enforcers equal to their class-level of Ringleader.  Each Enforcer is given a Station from the list of Stations below.   Once per Event, the Ringleader can, if the Enforcer(s) are willing, change the Station of one or more Enforcers.  Once the agreement is made to make the change, the actual change will take place upon completion of a Long Rest.  Since all changes happen simultaneously, it is possible for two Enforcers to switch Stations, for example, without violating the one Station per Enforcer rule.  When an Enforcer is given a Station, they will gain the “Enforcer” Power listed with that Station, below, and the Ringleader will gain the “Ringleader” Power for that same Station as a bonus Power.
+
+  Because of their specific role in Leadership, Ringleaders may not be Enforcers.
+
+  Note: This Power may be used as soon as each character is In Character. This may be done between Soft Lay-on and Hard Lay-on.

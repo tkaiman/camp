@@ -1,0 +1,19 @@
+name: Inspired Build
+tags: [crafter]
+incant: None
+call: None
+target: Special
+delivery: None
+accent: None
+duration: Special
+refresh: None
+effect: Event
+description: |
+  The Artisan may put a request into Staff for a specific Resource, which can be any kind including a “Named” Resource (such as
+  Last Breath, Mote of Power, or Basilisk’s Lies). Staff will always provide a cost for that thing and the Artisan may use up
+  Resources to pay for that cost (representing the Artisan, in a rush of epiphanic inspiration, thinking of a way to actually
+  create said item) any time before the end of the Event.
+
+  Note that Resources that are gating certain Plot-controlled things or that are above the power-level of the Artisan may be
+  given impossible costs. Some negotiation with Staff concerning reasonable requests is allowed (i.e. “Is a Medusa’s Heart a
+  Resource I have any hope of affording?”).

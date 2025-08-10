@@ -1,0 +1,15 @@
+name: Wrath of the Righteous
+incant: Standard
+call: None
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant Plus Base Spike Damage, Bonus Spike Damage
+description: |
+  Until they complete a Long Rest, the Inquisitor gains a bonus to the spike damage they do with weapons. Damaging weapon attacks will add +2 Bonus Spike Damage.
+
+  If the Inquisitor adds the “to [Abomination/Undead/Undevoted]”qualifier or the target is Branded by the Inquisitor as an Oath Breaker, they may add +1 Base Spike Damage.
+
+  Note: The Inquisitor may only benefit from one instance of this spell at any given time.

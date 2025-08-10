@@ -1,0 +1,13 @@
+name: Intrusive Shade
+incant: None
+call: “Quick Grant Insubstantial by Darkness”
+target: Self
+duration: Special
+delivery: None
+refresh: Short Rest
+accent: Darkness
+effect: Grant Insubstantial
+description: |
+  While in contact with a building, the Shadowdancer may attempt to pierce the defenses of that building, allowing them entrance or exit. While touching a door or other similar building entrance, the Shadowdancer may call “Grant Insubstantial” and enter or exit the building. The Shadowdancer can manipulate the door or similar entrance. This Insubstantial Condition ends when the Shadowdancer is no longer touching the door, completes a Slow 30 Count, or becomes Helpless.
+
+  Note: This ability will pierce Havens and other such building defenses, however, Enhanced Havens will still prevent entry.

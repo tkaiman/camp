@@ -1,0 +1,12 @@
+name: Practiced Prowess
+requires: ranger:5
+incant: None
+call: None
+target: None
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Base Damage
+description: |
+  The Ranger’s expertise at hunting with ranged weapons is unparalleled. They gain +1 Base Damage for Projectile and Thrown weapons against the target designated as their Hunter’s Mark or [Foe Type] that you have chosen.

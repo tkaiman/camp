@@ -1,0 +1,7 @@
+name: Use Every Part
+tags: [crafter]
+requires: scavenging-3
+description: |
+  A true scavenger respects their kills and leaves as little behind as possible. Whenever you turn in scavenging tokens, you receive one extra basic resource per token and one uncommon resource per two tokens turned in. The type of resource received depends on the type of creature you scavenged.
+
+  Additionally, even the most dangerous internal organs have their uses. Once per Long Rest when a creature you scavenge calls an effect against you, you may call “Counter, Use Every Part”. You may, at some point before your next Short Rest, prepare a Spell Ball with this organ over a Focus Quick 30. This spell-ball will deliver the same Effect or Damage and Accent that you would have taken. (Note: Instructions are not Effects and can’t be preserved in this way). Due to degradation of the organ, if the effect is one that has a duration and the original duration was Long or Event (uncalled), it must be thrown as Short instead.

@@ -1,0 +1,21 @@
+name: Crew of Merry Men
+requires: ringleader:2
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Refresh
+description: |
+  For each of the following Advanced Classes represented among the Ringleader’s Enforcer who have a Station, the Ringleader gains the following bonuses:
+
+    * Assassin: Short Grant +1 Spike Bonus Damage to self, once per Long Rest
+    * Dealbroker: Short Obfuscate vs Discern by Mind to self, once per Short Rest
+    * Destroyer: Long Grant +1 Maximum Base Life Points to self, once per Long Rest
+    * Hooligan: Passive: May Substitute or add the Fear Accent on any Verbal power.
+    * Larcenist: May Counter the Effect of one Trap: “Counter, Take Two.” per Long Rest
+    * Shadowdancer: Short Grant insubstantial to Self by Touch, once per Long Rest
+
+  The Ringleader may only gain the benefit of each choice once, regardless of how many Enforcers may have that Advanced Class.

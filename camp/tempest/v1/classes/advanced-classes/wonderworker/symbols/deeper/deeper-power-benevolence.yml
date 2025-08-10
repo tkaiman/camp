@@ -1,0 +1,11 @@
+name: Benevolence [The Talisman]
+requires: gateway-power-intercession
+incant: None
+call: “Grant Protect vs Weapon and Materia”
+target: Individual
+duration: Until Used
+delivery: Touch
+refresh: Long Rest
+accent: None
+effect: Grant Protect
+description: Sometimes, it is easier to stop things from happening than to cure them. This power grants a Protect against a single weapon or packet attack to a target.  This power refreshes three times per Long Rest.

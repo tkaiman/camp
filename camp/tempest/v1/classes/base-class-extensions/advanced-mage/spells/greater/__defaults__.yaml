@@ -1,0 +1,6 @@
+type: spell
+tier: 3
+parent: mage
+category: Mage Greater Spells
+sphere: arcane
+requires: advanced-mage

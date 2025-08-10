@@ -1,0 +1,13 @@
+name: Sniping Shot
+incant: Aim for Quick 100
+call: “Piercing 8 to [Animal / Foe Type]”
+target: Individual
+duration: Instantaneous
+delivery: Projectile or Thrown
+refresh: Short Rest
+accent: None
+effect: Piercing
+description: |
+  The Ranger may spend a Spike and make a ranged attack, calling out "Piercing 4 to [Animal / Foe Type]." If the attack strikes your Ranger’s Mark, you may refresh a Basic power with the Wounding or Piercing effect from the Fighter or Rogue Classes.
+
+  If this attack is made from outside of combat, the Ranger need only aim for a Quick 10.

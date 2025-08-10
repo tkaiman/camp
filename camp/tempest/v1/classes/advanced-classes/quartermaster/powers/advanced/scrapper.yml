@@ -1,0 +1,18 @@
+name: Scrapper
+tags: [crafter]
+incant: None
+call: None
+target: Resources
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Special
+description: |
+  You know the trick of combining small, loose materials into sturdy construction resources. Once per Long Rest, you may convert Ingots, Bloom, or Rare Minerals into Ore, Lumber, or Stone, respectively. The amounts needed are, at base:
+
+    * 50 Ingot for 1 Ore
+    * 50 Bloom for 1 Lumber
+    * 25 Rare Minerals for 1 Stone
+
+  Turn your materials in to Staff directly to perform this process. Depending on plot conditions and constructed facilities, you may be able to get a better rate using compressed resource cards, use this power more often by taking an NPC shift, or perform other exchanges not described here.

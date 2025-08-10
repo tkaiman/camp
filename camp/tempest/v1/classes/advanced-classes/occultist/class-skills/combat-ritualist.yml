@@ -1,0 +1,15 @@
+name: Combat Ritualist
+cost: 4
+requires: occultist:3
+incant: None
+call: '“Pause Ritual for Slow 180”, “Resume Ritual”'
+target: Self
+duration: Slow 180
+delivery: None
+refresh: Immediate
+accent: None
+effect: Special
+description: |
+  Sometimes, combat in the vicinity of a ritual is unavoidable, but you know how to safely pause and resume the ritual to deal with the issue. While you are the Primary Ritualist for a ritual, enchantment, or similar craft, you may call “Pause Ritual for Slow 180” to the ritual marshal, who will perform the count while you deal with whatever problem has arisen. If there is no ritual marshal, you must perform the count yourself. When you wish to resume the ritual, call “Resume Ritual.”
+
+  Anything that happens while the ritual is paused will not impact the ritual, barring unusual circumstances such as the local Dark Territory modifier changing during the pause. If the Slow Count expires without resuming the ritual, it automatically fails. If the ritual is resumed with ritualists, participants, or components absent or incapacitated, or if the ritual marshal believes this ability is being abused, the ritual marshal may add Dark Territory, deduct Ritual Points, or outright fail/backlash the ritual depending on the circumstances. This ability may be used once per Crafting attempt, but otherwise refreshes immediately.

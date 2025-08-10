@@ -1,0 +1,11 @@
+name: Belief in the Whole
+incant: Standard
+call: "Rebuild Shield by Radiance"
+target: Individual
+delivery: Touch
+accent: Radiance
+duration: Instantaneous
+refresh: Focus Quick 100
+effect: Rebuild
+description: |
+  Calling upon their faith, the Inquisitor may channel the light to begin to rebuild a damaged shield.

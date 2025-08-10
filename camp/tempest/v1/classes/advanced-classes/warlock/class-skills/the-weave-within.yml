@@ -1,0 +1,13 @@
+name: The Weave Within
+cost: 2
+tags: [patron]
+requires: astride-the-weave
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: Immediate
+accent: None
+effect: Refresh
+description: The Warlock’s innate knowledge of the Weave and its delicate strands of twisting ether allows the Warlock to use Astride the Weave with their Warlock Spells.

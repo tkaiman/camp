@@ -1,0 +1,12 @@
+name: Divine Cleansing
+incant: Standard
+call: “Cure Tainted and Drained by Radiance”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Radiance
+effect: Cure
+description: |
+  By calling upon their deity for cleansing, the Exemplar may cure the Tainted and Drained Conditions from an individual. The call for this effect is “Cure Tainted and Drained by Radiance”. By expending
+  a Divine Grace, the Exemplar may also add 9 (10 with Peacecaster) points to their Healing Touch pool, if they have one.

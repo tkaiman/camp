@@ -1,0 +1,11 @@
+name: Rimehold’s Grasp
+incant: Standard
+call: 'Root by Ice”, “By My Voice to rooted, 6 Ice"'
+target: Individuals
+duration: Instantaneous
+delivery: Spell-Ball, Voice
+refresh: Spell
+accent: Ice
+effect: Root, Damage
+description:
+  Once cast, the Elementalist charges three Spell-Balls with “Root by Ice”. Once all three Spell-Balls have been thrown, the Elementalist gains a final ability to Call “By My Voice to rooted, 6 Ice".

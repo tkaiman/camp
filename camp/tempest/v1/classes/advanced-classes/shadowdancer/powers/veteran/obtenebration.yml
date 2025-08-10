@@ -1,0 +1,13 @@
+name: Obtenebration
+incant: None
+call: '“Short Root and Silence by Darkness”, “[Name or Description] 2 Darkness to Rooted”'
+target: Individual
+duration: Short Rest
+delivery: Melee Weapon, Verbal
+refresh: Short Rest / Immediate
+accent: Darkness
+effect: Root, damage only
+description: |
+  The Shadowdancer may swing “Short Root and Silence by Darkness” delivered with a melee weapon. The Shadowdancer may then call “[Name or Description] 2 Darkness to Rooted” at-will on targets they believe are still rooted by Obtenebration.
+
+  In addition, this Power refreshes whenever the Shadowdancer uses any Power with the [Insubstantial] tag or Casts the “Umbral Fade” Spell.

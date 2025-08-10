@@ -1,0 +1,11 @@
+name: Mindsteel
+incant: Standard
+call: "Short Grant Resistance to Illusion and Madness by Mind"
+target: Individual
+duration: Short Rest
+delivery: Touch
+refresh: Spell
+accent: Mind
+effect: Grant Resistance
+description:
+  The Mentalist is able to protect those close to them from the horrors that lurk beyond the realms of reality. In doing so, the recipient gains resistance to Illusion and Madness Accents until they complete a Short Rest.

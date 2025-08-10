@@ -1,0 +1,11 @@
+name: Spiteful Advance
+incant: None
+call: “Wounding 1”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Wounding
+description:
+  While engaged in single combat with an opponent wielding a melee weapon, the Ringleader activates this Power, targeting that creature. Until the target of Spiteful Advance is incapacitated or quits the field, the Ringleader may Call one attack as “Wounding 1.”, refreshing on a Q5 count. They may make this attack at will as long as the other conditions are met.

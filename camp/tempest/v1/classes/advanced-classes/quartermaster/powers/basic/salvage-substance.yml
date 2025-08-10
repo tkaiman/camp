@@ -1,0 +1,16 @@
+name: Salvage Substance
+tags: [crafter, artificer]
+incant: Focus Quick 100
+call: “Salvage Substance”, Explanation
+target: Weapon or Materia
+duration: Instantaneous
+delivery: Touch
+refresh: Immediate
+accent: None
+effect: Special
+description: |
+  Waste not, want not. Many adventurers hesitate to apply valuable poisons or other coatings (items whose recipes say “Application: Topical”) to their weapons or materia, thanks to a fear that it will ultimately go unused. The Quartermaster can personally scrape substances from a weapon or squeeze them out of charged materia back into containers so long as their effects have gone unused and the item in question has not been dispelled or shattered. This takes a Focus Quick 100 to perform. This can’t be used to recover a substance that produces a Counter, Protect, Resistance, Obfuscate, or Immunity call or condition.
+
+  Touching materia charged by another character is generally dangerous. If recovering a substance from a charged materia held by another character, at the start of the process tell them “Explanation: While I am focusing, this materia will not activate unless you let go of it or my focus is broken”.
+
+  If the item belongs to someone else, the Quartermaster should explain what has occurred, and the substance’s item card should be updated to note that a use has been restored. If the substance’s original container has been discarded (that is, its item card has already been discarded or destroyed), a new one can be created, but the item expires at the end of the event instead of its original expiration date.

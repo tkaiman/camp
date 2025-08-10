@@ -1,0 +1,39 @@
+type: class
+category: Advanced Class
+name: Occultist
+class_type: advanced
+ranks: 5
+requires:
+  - level:10
+  - any:
+      - medium
+      - insight
+      - sight
+      - soothsayer
+      - greater-enchanting
+      - greater-arcane-ritual
+      - greater-divine-ritual
+  - at_least: 2
+    any:
+      - lore+Religious
+      - lore+Arcane
+      - lore+Occult
+      - lore+Ritual_Magic
+      - lore+Dark_Territory
+      - lore+The_Dark
+      - lore+Blood_Magic
+      - lore+Spirits
+      - lore+Keepers
+      - lore+Undead
+flags: flag+occultist
+description: |
+  In a world where magic and the supernatural are everyday knowledge and spells follow precise arcane or divine formulations to achieve immediate results, the occultist focuses less on the grand power of spells and more on secret knowledge whispered by the spirits of the world, the small ones who bear the messages of the divine or the creatures who lie in darkness. While this knowledge can take many forms and be put to many uses, it generally results in a level of rapport with the spirits of the world that few others can match. This has a direct impact on the more subtle and performative forms of magic that require appeals to these spirits, making it popular among those who specialize in ritualistic crafts.
+
+  ### “I call the spirits…”
+
+  Many powers in this class require that the Occultist call upon the power of minor spirits to aid the Occultist. Depending on your culture, religion, or immediate circumstances, it may be more appropriate to call on more specific groups of spirits or powers. The following alternative calls are permissible; feel free to ask a Staff member to approve additional calls:
+
+    * “I call the small gods…”
+    * “I call the spirits of the ancestors…”
+    * “Hear me, o’ Lares and Penates…”
+    * And so on…

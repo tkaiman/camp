@@ -1,0 +1,11 @@
+name: Flame of the Divinities
+incant: Standard
+call: “Wounding 3 by Flame”, “Heal 3 by Flame”
+target: Other Individual
+delivery: Weapon (Melee)
+accent: Flame
+duration: Short Rest
+refresh: Spell
+effect: Heal, Wounding
+description: |
+  The Divine Shield can make five empowered attacks with a melee weapon. These attacks cannot be made at the Divine Shield themself. At the time of each attack, the Divine Shield can choose to do “Wounding 3 by Flame” or “Heal 3 by Flame” with the swing. This spell ends when all five attacks are used, or the Divine Shield completes a Short Rest. Expending a Spike with any one attack will increase the amount of Wounding or Healing to five for that attack.

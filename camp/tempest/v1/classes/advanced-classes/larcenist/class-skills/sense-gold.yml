@@ -1,0 +1,11 @@
+name: Sense Gold
+cost: 4
+incant: Focus Quick 30
+call: "“[Name or Description], Subtle Discern by Mind: Approximately how much coin do you have on you right now?”"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Immediate
+accent: None
+effect: Discern
+description: The Larcenist has a practiced eye in finding “big fish” and can, with careful observation, tell a lot about how much wealth a person is carrying. They use various clues and all their senses to tell if someone is carrying significant amounts of coin upon them. They must observe the target carefully for a Focus Quick 30 before making the Call. This skill may only be used once per Short Rest on any given target.

@@ -1,0 +1,14 @@
+name: Entropic Wheel
+tags: [wellspring]
+incant: Standard
+call: Grant Entropic Wheel
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant Entropic Wheel
+description: |
+  Elementalists who study the duality between Flame and Ice frequently come to a startling conclusion: Flame and Ice are representations of the same element, merely in “presence” or “absence.” By embracing this duality, the Elementalist can gather strength for one element using the other.
+
+  For the duration of this Spell, whenever the Elementalist casts a Flame or Ice-Accented Spell they turn the Entropic Wheel to “Flame” or “Ice.” Whenever the Wheel changes, it adds an additional charge to the Elementalist’s Wellspring. If the Elementalist has selected Flame or Ice as the element affected by Elemental Flow or is using a Flame or Ice Source, this Spell has a duration of “Long Rest” instead of “Short Rest”.

@@ -1,0 +1,13 @@
+name: Toxic Infusion
+incant: None
+call: “Short Grant Poison Accent”
+target: Self
+duration: Short Rest, Passive
+delivery: None
+refresh: Short Rest, None
+accent: None
+effect: Grant Accent
+description: |
+  The assassin is very familiar with the art of poisons, and always carries some amount on them at all times, replenishing their stock from the myriad flora and fauna that abound throughout nature. By spending a Focus Quick 100 applying these substances, they may call the Poison Accent at-will on any otherwise Unaccented Melee Weapon Attacks made until their next Short Rest.
+
+  Additionally, they may apply 1 Topical Substance (i.e. poison) to a melee weapon they use per class-level of Assassin simultaneously (normally only 1 Topical Substance may be applied at one time to a particular melee weapon).  For instance the Assassin could have 5 Topical Substances on their blade that are used twice each per Poisoned Implements.

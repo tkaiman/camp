@@ -1,0 +1,13 @@
+name: A Dark Glimpse
+requires: mentalist:2
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Grant Accent
+description: |
+
+  Beyond the veil of space and time lies terrors that only the mind can perceive. The Mentalist, though steeled against such horrors, knows that their foes are not. By projecting these terrors into the minds of their foes, the mentalist may achieve victory. The Mentalist may Sacrifice a Link to add or alter the Accent of any Power they use to the Madness Accent. They may do this a number of times equal to their Mentalist class-level per Long Rest.

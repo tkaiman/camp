@@ -1,0 +1,10 @@
+name: Intercession [The Talisman]
+incant: None
+call: “Grant 3 Barrier”
+target: Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: Grant Barrier
+description: The talisman can mitigate some of the injuries of the friends of the Wonderworker. This power Grants 3 barrier to a target, and to the Wonderworker.

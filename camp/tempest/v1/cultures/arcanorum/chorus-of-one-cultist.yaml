@@ -1,0 +1,38 @@
+name: Chorus of One Cultist
+discounts:
+  forage-1: 1
+  rumormonger: 1
+  basic-faith: 1
+description: |
+  _Locations: Arcanorum: Scattered_
+
+  _Concepts: Communal, Inquisitive, Mindful_
+
+  The culture of the Chorus is remote, and thus insular. They are a tightly-knit community who follow the teachings of the [Chorus of One](../chorus-of-one), and spend their days in mindful contemplation, communion with the natural world, and discovery of each other and visitors.
+
+  Life is lived entirely communally. Members of the collective share agricultural, gathering, and caregiving tasks, each contributing where they feel best suited, but also often taking time to experience other tasks, the better to round out their knowledge of other patterns of life and facets of the communal experience.
+
+  Child-rearing, in particular, is done communally by those who choose to engage in it, and not by the birthparents. So much so, in fact, that children rarely know which community members created them! Those old enough to raise, teach, or guide them are called “Elders”, and those who are peers or younger are largely called simply by their names, though “Brother” or “Sister” are not uncommon in very close relationships.
+
+  All events, great and small, joyful and sad, are taken as opportunities to learn more of life’s many facets, and a community member going through something new can count on a deluge of questions from others who wish to fully understand the experience. A community member who finds another bitten by a rattlesnake will certainly seek to assist them with medical care, but that care will be accompanied by a litany of “What does it feel like? Did the snake meet your eyes? Were you afraid? Could you feel it puncture you? Can you feel the venom in your veins? Describe it!” This can be an alarming discovery for newcomers and visitors to the island.
+
+  ## Commonalities of the Culture
+
+  - Few Cultists of the Chorus are well-traveled; most believe that they should fully comprehend the depth and breadth of their immediate surroundings and companions before venturing further afield, and as everyone changes incrementally every day, this proves an impossible task.
+  - Cultists are fascinated by the unfamiliar. They are happy and willing to trade for objects from other cultures, tales of other places, or personal information and experiences. Novelty of experience is a great gift, and treasured appropriately.
+  - When new children are born, they are given names that reflect facets of experience, positive or negative; often something recently known by the community. Joy, Loss, Epiphany, Sloth, and Energy are all reasonable names to the Chorus. As they come of age, a surname is chosen for oneself, that reflects an aspect of the world that is desirable to know better. OftheStars, OntheSea, and DepthofGrief are all reasonable surnames.
+  - Fashions are wildly exploratory- to discover or invent a new mode of dress is to introduce a new wonder to the collective. In a society that values deep understanding of others, self-expression is a kindness and a generosity; an invitation to know the wearer better.
+subcard:
+  name: Inquisitive [Inheritance]
+  incant: "RP: One Minute of Conversation"
+  call: "“Subtle Obey by Mind to Living: Tell me the most interesting thing that happened to you today.”"
+  target: Individual
+  delivery: Verbal
+  accent: Mind
+  duration: Instantaneous
+  refresh: Short Rest
+  effect: Obey
+  description: |
+    Community members ask questions as naturally as they breathe, with a disarming curiosity so ingrained over generations that it has elevated the compulsion to respond to a supernatural level.
+
+    Out of combat, while enrapt in conversation with the Chorus of One Cultist, the Cultist may attempt to draw out important recent events in the life of their conversation partner. They may call “Subtle Obey by Mind to Living: Tell me the most interesting thing that happened to you today.”

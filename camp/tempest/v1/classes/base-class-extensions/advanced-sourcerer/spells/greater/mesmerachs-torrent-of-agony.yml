@@ -1,0 +1,23 @@
+name: Mesmerach’s Torrent of Agony
+incant: Standard
+call: “Wounding 3 by [Eldritch Accent]”
+target: Individual
+duration: Instantaneous, Short Rest
+delivery: Spell-Ball
+refresh: Spell
+accent: Eldritch Accent
+effect: Wounding
+description: |
+  Upon completion of the Incantation, the Sourcerer gains the power to throw an infinite number of damaging Spell-Balls as long as they do not move their right foot from its spot. As long as their right foot remains planted, the Sourcerer can instantly charge any Spell-Ball they hold in their hand.
+
+  Twice during the Duration of the Spell, the caster can move their right foot, leaving the spot and choosing another spot. While moving, the caster loses access to the infinite spell-ball charging. Once they have re-planted their right foot, they may continue charging and throwing.
+
+  This Spell ends when the caster un-plants their right foot a third time, or completes a Short Rest.
+
+  Enhancement: Barrier: The Sourcerer may Sacrifice points of Barrier to add damage to the next attack at a rate of 1 Barrier for a +1 base damage boost to one Spell-Ball.
+
+  Enhancement: Spikes: The Sourcerer may expend Spikes to add damage to the next attack at a rate of 1 Spike to add their Base Spike Damage Bonus to one Spell-Ball.
+
+  Enhancement: Life Points: The Sourcerer may sacrifice Life Points to add damage to the next attack at a rate of 1 Life Point for a +1 Base damage boost to one Spell-Ball.
+
+  Enhancement: Flame Accent: If the Spell-Ball’s Accent is Flame it gains +1 Base Damage.

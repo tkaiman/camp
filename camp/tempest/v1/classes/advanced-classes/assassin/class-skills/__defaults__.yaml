@@ -1,0 +1,4 @@
+type: skill
+parent: assassin
+requires: assassin
+category: Assassin Class Skills

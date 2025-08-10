@@ -1,0 +1,13 @@
+name: What’s Yours is Mine
+incant: Death Blowing & Searching a Corpse
+call: '“Discern to Corpse: What Protects or Counters did you have remaining when you died?”, “Grant [Counter/Protect] to Self”'
+target: Individual (Corpse)
+duration: Short Rest
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: Grant Protect / Counter
+description: |
+  After Death Blowing a valid target and then Searching them, the Larcenist may take more than just the loot on the body - they may take portions of their very essence, weaving it into protections for themselves.
+
+  Once the Larcenist completes a Search of a corpse, they may ask the portrayer of the Corpse if they had any remaining Protects or Counters available to them. If so, the Larcenist may select one that the Portrayer indicates, and apply that protection to themselves, abiding by the Stacking rules. This protect or Counter lasts until used or the Larcenist completes a Short Rest and cannot be refreshed.  The Larcenist may only “steal” Counters that are not Protects equal to their Larcenist class-level.

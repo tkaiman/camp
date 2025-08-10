@@ -1,0 +1,26 @@
+name: Know Bindings
+requires: inquisitor:4
+cost: 2
+incant: None
+call: "“[Name or Description] Discern by Radiance: [Question]”"
+target: Inidividual
+delivery: Verbal
+accent: Radiance
+duration: Long Rest
+refresh: Long Rest
+effect: Discern
+description: |
+  Out of combat, the Inquisitor engages an individual in conversation. Throughout the conversation, the Inquisitor lays bare the other’s soul for examination. With the aid of their god, the Inquisitor is able to discern what contractual bindings weigh on the soul before them.
+
+  The Inquisitor may choose from the following list of Discerns in an effort to garner information about any such Contracts. The Inquisitor may ask a number of questions equal to twice their Inquisitor class-level. The Character under examination need not know they are bound in a Contract for this Spell to work.
+
+  * Are you bound by a Supernatural Contract?
+  * Is the holder of your Contract known to you?
+  * What are your feelings towards the holder of your Contract?
+  * Are these feelings authentic to you, or are you forced to feel this way?
+  * Is your Contract held by an Abomination, Undead, or Undevoted?
+  * Is the holder of your Contract your Patron?
+  * In general, what are the terms of the Contract?
+  * Do you know of a way to break the Contract?
+  * Will you break the Contract if you possess the means?
+  * Would you break the Contract if it could be broken?

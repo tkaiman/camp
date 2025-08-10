@@ -1,0 +1,25 @@
+name: Transportation Circle
+incant: Standard
+call: '“Grant Insubstantial by Arcane”, “Cure Insubstantial”'
+target: Individual
+duration: Long Rest
+delivery: Special
+refresh: Spell
+accent: Arcane
+effect: Grant Insubstantial, Cure
+description: |
+  This spell must be cast while inside a white cord, rope, or the like that is no longer than 20 feet long that has been laid down to make a continuous shape (usually a circle). The Mage,
+  and up to two other individuals, must be fully within the circle upon completion of the Spell. This spell must be fully explained to the two others while in the circle.
+
+  At any time before the Mage completes a Long Rest, they can lay down a second white cord, rope, or the like that is no longer than 20 feet long that has been laid down to make a continuous
+  shape (usually a circle). The Incantation of this Spell is repeated while the Mage and up to two others are inside. Once that is completed, all individuals who were in the circle for both
+  Incantations gain a special power to move between the two circles. At any time, one of the qualified individuals can Focus in either circle for a Quick Count of 30 and then Call “Grant
+  Insubstantial”.
+
+
+  While Insubstantial, they can (and must) move directly to the other circle, where they Call “Cure Insubstantial” and become physical again. If the circle they are traveling to is gone or
+  has been moved from its original location, the character should Cure Insubstantial where the circle was (to the best of their ability) and the Spell ends for that individual.
+
+
+  The two circles are placed in-game, linking two in-game locations, which may require out-of-game management of the circle location. These locations must be on the same plane and Eye to
+  the best knowledge of the Mage.

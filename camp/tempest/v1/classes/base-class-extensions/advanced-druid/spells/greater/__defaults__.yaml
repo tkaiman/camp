@@ -1,0 +1,6 @@
+type: spell
+tier: 3
+parent: druid
+requires: advanced-druid
+category: Druid Greater Spells
+sphere: divine

@@ -1,0 +1,15 @@
+name: Light of Clarity [The Lantern]
+incant: None
+call: "“[Name or Description] Discern by Radiance: [Question]”"
+target: Individual or Item
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest
+accent: Mind
+effect: Discern
+description: |
+  The light of the Lantern is the symbol of truth in the world, and truths are laid bare before it. Once per Short Rest, the Wonderworker can use any or all of the following Discerns on anyone or anything in the light of their lantern:
+
+    * “Is this item Magical?”
+    * “Do you have any non-inherent Conditions?”
+    * “Are you concealing game items on your person?”

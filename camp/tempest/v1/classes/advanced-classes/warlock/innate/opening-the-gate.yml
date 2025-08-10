@@ -1,0 +1,13 @@
+name: Opening the Gate
+tags: [patron]
+requires: warlock:1
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: None, only Damage
+description:
+  Whenever the Warlock casts a Spell from an Arcane spell list that does damage, they may expend a Spike during the casting (even if they have already expended a Spike during the normal casting of the spell) to increase the damage of the first Spell-Ball used by that spell by one if it does Piercing, two if it does Wounding, or by three if it is normal damage.

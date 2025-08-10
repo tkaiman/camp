@@ -1,0 +1,11 @@
+name: Tome-Sealed Name
+incant: None
+call: “Grant Protect versus Verbal”
+target: Individual
+duration: Until Used
+delivery: Touch
+refresh: Long Rest
+accent: None
+effect: Grant Protect
+description:
+  By writing down an individual’s name in a tome and roleplaying sealing it, the Wonderworker can help defend them against powers that would seek out that person specifically. The Wonderworker grants the target a Protect that is used exclusively on a Verbal-Delivery Power.  Once per Long Rest, the Wonderworker may Grant any individual a Protect vs Verbal by Touch after writing the name and sealing it.

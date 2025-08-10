@@ -1,0 +1,10 @@
+name: Impair
+incant: None
+call: “Weakness”
+target: Individual
+duration: Event
+delivery: Projectile or Thrown
+refresh: Short Rest
+accent: None
+effect: Weakness
+description: After Aiming for a Q10 at their target to find a weak spot, the Ranger may make a projectile attack and call "Weakness." A Ranger may use this power a number of times per Short Rest equal to their Ranger class-level.

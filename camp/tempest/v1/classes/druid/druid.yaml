@@ -5,20 +5,24 @@ sphere: divine
 starting_features:
   - basic-faith
   - basic-martial-weapons
-  - short-weapons
-  - two-weapon-style
 multiclass_features:
   - basic-faith
 level_grants:
   2: cancel
 choices:
+  bount-of-wilds:
+    starting_class: true
+    name: Bounty of the Wilds
+    matcher:
+      id:
+        - forage-1
+        - scavenging-1
   budding-wisdom:
     starting_class: true
     name: Budding Wisdom
     matcher:
       id:
         - budding-wisdom-1
-        - budding-wisdom-2
         - budding-wisdom-3
         - budding-wisdom-4
 description: |
@@ -53,31 +57,23 @@ id: budding-wisdom-1
 type: subfeature
 parent: druid
 name: Budding Knowledge
-description: "Extended Capacity - Novice (2), Lore: Nature (2), Profession - Apprentice (1)"
+description: "Extended Capacity - Novice (2), Lore: Nature (2)"
 category: Druid Starting Skills
 display_type: Path
 grants:
   - extended-capacity-novice
   - lore+Nature
-  - profession-apprentice
----
-id: budding-wisdom-2
-type: subfeature
-parent: druid
-name: Budding Endurance
-description: "Additional Recharge (5)"
-category: Druid Starting Skills
-display_type: Path
 ---
 id: budding-wisdom-3
 type: subfeature
 parent: druid
-name: Budding Power
-description: "Warcaster (5)"
+name: Budding Prowess
+description: "Short Weapons (3), Two-Weapon Style (2)"
 category: Druid Starting Skills
 display_type: Path
 grants:
-  - warcaster
+  - short-weapons
+  - two-weapon-style
 ---
 id: budding-wisdom-4
 type: subfeature

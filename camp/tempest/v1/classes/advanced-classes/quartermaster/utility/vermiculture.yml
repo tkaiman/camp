@@ -1,0 +1,7 @@
+name: Vermiculture
+tags: [crafter]
+requires: forage-3
+description: |
+  Composting a mixture of unwanted organic matter tends to attract creatures of the night. Each day of the event other than the last, you may turn in a mixed quantity of Bloom, Hide, or Harvest to plot. For every three Bloom/Hide or one Harvest turned in you may attract one Night Prize to be collected the next day, up to five. If you turn in more material than this, you may attract additional Night Prize at plot discretion. However, large piles of rotting matter and the valuable critters that congregate there may attract the attention of wildlife, opportunistic foragers, or other problems that could reduce your yield.
+
+  If a Greenhouse is available, composting at the building will protect your yield, but large amounts of compost may attract wildlife into town.

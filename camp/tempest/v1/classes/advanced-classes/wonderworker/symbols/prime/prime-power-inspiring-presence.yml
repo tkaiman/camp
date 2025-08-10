@@ -1,0 +1,11 @@
+name: Inspiring Presence [The Gem]
+requires: deeper-power-call-the-shot
+incant: None
+call: “By My Voice, Short Grant Resistance against [Agony/Madness/Mind/Will/Fear/Illusion/Terror]”
+target: Individuals
+duration: Short Rest
+delivery: Voice
+refresh: Long Rest
+accent: None
+effect: Grant Resistance
+description: Leaders, rulers, and giants among mortal folk can push those around them through dire circumstances, and steel their bodies and minds against the pain and terror of the world. After a 30 seconds or so  of roleplay to inspire those around them, the Wonderworker Grants a Short resistance against one of the listed Accents.

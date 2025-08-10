@@ -1,0 +1,16 @@
+name: Field Dressing
+incant: None
+call: “Counter, Field Dressing”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Counter
+grants: scavenging-1
+description: |
+  The Ranger gains Scavenging I, refunding as necessary.
+
+  In addition, Rangers may instantly Scavenge a creature not already being Scavenged by another. The Ranger may call "Counter, Field Dressing" to any damage received while waiting for their token.
+
+  Note: The Ranger loses their ability to Counter once they receive their token, or if they take any actions other than waiting to receive their loot. The Counter does not prevent any damage taken from the Scavenging itself.

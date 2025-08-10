@@ -1,0 +1,12 @@
+name: Safekeeping
+incant: Standard
+call: “Long Imbue Touch with [Quick Imprison to Self]”
+target: Individuals
+delivery: Touch
+accent: None
+duration: Long Rest, Quick 100
+refresh: Spell
+effect: Imbue, Imprison
+description:
+  The Cleric can Imbue up to six individuals (which can include the Cleric) with the power to Imprison themselves for a Quick Count of 100.
+  This Imbued Power can be used any time before the character completes a Long Rest.

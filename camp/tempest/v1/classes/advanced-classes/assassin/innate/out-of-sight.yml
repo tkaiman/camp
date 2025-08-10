@@ -1,0 +1,12 @@
+name: Out of Sight
+requires: assassin:1
+incant: None
+call: “Heal Full by Poison”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: Poison
+effect: Heal
+description: |
+  Once per Long Rest, if you take an entire Short Rest in hiding where (as far as you can tell) no enemies can see you, you can call “Heal Full by Poison” and Refresh up to two Novice Powers or one Advanced Power with refreshes no greater than Long.

@@ -1,0 +1,11 @@
+name: Back It Up With Steel
+incant: None
+call: “Wounding 6”
+target: Individual
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Wounding
+description:
+  After the Ringleader lands a Verbal attack that is not a Discern, they may set up to strike that target with a melee weapon for “Piercing 6.” This must be the next Power they use after the Verbal Power, and this Call may not be altered. This bonus attack is lost if the Ringleader completes a Short Rest, or uses any other Power.

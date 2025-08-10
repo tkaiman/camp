@@ -1,0 +1,19 @@
+name: Smuggler’s Crate
+incant: None
+call: None
+target: One Container
+duration: Event
+delivery: None
+refresh: Long Rest
+accent: None
+effect: None
+description: |
+  You may place a container somewhere, then hide it by placing red card with a white halo on it that reads:
+
+  > Hidden by <your name>
+  > Sight: You know this is here, but may not interact with it.
+  > Sight Beyond Sight: You may interact normally with this object, but if you move it, also remove this card.
+
+  You are able to find and interact with a crate that you have hidden yourself even without Sight Beyond Sight, but must still remove the card if you move it. You
+  should check that your original card is still present before interacting with it. A Smuggler’s Crate may have additional protections added using other items or
+  powers such as locks, traps, or the Socialite’s Safebox power.

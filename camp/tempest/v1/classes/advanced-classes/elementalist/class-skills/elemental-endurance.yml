@@ -1,0 +1,19 @@
+name: Elemental Endurance
+ranks: 3
+cost: 3
+requires: elementalist:2
+incant: None
+call: None
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Event
+accent: None
+effect: None
+description: |
+  The Elementalist focuses upon one of their sources, inuring themselves to the powers of an element.
+
+    * Air - The character is unaffected by high winds, including natural tornadoes and the like. The character is unaffected by natural lightning strikes and can see normally through clouds and the dust caused by weather. The character may Counter a Lightning Accent once per Event. Additionally, the character gains resistance to falling damage from most distances (unless it is “Final”).
+    * Fire - The character takes no damage from mundane fire or heat, and can breathe and normally in smoky environments. The character may Counter a Flame Accent once per Event.
+    * Earth - The character can pass through some rock and stone (any wall that the player can move through that represents earth or stone walls can be passed through), as if slowed. The character may Counter an Acid Accent once per Event.
+    * Water - The character can walk normally on icy surfaces and can breathe normally underwater. The character will suffer no ill-effects from being in deep water and can see normally underwater. The character may Counter an Ice Accent once per Event.

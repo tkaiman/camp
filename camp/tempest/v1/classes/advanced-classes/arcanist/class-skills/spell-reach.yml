@@ -1,0 +1,15 @@
+name: Spell Reach
+cost: 3
+requires: arcanist:1
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: None
+description: |
+  At-will, the Arcanist can deliver their Touch Spells with a Spell-Ball Delivery. The caster must hold the appropriate Materia while performing the incantation, and it counts as charging the Materia. When the spell is Called, the caster must add “to Willing” into the qualifier for the spell.
+
+  Note: This spell allows the charging of additional Materia if combined with Replicate Enhancement or Arcanist’s Replicate Enhancement.

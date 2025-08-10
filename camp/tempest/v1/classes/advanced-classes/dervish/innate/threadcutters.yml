@@ -1,0 +1,12 @@
+name: Threadcutters
+requires: dervish:4
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: Grant Accent
+description: |
+  The Dervish may change the Accent of any Power without Accent or with the Acid Accent to Time.

@@ -1,0 +1,14 @@
+name: Shrouded Grasp
+tags: [insubstantial]
+incant: None
+call: “Grant Insubstantial to [Object]”
+target: One Object
+duration: Instantaneous
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: Grant Insubstantial
+description: |
+  Among the limitations of the Shadowdancer’s intangibility, is the inability to interact with the physical world in meaningful ways, however, as masters of this artform, some rules can be bent, while others broken. Knowing which and how is the art of the master.
+
+  Once per Short Rest, while insubstantial, the Shadowdancer may designate an unattended physical object they would normally be able to pick up (were they not insubstantial) and make it part of their current insubstantial Condition, allowing them to pick it up, manipulate it and otherwise interact with it as if it were in their possession when they were initially granted their insubstantial Condition. The object’s insubstantial Condition ends (like all other carried objects) when it is separated from the character or the character’s insubstantial Condition ends.

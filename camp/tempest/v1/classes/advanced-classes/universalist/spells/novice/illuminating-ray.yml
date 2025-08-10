@@ -1,0 +1,11 @@
+name: Illuminating Ray
+incant: Standard
+call: '“Heal 2 by Radiance Final”, “Wounding 2 by Force Final”'
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Radiance/Force
+effect: Heal, Wounding
+description:
+  When casting this spell, the Universalist may charge a spell ball with Heal 2 by Radiance Final and charge a single spell ball with Wounding 2 by Force Final. If the Universalist has summoned armor active on themselves they may charge two additional spell balls of either type or combination of types.

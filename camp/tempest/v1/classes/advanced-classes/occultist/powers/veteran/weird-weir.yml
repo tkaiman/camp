@@ -1,0 +1,26 @@
+name: Weird Weir
+requires: greater-enchanting
+incant: “I call the spirits to grant access to the Foundation”
+call: '“Planar Weir Active”, “Tap Weird Weir”, “Rebuild Planar Weir”'
+target: New Planar Weir
+duration: Event
+delivery: Touch
+refresh: Special, Long Rest
+accent: None
+effect: Special
+description: |
+  You have learned how to construct a makeshift Planar Weir. You must provide your own reps for this, though due to the unusual nature of this weir’s construction, the objects inside do not need to conform to the standard, stable representations found in a permanent Planar Weir, but must at least have their resource names written on them so that they can be identified upon drawing. Additionally, you have some influence over the resource densities of this weir. It must have at least one of each Foundation resource type, but may have additional copies of resources of your choice.
+
+  The new Weir has restrictions on where it can be placed. Any of the following are valid places to host a Weir:
+
+    * A Consecrated or Desecrated space, such as a Shrine or Grove.
+    * A place of arcane power, such as an Arcane Locus.
+    * A place of unusual power. These places usually have an information card that notes a Dark Territory modifier on rituals performed there.
+
+  Regardless of qualification, a particular location may only have a single active Weir, and this can’t be performed in any location where a permanent, stable Planar Weir has been constructed, whether or not it is currently functional — the location is affected simply by the stable Weir being constructed and remains so for some time even if the stable Weir is destroyed.
+
+  If you intend to leave the Weir active, you must provide an Information Card describing its properties and duration. The Weir may have, but does not require, a key for identifying its resources by touch, similar to the illustrations present at a normal crafting station. If you intend to do enchanting at the Weir, you should provide appropriate circles and other props. Unless you remove the Weir or someone else removes it, the Weir remains active until the end of the event. You may create a Weir once per Long Rest, but can never have more than one Weir active at a time. You must remove (or confirm removal of) the previous Weir prior to creating a new one. While you may remove the Weir simply by picking it up and putting it away, another character must use a Dispel, Disjunction, or similar effect to remove it, and this should be noted on its information card.
+
+  You gain a lingering benefit due to your connection to this Weir: once per Long Rest, you may call “Tap Weird Weir” and draw a single resource. Destroying and re-creating your weir does not allow additional uses of this ability.
+
+  This power can alternatively be used to Rebuild a stable Planar Weir that has been destroyed, but the original props (or those of equivalent construction) must be used. In this case, the stable Weir functions normally, and you have no special power over it or connection to it after it is rebuilt. That is, you can’t later remove it or use the Tap Weird Weir call on it.

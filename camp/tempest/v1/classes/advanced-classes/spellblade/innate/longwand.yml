@@ -1,0 +1,12 @@
+name: Longwand
+requires: spellblade:3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: Immediate
+accent: None
+effect: None
+description:
+  Whenever the Spellblade releases a damaging Spell (including Wounding and Piercing) through a staff held in both hands, they can add 1 to their damage at 3rd and another 1 to their damage at 5th.

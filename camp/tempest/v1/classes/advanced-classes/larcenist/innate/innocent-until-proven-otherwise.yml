@@ -1,0 +1,14 @@
+name: Innocent Until Proven Otherwise
+requires: larcenist:2
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Obfuscate
+description: |
+  The Larcenist knows that words spoken without care are the shortest path to a gibbet’s rope, and so has carefully practiced the art of deflecting hard questions and probing interrogations. When the Larcenist is the lone target of a Discern by Mind, they may expend a Luck Charge to Obfuscate themselves in response.
+
+  Note: The Luck Charge can be expended after the Discern Call is made to preemptively gain Obfuscate for that Call.

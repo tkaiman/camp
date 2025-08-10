@@ -1,0 +1,13 @@
+name: Arcane Protection
+incant: Standard
+call: "Grant Protect vs Verbal or Voice"
+target: Individual
+duration: Event
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Protect
+description: |
+  The Arcanist creates a barrier around the touched target, giving that person a Protect which can be used either against a Verbal or Voice delivered attack.
+
+  The Arcanist may expend a Spike to choose an additional target.

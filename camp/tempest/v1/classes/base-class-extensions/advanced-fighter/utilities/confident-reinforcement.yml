@@ -1,0 +1,12 @@
+name: Confident Reinforcement
+requires: advanced-fighter:1
+incant: None
+call: "Reinforce"
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Refresh
+description:
+  The Fighter may refresh all Powers with the Reinforce tag. This does not count against the Fighter’s normal total number of Reinforce-Refreshes for that Long Rest.

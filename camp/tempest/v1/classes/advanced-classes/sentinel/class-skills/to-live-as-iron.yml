@@ -1,0 +1,18 @@
+name: To Live as Iron
+cost: 3
+tags: [artificer]
+requires:
+  - ac-sentinel:1
+  - living-iron
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: Immediate
+accent: None
+effect: Special
+description: |
+  The Sentinel is so adept at working with armor, that they can make repairs that would not normally be possible to make while wearing the armor. When using the Artisan’s Living Iron ability, the Sentinel may target their own armor and shield, at the cost of spending an extra point of Living Iron per five points of armor or shield they mend.
+
+  Additionally, the Sentinel may count their Sentinel class-levels towards their Living Iron pool, in addition to their Artisan class-levels.

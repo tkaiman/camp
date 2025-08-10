@@ -1,0 +1,13 @@
+name: Vow of Secrecy
+incant: Standard
+call: "“Grant Inherent obedient to Willing: Speak to no one of [brief description of event that just transpired.]”"
+target: Individuals
+duration: Event
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant
+description: |
+  As well as the Inquisitor knows the value of truth, as rare as it may come, the Inquisitor also is keenly aware of the need to keep control of knowledge. Invoking their god, together the Divine and the Inquisitor convince a number of witnesses that perhaps it is best to forget this ever happened and keep it under their hat. The Inquisitor may affect a number of individuals up to their Inquisitor class-level.
+
+  Note: The Inquisitor must explain that this will only last till the end of the event.

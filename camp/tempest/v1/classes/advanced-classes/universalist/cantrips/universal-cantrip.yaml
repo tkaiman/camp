@@ -1,0 +1,11 @@
+name: Universal Cantrip
+ranks: 5
+choices:
+  cantrip:
+    name: Base Class Cantrip
+    limit_is_per_rank: true
+    matcher:
+      type: cantrip
+      parent:
+        class_type: basic
+description: Instead of Choosing a Universalist Cantrip when they would receive one from taking a Universalist level, the character may instead take a Cantrip from any of the Base Classes.

@@ -1,0 +1,11 @@
+name: Warding Trinkets
+incant: None
+call: “Grant Protect vs Packets to Self”
+target: Self
+duration: Until Used
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: Grant Protect
+description:
+  The Wonderworker keeps a variety of trinkets from many cultures, each meant to ward away some form of evil eye, curse, or other folklore evil.  When meditating on these trinkets during a Short Rest the Wonderworker gains Protection from Packets.  Upon taking a Short Rest, the Wonderworker may grant themself a single Protect vs Packets on the conclusion of that Short Rest.

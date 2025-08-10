@@ -1,0 +1,15 @@
+name: Rite of the Rolling Steppe
+incant: Roleplay Q300, inviting the great warriors of the past to guide your hunt.
+call: "“Long Grant Force Accent”, “[Name or Description] Quick Bind by Force”"
+target: Self, Individual
+duration: Long Rest, Quick
+delivery: Projectile or Thrown, Verbal
+refresh: Long Rest
+accent: Force
+effect: Grant Accent, Bind, Grant Resistance
+description: |
+  The long, low, rolling hills of the Tarandri Steppe have been home to nomadic tribes since time immemorial, but on occasion, a great leader may rise from among the ranks of warriors and seek to lead its peoples in raids and warfare against foe from within and without. The “whys” and “wheres” these sparks of greatness fall is often speculated upon, but never proven - nevertheless these great warriors pass down sacred traditions that permeate the hunters of the region, and give a taste of what the next great Foremost might accomplish.
+
+  After participating in their rite, the Ranger may grant themselves the Force Accent for all Projectile or Thrown attacks, and when expending a Spike may additionally call against that same target “[Name or Description] Quick Bind by Force.”
+
+  Finally, the Rite of the Rolling Steppe can be expended in one burst of energy. The Ranger may gain resistance to all Bind, Disable, Root, Slow, Weakness, and Taunt Effects until they exit the current combat, and then the Rite and all its effects end for the Ranger.

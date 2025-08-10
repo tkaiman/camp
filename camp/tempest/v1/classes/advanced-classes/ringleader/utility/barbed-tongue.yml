@@ -1,0 +1,11 @@
+name: Barbed Tongue
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Special
+description:
+  The silvery barbed tongue of the Ringleader is as much a weapon as any mage’s spell or warrior’s blade. At the start of any event, you must pick Agony, Fear, or Will. For any Spells or Powers that use that Accent, the Delivery of Effects may be changed to Verbal, declaring the target “[Name or Description]”, followed by the appropriate Effect given by the Power. The Ringleader must roleplay for a Quick 30 in monologue, supporting or disparaging their target before being able to use the Verbal delivery described above. The Ringleader may use this Power a number of times equal to their Ringleader class-level per Long Rest.

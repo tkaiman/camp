@@ -1,0 +1,19 @@
+name: The Redoubt
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+grants:
+  - hearth
+  - protected-hearth
+  - bolt-hole
+description: |
+  Small cottage houses and warm hearths aren’t really up to par for most Ringleaders - the bigger the building the greater the boss, and most Ringleaders make their home in a massive villa or armored fortress.
+
+  The Ringleader gains the Hearth, Protected Hearth, and Bolthole Perks, as well as the following benefit:
+
+  Whenever the Ringleader witnesses a creature remove charges from a Haven for which the Ringleader belongs or is currently inside, they may Call “[Name or Description], Piercing 2 by Fear” to that creature.

@@ -1,0 +1,14 @@
+name: Tornado
+tags: [Hobbled]
+cost: 3
+requires: dervish:3
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: Grant Spike Damage
+description: |
+  While Hobbled, the Dervish gains +1 Base Spike Damage.

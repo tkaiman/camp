@@ -1,0 +1,13 @@
+name: We’re Muggers
+incant: "RP: Threaten someone with violence"
+call: "“[Name or Description] Short Obey to Living by Fear: Hand me all your coin.”"
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Short Rest
+accent: Fear
+effect: Obey
+description: |
+  Sometimes the most direct method is best: strongarming someone through raw intimidation doesn’t always work, but off-the-cuff threats of violence work more often than some might expect.
+
+  This ability may only be used out-of-combat and when the Larcenist and their allies outnumber the target and their allies in the area. The Larcenist may target up to three individuals to call “[Name or Description] Short Obey to Living by Fear: Hand me all your coin.”

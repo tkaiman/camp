@@ -1,0 +1,11 @@
+name: Wingclip
+incant: None
+call: “Disable [Limb] by Force”
+target: Individual
+duration: Event
+delivery: Projectile or Thrown
+refresh: Short Rest
+accent: Force
+effect: Disable, Refresh
+description:
+  The Ranger is proficient at keeping the faster beasts at bay with targeted shots to their foe’s limbs. The Ranger may make a ranged attack with the call “Disable [Limb] by Force.”  If the projectile isn't Prevented and lands on any body part called in the [Limb] portion of its call, it immediately refreshes.

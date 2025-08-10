@@ -1,0 +1,11 @@
+name: Call the Shot [The Gem]
+requires: gateway-power-drive-to-success
+incant: None
+call: “By My Voice, Short Grant +3 Spike Bonus Damage against [Name or Description]”
+target: Individuals
+duration: Short Rest
+delivery: Voice
+refresh: Event
+accent: None
+effect: Grant Spike Damage
+description: The leader sometimes needs to be the one to point out exactly who or what needs to get beaten down. Once per Event, after spending 30 seconds or so exhorting others to harm a specific individual target, and denouncing the character and abilities of that target, the Wonderworker can rally the people around them, and call out a specific target. Against that target, everyone affected by this power gains +3 Spike Bonus Damage. The Spike Damage bonus ends after that specific target dissipates, or is clearly no longer involved in fighting.  Note that while the Call can include out-of-game information about the person to be beaten (i.e. “John’s Necromancer NPC”), the exhortation must include only in-game information.

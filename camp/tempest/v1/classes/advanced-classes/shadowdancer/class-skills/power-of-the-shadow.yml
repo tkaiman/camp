@@ -1,0 +1,13 @@
+name: Power of the Shadow
+cost: 5
+requires: shadowdancer:3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+grants: shadowdancer.powers@1
+description: The Shadowdancer may immediately select a Basic Power from the list of Shadowdancer Basic Powers and learn it.

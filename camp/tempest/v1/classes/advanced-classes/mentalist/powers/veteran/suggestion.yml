@@ -1,0 +1,24 @@
+name: Suggestion
+incant: None (But See Description)
+call: "[Name or Description] Subtle Short Obey by Mind: [Command]"
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Short Rest
+accent: Mind
+effect: Obey
+description: |
+  This Power has different functions in and out of combat..
+
+  Out of combat, it requires the Mentalist and the target to be in conversation or other intimate communication for a period of at least a minute. The Mentalist can then use "[Name or Description] Subtle Short Obey by Mind:" followed by a single-clause command. The command has the following limitations: The target cannot be made to feel a particular emotion, obey additional commands, or do anything that would obviously cause them immediate harm. Additionally, no commands requiring physical contact or intimate behavior are possible.
+
+  In combat, it requires the Mentalist to have successfully used a Power with the Mind Accent on the target (not Prevented or missed) since the last time they completed a Short Rest. The Mentalist can then use one of the following commands as a Verbal after the Call "[Name or Description] Subtle Short Obey by Mind:"
+
+    * “Disarm yourself and remain disarmed.”
+    * “Do not harm me in any way unless I harm you first.”
+    * “Do not heal yourself.”
+    * “Walk directly away from me for 30 paces.”
+    * “Remove as many of your own defenses as you can.”
+    * “Protect me from harm, unless my allies or I harm you.”
+
+  This power may be refreshed by expending a Link and a Spike in addition to undergoing a Short Rest.

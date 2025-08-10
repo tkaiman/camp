@@ -1,0 +1,13 @@
+name: Touch of Mending
+requires: divine-shield:2
+cost: 3
+incant: "I call my faith, divine and right, to mend your armor, let you fight."
+call: “Mend [X] by Radiance”
+target: Other Individual
+delivery: Touch
+accent: Radiance
+duration: Instantaneous
+refresh: Immediate
+effect: Mend
+description: |
+  The Divine Shield may use points from their Divine Pool to Mend armor instead of Heal. The Divine Shield expends double the amount of Pool per point of Mending granted to the target. The same limits apply to Mending as did to Healing.

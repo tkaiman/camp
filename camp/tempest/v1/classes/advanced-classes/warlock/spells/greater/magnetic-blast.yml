@@ -1,0 +1,16 @@
+name: Magnetic Blast
+tags: [patron]
+incant: Standard
+call: '“[Name or Description] Discern by [Eldritch Accent]: How many armor points do you have?”, “Shatter Armor by [Eldritch Accent]”, “Grant [X] Barrier to Self”'
+target: Individual
+duration: Quick 100
+delivery: Verbal, Spell-Ball
+refresh: Spell
+accent: None
+effect: Slow
+description: |
+  The Warlock declares that his opponent’s armor is in fact, their own. First, the Warlock calls out a Discern and determines their foe’s current armor points. Then they may charge a Spell-Ball with “Shatter Armor by [Eldritch Accent]”. If the Shatter attack is not missed or Prevented, the Warlock may immediately call “Grant [X] Barrier to Self.”, where X is the amount of armor the target had.
+
+  After finishing the Discern, the Warlock may choose to refund the spell-splot used to cast this spell. If they do, they must complete a Short Rest before attempting to cast Magnetic Blast again. The Warlock may only receive Barrier from this spell once per Long Rest.
+
+  Note: X is a set amount and does not benefit from damage bonuses or any other alterations.

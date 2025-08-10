@@ -1,0 +1,13 @@
+name: Escape Artist
+cost: 2
+requires: advanced-rogue:1
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description:
+  Whenever the Rogue is connected to a Hearth, they act as if they had the ‘Bolt Hole’ Hearth Perk.

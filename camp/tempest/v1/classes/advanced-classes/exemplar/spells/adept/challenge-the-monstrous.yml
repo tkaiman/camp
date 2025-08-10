@@ -1,0 +1,15 @@
+name: Challenge the Monstrous
+incant: Standard
+call: “Taunt 20 to [Dark, Undead, or Undevoted]”
+target: Individual
+duration: Instantaneous
+delivery: Weapon (Melee)
+refresh: Spell
+accent: None
+effect: Taunt, Refresh
+description: |
+  It is not enough for the Exemplar to take a stance against evil, they must actively seek to destroy it. This Spell imbues a single strike with a melee weapon with a compelling challenge, to force
+  the most vile of beasts to face them in single combat. The Call for this Power is “Taunt 20 to [Dark, Undead, or Undevoted.]” If the Taunt is Prevented by an enemy the Exemplar refreshes up to 2
+  expended Divine Graces.
+
+  The character may expend a Divine Grace to refresh a use of the “Parry Blow” Power (including Parry Blow II, III, etc.).

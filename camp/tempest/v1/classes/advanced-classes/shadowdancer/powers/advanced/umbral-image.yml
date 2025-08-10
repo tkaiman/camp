@@ -1,0 +1,13 @@
+name: Umbral Image
+incant: None
+call: “Counter, Umbral Image”
+target: One attack by Ranged Weapon or Materia Delivery
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description: |
+  Umbral Image is a Counter to any attack made with a Ranged Weapon or Materia delivery. Upon being struck with such an attack the player should Call “Counter, Umbral Image.”
+
+  In addition, If the Shadowdancer gains the insubstantial Condition for any reason this ability immediately refreshes.

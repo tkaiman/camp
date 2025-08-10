@@ -1,0 +1,13 @@
+name: Galvanicus’ Gaze
+incant: Standard
+call: “[Name or Description] 10 Lightning”
+target: Individual(s)
+duration: Instantaneous
+delivery: Verbal
+refresh: Spell
+accent: Lightning
+effect: Damage
+description: |
+  The wrath of Galvanicaus takes the form of a swift and sure bolt of lightning, leaping from the caster to their victim.
+
+  Enhancement: Expend a Spike: If the Elementalist has selected Lightning as the element affected by Elemental Flow or is using a Lightning Source, they may expend a Spike to charge an additional Spell-Ball with Wounding 10 by Lightning.

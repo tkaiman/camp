@@ -1,0 +1,12 @@
+name: Burning Heart
+tags: [patron]
+incant: Standard
+call: None
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant Base Damage
+description:
+  Until the Warlock’s next Short Rest, Spell-Balls (not Spell-Packets) from Arcane Spells with the Flame Accent deal plus one Base damage.

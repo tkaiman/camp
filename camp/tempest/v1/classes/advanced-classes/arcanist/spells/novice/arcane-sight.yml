@@ -1,0 +1,18 @@
+name: Arcane Sight
+tags: [arcane-tool]
+incant: Standard
+call: "Grant Arcane Sight"
+target: One information card
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Spell
+effect: Grant Arcane Sight
+description: |
+  Upon completion of the Incantation, the Arcanist can read, in full, one information card that they can reach, inside and out, even if they do not fulfill the requirements to do so. If it is a trap card or
+  other card that details consequences on the inside, the Arcanist does not take those consequences. This does not save the Arcanist from the consequences of any hazards between them and the card. On “Blue
+  Cards”, i.e. information cards detailing events or locations out in the world, the detailed events or actions on the back do not occur, the Arcanist just gets some insight into what they would be.
+
+  If this Spell is cast with an Adept Spell-Slot, it will instead allow the character to learn information based on the player’s vision and will even allow the character to temporarily move one replaceable
+  barrier in order to see better. If the character were in a maze that had been marked out with tape on the ground, Arcane Sight would let the characters “see” through the walls. If the maze were made out
+  of hung cloth walls, the player could even move a sheet slightly to see through it to the other side, allowing the Arcanist character to “see” through the wall.

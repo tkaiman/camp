@@ -1,0 +1,12 @@
+name: Divine Conduit
+requires: inquisitor:1
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Immediate
+effect: Grant Accent
+description: |
+  The Inquisitor is a conduit for the Divine. They may substitute or add the Radiance Accent at-will to Divine Spells with Verbal delivery. At Inquisitor class-level 3 this expands to Divine Spells with Spell-Packet or Spell-Ball delivery. At Inquisitor class-level 5 this expands to attacks with Weapon delivery.

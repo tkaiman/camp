@@ -1,0 +1,23 @@
+name: Wizard Sight
+incant: Standard
+call: “Grant Wizard Sight by Arcane”
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: Arcane
+effect: Grant Power
+description: |
+  This Spell can only be Book Cast and will not function if cast normally. Once the Mage grants themself Wizard Sight, they may ask any of the following Discerns at-will after Focusing for a Quick Count of 30 on the target.
+
+    * Subtle Discern by Arcane: Is this your natural form?
+    * Subtle Discern by Arcane: What Types do you have?
+    * Subtle Discern by Arcane: Would Dispel Magic hurt you?
+    * Subtle Discern by Arcane: Are you dead/dying?
+    * Subtle Discern by Arcane: Do you have anything lootable on you?
+    * Subtle Discern by Arcane: Do you have the power to make yourself insubstantial?
+    * Subtle Discern by Arcane: Do you know any lore about [topic]?
+    * Subtle Discern by Arcane to Spirit: Are there any traps in this room?
+    * Subtle Discern by Arcane to Spirit: What Eye am I on?
+    * Subtle Discern by Arcane to Spirit: Where is the most significant source of magical power in this area?
+    * Subtle Discern by Arcane to Spirit: How long until this planar portal closes?

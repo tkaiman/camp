@@ -1,0 +1,12 @@
+name: Preternatural Arrows
+requires: ranger:2
+incant: Focus Quick 100
+call: “Short Grant [Accent] to Self“
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Grant Accent
+description: |
+  The Ranger is aware of the vulnerabilities of their prey, and prepares accordingly. Choose an accent from the following list: [Flame, Poison, Agony, Force]. Until the Ranger takes a Short Rest, they may alter the Accent (or add the accent, if the original attack was unaccented) of their projectile attacks to the chosen accent.

@@ -1,0 +1,13 @@
+name: Wetwork
+cost: 5
+requires: assassin:3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description:
+  When the Assassin uses a Skill or Power where the requirements include that the weapon be a Hand Weapon, the Assassin may instead use a Short Weapon.

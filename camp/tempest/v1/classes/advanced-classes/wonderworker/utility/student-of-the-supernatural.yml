@@ -1,0 +1,13 @@
+name: Student of the Supernatural
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Special
+description: |
+  A Wonderworker that seeks out the myriad connections of the mystic world will frequently find themselves as a lint-ball of facts and knowledge. Once per Long Rest, the Wonderworker may act as if they had all Lore skills required for a particular physical prop (eg. blue card) and may read all portions of that prop as though they have all the applicable Lore skills necessary.
+
+  Additionally, if a physical prop requires a specific non-Lore skill for interaction, once per Long Rest the Wonderworker may be treated as if they have that skill for interacting with that prop. This does not allow the Wonderworker to mine, forage, or scavenge.

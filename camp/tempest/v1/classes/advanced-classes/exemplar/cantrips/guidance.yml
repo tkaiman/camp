@@ -1,0 +1,13 @@
+name: Guidance
+incant: Standard
+call: "“Grant Guidance: [Number] Dark Territory,” Explanation"
+target: Individual (Primary Ritualist / Crafter)
+duration: Special
+delivery: Touch
+refresh: Immediate
+accent: None
+effect: Grant Dark Territory
+description: |
+  This Cantrip allows the Exemplar to draw the hand of the benefactor to a Ritualist, to help guide them. The Exemplar may choose one of the following effects while the Participant of any ritual or observing a non-ritual crafting procedure. Only one instance of Guidance can be used on any particular ritual or crafting procedure and the Primary Ritualist (and any Staff adjudicating Dark Territory) must be informed of this.
+
+  For an Alchemical process, Arcane Ritual, Divine Ritual, Enchanting process, or Tinkering process which involves Dark Territory, decrease the Dark Territory of the Ritual by 1. If the Exemplar expends a Divine Grace they may reduce the Dark Territory by an additional point.

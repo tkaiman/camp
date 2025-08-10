@@ -1,0 +1,17 @@
+name: Hard-Won Concession
+requires:
+  - dealbroker:3
+  - -graceful-concession
+cost: 3
+incant: Negotiation
+call: “Refresh Concession”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Refresh
+description:
+  Shrewd opponents may notice that a Dealbroker benefits from the smooth flow of requests and concessions and may try to make things harder for you with unnecessary
+  friction. You, however, revel in this sort of conflict and wearing down your opponent gives you great satisfaction. Once per Short Rest, when your opponent rebuffs
+  a requested concession and further attempts to make it more reasonable to them at least three times and they eventually agree to it, you may refresh all [Concession] powers.

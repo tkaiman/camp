@@ -1,0 +1,14 @@
+name: Profane Source
+requires: warlock:1
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Special
+description: |
+  Warlocks utilize Sources as their spellcasting foci. This Power works in all ways as the Sourcerer ability Eldritch Source, and is a requirement for all Warlock Spells. If the character already has an Eldritch Source (such as the Sourcerer’s Eldritch Source), this ability grants an additional Eldritch Source.
+
+  In addition, the Warlock may use the Warlock Incant for all Arcane spell Incantations, should the character so choose.

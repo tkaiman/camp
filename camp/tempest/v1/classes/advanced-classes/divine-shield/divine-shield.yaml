@@ -1,0 +1,21 @@
+type: class
+category: Advanced Class
+class_type: advanced
+ranks: 5
+name: Divine Shield
+sphere: divine
+requires:
+  - level:10
+  - -undevoted
+  - divine.spell_slots@2:2
+  - devotion
+  - lore+Religious
+description: |
+  The Divine Shield is a Divine spellcaster focused on others. They believe that their purpose is to wield the power of the divinities indirectly to empower, protect, and keep alive those who would do the work of the divines. The Divine Shield makes sure that the champions and heroes are able to focus their destructive power on the foes of mortals, unafraid of death or wounds. As a personal support, there are few better at what they do; able to invigorate the body, protect the soul, and refresh the mind. Those who are chosen by the Divine Shield as heroes will be nigh unstoppable.
+
+  ### Base Incant
+
+  > “I call my faith: divine and right, I wield and shape creation's light,  
+  > Against all harm the world I seal, I place myself as divine shield,  
+  > Between the mortal and its foes, to save them all my power flows,  
+  > As vessel for the will divine, I claim the power that is mine…”

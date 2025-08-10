@@ -1,0 +1,10 @@
+name: Forceful Inquiry
+incant: None
+call: Special
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Event
+accent: None
+effect: Grant Final
+description: Once per Event, the Interrogator may add the “Final” Modifier to a single Discern.

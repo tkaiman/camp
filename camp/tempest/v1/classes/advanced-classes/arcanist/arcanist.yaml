@@ -1,0 +1,40 @@
+type: class
+class_type: advanced
+ranks: 5
+category: Advanced Class
+name: Arcanist
+sphere: arcane
+requires:
+  - level:10
+  - arcane@2:2
+  - bookcaster:3
+description: |
+  The Arcanist is the Mage’s mage. Although many believe that their power comes from somewhere other and that the Arcanist draws strength from the mad darkness between the stars,
+  others see their long hours of study and progress in their never ending quest to master the arcane arts. Arcanists specialize in two kinds of Spells: those that enhance the already
+  potent arsenal of the Mage; and the Arcane Toolbox, a sequence of Spells to handle all the other trials and tribulations that so often confront adventurers.
+
+
+  Arcanists are known for their studies, diving into all sorts of Lore from the mundane to the forbidden, and for their repertoire of useful powers, capable of making them master of any
+  situation, peaceful or not. In addition to these strengths, Arcanists are well known for their aptitude with rituals and scrolls, further increasing their utility.
+
+  ### Base Incant
+
+  > “I conjure words of arcane might, from studied tocandlelight,  
+  > I draw my strength from sky and land. Gather now within my hand.  
+  > From planes beyond, my power's Source, By Word and Will I give it force.  
+  > My Word as law, my Will supreme, I fuse the strength of truth and dream…”
+
+  ### Cantrip Incant
+
+  > “I conjure words of arcane might..."
+
+  ### Adept Incant
+
+  > “I conjure words of arcane might, from studied tocandlelight,  
+  > I draw my strength from sky and land. Gather now within my hand..."
+
+  ### Greater Incant
+
+  > “I conjure words of arcane might, from studied tocandlelight,  
+  > I draw my strength from sky and land. Gather now within my hand.  
+  > From planes beyond, my power's Source, By Word and Will I give it force..."

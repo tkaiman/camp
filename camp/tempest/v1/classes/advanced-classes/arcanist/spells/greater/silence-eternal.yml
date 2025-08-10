@@ -1,0 +1,13 @@
+name: Silence Eternal
+incant: Standard
+call: "[Name or Description] Silence and Root by Arcane"
+target: Individual
+duration: Event
+delivery: Verbal
+refresh: Spell
+accent: Arcane
+effect: Silence, Root
+description: |
+  For most common spellcasters, the ropes of the arcane flow from the world into the body. Arcanists know how to pluck those ropes of magic away from their adversaries… and tie them to the floor with them.
+
+  By expending a Spike, the target is affected by both Silence and Root by Arcane as their ability to cast spells is snatched away from them.

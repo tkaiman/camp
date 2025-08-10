@@ -1,0 +1,27 @@
+name: Gopher's Grant
+incant: Standard
+call: '"Short Grant: Arcane Reload", Explanation'
+target: Individual
+duration: Short Rest
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Arcane Reload
+description: This Spell can only be cast out of combat and the Power that it Grants will only be usable until the target completes a Short Rest.
+
+subcard:
+  name: Arcane Reload
+  incant: None
+  call: '"Grant Insubstantial", "Cure Insubstantial"'
+  target: Self
+  duration: Special
+  delivery: None
+  refresh: None
+  accent: None
+  effect: Grant Insubstantial, Cure
+  description: |
+    The character can only use this ability after moving off to a location removed from combat. They then go insubstantial and can return to the battle and collect Spell-Packets or Spell-Balls. Once they
+    have collected a maximum of six, they must return to their original location and Cure their insubstantial Condition by calling "Cure Insubstantial". While insubstantial the character can do nothing
+    besides collect Materia and return.
+
+    Note: The character need not be able to use Materia in order to go collect it.

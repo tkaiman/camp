@@ -1,0 +1,13 @@
+name: Universal Protection
+incant: Standard
+call: “Grant Protect vs Verbal or Voice, Grant Protect vs Packets, Grant Protect vs Weapons”
+target: Individual
+duration: Until Used
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Counter
+description: |
+  The Universalist creates a barrier around a target within Touch range, giving them three Protects, one which can be used either against a Verbal or Voice delivered Effect, one against a packet delivered Effect, and one against a weapon delivered effect.  Replicate Enhancement works on this spell despite normal restrictions.
+
+  Note: Remember a target can only have 3 protects on them at one time normally, if this spell would cause the target to have too many protects, the target may choose which protects they gain and which ones they lose. Stacking rules prevent an individual from having two identical protects at any one time.

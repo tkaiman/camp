@@ -1,0 +1,10 @@
+name: Blaze
+incant: Standard
+call: '“Wounding 1 by Flame”, “Wounding 2 by Flame”'
+target: Individual
+duration: Instantaneous
+delivery: Packet (Spell-Packet)
+refresh: Focus Quick 100
+accent: Flame
+effect: Wounding
+  Calling on the burning heat of the sun, the Spellblade can use a cantrip that calls fire to surround an enemy. If the Spellblade expends a Spike during the casting, this Cantrip does “Wounding 2 by Flame.”

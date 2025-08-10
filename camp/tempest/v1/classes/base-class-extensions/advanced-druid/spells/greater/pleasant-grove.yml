@@ -1,0 +1,19 @@
+name: Pleasant Grove
+incant: Standard
+call: "“Heal 1 to [Animals, Beasts, Plants]”, “Grant Life to [Animals, Beasts]”, “No Effect”, “Instruction: You can converse with me freely”, “Obey to [Animals, Beasts, and/or Plants]: Calm down and feel at peace.”"
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Heal, Grant Life Tap
+description: |
+  This Spell enhances the Druid’s connection with their grove. One cast, while in their grove, the Druid has the following abilities. Each is listed with the number
+  of times the ability can be used and each can only be used on targets that are also inside the grove. Once all the uses are expended, the Druid will need to complete
+  a Short Rest in the Grove to refresh all of the uses of all abilities. A character that casts this Spell cannot cast Fortified Grove in the same Event.
+
+    * Denial of the Forest: The Druid may Call: “[Name or Description] Short Obey by Will: Leave my grove and do not come back in.” once. To use this Power again, the Druid must complete a Short Rest.
+    * Guardian of the Forest: The Druid can use “Heal 1 to [Animals/Beasts]” and “Grant Life to [Animals/Beasts]” with an Incantation of Focus Quick Count of 30 as a Touch Power. This Power is at-will.
+    * Speak with the Forest: The Druid may inform any animals or plants, “Instruction: You can converse with me freely”.
+    * Tranquility of the Forest: The Druid may Call: “By My Voice, Short Obey by Will to [Animals, Beasts, and/or Plants]: Calm down and feel at peace.” once per Long Rest. In addition, if the Druid sleeps in the Grove for a minimum of an hour,, they will not suffer from Nightmares or fears of being outside. The Druid will also Heal to Full and be Cured of any undesired non-inherent Conditions upon completing a Long Rest within the Grove.
+    * Wrath of the Forest: The Druid can use the Call: “[Name or Description]: 2 Flame” after an Incantation of Focus Quick Count 30.

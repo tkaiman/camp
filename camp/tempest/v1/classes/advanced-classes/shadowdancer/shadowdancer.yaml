@@ -1,0 +1,46 @@
+name: Shadowdancer
+type: class
+category: Advanced Class
+class_type: advanced
+ranks: 5
+requires:
+  - short-weapons
+  - lore+shadow
+  - level:10
+  - arcane.spell_slots
+  - power
+  - any:
+      - power@2
+      - arcane.spell_slots@2
+flags: flag+shadowdancer
+level_grants:
+  2: shadowdancer-bonus-spikes
+  4: shadowdancer-bonus-damage
+description: |
+  While all rogues take advantage of the dark, and unaware opponents, few do so with the absolute lethality of the Shadowdancer. These masters of darkness are adept at blending in with the shadows and striking before any are even aware of their presence, then immediately fading away into the darkness from whence they struck.
+
+  Manipulating the shadows takes arcane talent, but in the end, the blade is what accomplishes the goal: the sight-unseen removal of targets of high value, and a clean escape.
+
+  ## Attacking From Behind
+
+  A number of Shadowdancer Powers reference attacking “from behind.” In order to count as an attack from behind, the Shadowdancer must have one foot on the back side of a line created by the target’s shoulders and must strike with a hand that is also behind that line. This includes projectile and thrown weapon attacks. “From behind” Powers will always be usable against targets that are helpless or willing. An attack that must come “from behind” which doesn’t for some reason, does nothing at all: not even a single point. Often, an attack will begin as an attack “from behind” but will end up being a normal attack (the opponent turns, the attack hits the wrong target, etc.). In this case it is up to the Shadowdancer to let the target know not to take any damage or Effects.
+
+  ## WARNING:
+
+  Many of the Skills and Powers listed below are contingent on the character having ready access to the “Insubstantial” condition. Be aware that this class will not function correctly without it. These Powers are listed as [Insubstantial] for easy reference.
+---
+id: shadowdancer-bonus-spikes
+type: subfeature
+parent: shadowdancer
+name: Bonus Maximum Spikes
+category: Shadowdancer Class Bonuses
+display_type: Bonus
+grants: spikes:1
+---
+id: shadowdancer-bonus-damage
+type: subfeature
+display_type: Bonus
+parent: shadowdancer
+name: +1 Bonus Spike Damage
+category: Shadowdancer Class Bonuses
+# TODO: Track spike damage

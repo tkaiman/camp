@@ -1,0 +1,13 @@
+name: Nightmarish Affliction
+incant: None
+call: “Short Berserk by Darkness”
+target: Individual
+duration: Short Rest
+delivery: Weapon
+refresh: Long Rest
+accent: Darkness
+effect: Berserk
+description: |
+  Calling upon the horrors that lurk in the minds of mortals, the Shadowdancer can cause their foes to see nightmarish illusions in place of friend and foe alike.
+
+  Immediately after losing the insubstantial Condition, the Shadowdancer gains a single charge of “Short Berserk by Darkness.” Should the Shadowdancer complete a Short Rest, become Helpless, or use any other Power, this charge is lost.

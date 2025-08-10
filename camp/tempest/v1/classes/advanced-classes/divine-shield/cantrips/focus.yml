@@ -1,0 +1,13 @@
+name: Focus
+incant: Standard
+call: "“Instruction: Your Quick Count Refresh is completed”"
+target: Other Individual
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Immediate
+effect: Instruction
+description: |
+  This Cantrip allows another character to complete a Refresh that they are performing that requires a Quick Count (with or without Focus). This can include Revive, Fumble, and similar Powers. It only works if it is cast while the target is currently doing the count for the Refresh.
+
+  Note: This does not end Durations.

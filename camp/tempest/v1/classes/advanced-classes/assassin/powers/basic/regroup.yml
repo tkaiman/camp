@@ -1,0 +1,11 @@
+name: Regroup
+incant: None
+call: “Counter, Dodge”
+target: One Attack
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description:
+  After the Assassin has used an attack from behind, the Assassin may use this Power to gain a Counter, Dodge against a Melee or Ranged Attack from the same creature. This defense expires if the Assassin takes a Short Rest.

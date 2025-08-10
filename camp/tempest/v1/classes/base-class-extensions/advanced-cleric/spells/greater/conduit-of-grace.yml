@@ -1,0 +1,15 @@
+name: Conduit of Grace
+incant: Standard
+call: '“Cure [Condition] by Radiance”, “3 Radiance”, “Faithcast [Spell or Cantrip Name]”'
+target: Individual, Self
+delivery: Touch, Spell-Packet
+accent: Radiance
+duration: Long Rest
+refresh: Spell
+effect: Cure, Damage, Altered
+description: |
+  Becoming a conduit of grace allows the Cleric a number of specific abilities until they complete a Long Rest. These are:
+
+  * The Cleric can Cure one Condition by expending 5 points from their Healing Touch pool. This is a Touch-Delivery with the Call of “Cure [Condition] by Radiance”.
+  * The Cleric can charge a Spell-Packet to do “3 Radiance” by expending 1 point from their Healing Touch Pool. Each Spell-Packet is charged with the Incantation “Conduit of Grace”.
+  * The Cleric can substitute “Faithcast [Spell or Cantrip Name]” for the Incantation of any Cleric Spell or Cleric Cantrip with a standard Incantation. Doing so costs 2 points from the Cleric’s Healing Touch pool.

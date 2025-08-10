@@ -1,0 +1,13 @@
+name: Life Force
+incant: Standard
+call: “Long Grant +2 Maximum Life Points”
+target: Individual
+delivery: Touch
+accent: None
+duration: Long Rest
+refresh: Spell
+effect: Grant Maximum Life Points
+description: |
+  Until the target completes a Long Rest, their Maximum Life Points goes up by two. Their current Life Points also increase by two.
+
+  Enhancement: Greater Spell-Slot: The target’s Maximum life Points go up by four instead.

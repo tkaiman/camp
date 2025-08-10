@@ -1,0 +1,14 @@
+name: Slow Transition
+tags: [insubstantial]
+incant: None
+call: “Counter, Shadow”
+target: One Weapon Attack
+duration: Instantaneous
+delivery: None
+refresh: Special
+accent: None
+effect: Counter
+description: |
+  The Shadowdancer is so at home in the intangible shroud of the dark that even when they re-emerge into the normal world, they draw with them some of the protection of their former insubstantial state.
+
+  When the Shadowdancer leaves an insubstantial state, they gain a number of Counters versus Weapons equal to their Shadowdancer class-levels that must be used each time the Shadowdancer takes a Weapon attack until they are used up. If the defense is forgotten or otherwise not used, the charge is lost.

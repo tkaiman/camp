@@ -1,0 +1,13 @@
+name: Skimp on the Expenses
+incant: None
+call: None, Explanation
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: None
+description: |
+  Once per Ringleader class-level (per Long Rest), when the Ringleader crafts an item with the assistance of their Factor,  or oversees an Enforcer craft an item, they may reduce the cost of that craft by one common resource per Ringleader class-level, to a minimum of one of each resource type.
+
+  While crafting, the Ringleader should announce to their Enforcer(s) that this Power is being used.

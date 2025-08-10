@@ -1,0 +1,16 @@
+name: Eldritch Lance
+tags: [patron]
+incant: Standard
+call: “Wounding 4 by [Eldritch Accent]”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: "[Eldritch Accent]"
+effect: Wounding
+description: |
+  The Arcane Lance unleashes 4 points of Wounding [Eldritch Accent] damage to the target. If this spell is cast with the Flame, Ice, Lightning, or Acid accents, an additional Spell-Ball is charged.
+
+  Enhancement: Adept-Spell Slot, Wounding 7
+
+  Enhancement: Greater Spell Slot, Wounding 14

@@ -1,0 +1,12 @@
+name: Tactics and Toughness
+tags: [reinforce]
+incant: None
+call: '"Refresh Parry Blow", "Heal to Full"'
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Refresh, Heal
+description:
+  The Fighter immediately refreshes Parry Blow and heals to full.

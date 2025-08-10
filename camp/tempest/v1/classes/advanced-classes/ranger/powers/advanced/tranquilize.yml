@@ -1,0 +1,11 @@
+name: Soothe Beast
+incant: "Quick 100 RP: attempting to soothe the target or compel it to listen to you."
+call: "[Name or Description] Short Obey to [Animal / Foe Type], do not attack me unless I attack you."
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Short Rest
+accent: None
+effect: Obey
+description: |
+  After attempting to quell a foe that the Ranger has studied, they may use their knowledge of the beast to appeal to its primal nature. After finishing a Q100 roleplay attempting to handle the creature, they may call "[Name or Description] Short Obey to [Animal / Foe Type], do not attack me unless I attack you."

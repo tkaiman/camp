@@ -1,0 +1,26 @@
+name: Indomitable
+incant: Standard
+call: “Grant Protect vs [Will, Mind, or Fear] to Worshiper of [Religion/Deity]”
+target: Self, Individual
+duration: Long Rest
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Protect
+description: |
+  The Inquisitor calls upon the temperance of their god and bolsters them and followers of their god. At the time of casting this spell, the Inquisitor may Grant Protection to themselves and any Individual the Inquisitor has confirmed follows the same Religion as the Inquisitor using their Detect Devotion Cantrip.  The Inquisitor may do this a number of times equal to their Inquisitor class-level so long as each person who receives the boon worships the same Religion or Deity.
+
+  The Inquisitor also gains the Indomitable power:
+
+subcard:
+  name: Indomitable
+  incant: None
+  call: "Counter, Indomitable"
+  target: Self
+  duration: Long Rest
+  delivery: None
+  refresh: None
+  accent: None
+  effect: Counter
+  description: |
+    When the Inquisitor is struck with a Charm, Dominate, or Obey Effect, they may call “Counter, Indomitable” once per Long Rest per casting of this Spell.

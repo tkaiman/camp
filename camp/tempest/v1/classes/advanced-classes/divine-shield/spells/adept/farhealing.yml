@@ -1,0 +1,12 @@
+name: Farhealing
+call: “[Name or Description] Subtle Heal 4 by Radiance”
+target: Individual
+delivery: Verbal
+accent: Radiance
+duration: Instantaneous
+refresh: Spell
+effect: Heal
+description: |
+  Reaching out, the Divine Shield’s power imperceptibly closes the wounds of another.
+
+  Enhancement: Greater Spell-Slot: The amount healed is eight instead of four.

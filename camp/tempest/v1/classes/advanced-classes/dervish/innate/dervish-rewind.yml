@@ -1,0 +1,18 @@
+name: Rewind
+requires: dervish:3
+incant: None
+call: "“Counter: Rewind”"
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Counter
+description: |
+  The Dervish is slightly aware of the future, whether through an innate sense of precognition, or simply an uncanny sense of danger. While out of combat, the Dervish may “take back” an action that caused them to fail a physical challenge, trap, or other similar situation that occurred within the last few seconds.
+
+  This Power may not be used unless a Lantern Spirit is present. The character, after failing to succeed at a physical challenge, trap, or other situation, may call “Counter: Rewind. Instruction to Lantern Spirit: I did not fail.” and return to the beginning of the physical challenge, close the box, etc.
+
+  For Example: Avana attempts to cross a narrow catwalk and is being distracted by Kobolds yelling in the distance. She missteps and falls to a macerator below, which would immediately tear her body apart, and deal “Death by Agony Final.” Instead, she calls “Counter: Rewind”, returning to the beginning of the challenge and preventing her gruesome death.
+
+  Note: As in the example, this ability functions against the keyword “Final,” as the situation / Call is considered to not have happened to the character.

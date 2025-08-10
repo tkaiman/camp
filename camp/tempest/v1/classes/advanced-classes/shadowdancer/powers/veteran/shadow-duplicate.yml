@@ -1,0 +1,13 @@
+name: Shadow Duplicate
+incant: RP Slow 30, Inscribing a personal rune on a location.
+call: '“Immune, Shadow Duplicate”, “Grant Insubstantial”, “Dispel Insubstantial”'
+target: Self
+duration: Special
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description: |
+  After inscribing a personal rune, the Shadowdancer disconnects their shadow from themselves creating a duplicate form they control. This new form is barely there, and easy to disrupt, but as long as it exists, the Shadowdancer perceives the world through it.
+
+  In effect, the Shadowdancer disappears and is replaced by this duplicate - once the duplicate takes any Effect that does not have a Target of Self the duplicate is Dispelled, calling “Immune, Shadow Duplicate” to the Effect that caused the disruption, and the inhabiting spirit is whisked back to the rune: the character becomes insubstantial and must immediately return to the rune, and there call “Dispel Insubstantial to Self.”

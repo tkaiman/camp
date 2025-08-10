@@ -1,0 +1,10 @@
+name: Subtlety is an Art
+incant: None
+call: Special
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Grant Subtle
+description: The Interrogator has tutored the Ringleader in the subtle art of questioning. The Ringleader may add the keyword “Subtle” to a single Discern.

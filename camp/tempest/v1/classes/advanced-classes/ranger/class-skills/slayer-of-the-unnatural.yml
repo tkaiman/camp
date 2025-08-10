@@ -1,0 +1,5 @@
+name: Slayer of the Unnatural
+cost: 6
+requires: ranger:5
+description:
+  Where relevant, you may use any of Angels, Automatons, Construct, Dark, Demon, Elemental, or Fae as a [Foe Type].  

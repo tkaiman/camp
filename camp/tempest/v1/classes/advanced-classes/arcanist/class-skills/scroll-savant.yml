@@ -1,0 +1,15 @@
+name: Scroll Savant
+cost: 3
+requires:
+  - arcanist:2
+  - apprentice-enchanting
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: None
+description:
+  The Arcanist may cast scrolls by reading the incantation aloud once.

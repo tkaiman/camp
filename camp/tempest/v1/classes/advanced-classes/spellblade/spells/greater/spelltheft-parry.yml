@@ -1,0 +1,11 @@
+name: Spelltheft Parry
+incant: Standard
+call: “Counter, Spelltheft”
+target: Self
+duration: Short Rest
+delivery: Packet (Spell-Packet)
+refresh: Spell
+accent: None
+effect: Counter, Special
+description:
+  This spell is cast on the Spellblade’s weapon and will remain active until the Spellblade completes a Short Rest, becomes Helpless, or stops wielding the weapon. The weapon is capable of stealing an attack used against it. After the Spellblade is hit with a Packet or Verbal attack (Effect or Damage), the Spellblade can call “Counter, Spelltheft!” and then may, at any time while the spell is still active, make a melee attack with the enhanced weapon that has the exact same Call as the attack that was Countered.

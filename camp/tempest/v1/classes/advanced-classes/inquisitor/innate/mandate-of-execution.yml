@@ -1,0 +1,19 @@
+name: Mandate of Execution
+requires: inquisitor:5
+incant: RP, see below
+call: Varies
+target: Self, Individual
+delivery: Verbal
+accent: Radiance
+duration: Short Rest
+refresh: Long Rest
+effect: Special
+description: |
+  The Inquisitor knows that their word is the final word that the enemies of their faith will hear.  To use this ability, the inquisitor must engage in approximately 30 seconds of roleplay appropriate for their faith that they are issuing a sentence of execution on a Branded target, who must be visible to the inquisitor at the time.  Upon doing so, the Inquisitor gains the ability to use the following effects on the marked target with Verbal delivery:
+
+  * “[Name or Description], Quick Slow by Radiance”
+  * “[Name or Description], Quick Repel by Radiance”
+  * “[Name or Description], [Base Damage] by Radiance”
+  * “[Name or Description], Death to Helpless by Radiance”
+
+  The inquisitor may use all of these abilities at will, but must wait at least a quick 30 between calls.  This power ends if the inquisitor dies or actively chooses to disengage in combat with their target.

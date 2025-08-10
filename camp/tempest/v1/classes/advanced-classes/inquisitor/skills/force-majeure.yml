@@ -1,0 +1,17 @@
+name: Force Majeure
+requires: inquisitor:5
+cost: 2
+incant: As Master incant, with last line as "As vessel for the will divine, I claim the power that is mine to unbind the spirit before me."
+call: “Destroy Contract with [Abomination, Undead, Undevoted] by Radiance”
+target: Individual
+delivery: Touch
+accent: Radiance
+duration: Instantaneous
+refresh: Event
+effect: Special
+description: |
+  Where the Inquisitor goes, the light of the Divine will always shine, even upon the most corrupt of souls, for the lost are in greatest need of aid. The Inquisitor is honor bound to seek out and destroy the corruption they uncover, sometimes at the cost of their own lives. When all other options are exhausted, the Inquisitor may forcefully destroy the link created by foul contracts with such creatures as Abominations, Undead, and Undevoted, but at the cost of their own life.
+
+  Out of combat, and after one minute of roleplay, the Inquisitor may touch a willing target and recite the incantation. Once complete, the Inquisitor immediately turns into a Spirit and must travel directly to the Spirit Well. This overrides any other Powers that might affect the Inquisitor’s Spirit, and they should Call “Immune” if effects are directed to them with the qualifier “to Spirit.”
+
+  Once the Inquisitor’s spirit has arrived at the Spirit Well, their actions will be judged accordingly.

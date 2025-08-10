@@ -1,0 +1,22 @@
+name: Case the Joint
+incant: None
+call: "“Discern to Marshal Spirit: [Question]”"
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Refresh
+description: |
+
+  The Larcenist is a creature of perception and canniness, and is always keeping an eye out for opportunity and exploration. These senses are honed to the point that the Larcenist has an uncanny knack for sussing out hidden panels, walls that don’t quite feel right, and interiors that don’t match the exterior of buildings.
+
+  When on a staged encounter (often called a “mod”) with an interior building, out of combat, where the Larcenist is able to speak to a Marshal Spirit, they may Discern if there are secret stashes or hidden treasure, potentially trapped areas, and places where locks are likely to be present. The Larcenist may ask each of these questions once per use of this power.
+
+  Valid questions for the Spirit are:
+
+    * Yes or No: Are there any Traps in this encounter?
+    * Yes or No: Are there any Locks in this encounter?
+    * Yes or No: Are there any Glyphs in this encounter?
+    * Yes or No: Are there other entrances I should know about?
+    * Yes or No: Are there any secret places or treasure to be found in this encounter?

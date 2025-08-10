@@ -1,0 +1,16 @@
+name: Destructive Blows [The Weapon]
+requires: gateway-power-disruptive-blows
+incant: None
+call: “Wounding 5”
+target: Individual
+duration: Instantaneous, Passive
+delivery: Weapon
+refresh: Short Rest, None
+accent: None
+effect: Wounding, Grant
+description: |
+  The Wonderworker may call on their weapon to hit with accuracy and power. They make a single attack with “Wounding [X]”, where X is their Base Damage plus 4.
+
+  The Wonderworker may expend a spike to add their spike damage to this attack.
+
+  Additionally, while the Wonderworker has this symbol chosen and this Power available the Wonderworker gains +1 Maximum Base Spikes and +1 Spike Base Damage.

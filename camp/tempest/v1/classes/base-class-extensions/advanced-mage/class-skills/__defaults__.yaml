@@ -1,0 +1,4 @@
+type: skill
+parent: mage
+requires: advanced-mage
+category: Mage Class Skills

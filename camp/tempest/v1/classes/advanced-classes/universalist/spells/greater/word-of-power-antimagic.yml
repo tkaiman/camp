@@ -1,0 +1,10 @@
+name: "Word of Power: Antimagic"
+incant: Standard
+call: “Short Grant Resistance to Damaging Materia.”
+target: Individual
+duration: Short Rest
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Resistance
+description: The Universalist’s attunement with arcane magic allows them to grant great protection from it. This spell allows the Universalist to Grant Short Resistance to Damaging Packets. Replicate Enhancement works on this spell despite normal restrictions.

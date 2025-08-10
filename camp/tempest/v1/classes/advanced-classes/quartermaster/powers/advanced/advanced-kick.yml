@@ -1,0 +1,29 @@
+name: Advanced Kick
+tags: [crafter]
+incant: None
+call: None
+target: Alchemy Craft
+duration: Permanent
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: Imbue
+description: |
+  An Artisan can take up to 3 identical doses of an existing alchemical item (either Quaffed or Topical) and add an effect to them. After spending a minute or so adding to, mixing, and enhancing the items, they may choose one of the following benefits that will take place when the items are used. The available benefits depend on whether the items are Quaffed or Topical.
+
+    Topical items may be kicked with the following effects:
+
+      * Add the Final modifier to the Ingested effect of a Topical item.
+      * Increase the amount of damage that the item deals by 1.
+      * Change from Poison accent to Disease.
+      * Change from Flame accent to Acid.
+      * Halve application time (Quick 30 → Quick 15)
+
+    Quaffed items may be kicked with these effects, which are the same as the Artisan power Kick:
+
+      * Heal 1 Life Point
+      * Grant 1 Point of Barrier
+      * Cure Poison
+      * Cause the Intoxicate Effect
+
+  No alchemical item can be Kicked more than once. The Kick effect should be added to the information card for the item if it has one. If there is no information card, either one must be made, or only the Artisan can get the Kick effects

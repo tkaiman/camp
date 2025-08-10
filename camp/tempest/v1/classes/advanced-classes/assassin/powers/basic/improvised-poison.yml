@@ -1,0 +1,12 @@
+name: Improvised Poison
+ranks: 2
+incant: Focus Quick 30
+call: “Quick Weakness by Poison”
+target: Individual
+duration: Quick 100
+delivery: Weapon
+refresh: Immediate
+accent: Poison
+effect: Weakness
+description:
+  The Assassin may roleplay coating their weapon with a poisonous substance for a Focus Quick 30, then on their next melee attack using that weapon, they may Call “Quick Weakness by Poison.”

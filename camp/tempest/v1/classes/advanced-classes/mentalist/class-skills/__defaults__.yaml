@@ -1,0 +1,4 @@
+type: skill
+parent: mentalist
+requires: mentalist
+category: Mentalist Class Skills

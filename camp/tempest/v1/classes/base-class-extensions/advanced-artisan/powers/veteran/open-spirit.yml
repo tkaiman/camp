@@ -1,0 +1,14 @@
+name: Open Spirit
+tags: [mystic]
+incant: None
+call: “Long Grant Extra Attunement Slot”
+target: Individual
+delivery: Touch
+accent: None
+duration: Long Rest
+refresh: Long Rest
+effect: Grant Attunement Slot
+description:
+  The Artisan can perform a ceremony which can be as long or short, simple or involved, as the Artisan desires. This rite opens up
+  the Spirit of the target (which can be the Artisan themself) and allows that character to have one additional Attunement Slot until
+  they complete a Long Rest. The Artisan cannot knowingly perform this rite on someone they believe has the Open Spirit rite active on them.

@@ -1,0 +1,11 @@
+name: Pin to the Earth
+incant: None
+call: '“Short Root to Self”, “Quick Root by Force Final”'
+target: Individual
+duration: Quick 100
+delivery: Projectile Weapon
+refresh: Short Rest
+accent: Force
+effect: Pin
+description:
+  Setting their feet in one place, the Ranger is able to make skilled shots to the legs of oncoming foes, to stop them dead in their tracks. As soon as the ranger calls “Short Root to Self”, they may continue to call “Quick Root by Force Final” and make arrow attacks with their bow.  At any time, the Ranger may call “Cure Root to Self” and end the power.  Additionally, if the root is ended by any other means, the power ends.

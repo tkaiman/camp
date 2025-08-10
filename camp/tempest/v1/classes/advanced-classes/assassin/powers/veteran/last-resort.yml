@@ -1,0 +1,11 @@
+name: Last Resort
+incant: None
+call: “Counter, Dodge”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description:
+  The Assassin can Counter any one attack, regardless of delivery, that has the Death Effect. This may be used against effects that would otherwise be Final including Maelstrom and Malediction.

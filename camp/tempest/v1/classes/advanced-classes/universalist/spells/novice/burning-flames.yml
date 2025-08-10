@@ -1,0 +1,13 @@
+name: Burning Flames
+incant: Standard
+call: '“Cure [Condition] by Flame”, “Wounding 3 by Flame”'
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Flame
+effect: Flame, Wounding
+description: |
+  When casting this spell, the Universalist may charge a spell ball with Cure [Condition] by Flame and charge a single spell ball with Wounding 3 by Flame.
+
+  If the Universalist has an active Form SPell, they may charge an additional Cure [Condition] by Flame spell ball. If the Universalist has a Source providing the Eldritch Accent of Flame they may charge an additional Wounding 3 by Flame spell-ball.

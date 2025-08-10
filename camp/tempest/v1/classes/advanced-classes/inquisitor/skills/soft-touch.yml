@@ -1,0 +1,13 @@
+name: Divine Conduit
+requires: inquisitor:1
+cost: 2
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: None
+description: |
+  The character’s class-levels in Inquisitor count for class-levels in Cleric with respect to their Healing Touch Pool.

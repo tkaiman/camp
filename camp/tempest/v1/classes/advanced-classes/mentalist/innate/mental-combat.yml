@@ -1,0 +1,12 @@
+name: Mental Combat
+requires: mentalist:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description:
+  Gain a single Mentalist Martial Power of the Advanced Tier.

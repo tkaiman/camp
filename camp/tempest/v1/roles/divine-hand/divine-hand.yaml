@@ -1,0 +1,23 @@
+name: Divine Hand
+requires: level:8
+flags: flag+divine-hand
+cost: 4
+sp_cost: 60
+grants: lore+Religious
+hidden: false
+child_purchase:
+  basis: swear-oath
+requires_description: |
+  - At least Character Level 8
+  - Initiation by an Exemplar, Inquisitor, or Divinely Inspired Messenger (Plot)
+  - Approval of Set of Oaths by Plot (this must occur between games)
+description: |
+  Some individuals feel the calling of the Divine. They may be from humble beginnings rising to be leaders of a faith, examples of their God’s presence in the mercantile domain, or holy warriors on the battlefield. No matter what, these individuals act as the working servants of the Gods in the world. They take their obligations to the Divine even more seriously than Clerics (though some Clerics are also Divine Hands). Each Divine Hand swears an Oath, or set of Oaths that bind their conduct to certain Tenets important to the Divine; in exchange for this service and obligation, the Divine rewards them with special powers. Divine Hands have the following precepts to follow:
+
+  - Oaths must be followed. Do not make excuses for failure in following them.
+  - Restriction breeds creativity, do not look at your Oaths as what you cannot do, but channeling you to what you may; just as one who has a sense denied to them has their other senses enhanced, so too does a Divine Hand who denies a set of behavior heighten their focus and duty.
+  - Be an example to others in the principles of the Divine.
+
+  This list is small by itself, but should also include the specifics of the Oaths they swear below. Should the Divine Hand believe that they have failed to uphold one of these precepts or one of their Oaths, they will be unable to access Powers from the Role or any Innate Powers or Spells from the Exemplar Advanced Class until the next Event, until they have undergone an Atonement spell, or have received Forgiveness from their Deity.
+
+  **Note**: Taking this role grants the character the "Divine Hand" qualifier and is affected by calls “to Divine Hand." This power is gained automatically upon purchasing / gaining this Role.

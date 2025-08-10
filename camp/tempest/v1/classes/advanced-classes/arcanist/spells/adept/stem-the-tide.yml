@@ -1,0 +1,11 @@
+name: Stem the Tide
+incant: Standard
+call: "Quick Imprison by Arcane"
+target: Individual
+duration: Quick 100
+delivery: Spell-Ball
+refresh: Spell
+accent: Arcane
+effect: Imprison
+description:
+  When this spell is cast, Stem the Tide charges three Spell-Balls with Quick Imprison by Arcane.

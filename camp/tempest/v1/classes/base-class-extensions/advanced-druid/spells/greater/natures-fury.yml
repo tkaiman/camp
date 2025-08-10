@@ -1,0 +1,11 @@
+name: Nature's Fury
+incant: Standard
+call: “Wounding 15 by [ Accent]”, “Wounding 8 by [Accent]”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball or Weapon
+refresh: Spell
+accent: Flame, Acid, Lighting, Ice, Poison, or Disease
+effect: Wounding
+description: |
+  The Druid channels the fury of nature and can charge a Spell-Ball or Weapon with a barely contained storm. The Druid can choose from one of the following Accents: Flame, Acid, Lighting, Ice, Poison, or Disease and charge the Spell-Ball or Weapon to do “Wounding 15 by [Accent]” to whatever it strikes. If that attack misses or is Prevented, the Druid can call out “I reclaim my fury!” to charge a second attack with “Wounding 8 by [Accent]”. The second attack need not have the same Accent or Delivery (Materia or Weapon) as the first.

@@ -1,0 +1,15 @@
+name: Perfect Landing
+requires: larcenist:1
+cost: 2
+incant: None
+call: "Perfect Landing"
+target: One fall
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description: |
+  The character can Counter the damage and effects from one fall, reducing all of the damage and effects to take no damage. This, however, only works when there is something to land upon, and does not aid the Larcenist in returning to where they fell from.
+
+  For Example: Avana, climbing across a narrow ledge, slips and falls forty feet to the sharp rocks below, normally taking 10 Damage and a Disable to both legs. Instead, she calls “Perfect Landing” and takes no falling damage or Effects.

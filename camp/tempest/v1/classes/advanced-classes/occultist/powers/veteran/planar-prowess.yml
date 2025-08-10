@@ -1,0 +1,18 @@
+name: Planar Prowess
+incant: See Text
+call: See Text
+target: Individual
+duration: Instantaneous or Short
+delivery: Varies
+refresh: Immediate
+accent: None or Devotion
+effect: Obey, Root, Bind
+description: |
+  You gain several benefits regarding summoning and otherwise dealing with extraplanar entities. Whenever you are a ritualist in a summoning ritual, you may reduce the number of any selected component required by one, to a minimum of one. Additionally, you gain specific abilities that can be used on common extraplanar creature types, specifically: Angel, Demon, Elemental, Fae. If you find a ritual that allows you to summon extraplanar creatures of other types and have the skills necessary to cast that ritual, you may add that type to your personal list of types that you can affect. One of these types must be used in each call below.
+
+    * Banish: You can banish a creature that you have summoned. You must have been a ritualist in a ritual that summoned the creature. This is most useful if the creature has escaped confinement before coming to an agreement, or if an agreement has been made but you no longer want the task carried out. Spend a spike and call: “[Name/Description]: Obey to [Type], return to your home plane”. You may add “to Insubstantial” to this call if the creature is still in your summoning circle. If you did not summon a particular creature but still wish to banish it, cast your own summoning ritual first.
+    * Binding: At any time, you may chant “I call upon the spirits to contain you” and spend a point of your Protection of the Spirits to charge a Spell Ball or weapon with “Short Root to [Type]” or “Short Bind to [Type]”, where Type is one of the extraplanar types you are able to affect.
+    * Demand Name: At any time, you may spend a spike to chant “By my authority, I command you to tell me your name”, then call “[Name/Description]: Obey to [Type], tell me your name”. You may add “to Insubstantial” to this call if the creature is in your summoning circle. The creature you target must be within melee range, so it is recommended that this be used on a creature within a summoning circle or that is otherwise bound. Not all extraplanar creatures necessarily have names, and not all are able to communicate them, so this may not work in all circumstances.
+    * Protection of the Name: You are able to use an extraplanar creature’s name as a shield. You may spend a spike to call “[Name]: Short Obey to [Type], do not harm me”. Note that you must use the creature’s name for this verbal delivery (not a description or the name of the portrayer), and they will not take the effect if you do not use a name they answer to. You may add “to Insubstantial” to this call.
+
+  Extraplanar creatures often have vulnerabilities that can be used against them, and their natures may cause them to be susceptible to faith. If you follow a religion and brandish a symbol of your faith while performing these actions, you may add your Devotion Accent to any of the calls provided by this power.

@@ -1,0 +1,5 @@
+name: Best Timing
+cost: 2
+requires: good-timing
+description:
+  The best prospectors work smarter, not harder. Whenever you gather from a prospecting site, if you did not gather at that site during the previous logistics period, you may make that attempt now. In effect, a Quartermaster with Best Timing only needs to gather during the day or night, not both. This does not stack with the Artisan utility Good Timing. During the first logistics period of the event, you can’t harvest for the “previous” period, even if you missed the last logistics period from the previous event.

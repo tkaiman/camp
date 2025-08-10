@@ -1,0 +1,11 @@
+name: Guiding Bolt
+incant: Standard
+call: “1 Force”
+target: Individual, Self
+duration: Instantaneous
+delivery: Packet (Spell-Packet)
+refresh: Immediate
+accent: Force
+effect: Damage, Grant
+description:
+  If this Spell-Packet hits (even if it is blocked by weapon, shield, or other equipment) and is not Prevented, the next Spell or Cantrip cast by the Spellblade is granted a +1 Base Damage bonus. If it is not a damaging Spell or Cantrip, this bonus will have no effect.

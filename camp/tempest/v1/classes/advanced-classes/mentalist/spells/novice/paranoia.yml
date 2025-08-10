@@ -1,0 +1,11 @@
+name: Paranoia
+incant: Standard
+call: "Short [Repel/Root] by [Fear/Illusion/Madness/Mind]"
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Mind, Fear, Madness
+effect: Repel, Root
+description:
+  A Mentalist has a wide variety of options for debilitating individuals on the battlefield.  The Mentalist may charge one Spell-Ball per Mentalist level with Repel or Root by the accents of Fear, Illusion, Madness, or Mind. The Mentalist may select different Effects and Accents for each charged Spell-Ball.

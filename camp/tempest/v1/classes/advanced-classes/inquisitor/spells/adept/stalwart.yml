@@ -1,0 +1,15 @@
+name: Stalwart
+incant: Standard
+call: “Grant Protect vs [Agony, Poison, or Disease] to Worshipper of [Religion/Deity]”
+target: Individual, Self
+duration: Short Rest
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Protect, Grant
+description: |
+  The Inquisitor calls upon the temperance of their god and bolsters them and followers of their god. At the time of casting this spell, the Inquisitor may Grant Protection to themselves and any Individual the Inquisitor has confirmed follows the same Religion as the Inquisitor using their Detect Devotion Cantrip.  The Inquisitor may do this a number of times equal to their Inquisitor class-level so long as each person who receives the boon worships the same Religion or Deity.
+
+  Additionally, the Inquisitor is granted immunity to having their Maximum Life Points and Maximum Spikes reduced by hostile effects (excluding voluntary reductions) for a short rest.
+
+  Note: Worshiping the same deity does not necessarily mean worshiping the same Religion.

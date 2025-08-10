@@ -1,0 +1,11 @@
+name: Let Me Do My Job
+incant: None
+call: "Counter, Not [Name of Effect]!"
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Grant Counter
+description:
+  The Fighter can Counter one Effect used against them. Once the Fighter has Countered that Effect, they can Refresh this Power at-will by Focusing for a Quick Count of 30, but can only use it against that same Effect. Once the character has completed a Short Rest, the Power can no longer be Refreshed until the Fighter completes a Long Rest.

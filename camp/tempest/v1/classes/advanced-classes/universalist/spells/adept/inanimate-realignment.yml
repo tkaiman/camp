@@ -1,0 +1,13 @@
+name: Inanimate Realignment
+incant: Standard
+call: '“Mend [Armor or Shield] [X] by Force”, “Shatter [Weapon or Shield] by Acid”'
+target: Individual, Armor, Shield, Weapon
+duration: Short Rest
+delivery: Touch, Spell-Ball
+refresh: Spell
+accent: Force or Acid
+effect: Mend, Shatter
+description: |
+  Once the incantation is complete, the Universalist may, at-will, use their Healing Touch Pool or Life Tap, if they have one, to Mend Armor or Shields with Touch Delivery. This spell adds 6 points to the Universalist’s Healing Touch Pool or Life Tap when cast. The caster need only get within Touch range of an Individual and say “Mend [Armor/Shield] [X] by Force'' when using this ability.
+
+  If the Universalist has a Source providing the Eldritch Accent of Acid or Darkness they may also spend 5 points of their Healing Touch Pool or Life Tap to charge a Spell Ball with “Shatter [Weapon/Shield] by Acid.”

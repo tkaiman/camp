@@ -1,0 +1,15 @@
+name: Shadoweave
+incant: RP Q30, crafting a weapon out of shadow
+call: None
+target: Self, Object
+duration: Instantaneous, Long Rest
+delivery: None
+refresh: Short Rest
+accent: Darkness
+effect: Grant Accent, Rebuild
+description: |
+  When necessary, the Shadowdancer is capable of crafting the tools they need from the raw darkness that surrounds them. The Shadowdancer may select a currently wielded weapon and call the Darkness Accent with all attacks made with that weapon until the end of a Long Rest.
+
+  In addition, if the wielded weapon is broken (Shattered, etc), Rebuild it. The Rebuild on the weapon is permanent.
+
+  To Rebuild the weapon, the Shadowdancer must RP for a Quick 30 fixing the weapon. This can be done once per Short Rest.

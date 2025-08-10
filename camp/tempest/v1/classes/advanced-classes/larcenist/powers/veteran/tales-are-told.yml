@@ -1,0 +1,19 @@
+name: Tales are Told
+incant: Focus Quick 100
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Grant Plus Damage
+description: |
+  While adept thieves are hard to come by, the legendary ones inspire stories that pass down from guild to guild for the seemingly impossible tasks they are able to perform. Few would believe half the feats possible, and fewer still while in the thick of things.
+
+  The Larcenist is able to use certain skill in ways unheard of:
+
+    * Locks of Little Consequence may be used with the Delivery changed to “Thrown Weapon.”
+    * Trap Dodge’s Cost becomes 1 Luck Charge.
+    * Glyphed Spirit’s Counter cost becomes 1 Luck Charge.
+    * Like a Ghost and Perfect Landing may each be refreshed with 1 Luck Charge each, once per Short Rest.
+    * Once per Long Rest, out of combat, the Larcenist may Refresh two Luck Charges.

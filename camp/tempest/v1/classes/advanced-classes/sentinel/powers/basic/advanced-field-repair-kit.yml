@@ -1,0 +1,16 @@
+name: Advanced Field Repair Kit
+tags: [artificer]
+incant: Focus Quick 100
+call: “Mend Armor to Full”
+target: Armor
+duration: Instantaneous
+delivery: Touch
+refresh: Long Rest
+accent: None
+effect: Mend
+description: |
+  The Sentinel can alter a Field Patch Kit they are crafting, instead creating a "Advanced Field Patch Kit" with a 1 year expiration. The Advanced Field Patch Kit can “Mend Armor to Full” once per Long Rest. This use does not consume the Kit if the Sentinel who created it does the repair.
+
+  Maintaining the Advanced Field Patch Kit requires dedicated attention, so the Sentinel can only manage one Kit at a time. Furthermore, it will revert to a normal Field Patch Kit if this Power is lost or removed.
+
+  Note: The item’s card must be updated with these special features.

@@ -1,0 +1,12 @@
+name: Elemental Flow
+requires: elementalist:3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Base Damage
+description:
+  The elements continue to flow more freely for the Elementalist. Select a fundamental element [Acid, Flame, Lightning, or Ice]. Add +1 Damage to all Spell-Ball delivered attacks with that Accent.

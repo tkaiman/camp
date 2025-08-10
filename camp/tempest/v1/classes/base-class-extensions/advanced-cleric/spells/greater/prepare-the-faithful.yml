@@ -1,0 +1,13 @@
+name: Prepare the Faithful
+incant: Standard
+call: '“Imbue Weapon with [Wounding 4 by Radiance]” or “Imbue Spell-Ball with [Wounding 4 by Radiance]"'
+target: Individual
+delivery: Touch
+accent: None
+duration: Short Rest
+refresh: Spell
+effect: Imbue, Wounding
+description:
+  This Spell, once cast, allows the Cleric, at any time before they complete a Short Rest, to Imbue up to six people each (which may include the Cleric)
+  with Wounding 4 by Radiance weapon attacks and up to six people each (which may include the Cleric) with Spell-Ball attacks doing the same. These Imbues
+  can be handed out in any order, fashion, and to as many targets as desired at once.

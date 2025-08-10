@@ -1,0 +1,11 @@
+name: Common Welfare
+incant: None
+call: “By My Voice, Heal to Full to [Group Name] by Will”
+target: Individuals
+duration: Instantaneous
+delivery: Voice
+refresh: Short Rest
+accent: Will
+effect: Heal
+description:
+  The Socialite can call a full heal to all of the members of their group (as per Heart of the Group).

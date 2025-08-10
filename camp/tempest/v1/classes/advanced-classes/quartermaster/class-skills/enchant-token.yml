@@ -1,0 +1,13 @@
+name: Enchant Token
+cost: 2
+requires:
+  - quartermaster:2
+  - greater-enchanting
+description: |
+  This process was developed after studying enchantment tokens found in various ancient ruins. Whenever you follow a formula that would produce an enchantment, you may pause the enchantment process at the last moment instead of imbuing it in the item, person, or place otherwise intended. Using a Foundation Resource Infusion that has not been filled with a foundation resource, you instead fill it with the essence of the enchantment, congealing it into a solid token. Call “Enchant Token” when you do so and record the parameters of the enchantment (the name, the foundation resource effect, etc) as well as the duration on an item card. You must still perform Dark Territory draws if appropriate.
+
+  Tokens found in ancient ruins tend to be very old and in poor shape. After disturbing them, they tend to leak power (and their duration) like sieves. However, freshly produced tokens will not lose power under normal circumstances. The duration of the enchantment does not begin until it is applied. Any enchanter can complete the enchantment process, pressing the energies into the item to be enchanted.
+
+  Quartermasters who perform enchantments like to keep a few extra Foundation Resource Infusions on hand even if they are not intentionally making tokens. Dark Territory can sometimes come with unexpected boons such as additional enchantment charges that might otherwise be lost if a valid target is not present, and these can be captured as tokens.
+
+  This only affects formulae that produce enchantments. Other formulae, such as those that produce spell scrolls, extract resource essences, repair summoned armor, or similar tasks can’t be captured by this process.

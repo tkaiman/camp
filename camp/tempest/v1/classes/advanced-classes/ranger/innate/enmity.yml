@@ -1,0 +1,6 @@
+name: Enmity
+requires: ranger:1
+description: |
+  Often the Rangers of the Hunt specialize in a certain type of quarry, for which they have learned the patterns of escape, and can predict the paths their prey will take.
+
+  There is an enemy you have a particular skill or passion for hunting. Choose either Beast or Undead.  By selecting Beast you may use Animal, Beast, Drake or Mythical Beast as a [Foe Type] in ranger powers where relevant, while Selecting Undead allows the use of Undead or Hollow as a [Foe Type].

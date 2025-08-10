@@ -1,0 +1,8 @@
+name: Huntsman’s Rite
+requires: ranger:3
+choices:
+  rite:
+    name: Rite
+    matcher:
+      parent: hunstmans-rite
+description: The Ranger gains one Huntsman's Rite from the Huntsman’s Rite power list below. A ranger may only have One Huntsman Rite.

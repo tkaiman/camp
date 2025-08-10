@@ -1,0 +1,13 @@
+name: Divine Protection
+incant: standard
+call: “Grant Protect vs Verbal or Voice”
+target: Individuals
+delivery: Touch
+accent: None
+duration: Event
+refresh: Spell
+effect: Grant Protect
+description: |
+  The Divine Shield creates a barrier around three targets within Touch range, giving them each a Protect which can be used either against a Verbal or Voice delivered Effect or attack. The number of targets that may be chosen is equal to half the Divine Shield’s class-level (round up).
+
+  Enhancement: Expend a Spike: The Protection can be given to one additional target.

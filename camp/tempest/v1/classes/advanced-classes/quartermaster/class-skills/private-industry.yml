@@ -1,0 +1,7 @@
+name: Private Industry
+cost: 3
+requires:
+  - quartermaster:5
+  - manse
+description:
+  While not as productive as a full-scale operation, your Manse can produce limited amounts of a chosen construction resource if properly managed. Select Lumber, Ore, or Stone when you take this skill. You receive one unit of this resource at the start of each event, but only when attending events in the chapter where your Manse exists.

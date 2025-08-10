@@ -1,0 +1,13 @@
+name: Lessons of Bane
+incant: None
+call: “Short Grant [Accent]”
+target: Individual
+duration: Short Rest
+delivery: Touch
+refresh: Long Rest
+accent: None
+effect: Grant
+description: |
+  While there are a few lone wolves among Wonderworkers, even they will acknowledge the advantages of working with others. With this power, the Wonderworker can take their talents and help others perform even better.
+
+  The Wonderworker may use any Accent that they are currently capable of Delivering by use of any of their Powers, and confer that power to a number of allies equal to the Wonderworkers class-level with a “Short Grant [Accent].”

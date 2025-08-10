@@ -1,0 +1,11 @@
+name: Spell Blocking Blade
+incant: None
+call: “Resist, Weapon”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Grant Resistance
+description:
+  Materia that strike the Sentinel's weapon can be Resisted.

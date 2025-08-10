@@ -1,0 +1,15 @@
+name: Bitterwasp’s Torment
+incant: Standard
+call: '“Drain by Acid”, “[Name or Description], Piercing 1 by Acid”'
+target: Individual
+duration: Short Rest
+delivery: Spell-Ball, Verbal
+refresh: Spell, Focus Quick 30
+accent: Acid
+effect: Drain, Piercing
+description: |
+  The Elementalist can embody the power of Bitterwasp, creating everburning acid that disables and eventually melts their victims. When the Elementalist first casts this Spell, they charge a Spell Ball with “Drain by Acid.”
+
+  If the initial Call of “Drain by Acid” isn’t Prevented, the Elementalist may plant their right foot; they may then Focus for a Quick 30 to call “[Name or Description], Piercing 1 by Acid” against the target or targets inflicted with the drain effect. They may continue to Focus and call these Verbal attacks against that target until the Elementalist casts another Spell, becomes helpless, moves their right foot, or completes a Short Rest.
+
+  Enhancement: Expend a Spike: If the Elementalist has selected Acid as the element affected by Elemental Flow or is using an Acid Source, the Spell charges two Spell Balls.

@@ -1,0 +1,13 @@
+name: Magic Collector [The Wand]
+incant: Focus Quick 10
+call: "“1 [Elemental Accent],” “Wounding 3 [Elemental Accent]”"
+target: Individual
+duration: Instantaneous
+delivery: Spell-Packet
+refresh: Immediate
+accent: "[Elemental Accent]"
+effect: Damage, Wounding
+description: |
+  When you first gain this power, select an elemental Accent from among Acid, Flame, Ice, or Lightning. Your wand symbol collects power of this kind, and can be used to direct simple but dangerous bolts of elemental energy.
+
+  Spend a Focus Quick 10 and roleplay interacting with a spell packet with your symbol, and it may be then immediately thrown for “1 [Elemental Accent].” You may expend a Spike instead to add wounding to the call and increase the damage by your Spike Damage.

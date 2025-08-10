@@ -1,0 +1,11 @@
+name: Dragonbolts
+incant: Strandard
+call: “Wounding 5 [Accent]”
+target: Individual
+duration: Instantaneous
+delivery: Packet (Spell-Ball)
+refresh: Spell
+accent: Flame, Acid, Lightning, Poison, or Ice
+effect: Wounding
+description:
+  Dragonbolt summons three blasts of pure energy called from the very bowels of a living dragon. The damage type can be chosen at the time of casting and can be Flame, Acid, Lightning, Poison, or Ice but must be the same for all three charged Spell-Balls. Each bolt causes Wounding 5. If the caster has the Draconic Heritage Character Option Advantage, the Dragonbolt must take the same Accent as the character’s Dragon Blood chosen Accent, but the damage of each bolt is increased by the character’s number of purchases of Draconic Heritage..

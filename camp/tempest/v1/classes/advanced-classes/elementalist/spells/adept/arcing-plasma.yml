@@ -1,0 +1,14 @@
+name: Arcing Plasma
+tags: [wellspring]
+incant: Standard
+call: None, “Wounding [X] by [Flame or Lightning]”
+target: Self, Individual
+duration: Short Rest, Instantaneous
+delivery: None, Spell-Ball
+refresh: Spell
+accent: Flame, Lightning
+effect: Wounding
+description: |
+  An Elementalist who studies the aspects of Flame and Lightning finds that they share a common bond - both elements are full of a fundamental elemental excitement, brimming with motion and vigor.
+
+  For the duration of this spell, every time the Elementalist uses their Elemental Wellspring to charge a spell-ball to do Flame or Lightning damage, they may double the amount of damage it is charged with if prior to charging the spell ball they have cast two spells; one with the Flame accent and one with the Lightning accent. After increasing damage in this way, the Elementalist must cast another pair of spells with the Flame and Lightning Accent to apply the damage increase again.

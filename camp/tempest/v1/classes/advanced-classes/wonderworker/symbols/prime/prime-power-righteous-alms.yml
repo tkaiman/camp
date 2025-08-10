@@ -1,0 +1,11 @@
+name: Righteous Alms [The Talisman]
+requires: deeper-power-benevolence
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: The saints were said to once be able to perform the miracle of taking a morsel and spreading it across many. The powers “Intercession” and “Benevolence” refresh more quickly than before - “Intercession” refreshes after a Quick 100 and “Benevolence” may be used up to ten times per Long Rest.

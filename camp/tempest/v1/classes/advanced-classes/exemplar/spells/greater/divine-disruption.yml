@@ -1,0 +1,13 @@
+name: Divine Disruption
+incant: Standard
+call: '“By My Voice to Dark, Undead, and Undevoted: Short Slow and Weakness by [Radiance / Darkness]"'
+target: Dark, Undead, or Undevoted
+duration: Short Rest
+delivery: Voice
+refresh: Spell
+accent: Radiance or Darkness
+effect: Slow, Weakness
+description: |
+  A powerful pulse of energy comes from the Exemplar washing over the battlefield to disrupt their quarry.
+
+  The Exemplar may make a By My Voice call of Short Slow and Weakness to Undead, Dark, and Undevoted by the Radiance or Darkness Accent, chosen at the time of casting. If the Exemplar expends a Divine Grace while casting this spell, they may follow their call with “By My Voice to Weakened, 5 by [Radiance/Darkness]”

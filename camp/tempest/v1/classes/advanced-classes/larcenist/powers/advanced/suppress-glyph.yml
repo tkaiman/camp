@@ -1,0 +1,11 @@
+name: Suppress Glyph
+incant: None
+call: “Suppress Glyph”, “Release Glyph”
+target: Self
+duration: Focus Slow Count 60
+delivery: None
+refresh: Immediate
+accent: None
+effect: None
+description:
+  The Larcenist can use this Power to allow anyone perform actions that would normally activate a Glyph, without activating it. Bypass Glyph can only be used on any one Glyph once per Long Rest, but for the Slow Count of 60, it will not activate. If the Larcenist’s Focus is interrupted, the Glyph immediately activates. The Larcenist may end her focus early by calling “Release Glyph”, with no ill effects.

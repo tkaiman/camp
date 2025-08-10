@@ -1,0 +1,11 @@
+name: Shard Power
+incant: Standard
+call: None
+target: Self
+duration: Immediate
+delivery: None
+refresh: Spell
+accent: None
+effect: None
+description: |
+  The Spellblade immediately gains Shards in their Shard Pool equal to their Spellblade Level + 3.  Note:  This cannot cause their Shard Pool to exceed its maximum shards, instead if it would it would fill it to maximum.

@@ -1,0 +1,12 @@
+name: Trial
+incant: Standard
+call: “Quick Charm and Disable Both Arms by Will,” or “Short Charm and Disable Both Arms by Will”
+target: Individual
+duration: Quick, Short Rest
+delivery: Spell-Ball
+refresh: Spell
+accent: Will
+effect: Charm, Disable
+description: |
+  When the Inquisitor wishes to have a word, they are generally able to press the severity of their divine mission on those who they wish to converse with. The Inquisitor calls upon their god’s indomitable will and subjugates those who they wish to speak, convincing them of the dire import of the situation.
+  Enhancement: Adept Spell-slot, the Inquisitor can change the call to “Short Charm and Disable both Arms by Will.”

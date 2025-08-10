@@ -1,0 +1,14 @@
+name: Field Study
+requires: arcanist:1
+grants: lore:3
+description: |
+  The Arcanist gains three Lores of their choice from the following list:
+
+    * Arcane Lore: Magic and its uses, magical tools and applications, and magical constructs.
+    * Construct Lore: Constructs, Automatons, and other machinery of magical nature.
+    * Dark Lore: The Dark, the Maelstrom, and all this Tempestuous.
+    * Historical Lore: Major events, dates, interactions of events and casualties, historical figures.
+    * Lost Ages Lore: Long forgotten histories of the empires that came before.
+    * Mythic Creature Lore: Histories and Tales of the First Ones and their civilizations.
+    * Planar Lore: Planar geography, the natures of different planes and their interactions, moving between planes, and the ruling creatures of those planes.
+    * Religious Lore: Gods and their domains, afterlife beliefs, church traditions, cultural attitudes towards the gods.

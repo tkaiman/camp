@@ -1,0 +1,12 @@
+name: Death Protection
+incant: Standard
+call: “Grant Death Protection”
+target: Self
+delivery: None
+accent: None
+duration: Long Rest
+refresh: Spell
+effect: Grant Protect, Heal
+description:
+  The Cleric gains one Protect vs. Death and, until they complete a Long Rest can expend 5 points from their Healing Touch pool to Heal themself for
+  1 Life Point. This can be done without Call and can be done while the Cleric is dying.

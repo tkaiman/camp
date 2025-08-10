@@ -1,0 +1,11 @@
+name: Daunting
+incant: Standard
+call: “Short Repel by Fear”
+target: Individual
+duration: Short Rest, Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Fear
+effect: Repel
+description: |
+  The Inquisitor is not one to cross lightly. For those who do, know to best keep their distance while the Inquisitor is on a warpath. The Inquisitor invokes their god and calls down Divine wrath and cloaks themself in it. The Inquisitor charges a number of Spell-Balls with  “Short Repel by Fear,” equal to their Inquisitor class-level.   If one of these spell balls is used on a Branded target the Inquisitor may immediately charge a replacement Spell-ball.

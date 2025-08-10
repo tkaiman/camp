@@ -1,0 +1,13 @@
+name: Arcanist's Replicate Enhancement
+requires: arcanist:2
+incant: None
+call: None
+target: None
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Immediate
+effect: None
+description:
+  When casting a non-damaging touch spell, the number of targets is increased by one. The Spell must have a target of Individual, Shield, or Armor, and the listed Delivery must be Touch (Spell-Packet
+  or Spell-Ball Spells cast as Touch do not get this benefit).  If the character has the Replicate Enhancement Power, this can be used to increase the number of targets by one.

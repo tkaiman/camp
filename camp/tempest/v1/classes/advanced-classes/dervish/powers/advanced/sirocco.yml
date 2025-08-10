@@ -1,0 +1,11 @@
+name: Sirocco
+incant: None
+call: “Quick Repel Final”
+target: Individual
+delivery: Thrown Weapon
+accent: None
+duration: Quick 100
+refresh: Quick 100
+effect: Repel
+description: |
+  With a Thrown weapon, the Dervish may make an attack with “Quick Repel Final.”

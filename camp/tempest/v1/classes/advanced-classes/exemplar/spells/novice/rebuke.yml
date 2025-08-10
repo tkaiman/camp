@@ -1,0 +1,14 @@
+name: Rebuke
+incant: Standard
+call: '“Wounding 5 to Demon by Radiance” or “Wounding 5 to Angel by Darkness”'
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball or Weapon
+refresh: Spell
+accent: Radiance, Darkness
+effect: Wounding
+description: |
+  This spell charges a Spell-Ball or weapon with an explosive burst of tangible light which will do “Wounding 5 to Demon” or “Wounding 5 to Angel” The Exemplar may expend a Spike or Divine Grace to
+  charge a second spell ball or second weapon attack.
+
+  If cast with an Adept Spell-Slot it becomes “Piercing 5 to Demon/Angel by [Radiance/Darkness]” if cast with a Greater Spell-Slot it becomes “Piercing 10 to Demon/Angel by [Radiance/Darkness].”

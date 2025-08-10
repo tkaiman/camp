@@ -1,0 +1,24 @@
+name: Divine Pool
+requires: divine-shield:1
+incant: "I call my faith, divine and right, to knit your wounds with healing light."
+call: “Heal [X] by Radiance”
+target: Other Individual
+delivery: Touch
+accent: Radiance
+duration: Instantaneous
+refresh: Immediate
+effect: Heal
+description: |
+  If the character already has a Healing Pool, this will add three points per Divine Shield class-level to it. If the character does not have a Healing Pool (from the Healing Touch Power), but has a Life Tap Pool, it will add to that.
+
+  Otherwise, the Divine Shield gains a pool of healing that can be used between Long Rests called the Healing Touch Pool. This Healing Touch pool is equal to three times the number of levels the character has in Divine Shield.
+
+  Each time this spell is cast, the Divine Shield can heal another Individual for Life Points up to the Divine Shield’s class-level, subtracting the amount healed from the Divine Pool. This healing cannot be used on the caster themself.
+
+  Throughout this class the term “Divine Pool” will be used to mean the points from this Power’s Pool or from the character’s Healing Pool or Life Tap Pool. The number of points that can be healed at a time (by Healing Touch or Divine Pool) is equal to the character’s Cleric class-level plus Divine Shield class-level. The number of points that can be healed at a time by Life Tap remains limited by Druid class-level.
+
+  Should the Divine Shield have the Cleric’s Greater Healing Touch Class power, it applies to the Divine Shield’s Pool.
+
+  At Divine Shield level 5 the amount restored every long rest to the Divine Pool and all underlying pools such as Healing Pool or Life Tap Pool is doubled.
+
+  Note: For purposes of Advanced Peacecaster, this counts as a Cantrip.

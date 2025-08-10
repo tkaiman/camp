@@ -1,0 +1,12 @@
+name: What Comes Around…
+tags: [reinforce]
+incant: None
+call: “Wounding [X]”
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Short Rest
+accent: Weapon
+effect: Wounding
+description:
+  After a career of absorbing punishment, the Sentinel learns how to not just mitigate, but redirect some of that punishment. After resisting damage, or using Counter (including Protect) against a damaging attack or Power, the Sentinel can immediately make a Wounding attack for the amount of damage negated. This has no effect if the Resist or Counter did not mitigate damage.

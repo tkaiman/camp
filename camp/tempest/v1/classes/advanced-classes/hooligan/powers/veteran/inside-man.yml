@@ -1,0 +1,15 @@
+name: Inside Man
+incant: None
+call: '"[Name or Description] Long Charm by Fear”, “Marshal Spirit: Inside Man.”'
+target: Individual
+duration: Long Rest
+delivery: Verbal
+refresh: Short Rest
+accent: Fear
+effect: Charm
+description: |
+  Out of Combat, the Hooligan can engage with a target for a minute of conversation and sway them to the Hooligan’s side. After a minute of conversation, the Hooligan may call “[Name or Description], Long Charm by Fear.”
+
+  In addition, when on a staged encounter (often called a “mod”) with an interior building, out of combat, where the character is able to speak to a Marshal Spirit, they may ask if one of the NPCs inside the encounter is bribable, blackmailable, or otherwise able to be turned to the character’s side.
+
+  While this power may not always take effect, the Marshal will clearly indicate whether or not it has. If the scenario would not reasonably support such an alteration, the user of the power may immediately refresh it.

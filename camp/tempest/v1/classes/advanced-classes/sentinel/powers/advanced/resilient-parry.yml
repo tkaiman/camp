@@ -1,0 +1,12 @@
+name: Resilient Parry
+tags: [reinforce]
+incant: None
+call: “Counter, Parry”
+target: One Weapon Attack
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter, Protect
+description:
+  While wielding a weapon, the Sentinel is astonishingly hard to harm. When hit with a Weapon-Delivered attack the Sentinel may Counter that attack, calling “Counter, Parry.”

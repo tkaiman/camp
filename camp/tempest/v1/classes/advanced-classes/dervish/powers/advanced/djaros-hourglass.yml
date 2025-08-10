@@ -1,0 +1,15 @@
+name: Djaro's Hourglass
+incant: None, Focus Slow 60
+call: “Short Slow by Time”, “Heal 3 by Time”
+target: Self
+delivery: None
+accent: None
+duration: Short Rest
+refresh: Long Rest
+effect: Grant Short Rest, Slow, Heal
+description: |
+  When this Power is invoked, the Dervish alters the threads of time and fate, preparing themselves for the tribulations ahead.
+
+  The Dervish enters a state of altered time by calling “Short Slow by Time.” The Dervish must then complete a Focus Slow 60. When completed, the Dervish gains the effects of a Short Rest.
+
+  In addition, if the Dervish falls to Dying or is Deathblowed while under the effects of this Power, they may choose to end this Power to “Heal 3 by Time.“

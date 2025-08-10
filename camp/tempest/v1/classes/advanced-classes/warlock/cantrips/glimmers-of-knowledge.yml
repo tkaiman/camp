@@ -1,0 +1,19 @@
+name: Glimmers of Knowledge
+tags: [patron]
+incant: Standard
+call: "“[Name or Description] Discern by Mind: [Question]”"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Immediate
+accent: Mind
+effect: Discern
+description: |
+  This power taps into the innate understanding of higher powers common to Warlocks. When cast, the Warlock may use each of these Discerns once against any valid target before a Long Rest. If the Discern is Prevented (“Counter”, “No Effect”, etc), the specific Discern Prevented regains its charge, and may be used against another valid target.
+
+    * “What is [another] one of your Vulnerabilities?
+    * “What is your highest tier spell-slot?”
+    * “to Spirit: Have you died your final death?”
+    * “to Insubstantial: Is your Insubstantial condition Inherent?”
+    * “to Construct: What are your Maximum Life Points?”
+    * “to Fae: To what Court are you pledged?”

@@ -1,0 +1,13 @@
+name: Flame Burst
+incant: Standard
+call: '“Disarm [item] by Flame”, “[Name or Description] 1 Flame”'
+target: Individual
+duration: Instantaneous
+delivery: Spell-Packet, Verbal
+refresh: Quick 100
+accent: Flame
+effect: Disarm, Damage
+description: |
+  This cantrip causes an item held by the target to flare with scorching heat, causing them to drop it. The caster may target any held item with this Cantrip, encouraging the target to drop the item.
+
+  If the target does not drop the held item for any reason, the caster may channel further heat into the item to damage the target by calling “[Name or Description] 1 Flame” once per casting of the Cantrip.

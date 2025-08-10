@@ -1,0 +1,13 @@
+name: Speak with Dead
+incant: “I call the departed to make your voices heard”
+call: "“[Name or Description]: Short Instruction to Spirit, Dead, or Undead: You can speak as though alive.”"
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Short Rest
+accent: None
+effect: Instruction
+description: |
+  You are able to commune with the spirits of the dead, whether they have escaped their mortal shell yet or have been shackled within. You can chant “I call the departed to make your voices heard” and then call “[Name or Description]: Short Instruction to Spirit, Dead, or Undead: You can speak as though alive”. The spirit is under no compulsion to speak to you, and the spirits locked within the Undead in particular may be too far gone to converse rationally.
+
+  During a rite performed with the Medium perk, you may use this power as often as you like, enabling more interaction with the spirits than might otherwise be possible (or desired).

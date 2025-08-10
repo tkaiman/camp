@@ -1,0 +1,15 @@
+name: Weapon of Faith
+incant: Standard
+call: “Grant Radiance”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Immediate
+accent: None
+effect: Grant Accent
+description: |
+  This cantrip calls the power of the Exemplar’s deity to empower their melee weapon. The next three melee weapon attacks may gain the “by Radiance” accent. It only has the opportunity to change the
+  next three swings and if not used before they complete a Short Rest they are lost. The caster may choose to replace another Accent with “by Radiance” if they wish. Remember, no character can have
+  the same Self-targeting Power affecting them more than once.
+
+  The Exemplar may expend a Divine Grace when casting this cantrip to extend the effect to every melee attack until they complete a Short Rest.

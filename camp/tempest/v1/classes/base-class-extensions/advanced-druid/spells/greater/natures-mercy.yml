@@ -1,0 +1,13 @@
+name: Nature's Mercy
+incant: Standard
+call: “Heal to Full”, “Grant [10/20] Life Tap”
+target: Individual, Self
+duration: Instantaneous, Short Rest
+delivery: Touch, None
+refresh: Spell
+accent: None
+effect: Heal, Grant Life Tap
+description: |
+  The Druid may cast this spell to either Heal an individual to full, or to add 10 points to their Life Tap pool.
+
+  If the Druid has not used a Form Spell since the last Long Rest, and they choose to add 10 points to their Life Tap pool, they instead add 20.

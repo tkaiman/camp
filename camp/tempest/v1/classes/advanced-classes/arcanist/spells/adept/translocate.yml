@@ -1,0 +1,15 @@
+name: Translocate
+incant: Standard
+call: “Translocate”
+target: Self
+duration: Quick 100
+delivery: None
+refresh: Spell
+accent: None
+effect: Drain
+description: |
+  Upon the completion of the Incantation, the Arcanist can take up to three steps (not hops, nor leaps) which may take them through walls or other barriers that are passable and visible to the player. This
+  will ignore any hazards or hindrances that do not hinder the Arcanist’s player. When the Arcanist arrives, they take a Quick Drain Final Effect.
+
+  For Example: the character might move through a wall of pure lightning that is marked on the floor with flagging tape. Or the Arcanist might travel over a massive, spike filled pit that is represented by a
+  large black mat.

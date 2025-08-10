@@ -1,0 +1,11 @@
+name: Mindstorm
+incant: Standard
+call: "By My Voice [X] Mind"
+target: Individual
+duration: Instantaneous
+delivery: Voice
+refresh: Spell
+accent: Mind
+effect: None, just Damage
+description:
+  In an explosion of psychic energy, the Mentalist can do damage to everyone nearby, doing 1 point of damage per Mentalist class-level the character has. The Mentalist can exhaust any number of Links to increase this damage by 2 points per Link exhausted.  This damage may never exceed 10 Mind for any reason.

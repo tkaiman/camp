@@ -1,0 +1,15 @@
+name: Unfailing Symbols
+cost: 1
+requires: wonderworker:1
+incant: None
+call: “Cold Dead Hands”
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  The Wonderworker’s tools are paramount to their success - they learn to keep them from going anywhere.
+
+  The Wonderworker gains the effect of the Cold Dead Hands Physical Perk, but only with their selected symbols.

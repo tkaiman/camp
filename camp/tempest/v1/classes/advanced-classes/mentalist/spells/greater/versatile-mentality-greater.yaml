@@ -1,0 +1,8 @@
+name: Greater Versatile Mentality
+ranks: 5
+soft_requires: mentalist.spell_slots@3:-1
+grants:
+  - mentalist.spell_slots@3:-1
+  - mentalist.powers@3
+description: |
+  By selecting this, you sacrifice a Greater slot and spell known from Mentalist and gain an Veteran Mentalist Power instead.

@@ -1,0 +1,13 @@
+name: Elemental Lance
+incant: Standard
+call: “Wounding 3 by [Acid / Flame / Ice / Lightning]”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: "[Acid / Flame / Ice / Lightning]"
+effect: Wounding
+description: |
+  When this Spell is cast, Elemental Lance charges a Spell-Ball with Wounding 3 by [Elemental Accent]. If the Elementalist has selected Lightning as the element affected by Elemental Flow or is using a Lightning Source, and the Spell-Ball or Balls created by this would cause the Elementalist to gain Barrier for any reason, increase the Barrier gained by 2.
+
+  Enhancement: Adept Spell-Slot: Three Spell-Balls are charged.

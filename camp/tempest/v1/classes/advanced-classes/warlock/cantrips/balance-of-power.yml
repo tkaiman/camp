@@ -1,0 +1,12 @@
+name: Balance of Power
+tags: [patron]
+incant: Standard
+call: “Refresh 1 Spike” or “Grant 1 Barrier”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Quick 100
+accent: Arcane
+effect: Refresh Spike, Grant Barrier
+description:
+  Utilizing the power within and without, the Warlock may freely transfer mystic essence as needed to bolster their defenses, or allow for cunning strikes. Upon casting this Cantrip, the Warlock may choose to exchange any amount of Barrier for spikes at a 1:1 rate, to a max amount in one casting equal to their Warlock class-level.

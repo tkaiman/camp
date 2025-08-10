@@ -1,0 +1,15 @@
+name: Sourcerous Protection
+incant: Standard
+call: '“Grant Protect vs [Eldritch Accent or Arcane]”, “Grant Protect vs Verbal”, “Grant Protect vs Voice”'
+target: Individuals
+duration: Until Used
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Protection
+description: |
+  The Universalist throws up a shield of arcane energy to protect up to a number of individuals equal to their Mage class-levels against their Eldritch Accent or Arcane.
+
+  Additionally, the Universalist may grant a single individual a Protect vs Verbal. If the Universalist has an active Form Spell they may instead grant a single individual a Protect vs Verbal and Voice.
+
+  Replicate Enhancement works on this spell, and adds targets to each class of Protect afforded by this spell.

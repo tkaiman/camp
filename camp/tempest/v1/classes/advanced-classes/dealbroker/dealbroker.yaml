@@ -1,0 +1,45 @@
+type: class
+class_type: advanced
+ranks: 5
+category: Advanced Class
+name: Dealbroker
+requires:
+  - level:10
+  - at_least: 3
+    any:
+      - any: [connections, famous, minor-nobility]
+      - profession-master
+      - income
+      - socialite.power@2
+flags: flag+dealbroker
+description: |
+  A simple merchant who knows how to turn disadvantage to advantage. A politician skilled in debate and misdirection. A crime lord who knows exactly how much pressure to apply to get what they want
+  without consequence. A vizier who knows how to twist the words of both monarch and subject to get them both working for the good of the kingdom. While any socialite can strike a deal, the Dealbroker
+  can make impossible demands possible and maximize concessions to their benefit.
+  The powers presented here are intended to support players whether they are charismatic and insightful negotiators already, or if they’re not personally there yet but want their characters to be.
+  Carefully consider at what points in your negotiation you should be using your Dealbroker powers. Do you need to force your opponent’s hand just to get them to open negotiations, or will you save
+  that card until the end of negotiations to come out with the upper hand?
+
+  ## Negotiations
+
+  Some powers within Dealbroker only work properly during a negotiation, not during random tavern socializing. The Incantation line for these powers reads “Negotiation” (note that you should not
+  say “Negotiation”, it’s just a shorthand). Powers with this incantation require about a minute of negotiation roleplay to activate, and you must generally wait another minute before using a similar
+  power unless otherwise noted. While it is sometimes obvious when a negotiation begins, for the purpose of this Class, a negotiation begins when someone suggests it has. The wording need not be
+  entirely clear to those not paying enough attention, but if you or someone else insinuates that negotiations, business, or other important matters are now being discussed, you may safely consider
+  that negotiations have begun.  Note: though negotiation is listed in the incantation line, negotiations need not abide by any of the normal restrictions of incantations.
+
+  Examples include:
+
+    * “Shall we open negotiations?”
+    * “I have a business opportunity to discuss.”
+    * “I have a political request.”
+    * “I’m looking to arrange a marriage.”
+    * “Could you mediate this discussion?”
+    * “Let this meeting of the Council commence.”
+    * “I assure you there is a perfectly reasonable explanation for this.”
+    * “If it pleases you, I will arbitrate these talks as a neutral party.”
+    * “Now, why don’t we all lower our weapons for a bit and talk this out?”
+
+  A number of Negotiation Powers require the character to be “out of combat." Being out of combat means the character believes there are no credible, active threats nearby. They feel that they could
+  sit with their eyes closed for a few minutes without any unusual risk. A character would almost never be out of combat if allies are fighting nearby, or if an attacker is within verbal range and
+  interested in harming them. As with so many things in Tempest, the decision is left to the portrayer, with a focus on the spirit of the rules, rather than a literal reading of them.

@@ -1,0 +1,13 @@
+name: Un-Funeral Flowers
+incant: None
+call: '“Stabilize”, “Cure All Conditions to Stabilized”'
+target: Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: Stabilize, Cure
+description: |
+  In many cultures, different flowers are associated with death and grieving loss. The Wonderworker takes that connection and uses it to power a denial of death.
+
+  The Wonderworker may Stabilize a Dying individual they can access. Additionally, if they spend a Quick Count of 30 interacting with funeral flowers, they may also Cure all Conditions that afflict the stabilized Individual

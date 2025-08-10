@@ -1,0 +1,16 @@
+name: Reinvigorating Magecast
+incant: Standard
+call: '“Magecast [Name of Spell or Cantrip]” “Refresh Novice Spellslot” “Grant 5 Barrier to Self by Mind” “Grant Protect to Self against Weapons by Mind” “Grant Protect to Self against Materia by Mind” “Grant Protect to Self against Verbals by Mind”'
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: Mind
+effect: None
+description: |
+  The Mage focuses on the thread of magic in the universe and gains the power to cast spells more easily.  This focus grants the following properties and abilities:
+
+    * The Mage can substitute “Magecast [Name of Spell or Cantrip]” for the Incantation of any Mage Spell or Mage Cantrip with a standard Incantation. Doing so costs 3 LP, Barrier, or Spikes in any combination the Mage wishes”
+    * The Mage may refresh a Novice Arcane spell-slot immediately.
+    * The Mage gains 5 Barrier by Mind.
+    * The Mage gains a Protect against Weapons, a Protect against Materia, and a Protect against Verbals. (Remember you may not have more than 3 Protects at one time).

@@ -1,0 +1,15 @@
+name: Inscribed Variations
+cost: 5
+requires: arcanist:3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  While the Arcanist is a Primary Ritualist in an Enchanting Ritual, they may add or remove Dark Territory from the final tally up to half their Arcanist class-level, rounded down. Thus, a fifth level Arcanist could add or remove up to two Dark Territory.
+
+  Note: You will need to notify your Marshal at the time you use this power.

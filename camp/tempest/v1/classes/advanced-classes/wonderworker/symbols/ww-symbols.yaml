@@ -1,0 +1,23 @@
+id: ww-gateway
+type: subfeature
+display_type: Symbol
+name: Gateway Powers
+ranks: 5
+parent: wonderworker
+child_purchase: {}
+---
+id: ww-deeper
+type: subfeature
+display_type: Symbol
+name: Deeper Powers
+ranks: 5
+parent: wonderworker
+child_purchase: {}
+---
+id: ww-prime
+type: subfeature
+display_type: Symbol
+name: Prime Powers
+ranks: 5
+parent: wonderworker
+child_purchase: {}

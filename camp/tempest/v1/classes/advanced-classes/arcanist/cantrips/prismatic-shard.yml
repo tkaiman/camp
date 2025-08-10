@@ -1,0 +1,11 @@
+name: Prismatic Shard
+incant: Standard
+call: "1 [Radiance/Force]"
+target: Individual
+duration: Instantaneous
+delivery: Spell-Packet
+refresh: Immediate
+accent: Radiance, Force
+effect: Damage
+description:
+  This minor cantrip charges a Spell-Packet causing one damage by either Force or Radiance Accent, chosen by the caster at the time of casting. If the Arcanist has the Empowered Mage Bolt Mage Class Power, they may also alter the Accent to [Acid/Flame/Ice/Lightning].

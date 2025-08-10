@@ -1,0 +1,15 @@
+name: Reality Anchor
+incant: Standard
+call: “Wounding 5 by [Eldritch Accent] [to Physical]"
+target: Individual
+duration: Short Rest
+delivery: Spell-Ball
+refresh: Spell
+accent: Eldritch Accent
+effect: Wounding
+description: |
+  The Sourcerer charges two Spell-Balls with the ability to strike corporeal creatures even while the Sourcerer remains insubstantial.  The Sourcerer may leave off the “to Physical” part of the Call if they are not insubstantial.
+
+  Enhancement: The Sourcerer may charge an additional Spell-Ball if their Eldritch Accent is Acid.
+
+  Enhancement: The Sourcerer may expend a Spike and two Life Points to charge an additional Spell-Ball at the time of cast.

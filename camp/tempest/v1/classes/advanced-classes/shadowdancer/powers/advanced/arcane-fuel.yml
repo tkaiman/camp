@@ -1,0 +1,14 @@
+name: Arcane Fuel
+tags: [insubstantial]
+incant: None
+call: “Charged”
+target: Self
+duration: Short Rest or Until Used
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Grant Plus Spike Damage
+description: |
+  The Shadowdancer may expend an Arcane Spell slot to give their next Spike +2 damage for a Novice slot, +4 damage for an Adept slot, or +6 damage for a Greater slot. This Power may only be used while Insubstantial, but persists even after the Shadowdancer is no longer Insubstantial.
+
+  In addition, This Power immediately refreshes when the Shadowdancer becomes Insubstantial.

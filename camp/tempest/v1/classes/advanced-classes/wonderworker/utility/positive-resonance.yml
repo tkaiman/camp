@@ -1,0 +1,15 @@
+name: Positive Resonance
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest, Event
+accent: None
+effect: Refresh
+description: |
+  The interplay of weakness and resistance gives a Wonderworker a source of power - even in something being resisted or shrugged off entirely, there is benefit to be had.
+
+  Once per Short Rest, if a Wonderworker uses a power or effect that triggers a resistance or immunity of a creature, they may recharge one power of a lower tier. (e.g., if the Wonderworker casts a Greater tier spell and is met with a “No Effect” or “Resist” call, they may Refresh one Adept tier spell or power)
+
+  Additionally, once per Long Rest, if the Wonderworker deals a deathblow with a known weakness of a creature (from Exploit Weakness or another power) they may recharge one power of Adept tier or lower.

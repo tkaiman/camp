@@ -1,0 +1,18 @@
+name: Unification of the Divine
+requires: universalist:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description: |
+  The Universalist’s understanding of the artificial barriers between Arcane and Divine magic allows them to “bend the rules” in a way that few can replicate. This allows the Universalist to substitute the Radiance Accent for the Force accent and the Force accent for the Radiance Accent at will.
+
+  Universalists may cast Arcane spells from Divine Spell slots and Divine spells from Arcane spell slots for spells of the Novice, Adept, and Greater Tiers.
+
+  Uses of Refreshing Prayer, Commune with Nature, Arcane Study, and Eldritch Battery will now refresh both their Arcane and Divine spell slots.  The practical effect of this is allowing a Universalist a second full spell refresh per long rest by using an Arcane refresh, then a Divine refresh to restore all of their spell slots.
+
+  Finally, the Universalist may count an Arcane Locus as Consecrated Ground or vice versa for the purpose of refreshing additional spells during rest, but only one of the two at a time.  If the character has Concurrent Meditation, they may gain both sets of additional spell slots at the same time.

@@ -1,0 +1,10 @@
+name: Bloom Poultice
+incant: "RP Quick 100: Making a poultice from Bloom"
+call: “Heal 3 to Living by Poison”
+target: Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Immediate
+accent: Poison
+effect: Heal
+description: Adventuring in the wilds often leads to harm to oneself, however, the ranger knows that all one needs to salve such wounds is abundant and plentiful in nature. After roleplaying creating a poultice, the Ranger may sacrifice a bloom to call “Heal 3 to Living by Poison” to a creature they can Touch.

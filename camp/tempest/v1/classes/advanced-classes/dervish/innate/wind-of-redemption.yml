@@ -1,0 +1,12 @@
+name: Wind of Redemption
+requires: dervish:2
+incant: None
+call: '"Grant Insubstantial", "Cure Insubstantial"'
+target: Self
+delivery: None
+accent: None
+duration: Event
+refresh: Short Rest
+effect: Grant Insubstantial, Cure
+description: |
+  When felled, the wind spirit guiding the dervish intervenes to protect them. When falling to zero Life Points, the Dervish may choose to immediately become insubstantial. They may choose to end this Condition any time during their bleed out by calling “Cure insubstantial to Self” (this is an out of game decision and the character need not be conscious of it, thus it can be used while dying).

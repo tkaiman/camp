@@ -1,0 +1,13 @@
+name: The End of the Path
+incant: None
+call: “[Name or Description] Short Dominate to Charmed by Will”
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Short Rest
+accent: Will
+effect: Dominate
+description: |
+  The Ringleader knows the ins and outs of peoples stories and hearts - where they are weakest. Handling these carefully is the masterful method by which they assert and maintain control.  The Ringleader has become skilled at finishing the job that a Face has started, strengthening control over an individual.
+
+  The Ringleader may call “[Name or Description] Short Dominate to Charmed by Will”. In addition, the Ringleader may also Refresh this power by expending a Spike.

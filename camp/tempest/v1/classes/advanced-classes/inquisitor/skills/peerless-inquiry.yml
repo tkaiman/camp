@@ -1,0 +1,15 @@
+name: Peerless Inquiry
+requires: inquisitor:5
+cost: 3
+incant: None
+call: "“[Name or Description] Obey Final: Tell me if you have the ability to Obfuscate your answers to questions.”"
+target: Individual
+delivery: Verbal
+accent: None
+duration: Instantaneous
+refresh: Event
+effect: Obey
+description: |
+  The most experienced Inquisitors know that they face the possibility of trained and augmented criminals from time to time. While those who would lie to an Inquisitor are foolish, some are adept enough to slip by unnoticed, at least for a time.  After at least one minute of interrogative questioning using Pressing the Question, the Inquisitor may ask a number of questions, and once a pattern of responses is had, may determine if the answers defy the will of the gods.
+
+  After one minute of roleplay interrogating a suspect, with at least one use of Pressing the Question, the Inquisitor may make a determination of the target’s ability to lie under the effect of a Discern.

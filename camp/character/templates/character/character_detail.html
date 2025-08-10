@@ -322,34 +322,39 @@
                 {% endif %}
                 <div class="accordion" id="availableAccordian-{{group.type}}">
                 {% for category, available in group.available_categories.items %}
+                    {% if group.need_collapse %}
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button {% if not forloop.first %}collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{group.type}}-{{category|slugify}}" aria-expanded="{{ forloop.first }}" aria-controls="collapse-{{category|slugify}}">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{group.type}}-{{category|slugify}}" aria-expanded="false" aria-controls="collapse-{{category|slugify}}">
                             {{category}}
                             </button>
                         </h2>
-                        <div id="collapse-{{group.type}}-{{category|slugify}}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}" data-bs-parent="#availableAccordian-{{group.type}}">
+                        <div id="collapse-{{group.type}}-{{category|slugify}}" class="accordion-collapse collapse"
+                            data-bs-parent="#availableAccordian-{{group.type}}">
                             <div class="accordion-body">
+                    {% endif %}
                                 <ul class="list-group list-group-flush">
-                                {% if available.0.explain_category_group %}
-                                <li class="list-group-item">
-                                    {{ available.0.explain_category_group }}
-                                </li>
-                                {% endif %}
-                                {% for f in available %}
-                                <li class="list-group-item">
-                                    <a href="{% url 'character-feature-view' character.id f.full_id%}">
-                                        {% name_without_tags f group.type f.category_tags %}
-                                        {% if f.purchase_cost_string %}
-                                        ({{ f.purchase_cost_string }})
-                                        {% endif %}
-                                    </a>
-                                </li>
+                                    {% if available.0.explain_category_group %}
+                                    <li class="list-group-item">
+                                        {{ available.0.explain_category_group }}
+                                    </li>
+                                    {% endif %}
+                                    {% for f in available %}
+                                    <li class="list-group-item">
+                                        <a href="{% url 'character-feature-view' character.id f.full_id%}">
+                                            {% name_without_tags f group.type f.category_tags %}
+                                            {% if f.purchase_cost_string %}
+                                            ({{ f.purchase_cost_string }})
+                                            {% endif %}
+                                        </a>
+                                    </li>
                                 {% endfor %}
                                 </ul>
+                    {% if group.need_collapse %}
                             </div>
                         </div>
                     </div>
+                    {% endif %}
                 {% endfor %}
                 </div>
             </div>

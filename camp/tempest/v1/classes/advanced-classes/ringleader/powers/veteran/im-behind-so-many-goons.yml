@@ -1,0 +1,13 @@
+name: I’m Behind So Many Goons
+incant: None
+call: “Grant x Barrier”
+target: Self
+duration: Instantaneous  
+delivery: Touch
+refresh: Long Rest
+accent: None
+effect: Grant Barrier
+description: |
+  The Ringleader gains +2 Barrier for each Enforcer that is with them when they activate this Power.
+
+  Whenever the Ringleader turns in 5 Minion Loot tokens, or a Captain Loot token, they may instead choose to Refresh this Power instead of receiving loot for those tokens.

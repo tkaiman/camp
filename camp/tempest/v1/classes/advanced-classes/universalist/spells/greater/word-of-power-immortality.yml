@@ -1,0 +1,10 @@
+name: "Word of Power: Immortality"
+incant: "“... to use the Word of Power: Immortality”"
+call: "“Grant Life to Corpse by Force”, “Heal to Full by Radiance”, “Mend to Full Armor by Flame”, “Grant 3 Barrier by Will”"
+target: One Corpse
+duration: Instantaneous
+delivery: Touch
+refresh: Spell, Long Rest
+accent: Flame, Force, Radiance, Will
+effect: Grant Life, Heal, Mend, Grant Barrier
+description: This powerful spell knits the bones and mends the flesh of the dead, infusing it with life energy while also providing a powerful defensive buff. If the target is a dead creature whose spirit is still present, Heal to full, Mend to full, and Grant 3 Barrier.

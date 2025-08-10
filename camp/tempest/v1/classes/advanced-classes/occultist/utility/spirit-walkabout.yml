@@ -1,0 +1,16 @@
+name: Spirit Walkabout
+incant: Focus Quick 100
+call: '“Spirit Form”, “Dispel Spirit Form to Self”'
+target: Self
+duration: Slow 180
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Special
+description: |
+  You have become more accustomed to the Spirit Realm than most would deem advisable. You gain the Strong Spirit perk. Additionally, once per Long Rest, you can meditate for Focus Quick 100 to slip into the realm of spirits, calling “Spirit Form” as though you had disincorporated after death. While in this form, you may walk freely for a count of Slow 180. During this time, you may communicate and act as though you had died and were utilizing the Strong Spirit perk. At the end of the Slow 180 count, you must cease wandering and walk directly to your choice of:
+
+    * The precise location where you assumed Spirit Form, if you can find it. Upon arrival, you must call “Dispel Spirit Form to Self”, even if the location is not safe in-game.
+    * The Spirit Well, where you will negotiate with the Keepers to resurrect as though you had died.
+
+  If you have the Landbonded Flaw and are not currently on the plane you are bonded to, you may not use Spirit Walkabout normally. Instead, after the Focus Quick 100 to enter Spirit Form, proceed directly to the plane you are bonded to through the most appropriate portal, or the exit of the nearest Spirit Well on that plane. From there, act as though you have exited the Spirit Well and are proceeding to resurrect with Resurrection Sickness as normal.

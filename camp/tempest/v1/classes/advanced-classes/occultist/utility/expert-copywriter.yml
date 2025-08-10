@@ -1,0 +1,10 @@
+name: Expert Copywriter
+requires: journeyman-enchanting
+grants: greater-enchanting
+description: |
+  You gain Greater Enchanting, along with the following benefits.
+
+    * If you do not already have a Crafter’s Spellbook (see the Artisan Copywriter utility power), you gain one now. Unlike the Crafter’s Spellbook available to Artisans, yours may contain spells of any tier.
+    * You may copy spells into your Crafter’s Spellbook from scrolls in addition to spellbooks. This consumes the scroll as though it had been cast.
+    * When you scribe a spell scroll, you do not need to write the full incantation in Primal Script. Instead, only scribe the tail end of the incantation (the part of the incantation that is not shared with other spells of the same class). The full English incantation must still be copied. Likewise, when adding spells to your Crafter’s Spellbook, the Primal Script need only include the tail end.
+    * Whenever you craft a formula with the Scribe type, you may double the batch size. This also doubles the amount of most materials used (generally Hide), but does not require additional Ink items due to your efficient writing technique. All items produced must be identical; if you scribe a batch of spell scrolls or copied schematics, the outputs must all be the same spell or schematic. You may combine this with similar abilities such as Batch Process.

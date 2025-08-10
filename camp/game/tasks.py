@@ -152,19 +152,43 @@ def _passive_income(char: TempestCharacter) -> int | None:
     # TODO: Move this logic into the feature definitions
     income = 0
     tax_evasion = char.get("tax-evasion") > 0
+    window_dressing = char.get("window-dressing") > 0
     if char.get("profession-apprentice") > 0:
-        income += 4 if tax_evasion else 2
+        income += 2
+        if tax_evasion:
+            income += 2
+        if window_dressing:
+            income += 2
     if char.get("profession-journeyman") > 0:
-        income += 6 if tax_evasion else 4
+        income += 4
+        if tax_evasion:
+            income += 2
+        if window_dressing:
+            income += 2
     if char.get("profession-master") > 0:
-        income += 8 if tax_evasion else 6
+        income += 6
+        if tax_evasion:
+            income += 2
+        if window_dressing:
+            income += 2
     if char.get("income") > 0:
-        income += 8 if tax_evasion else 7
-    if tax_evasion and char.get("manse") > 0:
+        income += 7
+        if tax_evasion:
+            income += 1
+        if window_dressing:
+            income += 1
+    if char.get("portfolio") > 0:
+        income += 2 * char.get("dealbroker")
+    if char.get("ringleader-power-benefits-of-the-menagerie") > 0:
+        income += 1
+    if char.get("manse") > 0:
         # Manse doesn't grant *passive* income by itself,
         # unless you have Tax Evasion. You can _request_ Wealth
         # from it, though.
-        income += 1
+        if tax_evasion:
+            income += 1
+        if window_dressing:
+            income += 1
     if char.get("pit-master") > 0:
         income += 2
     # TODO: Add income from ACs

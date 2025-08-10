@@ -1,0 +1,13 @@
+name: Chosen One
+requires: exemplar:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description: |
+  This character may have an additional Protect on them over the normal limit. Normally this will mean the character may have four Protects at one time on themselves instead of the normal three.
+  The Protects still need to adhere to the limit of one Protect of any one type.

@@ -1,0 +1,14 @@
+name: Saving Grace
+requires: larcenist:3
+incant: None
+call: “Stabilize”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Stabilize
+description: |
+  The life of a Larcenist is one that knows violence is around every corner, and the thief that gets caught is lucky to simply end up in the stocks. More often than not, getting caught means a sword through the gut, and a long slow death in the gutter. While the Larcenist is not immune to such fates, more often than not, a twist of the body and some convincing acting is enough to keep would-be killers to leave the bleeding thief to die in the dirt.
+
+  The Larcenist may now expend two Luck Charges to Stabilize themselves while Dying.

@@ -1,0 +1,15 @@
+name: Green Channel
+incant: Standard
+call: “Cure [Condition]”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: None
+description: |
+  The Druid opens themself as a conduit to the living energy of the wood all around them. These functions may not be used while in a Form.  They gain the following benefits:
+
+    * They no longer need an Incantation to use Life Tap. They can simply use the Call.
+    * They may spend 2 points of Life Tap to turn any Touch or Materia Druid Power that gives healing into a Verbal. They should add “[Name or Description]” at the beginning of the normal Call.
+    * They may spend 2 points of Life Tap to Cure any one Condition besides obedient on a Touched target, at-will. The Call for this is “Cure [Condition]”.

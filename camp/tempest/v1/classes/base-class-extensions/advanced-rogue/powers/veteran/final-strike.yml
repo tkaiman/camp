@@ -1,0 +1,11 @@
+name: Final Strike
+incant: None
+call: "15 Final"
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Short Rest
+accent: None
+effect: Damage
+description:
+  When attacking from behind, the Rogue can make an attack that does “15 Final”.

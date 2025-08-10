@@ -1,0 +1,12 @@
+name: Social Acumen
+requires: dealbroker:1
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description:
+  For the purposes of any power or skill that determines a numeric value based on your Socialite class-level (for example, the Socialite powers Battlefield Commander or Hard to Read), add your Dealbroker class-levels to your Socialite class-level. This does not allow you to meet power or skill requirements you would otherwise not qualify for, but does allow you to purchase additional Right Hand powers that you otherwise qualify for.

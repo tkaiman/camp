@@ -1,0 +1,15 @@
+name: Memory Delve
+requires:
+  - mentalist:4
+  - psychic-surgery
+cost: 1
+tags: [psychic-surgery-procedure]
+incant: RP, Psychic Surgery
+call: Explanation
+target: Other Individual
+duration: Permanent
+delivery: Touch
+refresh: Long Rest
+accent: Mind
+effect: Special
+description: The Mentalist and the patient work together to find missing memories and restore them. These can be memories removed by Memorywash, or can push harder to remember the "lost hour" just before the last time the character visited the Spirit Well. This latter usage is extremely draining, and will burn out the Mentalist’s ability to use Psychic Surgery or Forge the Link until they have completed two Long Rests. The hour regained also must be from the current Event - anything older than that is simply too dissolute to recall.

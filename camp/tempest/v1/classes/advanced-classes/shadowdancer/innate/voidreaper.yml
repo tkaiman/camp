@@ -1,0 +1,13 @@
+name: Voidreaper
+tags: [insubstantial]
+requires: shadowdancer:5
+incant: None
+call: None
+target: Self
+duration: Instantaneous  
+delivery: None
+refresh: Immediate
+accent: Darkness
+effect: None
+description:
+  When the Shadowdancer leaves an insubstantial state, they double the Spike damage they would do on an attack from behind with the first weapon attack they make of any kind after no longer being Insubstantial. If the first attack they make is not a Spike or is not from behind this Power is wasted until the Shadowdancer goes Insubstantial again.

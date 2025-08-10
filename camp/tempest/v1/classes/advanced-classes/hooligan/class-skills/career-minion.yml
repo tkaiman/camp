@@ -1,0 +1,12 @@
+name: Career Minion
+requires: hooligan:2
+cost: 2
+incant: None
+call: None
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Special
+description: By approaching a Socialite and informing them of their intent to be a minion/bodyguard/confidant/etc, assuming the Socialite agrees, the Hooligan gains the “Bodyguard” qualifier, and the Hooligan is considered a Bodyguard to that Socialite, in addition to any that Socialite may already have, but may only be one Socialite’s Bodyguard at a time. During a Short Rest, the Hooligan may choose to end their employment with that Socialite by informing them that they are no longer working for them, which will avail them the opportunity to change employers.

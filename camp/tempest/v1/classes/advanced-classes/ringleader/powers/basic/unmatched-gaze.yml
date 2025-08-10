@@ -1,0 +1,13 @@
+name: Unmatched Gaze
+incant: None
+call: '“Counter, Unmatched Gaze”, “[Name or Description] 1 by Fear”'
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest
+accent: Fear
+effect: Counter
+description: |
+  The Ringleader, when targeted by a non-Subtle Discern, may Counter the Discern by calling “Counter, Unmatched Gaze,” and may immediately call “[Name or Description] 1 Fear” against the source of the Discern. If they do, the Ringleader gains +1 Spike Bonus Damage versus the target until the Ringleader finishes a Short Rest.
+
+  The Ringleader may do this a number of times per Short Rest equal to their Ringleader class-level.

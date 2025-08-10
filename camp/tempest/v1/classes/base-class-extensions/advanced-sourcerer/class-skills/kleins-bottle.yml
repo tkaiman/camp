@@ -1,0 +1,11 @@
+name: Klein's Bottle
+requires: advanced-sourcerer:5
+cost: 1
+incant: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: The Sourcerer gains an additional Attunement Slot. This Slot may only be used for objects that serve as Eldritch Sources.

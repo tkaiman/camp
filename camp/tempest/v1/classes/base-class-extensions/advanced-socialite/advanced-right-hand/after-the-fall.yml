@@ -1,0 +1,14 @@
+name: After The Fall
+cost: 3
+requires:
+  - the-right-hand
+  - advanced-socialite:5
+incant: None
+call: “Long Imbue Touch Grant Life to [Socialite’s Name]”
+target: Individual
+duration: Long Rest
+delivery: Touch
+refresh: Event
+accent: None
+effect: Imbue Grant Life
+description: The Socialite must spend a minute or so in meditation with their Bodyguard, infusing them with energy and syncing them up to the Socialite's own life-rhythm. At the end of this time, the Call should be given and any additional explanation provided. This lets the Bodyguard Grant Life by Touch to the Socialite, once per event. Remember that one cannot have more than one Imbued Power at a time.

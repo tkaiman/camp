@@ -1,0 +1,15 @@
+name: Offensively Polite
+incant: “I do hope that we can behave ourselves.”
+call: “[Name or Description] Piercing 1 by Will”
+target: Individuals
+duration: Short Rest
+delivery: Verbal
+refresh: Short Rest
+accent: Will
+effect: Piercing
+description: |
+  Often only used in cases where the negotiation is not overly friendly, or when a student requires active correction, this Power is a bane to the uncouth. Although it can only be used out of combat, the targets for this Power can be anyone in negotiation or conversation with the Socialite, or indeed anyone at the same table as the Socialite. It allows the Socialite to Call “[Name or Description] Piercing 1 by Will” each and every time someone makes a breach of etiquette. Wrong fork, interrupting, elbows in the soup…. Anything.
+
+  The Socialite must call out the breach before each Call. If the breach is an actual offensive act (like doing damage or Calling an Effect*) the Socialite may Call “[Name or Description] Piercing 5 by Will” instead for each breach. Once combat begins, however, the negotiation or conversation is over and the Power ends.
+
+  *Note that a Subtle Effect that is not noticed cannot be punished.

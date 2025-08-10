@@ -1,0 +1,11 @@
+name: Look Elsewhere
+incant: Standard
+call: '"Grant Insubstantial", “Dispel Insubstantial”'
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Short Rest
+accent: Illusion
+effect: Grant Insubstantial
+description:
+  The Mentalist can only cast this Cantrip if hidden in some way, even if this is a token effort. Standing behind a pillar, covering one’s self with a tablecloth, and crouching in a dark corner all count for the purposes of this Cantrip. Once hidden, the Incantation is spoken and the character becomes Insubstantial until they communicate (in-game) to another, until they leave the hiding spot, or they complete a Short Rest, at which point they must call "Dispel Insubstantial!"

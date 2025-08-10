@@ -1,0 +1,15 @@
+name: Mine, Mine
+incant: Successfully disabling a trap.
+call: "[The Trap’s Call]"
+target: Self, Individual
+duration: Instantaneous, Until Used
+delivery: None, Verbal
+refresh: Short Rest, None
+accent: None, Per Trap
+effect: Special
+description: |
+  When disabling a Trap, should the Larcenist succeed, they may ask for the Trap card, or if there is none, question the Marshal Spirit for the effect of the trap. When they learn the effect of the trap, they gain a single Mine Charge that must be the next Call they Larcenist makes.
+
+  The Mine Charge grants a Call equal to the original trap's call, with the Delivery changed to Verbal.
+
+  For Example: Elana the Larcenist manages to disable a Trap during a mod, and finds the relevant trap card underneath the chest they were working on. The Traps call would have been “In This Room: 10 Flame.” They take note of the call, and grant themselves a Mine Charge with the call “[Name or Description], 10 Flame” which must be the next Call they make.

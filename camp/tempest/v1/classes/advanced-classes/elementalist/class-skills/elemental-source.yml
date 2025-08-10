@@ -1,0 +1,15 @@
+name: Elemental Source
+cost: 3
+requires: elementalist:1
+incant: None
+call: None
+target: Self
+duration: Event
+delivery: None
+refresh: Short Rest
+accent: None
+effect: None
+description: |
+  The Elementalist has mastered the arts of Source manipulation such that they may have an additional Eldritch Source bound.
+
+  After finishing a Short Rest linked to an object, the Elementalist may designate a new item to become their Source in addition to their first so long as the prop is a valid Eldritch Source. You must choose one of the following Accents: Acid, Lighting, Flame or Ice.

@@ -1,0 +1,11 @@
+name: Get Away From Her
+incant: "No!"
+call: “[Name or Description] Piercing 1 by Will”
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Immediate
+accent: Will
+effect: Piercing
+description:
+  Whenever the Socialite sees someone who appears to be committing a Deathblow, they can reach out and strike that person with pure fury, their very personality causing the offender to pause their killing maneuver.

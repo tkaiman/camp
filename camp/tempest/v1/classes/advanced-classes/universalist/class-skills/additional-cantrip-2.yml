@@ -1,0 +1,13 @@
+name: Additional Cantrip II
+cost: 6
+requires: universalist:1
+grants:
+choices:
+  cantrip:
+    name: Bonus Cantrip
+    matcher:
+      type: cantrip
+      parent:
+        type: class
+    controller: sphere-grant
+description: The Universalist receives an additional Cantrip. This stacks with Additional Cantrip. This Cantrip can come from any Class the Universalist has levels in.

@@ -1,0 +1,13 @@
+name: Bane of the Outsider
+requires: inquisitor:5
+cost: 6
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: Grant Base Damage
+description: |
+  When attacking an Abomination, Undead, Undevoted, or an individual Branded as an Oath Breaker, the Inquisitor may add the “to Abomination”, “to Undead”, or “to Undevoted” Qualifier. If they do so, the Inquisitor may add one additional Base Damage to their melee attacks against the target. No Qualifier is required for those Branded as an Oath Breaker. As this additional damage is a base damage increase, and is not affected by the stacking rules.   This power stacks directly with Scourge of the Outsider and other forms of Base Damage increase.

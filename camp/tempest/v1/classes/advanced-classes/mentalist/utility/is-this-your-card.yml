@@ -1,0 +1,18 @@
+name: Is This Your Card?
+incant: None
+call: "[Name or Description] Subtle Discern by Mind: [See Below]"
+target: Self
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest
+accent: Mind
+effect: Discern
+description: |
+  The Mentalist can use their powers not just for the great but also for the small. The Mentalist can use any of the following Discerns, and others too, if approved by Staff. Custom questions should follow the same formula of being for mostly entertainment purposes, and following a pattern of stage-magic effectiveness. Note that while these questions have a stage-magic bent to them, there is no limit as to how they can be used. The Mentalist can exhaust a Link or a Spike to immediately Refresh this Power.
+
+    * "What card did you pick?"
+    * "What number are you thinking of?"
+    * "What color are you thinking of?"
+    * "What letter are you thinking of?"
+    * "Do you have a good hand?"
+    * "What card did you just draw?"

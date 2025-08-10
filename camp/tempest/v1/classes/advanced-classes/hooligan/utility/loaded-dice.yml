@@ -1,0 +1,13 @@
+name: Loaded Dice
+incant: None
+call: "“It Can Be Believed: This die/dice roll was [X]”"
+target: Individuals
+duration: Passive
+delivery: Voice
+refresh: Immediate
+accent: None
+effect: Special
+description: |
+  When the Hooligan rolls a die or dice, they may immediately reroll any number of those dice and call “It Can Be Believed: This die/dice roll is [X], and was untampered with,” where X is the result of the second roll.
+
+  Note: Winning at gambling is a great way to earn wealth, but most Houses aren’t a huge fan of getting fleeced. Seeing one individual return to the table over and over and wipe them clean is a great way to earn a one way ticket to a dark alley with other Hooligans.

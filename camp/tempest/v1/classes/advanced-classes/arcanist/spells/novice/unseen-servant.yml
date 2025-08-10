@@ -1,0 +1,16 @@
+name: Unseen Servant
+tags: [arcane-tool]
+incant: Standard
+call: None
+target: Self
+duration: Special
+delivery: None
+refresh: Spell
+accent: None
+effect: None
+description: |
+  This Spell lasts until the Arcanist has completed one Tinkering or Alchemical task (i.e. fully used one schematic or recipe). The Arcanist must have all the ingredients at hand, but can then sit back for at
+  least one turn of the hourglass and watch an unseen servant perform all the actions. The player need not role-play any of the actions normally associated with the schematic or recipe.
+
+  If the plan has timers in it, those timers must be used (i.e. if the plan requires a turn of the hourglass for this part, and two turns for that part, the Unseen Servant will take at least three turns of
+  the hourglass to complete the task. If the plan calls for 8 hours of cooling, 8 hours is still required). If no timers exist in the plan at all, one turn of the hourglass is still required.

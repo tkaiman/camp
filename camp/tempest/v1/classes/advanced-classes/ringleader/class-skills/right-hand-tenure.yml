@@ -1,0 +1,12 @@
+name: Right Hand Tenure
+requires: the-right-hand
+cost: 4
+incant: None
+call: “Grant +1 [Maximum Spike / Maximum Life Points]”
+target: Individual
+duration: Event
+delivery: Touch
+refresh: Event
+accent: None
+effect: Grant
+description: If a Ringleader has The Right Hand Class Skill from Socialite, and their Bodyguard becomes their Enforcer, the Ringleader may Grant that character either +1 Maximum Base Spike or +1 Maximum Base Life Point for as long as that character is their Enforcer, or the end of the Event, whichever occurs first.

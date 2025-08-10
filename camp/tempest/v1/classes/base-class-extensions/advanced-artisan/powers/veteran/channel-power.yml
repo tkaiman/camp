@@ -1,0 +1,17 @@
+name: Channel Power
+tags: [mystic]
+incant: None
+call: “Refresh One [Novice/Adept] Spell Slot”
+target: Individual
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Long Rest
+effect: Refresh
+description: |
+  The Artisan calls upon a source of power meaningful to them to empower an individual’s magic reserves. This process can
+  be as long or as short as the Artisan desires, but should have meaning to them and be visible and obvious to others. This
+  process immediately refreshes a Novice of Adept spell slot (Artisan’s choice) in another individual. If the Artisan is a
+  Mystic, this may also return a Greater spell slot.
+
+  The Artisan may instantly Refresh this power if they are the Ritualist of any Ritual where the Blood Price is paid.

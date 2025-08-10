@@ -1,0 +1,11 @@
+name: Arcane Armor
+incant: Standard
+call: “Long Grant 6 Summoned Armor by Force”
+target: Individual
+duration: Long Rest, Short Rest
+delivery: Touch
+refresh: Spell
+accent: Force
+effect: Grant Summoned Armor
+description:
+  Arcane Armor creates 6 points of summoned armor that lasts until the Mage next completes a Long Rest. The Mage may instead choose to cast this on a target other than themselves and reduce the duration to “Short Rest” and the Summoned Armor gained by 1 point to 5 calling “Short Grant 5 Summoned Armor by Force.”

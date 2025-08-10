@@ -1,0 +1,25 @@
+name: Limited Time Offer
+cost: 2
+requires:
+  - dealbroker:2
+  - any:
+      - fence
+      - commodities-broker
+incant: None
+call: None
+target: None
+duration: None
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  Your connections allow you access to opportunities that may not be offered to others. The downside is that you rarely have the opportunity to fully appraise these offers before accepting.
+
+  While fencing goods with the Fence skill, you may ask the Staff member handling the transaction if they have any Limited Time Offers. If so, they will present the offer and the price (which may simply be “your entire Fence payment”). The nature of the offer may vary, but will often be one of:
+
+    * One or more pulls from a grab bag. Who knows what might be inside?
+    * A specific item or piece of information. You might know the category, but rarely the details.
+    * An opportunity of some sort. This may cause some unknown NPC to seek you out at a later time.
+
+  Depending on the offer, the amount of goods being fenced, or other plot factors, you may receive more or very little detail about the nature of the offer before being asked to accept.

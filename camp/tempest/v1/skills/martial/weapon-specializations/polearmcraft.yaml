@@ -3,6 +3,9 @@ cost: 4
 requires:
   - great-weapons
   - martial:2
-  - weapon-specialization+Polearm
+  - any:
+    - weapon-specialization+Axe
+    - weapon-specialization+Mace
+    - weapon-specialization+Sword
 description: |
   When wielding a polearm (A great weapon with an overall length of 61"-90") in two hands you may spend a Spike to Counter any Disarm Effect that targets the polearm by calling "Counter, Polearmcraft."

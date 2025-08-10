@@ -1,0 +1,18 @@
+name: Where It Hurts The Most
+incant: None
+call: "“Piercing 1 by Agony”, “[Name or Description] Obey by Agony: Answer this Question, [Question]”"
+target: Individual
+duration: Instantaneous
+delivery: Touch, Verbal
+refresh: Immediate
+accent: None
+effect: Piercing, Obey
+description: |
+  One of the best advantages of a Surgeon is their mastery of the living body. A Ringleader may use this knowledge to extract useful information out of those unwilling to speak otherwise.
+
+  The Ringleader may deal Piercing 1 by Agony to a Helpless but conscious character by role-playing some kind of minor torture for 5 seconds or so. If the character takes the damage or otherwise does not Prevent it, the Ringleader may require the target to answer one of the following questions:
+    * “Who sent you?”
+    * “Who is your boss?”
+    * “Who, or what, are you after?”
+    * “Do you have more allies in the area?”
+    * “Can you be bribed to work for me, instead?”

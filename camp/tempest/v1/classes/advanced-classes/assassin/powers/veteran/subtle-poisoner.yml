@@ -1,0 +1,17 @@
+name: Subtle Poisoner
+incant: None
+call: "[Name or Description]: Subtle [X] by Ingested Poison"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest
+accent: Poison
+effect: Grant Subtle Verbal Delivery
+description: |
+  The assassin knows that getting away clean is the hardest part of a job, and every second of lead time is worth more than gold. Utilizing carefully constructed poisons, the Assassin may cause the death of an individual by carefully palming a sachet of poison or other ingestible substance.
+
+  With this power you can poison a non-clear beverage without leaving an obvious trace. You must have the poison card in-hand, and must touch the intended container for at least a Slow 5. Unlike normal poisoning, you do not need to attach the poison card.
+
+  If the target ingests the beverage, and you observe it, you may call "[Name or Description]: Subtle [X] by Ingested Poison", where “X” is the poisons effect that was used. Any effect that would Discern whether the beverage is poisoned must be answered properly (by you or a marshal) unless you have somehow Obfuscated the beverage itself (Obfuscates active on you don't affect the beverage). If you fail to answer the Discern for some reason or fail to observe the first sip, you lose your opportunity to call the effect.
+
+  If a marshal is available in advance the marshal may call "[Name or Description]: Subtle [X] by Ingested Poison" instead of you if they observe the first sip of the beverage.  Support for this power must be arranged in advance and will only be available if resources are free, it should not be assumed a Marshal will be free.

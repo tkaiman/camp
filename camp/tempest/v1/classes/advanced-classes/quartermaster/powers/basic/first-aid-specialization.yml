@@ -1,0 +1,12 @@
+name: First Aid Specialization
+tags: [mystic]
+incant: "By the power of my craft, I aid the wounded"
+call: As per First Aid Kit
+target: None
+duration: Passive
+delivery: None
+refresh: None; Short Rest
+accent: None
+effect: Special
+description:
+  Your attuned First Aid Kit or similar medical kit’s capacity is 15 more than its base value; a normal kit’s base value is 5, so this would allow the kit’s Advanced effect to be used four times before refilling. Additionally, instead of performing a Focus count, you may instead incant "By the power of my craft, I aid the wounded" before making any of the kit’s associated calls. Finally, if you have a Mending or Healing pool power such as Living Iron or Healing Touch, once per Short Rest you may spend up to your kit’s capacity from those pools to directly refill the kit. To do this, perform that power’s normal incantation and touch the kit, then call “Replenish Kit”.

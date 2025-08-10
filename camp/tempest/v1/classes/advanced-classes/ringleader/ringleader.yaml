@@ -1,0 +1,29 @@
+type: class
+category: Advanced Class
+name: Ringleader
+requires:
+  - level:10
+  - any:
+      - short-weapons
+      - great-weapons
+      - projectile-weapons
+  - at_least: 2
+    any:
+      - famous
+      - manse
+      - minor-nobility
+      - rumormonger
+      - undevoted
+      - devotion.advanced
+flags: flag+ringleader
+description: |
+  Across the Eyes, there will always be groups who seek to expand their influence. Teams band together under a belt flag, soldiers stand at attention for their superior officer, and crime syndicates take their orders, too. Regardless of morality, political affiliation or creed, it’s common for peoples with aligning purposes to seek leadership as it were and take orders from an elected or self-chosen leader.
+
+  The Ringleader has a way with words and leadership, and whether they’re laying into the lax of their group or supporting the fighter in front, their voice is often the loudest in a metaphorical sense and is often held in great reverence from the group if not fear.
+
+  How the Ringleader accomplishes their position of power vary wildly, but the story is always very similar. A Pit Lord of the Thieves Guild underground grows in rank and earns a place scouting out the new scores and the hits they direct earn their thieves more coin than they ever could imagine. A Big Boss of the criminal brotherhood orders a handful of close goons around in a bar-fight, and after, those goons decide it worked out well enough to stick by her side A group of religious fanatics break away from the main faith and start a new order under the guidance of an imperious cult leader. One leads, the rest follow.
+
+  The Ringleader, social butterfly they may be, uses fear and respect as the proverbial left and right shiv- sometimes, while wielding a left and right shiv. They are not always the quiet types sitting at the back of the tavern collecting dirt on the parties that wronged them, but they’re not always the obvious snake’s head. In fact, many Ringleaders serve auxiliary positions within organizations, serving as a strong voice of direction in the absence of true leadership. Those who listen to their words, follow - if a time comes that the previous leadership no longer holds the same respect as The Ringleader, then a couple faithful Henchmen at her side will ensure a ‘positive’ change of leadership– or at the very least, a rather discreet one.
+
+  ## Enforcers
+    The main power of the Ringleader comes from its Enforcers.  These are generally other PCs who agree to work with the Ringleader and accept a formal invitation (as part of the Induct Enforcer innate Power).  By default, the Ringleader is able to have a number of individuals as Enforcers equal to their class-level of Ringleader.  An Enforcer can leave the service of a Ringleader at any time by informing the Ringleader, and, similarly, the Ringleader can release an Enforcer at any time.  These changes take place as soon as the communication is formally and clearly made.  Because of their specific role in leadership, Ringleaders may not be Enforcers themselves.  When a person becomes an Enforcer, they are assigned a Station, which comes with a bonus Power for the Enforcer, and a companion bonus Power for the Ringleader.  Each Enforcer can only have one Station, and each Station can only be given out to one Enforcer.

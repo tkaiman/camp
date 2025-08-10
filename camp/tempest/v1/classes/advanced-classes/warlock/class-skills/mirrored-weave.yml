@@ -1,0 +1,14 @@
+name: Mirrored Weave
+cost: 2
+tags: [patron]
+requires: warlock:2
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Special
+description:
+  The Damage Bonus from Opening the Gate, A Torrent Released, and Overwhelming Force may also be applied to any subsequent spell balls of damaging spells. Each spell-ball so affected requires that the Warlock expend the Spikes listed in those powers when charging these extra spell-balls.

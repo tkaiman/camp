@@ -1,0 +1,21 @@
+name: Connections of Learnings
+cost: 5
+requires: wonderworker:3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: Passive
+accent: None
+effect: Special
+description: |
+  The Wonderworker’s connection to their symbols can be pushed to represent classes themselves. After taking this skill, the symbols allow any Wonderworker levels to count as class-levels in the Base Class for the purposes of Powers of those classes.   Each type of symbol the Wonderworker takes allows for this benefit for the classes listed below.  However, the total class-levels each of these Base Classes cannot exceed ten, nor exceed the natural class-levels already obtained by the character.
+
+    * The Weapon: Fighter or Rogue
+    * The Lantern: Rogue or Artisan
+    * The Wand: Mage or Sourcerer
+    * The Talisman: Cleric or Druid
+    * The Gem: Socialite or Artisan
+
+  For Example: Lucian, the Wonderworker is a level eight Artisan, level two Rogue, level five Wonderworker. Having taken this power and the Lantern, they may allocate up to two extra “levels” to Artisan (as they cannot exceed ten artisan levels), and two to Rogue (as they cannot exceed their natural Rogue levels), leaving one wonderworker “level” unassigned for the time being. Once Lucian becomes a level 3 Rogue, they may assign that last wonderworker level to Rogue.

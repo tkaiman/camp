@@ -1,0 +1,9 @@
+name: Mystic Synergy
+cost: 3
+requires:
+  - occultist:1
+  - artisan:1
+description: |
+  Your knowledge of the occult and the mystic arts blend well together, allowing you to refresh powers with the [Mystic] tag. You may spend 1 point of your Protection of the Spirits to immediately refresh such a power if it has Short Rest refresh, or 4 points if it has Long Rest refresh.
+
+  Additionally, you may target yourself when using the Living Iron artisan power or its modified form Life Flow, but only when wearing your Protection of the Spirits Summoned Armor.

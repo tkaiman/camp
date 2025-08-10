@@ -1,0 +1,13 @@
+name: Climb the Ladder
+incant: Negotiation, “By ancient right, I demand to speak with your superior!”
+call: "“[Name or Description]: Obey by Fear: Tell me who is above you in your organization.”"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest
+accent: Fear
+effect: Obey
+description: |
+  A negotiator knows when they are speaking with someone useless to them, and the proper protocols for climbing the chain of command to speak with whoever they really need to speak with. During a negotiation, you chant “By ancient right, I demand to speak with your superior!”, and then Call “[Name or Description]: Obey by Fear: Tell me who is above you in your organization!” against a chosen individual.
+
+  If the target complies but the superior they name to is already present in the negotiation, this power Refreshes immediately.

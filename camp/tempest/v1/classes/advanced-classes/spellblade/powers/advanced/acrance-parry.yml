@@ -1,0 +1,11 @@
+name: Arcane Parry
+incant: None
+call: “Counter, Parry”
+target: One Melee Attack
+duration: Instantaneous  
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description:
+  While wielding a weapon or shield, a character may use Arcane Parry to Counter any Weapon-Delivered attack, by calling “Counter, Parry.”

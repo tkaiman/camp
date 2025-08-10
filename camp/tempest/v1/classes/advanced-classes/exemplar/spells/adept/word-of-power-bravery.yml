@@ -1,0 +1,11 @@
+name: "Word of Power: Bravery"
+incant: Standard
+call: “Long Grant Fear Resistance”
+target: Individual(s)
+duration: Long Rest
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Resistance
+description: |
+  The Exemplar may touch up to six other individuals, and bring forth protection against the night. In doing so, the Exemplar may grant each person a lingering protection versus the effects of Fear. Each individual receives Long Grant Fear Resistance. In addition, the Exemplar may expend a Divine Grace to target an additional six individuals.

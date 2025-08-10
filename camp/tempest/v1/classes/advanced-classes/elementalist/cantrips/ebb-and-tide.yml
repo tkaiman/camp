@@ -1,0 +1,11 @@
+name: Ebb and Tide
+incant: Standard
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: None
+description:
+  The Elementalist is able to twist the weave to their needs when pressed. By spending 1 point from Wellspring, the caster is able to activate the optional powers of other Spells. On their next Spell cast, the caster’s Spell acts as though the caster expended a Spike.

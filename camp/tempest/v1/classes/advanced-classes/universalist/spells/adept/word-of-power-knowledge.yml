@@ -1,0 +1,19 @@
+name: "Word of Power: Knowledge"
+incant: Standard
+call: "“Discern by Mind Final: What are all the magical properties of this item?”"
+target: Any number of non-relic special items
+duration: Instantaneous
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Discern
+description: |
+  By casting this spell inside an Arcane Locus, the Mage may learn all of the magical properties of all non-relic items within the locus. Many relic items will also yield their properties through use of this spell. If the relic does not provide results the Universalist immediately refreshes an Adept Spell Slot.
+
+  Although it is easy for anyone to determine if an item is magical or special in nature and read the information card to discover obvious properties, this spell will allow the player to look at the folded information card (even if they don’t meet the requirements on the outside) to know its exact properties. Only the caster will be allowed to read the properties, although if they choose to, they can open each item card to make the properties discoverable to anyone.
+
+  Note: This spell will pierce Obfuscated items because the Discern is Final in nature, however, items immune to Mind Accent should call “No Effect.”
+
+  Using this spell may alert certain powerful creatures that their secrets have been discovered, it opens a window into the mind of the Universalist and sometimes causes a mental conversation to occur with the maker of certain relics or obfuscated items. These effects are at Plot’s sole discretion.
+
+  Note: At Marshal discretion Word of Power: Knowledge may have other specific uses.

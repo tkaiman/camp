@@ -1,0 +1,11 @@
+name: From the Ashes
+incant: Standard
+call: "“[Name or Description]: Grant Life by Flame”"
+target: Non-Undead Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Spell
+accent: Flame
+effect: Grant Life
+description: |
+  This Spell allows the Druid to bring another character back from death by Calling “[Name or Description]: Grant Life by Flame”.

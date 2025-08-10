@@ -1,0 +1,13 @@
+name: Seed of Instability
+incant: Standard
+call: “[Name or Description] Piercing 7 by Flame”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: Flame
+effect: Piercing
+description: |
+  The Elementalist is infused with a dubious blessing: an unstable mote of elemental flame is imbued into their form, which their consciousness can safely hold in check. Upon falling unconscious from damage or being killed by a death effect, the mote is unleashed to wreak havoc upon the surroundings.
+
+  The Elementalist selects the three nearest targets to the best of their estimation, without regard to alliance, and targets them each with “[Name or Description] Piercing 7 by Flame”, one after another.

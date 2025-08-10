@@ -1,0 +1,39 @@
+name: Shard Pool
+requires: spellblade:2
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: None
+description: |
+  The Spellblade has an inner reservoir of strength (some say pain and madness) that they can tap into to enhance their magic. The maximum number of points they have is equal to twice their Spellblade class-level, and they can spend no more than their Spellblade class-level at once. The Shard pool refreshes when the character completes a Long Rest. The following enhancements are available by spending Shards.
+
+    * 1 Shard
+
+      * Change the Accent of a Spell (or add an Accent if it doesn’t have one) to Fire, Ice, Lightning, or Acid.
+      * Grant 1 Barrier to Self.
+      * Counter a Verbal or Packet that targets (or hits) the Spellblade’s weapon. The Call is “Counter, Shard!”
+
+    * 2 Shards
+
+      * Add or replace the Accent of a Spell to Force, Will, or Mind. This option is only available if you have class-levels in an Arcane spell-casting Class.
+      * Add or replace the Accent of a Spell to Agony, Radiance, or Darkness. This option is only available if you have class-levels in a Divine spell-casting Class.
+      * Use the Overcharge Cantrip on a Novice or Adept tier Spell.
+
+    * 3 Shards
+
+      * Use a Spell-Packet for a Spell that uses Spell-Balls, or use a Spell-Ball for a Cantrip that uses Spell-Packets.
+      * Refresh the Spell-Slot of a Spell that was Prevented. The entirety of the Spell must be Prevented for this to be an option, not just one Packet of many, for example. This Refresh can be done any time before the character completes a Short Rest.
+
+    * 4 Shards
+
+      * Change a “Quick” Duration of a Power or Spell they use to “Short”
+      * Change normal damage on a Spell or Cantrip to Wounding. Changes all damage/charges from a single Spell.
+
+    * 5 Shards
+
+      * Counter a Verbal or Packet that would affect the Spellblade. The Call is “Counter, Shard!”
+      * Use a Spell that a weapon is charged with (by use of Bladechannel) as a Verbal by pointing the weapon at the intended target and Calling “[Name or Description]” and then the normal Call for the Power. If the Weapon is charged with multiple charges, only one is released in this way.

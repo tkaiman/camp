@@ -1,0 +1,17 @@
+name: Druidcraft
+incant: Standard
+call: Various
+target: Self
+accent: Mind
+duration: Short Rest
+delivery: None
+refresh: Spell
+effect: Discern, Instruction, Heal, Cure, Alter
+description: |
+  The Druid takes on the power of the forest around them, gaining a host of abilities and powers. These are as follows:
+
+    * Animal Lore: The Druid is treated as having Lore: Nature, Tracking, and may use “[Name or Description] Discern by Mind: Are you an [Animal/Beast]?” at-will.
+    * Animal Speech: The Druid may use “Instruction to Animal or Beast: You can understand my words.”
+    * Friend of Plants: The Druid can do “Heal 1 to Plant” as a Touch Power with an Incantation of Focus Quick 30. They can also “Cure [Condition] to Plant”, but this refreshes only after a Short Rest.
+    * Friend of the Shrubs: The Druid need not use a tool to remove Bloom, nor take any time to do it. The Druid need only ask the plant to give them the Bloom or give the Bloom itself a small compliment before taking Bloom.
+    * Lifecast: As long as the Druid is touching a living plant or creature (plants that are cut within the same Event are still alive), the Druid may pay 2 points from their Lifetap pool and substitute “By stone, by flame, by wind and rain, I call for [Name of Spell]” for all standard Druid Incantations.

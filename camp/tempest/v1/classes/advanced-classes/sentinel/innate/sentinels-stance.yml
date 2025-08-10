@@ -1,0 +1,19 @@
+name: Sentinel’s Stance
+requires: ac-sentinel:1
+tags: [reinforce]
+incant: None
+call: “Sentinel’s Stance”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Barrier, Grant plus Armor, Shield
+description: |
+  The Sentinel’s duty is to hold the line - as such, the process of learning how to be a Sentinel teaches one how to assume a rigid, defense-focused stance.
+
+  The Sentinel adds their Sentinel class-level to their Base Maximum Physical Armor (if worn), a number of resistances to effects that would shatter their shield equal to their Sentinel class-level, and gains Barrier equal to their Sentinel class-level.  
+
+  Reminder: A single effect can surpass the limits of stacking effects.
+
+  While the Sentinel is benefiting from this stance, they are inherently Slowed. The Sentinel may voluntarily end the stance early, losing the slowed Condition but losing any remaining benefits from the stance. This will never leave the armor or shield points higher than when Sentinel’s Stance was initiated, to the best of the user’s memory.

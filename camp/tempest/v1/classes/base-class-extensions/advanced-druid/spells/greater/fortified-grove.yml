@@ -1,0 +1,19 @@
+name: Fortified Grove
+incant: Standard
+call: '“Grant 10 Life Tap”, “Grant 10 Natural Armor”, “Grant +1 Base Damage”, “[Name or Description]: Short Drain”, “[Name or Description]: Short Repel”, Grant Deathblow Immunity, Grant Death to Helpless Immunity'
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant Life tap, Grant Base Damage, Drain, Repel, Grant Immunity
+description: |
+  This Spell enhances the Druid’s connection with their Grove. Once cast, while in their Grove, the Druid has the following abilities. Each is listed with the number
+  of times the ability can be used and each can only be used on targets that are also inside the Grove. Once all the uses are expended, the Druid will need to complete
+  a Short Rest in the Grove to refresh all of the uses of all abilities. A character that casts this Spell cannot cast Pleasant Grove in the same Event.
+
+    * Allies of the Forest: The Druid has 10 additional points of Life Tap that can only be accessed while in the Grove.
+    * Armor of the Forest: Whenever the Druid enters the Grove for the first time after a Long Rest, they are Granted 10 points of Natural Armor and immediately expend any other Physical or Summoned Armor. The Armor disappears immediately upon leaving the Grove.
+    * Claws of the Forest:The Druid adds +1 to their Base Damage with Natural Weapons while inside the Grove. In addition, the Druid is affected by the Feral Strength Adept spell while inside the grove.
+    * Denial of the Forest: The Druid can punish those who do not have permission to enter the Grove. Once each, the Druid can Call: “[Name or Description]: Short Drain” and “[Name or Description]: Short Repel”. The targets and the Druid must all be within the Grove. These Powers cannot be used again until the Druid completes a Short Rest.
+    * Protection of the Forest: The Druid has immunity to Deathblow and “Death to Helpless” while inside the Grove and should call “No Effect” when these are used.

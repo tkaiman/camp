@@ -1,0 +1,13 @@
+name: A Torrent Released
+tags: [patron]
+requires: warlock:2
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: None, only Damage
+description:
+  The Warlock may choose to expend an additional Spike when utilizing Opening the Gate, adding one damage if the spell does Piercing, two if it does Wounding, or by three if it is normal damage. This is in addition to the Spell Ball’s Opening the Gate’s bonus.

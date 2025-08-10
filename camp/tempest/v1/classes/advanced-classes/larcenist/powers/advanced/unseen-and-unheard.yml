@@ -1,0 +1,11 @@
+name: Unseen and Unheard
+incant: None
+call: None
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Obfuscate
+description:
+  The Larcenist gains inherent Obfuscate to Expose effects until they complete Short Rest. The Larcenist need not call out “No Effect” when the Expose is used, but can merely remain silent.

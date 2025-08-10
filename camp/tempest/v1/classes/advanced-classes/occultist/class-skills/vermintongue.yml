@@ -1,0 +1,6 @@
+name: Vermintongue
+cost: 3
+requires:
+  - occultist:2
+  - forage-1
+description: The tiny creatures of the night know your voice, and you know theirs. Your Night Prize foraging limit increases by 5. Additionally, you may hear unusual things from them. If you find a folded note with a Black Key sigil marked “Vermintongue - Do not remove” within a Night Prize patch, you may read its contents and put it back. You may add your own text to such a note if desired, but you should mark this with your character name - the vermin know who speaks to them, and will communicate this honestly to those who will listen. Likewise, you may add your own Black Key Vermintongue note to a patch, but the content of the note should clearly indicate who added it.

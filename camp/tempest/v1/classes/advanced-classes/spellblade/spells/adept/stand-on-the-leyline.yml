@@ -1,0 +1,11 @@
+name: Stand on the Leyline
+incant: Standard
+call: None
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: None
+description:
+  Upon the completion of the incantation, the spell begins, and will end when the caster completes a Short Rest or moves their right foot (they can pivot, but not move the foot from its spot and going unconscious or dying will be enough to make the foot move). While the spell is active, the Spellblade can make every swing of a melee weapon cause the effect of a Cantrip that they have. The only limitation is that the Cantrip must have a Delivery of Packet or Verbal and a Refresh of Immediate. If the Cantrip is a damaging one, the damage (including Wounding and Piercing) will be higher by 1 point, and the Spellblade can switch Cantrip effects as often as they like throughout the duration of the Spell.

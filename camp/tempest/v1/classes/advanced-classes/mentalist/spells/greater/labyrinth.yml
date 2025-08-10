@@ -1,0 +1,11 @@
+name: Labyrinth
+incant: Standard
+call: "Long Disable All Limbs and Silence by Mind"
+target: Individual
+duration: Long Rest
+delivery: Spell-Ball
+refresh: Spell
+accent: Mind
+effect: Disable
+description:
+  This spell charges a spell-ball with "Long Disable All Limbs and Silence by Mind." The target of this spell has their mind ripped away from them, transposing it into an ever-changing and endless maze. There is no escape from the inside of the labyrinth, and without aid, the target will be trapped until the tides change.  The caster may charge an additional Spell-Ball if they spend both a Link and a Spike.

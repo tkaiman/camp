@@ -1,0 +1,13 @@
+name: Quick Deflection
+tags: [Whirlwind]
+# TODO: check syntax
+incant: None
+call: "Resist"
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Resistance
+description: |
+  When wielding two weapons you may Resist one Weapon Delivery attack that hits one or both of your weapons by calling "Resist."

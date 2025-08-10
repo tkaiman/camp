@@ -1,0 +1,15 @@
+name: Oath Shield
+incant: Standard
+call: “Grant Protect vs [Chosen Accent]”
+target: Self
+duration: Event
+delivery: None
+refresh: Quick 100
+accent: None
+effect: Grant Protect
+description: |
+  The Exemplar throws up a shield fueled by the faith they have in their Oaths. The caster may choose from any of their possible Chosen Accents from their Divine Hand Role at the time of casting.  
+
+  The Exemplar may spend a Divine Grace to change the target of the Cantrip from Self to Individual and the Delivery from None to Touch or Weapon.
+
+  Note: Normally a Divine Hand may only switch between Chosen Accents during a short rest.  This Cantrip allows them to choose from any of their possible Chosen Accents at will when casting Oath Shield.

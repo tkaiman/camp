@@ -1,0 +1,11 @@
+name: Innate Druidcraft
+requires: advanced-druid:5
+incant: None
+call: None
+target: None
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: None
+description: The Druid always gets the benefits of the Greater Tier Spell, Druidcraft.

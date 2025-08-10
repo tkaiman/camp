@@ -1,0 +1,14 @@
+name: Brand
+requires: inquisitor:2
+incant: "About 15 seconds roleplay denouncing the target’s disregard for your tenets and beliefs. Example: “I hereby brand you as an Oath Breaker in the eyes of [god]! Sinners are allowed no Quarter! Kill them all and let them plead their case to the Keepers!”"
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Event
+refresh: Long Rest
+effect: None
+description: |
+  The Inquisitor calls out and makes known to all around them that they hereby condemn the individual an Oath Breaker, and outside the graces of their god. Normally, when a street corner preacher condemns someone, it is given little heed; however, when an Inquisitor does so, their god tends to listen and agree.
+
+  The Inquisitor may Brand one Individual per Long Rest.  The Inquisitor may “forgive” any Individual they have branded at will, otherwise the Brand will last until the end of the Event.  Mechanically a Brand has no effect by itself, but when combined with other Powers allows extra damage and Effects to them such as Scourge of the Outsider.

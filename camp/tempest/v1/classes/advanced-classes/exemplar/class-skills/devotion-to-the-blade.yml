@@ -1,0 +1,7 @@
+name: Devotion to the Blade
+cost: 3
+requires: exemplar:3
+description: |
+  The Exemplar gains an additional Divine Grace.
+
+  Additionally, the character may expend a Divine Grace to refresh Parry Blow if they have that Power.

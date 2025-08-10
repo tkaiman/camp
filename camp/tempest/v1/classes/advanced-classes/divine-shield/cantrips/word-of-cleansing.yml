@@ -1,0 +1,11 @@
+name: Black Candlelight
+incant: Standard
+call: “Cure [Condition]”
+target: Other Individual
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Immediate
+effect: Cure
+description: |
+  The Divine Shield expends 4 points from their Divine Pool to remove a named Condition from another character by Touch.

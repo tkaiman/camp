@@ -1,0 +1,14 @@
+name: Extra Brands
+requires: inquisitor:2
+cost: 2
+ranks: 3
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: None
+description: |
+  Normally the Inquisitor’s Brand Innate power may only be used once per Long Rest.  With each purchase of this Class Power it may be used one additional time per Long Rest.

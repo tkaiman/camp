@@ -1,0 +1,11 @@
+name: Sweep Away
+incant: None
+call: “Dispel Effects Granted by [Accent]”
+target: Individual
+duration: Instantaneous
+delivery: Weapon, Touch
+refresh: Short Rest
+accent: None
+effect: Dispel
+description:
+  The Wonderworker’s practice leads them to find the combination of trinkets and elements to clear away ongoing Effects. The Wonderworker selects an Accent, and may either strike with a weapon or touch a willing target to Dispel all Effects that came from the chosen Accent.

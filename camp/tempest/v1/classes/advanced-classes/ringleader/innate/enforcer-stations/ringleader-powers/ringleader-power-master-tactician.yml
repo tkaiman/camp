@@ -1,0 +1,13 @@
+name: Master Tactician
+incant: None
+call: "“By my Voice: Refresh 2 Spikes to Enforcers of [Name]”"
+target: Individuals
+duration: Instantaneous
+delivery: Touch
+refresh: Long Rest
+accent: None
+effect: Refresh
+description: |
+  By addressing specific battle plans and strategies, the Ringleader may refocus and bolster their Enforcers.
+
+  Each Long Rest, the Ringleader may refresh 2 Spikes to each of their Enforcers by taking a few moments to give them instruction, tactical advice, or otherwise hype them up for combat. They may choose to activate this Power on any number of Enforcers at one time, but each enforcer may only receive the benefits of this Power once each Long Rest.

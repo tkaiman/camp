@@ -1,0 +1,17 @@
+name: Hostile Negotiation
+cost: 5
+requires: dealbroker:4
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate, Short Rest
+accent: None
+effect: Refresh
+description: |
+  Whenever you would benefit from Give and Take, you may Refresh a Spike instead of a [Concession] power. The number of Spikes that can be refreshed in this way is
+  limited to your Maximum Spikes total per Short Rest.
+
+  Additionally, you may use Dealbroker powers with an incantation of Negotiation that normally require you to be out of combat even during combat, so long as your
+  target is actually engaging in your negotiation.

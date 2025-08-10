@@ -1,0 +1,12 @@
+name: Shielding Smite
+ranks: 2
+incant: None
+call: '“Wounding [X]” “Grant [X] Barrier to Self”'
+target: Individual, Self
+duration: Instantaneous
+delivery: Weapon
+refresh: Short Rest
+accent: None
+effect: Wounding, Barrier
+description:
+  The Sentinel makes a strike that better prepares them for receiving incoming damage. The Sentinel makes one melee attack that will do Wounding damage equal to their Spike Damage plus two, then will gain an equal amount of Barrier. If the Character is wielding a Great Weapon and no other weapons or shields, the amount of Barrier gained is doubled

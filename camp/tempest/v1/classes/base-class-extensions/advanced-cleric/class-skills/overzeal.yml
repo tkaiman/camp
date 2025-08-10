@@ -1,0 +1,13 @@
+name: Overzeal
+cost: 5
+requires: advanced-cleric:3
+incant: None
+call: "“Discern: How much of that Healing did you take?”, “Grant [X] Barrier”"
+target: Individual (Other)
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Immediate
+effect: Discern, Grant Barrier
+description: |
+  Whenever the Cleric uses a Power with the Heal Effect on another character, they may use “Discern: How much of that Healing did you take?” If the amount Healed was more than the amount that was needed, the Cleric can Grant Barrier equal to the difference by Touch.

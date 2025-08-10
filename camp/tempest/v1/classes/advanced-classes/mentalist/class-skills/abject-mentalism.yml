@@ -1,0 +1,13 @@
+name: Abject Mentalism
+requires: mentalist:1
+cost: 2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  For the purposes of any power or skill that determines a numeric value based on your Mage class-level, add your Mentalist class-levels to your Mage class-level. This does not allow you to meet power or skill requirements you would otherwise not qualify for.  Additionally, the Mage Archetype power Replicate Enhancement will work on Mentalist spells as well as Mage spells.

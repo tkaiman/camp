@@ -1,0 +1,11 @@
+name: Locus of the Self
+tags: [arcane-tool]
+incant: Standard
+call: “Long Grant Arcane Locus to Self”
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant Arcane Locus
+description: This Spell can only be cast outside of combat while touching an Arcane Locus. Until the Arcanist completes a Long Rest, they are treated as an Arcane Locus for the purposes of recharging Spell-Slots.

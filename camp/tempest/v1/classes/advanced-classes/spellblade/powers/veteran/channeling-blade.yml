@@ -1,0 +1,20 @@
+name: Channeling Blade
+incant: Focus Quick 100
+call: “[X] by Arcane or [Eldritch Accent]”
+target: Individual
+duration: Short Rest
+delivery: Weapon
+refresh: Long Rest
+accent: Arcane
+effect: Disarm, Bind, Silence, repel, Cure, Disable, Shatter
+description: |
+  The character can make a melee attack with any of the following Effects, each one immediately draining the character of one Novice Spell-Slot (of any kind), or two Shard Points. If the character has no Novice Spell-Slots left, this Power ends immediately. This Power can be used in conjunction with Bladechannel, although no single blow can discharge more than one Effect. The list of available effects are:
+
+    * Two consecutive swings of “Wounding 2”
+    * “Short Silence”
+    * “Short Repel”
+    * “Cure Imprisoned”
+    * “Disable [Left/Right Leg]”
+    * “Shatter Corpse”
+
+  All of these effects have the Arcane Accent, unless the caster has some form of Source, in which case they may substitute their available accents.

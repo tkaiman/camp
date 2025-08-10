@@ -1,0 +1,11 @@
+name: Greater Farhealing
+incant: None
+call: “[Name or Description] Subtle Heal to Full”
+target: Individual
+delivery: Verbal
+accent: None
+duration: Instantaneous
+refresh: Spell
+effect: Heal
+description:
+  Reaching out, the Cleric’s power imperceptibly closes the wounds of another. This Spell adds 5 points to the Cleric’s Healing Touch Pool.

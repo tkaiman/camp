@@ -1,0 +1,11 @@
+name: Uncanny Dodge
+incant: None
+call: "Counter, Dodge"
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description:
+  The Rogue can Counter any Effect or Damage that would affect them by calling “Counter, Dodge”.

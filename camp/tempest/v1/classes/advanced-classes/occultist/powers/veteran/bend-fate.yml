@@ -1,0 +1,17 @@
+name: Bend Fate
+incant: “I call the spirits to bend the strands of fate”
+call: None
+target: Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: Special
+description: |
+  While changing the strands of fate is generally beyond mortal purview, sometimes the spirits can be called to bend them just a little. Once per Short Rest, when you or a willing creature draws one or more cards from a deck, hand, or similar situation, you may chant “I call the spirits to bend the strands of fate”. If there are people present who might not understand what you are about to do, you should then say “Explanation: [I am/They are] able to draw additional times and keep X, returning the rest,” where X is the number of cards the target was originally supposed to draw in this situation.
+
+  You may then draw another card (or instruct the target to do so), and may continue to draw additional cards by Sacrificing points from your Protection of the Spirits. After drawing as many additional cards as desired, the target selects X to keep and puts the remaining cards back in the deck, hand, or wherever they came from. If the cards were drawn from a deck that has a meaningful draw order, the cards that are put back must go on the top of the deck, but the target may choose their order.
+
+  This ability applies whether the cards in question are in-game items or not. You may use this on a Prospecting Yield or Hazard draw, a Scavenging deck, in the Spirit Well, during a Dark Territory draw, at a fortune teller’s table, during a card game, or in any similar situation. This also applies in situations where other objects analogous to cards are used, such as mahjong tiles, drawing straws, pulling colored marbles from a bag, or drawing from the Planar Weir.
+
+  If the draw is happening in a marshaled context such as a Dark Territory draw, you may attempt to bribe the greater spirits for additional draws or other effects. You may initiate this by calling “Discern to Marshal: Will you accept this as a bribe?” They typically accept Lucky or Unlucky Coins, but rumor has it that certain other currencies may be accepted.

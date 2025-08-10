@@ -1,0 +1,11 @@
+name: Get Back, You Savages!
+incant: None
+call: "[Name or Description] Short Repel by Fear"
+target: Individual
+duration: Short Rest
+delivery: Weapon
+refresh: Short Rest
+accent: Fear
+effect: Repel
+description:
+  The weak will eat the strong, wealthy, and overwhelmingly handsome if you let them. So, most Ringleaders opt to keep those savages at bay. The Ringleader may make a Weapon attack with the call “Short Repel by Fear” a number of times each Short Rest equal to their Ringleader class-level.

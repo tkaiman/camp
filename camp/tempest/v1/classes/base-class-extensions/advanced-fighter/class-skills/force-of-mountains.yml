@@ -1,0 +1,13 @@
+name: Force of Mountains
+cost: 3
+requires: advanced-fighter:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Base Damage
+description:
+  Whenever the Fighter is Weidling a Two-Handed weapon, the Fighter’s Base Damage increases by 1.

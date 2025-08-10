@@ -1,0 +1,11 @@
+name: Daggers from the Dark
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Plus Base Damage
+description:
+  When using Thrown Weapons or Projectile Weapons, the Rogue adds +1 Base Damage.

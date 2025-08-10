@@ -1,0 +1,11 @@
+name: Preparation
+incant: Focus Quick 100
+call: “Grant Short Rest”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Grant Short Rest
+description:
+  The Assassin may quickly prepare themselves for the situation at hand. They, while in shadow, may complete a Focus Quick 100 in order to complete a Short Rest immediately. This Power cannot be refreshed by any Power.

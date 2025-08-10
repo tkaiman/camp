@@ -1,0 +1,17 @@
+name: People Have The Best Loot
+incant: None
+call: '“[Name or Description] Instruction to Helpless: Give me your valuables”, “Refresh One Spike to Self”'
+target: Individual, Self
+duration: Passive
+delivery: Verbal, None
+refresh: Special
+accent: None
+effect: Instruction, Refresh
+description: |
+  The Hooligan tries to be the first to a body when it hits the ground, and the thrill of taking from the dearly departed fills them with a sadistic rush.
+
+  Instead of searching a target, the Hooligan can quickly size up a Helpless or Willing creature and determine where to search. The Hooligan can search instantaneously, rather than waiting the Quick 100. This part of this ability refreshes when loot is collected or the target indicates they have none.
+
+  Note: Like searching, this should not include any actual touching without express pre-negotiated consent.
+
+  In addition, any time the Hooligan takes a Scavenge Token from a creature, they may Refresh one Spike.

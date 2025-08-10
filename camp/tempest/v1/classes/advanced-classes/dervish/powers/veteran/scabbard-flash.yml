@@ -1,0 +1,12 @@
+name: Scabbard Flash
+tags: [Whirlwind]
+incant: None
+call: "Wounding 5 by Time"
+target: Individual
+delivery: Weapon
+accent: Time
+duration: Instantaneous
+refresh: Short Rest
+effect: Wounding
+description: |
+  Some Dervish are known to fell their opponents in the same movement that drew their blade. The Dervish may swing their next two attacks as "Wounding 5 by Time."

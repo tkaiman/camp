@@ -1,0 +1,14 @@
+name: Sweet Invigoration Potion
+tags: [crafter]
+incant: None
+call: None
+target: One Potion
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Long Rest
+effect: None
+description: |
+  While at the Alchemists Lab, an Artisan with at least Apprentice Alchemy can change the basic nature of a Sweetened Mana Potion so that when imbibed, instead of Refreshing three Novice Spell-Slots, it Refreshes three used Short Rest Martial Powers (Any tier). The Artisan should create a new card for a “Sweetened Invigoration Potion” and then destroy the card for the Sweetened Mana Potion.
+
+  The Artisan should spend a minute or so working to change the potion, using whatever alchemical process they think is appropriate. If the Artisan has the Crafter specialization and has Kick, this new potion can be Kicked as it is created with no additional expense or procedure. Additionally, if the Artisan has the Crafter specialization the Artisan may expend an Eternal Blossom to immediately refresh this Power.

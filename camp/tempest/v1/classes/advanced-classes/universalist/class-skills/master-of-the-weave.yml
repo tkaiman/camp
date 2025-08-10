@@ -1,0 +1,14 @@
+name: Master of the Weave
+cost: 5
+requires:
+  - universalist:4
+  - astride-the-weave
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: Immediate
+accent: None
+effect: Special
+description: The Universalist’s channeling of magic through the Eldritch Source allows them to apply their flexibility of motion to even non-sourceror spells, and allows the Universalist to use Astride the Weave with any spell, from any source. This ability does not override the specific requirements of the spell being cast, thus, if the specific spell itself calls for the caster to remain in place, or pivot on one foot, or any other requirement, the caster must abide by those restrictions. If the Universalist loses access to Astride the Weave, they also lose access to this Class Power.

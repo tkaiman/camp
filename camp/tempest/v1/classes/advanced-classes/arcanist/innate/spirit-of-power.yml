@@ -1,0 +1,15 @@
+name: Spirit of Power
+requires: arcanist:5
+incant: "I call upon the universe to invest me with the Spirit of Power."
+call: None
+target: Self
+duration: Long Rest
+delivery: None
+accent: None
+refresh: Event
+effect: None
+description: |
+  The Arcanist calls on all the powers of the universe to truly live in power for a short time. Until they complete their next Long Rest, they may cast Novice and Adept Arcane Tool Spells without expending
+  Spell-Slots and they need only use “Powercast [Name of Spell]” as the Incantation.
+
+  Additionally, once per event, the Arcanist may change a non-offensive touch spell to be delivered verbally through a “By My Voice” Delivery.

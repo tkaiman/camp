@@ -1,0 +1,11 @@
+name: Dire Shots
+incant: None
+call: "Wounding 4"
+target: Individual
+duration: Short Rest
+delivery: Weapon (Projectile)
+refresh: Long Rest
+accent: None
+effect: Grant Wounding, Grant Base Damage
+description:
+  The Fighter can do Wounding 4 with all projectile attacks until they complete a Short Rest. The amount of damage cannot be altered. Alternatively, the Fighter may choose to gain +1 Base Damage to all Projectile attacks until they complete a Short Rest.

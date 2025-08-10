@@ -1,0 +1,16 @@
+name: Vadnir's Infinite Grace
+incant: Standard
+call: “Imbue Vaðnír’s Infinite Grace to Self”, “[Name or Description] Heal [X] by Madness”, “Grant Life (to Spirit) by Madness”, “By My Voice Heal 2 to Living by Madness”, “Death by Madness”
+target: Self, Individual
+duration: Long Rest, Instantaneous
+delivery: Verbal, Touch, Voice, Spell-Ball
+refresh: Spell
+accent: Madness
+effect: Imbue, Heal, Grant Life, Death
+description: |
+  This Spell can only be cast out of combat. The Sourcerer must complete a Focus Slow Count 60 upon completion of the Incantation, and if that Focus is disturbed, the Spell-Slot is wasted. During that time of Focus, the caster negotiates a deal with the entity known as Vaðnír. Vaðnír will promise to perform a boon for the Sourcerer in exchange for a price. Once a boon has been chosen, it Imbues the caster with the ability, which once used, this Spell ends, otherwise it ends when the Sourcerer completes a Long Rest. The following terrible deals are available:
+
+    * Healing: The Sourcerer Sacrifices all points of Barrier they have and may Heal up to six characters they can see for 6 points per point of Barrier they Sacrificed. The Call for this is “[Name or Description] Heal [X] by Madness.” The Sourcerer may continue using these points of healing until the pool is expended, or they run out of targets.
+    * Salvation: The Sourcerer touches another character's body or a Spirit and Calls “Grant Life (to Spirit) by Madness.” The Sourcerer immediately dies and discorporates without recourse.
+    * Desperation: The Sourcerer Calls “By My Voice, Heal to Full to Living by Madness.” The Sourcerer immediately dies and discorporates without recourse.
+    * Revenge: The Sourcerer may charge two Spell-Balls with the call “Death by Madness Final”. If either ball is not Prevented the Sourcerer immediately dies and discorporates without recourse.

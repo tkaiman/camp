@@ -1,0 +1,13 @@
+name: Warsource
+cost: 3
+requires: spellblade:1
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description:
+  The Spellblade can have a Source that is a weapon or a shield. If a weapon, it cannot be over 36” in length unless it is a staff, and if it is a shield, it can be no larger than an Advanced shield.

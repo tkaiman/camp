@@ -1,0 +1,17 @@
+name: Light Sleep
+cost: 3
+requires: ringleader:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description: |
+  The Ringleader is always on somebody’s hit list. That’s just part of the job. Long nights with the ear to the door is the way the Ringleader stays at the top- especially around jealous underlings who want what they’ve got.
+
+  The Ringleader should declare a Sanctum where they will sleep - During the nighttime (7pm to 7am), any intruder into the Sanctum must stop and go out of play to check the location for the Ringleader, wake them if necessary, and then return to the location where they will attempt entry in-play.
+
+  The Ringleader is required to designate their Sanctum: This should be prominently marked on the outside of all entrances with a 6” square sign, with a white background and a Blue Exclamation Mark. On the reverse of the sign, the words “Light Sleep” should be prominently visible along with the Ringleaders’ Character Name, Player Name, and Sleeping Location.  This sign should also include an explanation to wake the Ringleader if entering the cabin. It is the player’s responsibility to ensure these signs are posted at all entrances to the Sanctum, and that they are easily visible and able to be read easily at night.

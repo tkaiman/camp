@@ -1,0 +1,18 @@
+name: The Blessed Sleep
+cost: 4
+level: bonus
+requires:
+  - divine-hand
+  - level:12
+incant: None
+call: “No Effect”
+target: Self
+delivery: None
+accent: Radiance
+duration: Passive
+refresh: None
+effect: Grant Immunity
+description: |
+  The character has inherent immunity to all Powers that would cause her to become Undead. This immunity is Inherent and cannot be Cured. This Power will remain in effect even if the Divine Hand dies, transforms, or becomes a Spirit.
+
+  Furthermore, the Divine Hand cannot willingly or knowingly sign a Demonic Contract for any reason. If the Divine Hand has already signed such a contract or become aware that they have signed a Demonic Contract, it becomes invalid, and the Divine Hand summarily dies, discorporates, and must immediately go to the Spirit Well regardless of any other effects.

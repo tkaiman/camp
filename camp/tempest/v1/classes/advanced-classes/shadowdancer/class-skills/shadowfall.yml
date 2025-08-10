@@ -1,0 +1,14 @@
+name: Shadowfall
+cost: 2
+incant: None
+call: “Counter, Shadowfall”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: Darkness
+effect: Counter
+description: |
+  The character can Counter the damage and Effects from one fall.
+
+  For Example: Avana, climbing across a narrow ledge, slips and falls forty feet to the sharp rocks below, normally taking 10 damage and a Disable to both legs. Instead, she calls “Counter, Shadowfall” and takes no falling damage or Effects instead.

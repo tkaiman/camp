@@ -1,0 +1,13 @@
+name: Dispel Protection
+incant: Standard
+call: “Dispel all Protections and/or Summoned Armor”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: None
+effect: Dispel
+description: |
+  This spell can be used to remove any Protections or Summoned Armor (such as Mage Armor) that the target has active.
+
+  If the Warlock expends a Spike in the casting, the call becomes Final.

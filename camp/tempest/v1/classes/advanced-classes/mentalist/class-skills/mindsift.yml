@@ -1,0 +1,34 @@
+name: Mindsift
+requires:
+  - mentalist:3
+  - psychic-surgery
+  - any:
+      # This requirement is "2 CP of Psyhic Surgery skills", but they all cost at least 2 CP
+      # except for Memory Delve. So just require at of them except that one.
+      - adjust-emotions
+      - memorysculpt
+      - memorywash
+      - calm-fear
+      - willproof
+      - mindsift
+      - add-memory
+cost: 4
+tags: [psychic-surgery-procedure]
+incant: RP, Psychic Surgery
+call: "Subtle Discern by Mind: Yes or No: [Question]"
+target: Other Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Long Rest
+accent: Mind
+effect: Discern
+description: |
+  The Mentalist may Discern "Yes/No" questions of the target. The structure of these calls is:
+
+  "Subtle Discern by Mind: Yes or No: [Question]"
+
+  Each time the Mentalist asks a question, they must either Sacrifice one Life Point or Link. The Power ends when the Mentalist is Healed, leaves Touch range, or the Target is no longer Helpless. A "No" answer ends this power unless the Mentalist Sacrifices a Link.
+
+  No more questions can be asked with this power than the  class-levels of the Mentalist.
+
+  Note: Unlike most Psychic Surgery, Mindsift is not generally consensual. Because it is a Touch Delivered Power, this generally means that the target must be Helpless or Incapacitated.

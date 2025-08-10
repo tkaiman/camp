@@ -1,0 +1,12 @@
+name: Steelskin
+tags: [patron]
+incant: Standard
+call: “Counter, Steelskin”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Counter
+description:
+  This spell allows the Warlock to momentarily harden their skin in response to being struck. The Warlock may call a single “Counter” to an attack caused by a Weapon (melee, thrown, or projectile) or Materia (spell-packet or Spell-Ball).

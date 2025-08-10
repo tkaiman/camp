@@ -1,0 +1,4 @@
+type: subfeature
+parent: induct-enforcer
+display_type: Enforcer Station
+use_purchase_limit: true

@@ -1,0 +1,11 @@
+name: Battle Concentration
+incant: Standard
+call: “Concentration”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Special
+description:
+  Once completed, Battle Concentration will allow the Spellblade to continue casting despite many of the disrupting effects of combat. The target need not have a hand free in order to cast, and may cast Touch spells with a full hand. Packets can be held in the same hand as another object when charged, and can be thrown from a hand holding another item. Note that two items may not be thrown at the same time (such as a throwing dagger and a spell-ball). Finally, as long as their hands are both holding items that are weapons, shields, or packets, they can call “Concentration” to prevent their spells being disrupted by being hit with Effects or damage. Note that neither the Effect nor the damage are Countered and must be taken (and may cause the character to stop casting if the character goes unconscious or is paralyzed, for example). The Spellblade may not make any attack that requires a Call without disrupting their casts.

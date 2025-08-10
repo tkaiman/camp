@@ -1,0 +1,14 @@
+name: Eclipsed Constitution
+tags: [insubstantial]
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Special
+description: |
+  When the body and spirit of the Shadowdancer is between worlds, this uncertain state can be exploited to leave behind the ills of less-benign substances that would taint the being of the Shadowdancer.
+
+  When returning to a substantial state (such as being Cured or Dispelled of an insubstantial Condition), the Shadowdancer may also rid themselves of the ills of Corrupted Alchemy.

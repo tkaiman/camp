@@ -1,0 +1,16 @@
+name: Archer's Versatility
+cost: 0
+requires: advanced-fighter:5
+incant: None
+call: “Refresh, Archer’s Versatility"
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Refresh
+description: |
+  While they may not have the Perfect Defense of a more standard Fighter, those that specialize with a Projectile weapon have some tricks that are powerful as well. A Fighter who takes this Power may refresh all Fighter Base Class Powers that have the words “Projectile” or “Thrown” in them once per Long Rest.
+
+  If this Power is purchased the Fighter loses their Perfect Defense Innate Power.
+# TODO: Unsure how to make the purchase of one skill remove an innate power.

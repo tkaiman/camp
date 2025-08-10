@@ -1,0 +1,12 @@
+name: Poisoned Implements
+requires: assassin:2
+incant: Standard
+call: None
+target: Individual
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Spike Damage
+description:
+  When the Assassin makes a melee attack with a topical substance (i.e. poison, oils, etc), they may use the topical substance one additional time without it being expended and without re-applying. Additionally, while making a melee attack with a topical substance, they gain +1 Base Spike Damage.  

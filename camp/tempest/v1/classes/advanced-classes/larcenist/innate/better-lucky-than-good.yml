@@ -1,0 +1,15 @@
+name: Better Lucky than Good
+requires: larcenist:5
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Stabilize, Refresh
+description: |
+
+  Having lived to tell the tale many times over, the Larcenist know when to press their luck, and when to fold - however, there are just times when, even through harrowing adversity it’s better to press on, and the Larcenist’s knack for survival shines brightest when the chips are down.
+
+  Once per Event, the Larcenist may instantly refresh their Luck charges to full.  Additionally, The Knack may now spend 2 points of Luck to Counter Melee or Ranged Weapon attack or 4 points of Luck to Counter a Verbal or Voice attack.

@@ -1,0 +1,20 @@
+name: Blacksmith’s Touch
+incant: Standard
+call: '“Shatter [Item] by Flame”, “Mend 5 Armor and Piercing 1 by Flame”'
+target: Held Item, Individual, Armor
+duration: Short Rest
+delivery: Touch
+refresh: Spell
+accent: Flame
+effect: Shatter, Mend, Piercing
+description: |
+  When this Spell is cast, the Elementalist creates a charge to either Harm or Mend.
+
+  If Harm is selected, a Shatter effect is created. The Elementalist may Shatter an item they are holding, reducing it to slag. In some circumstances with a marshal present, the Shatter Effect may be used on other unattended objects that the Elementalist can interact with, such as walls, doors, or other appropriate obstacles.
+
+  If Mend is selected, it creates a powerful mending effect, with the unfortunate side effect of heating the armor enough to harm the individual wearing it (if worn).
+
+  If the Elementalist has selected Flame as the element affected by Elemental Flow or is using a Flame Source, the Spell always produces one additional charge.
+
+  Enhancement: Adept Spell-Slot: Two charges are created.
+  Enhancement: Greater Spell-Slot: Four charges are created.

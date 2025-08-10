@@ -1,0 +1,13 @@
+name: The Walking Wall
+incant: “I am the Walking Wall!”
+call: “Resist”
+target: Self
+duration: Slow 60
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Resistance
+description: |
+  For the duration of this Power the Sentinel is Slowed and may not attack or use other Powers, if they do this Power immediately ends.
+
+  The Sentinel gains Resistance to all Effects and Damage.

@@ -1,0 +1,15 @@
+name: Evading Winds
+cost: 1
+requires: dervish:1
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: Alter, Grant Barrier
+description: |
+  When using a Defense of “Counter, Parry”, you may instead Call “Counter, Dodge.”
+
+  In addition, when using a defense with the call of “Counter, Dodge”, you may gain 1 Barrier.

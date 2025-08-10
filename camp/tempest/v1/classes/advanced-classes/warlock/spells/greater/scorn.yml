@@ -1,0 +1,10 @@
+name: Scorn
+incant: Standard
+call: “Disable All Limbs by [Eldritch Accent]”
+target: Individual
+duration: Permanent
+delivery: Spell-Ball
+refresh: Spell
+accent: "[Eldritch Accent]"
+effect: Paralyze
+description: When this spell is cast, Scorn charges a Spell-Ball with “Disable All Limbs by [Eldritch Accent].” If this Spell-Ball is Prevented, the Warlock may choose to either gain up to three Barrier, or refresh up to three Spikes.

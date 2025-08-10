@@ -1,0 +1,19 @@
+name: Nightblade
+requires: advanced-rogue:5
+incant: None
+call: "“Short Obey by Mind: All ignore my presence unless I take any offensive action or touch you.”"
+target: Individual
+duration: Short Rest
+delivery: By My Voice
+refresh: Long Rest
+accent: Mind
+effect: Obey
+description: |
+  In a small, relatively quiet setting with fewer than 10 people within easy earshot, the Rogue can go into full stealth and assassin mode. The Power is initiated by the Call “Short Obey by Mind: All ignore my presence unless I take any offensive action or touch you.” The Rogue should make efforts to roleplay being stealthy during this time or must call that the Obey immediately ends.  
+
+  Remember that touching should never occur without previous out-of-game consent. Once this Power has been initiated, the Rogue gains two other benefits until the next Short Rest:
+
+    * From behind attacks gain a +1 Base Damage Bonus.
+    * All Effects the Rogue causes can be Modified with “Subtle” until they enter combat.
+
+  These benefits will last until the Rogue completes a Short Rest.

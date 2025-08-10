@@ -1,0 +1,15 @@
+name: Marshal’s Vengeance
+incant: None
+call: “Piercing 5 Final”
+target: Individual
+duration: Instantaneous  
+delivery: Weapon (Melee)
+refresh: Special
+accent: None
+effect: Piercing
+description: |
+  A Ringleader’s Enforcers getting hurt or dying is par for the course in their line of work; they know what they signed up for, but, still, some Ringleaders take special offense to their kin getting damaged.
+
+  The Ringleader begins an Event with this Power expended. Whenever an Enforcer you can see dies or you discover the body of one of your dead Enforcers, this Power immediately Refreshes. This Power may be Refreshed this way a number of times each Short Rest equal to the Ringleader’s class-level.
+
+  The Ringleader can make a strike that is unblockable and uncounterable. The Effect and Number cannot be altered, though the Accent may.

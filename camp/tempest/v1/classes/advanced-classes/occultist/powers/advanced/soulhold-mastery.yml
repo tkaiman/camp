@@ -1,0 +1,11 @@
+name: Soulhold Mastery
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Special
+grants: soulhold-survival
+description: You gain two benefits regarding the safety of drawing Death resources from the Planar Weir. First, you gain the Artisan Advanced Power “Soulhold Survival.” Additionally, you may negate any ill effect of drawing a Death Resource once per Long Rest by Sacrificing 4 points of your Protection of the Spirits.

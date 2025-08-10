@@ -1,0 +1,11 @@
+name: Preserverance
+incant: Quick 30
+call: "Refresh [Power]"
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Refresh Power
+description:
+  With a short meditation (Quick Count of 30), the Fighter can Refresh any damaging Fighter Power that Missed or was Prevented.

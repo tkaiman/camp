@@ -1,0 +1,11 @@
+name: Galvanize
+incant: Standard
+call: “Stabilize by Lightning”
+target: Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Focus Quick 100
+accent: Lightning
+effect: Stabilize
+description:
+  The target of this Spell is struck with a substantial shock of lighting, forcing the spirit to remain until disturbed. This causes a creature who has dropped to zero Life Points to become stabilized, thus stopping their death-count.

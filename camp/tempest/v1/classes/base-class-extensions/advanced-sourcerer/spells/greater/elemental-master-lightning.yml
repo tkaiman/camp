@@ -1,0 +1,22 @@
+name: Elemental Mastery - Lightning
+incant: Standard
+call: “...by Lightning”, “Resist”, “Protect”, “Ride the Lightning”
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: None
+description: |
+  The Sourcerer may only cast this spell if one of their [Eldritch Accents] is Lightning.
+
+  The Sourcerer cannot cast this Spell if they have cast any other Elemental Mastery Spell this Event. In addition, if the character has a Draconic Heritage other than Lightning, they cannot cast this Spell. Until the Sourcerer completes a Long Rest, they gain the following benefits:
+
+    * The Sourcerer can add the Lightning Accent to any unaccented Power.
+    * The Sourcerer gains +1 Base Damage with all Spells that do Lightning-Accented damage.
+    * The Sourcerer can expend a Spike to Resist a single source of Lightning-Accented damage.
+    * The Sourcerer gains one Protect vs. Lightning upon completing a Short Rest.
+    * The Sourcerer takes no damage from normal or natural Lightning.
+    * The Sourcerer will not be hindered seeing through stormy weather.
+    * The Sourcerer can ride the Lightning one per Short Rest. They can take three long steps without suffering environmental hazards like pits. They can basically fly for a short distance. They should Call “Ride the Lightning” before taking the steps and informing Staff what has happened.
+    * After every Short Rest, they gain 3 points of Barrier.

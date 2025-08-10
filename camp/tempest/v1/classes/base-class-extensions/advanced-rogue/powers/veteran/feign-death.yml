@@ -1,0 +1,11 @@
+name: Feign Death
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Immunity, Obfuscate
+description:
+  The Rogue has Deathblow immunity but need not answer “No Effect” when they are Deathblowed. In addition, whenever another character attempts to determine if the Rogue is dead or not, the Rogue may appear dead if they desire.

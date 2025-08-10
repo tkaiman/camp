@@ -1,0 +1,43 @@
+name: Chosen
+requires: divine-shield:2
+incant: None
+call: None
+target: None
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: None
+description: |
+  Each rank of this class skill allows the Divine Shield to designate one individual, permanently, as “Chosen”. A character who is Chosen is a special target for the Divine Shield. Any Heal Effect that heals at least 2 points will Heal one additional point on the Chosen (and should be Called as such).
+
+  Any Mend Effect that Mends at least 2 points will Mend one additional point on the Chosen (and should be Called as such). Any Power that Cures one or more Conditions can Cure one additional Condition (and should be Called as such).
+
+  In addition, the Divine Shield may take up to three steps after completing the Incantation of a Touch spell in order to touch a Chosen.
+
+  A Chosen can only be un-designated by un-training the skill itself. An individual who is Chosen is picked only for that specific Divine Shield and no others, and, out-of-game, the Divine Shield’s player should get consent from the Chosen character’s player before this choice is made, as well as explain the benefits imparted.
+
+  Note: These benefits will only work if the Chosen is individually targeted, Voice Powers, etc. will not heal some more than others.
+---
+id: chosen-2
+supersedes: chosen
+name: Chosen
+requires: divine-shield:5
+incant: None
+call: None
+target: None
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: None
+description: |
+  Each rank of this class skill allows the Divine Shield to designate one individual, permanently, as “Chosen”. A character who is Chosen is a special target for the Divine Shield. Any Heal Effect that heals at least 2 points will Heal one additional point on the Chosen (and should be Called as such).
+
+  Any Mend Effect that Mends at least 2 points will Mend one additional point on the Chosen (and should be Called as such). Any Power that Cures one or more Conditions can Cure one additional Condition (and should be Called as such).
+
+  In addition, the Divine Shield may take up to three steps after completing the Incantation of a Touch spell in order to touch a Chosen.
+
+  A Chosen can only be un-designated by un-training the skill itself. An individual who is Chosen is picked only for that specific Divine Shield and no others, and, out-of-game, the Divine Shield’s player should get consent from the Chosen character’s player before this choice is made, as well as explain the benefits imparted.
+
+  Note: These benefits will only work if the Chosen is individually targeted, Voice Powers, etc. will not heal some more than others.

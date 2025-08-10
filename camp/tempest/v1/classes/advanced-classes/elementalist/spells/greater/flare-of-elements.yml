@@ -1,0 +1,19 @@
+name: Flare of Elements
+incant: Standard
+call: “Wounding [X] by [Acid / Flame / Ice / Lightning]”
+target: Individual
+duration: Long Rest
+delivery: Spell-Ball
+refresh: Spell
+accent: Acid, Flame, Ice, Lightning
+effect: Wounding
+description: |
+  The Elementalist gains a pool of elemental damage charges equal to the sum of all the character’s levels which grant arcane arcane spell casting. They may charge Spell Balls from this pool with up to the Elementalist’s class level in damage, and select any foundational element to use “Wounding [Number] by [Acid / Flame / Ice / Lightning].”
+
+  This Spell ends whenever the caster completes a Long Rest, dies, or consumes all charges.
+
+  Enhancement: Spike: The current Flare of the Elements Spell-Ball adds the Elementalist’s Spike Damage to the damage the Spell-Ball will do.
+
+  For Example: Jimothy, a 10th level Sourcerer, 4th level Elementalist would have 14 total points of Damage to deal before the Spell ends and could use this Power to inflict up to 4 points of damage at a time.
+
+  Note: If this Spell is gained by a non-Elementalist, the maximum amount of damage dealt is still determined by the number of Elementalist class-levels, i.e. zero.

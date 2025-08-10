@@ -12,7 +12,7 @@ multiclass_features:
 level_grants:
   3: rogue-bonus-spikes
   6: rogue-bonus-damage
-  9: rogue-bonus-spikes:2
+  9: rogue-bonus-spikes
 choices:
   up-to-no-good:
     starting_class: true
@@ -45,8 +45,8 @@ category: Rogue Class Bonuses
 ranks: 2
 display_type: Bonus
 level_grants:
-  1: spikes:1
-  2: spikes:2
+  1: spikes
+  2: spikes
 ---
 id: rogue-bonus-damage
 type: subfeature

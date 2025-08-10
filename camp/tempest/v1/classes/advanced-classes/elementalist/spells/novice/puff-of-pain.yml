@@ -1,0 +1,13 @@
+name: Puff of Pain
+incant: Standard
+call: “[Name or Description] 1 Acid"
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: Acid
+effect: Damage
+description: |
+  Aerosolized acid can be used to encourage foes to stay back. Once cast, the Elementalist gains power to cause a small burst of acid mist every time they use a Spell with the Acid Accent until their next Short Rest. Each time the Elementalist completes the Incantation for a Spell that uses the Acid Accent, they gain the ability to Call “[Name or Description] 1 by Acid" against a single target.
+
+  Only one such mist is charged with each unique Incantation, and only one can be charged at a time, even if the Elementalist casts multiple Acid-Accented Spells. If the Elementalist has selected Acid as the element affected by Elemental Flow or is using an Acid Source, this has a duration of Long Rest instead of Short Rest.

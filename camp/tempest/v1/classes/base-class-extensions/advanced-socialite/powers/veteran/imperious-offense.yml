@@ -1,0 +1,11 @@
+name: Imperious Offense
+incant: None
+call: “[Name or Description] Short Silence”
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Short Rest
+accent: None
+effect: Silence
+description:
+  The Socialite can call out to another with a short phase demanding they quiet down. The Socialite can then Call “[Name or Description] Short Silence.” If that Call is Prevented the Power Refreshes immediately, although it will only do so once (giving two total attempts).

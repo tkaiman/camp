@@ -1,0 +1,14 @@
+name: Binding of Wings
+incant: Standard
+call: '“Short Root to [Demon / Angel] by [Radiance / Darkness]”, “Short Bind to [Demon / Angel] by [Radiance / Darkness]”'
+target: Individual
+duration: Short
+delivery: Spell-Ball or Weapon
+refresh: Spell
+accent: Radiance/Darkness
+effect: Root, Bind
+description: |
+  This spell allows an Exemplar to temporarily restrain a divine entity. This spell charges a number of Spell-Balls or weapon strikes with “Short Root to [Demon / Angel] by [Radiance / Darkness]” equal to the Exemplar’s class-level.
+
+  Alternatively, a point of Divine Grace may be expended when the Spell-Ball or weapon is charged to charge it with “Short Bind to [Demon / Angel] by [Radiance / Darkness].” The Exemplar may continue
+  to charge weapons and spell-balls and use this call at-will as long as the Exemplar plants their right foot and does not move it, or becomes Helpless.

@@ -1,0 +1,13 @@
+name: The Distraction
+incant: None
+call: "“[Name or Description] Quick Obey by Fear: Ignore my [friend or friends] as long as we are talking.”"
+target: Individual
+duration: Quick 100
+delivery: Verbal
+refresh: Short Rest
+accent: Fear
+effect: Obey
+description: |
+  Hooligans frequently work in mostly coordinated groups, and as such, many have developed tactics to draw attention away from their compatriots - whether those compatriots are sneaking up, doing something the target might not like, or getting away.
+
+  The Hooligan chats with the target about anything or nothing, but after at least 5 seconds of talking they can use this Power.  The Hooligan must continue to converse for the duration of this Power, facing the consequences of their friend’s actions (if known by the target!) after the conversation.

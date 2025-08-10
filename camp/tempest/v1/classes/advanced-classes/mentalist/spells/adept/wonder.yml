@@ -1,0 +1,11 @@
+name: Wonder
+incant: Standard
+call: "Quick Sleep by Illusion"
+target: Individual
+duration: Quick 100
+delivery: Spell-Ball
+refresh: Spell
+accent: Illusion
+effect: Sleep
+description:
+  An illusion of the perfect world draws the target to immobility; everything is perfect and it becomes impossible for them to do anything at all, trapped in a dream-world. When casting this spell, the Mentalist charges a spell-ball with "Quick Sleep by Illusion." The Mentalist may Sacrifice any number of Links when this spell is cast to charge additional spell-balls, one-for-one.

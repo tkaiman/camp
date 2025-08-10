@@ -1,0 +1,22 @@
+name: Give and Take
+requires: dealbroker:2
+incant: None
+call: None
+target: None
+duration: None
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  A negotiation ebbs and flows as demands are made and the participants clash or come to agree. When their opponent allows an opening, a shrewd dealbroker knows how to direct that flow in their favor.
+  However, it’s also possible to lure in an opponent by making an opening of your own.
+
+  During any negotiation, if either:
+
+    * Your opponent concedes a condition you requested without modification.
+    * You concede a requested condition without modification.
+
+  …you may immediately refresh a single power tagged [Concession] of your choice. You may only benefit from this refresh once per minute of negotiation RP. The condition must be something meaningful;
+  asking for the other party to remember to stay hydrated or give a review of their seat cushions is insufficient, and you should not begin a meaningless negotiation for the purpose of refreshing powers.
+  If you refresh a power that could also be triggered by the same concession, you may use it immediately and do not need an additional minute of negotiation RP to activate it.

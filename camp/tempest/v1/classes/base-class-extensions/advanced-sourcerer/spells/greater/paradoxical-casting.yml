@@ -1,0 +1,15 @@
+name: Paradoxical Casting
+incant: Standard
+call: “Foldcast [Name of Spell or Cantrip]”
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: None
+description: |
+  The Sourcerer pulls a mantle of folded space over themselves, immediately gaining 5 Barrier. The mantle grants the following properties and abilities:
+
+    * The Sourcerer can substitute “Foldcast [Name of Spell or Cantrip]” for the Incantation of any Sourcerer Spell or Sourcerer Cantrip with a standard Incantation. Doing so costs 1 Life Point, 1 point of Barrier, and 1 Spike.
+    * The Sourcerer can add the Arcane, Force, Ice, Mind, or Time Accents to any Power that does not have an Accent, and can substitute any of those Accents for an existing Accent by spending 1 Life Point, 1 point of Barrier and a Spike. In addition, the Sourcerer can add an Arcane, Force, Mind, or Time Accent to any Spike attack at no cost.
+    * The Sourcerer can do 1 additional point of damage with any Materia-Delivery attack that uses Arcane, Force, Ice, Mind, or Time as its Accent.

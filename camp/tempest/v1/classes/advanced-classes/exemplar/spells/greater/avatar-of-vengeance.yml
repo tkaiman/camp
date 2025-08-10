@@ -1,0 +1,16 @@
+name: Avatar of Vengeance
+incant: Standard
+call: “Short Grant +4 Spike Damage”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant Spike Damage, Refresh
+description: |
+  By channeling the righteous power of their Deity, the Exemplar is able to make their most mundane of attacks powerful enough to shatter even the strongest of foes. After finishing the incantation, the Exemplar gains a +4 bonus to Spike Damage until they complete a Short Rest (Reminder: The Rule of 3 does not apply to effects from a single Source.)
+
+  While under the effects of Avatar of Vengeance, the Exemplar may concentrate for a Quick Count of 100 in rapid, divine prayer and expend a Divine Grace. If they do, they may Refresh all spikes.
+  They may use this ability once per Short Rest.
+
+  If cast with a Master level spell slot this provides +6 Bonus Spike Damage instead.

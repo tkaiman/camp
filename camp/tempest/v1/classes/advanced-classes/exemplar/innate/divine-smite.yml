@@ -1,0 +1,12 @@
+name: Divine Smite
+requires: exemplar:3
+incant: None
+call: None
+target: Self
+duration: Instantenous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Plus Base Damage
+description: |
+  Whenever this character uses a damaging Power (including spell) or attack that has the Divine Hand’s [Chosen Accent], it does +1 Base Damage. This is an at-will ability.

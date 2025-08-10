@@ -1,0 +1,12 @@
+name: Mental Utility
+requires: mentalist:5
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+grants: mentalist.utilities
+description: The Mentalist gains a bonus Utility Power from the Mentalist Utility Powers.

@@ -1,0 +1,17 @@
+name: Protective Finery
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  The Socialite has a way of using the frills, under-vests, petticoats, and other folds and filigree of fine cloths as protection against blows. As long as the garb the
+  Socialite is wearing is, in the opinion of the Socialite, well-maintained and stylish or flattering, it counts as 2 points of Physical Armor. If the garb is, in the
+  opinion of the Socialite, particularly special, fine, or comely, it counts as 4. And if the Socialite believes themself well “dressed to the nines”, it counts as 6
+  points of Physical Armor.
+
+  If the finery being worn is also armor, the Socialite must choose whether to take normal Armor evaluation, or the evaluation from Protective Finery. Other Powers that
+  require the character to be wearing Physical Armor treat Protective Finery as normal armor.

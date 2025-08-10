@@ -1,0 +1,13 @@
+name: Divine Denial
+incant: None
+call: “Heal [Amount of Damage]“
+target: Individual
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Spell
+effect: Heal
+description: |
+  This spell has no Incantation, and can be cast with the merest thought, but only when the conditions are just right.
+
+  When the Divine Shield takes damage of 3 or more points in a single attack, or perceives another has taken a damaging attack of 3 or more points, the Divine Shield can immediately (within 2 seconds, like a Counter, and before any other attacks or Powers are used) Heal for the amount of damage that was taken. If the Divine Shield took the damage, any target can be Healed. If the Divine Shield saw another take the damage, only that character can be the target. This Spell cannot be Book Cast.

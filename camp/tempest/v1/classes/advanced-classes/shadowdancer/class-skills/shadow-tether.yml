@@ -1,0 +1,15 @@
+name: Shadow Tether
+cost: 3
+requires: shadowdancer:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Eldritch Accent
+description: |
+  While all Shadowdancers have connections to the umbral realms, those gifted with the arcane from a Source can simply choose to never close that connection, leaving a conduit to channel power from at all times.
+
+  When gaining this Power, the Shadowdancer may choose to use the Darkness Accent anywhere a Power would allow the substitution of an Eldritch Accent.

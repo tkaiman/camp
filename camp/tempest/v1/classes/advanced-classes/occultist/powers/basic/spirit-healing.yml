@@ -1,0 +1,11 @@
+name: Spirit Healing
+incant: “I call the spirits to heal this affliction”
+call: '“Cure [Condition]”, “Cure All Conditions”'
+target: Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: Cure
+description:
+  While a lesser mystic might need to waste time concocting a brew to heal afflictions, you are able to use your connection with the spirits of the world to quickly heal the afflicted. You may touch an individual and chant “I call the spirits to heal this affliction”. You may then either call “Cure [Condition]”, where [Condition] is any condition of your choice, or you may Sacrifice a point of your Protection of the Spirits to call “Cure All Conditions.”

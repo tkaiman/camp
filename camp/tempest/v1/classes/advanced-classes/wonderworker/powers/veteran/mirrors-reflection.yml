@@ -1,0 +1,13 @@
+name: Mirror’s Reflection
+incant: None
+call: '“Grant Short Insubstantial to Self”, “Cure Insubstantial to Self”'
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Insubstantial
+description: |
+  A mirror shows something in a different place - and the Wonderworker can tap into this to reflect themselves elsewhere.
+
+  In order to invoke this Power, the Wonderworker must utilize a reflection at least large enough to fully reflect their face - a polished coin is not sufficient to channel a reflection. Once per Wonderworker Class-level per Short Rest, the Wonderworker may grant themselves Short insubstantial. This insubstantial can be voluntarily cured by the Wonderworker if they utilize a reflection in the same method as how they entered the insubstantial state.

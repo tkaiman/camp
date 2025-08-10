@@ -1,0 +1,14 @@
+name: Quickcast
+tags: [patron]
+incant: Standard
+call: “Quickcast”
+target: Self
+duration: Event
+delivery: None
+refresh: Immediate
+accent: None
+effect: None
+description: |
+  When this spell is cast, it allows the character to cast one Novice spell from any Arcane Spell List by substituting the word “Quickcast” and the name of the spell for the entire Incantation. The character may only have one Quickcast active at a time; additional castings replace the previous castings.
+
+  For Example: To cast Eldritch Lance, a spell that normally requires “I call upon the Weave Arcane, boundless power, my domain to summon an eldritch lance,” the Warlock would instead say “Quickcast, Eldritch Lance.”

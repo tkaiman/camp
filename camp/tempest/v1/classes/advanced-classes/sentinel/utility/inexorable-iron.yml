@@ -1,0 +1,17 @@
+name: Inexorable Iron
+requires: heavy-armor
+grants: ironclad-armor
+description: |
+  The Sentinel gains the Ironclad Armor (2) skill and the Inexorable Iron Power below:
+
+subcard:
+  name: Inexorable Iron
+  incant: None
+  call: “Counter”
+  target: Self
+  duration: Instantaneous
+  delivery: None
+  refresh: Short Rest
+  accent: None
+  effect: Counter
+  description: With enough experience in the thick of the fighting, the Sentinel learns to put the thickest part of their armor in the way of attacks by reflex. Whenever the Sentinel is physically representing at least 10 Location Points on their chest location, once per Short Rest, they may “Counter” one damaging attack that they receive.

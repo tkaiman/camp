@@ -1,0 +1,12 @@
+name: Threaten
+tags: [reinforce]
+incant: None
+call: "Taunt 3 by Will"
+target: Individual
+duration: Permanent
+delivery: Weapon
+refresh: Short Rest
+accent: Will
+effect: Taunt
+description:
+  The Sentinel knows that without attracting the attention of hostile forces, their practice of damage mitigation is less than useless. As such, they learn to grab attention by threats, deeds, or a particularly agitating blow. The Sentinel can deliver “Taunt 3 by Will” with a single weapon attack.  

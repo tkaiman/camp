@@ -1,0 +1,11 @@
+name: Force Control
+incant: Standard
+call: '“Quick Imprison by Force”, “Quick Repel by Force”, “Quick Root by Force”'
+target: Self, Individual
+duration: Short Rest, Instantaneous
+delivery: None, Materia
+refresh: Spell
+accent: Force
+effect: Imprison, Repel, Force
+description:
+  Once cast, the Mage can charge a Materia of either kind with a simple invocation of “Force Control Charged!”. The Mage can charge a total of 10 Materia with either Quick Imprison (Spell-Ball), Quick Repel (Spell-Packet), or Quick Root (Spell-Packet). The Spell lasts until the last charge is used or the Mage completes a Short Rest. If five or more of the Materia are Prevented, the Spell-Slot will Refresh as soon as the Mage completes a Short Rest.

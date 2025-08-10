@@ -1,0 +1,12 @@
+name: Many Layered Defense
+tags: [artificer]
+incant: None
+call: “Grant Protect”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Protect
+description:
+  WIth a moment to ready themselves, the Sentinel can set their defenses to intercept anything. WIth this power, the Sentinel may grant themselves up to three Protects against any Accents they do not have Inherent Vulnerability towards. For example, if the Sentinel expected to fight against elementals, they could grant themselves “Protect versus Flame, Protect versus Ice, and Protect versus Lightning.”  This Protect does not count against their Protect stacking limit of 3, but other Limits such as not having two Protects against Flame simultaneously still apply.

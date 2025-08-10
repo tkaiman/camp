@@ -1,0 +1,15 @@
+name: Holy Shield
+incant: Standard
+call: '“Short Grant [Radiance / Darkness] Resistance to Shield until Broken”, “Grant [5/10] Barrier to Self”'
+target: Shield, Self
+duration: Short Rest
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Resistance, Grant Barrier
+description: |
+  Holy Shield makes one shield resistant to the Radiance or Darkness Accents. The wielder of the shield should call “Resist” when the shield is hit with an Accented effect that would normally affect the wielder, and take one point of damage.
+
+  This resistance lasts only until the wielder completes a Short Rest, the Shield is reduced to zero Shield Points, or the Shield leaves the control of the original wielder.
+
+  Additionally, the Exemplar gains 5 Barrier when casting this spell. If the Exemplar spends a Divine Grace they instead gain 10 Barrier.

@@ -1,0 +1,6 @@
+category: Right Hand Powers
+type: subfeature
+parent: the-right-hand
+display_type: Right Hand Power
+use_purchase_limit: true
+requires: advanced-socialite

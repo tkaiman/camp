@@ -1,0 +1,16 @@
+name: Glyphed Spirit
+requires: larcenist:4
+incant: None
+call: "“Counter, Luck”, “Discern to Marshal Spirit: What does this Glyph mean?”"
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Special
+description: |
+  The more valuable the prize, the more dangerous the guard - and few are more dangerous than the uncaring stare of the magical Glyphs. These magical Traps that can reset themselves, often tripped with merely a whisper, and capable of killing everyone in the room, these silent wardens are among the most troublesome defenses an enterprising thief can come across. Fortunately, after much practice on more forgiving variants of these terrible runes, the Larcenist has deciphered the language of the Glyphs, and when prepared can avoid the most dangerous of effects.
+
+  When on a staged encounter (often called a “mod”) with an interior building, out of combat, where the Larcenist is able to speak to a Marshal Spirit, they may Discern a Glyph they can see to discover its properties.
+
+  In addition, the Larcenist may now expend two Luck Charges to counter the effects of a tripped Glyph.

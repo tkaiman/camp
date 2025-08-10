@@ -1,0 +1,18 @@
+name: Life Flow
+requires:
+ - occultist:4
+ - living-iron
+incant: “I call upon the spirits to heal you”
+call: “Heal X”
+target: Other Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Immediate
+accent: None
+effect: Heal
+description: |
+  The spirits find Living Iron to be an intriguing substance, and by offering it to them, they grant you additional powers. You may chant “I call upon the spirits to heal you” and Call “Heal X”, where X is the amount of Living Iron spent. The amount of Living Iron you can spend in this way is the same as the amount you can spend with a normal use of Living Iron.
+
+  To determine the size of your Living Iron pool, you may add your Occultist class-level to your Artisan class-level. Additionally, use your powers tagged Mystic to determine the multiplier instead of powers tagged Artificer.
+
+  As a strange side effect of feeding your spiritual guardians Living Iron, they become susceptible to healing magic themselves.

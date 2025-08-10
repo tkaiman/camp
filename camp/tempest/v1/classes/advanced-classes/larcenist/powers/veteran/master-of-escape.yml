@@ -1,0 +1,24 @@
+name: Master of Escape
+incant: "RP: Attempting to remove the bond that holds them for a Quick 10"
+call: Cure Condition
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Focus Quick 100
+accent: None
+effect: Cure Condition
+description: |
+  The Larcenist is the type to really resent the restriction of freedoms, particularly their own. After spending so much time with ropes, shackles, locks, and even magical restraints the Larcenist is able to find the weak points in just about every restraint - sooner or later.
+
+  When affected by any of the below Conditions, the Larcenist may roleplay attempting to remove the bonds for a Quick 10, and then call “Cure [Condition]” on themselves.
+
+    * Bound
+    * Rooted
+    * Slowed
+
+  In addition, the Larcenist may expend a Luck Charge to Cure the following conditions (even though normally they would not be able to do so):
+
+    * Slept
+    * Imprisoned
+
+  Finally, when given the Instruction “You may not get out of these bindings without help.” or similar, such as when the target of the Serious Knots Rogue Class power, the Larcenist may call “No Effect, Master of Escape.”

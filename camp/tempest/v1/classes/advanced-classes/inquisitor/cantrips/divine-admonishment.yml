@@ -1,0 +1,11 @@
+name: Divine Admonishment
+incant: Standard
+call: “1 Radiance”, “2 Radiance” or “2 Radiance to [Abomination, Undead, or Undevoted]”
+target: Individual
+delivery: Spell-Packet
+accent: Radiance
+duration: Instantaneous
+refresh: Immediate
+effect: None
+description: |
+  The Inquisitor channels their god’s retribution to punish those who live outside of their ordained path. The Inquisitor may charge a Spell-Packet and Call “1 Radiance.” If the target of the attack is Branded as an Oath Breaker by the Inquisitor, they may instead call “2 Radiance”.  The Inquisitor may also call “2 Radiance to [Abomination, Undead, or Undevoted].”

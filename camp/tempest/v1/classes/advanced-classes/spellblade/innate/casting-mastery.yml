@@ -1,0 +1,19 @@
+name: Casting Mastery
+requires: spellblade:5
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+choices:
+  sphere:
+    name: Bonus Spell Slot
+    description: Choose a sphere of magic to receive an additional Greater spell slot in.
+    limit: 1
+    controller: sphere-bonus
+    controller_data:
+      bonus: spell_slots@3
+description: Gain a single Greater Tier Arcane or Divine spell slot.

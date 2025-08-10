@@ -1,0 +1,15 @@
+name: Hideout
+incant: None
+call: None
+target: Haven
+duration: Long Rest
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Special
+description: |
+  Most Hooligans have a place they call home, and then some place where they can lie low when the heat is on. Sometimes these are the same places; when that’s the case, modifications to normal ordinary domiciles can make a place easier to defend, or escape when necessary.
+
+  The Hooligan gains the Hearth, Protected Hearth, and Bolthole Perks, as well as the following benefit:
+
+  Each Long Rest, the Hooligan may add a number of Haven tokens equal to their Hooligan class-level to a Haven they are a part of. A given Haven may only benefit from one Hooligan’s Hideout.  All the added features and the name of the character who created the Hideout should be noted on an info card for the building.

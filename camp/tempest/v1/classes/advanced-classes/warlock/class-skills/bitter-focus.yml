@@ -1,0 +1,6 @@
+name: Bitter Focus
+cost: 4
+requires: warlock:2
+grants: spikes:1
+description:
+  The Warlock gains +1 Base Maximum Spikes.

@@ -1,0 +1,40 @@
+name: Ranger
+type: class
+category: Advanced Class
+class_type: advanced
+ranks: 5
+requires:
+  - level:10
+  - projectile-weapons
+  - lore+Nature
+  - tracking
+  - power@2
+flags: flag+ranger
+level_grants:
+  2: ranger-bonus-damage
+  4: ranger-bonus-spikes
+  5: ranger-bonus-spikes
+description: |
+  Life in the forest can be lonely, and dangerous, but the Ranger has adapted to the slow, stalking vengeance of the dark woods.
+
+  From the ancient Duskgloom of the Grimm, the first Rangers made a pact with the other Breeds. Known as the Huntsmen, these Rangers were inducted by a trial called the Wild Hunt, where they sought out the blood of an immortal mythical creature to bring balance by the Worldsoul and continue the Cycle. While most Huntsmen are Thrylossi, they are not always: mortals are sometimes brought into the fold to spread the teachings of nature and the harmony from being both hunter and prey.
+
+  Though modern rangers are often less mythic - simply self-taught survivalists instructed in the ways of the wood by a Master Ranger, these Rangers are no less capable in their craft, stalking the forest and plain with equal skill.
+---
+id: ranger-bonus-damage
+type: subfeature
+display_type: Bonus
+parent: ranger
+name: +1 Bonus Spike Damage
+category: Ranger Class Bonuses
+---
+id: ranger-bonus-spikes
+type: subfeature
+parent: ranger
+name: Bonus Maximum Spikes
+category: Ranger Class Bonuses
+ranks: 2
+display_type: Bonus
+level_grants:
+  1: spikes:1
+  2: spikes:1

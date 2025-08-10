@@ -1,0 +1,21 @@
+name: Entrapment
+incant: Negotiation (out of combat, no delay required)
+call: '“[Name or Description]: Subtle Discern by Mind Final: Did you Obfuscate my previous [Discern/Expose]?”, “[Name or Description]: Dispel Obfuscated by Mind”'
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Long Rest
+accent: Mind
+effect: Mind
+description: |
+  While extracting the truth out of a skilled opponent can be nearly impossible, spotting attempts to obfuscate the truth may unsettle the target enough to disrupt their focus. During a negotiation out of
+  combat, immediately after using a Discern or Expose on someone involved in the negotiation, you may immediately call against them:
+
+    > “[Name or Description]: Subtle Discern by Mind Final: Did you Obfuscate my previous [Discern/Expose]?”
+
+  If the answer is “Yes” or equivalent, you may then call:
+
+    > “[Name or Description]: Dispel Obfuscated by Mind”
+
+  The shrewd Dealbroker should note that a tricky opponent may have multiple powers that Obfuscate, and may activate one after their previous Obfuscated condition has been used up or Dispelled.
+  Additionally, this will not remove an Inherent Obfuscated Condition.

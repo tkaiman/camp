@@ -1,0 +1,18 @@
+name: Quartermaster’s Bag
+tags: [crafter, artificer]
+incant: None
+call: "“Resist”, “Counter, Quartermaster’s Bag”"
+target: Bag
+duration: Long Rest
+delivery: Touch
+refresh: Long Rest, Short Rest
+accent: None
+effect: Special
+description: |
+  Whether you’re a Drimmen Vahg or simply have to carry a lot of stuff, you understand the value of investing in a good bag. You may designate a bag of any size (that you own and can carry) as your Quartermaster’s Bag, and you may change that designation once per Long Rest. The bag gains the following properties:
+
+    * You are always treated as Obfuscated with respect to Discern or Expose calls related to items in your bag.
+    * You may Resist any Obey command that would cause you to either divulge the contents of or produce items from your bag, or to give up the bag itself.
+    * You may Resist any attack or environmental effect that would cause the bag or any of its contents to be Shattered or otherwise damaged as long as it is in your possession. You may not wield a shield, weapon, source, armor, or other game item while it is inside your bag as a way to protect it from harm.
+    * Once per Short Rest, when a weapon or Materia attack strikes your bag while you are carrying it, you may call “Counter, Quartermaster’s Bag.”
+    * If a Marshal Spirit informs you that carrying a particular item will cause you to be Slowed, and you can fit the item into your bag, you may call “Counter, Quartermaster’s Bag” and ignore the Slow as long as it is in the bag. This will not help other people trying to carry either you or your bag, nor will it help you carry other characters unless you can demonstrate that they fit in your bag. This may help somehow with physical challenges that involve moving heavy objects at the discretion of the Marshal Spirit. In any event, this will never help you carry more than a single object that would cause you to be Slowed at once - carrying a second object will cause you to be Slowed as usual.

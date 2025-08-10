@@ -1,0 +1,17 @@
+name: Pieces of Seven
+cost: 4
+requires: wonderworker:2
+incant: None
+call: None, Explanation
+target: Individuals
+duration: Long Rest
+delivery: Special, Verbal
+refresh: Long Rest
+accent: None
+effect: Targeting Alteration
+description: |
+  Much has been made of the symbology of numbers. In particular, seven seems to crop up in a number of places. Some treat it as lucky, while others treat it with such fear that they will avoid the mere mention of it. For the Wonderworker, the presence of this connection can be the basis of something special.
+
+  The Wonderworker takes a small item, or some small trinket or token set, and voluntarily exchanges them with up to seven other willing individuals. Until they complete a  Long Rest, the Wonderworker can alter Touch Delivery powers targeting one of the bearers of the trinkets to Verbal by adding “[Name or Description]” and the “to Willing” Qualifier to the Call.
+
+  If the trinkets leave the possession of the original recipients when this power is activated, they become powerless - the intent of the gift is as much of a source of power as is the item itself. This power only lets you change your Touch spells to Verbal to the original recipients of the pieces of seven - the trinkets cannot be given to other characters for them to benefit, and if the trinket is known to be no longer on the person of the original recipient then they must call “No Effect, no trinket” to Powers attempted to be used through the connection.

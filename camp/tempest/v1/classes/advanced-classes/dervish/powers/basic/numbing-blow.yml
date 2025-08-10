@@ -1,0 +1,14 @@
+name: Numbing Blow
+tags: [Whirlwind]
+incant: None
+call: “Short Disable [Limb]”
+target: Individual
+delivery: Weapon
+accent: None
+duration: Short Rest
+refresh: Short Rest
+effect: Damage
+description: |
+  When wielding two weapons, you may make a devastating attack to debilitate the limb of an enemy.
+
+  The Dervish may make a single melee attack to deliver a “Short Disable [Limb]” where the limb specified must be the one struck by the weapon. In the case of held objects, the limb holding the object must be called. Torso strikes will allow the character to call any limb they wish.

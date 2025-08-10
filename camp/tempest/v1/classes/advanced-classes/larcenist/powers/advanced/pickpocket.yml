@@ -1,0 +1,13 @@
+name: Pickpocket
+incant: None
+call: "“[Name or Description] Subtle Instruction: Pickpocket: Give me a coin if you have one.”"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Long Rest
+accent: None
+effect: Instruction
+description: |
+  One of the more common, and often overlooked stock-in-trade abilities of the thief is the simple picking of pockets. While one won’t become wealthy doing so, its simple bread-and-butter reliability remains useful even after the thief has moved on to larger jobs.
+
+  Out-of-Combat the Larcenist may whisper to a target a Subtle Instruction forcing them to give the Larcenist a coin.

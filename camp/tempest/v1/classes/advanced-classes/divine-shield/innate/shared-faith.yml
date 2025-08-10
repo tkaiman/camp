@@ -1,0 +1,12 @@
+name: Divine Pool
+requires: divine-shield:5
+incant: None
+call: “Grant Protect vs. [Specifics]”
+target: Other Individual
+delivery: Touch
+accent: None
+duration: Event
+refresh: Immediate
+effect: Grant Protect
+description: |
+  The Divine Shield can Grant a Protect that they have on themselves to another character. Any Protect that the Divine Shield has on themselves, they may Grant to another within Touch Range, immediately expending the Protect they have. This Protect can be Granted even if the original Grant had a Qualifier that the new target does not meet. The Call for the Shared Faith should reflect the exact Protect the Divine Shield has.

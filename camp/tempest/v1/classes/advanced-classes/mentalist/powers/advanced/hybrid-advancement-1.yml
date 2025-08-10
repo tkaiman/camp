@@ -1,0 +1,11 @@
+name: Hybrid Advancement I
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+grants: arcane.spell_slots@2
+description: The Mentalist is often a blend of martial and spell-casting classes. As such, they have both Powers and Spells available. The Mentalist gains one Arcane Adept Spell-Slot.

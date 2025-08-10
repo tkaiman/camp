@@ -1,6 +1,6 @@
 name: Tempest
 id: tempest
-version: "2025.1"
+version: "2025.2"
 ruleset: camp.engine.rules.tempest
 
 xp_table:
@@ -70,6 +70,11 @@ powers:
     8: 3
     9: 3
     10: 3
+    11: 3
+    12: 4
+    13: 4
+    14: 4
+    15: 5
   1: # Basic
     0: 0
     1: 1
@@ -94,6 +99,18 @@ powers:
     8: 2
     9: 2
     10: 3
+    11: 3
+    12: 3
+    13: 3
+    14: 4
+    15: 4
+  3: # Veteran
+    0: 0
+    11: 1
+    12: 1
+    13: 2
+    14: 2
+    15: 2
 
 spells:
   0: # Cantrips
@@ -108,6 +125,11 @@ spells:
     8: 3
     9: 4
     10: 4
+    11: 4
+    12: 5
+    13: 5
+    14: 5
+    15: 6
   1: # Novice
     0: 0
     1: 1
@@ -120,7 +142,12 @@ spells:
     8: 6
     9: 6
     10: 6
-  2: # Advanced/Adept
+    11: 6
+    12: 6
+    13: 6
+    14: 6
+    15: 6
+  2: # Adept
     0: 0
     1: 0
     2: 0
@@ -132,6 +159,78 @@ spells:
     8: 4
     9: 4
     10: 5
+    11: 5
+    12: 6
+    13: 6
+    14: 6
+    15: 6
+  3: # Greater
+    0: 0
+    11: 2
+    12: 2
+    13: 3
+    14: 4
+    15: 4
+
+ac_powers:
+  0: # Utilities
+    0: 0
+    1: 0
+    2: 1
+    3: 1
+    4: 1
+    5: 2
+  1: # Basic
+    0: 0
+    1: 0
+    2: 0
+    3: 0
+    4: 0
+    5: 0
+  2: # Advanced
+    0: 0
+    1: 0
+    2: 0
+    3: 0
+    4: 1
+    5: 1
+  3: # Veteran
+    0: 0
+    1: 1
+    2: 1
+    3: 2
+    4: 2
+    5: 2
+
+ac_spells:
+  0: # Cantrips
+    0: 0
+    1: 0
+    2: 1
+    3: 1
+    4: 1
+    5: 2
+  1: # Novice
+    0: 0
+    1: 0
+    2: 0
+    3: 0
+    4: 0
+    5: 0
+  2: # Adept
+    0: 0
+    1: 0
+    2: 1
+    3: 1
+    4: 1
+    5: 1
+  3: # Greater
+    0: 0
+    1: 2
+    2: 2
+    3: 3
+    4: 4
+    5: 4
 
 spells_known:
   base: 0
@@ -147,6 +246,7 @@ name_overrides:
 # The value of the tag is the name of the tag as it will appear in the UI.
 # Tags with a null name are internal and will not be displayed.
 tags:
+  blood-magic: Blood Magic
   # Artisan specializations.
   artificer: Artificer
   crafter: Crafter
@@ -168,6 +268,20 @@ tags:
   veteran: Veteran
   champion: Champion
   master: Master
+  Hobbled: Hobbled
+  Whirlwind: Whirlwind
+  # Arcanist
+  arcane-tool: Arcane Tool
+  # Dealbroker
+  concession: Concession
+  # Elementalist
+  wellspring: Wellspring
+  # Mentalist
+  psychic-surgery-procedure: Psychic Surgery Procedure
+  # Shadowdancer
+  insubstantial: Insubstantial
+  # Warlock
+  patron: Patron
   # Special Patron tag that excludes a perk from being taken with Patron.
   no-patron: null
 

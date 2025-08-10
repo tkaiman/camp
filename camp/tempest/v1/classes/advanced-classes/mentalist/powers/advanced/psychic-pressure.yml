@@ -1,0 +1,11 @@
+name: Psychic Pressure
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: None
+description:
+  If the Mentalist uses a Discern Effect on another creature, and that Discern is Prevented in any way, or if the Mentalist believes the Discern has been diverted by the Obfuscate Effect, they can try again, pushing harder than before, causing strain to both parties. By Sacrificing three Life Points, the Discern that was Prevented (or believed Obscured) can be tried a second time with the same target and Call, but this time "Final" is added, making it almost irresistible, and any "Subtle" Modifier is removed, as the psychic power makes the answer and Power echo in the minds of those around. If the target gives the same answer, the psychic power feeds back, and the Mentalist Sacrifices 3 more Life Points and takes a Taint Effect.

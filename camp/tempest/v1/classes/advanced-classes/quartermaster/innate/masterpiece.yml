@@ -1,0 +1,18 @@
+name: Masterpiece
+requires: quartermaster:5
+choices:
+  craft:
+    name: Master Craft
+    matcher:
+      id:
+        - greater-alchemy
+        - greater-enchanting
+        - greater-tinkering
+    choice_requires:
+      master-alchemy: greater-alchemy
+      master-enchanting: greater-enchanting
+      master-tinkering: greater-tinkering
+description: |
+  The Quartermaster gains their choice of Master Alchemy, Master Enchanting, Master Tinkering, Master Arcane Ritual Magic, or Master Divine Ritual Magic. They must have the corresponding Greater craft skill, but do not need to have met the level requirement.
+
+  Additionally, the Quartermaster’s mastery of maintenance procedures reaches obsessive levels when it comes to their own equipment. The Quartermaster’s own Signature Item never expires. This applies to the base Tinkering item and any Tinkering modifications or Enchantments made to it that would normally have Standard expiration. Should the Quartermaster ever lose attunement to the item and fail to re-attain it for their next Short Rest, it expires if its original expiration date has passed. If the Quartermaster is able to attune more than one Signature Item, this benefit applies to all of them.

@@ -1,0 +1,16 @@
+name: The Laying of Hands
+requires: exemplar:2
+incant: “I invoke my faith, divine and right, I wield and shape creation’s light to lay my hands upon you.”
+call: '“Cure Conditions of your choice by Radiance, Heal 10 by Radiance, Mend 10 by Radiance, Grant Three Barrier by Radiance”, ”Short Drain Final to Self”'
+target: Other Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Long Rest
+accent: Radiance
+effect: Cure, Heal, Mend, Grant Barrier, Drain
+description: |
+  By laying of the Exemplar’s hands upon the afflicted, they may channel the divinity of the highest powers to ease the pain of the tormented. This transference of life and light leaves the Exemplar
+  in a weakened state, but sacrifice is the burden of the chosen.
+
+  Once per Long Rest, the Exemplar may choose a target to Touch and call “Cure Conditions of your choice, Heal 10, Mend 10, Grant Three Barrier by Radiance”. The Exemplar is then afflicted by Short
+  Drain Final, unless they expend a Divine Grace.

@@ -1,0 +1,11 @@
+name: Banish
+tags: [arcane-tool]
+incant: Standard
+call: "[Name or Description] Death to Fae by Arcane"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Spell
+accent: Arcane
+effect: Death
+description: When this spell is cast, Banish allows the Arcanist to designate a single fae spirit to be returned to their origin. This forced removal of the fae spirit rips it from the physical form it inhabits, killing its mortal embodiment.

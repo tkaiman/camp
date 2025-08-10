@@ -1,0 +1,19 @@
+name: Elemental Manifestations [The Wand]
+requires: gateway-power-magic-collector
+incant: Focus Quick 10
+call: Per Effect, see below
+target: Individual
+duration: Quick 100
+delivery: Spell-Packet
+refresh: Immediate
+accent: "[Elemental Accent]"
+effect: Grant
+description: |
+  When you first gain this power, select an additional elemental Accent from among the four listed in Magic Collector. You may select this new element when using the Wand.
+
+  When you charge a Spell Ball with Magic Collector, you may instead of calling damage expend a Spike and Call one of the following effects:
+
+    * Acid: “Shatter [item] by Acid.” If the packet strikes a specific item like a shield or a weapon, the item must be called as the target.
+    * Flame: “Quick Disable [Limb] by Flame”
+    * Ice: “Quick Root by Ice”
+    * Lightning: “Short Repel by Lightning”

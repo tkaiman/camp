@@ -1,0 +1,16 @@
+name: Vault
+tags: [crafter, mystic]
+incant: Focus Quick 100, “By the power of my craft, I protect what is precious”
+call: None
+target: Container
+duration: Event
+delivery: Touch
+refresh: Immediate
+accent: None
+effect: Special
+description: |
+  You intertwine a container’s protection with a Haven ritual or Ward spell. The container must be hard-walled (a box, not a bag) and must clearly open and close, but can otherwise be of any size that will fit into the haven. Closets are valid Vaults, but not rooms; if it is unclear if a space is a closet or a room, a closet has only one door and no windows. The vault may additionally be locked, trapped, glyphed, or otherwise protected.
+
+  To make the vault, you must be inside of a Haven or Ward. Spend a Focus Quick 100 drawing invisible circuits on the faces of the intended container using a Forgesource, then sacrifice the Forgesource and say “By the power of my craft, I protect what is precious.” Attach a card with a Black Key to the container’s lid or door. On it, write: “Can only be moved, opened, or modified by those connected to this Haven/Ward as long as it has charges. Can not be Shattered or removed from this Haven/Ward as long as it has charges. Created by: [your name]. Note that you do not have to be connected to the Haven or Ward in question so long as you are inside of it.
+
+  You may create as many Vaults connected to a particular Haven or Ward per event as you wish, but you can only  create a vault to which you are entitled to open (such as being able to enter a Haven/Ward). Each additional Vault in a particular Haven beyond the first reduces the maximum amount of “stones” the Haven can hold by five.

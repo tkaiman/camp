@@ -1,0 +1,13 @@
+name: Touch of Balm
+incant: Standard
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Long Rest
+refresh: Spell
+effect: Alter
+description: |
+  Until the Divine Shield completes a Long Rest, they can use their Divine Pool on their Chosen without Incantation; merely get within Touch Range and make the Call.
+
+  Enhancement: Greater Spell-Slot: It applies to all uses of the Divine Pool, not just those on Chosen.

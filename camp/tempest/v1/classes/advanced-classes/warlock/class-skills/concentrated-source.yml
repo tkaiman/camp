@@ -1,0 +1,13 @@
+name: Concentrated Source
+cost: 3
+requires: warlock:3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description:
+  The Warlock may designate a single Profane Source granted by the Warlock class to be represented by a ring or glove. While represented in this way the Profane Source does not prevent the Warlock from using that hand for other things. The designated source may be changed when completing a Short Rest.

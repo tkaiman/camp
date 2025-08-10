@@ -1,0 +1,11 @@
+name: Sneak Attack
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description:
+  When attacking from behind, the Rogue gains a +1 bonus to their Base damage. This increases to +2 when the Rogue reaches 15th level.

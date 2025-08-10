@@ -1,0 +1,13 @@
+name: Perfect Defense
+requires:
+  - advanced-fighter:5
+  - archers-versatility
+incant: None
+call: '"Short Grant Resistance to Wounding and Piercing", "Resist, [Weapon/Shield]"'
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Grant Resistance
+description: Until the Fighter completes a Short Rest, the Fighter has Resistance to the Wounding and Piercing Effects that hit their weapons or shields.

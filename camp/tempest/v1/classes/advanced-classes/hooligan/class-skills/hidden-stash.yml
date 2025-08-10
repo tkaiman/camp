@@ -1,0 +1,17 @@
+name: Hidden Stash
+requires: hooligan:2
+cost: 4
+incant: None
+call: None
+target: Self
+duration: Event
+delivery: None
+refresh: Event
+accent: None
+effect: Special
+description: |
+  Sometimes, when you break into the mansion and make away with the locked chest of goods, you don’t have time to pick the heavy, warded lock and get away with the goods. Sometimes, it’s best to just stash the item in the woods and come back when the Exemplars aren’t after you in droves.
+
+  The Hooligan creates a Hidden Stash by placing a White Halo symbol on one chest, box, barrel, or other container with a maximum storage space of 16” by 12” by 12”. The Hooligan can ignore the White Halo symbol and may interact normally with the container. The Hooligan may add or remove items from the container, but if the Hooligan moves the chest, this power immediately ends and the White Halo symbol must be removed.
+
+  If the Hidden Stash is not located in a ‘safe area’, such as inside a building, the Hooligan may visit it once per Event to refresh a Power with a Refresh of Long Rest or less from a Basic Class.

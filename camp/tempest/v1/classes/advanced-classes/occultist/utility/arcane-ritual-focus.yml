@@ -1,0 +1,8 @@
+name: Arcane Ritual Focus
+requires: journeyman-arcane-ritual
+grants: greater-arcane-ritual
+description: |
+  You gain Greater Arcane Ritual Magic. You are very comfortable performing Apprentice Arcane Rituals, and gain the following benefits when performing them:
+
+    * You have mastered containing the energies of the simplest rituals. When performing an Apprentice Arcane Ritual, you do not need to set up an Arcane Matrix. (You may call “It Can Be Seen: The Arcane Matrix is prepared.”)
+    * Once per Occultist class-level per Long Rest when you cast an Apprentice Arcane Ritual, select a material resource that the ritual would normally consume, such as a single Ritual Wand or Hide. While you must still have the resource present and use it in the ritual, it is not consumed. You may use this benefit additional times by Sacrificing a point of your Protection of the Spirits.

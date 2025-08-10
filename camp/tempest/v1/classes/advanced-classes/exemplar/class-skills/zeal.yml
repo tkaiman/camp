@@ -1,0 +1,5 @@
+name: Zeal
+cost: 4
+requires: exemplar:1
+description: |
+  Cleric and Exemplar Spells that have the ‘to Undead’ Qualifier may be changed to ‘to Demon’ or ‘to Angel’ at-will. If the Exemplar has the Class skill “Expand Focus”, from Cleric, the CP requirement of this Class skill is reduced to 0.

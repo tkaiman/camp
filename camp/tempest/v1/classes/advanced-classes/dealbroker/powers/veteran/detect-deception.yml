@@ -1,0 +1,11 @@
+name: Detect Deception
+incant: Negotiation (out of combat)
+call: “By My Voice Subtle Expose to Anyone who attempted deception during this negotiation by Mind”
+target: Other Individuals
+duration: Instantaneous
+delivery: Voice
+refresh: Short Rest
+accent: Mind
+effect: Mind
+description: |
+  While less refined than other methods of divining the truth, broadening your senses to take in the subtle cues of multiple participants can be revealing, particularly when someone on the opposite end of the table isn’t as well versed at hiding their intentions as their designated negotiator. During a negotiation out of combat, you may say at a conversational volume: “By My Voice Subtle Expose to Anyone who attempted deception during this negotiation by Mind.”

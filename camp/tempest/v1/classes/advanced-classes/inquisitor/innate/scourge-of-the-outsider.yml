@@ -1,0 +1,14 @@
+name: Scourge of the Outsider
+requires: inquisitor:3
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: Grant Base Damage
+description: |
+  While the rank and file of the clerical orders are effective in mortal combat, they sometimes prove insufficient in the battle against the supernatural. Inquisitors, however, fight against these otherworldly invaders as a matter of course, and have developed techniques to ensure their fight against Abominations, Undead, and even the errant Undevoted mortal always sways in their favor.
+
+  When attacking an Abomination, Undead, Undevoted, or an individual Branded as an Oath Breaker, the Inquisitor may add the “to Abomination”, “to Undead”, or “to Undevoted” Qualifier. If they do so, the Inquisitor may add one additional Base Spike Damage to their melee attacks against the target.  At level 5, instead of Base Spike Damage this becomes a Base Damage increase. No Qualifier is required for those Branded as an Oath Breaker. As this additional damage is a base increase, and is not affected by the stacking rules.

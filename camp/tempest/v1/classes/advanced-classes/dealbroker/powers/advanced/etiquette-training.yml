@@ -1,0 +1,23 @@
+name: Etiquette Training
+tags: [concession]
+incant: None
+call: "“[By My Voice/Name or Description]: Obey: You didn’t [see/hear] <That>”"
+target: Individuals
+duration: Instantaneous
+delivery: Voice or Verbal
+refresh: Short Rest
+accent: None
+effect: Obey
+description: |
+  A proper negotiator knows the social etiquette of various cultures and can use this experience to quickly recognize and cover up minor faux pas, prevent an ally from spilling a secret, or create
+  other distractions.
+
+  If you say something or perform some action that you regret someone else saw, within a few seconds you may quickly cover it up. Depending on the situation, you may use Voice or Verbal targeting to
+  select one, multiple, or all people present and call “[By My Voice/Name or Description]: Obey: You didn’t [see/hear] <That>”, where <That> might literally be “that”, or a short description of the
+  information you hope to prevent memory of.
+
+  You may also use this on behalf of someone else, but must exclaim or otherwise draw attention towards yourself before activating this.
+
+  This may only be used to cover for things that you believe to be accidental. For example, if you or an ally take out a big bottle of poison and dramatically poison the drink of the person you are
+  speaking with while they watch you do it, this is a deliberate action and you must not use this power. However, if you attempt to sleight-of-hand some poison into a beverage and simply get caught,
+  this is a legitimate time to use this power.

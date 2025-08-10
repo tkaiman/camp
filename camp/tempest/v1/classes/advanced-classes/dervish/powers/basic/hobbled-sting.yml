@@ -1,0 +1,13 @@
+name: Hobbled Sting
+tags: [Hobbled]
+ranks: 3
+incant: None
+call: "5"
+target: Individual
+delivery: Weapon
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Damage
+description: |
+  The Dervish, while Hobbled, can make one melee or thrown weapon attack that will do a significant amount of damage. If the Dervish has other Powers or items that would affect their Base Damage it also increases this power’s damage.

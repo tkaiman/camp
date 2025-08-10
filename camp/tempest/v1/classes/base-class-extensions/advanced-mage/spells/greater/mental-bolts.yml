@@ -1,0 +1,11 @@
+name: Mental Bolts
+incant: Standard
+call: “Wounding 6 by  [Illusion / Mind / Will]”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Illusion / Mind / Will
+effect: Wounding
+description:
+  This Spell charges three Spell-Balls of psychic power. Each one does Wounding 6 by Illusion, Mind, or Will (each chosen upon throwing). For each bolt, if it is Prevented or Misses (discharging on a non-creature), the Mage can charge a new Spell-Ball by calling “Spell-Ball Charged!” This way, up to six total Bolts can be thrown.

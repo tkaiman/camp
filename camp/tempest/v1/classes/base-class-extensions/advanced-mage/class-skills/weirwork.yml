@@ -1,0 +1,13 @@
+name: Weirwork
+requires: advanced-mage:3
+cost: 1
+incant: None
+call: None
+target: Individual
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description:
+  The Mage can treat the Planar Weir as an Arcane Locus, and can count the processes of doing Enchanting Crafting as sufficient study to Refresh Spell-Slots as per Arcane Study.

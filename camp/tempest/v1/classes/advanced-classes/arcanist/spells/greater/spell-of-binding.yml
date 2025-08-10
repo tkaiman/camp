@@ -1,0 +1,27 @@
+name: Spell of Binding
+tags: [arcane-tool]
+incant: Standard
+call: '"[Name or Description] Quick Imprison by Arcane", “[Name or Description] Obey to Imprisoned by Arcane: Answer my next question truthfully.”'
+target: Individual
+duration: Quick 100
+delivery: Verbal
+refresh: Spell
+accent: Arcane
+effect: Imprison, Obey
+description: |
+  This Spell is designed to lock a creature in place for a moment while a special trap can be built which will allow the Arcanist to hold and question the creature. This spell can only be cast either while out
+  of combat or if the target is already standing in an area with a boundary marked out by a white cord, rope or the like that is no longer than 10 feet long and forms a continuous shape around the target.
+
+  After the first Imprison is cast, the Arcanist may put down a white boundary (with the same properties as outlined above) around the target. Once this is completed, if the creature is within the shape, the
+  Arcanist may call:
+
+    “Imprison to Imprisoned” and “Instruction to Imprisoned: Do not leave the white boundary. Do not touch or move the white boundary. Do not use Powers or cause damage while inside the white boundary.
+    You maymove and speak while Imprisoned. These instructions and the Prison Effect will end when the boundary is not contiguous or when I say ‘binding down.’” (or similar phrasing) to the bound creature.
+
+  While the creature is inside the boundary, the Arcanist may Sacrifice a Life Point to use “[Name or Description] Obey to Imprisoned by Arcane: Answer my next question truthfully.” on the creature. They may
+  do this a number of times equal to Arcanist’s class-level. They may do this even when drained.
+
+  While the boundary is up, the Arcanist is inherently drained and tainted but may call “binding down” at any time (or open the boundary) to end the Spell.
+
+  The Arcanist must remain standing and remain within three or so paces of the boundary for the duration. If the Arcanist stops standing (barring medical necessity), goes further away that three paces,
+  completes a Short Rest, or takes damage or Effects, they must call “binding down” and make sure the target knows.

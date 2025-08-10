@@ -1,0 +1,14 @@
+name: Galvanicus' Lance
+incant: Standard
+call: “Wounding 10 by Lightning”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Arcane / Lightning
+effect: Wounding, Refresh
+description: |
+  This Spell charges two Spell-Balls of immense power. Each one does Wounding 10 by Lightning. If both bolts strike the same target, and are not prevented, the spell immediately refreshes. This Refresh effect may only occur once per Event.
+
+  Enhancement: [Patron Galvanicus] Expend a Spike: The Mage may instead utter a quick prayer (Q30) to Galvanicus, replacing the normal incant, to call down one strike summoned from the heavens
+  above. The delivery instead becomes “Verbal,” making the Call “[Name or Description] 25 Lightning.”  If this call is prevented, the Mage may immediately charge two Spell-Balls as above.

@@ -1,0 +1,17 @@
+name: Breaking and Entering
+incant: None
+call: '“Shatter [Item] by Force”, “Protect to Bind, Root, Sleep, and Weakness”'
+target: Door, wall, or other obstacle, Self
+duration: Instantaneous, Event
+delivery: Touch
+refresh: Focus Quick 100
+accent: Force
+effect: Shatter
+description: |
+  The Hooligan is no stranger to busting down doors as well as heads. Sometimes, a flashy entrance needs someone to just put their foot through an obstacle in the way, and start the fight.
+
+  The Hooligan may spend a Quick Count 10, miming kicking in a door or another large inanimate unattended obstacle, and call “Shatter [Item] by Force.”  If the door has an info card, the prep time can be used amending it to note that the door is broken.  Ideally, if there is no info card, one will be added that says the obstacle is destroyed if there is no other way to designate that (removing the prop, propping the door open, etc.)
+
+  If the object is destroyed and is a door, the Hooligan may grant themselves a Protect vs Bind, Root, Sleep, and Weakness.
+
+  Note: Do not make contact with the door or prop for safety and care of the props and doors.

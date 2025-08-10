@@ -1,0 +1,11 @@
+name: Psychic Spikes
+incant: Standard
+call: "Quick Root by Mind"
+target: Individual
+duration: Quick Count 100
+delivery: Spell-Packet or Spell-Ball
+refresh: Spell
+accent: Mind
+effect: Root
+description:
+  This spell charges every Spell-Packet or Spell Ball held in one hand with the power to Root an Individual.If the Mentalist picks up or is handed additional Materia, all the current charges are lost. In addition, the Mentalist may expend a Spike or a Link to change any Materia to "Quick Bind by Mind" instead, before it is Called.

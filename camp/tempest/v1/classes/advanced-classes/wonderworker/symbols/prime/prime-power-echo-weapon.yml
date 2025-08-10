@@ -1,0 +1,10 @@
+name: Echo Weapon [The Weapon]
+requires: deeper-power-destructive-blows
+call: "“[Name or Description], [Weapon Attack Call]”"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest
+accent: Special
+effect: Special
+description: The greatest strength of a weapon is, in some sense, the most simple advice that one is given when practicing and fighting with any weapon - do it again. The Wonderworker, until the next Short Rest or until this Power is used, may repeat their most recently expended Weapon-delivered Attack or Effect as a Verbal Delivery Attack to the same target - “[Name or Description], [Weapon Attack Call].” The original attack only has to have been directed at the named or described target - it does not have to have succeeded, or even entirely hit the target. Unsuccessful attempts are just practice, after all.

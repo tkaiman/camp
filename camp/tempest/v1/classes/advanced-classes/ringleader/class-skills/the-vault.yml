@@ -1,0 +1,24 @@
+name: The Vault
+cost: 4
+requires:
+  - ringleader:3
+  - apprentice-tinkering
+incant: None
+call: None
+target: Individual
+duration: Event
+delivery: Touch
+refresh: Long Rest
+accent: None
+effect: Special
+description: |
+  After a few moments of working the Ringleader can trigger a container to become a Vault the next time it is closed. A Vault’s contents are generally unreachable unless certain Powers (Dispel Magic, Ritual Disjunction, etc) are used that will get past the safeguards.
+
+  The Safebox needs to be created at a Tinkering Station with an Item Info Card containing the following:
+
+    * Attach the item information card to the Safebox when complete
+    * The Safebox’s maximum dimensions are 2’x2’x3’
+    * The Safebox gains inherent Shatter immunity
+    * The Ringleader’s Name must be listed on the card
+    * “Generic Forged Item” may create ‘keys’ that add additional names to the Information Card
+    * Add a black keyhole Sigil and write “Only opens for the Listed Names.”

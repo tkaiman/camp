@@ -1,0 +1,13 @@
+name: Blind
+incant: None
+call: “Short Weakness by Darkness”
+target: Individual
+duration: Short Rest
+delivery: Weapon (Melee)
+refresh: Short Rest
+accent: Darkness
+effect: Weakness
+description: |
+  Casting forth darkness unto others, the Shadowdancer is capable of diminishing the vision of those around them, causing their attacks to become ineffective. The Shadowdancer may call “Short Weakness by Darkness” with a Melee Weapon Attack.
+
+  In addition, If the Shadowdancer gains the insubstantial Condition for any reason this ability immediately refreshes.

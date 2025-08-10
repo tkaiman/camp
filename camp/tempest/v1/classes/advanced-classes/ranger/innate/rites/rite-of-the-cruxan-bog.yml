@@ -1,0 +1,15 @@
+name: Rite of the Cruxan Bog
+incant: Roleplay Q300, inviting the Wraiths of the Elyran Fall to guide your hunt.
+call: "“Long Grant Agony Accent”, ”Quick Weakness by Agony”, “By My Voice, Short Taint by Poison”"
+target: Self, Instantaneous
+duration: Long Rest, Instantaneous, Short
+delivery: Projectile or Thrown, Verbal, Voice
+refresh: Long Rest
+accent: Agony, Poison
+effect: Grant Accent, Weakness, Taint
+description: |
+  The bogs and swamps of Elyra are well-known for the warped and twisted creatures that haunt its once pristine shores of the Cruz River. Now a tepid, sulfur-stinking waste, riven with fumaroles and mud pots, the very landscape seems to wish harm upon its denizens and trespassers alike.
+
+  After participating in their rite, the Ranger may grant themselves the Agony Accent for all Projectile or Thrown attacks and when they land a Spike attack, they may follow up with a call of “[Name or Description] Quick Weakness by Agony” against the same target.
+
+  Finally, the Rite of the Cruxan Bog can be expended in one burst of energy. The Ranger may lash out at all creatures around them and call “By My Voice, Short Taint by Poison,” but then the Rite and all its effects end for the Ranger.

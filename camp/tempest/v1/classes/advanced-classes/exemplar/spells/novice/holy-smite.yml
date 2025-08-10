@@ -1,0 +1,19 @@
+name: Holy Smite
+incant: Standard
+call: "“Wounding 3 by Radiance” or “Wounding 5 by Radiance”"
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Spell
+accent: Radiance
+effect: Wounding
+description: |
+  When casting this spell, the Exemplar charges their weapons with “Wounding 3 by Radiance.” For all levels of the spell if the Exemplar is wielding two weapons, each weapon is charged. If the character is using a Great Weapon, this spell can instead be used to call “Wounding 5 by Radiance.”
+
+  If cast with an Adept Spell-Slot it becomes “Wounding 6 by Radiance” or “Wounding 8 by Radiance” with a Great Weapon.
+
+  If cast with a Greater Spell-Slot it becomes “Wounding 10 by Radiance” or “Wounding 12 by Radiance” with a Great Weapon.
+
+  For all levels of the spell, by expending a Divine Grace, each weapon gains an additional charge.
+
+  Enhancement: You may expend a Spike to add your Spike Damage to this spell.

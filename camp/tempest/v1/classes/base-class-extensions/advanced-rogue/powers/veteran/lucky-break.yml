@@ -1,0 +1,11 @@
+name: Lucky Break
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Grant Life
+description:
+  Anytime after the character has been Dead for a Slow Count of 120, they may Grant themself the Life Effect, coming to life again with 1 Life Point. The Rogue may then expend any number of Spikes, Healing 1 Life Point per Spike expended.

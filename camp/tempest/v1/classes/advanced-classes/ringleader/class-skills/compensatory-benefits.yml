@@ -1,0 +1,20 @@
+name: Compensatory Benefits
+cost: 3
+incant: None
+call: Special
+target: Special
+duration: Special
+delivery: Special
+refresh: Special
+accent: None
+effect: Special
+description: |
+  Sometimes, the Ringleader’s cohort cannot accompany them to where they need to be.  Whenever the Ringleader is at an Event without one or more of their Enforcers, they get certain benefits to help compensate.  The Ringleader gets the following cumulative benefits depending on how many Enforcers are not in attendance at any given Event.
+
+  2:  Once per Long Rest, the Ringleader can Refresh one use of their own Short Rest Refresh Powers.
+
+  3:  The Ringleader gains +2 Maximum Life Points
+
+  4:  Once per Long Rest, the Ringleader can add 4 points to a Haven to which they are attached.
+
+  5:  The Ringleader gains +1 Maximum Base Spikes

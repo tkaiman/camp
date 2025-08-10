@@ -1,0 +1,13 @@
+name: Battle Hardened
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Maximum Life Points
+grants: lp:1
+grant_if:
+  lp:1: advanced-fighter:5
+description: The Fighter gains +1 Base Maximum Life Point. This increases to +2 when the character reaches 15th level Fighter.

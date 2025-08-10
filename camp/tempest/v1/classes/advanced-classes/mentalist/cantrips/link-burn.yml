@@ -1,0 +1,11 @@
+name: Link Burn
+incant: Standard
+call: '"[Name or Description] X Mind", "[Name or Description] Short Drain by Mind"'
+target: Linked Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Immediate
+accent: Mind
+effect: Damage, Drain
+description:
+  This Cantrip can only be used on a character with whom the Mentalist has a current Link as per Forge the Link. It can be used to do any amount of damage up to the Mentalist’s class-level. If the character has four or more Mentalist class-levels, the Cantrip may do "[Name or Description] Short Drain by Mind" instead, however, this usage Sacrifices the Link.

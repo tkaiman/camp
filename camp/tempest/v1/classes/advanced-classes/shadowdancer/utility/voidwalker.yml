@@ -1,0 +1,12 @@
+name: Voidwalker
+tags: [insubstantial]
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Resistance
+description:
+  While insubstantial, should the Shadowdancer trigger a trap, they may call “Resist” and negate the original Effect, instead taking one damage and losing the insubstantial condition.

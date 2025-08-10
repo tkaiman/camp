@@ -1,0 +1,23 @@
+name: Larcenist
+type: class
+class_type: advanced
+ranks: 5
+category: Advanced Class
+requires:
+  - level:10
+  - power@2:2
+  - short-weapons
+  - lore+Shadow
+  - at_least: 2
+    any:
+      - basic-locks
+      - basic-traps
+      - fence
+      - poisoner
+      - rumormonger
+description: |
+  The Larcenist operates by one motto alone: “What’s mine is mine, what’s yours is mine.” Whether simple coin, valuable art, or more esoteric objects, what the Larcenist wants, little can stop them from acquiring.
+
+  Perhaps the best Larcenists are those who are little-known, notoriety comes often to the careless and unsuccessful, and so finding oneself a reputation can be a double edged sword.
+
+  However one finds themselves in the trade that only goes one way, the Larcenist is among the most well-equipped to deal with the slings and arrows of fate and watchful guards, slipping into vaults and safes without a sound, and exiting with wealth untold.

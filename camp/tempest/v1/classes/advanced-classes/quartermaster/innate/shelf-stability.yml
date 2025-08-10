@@ -1,0 +1,4 @@
+name: Shelf Stability
+requires: quartermaster:2
+description:
+  Single-use items you craft that are listed as having Standard expiration are instead Double Standard. This includes items such as potions, poisons, patch kits, and scrolls. This only functions with crafting that produces a new item — crafts that modify an existing object, creature, or place (such as most Enchantments and Rituals) do not qualify, even if they are consumed after a single use.

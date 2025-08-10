@@ -1,0 +1,11 @@
+name: Light of Revelation [The Lantern]
+requires: gateway-power-light-of-clarity
+incant: None
+call: "“By My Voice: Expose by Radiance to anyone who can see this light.”"
+target: Individuals
+duration: Instantaneous
+delivery: Voice
+refresh: Short Rest
+accent: Radiance
+effect: Expose
+description: The Wonderworker shows the light of truth, and nothing can hide. Hold the light source used as a symbol out, and use this Call.

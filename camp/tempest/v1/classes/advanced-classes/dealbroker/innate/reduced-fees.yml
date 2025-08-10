@@ -1,0 +1,17 @@
+name: Reduced Fees
+requires: dealbroker:3
+incant: None
+call: “Reduced Fees”, Explanation (if necessary)
+target: Power
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Special
+description: |
+  You have connections in many places, and they give you discounts on certain services. Whenever you use a power, skill, or a service at an NPC building that requires an expenditure of Wealth due
+  to fees, the amount of Wealth required is halved (round up), with a maximum savings per use of 10 Wealth. Fee reduction benefits do not stack with other means of fee reduction — use the best source
+  instead.
+
+  For Example: you can’t benefit from the clause of the Rogue power Back Alley Deals that halves its cost and Reduced Fees at the same time. This only applies to fees — if the power, skill, or
+  building allows you to purchase something with Wealth, the cost is not affected. This power does not affect direct negotiation with other characters, even if they are NPCs.

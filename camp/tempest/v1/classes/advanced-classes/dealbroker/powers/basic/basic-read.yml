@@ -1,0 +1,22 @@
+name: Basic Read
+tags: [concession]
+incant: Negotiation
+call: "“[Name or Description] Subtle Discern by Mind: [Question]”"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest
+accent: Mind
+effect: Discern
+description: |
+  Most Dealbrokers have some ability to watch the faces of those around them and pick up subtle clues about the flow of the negotiation and a bit of what other parties are considering. During a
+  negotiation you are participating in or observing, you may Subtle Discern one of the following questions from anyone participating in or observing the negotiation:
+
+    * Who do you think is getting the better end of this deal?
+    * What would you consider a reasonable price/concession for this?
+    * Whose position are you more sympathetic to?
+    * How much do you care about the outcome of this negotiation?
+    * Is your goal in this negotiation something other than what you’ve stated?
+    * Are you willing to compromise on this subject?
+    * Are you willing to accept a bribe?
+    * Would you compromise if I threatened [you/your family/specific individual]?

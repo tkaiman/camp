@@ -1,0 +1,13 @@
+name: Fractured Mirror Games
+incant: None
+call: '“Counter, Fracture”, “Quick Grant Insubstantial to Self” “Cure Insubstantial.”'
+target: Self
+duration: Instantaneous, Quick 100
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter, Insubstantial
+description: |
+  A mirror is a symbol of illusions and unreality - by keeping one close at hand, the Wonderworker can tap into those distortions of reality.
+
+  The Wonderworker can briefly “Fracture” their form, Countering a Weapon or Packet. They then immediately Grant themselves a brief insubstantial that they can Cure after a Quick 100 Count by Calling “Cure insubstantial”.

@@ -1,0 +1,11 @@
+name: Shocks
+incant: Standard
+call: “Wounding 2 by Lightning”
+target: Individual
+duration: Instantaneous
+delivery: Packet (Spell-Ball)
+refresh: Spell
+accent: Lightning
+effect: Wounding
+description:
+  This Spell charges three Spell-Balls with small bolts of lightning. If a Spell-Ball is not Prevented, the caster immediately charges their weapon with a melee attack that does “Wounding 1 by Lightning.” The caster can have up to three of these charges on their Weapon at a time from this spell. Charging a weapon in this way does not discharge any of the other Spell-Balls charged with this spell.

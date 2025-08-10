@@ -1,0 +1,4 @@
+type: skill
+parent: ac-sentinel
+requires: ac-sentinel
+category: Sentinel Class Skills

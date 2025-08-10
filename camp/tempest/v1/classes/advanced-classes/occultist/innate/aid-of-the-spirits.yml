@@ -1,0 +1,12 @@
+name: Aid of the Spirits
+requires: occultist:2
+incant: “I call the spirits to aid me in my task”
+call: “Grant X Ritual Points”
+target: Ritual
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest
+accent: None
+effect: Grant Ritual Points
+description:
+  The most basic use of Protection of the Spirits (outside of literal protection). During a ritual or enchantment, the Occultist may chant “I call the spirits to aid me in my task” and Sacrifice any amount of Protection of the Spirits Armor points. The Occultist may then call “Grant X Ritual Points”, where X is the number of points Sacrificed.

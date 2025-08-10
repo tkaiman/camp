@@ -1,0 +1,12 @@
+name: Mystic Mason
+tags: [arcane-tool]
+incant: Standard
+call: "“Obey to Spirit: Show me the correct placement of this piece.”"
+target: One construction mini-game
+duration: Instantaneous
+delivery: Verbal
+refresh: Spell
+accent: None
+effect: Obey
+description: |
+  While performing a mini-game for the purposes of constructing a building, the Arcanist can ask a Lantern Spirit for the correct placement of one tile (or for one other specific piece of the game if a different game is used) upon completion of the Incantation. This Spell will only be effective once on any given building mini-game.

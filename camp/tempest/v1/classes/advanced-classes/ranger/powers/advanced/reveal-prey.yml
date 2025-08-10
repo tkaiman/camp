@@ -1,0 +1,11 @@
+name: Reveal Prey
+incant: None
+call: “By My Voice, Expose [Animal / Foe Type / Living] by Will”
+target: Individual
+duration: Instantaneous
+delivery: Voice
+refresh: Immediate
+accent: Will
+effect: Expose
+description:
+  Those you are trained to hunt are revealed to you. You may use this skill to expose an enemy you have selected as your prey. Expend a Spike to call out "By My Voice, Expose [Animal / Foe Type] by Will" to reveal all enemies of that Type. Only one Foe Type may be chosen at the time of using this power. A Ranger may expend 2 Spikes to call “By My Voice, Expose Living by Will” instead.

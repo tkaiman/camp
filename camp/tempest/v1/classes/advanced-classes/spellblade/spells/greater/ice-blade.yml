@@ -1,0 +1,13 @@
+name: Ice Blade
+incant: Standard
+call: “Wounding 2 by Ice”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: Cold
+effect: None
+description: |
+  The Spellblade is infused with the ability to do “Wounding 2 by Ice” with their weapons, but gains a Selective Resistance to Healing. The character can end the Spell at any time by Calling any damage for a weapon attack other than “Wounding 2 by Ice”, changing the Accent, or by taking Healing and not Resisting it.
+
+  Note: The Caster is the target, so this does not activate the Counterblade Skill.

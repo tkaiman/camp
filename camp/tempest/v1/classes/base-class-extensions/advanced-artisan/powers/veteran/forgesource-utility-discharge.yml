@@ -1,0 +1,16 @@
+name: Forgesource Utility - Discharge
+tags: [artificer]
+ranks: 3
+incant: Focus Quick Count 100
+call: “[Name or Description] 10 Lightning”
+target: Individual
+delivery: Verbal
+accent: Lightning
+duration: Instantaneous
+refresh: Short Rest
+effect: Damage
+description:
+  The Artisan can spend a Quick Count of 100 Focusing on a Forgesource and getting it to overload. Any time after the Incantation
+  is complete, before the Artisan completes a Short Rest, the Artisan can discharge the Forgesource to do Lightning damage to a
+  target. This destroys the Forgesource. If the Artisan is a Artificer specialist they may instead charge two such Forgesources in
+  this manner per use of the Power, but must do a Focus Quick 30 count between uses of them.

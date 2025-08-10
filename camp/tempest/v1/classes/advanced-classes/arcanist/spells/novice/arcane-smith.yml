@@ -1,0 +1,11 @@
+name: Arcane Smith
+incant: Standard
+call: "Rebuild and Mend 5 by Arcane"
+target: Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Spell
+accent: Arcane
+effect: Rebuild, Mend
+description:
+  This spell will rebuild items (including shields) to usefulness, and mend armor.

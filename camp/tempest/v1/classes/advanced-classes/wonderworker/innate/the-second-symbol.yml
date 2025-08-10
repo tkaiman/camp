@@ -1,0 +1,15 @@
+name: The Second Symbol
+requires: wonderworker:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Symbol
+grants: ww-gateway
+description: |
+  Once the Wonderworker is initiated in working with a Symbol, adding another to their collection is not so challenging.
+
+  The Wonderworker gains access to another Symbol of their choice, detailed in the “Wonderworker Symbols” section below as well as access to the Gateway Power from that symbol. This choice is permanent, and reflects the character’s path of study through the esoteric knowledge they have discovered.

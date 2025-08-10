@@ -1,0 +1,17 @@
+name: Alternative Applications
+tags: [crafter]
+requires: living-iron
+incant: “By the power of my craft, I work with efficiency”
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Refresh
+description: |
+  While mending armor is a worthwhile use of Living Iron, not all Artisans see enough combat to fully utilize it. A good Quartermaster knows how to repurpose what is underutilized. You gain the following additional uses of Living Iron that can be utilized during crafting and gathering tasks. The incantation need only be said the first time you spend points in a particular crafting or gathering session. Points spent from your Living Iron pool in this way in any single expenditure must fall under the maximum amount of armor points you could normally mend using a single use of Living Iron - for example, you cannot instantly Prospect until your effective Artisan class-level is at least 15.
+
+    * While following an alchemical recipe or tinkering schematic, you can use your Living Iron to better regulate chemical reactions and heat transfer. Any time one of these crafts requires waiting for hourglass turns, you may spend 1 point of Living Iron pool per turn required to reduce that wait by half of that, to a minimum of 1 turn.
+    * When following Enchanting formulae that allow you to scribe scrolls or copy documents, you may stretch the effectiveness of inks by imbuing your Living Iron with the ambient energies of the Planar Weir and mixing it with the ink. You may get two uses out of a single dose of Simple Ink by spending 5 points from your Living Iron Pool. You may do the same for Arcane Ink for 10 points and Eternal Ink for 15 points. A particular dose of crafted ink may not be further stretched, and the stretched ink must be used before you leave the Planar Weir or it expires immediately.
+    * When you prospect, you may use your Living Iron to more efficiently extract minerals from mines and springs. By spending 5 points of your Living Iron pool, you may reduce the time needed for prospecting to Focus Slow 90. If instead you spend 15 points, you may instead prospect with no count required.

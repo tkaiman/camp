@@ -1,0 +1,15 @@
+name: Educated Alterations
+cost: 5
+requires: arcanist:3
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: None
+description: |
+  While the Arcanist is a Primary Ritualist in an Arcane Ritual, they may add or remove Dark Territory from the final tally by a number equal to up to half their Arcanist class-level, rounded up. Thus, a fifth level Arcanist could add or remove up to three Dark Territory.
+
+  Note: You will need to notify your Marshal at the time you use this power.

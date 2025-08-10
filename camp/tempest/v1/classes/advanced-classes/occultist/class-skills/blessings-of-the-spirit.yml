@@ -1,0 +1,5 @@
+name: Blessings of the Spirits
+cost: 4
+requires: occultist:3
+description:
+  Your practiced prayers and genuine offerings to the spirits are of a higher quality than most, and they offer you more in return. While this does not increase the strength of your spiritual protection, it does extend its durability. The first 3 points you spend from your Protection of the Spirits each Long Rest do not reduce your Maximum Summoned Armor points.

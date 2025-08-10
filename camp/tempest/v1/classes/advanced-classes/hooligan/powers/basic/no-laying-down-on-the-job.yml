@@ -1,0 +1,15 @@
+name: No Laying Down on the Job
+incant: None
+call: '“Piercing 1 by Agony”, “Cure [Condition] by Agony”, “Stabilize by Agony”'
+target: Individual, Self
+duration: Instantaneous
+delivery: Touch
+refresh: Short Rest
+accent: Agony
+effect: Piercing, Cure, Stabilize, Refresh
+description: |
+  While the Hooligan is no stranger to violence, the undoing of harm is often left to the docs back at the hideout. However, sometimes expediency is best, particularly in the thick of things.
+
+  The Hooligan may Call “Piercing 1 by Agony” against a Helpless or Willing target by Touch. If this is not prevented, they may immediately call “Cure [Condition] by Agony” or “Stabilize by Agony” against the same target.
+
+  The Hooligan may expend a Spike and Focus Quick 100 to Refresh this Power, or it will Refresh for free after a Short Rest.

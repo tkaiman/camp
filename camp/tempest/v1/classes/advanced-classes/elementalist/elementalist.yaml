@@ -1,0 +1,21 @@
+type: class
+class_type: advanced
+ranks: 5
+name: Elementalist
+category: Advanced Class
+sphere: arcane
+requires:
+  - level:10
+  - arcane.spell_slots@2
+  - warcaster
+description: |
+  Built upon the Sourcerer’s seeking of ever more obscure elements with which to manipulate through their Eldritch Source, the Elementalist is the culmination of years spent seeking and refining their Eldritch Source. Now, twisting the Source to ever more specific uses, more niche sources of power, and more refined applications, the Sourcerer now finds themselves able to use the more common Sources in surprising new ways.
+
+  Where once Flame was simply an unwieldy destructive force, it can now be applied to specific points on the opponents body, stripping armor plate by plate, or causing the foe to drop a scalding blade. Ice now forces the opposition to be wary of their steps, lest they fall to their knees. Likewise, the storms above provide interesting new applications, as do the stones and their caustic cousins.
+
+   ### Base Incant
+
+   > “I call upon the Weave Arcane, its boundless power, my domain,  
+   > With Echoes bound through wielded Source, I conjure bursts of Arcane force,  
+   > By my hand, my will sublime, I cleave the winding streams of Time,  
+   > With strength unleashed, unfettered soul, Fate is mine now to control…”

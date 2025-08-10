@@ -1,0 +1,11 @@
+name: Power of the Ancients
+cost: 3
+requires:
+  - occultist:2
+  - any:
+      - spirit-shell
+      - shell-of-ancient-spirit
+description: |
+  As a Rahkdari, you already had the protection of the spirits. As an Occultist, you know how to turn that protection into strength.
+
+  At will, you may chant “I call the ancestors to give me strength!”  and Sacrifice at least one point of your Protection of the Spirits as well as Sacrifice any amount of Barrier that you have. This will cause you to refresh a number of Spikes equal to the Protection of the Spirits spent plus Barrier Sacrificed. Unlike most Occultist Powers, you may spend your Protection of the Spirits for this purpose even if you are wearing a non-Summoned suit of armor.

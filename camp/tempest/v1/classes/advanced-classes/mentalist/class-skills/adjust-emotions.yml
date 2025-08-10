@@ -1,0 +1,18 @@
+name: Adjust Emotions
+requires:
+  - mentalist:1
+  - psychic-surgery
+cost: 3
+tags: [psychic-surgery-procedure]
+incant: "RP: Psychic Surgery, Explanation"
+call: None, "Cure Fear by Mind"
+target: Other Individual
+duration: Permanent
+delivery: Touch
+refresh: Long Rest
+accent: Mind
+effect: Cure
+description: |
+  The Mentalist and the patient work together to find feelings and emotions in the target’s mind. The Mentalist can help adjust these emotions, causing some to swell, and others to fade, or can even help shut down all emotion in the recipient (this will not stop influences such as Fear or Terror Effects from being effective). Generally, the effects of this surgery will last until the patient’s player decides otherwise.
+
+  In addition, the Mentalist may seek out and quell strong emotions caused by external forces not native to the patient. The Mentalist may call "Cure Fear by Mind" by Touch a number of times equal to the Mentalist’s class-level per Long Rest.

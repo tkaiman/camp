@@ -1,0 +1,20 @@
+name: Grip like Iron
+description: |
+  The Sentinel knows that being a threat is vital to their role in a battle line, and as such takes measures to prevent that from being taken from them.
+
+  The Sentinel gains resistance to Disarm Effects. The resistance becomes immunity while in Sentinel’s Stance. Additionally, the Sentinel gains the following power:
+
+subcard:
+  name: Ironhand Rending
+  incant: RP Q30 manipulating or rending
+  call: “Shatter [Object] by Force”
+  target: One Object
+  duration: Instantaneous
+  delivery: Touch
+  refresh: Short Rest
+  accent: Force
+  effect: Shatter
+  description: |
+    With the strength from wielding weapons in their hands, the Sentinel learns to apply the force to other uses. To use this power, the Sentinel must be out of combat, and able to hold or otherwise manipulate an object for a Quick 30, as they pantomime applying their strength to the object. After the RP, they may call “Shatter” targeting that particular object.
+
+    Normally, only tagged items and doors can be Shattered this way, but resourceful Sentinels might find that a marshal will allow them to rend or destroy other objects in mods or encounters as dramatically appropriate.

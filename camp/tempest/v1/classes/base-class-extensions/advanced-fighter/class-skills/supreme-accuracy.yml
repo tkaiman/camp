@@ -1,0 +1,13 @@
+name: Supreme Accuracy
+cost: 3
+requires: advanced-fighter:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Base Damage
+description:
+  Whenever the Fighter is using Thrown Weapons, their Base Damage increases by 1. When they are using Projectile Weapons their Base Damage increases by 2.

@@ -1,0 +1,11 @@
+name: Rupture
+incant: Standard
+call: “Piercing 4 by Agony”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Agony
+effect: Piercing
+description:
+  When this spell is cast, Rupture charges six Spell-Balls with “Piercing 4 by Agony.”

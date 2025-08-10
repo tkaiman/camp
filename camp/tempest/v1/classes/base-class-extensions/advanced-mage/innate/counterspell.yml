@@ -1,0 +1,14 @@
+name: Counterspell
+requires: advanced-mage:5
+incant: None
+call: “Counter, Counterspell”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Counter
+description: |
+  If the Mage is struck by Materia or Verbal, they can Counter that attack by expending an Arcane Adept or Greater Spell-Slot and calling “Counter, Counterspell”.
+
+  Note: Counterspell cannot be used while silenced, or otherwise unable to speak.

@@ -1,0 +1,14 @@
+name: Fartouch
+requires: divine-shield:3
+cost: 2
+ranks: 2
+incant: None
+call: “[Name or Description] [Spell] ...to Willing”
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Grant Verbal Delivery, Grant Willing Qualifier
+description: |
+  Once per Short Rest, the Divine Shield can cast one spell with a stated Delivery of “Touch” as a Verbal. To do so, the Divine Shield must begin the Call with “[Name or Description]” and must add the Qualifier “...to Willing” to the end of the Call.

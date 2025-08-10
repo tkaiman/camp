@@ -1,0 +1,25 @@
+name: A Spiritual Examination
+requires: inquisitor:2
+cost: 2
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Immediate
+effect: None
+description: |
+  The Inquisitor is often tasked with unraveling crimes of death and mortality, and as such is often in the position of interrogating as many reliable witnesses as possible. More experienced Inquisitors know that the spirits of the realms watch over all, often with unique perspectives.  The Inquisitor may use Pressing the Question on Spirits by adding the “to Spirit” Qualifier.   An example of a modified call would be “Discern by Radiance to Spirit: What is your full name?”  Additionally, the Inquisitor gains the Spirit Root power:
+
+subcard:
+  incant: “I call my faith, to Root you Spirit”
+  call: “[Name or Description] Short Root to Spirit”
+  target: Individual
+  delivery: Verbal
+  accent: None
+  duration: Short Rest
+  refresh: Short Rest
+  effect: Wounding, Shatter
+  description: |
+    The Inquisitor is able to call “[Name or Description] Short Root to Spirit” once per Short Rest.

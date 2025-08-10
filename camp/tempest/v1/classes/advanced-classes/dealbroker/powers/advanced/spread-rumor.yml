@@ -1,0 +1,19 @@
+name: Spread Rumor
+incant: None
+call: “It Has Been Told [X]”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Event
+accent: None
+effect: It Has Been Told
+description: |
+  Once per event, you may decide upon a rumor you wish to have been spreading among the populace to influence your dealings. When spreading the rumor at an event, you may use the power phrase “It Has
+  Been Told” to indicate that the rumor is something that people may have heard about.
+
+  The rumor should be about something that has happened or has been revealed in the past month, rather than something counter to common knowledge, though it may relate to an older event or fact. For
+  example, the rumor “It Has Been Told that Edos is a well known bastion of democracy and socialism” is not possible. “It Has Been Told that the last Queen of Edos has been seen campaigning for
+  reelection in Solana” is possible, if extremely unlikely to be believed, while “It Has Been Told that Princess Corrin is still plotting to be crowned Queen of Edos” is both possible and plausible.
+
+  You may contact plot between games if you wish to evaluate your rumor, or potentially have it added to the Rumormonger rumor sheet. If you do so, this power is considered expended during the next
+  event, and you may spread the rumor as discussed with plot.

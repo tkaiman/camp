@@ -1,0 +1,11 @@
+name: Neutralize
+incant: Standard
+call: “Grant Protect vs Poison and Acid”
+target: Self
+duration: Event
+delivery: None
+refresh: Focus Quick 100
+accent: None
+effect: Grant Protect
+description:
+  The chemicals of the earth can be harnessed to counteract other, more dangerous substances - neutralizing the worst of the effects before they can take hold. This Spell gives the caster a single Protect vs Poison and Acid.

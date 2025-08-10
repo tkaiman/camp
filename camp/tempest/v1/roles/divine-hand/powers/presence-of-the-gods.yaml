@@ -1,0 +1,13 @@
+name: Presence of the Gods
+type: innate
+parent: divine-hand
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Special
+refresh: Event
+effect: None
+description: |
+  The health of the Divine Hand’s local religious community is very important to them, both socially and for metaphysical reasons. If the Divine Hand takes a Long Rest in a town with a shrine solely devoted to their religion or god, they gain +1 Base Maximum Life Point while they remain within the town borders. The Divine Hand may only have one bonus active at any time, but it persists until the character leaves the environs of the town, only returning when they reenter the town.

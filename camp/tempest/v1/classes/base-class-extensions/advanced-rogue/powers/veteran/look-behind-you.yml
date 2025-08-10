@@ -1,0 +1,11 @@
+name: Look Behind You
+incant: “Look! Behind You!”
+call: "Wounding 10"
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Short Rest
+accent: None
+effect: Wounding
+description:
+  The Rogue must roleplay a significant distraction of the target (This should not include things that a “Caution” would normally be called for such as watch out there is a ditch behind you) and then can make this wounding attack that does Wounding 10.

@@ -1,0 +1,12 @@
+name: Mass Effect
+cost: 4
+requires: universalist:5
+call: “X by Force”
+target: Individual
+duration: Instantaneous
+delivery: Packet (Spell Packet)
+refresh: Immediate
+accent: Force
+effect: None, only damage
+description:
+  A Universalist may convert Healing Touch Pool or Life Tap Pool points into Force damage. The largest number that may be thrown in a single packet is equal to the character’s Universalist class-level. If the Universalist has the Mage Bolt Cantrip the first point of Force damage from Mass Effect does not subtract from the Healing Touch or Life Tap pool.

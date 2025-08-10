@@ -1,0 +1,11 @@
+name: Cage of Blades
+incant: None
+call: “Quick Slow by Force”
+target: Individual
+duration: Short Rest, Quick 100
+delivery: Melee Weapon
+refresh: Long Rest
+accent: Force
+effect: Slow
+description: |
+  The Sentinel knows their job: to be an anchor along the line, and the heart of fighting. To that end, they grind the enemy’s advance or retreat around them to a crawl. Until the end of a Short Rest, while in Sentinel’s Stance, the Sentinel may at-will swing for “Quick Slow by Force.”

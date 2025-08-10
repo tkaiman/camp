@@ -1,0 +1,21 @@
+name: Boss’s Privilege
+incant: None
+call: “Taunt 10”, “[Name or Description] [Effect]”
+target: Individual, Self
+duration: Permanent, Short Rest
+delivery: Melee Weapon, Verbal
+refresh: Long Rest
+accent: None
+effect: Taunt, Grant
+description: |
+  Whenever the Ringleader is targeted by an opponent who makes them their obvious target of attack, the Ringleader may take that challenge and use it to fuel their own animosity.
+
+  The Ringleader may Taunt a foe that is engaged with them in combat. The Call for this Effect is “Taunt 10.”
+
+  While the Target of the Taunt is engaged by the Ringleader, Each time the Ringleader lands an un-Prevented attack on the target, they may call one of the following Effects:
+
+    * “[Enforcer’s Name]: Refresh 1 Spike”
+    * “[Enforcer’s Name]: Grant 1 Barrier”
+    * “[Enforcer’s Name]: Cure [Bind, Root, Slow, Sleep, Weakness]”
+
+  The Ringleader may call a number of these effects equal to thrice their Ringleader class-level per long-rest.

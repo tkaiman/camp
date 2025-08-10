@@ -1,0 +1,19 @@
+name: The Knack
+requires: larcenist:1
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Counter, Refresh
+description: |
+  The Larcenist is well aware that even the most skilled thief eventually fails, and coincidence and folly go hand in hand. For whatever reason, the fates have aligned and things just happen to work out for the Larcenist when they’re at their most pressed.
+
+  Each Long Rest, the Larcenist gains a pool of Luck equal to their Larcenist class-level. These Luck charges may be spent in a number of ways:
+
+    * “Counter, Luck”
+    * The Larcenist may Counter a single Thrown Weapon or Materia attack. (Note this cannot counter Melee Weapon attacks)
+    * “Refresh by Luck”
+    * Once per Short Rest, the Larcenist may instantly refresh a single Basic power with a Refresh of Short Rest or shorter.

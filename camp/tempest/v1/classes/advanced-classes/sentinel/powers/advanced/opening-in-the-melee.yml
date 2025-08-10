@@ -1,0 +1,12 @@
+name: Opening in the Melee
+tags: [reinforce]
+incant: None
+call: “Short Repel by Force”
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Short Rest
+accent: Force
+effect: Repel
+description:
+  Sometimes being in the thick of things is a little bit too much heat, even for a Sentinel. Sometimes, you just need a breather to collect your thoughts and defenses. This power lets the Sentinel make three swings of “Short Repel by Force.”  After the Power is activated with the first swing, if the Sentinel completes a Short Rest unused Repel swings are lost.

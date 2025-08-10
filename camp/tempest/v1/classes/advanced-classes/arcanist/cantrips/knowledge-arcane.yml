@@ -1,0 +1,20 @@
+name: Knowledge Arcane
+incant: Standard
+call: "“[Name or Description] Discern by Mind: [Question]”"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Immediate
+accent: Mind
+effect: Discern
+description: |
+  This power taps into a deeper understanding of the leylines of magic. When cast, the Arcanist may use each of these Discerns once against any valid target before a Long Rest. If the Discern is
+  Prevented (“Counter”, “No Effect”), the specific Discern Prevented regains its charge, and may be used against another valid target.  Once this Cantrip is cast again, all remaining questions from
+  the previous casting are lost.
+
+    * “What is [another] one of your Vulnerabilities?
+    * “What is your highest tier spell-slot?”
+    * “What is your Type?”
+    * “What is your armor’s type?”
+    * “to Insubstantial: Is your Insubstantial condition Inherent?”
+    * “to Construct: What are your Maximum Life Points?”

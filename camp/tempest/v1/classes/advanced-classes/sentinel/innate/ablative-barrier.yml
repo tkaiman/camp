@@ -1,0 +1,15 @@
+name: Ablative Barrier
+requires: ac-sentinel:2
+tags: [reinforce]
+incant: None
+call: “Counter, Deflect”
+target: One Effect
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description: |
+  The Sentinel has learned to use defenses that normally turn aside more mundane attacks to stop even the most esoteric and magical assault.
+
+  The Sentinel can only use this Power if they have points of Barrier. They Sacrifice all remaining points of Barrier, and may call “Counter, Deflect” to a single Effect.

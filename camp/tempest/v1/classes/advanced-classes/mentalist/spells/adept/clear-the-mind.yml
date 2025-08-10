@@ -1,0 +1,11 @@
+name: Clear the Mind
+incant: Standard
+call: "[Name or Description] Cure [Charm/Drain/Dominate/Sleep/Obey] by Mind"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Spell
+accent: Mind
+effect: Cure
+description:
+  The Mentalist can flush a number of harmful things from another character’s mind, leaving them clear and ready. The Mentalist may Cure any combination of the listed Effects. In addition, by expending a Link, the "Subtle" Modifier can be added to this Spell’s Call.

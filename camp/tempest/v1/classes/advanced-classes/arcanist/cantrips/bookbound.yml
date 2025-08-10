@@ -1,0 +1,15 @@
+name: Bookbound
+incant: Standard
+call: None
+target: Materia, Self
+duration: Instantaneous
+delivery: Touch
+refresh: Immediate
+accent: None
+effect: Grant Barrier, Grant Spike Damage, Grant Arcane
+description: |
+  The character may cast this cantrip prior to bookcasting a spell, imparting an additional effect on the spell cast, that is delivered after the spell takes effect.  Any single one of the effects below may be added to the bookcast spell:
+
+    * “Grant 1 Barrier by Arcane”
+    * “Grant +1 Spike Damage for One Swing”
+    * “Grant 2 Arcane for One Swing”

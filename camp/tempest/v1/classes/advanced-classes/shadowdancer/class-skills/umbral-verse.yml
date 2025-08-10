@@ -1,0 +1,14 @@
+name: Umbral Verse
+cost: 3
+incant: RP a quick prayer, incantation, or invocation to the Umbral Weave of at least 15 words.
+call: “Short Grant [+/- 1] Dark Territory”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: ShortRest
+accent: None
+effect: Grant Dark Territory
+description: |
+  The darkness of the night is but a mere shadow to the all-encompassing void that is the maelstrom, but that does not mean they are ill-acquainted. Reaching into the Umbral Weave, the Dark’s taint may be subtly altered to suit the whims of the Shadowdancer.
+
+  Note: Use of this Power during crafting will not otherwise disrupt or affect the crafting process or ritual, however, adding to the Dark Territory (“Short Grant +1 Dark Territory”) will automatically make the process require a marshal.

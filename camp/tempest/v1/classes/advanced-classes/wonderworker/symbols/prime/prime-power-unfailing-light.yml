@@ -1,0 +1,17 @@
+name: Unfailing Light [The Lantern]
+requires: deeper-power-light-of-revelation
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Grant
+description: |
+  The light of the Wonderworker exposes even the most protected of untruth. Once per Long Rest, the Wonderworker may add “Final” to a Discern or Expose effect used against something lit by their Lantern symbol.
+
+  Additionally, the Wonderworker may use the Light of Clarity power to ask two additional questions, though each may only be asked once per Long Rest instead of the normal Short Rest Refresh:
+
+    * “Have you attempted to deceive me in the last 5 minutes?”
+    * “Tell me a secret you would prefer I not know.”

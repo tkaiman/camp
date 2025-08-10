@@ -1,0 +1,11 @@
+name: Protective Gear
+tags: [crafter, artificer]
+incant: None
+call: “Counter, Protective Gear”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description: Whether you’re a prospector yourself or simply accompany them, you’ve learned the risks involved and ways to protect yourself from random hazards. Once per Short Rest, you may call “Counter, Protective Gear” when you would take a mining hazard, an effect with the Environment modifier, or an effect from a Tinkering, Alchemy, or Enchanting craft you are involved in.

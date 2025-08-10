@@ -1,0 +1,17 @@
+name: Umbral Abyss
+cost: 5
+requires: shadowdancer:5
+incant: None
+call: “Counter Final, Umbral Abyss”
+target: One Attack or Effect
+duration: Instantaneous
+delivery: None
+refresh: Event
+accent: None
+effect: Counter
+description: |
+  While the Dark is omnipresent, Darkness is not, oft erased by the light of the sun, moon, and torch. Nevertheless, the absence of light has its uses against the Maelstrom when wielded appropriately.
+
+  Once per Event, when all other defenses would not protect the Shadowdancer, they may call a Counter against a single attack or Effect with the Maelstrom Accent that targets the Shadowdancer. This Power may not be refreshed by any other Power, and may only be used once per Event, regardless of other Power or item interactions.
+
+  Note: While normally this defense would not be effective if the user were vulnerable to Maelstrom, this specific Power nevertheless provides protection for a single instance. However, should the attack also have the tag “Final,” this defense will not work,

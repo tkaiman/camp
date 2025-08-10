@@ -1,0 +1,19 @@
+name: Rush Job
+tags: [crafter]
+ranks: 3
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Long Rest
+effect: None
+description: |
+  The Artisan knows a number of shortcuts and workarounds, so, with extreme focus, diligence, and hard work, they can complete any Apprentice or
+  Journeyman Tinkering, Enchantment, or Alchemy crafting that they have the Skill to do (i.e. a Journeyman Tinker cannot perform an Alchemy
+  crafting) by spending a Quick Count of 100 in deep Focus, working in strange ways with different tools.
+
+  The Artisan need not be at the proper Crafting Station but does need to work at a Station. They should make up their own “short-cut” procedure.
+  The work will still consume all the normal Resources, and have all the normal consequences (Pollution, Life Point loss, etc.). If the recipe
+  being performed was Ingot Plate, Bloom Powder, Hide Sheet, Night Prize Essence, Harvest Dust, or Rare Mineral Powder, this Power immediately Refreshes.

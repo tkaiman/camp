@@ -1,0 +1,24 @@
+type: class
+category: Advanced Class
+name: Quartermaster
+class_type: advanced
+ranks: 5
+requires:
+  - level:10
+  - any:
+      - greater-alchemy
+      - greater-tinkering
+      - greater-enchanting
+      - artisan.powers@2
+  - any:
+      - forage-3
+      - prospect-3
+      - scavenging-3
+description: |
+  The first use of the term Quartermaster was a court official charged with selecting, procuring, and maintaining furnishings and decorations for a monarch’s personal quarters. The term was picked up by military organizations to refer to an officer tasked with supplying the unit, ship, or other group with clothing and supplies. In a large, well-oiled military or corporation with continent-spanning supply-lines, the job of the quartermaster is largely one of keeping track of stores, projecting future needs, placing the appropriate orders, and maintaining the equipment they do have. For expeditionary companies in frontier lands or units operating in hostile territory, the quartermaster and their subordinates must employ more creative means of procuring and supplying their groups.
+
+  In Tempest, Quartermasters take on the role of one of these creative forces who obtain the resources and equipment their groups need to excel. This class is primarily focused on crafting and gathering, and is a natural extension of the Crafter specialization of the Artisan Base Class.
+
+  ## Specializations
+
+  Many Quartermaster powers are tagged [Crafter], [Artificer], or [Mystic]. Powers with these tags interact with certain aspects of the Artisan class, but have no specific meaning unless otherwise specified.

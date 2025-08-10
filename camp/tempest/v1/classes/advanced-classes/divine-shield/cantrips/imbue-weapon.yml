@@ -1,0 +1,11 @@
+name: Imbue Weapon
+incant: Standard
+call: "Short Imbue Weapon with 3 [Radiance / Darkness]"
+target: Other Individual
+delivery: Touch
+accent: Radiance, Darkness
+duration: Short Rest
+refresh: Immediate
+effect: Imbue
+description: |
+  This Cantrip grants another character the ability to swing a weapon attack with the Call “3 Radiance” or “3 Darkness”.

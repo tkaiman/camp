@@ -1,0 +1,11 @@
+name: Venom Ward
+incant: None
+call: ”Counter, Venom Ward”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Counter
+description:
+  The Assassin may expend a Spike to Counter one Poison-accented Attack or Effect.

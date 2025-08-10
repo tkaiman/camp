@@ -1,0 +1,14 @@
+name: All for One
+requires: hooligan:5
+incant: None
+call: “Counter, Elude”
+target: Self
+duration: Instantaneous, Passive
+delivery: None
+refresh: Short Rest, None
+accent: None
+effect: Counter
+description: |
+  While the Hooligan can see one of their Crew is down and possibly Dying, they may expend a Spike to “Counter, Elude” a Weapon Delivery or Materia Delivery Power or attack that strikes the Hooligan.
+
+  If the Hooligan is Dying, and one of the Crew is in Touch range, the Dying Hooligan may pause their death count until their Crewmember is no longer in Touch range; this is a Passive, at-will ability.

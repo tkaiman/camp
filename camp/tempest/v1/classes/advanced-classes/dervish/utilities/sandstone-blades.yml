@@ -1,0 +1,11 @@
+name: Sandstone Blades
+incant: None
+call: "Resist"
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: Resistance
+description: |
+  The Dervish has Resistance to “Shatter Weapon” effects while wielding two weapons.

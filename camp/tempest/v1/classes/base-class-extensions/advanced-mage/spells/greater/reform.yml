@@ -1,0 +1,11 @@
+name: Reform
+incant: Standard
+call: “Rebuild [Item] by Time, Mend [Item] to Full by Time”
+target: Suit of Armor or Shield
+duration: Instantaneous
+delivery: Touch
+refresh: Spell
+accent: Time
+effect: Rebuild, Mend
+description:
+  When cast, this spell allows the Mage to Rebuild and Mend to Full one suit of armor or one shield. This is a Touch Delivery spell, so it can be affected by Replicate Enhancement. The Mage may, as desired, leave out either the Rebuild Effect or the Mend Effect to save time or words, but must make it clear which items are being affected.

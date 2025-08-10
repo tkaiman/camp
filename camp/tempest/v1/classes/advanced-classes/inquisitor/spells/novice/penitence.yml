@@ -1,0 +1,11 @@
+name: Penitence
+incant: Standard
+call: “Short Disable Both Legs by Radiance”
+target: Individual
+duration: Short Rest
+delivery: Spell-Ball
+refresh: Spell
+accent: None
+effect: Disable
+description: |
+  The Inquisitor calls down holy power, forcing their opponents to their knees. Both the target’s legs are disabled at once.

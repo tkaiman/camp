@@ -1,0 +1,24 @@
+name: The Fear of Me
+incant: None
+call: '“[Name or Description], Discern by Mind: [Question]”, “Subtle Discern to Marshal by Mind: [Question]”'
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest
+accent: None
+effect: Discern
+description: |
+  Knowing a target’s weaknesses is fundamental to planning an attack. The more that is known, the better the outcome is likely to be. By engaging the mark beforehand, important information can be gleaned.
+
+  Out of Combat, The Ringleader may ask the following Discerns (once per Short Rest):
+
+    * “Are you immune or resistant to the Fear Accent?”
+    * “Are you immune or resistant to the Agony Accent?”
+    * “What are your Current Life Points?”
+    * “Do you have any Weapons on you?”
+
+  In addition, on a Marshaled encounter, such as a mod, before the encounter begins you may ask the Marshal each of these (once per Long Rest):
+
+    * “Are there traps present in this encounter?”
+    * “Do I sense the presence of a potential rivaling force?”
+    * “Are there other entrances I should know about?“

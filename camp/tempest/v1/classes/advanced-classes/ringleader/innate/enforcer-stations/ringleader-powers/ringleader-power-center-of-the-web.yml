@@ -1,0 +1,11 @@
+name: Center of the Web
+incant: None
+call: None
+target: None
+duration: None
+delivery: None
+refresh: Event
+accent: None
+effect: None
+description: |
+  The Ringleader is given any rumor sheets that Staff hands out to people at the beginning of each Event.  If there are special supplemental sheets (like Lore specific ones) or multiple randomized rumor sheets, the Ringmaster gets two random, different sheets.  If no rumor sheet at all is handed out, the Ringleader’s frustration results in a bump of +2 to their base Maximum Spikes for the entire Event.

@@ -1,0 +1,12 @@
+name: Hunter's Shot
+ranks: 2
+requires: enmity
+incant: Quick 100
+call: “Piercing 5 to [Animal / Foe Type]”
+target: Individual
+duration: Instantaneous
+delivery: Projectile or Thrown
+refresh: Short Rest
+accent: None
+effect: Piercing
+description: Spend a Spike to call "Piercing 5 to [Animal / Foe Type]," and make a projectile attack to strike down your foe.

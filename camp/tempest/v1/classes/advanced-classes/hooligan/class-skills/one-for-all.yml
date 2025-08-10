@@ -1,0 +1,13 @@
+name: One for All
+requires: hooligan:5
+cost: 1
+incant: None
+call: “[Name or Description] [Stabilize, Grant Life, or/and Cure all Conditions]”
+target: Other Individuals
+duration: Instantaneous
+delivery: Verbal
+refresh: Long Rest
+accent: None
+effect: Grant, Cure
+description: |
+  If all members of the Crew present in any given ‘encounter’ (combat, delve into a cave, particularly hostile negotiation, etc) are Helpless, Dying, Dead, or Spirits, the Hooligan may then call out a Team Motto, Chant, or other posse-significant saying, and then Call “[Names or Descriptions] [Stabilize, Grant Life or/and Cure All Conditions.]” The call may be for either the crew as a whole, or a compound call for the individual character’s names.  The Hooligan then immediately becomes a Spirit and must proceed to the Spirit Well.

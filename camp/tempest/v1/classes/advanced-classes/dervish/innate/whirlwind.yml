@@ -1,0 +1,13 @@
+name: Whirlwind
+tags: [Hobbled]
+requires: dervish:5
+incant: None
+call: "Refresh [Power]"
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: Short Rest
+effect: Refresh
+description: |
+  While Hobbled, the Dervish may Refresh a power with the [Whirlwind] tag with a Quick 100. This power may be used five times per Short Rest.

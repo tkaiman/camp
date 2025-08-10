@@ -1,0 +1,15 @@
+name: Bulwark of Faith
+incant: Standard
+call: '“Long Grant 6 Summoned Armor by Radiance”, “Grant Protect vs Verbal or Voice”, “Mend 3 to Shield”'
+target: Self
+duration: Long Rest, Event
+delivery: None
+refresh: Spell
+accent: Radiance
+effect: Grant Summoned Armor, Grant Protect, Grant Plus Armor
+description: |
+  The caster grants themself 6 points of Summoned Armor. This is considered a new “suit” of armor and is not stackable with other sources of summoned armor. The Exemplar may choose to give themself a +5 bonus to their Maximum Physical Armor instead, if desired. This spell also grants a single Protection from Voice or Verbal to the Exemplar. The recipient should call out “Protect” to Counter a Voice or Verbal attack. Both the Summoned Armor and the bonus to Physical Armor last until the Exemplar completes a Long Rest.
+
+  Additionally, as long as the Exemplar has at least 6 points of armor (summoned, physical, or natural and remember Barrier is also a type of Armor) the Exemplar may spend a Focus Quick 100 to Mend 3 to an attuned shield.
+
+  If cast as a Master level spell, this grants the Exemplar 8 Summoned Armor Points instead, or +6 Maximum Armor to physically worn armor. (Reminder: The Rule of 3 does not apply to effects from a single Source.)

@@ -1,0 +1,11 @@
+name: Bodily Sovereignty
+incant: "Leave me in peace!"
+call: "[Name or Description] Quick Repel by Mind"
+target: Individual
+duration: Short Rest, Quick 100
+delivery: Verbal
+refresh: Long Rest
+accent: Mind
+effect: Repel
+description:
+  Infusing their voice with command, and backing it with the strength of their own will, the Mentalist can keep others from doing them harm. This Power, once activated, can be used at-will until the Mentalist moves from that spot, takes an offensive action other than this power, becomes Helpless, or completes a Short Rest.

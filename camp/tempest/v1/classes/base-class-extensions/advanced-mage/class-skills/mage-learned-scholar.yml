@@ -1,0 +1,14 @@
+name: Learned Scholar
+requires:
+  - advanced-mage:5
+  - showing-off
+cost: 1
+incant: "*Snap* [Name of Spell]"
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: None
+description: As long as the Mage is out of combat, they can cast any Adept Mage Spell by snapping their fingers and saying the name of the Spell, rather than doing the normal Incantation. This will only work on Base Class Mage Adept Spells with standard Incantations.

@@ -1,0 +1,24 @@
+name: Stone-Faced Bodyguards
+cost: 3
+type: subfeature
+parent: the-right-hand
+display_type: Right Hand Power
+use_purchase_limit: true
+requires:
+  - dealbroker:3
+  - the-right-hand
+incant: None
+call: “Short Grant [X] Counters vs Discern by Mind to Bodyguard”
+target: Individual(s) (Bodyguard)
+duration: Short Rest
+delivery: Touch
+refresh: Long Rest
+accent: Mind
+effect: Grant Counter
+description: |
+  Negotiators sometimes employ trusted bodyguards, but a keen opponent can take advantage of that and read things in the facial expressions of a too-informed
+  bodyguard. A Dealbroker must carefully train their bodyguards not to give anything away during negotiations, or if captured while performing duties elsewhere.
+
+  After explaining the importance of controlling facial expressions, and explaining this Power and the required Call, the Dealbroker may call “Short Grant [X]
+  Counters vs Discern by Mind to Bodyguard” on one or more of their bodyguards within touch range, where [X] is their Dealbroker class-level. Their call
+  is “Counter, Stone-Faced.”

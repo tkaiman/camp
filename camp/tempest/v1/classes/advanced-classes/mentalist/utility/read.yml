@@ -1,0 +1,20 @@
+name: Read
+incant: None
+call: "[Name or Description] Subtle Discern by Mind: [Question]"
+target: Individual
+duration: Instantaneous  
+delivery: Verbal
+refresh: 1 minute of socializing
+accent: None
+effect: Discern
+description: |
+
+  The Mentalist can make certain observations about individuals, sifting slightly through their subconscious, to learn things that are hidden. After socializing (or interrogating) with an individual for at least a minute, the Mentalist can take a reading of their mindset. This Power must be used out-of-combat and in normal speaking range. The possible questions are:
+
+    * "Have you killed a living creature in the last hour?"
+    * "Do you think of yourself as a generally honest person?"
+    * "Do you have information you are actively trying to keep secret from me right now?"
+    * "Where did you most recently come from?"
+    * "Have you knowingly been dishonest in the last five minutes?"
+    * "Do you believe you know who killed [Name of Person]?"
+    * "Do you have [item] in your possession right now?"

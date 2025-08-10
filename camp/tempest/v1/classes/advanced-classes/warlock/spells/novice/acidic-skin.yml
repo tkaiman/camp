@@ -1,0 +1,11 @@
+name: Acidic Skin
+incant: Standard
+call: “[Name or Description] 2 Acid”
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Spell
+accent: Acid
+effect: Damage
+description:
+  Until the Warlock’s next Short Rest, each time the caster lands a cantrip or spell with a packet delivery with the Acid Accent on a conscious foe and the target doesn’t prevent it, the caster may call "Charged." Then the next time the caster is hit by a melee attack they may call against the person that hit them "[Name or Description] 2 Acid.” You may have charges equal to your Arcane Spellcaster class-levels at a time.

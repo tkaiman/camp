@@ -1,0 +1,15 @@
+name: Unyielding Flesh
+cost: 4
+requires: ac-sentinel:5
+incant: None
+call: None, “Heal 1 to Self by Will”
+target: Self
+duration: Passive, Instant
+delivery: None
+refresh: None, Long Rest
+accent: None, Will
+effect: Grant Maximum Life Points, Heal
+description: |
+  Under all of their armor, the Sentinel develops their body to be as resilient of a defense as their normal protections. The Sentinel’s Maximum Life Points increase by one. This is a Base change, and does not interact with Stacking rules.
+
+  Additionally, once per Long Rest when the Sentinel would be reduced to zero Life Points, they can Counter the damage by calling “Counter: Resolute”.  This will leave the character at 1 Life Point.

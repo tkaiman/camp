@@ -1,0 +1,46 @@
+name: Exemplar
+type: class
+class_type: advanced
+ranks: 5
+category: Advanced Class
+sphere: divine
+requires:
+  - level:10
+  - divine.spell_slots
+  - power
+  - any:
+      - [basic-shields, short-weapons]
+      - [two-weapon-style, short-weapons]
+      - great-weapons
+  - any:
+      - -undevoted
+      - patron
+  - divine-hand
+flags: flag+exemplar
+level_grants:
+  4: exemplar-bonus-spikes
+  5: exemplar-bonus-lp
+description: |
+  Across the land, it’s not uncommon to find religious orders dedicated to the eradication of the enemies of the Divine.
+
+  Exemplars are holy warriors who are granted divine power by their faith and Oaths they make. They are venerated soldiers of their faith, exacting their deity's justice in the name spoken by them in their soft moments of faith. Most Exemplars begin their training as Clerics, and take to the martial, militant training granted by Fighters to better guard them against the forces of darkness - namely, undead and Demons and in some faiths, Angels.
+
+  Exemplars utilize powerful divine magic both of Radiance and Darkness, augmented by their chosen faith, to exact retribution over undead, demons, and even angels; they are a force to be reckoned with wherever those beings stir. Still, without those lurking threats, the Exemplar is able to engage in physical combat using the power granted to them by the divine to help shape the battlefield.
+
+  All Exemplars over their career take a number of Oaths that bind them to their faith. They are imperious and stalwart in these devotion, and breaking their oaths is the greatest sin an Exemplar can commit. Those who break their oaths too often will eventually be named Oathbreakers, and be exiled from their religious sect or even face the wrath of a Divine.
+---
+id: exemplar-bonus-spikes
+type: subfeature
+display_type: Bonus
+parent: exemplar
+name: +1 Max Spikes
+category: Exemplar Class Bonuses
+grants: spikes:1
+---
+id: exemplar-bonus-lp
+type: subfeature
+parent: exemplar
+name: +1 Base Max Life Points
+category: Exemplar Class Bonuses
+display_type: Bonus
+grants: lp:1

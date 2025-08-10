@@ -1,0 +1,14 @@
+name: Grim Celerity
+tags: [patron]
+incant: Standard”
+call: "“By My Voice: Quick Imprison by Time”"
+target: Individual
+duration: Quick 100
+delivery: Voice
+refresh: Spell
+accent: Time
+effect: Imprison
+description: |
+  When this spell is cast, the Warlock is sped up in time, moving faster than those around her, allowing quick traversal across the battlefield.
+
+  Note: This Spell may only be cast once per Long Rest.

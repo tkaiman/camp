@@ -1,0 +1,14 @@
+name: Divine Grace
+requires: exemplar:1
+incant: None
+call: None
+target: None
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description: |
+  The Exemplar is a vessel for their deity’s righteousness. Because of this, the Exemplar is granted a certain level of mastery over the realm of their Divine benefactor, allowing them to draw upon divine power.
+
+  An Exemplar gains a point of Divine Grace at levels one, two and five. These Points refresh after completing a Long Rest. Most Exemplar Powers use Divine Grace as a resource, but they can also be used with the Grace powers listed under the Divine Hand Role. Points of Divine Grace granted from the Divine Hand role are additive with points granted from Exemplar.

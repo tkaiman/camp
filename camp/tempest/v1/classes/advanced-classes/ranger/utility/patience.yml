@@ -1,0 +1,13 @@
+name: Patience
+incant: Additional Quick 10/20/30
+call: “Grant [+1/+2/+3] Spike Damage”
+target: Individual
+duration: Passive
+delivery: Projectile
+refresh: None
+accent: None
+effect: Grant Spike Damage
+description: |
+  The Ranger is a patient hunter, often lying in wait long enough that snow accumulates on their downy coats. When the Ranger finishes their Quick 10 Count for a Projectile Weapons Aim mechanic, they may continue to aim to hone their focus for that shot by continuing their count. Each additional Quick 10 that they aim gives them +1 Spike Damage for that shot, up to a maximum of +3 Spike Damage.
+
+  Note: This bonus damage cannot exceed the Spike Damage stacking cap.

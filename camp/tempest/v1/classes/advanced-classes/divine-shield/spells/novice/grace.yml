@@ -1,0 +1,11 @@
+name: Grace
+incant: Standard
+call: "Grant one Divine Grace to Exemplar."
+target: Individual
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Spell
+effect: Grant
+description: |
+  The caster gives another character, who must be an Exemplar, a Divine Grace. This Spell can be cast only once per Long Rest. If the Exemplar is Chosen, this adds two points to the Divine Shield’s Divine Pool.

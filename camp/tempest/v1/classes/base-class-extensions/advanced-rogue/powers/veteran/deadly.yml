@@ -1,0 +1,11 @@
+name: Deadly
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Base Spike Damage
+description:
+  The Rogue’s Base Spike Damage increases by 1.

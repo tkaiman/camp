@@ -1,0 +1,15 @@
+name: Browbeat
+incant: None
+call: “Wounding 5 by Agony”
+target: Individual
+duration: Short Rest
+delivery: Weapon (Melee)
+refresh: Short Rest
+accent: Agony
+effect: Wounding
+description: |
+  While this Power is active, each time your melee attack strikes an opponent and that opponent visibly becomes incapacitated (to your best judgment), you gain two melee attacks that do “Wounding 5 by Agony.” It must be clear it was you who took the opponent down; no else can be hitting them at the time. For this reason, many with this skill prefer to isolate opponents.
+
+  At-will, you may expend a Spike to add your Spike Damage Bonus to one of these attacks gained by Browbeat.
+
+  This Power ends, and all bonus attacks granted by this power expire, if you become Helpless or complete a Short Rest.

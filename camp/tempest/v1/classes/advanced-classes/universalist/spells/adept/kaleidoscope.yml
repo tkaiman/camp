@@ -1,0 +1,15 @@
+name: Kaleidoscope
+incant: Standard
+call: '“Short Imprison by Arcane”, “Grant 6 Barrier by Force”'
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Arcane, Force
+effect: Imprison, Grant Barrier
+description: |
+  This spell charges a single spell ball with “Short Imprison by Arcane.” and charges a single spell ball with “Grant 6 Barrier by Force.”
+
+  If the Universalist has Replicate Enhancement this spell creates two additional spell balls with Grant 6 Barrier by Force.
+
+  If the Universalist has a Source providing the Eldritch Accent of Ice or Arcane they may charge two additional spell balls with Short Imprison by Arcane.

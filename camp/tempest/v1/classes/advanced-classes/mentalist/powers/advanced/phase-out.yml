@@ -1,0 +1,10 @@
+name: Phase Out
+incant: None
+call: "Counter, Phase Out"
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description: The Mentalist may use their Links to protect their minds from magic. By sacrificing a Link from Forge the Link, this cantrip can be used to Counter any Materia Delivered attack, or any attack or Power with the Mind, Illusion, Fear, or Madness accents.

@@ -1,0 +1,39 @@
+name: As Is Foretold
+incant: None
+call: "“Grant Power: [Tidings of Weal or Tidings of Woe],” Explanation"
+target: Individual
+duration: Event
+delivery: Touch
+refresh: Event
+accent: None
+effect: Grant Power
+description: |
+  Wonderworkers are frequent dabblers in the mysteries of the world, and through their engagement with those mysteries they gain a limited insight into the workings of time that they can impart to friends and compatriots.
+
+  Out of combat, the Wonderworked must perform a fortune-telling of some kind; card reading, palmistry, augury, etc. for at least one minute.  When the Wonderworker performs this action, they will choose to give a reading that is either a good outcome (“Weal”) or a poor one (“Woe”). It is up to the Wonderworker to select which based on the reading performed and their own intuition. They Grant either the Power “Tidings of Weal” or “Tidings of Woe” to the target. The Wonderworker may perform a reading a number of times up to their Wonderworker class-level per Event, but may not knowingly target the same individual more than once.
+
+  Divination tools are notoriously fickle things, particularly when focused on oneself. The Wonderworker cannot target themselves with this power.
+
+subcard:
+  - name: Tidings of Weal
+    incant: None
+    call: None
+    target: Self
+    duration: Event
+    delivery: None
+    refresh: None
+    accent: None
+    effect: Grant
+    description: |
+      It has been foretold of a moment where a failure can be circumvented. Once per Long Rest, when a charge of a Power from the user is Prevented, they may immediately Refresh that charge as if it had not been used. This Power has no effect on a Power that affects at least one target (such as a Voice Power that is Countered by some targets but not others).
+  - name: Tidings of Woe
+    incant: None
+    call: “Counter, Forewarned”
+    target: Self
+    duration: Event
+    delivery: None
+    refresh: None
+    accent: None
+    effect: Counter
+    description: |
+      A tiding of dire portent has been given, and you know just when to act to skirt yourself away from a disaster. Once per Long Rest, you may counter any attack or effect with “Counter, Forewarned.”

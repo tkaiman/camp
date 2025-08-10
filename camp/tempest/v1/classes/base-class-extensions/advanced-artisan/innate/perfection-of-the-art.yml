@@ -1,0 +1,21 @@
+name: Perfection of the Art
+requires: advanced-artisan:5
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: None
+description: |
+  Artificers gain +2 Maximum Armor points whenever they are wearing at least one point of Physical Armor. They can Counter one damaging attack made against them
+  by calling “Counter, Perfect Art!” This Counter Refreshes upon completing a Short Rest and expending a Forgesource, or automatically without expending a
+  Forgesource after completing a Long Rest.
+
+  While the Artisan is a Primary Ritualist, the Artisan may Sacrifice a Maximum Life Point (until the end of the Event) to redraw a card from the
+  Final Hand of a Dark Territory pull before the effect of the first card is announced.
+
+  Crafters may gain an extra of each other following resources once per Long Rest, when they would otherwise receive these resources from
+  gathering skills: Ingot, Rare Mineral, Hide, Harvest, Bloom, or Night Prize. Additionally, they become immune to hazards from Mining and Scavenging.
+  Finally, once per Long Rest they may redraw from the Enchanting Weir if they do not like their results.

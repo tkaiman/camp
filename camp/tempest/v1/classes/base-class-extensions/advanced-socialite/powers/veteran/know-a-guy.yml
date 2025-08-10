@@ -1,0 +1,14 @@
+name: Know a Guy
+ranks: 2
+incant: None
+call: None
+target: Special
+duration: Special
+delivery: None
+refresh: Event
+accent: None
+effect: None
+description: |
+  The Socialite may put a request into Staff for a specific Resource, which can be any kind including a “Named” Resource (such as Last Breath, Mote of Power, or Basilisk’s Lies). Staff will always provide a cost for that thing and the Socialite may pay that stated cost any time before the end of the Event.
+
+  Note that Resources that are gating certain Plot-controlled things or that are above the power-level of the Socialite may be given impossible costs. Some negotiation with Staff concerning reasonable requests is allowed (i.e. “Is a Medusa’s Heart a Resource I have any hope of affording?”). This cannot be used in conjunction with Contractual Subsidy.

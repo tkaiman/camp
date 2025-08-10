@@ -1,0 +1,16 @@
+name: Ranger’s Mark
+requires: ranger:1
+incant: "“[Name or Description], I Mark you for the Hunt.”, “[Name or Description] Discern: is your Type [Foe Type]?”"
+call: None
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Special, Short Rest
+accent: None
+effect: Discern
+description: |
+  After landing an attack that utilized the aim mechanic of projectile weapons or a Spike attack with a Thrown weapon, the Ranger may identify that character as their Mark. Ranger Powers often require your target to be your Ranger’s Mark.
+
+  The Ranger may only have one Ranger’s Mark active at a time, using this ability again requires that the previous target be dead, or have quit the field.  While Marked, the Ranger gains +1 Base Spike Damage against that target.
+
+  In addition, the Ranger may ascertain the Type of her Ranger’s Marks focus, once per Short Rest, by calling “[Name or Description] Discern: is your Type [Foe Type]?”

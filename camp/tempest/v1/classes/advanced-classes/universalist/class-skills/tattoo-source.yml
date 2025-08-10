@@ -1,0 +1,30 @@
+name: Tattoo Source
+cost: 2
+requires:
+  - universalist:1
+  - eldritch-source
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  Normally a Sourcerer’s power is channeled through an object called an Eldritch Source, which is a physical object. This can be difficult to hold and can be lost, destroyed, or stolen making a Sourcerer’s life logistically challenging. A Universalist has learned to inscribe their own body with the power of a Source through tattooing a magical rune on their face or the back of their hand that corresponds with the accent attunement of the source.
+
+  Upon gaining this Bonus Power the Universalist can choose to abandon their physical Source and replace it by inscribing an Eldritch Rune on their face or back or their hand. This inscription counts as an attuned magical item for any event it is used. They may do this at the start of each event for no cost choosing the Energy Rune as a default and gain the ability to choose from either flame, ice, lightning, or acid as their Accent when a spell is cast; or in the alternative, may head to the Enchanting Weir and deposit 1 Bloom and 1 Ingot, into the Ash Bin. If they use the Enchanting Weir method they must pull from the Planar Weir and inscribe the Eldritch Rune chosen or may choose to pay the cost to draw again.
+
+  The accent the Universalist gains is dependant on the foundation element inscribed:
+
+    * Refuge - Radiance
+    * Power - Force
+    * Tempus - Time
+    * Spark - Radiance
+    * Ruin - Darkness
+    * Energy - Lightning, Flame, Ice, or Acid
+    * Firmament - Will
+    * Aspect - Illusion
+    * Thought - Mind
+    * Death - Agony

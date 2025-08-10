@@ -1,0 +1,12 @@
+name: Entropic Inversion
+tags: [patron]
+incant: Standard
+call: ”Piercing [X] by Force”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Force
+effect: Piercing
+description:
+  When this spell is cast, the Warlock Sacrifices all Barrier they currently possess. They then may immediately charge [X] number of Spell-Balls with Piercing [1 by Force, where [X] is the amount of Barrier Sacrificed.

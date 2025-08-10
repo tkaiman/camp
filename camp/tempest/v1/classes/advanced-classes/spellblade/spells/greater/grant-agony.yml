@@ -1,0 +1,11 @@
+name: Grant Agony
+incant: Standard
+call: “Short Drain by Agony”
+target: Individual
+duration: Short Rest
+delivery: Packet (Spell-Ball)
+refresh: Spell
+accent: None
+effect: Drain
+description:
+  Grant Agony strokes the target with pure pain, reaching into their heart and head and laying in lances of ice and fire. This Spell charges two Spell-Balls at the same time which must be thrown separately. The target cannot concentrate or do much at all, torn apart from the inside out by phantom knives.

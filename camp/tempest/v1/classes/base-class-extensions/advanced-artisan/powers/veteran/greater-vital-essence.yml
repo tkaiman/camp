@@ -1,0 +1,21 @@
+name: Greater Vital Essence
+tags: [crafter]
+ranks: 3
+incant: None
+call: None
+target: One Potion
+delivery: Touch
+accent: None
+duration: Event
+refresh: Long Rest
+effect: None
+description: |
+  At the Alchemy station, the Artisan (who must have at least Apprentice Alchemy Skill) can make a potion that allows someone who has
+  used a Life-granting Spell to cast it an additional time, contrary to the restriction on many of those Powers. The potion must have
+  a card with an Expiration Date of the day after the Event in which it was brewed. The description should make it clear that when
+  this potion is imbibed, the drinker can use a Life-giving Power that they have previously used, even if the description of that
+  Power says it can only be used once per Long Rest.
+
+  To create this potion, the Artisan can make up their own procedure, which should take at least one minute to perform, and will need
+  to expend 10 Bloom, 1 Eternal Blossom, one Foundation Resource Infusion - Spark, and a Forgesource. A Crafter specialization Artisan,
+  may spend an additional Eternal Blossom to immediately refresh this Power. This potion is called a “Greater Vital Essence”.

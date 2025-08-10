@@ -1,0 +1,11 @@
+name: Shadowborn
+requires: shadowdancer:5
+incant: "RP: Quick 30"
+call: “Refresh 1 Spike by Darkness”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: Darkness
+effect: Refresh
+description: While the character believes they are in full darkness, not simply a shadow, the Shadowdancer may gather strength from the very fabric of Darkness itself. Roleplay gathering motes of strength from the darkness for a Quick Count of 30 to Refresh one Spike.

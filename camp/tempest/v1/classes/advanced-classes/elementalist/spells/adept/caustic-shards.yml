@@ -1,0 +1,16 @@
+name: Caustic Shards
+tags: [wellspring]
+incant: Standard
+call: “[Name or Description] 1 [Ice / Acid]”
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Spell, Focus Quick 30
+accent: Ice, Acid
+effect: Damage
+description: |
+  An Elementalist who studies the forces of Ice and Acid learns that these elements are perhaps the most enduring elements - and that endurance can be wielded to drive bitter shards into any who have been impacted by their power.
+
+  Whenever the Elementalist casts a Spell that uses either the Acid or Ice Accent, the Elementalist may plant their right foot; Focus for a Quick 30 and Call “[Name or Description] 1 [Ice / Acid]” against the target they just hit. This damage cannot be modified in any way.
+
+  They may continue to Focus and call these Verbal attacks against that target until the Elementalist casts another Spell, becomes Helpless, moves their right foot, or completes a Short Rest.

@@ -1,0 +1,15 @@
+name: Expedite Procurement
+tags: [crafter]
+incant: “Expedite Procurement”
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Special
+description: |
+  Time is valuable, and you don’t always have a lot. You know how to cut the red tape.
+
+    * When you Prospect, Forage, Scavenge, or Loot, you may call “Expedite Procurement” and skip the count. If you trigger a hazard or the creature being scavenged and/or looted produces a Verbal-delivered attack, you may counter it with “Counter, I don’t have time for this.”
+    * When you would draw a Foundation Resource from the Planar Weir during a Tap Primordial Rift formula or other means of accessing the Weir, you may instead call “Expedite Procurement, Draw X”, where X is a Foundation Resource of your choice. You are treated as having drawn that resource normally. If some reason exists that a particular resource is not available at the Weir, you may not draw it this way.

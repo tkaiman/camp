@@ -1,0 +1,11 @@
+name: False God
+incant: Standard
+call: "Subtle Dominate by Illusion"
+target: Individual
+duration: Long Rest
+delivery: Spell-Ball
+refresh: Spell
+accent: Illusion
+effect: Dominate
+description:
+  In order to cast this Spell, the Mentalist must exhaust two Links to gain the necessary psychic strength. The Mentalist shatters their target’s perception of them, warping it into some unthinkable, deific being. In doing so, the subject becomes Dominated by the caster.

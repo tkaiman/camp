@@ -1,0 +1,15 @@
+name: Biting Wind
+incant: None
+call: "Taunt 2"
+target: Individual
+delivery: Thrown Weapon
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Taunt
+description: |
+  Dervish aren’t the armored frontline fighters you’d expect in a theater of war, but they still know how to misdirect and take pressure off their support.
+
+  The Dervish may make a number of Thrown Weapon attacks equal to their Dervish class-level with the Call “Taunt 2.”
+
+  Whenever you use a defense with the call “Counter, Dodge,” this power Refreshes.

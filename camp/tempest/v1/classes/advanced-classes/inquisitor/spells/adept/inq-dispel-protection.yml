@@ -1,0 +1,13 @@
+name: Dispel Protection
+incant: Standard
+call: “Dispel All [Protects/Summoned Armor]” or “Dispel All Protects and Summoned Armor”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: None
+effect: Dispel
+description: |
+  The Inquisitor reaches out and unweaves the magical protections their foes have in place. This Spell can be used to remove any Protections or Summoned Armor (such as Mage Armor) that the target has active.
+
+  If the Inquisitor uses a Spike in the casting, they may dispel both Protections and Summoned Armor.

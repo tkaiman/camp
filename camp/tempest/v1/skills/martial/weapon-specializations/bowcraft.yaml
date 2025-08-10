@@ -3,8 +3,6 @@ cost: 4
 requires:
   - projectile-weapons
   - martial:2
-  - any:
-    - weapon-specialization+Bow
-    - weapon-specialization+Crossbow
+  - weapon-specialization+Projectile_Weapons
 description: |
   Each time the Character strikes a shield with a projectile weapon, the character can expend a Spike to call “Shatter” on a shield.

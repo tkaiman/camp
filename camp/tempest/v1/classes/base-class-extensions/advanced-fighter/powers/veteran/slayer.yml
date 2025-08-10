@@ -1,0 +1,11 @@
+name: Slayer
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Grant Spike Damage, Grant Base Damage
+description:
+  Until the next Short Rest, the Fighter gains +1 to their Base Spike Damage. When the character reaches 15th level Fighter, they add +1 Base Damage when using Weapons instead.

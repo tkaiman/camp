@@ -1,0 +1,25 @@
+name: Barefist Brawling
+requires: hooligan:1
+cost: 2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Natural Weapons
+description: |
+  Years in the streets with little but their bare fists have taught the Hooligan that while a weapon is often preferable, the fist is reliable, always available, and difficult to ignore when applied properly.
+
+  The Hooligan gains the ability to wield Natural Weapons with the following restrictions:
+
+    * These Natural Weapons may be only Hand Weapons.
+    * These Natural Weapons may not be used to deliver Effects, and can do a maximum of 1 damage.
+
+  However, they also gain these benefits:
+
+    * The Hooligan may wield two of these if they have Two Weapon Style.
+    * These Natural weapons are immune to Disarm.
+
+  Should the Hooligan have or gain Natural Weapons from another source, the restrictions are lifted, but the benefits remain.

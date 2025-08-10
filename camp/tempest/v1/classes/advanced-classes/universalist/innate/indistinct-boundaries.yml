@@ -1,0 +1,18 @@
+name: Indistinct Boundaries
+requires: universalist:1
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  Recognizing that the fundamental nature of magic is its mutability, the way the Universalist calls it forth can vary from caster to caster.
+
+  The Universalist may use the Novice or Adept level base incantations from Cleric, Druid, Mage, Sourcerer, and Universalist interchangeably. The Universalist may also use a custom incantation they purchased with Service Points interchangeably as though it were a base incantation above.
+
+  Normally, spell casters learn a single spell each level they attain. Universalists instead receive 1 Arcane and 1 Divine spell at each level of Universalist (Universalist spells count as either Arcane or Divine for this purpose).
+
+# TODO: Implement this weird spell progression

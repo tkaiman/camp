@@ -1,0 +1,14 @@
+name: Piercing Discernment
+requires: dealbroker:5
+incant: Negotiation (out of combat)
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Grant Final Modifier
+description: |
+  You have an uncanny ability to obtain just the right piece of information at just the right time. While you are in a negotiation out of combat, you may add the Final modifier to any single Discern or Subtle Discern you use on someone participating in or observing the negotiation.
+
+  The Dealbroker may use this ability five times per Long Rest.

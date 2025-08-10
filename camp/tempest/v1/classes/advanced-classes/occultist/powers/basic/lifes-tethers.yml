@@ -1,0 +1,15 @@
+name: Life’s Tethers
+incant: None
+call: “Short Grant Carnal Creature, [explanation if necessary]”
+target: Other Individual
+duration: Short Rest
+delivery: Touch
+refresh: Long Rest
+accent: None
+effect: Grant
+description: |
+  Practice with working with spirits allows the Occultist to convince the spirits of the living to cling more tightly to their mortal forms. The Occultist may target up to their Occultist level in other willing individuals to briefly grant them the [Carnal Creature](../carnal-creature) Physical Perk, reproduced below for convenience.
+
+    ### Carnal Creature
+
+      The character has little desire to give up their body and can remain dead for a Slow 300 before discorporating, rather than the normal 180. Any time after 180, they can let go and discorporate. This can be guided by player knowledge of what is occurring, as their Spirit gets some sort of sense of their surroundings after the initial Slow 180.

@@ -1,0 +1,12 @@
+name: Divine Mercy
+incant: Standard
+call: “Grant Divine Mercy"
+target: Self
+delivery: None
+accent: None
+duration: Short Rest
+refresh: Spell
+effect: Grant Healing Touch Pool, Altered
+description:
+  The Cleric adds 20 points to their Healing Touch pool, and gains the ability to perform Healing Touch healing without Incantation until they complete a Short Rest.
+  They need simply be within Touch range of the target and Call “Heal [X]” where X is the amount to be healed.

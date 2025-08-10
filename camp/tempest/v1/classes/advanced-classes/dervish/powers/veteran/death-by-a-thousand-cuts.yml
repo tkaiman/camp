@@ -1,0 +1,14 @@
+name: Death by a Thousand Cuts
+tags: [Whirlwind, Hobbled]
+incant: None
+call: “Wounding 2"
+target: Individual
+delivery: Weapon
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Wounding
+description: |
+  The Dervish may throw up to their Dervish class-level of Thrown Weapon attacks in succession with the Call “Wounding 3.” The Dervish may spend a Spike to add their Spike Damage to any one of these attacks, on a one for one basis.
+
+  In addition, while Hobbled, should the Dervish miss with one of these attacks, the Dervish may refresh that attack with a Quick Count of 30.

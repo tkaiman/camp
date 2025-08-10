@@ -1,0 +1,14 @@
+name: Party is Over
+ranks: 2
+incant: None
+call: '"Quick Sleep Final", "Death to Helpless"'
+target: Individual
+duration: Quick, Instantaneous
+delivery: Weapon
+refresh: Short Rest
+accent: None
+effect: Sleep, Death
+description: |
+  The Socialite can use a Hand Weapon to quickly and efficiently end a relationship. The Socialite can, while out of combat, use a Hand Weapon to do “Quick Sleep Final” on a target. If that Power is not Prevented, the next attack until the Socialite takes a Short Rest by the Socialite can be Called with “Death to Helpless” if it is made against the same target.
+
+  Some leeway is given to the “out of combat” nature of the first attack; if the character responds or attempts to defend themself at the last moment, it will be too late. If the target is prepared and actively watching and defending, the Power cannot be used.

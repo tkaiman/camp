@@ -1,0 +1,13 @@
+name: Farchannel
+cost: 3
+requires: spellblade:1
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description:
+  The Spellblade can use Bladechannel to charge Projectile and Thrown Weapons instead of just Melee Weapons.

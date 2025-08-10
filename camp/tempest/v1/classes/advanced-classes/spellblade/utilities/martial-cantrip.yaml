@@ -1,0 +1,11 @@
+name: Martial Cantrip
+choices:
+  cantrip:
+    name: Bonus Cantrip
+    matcher:
+      type: cantrip
+      parent:
+        type: class
+    controller: sphere-grant
+description: |
+  The spellsword, upon selecting this utility power, may select any Cantrip from a class they have access to.

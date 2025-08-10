@@ -1,0 +1,11 @@
+name: Chemical Dissolution
+incant: None
+call: "Shatter to Corpse by Acid"
+target: Individual
+duration: Instantaneous
+delivery: None
+refresh: Focus Quick 100
+accent: Acid
+effect: Shatter
+description: |
+  The Assassin’s work is rarely a welcome one for others, and disposal of evidence is often necessary to ensure the secrecy of the job. The Assassin may quickly produce a vial, jar, or other vessel, and roleplay covering a corpse with caustic liquid for a Focus Quick 30. When they have completed this RP, they may call “Shatter to Corpse by Acid,” causing the target to dissipate.

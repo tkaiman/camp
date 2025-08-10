@@ -1,0 +1,13 @@
+name: Reflexive Obscuration
+incant: None
+call: “Counter, Shadowform”
+target: Self
+duration: Instantaneous, Slow 60
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter, Grant Insubstantial, Cure
+description: |
+  When dealing with the unexpected, the Shadowdancer can call upon the safety of the darkness when all other options might fail them. If the Shadowdancer would otherwise be affected by the Effect or Damage of a Trap, they may Counter that Effect by calling “Counter, Shadowform.”
+
+  If they so choose, they may then also call “Grant Insubstantial to Self.” If they do, they must begin a Slow 60 but otherwise may act normally. At any time before or at the end of the Count they may call “Cure Insubstantial to Self.” If the Slow Count ends and the Shadowdancer is still insubstantial, they are forced to call the Cure above.

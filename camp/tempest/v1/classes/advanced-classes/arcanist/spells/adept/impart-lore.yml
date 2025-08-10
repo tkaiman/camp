@@ -1,0 +1,24 @@
+name: Impart Lore
+incant: Standard
+call: “Short Grant [Lore] Skill.”
+target: Individual
+duration: Short Rest
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Skill
+description: |
+  The recipient of this Spell acts as if they had the named Lore Skill until they complete a Short Rest. The Lore Skill named must be among those listed below (except with Staff permission) and in the absence of necessity, the character will not suddenly be flooded with information. Instead, when the character comes to some situation requiring that Lore (an encounter, mod, “blue card” or the like) they will have access to anything gated by the need for that Lore.
+
+  The available Lore Skills are:
+
+    * Arcane Lore: Magic and its uses, magical tools and applications, and magical constructs.
+    * Construct Lore: Constructs, Automatons, and other machinery of magical nature.
+    * Dark Lore: The Dark, the Maelstrom, and all this Tempestuous.
+    * Historical Lore: Major events, dates, interactions of events and casualties, historical figures.
+    * Lost Ages Lore: Long forgotten histories of the empires that came before.
+    * Mythic Creature Lore: Histories and Tales of the First Ones and their civilizations.
+    * Planar Lore: Planar geography, the natures of different planes and their interactions, moving between planes, and the ruling creatures of those planes.
+    * Religious Lore: Gods and their domains, afterlife beliefs, church traditions, cultural attitudes towards the gods.
+
+  Note: This spell may be used only once per Target per Long Rest.

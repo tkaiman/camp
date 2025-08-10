@@ -1,0 +1,12 @@
+name: Salvation of the Heretic
+incant: Standard
+call: “Wounding 2 by Radiance” “[Name or Description] 4 Radiance to [Abomination, Undead, or Undevoted]”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball, Verbal
+refresh: Spell
+accent: Radiance
+effect: Wounding
+  A special privilege is reserved for those who actively speak in contradiction to that which is good. That which is good is all that god says is; the Tenets of the Inquisitor’s Religion. For those who speak such blasphemy, they are heretics. The Inquisitor may invoke the wrath of their god to charge a spell-ball to call “Wounding 2 by Radiance.”
+
+  If the first Spell-Packet hits and the attack is not prevented, the Inquisitor may call “[Name or Description] 4 Radiance to [Abomination, Undead, or Undevoted]” to the target the Spell-Packet struck.

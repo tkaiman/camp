@@ -1,0 +1,15 @@
+name: Alkharath’s Wrath
+incant: Standard
+call: “Wounding 10 by [Eldritch Accent]”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Eldritch Accent
+effect: Wounding
+description: |
+  This Spell charges two Spell-Balls of immense power. Each one does Wounding 10 with the Sourcerer’s Eldritch Accent.
+
+  Enhancement: The Sourcerer may sacrifice points of Barrier to add damage to the attack at a rate of 1 Barrier for a +1 base damage boost to each of the Spell-Balls.
+
+  Enhancement: If the Sourcerer used the Lightning Accent to cast this spell, the Sourcerer may charge one additional Spell-Ball.

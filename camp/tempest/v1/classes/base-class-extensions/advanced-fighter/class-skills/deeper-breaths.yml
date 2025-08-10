@@ -1,0 +1,13 @@
+name: Deeper Breaths
+cost: 3
+requires: advanced-fighter:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Spikes
+description:
+  Whenever the Fighter is Granted Spikes or has their some number of Spikes Refreshed, they gain an additional one more than Called.

@@ -1,0 +1,4 @@
+type: skill
+parent: ranger
+requires: ranger
+category: Ranger Class Skills

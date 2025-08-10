@@ -1,0 +1,11 @@
+name: Stoneskin
+incant: Standard
+call: “Grant Stoneskin”, “Counter, Stoneskin”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant Natural Armor
+description:
+  The Druid gains 5 points of Natural Armor. The Druid can expend 4 points of Natural Armor to Counter any Materia-Delivered Attack that hits them, Calling “Counter, Stoneskin”.

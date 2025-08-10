@@ -1,0 +1,22 @@
+name: Shadowform
+tags: [insubstantial]
+incant: None
+call: “Grant Shadowform”
+target: Self
+duration: Special
+delivery: None
+refresh: Immediate
+accent: None
+effect: Grant Resistance, Vulnerability
+description: |
+  Shadowdancers most often prefer to leave some portion of themselves within the physical world, allowing them to interact in the most basic of the levels with the world, even while protected. However, some are willing to allow themselves to become more fully immersed in the faded world of shadow.
+
+  While insubstantial, the shadowdancer may activate this Power, and take on a more ephemeral form consisting of:
+
+    * The character may not speak. (The player may speak when necessary to convey game information such as calls and responses.)
+    * The Shadowdancer becomes resistant to Effects and damage that have the Qualifier “to Insubstantial” that do not target Self.
+    * The Shadowdancer may not use any Powers or abilities that do not target Self.
+    * The Shadowdancer may not complete Short Rests.
+    * The Shadowdancer gains Vulnerability to Radiance.
+
+  These Effects continue until the current insubstantial condition ends.

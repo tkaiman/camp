@@ -1,0 +1,37 @@
+name: The Grand Theory of Everything
+requires: universalist:5
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+choices:
+  capstone:
+    name: Capstone Power
+    matcher:
+      id:
+        - boon-from-the-gods
+        - channel-the-arcane
+        - grove
+        - power-of-magic
+description: |
+  Delving into the deepest realms of the foundations of magic, the Universalist surfaces from their research fundamentally altered: They view magic of the Arcane and Divine as one, transmuting between the two with an ease that befuddles even their most learned peers.
+
+  Starting at class-level five, Universalists count Universalist levels as class-levels of Cleric, Druid, Mage, and Sourcerer for the following Cantrips, Spells, and Powers:
+
+    * Eldritch Bolt
+    * Greater Healing Touch
+    * Healing Touch
+    * Life Tap
+
+  This change retroactively applies to all levels of Universalist.
+
+  Finally, the Universalist may choose to gain one of the following Base Class level 10 Archetype Powers:
+
+    * Boon From the Gods
+    * Channel the Arcane
+    * Grove
+    * Power of Magic

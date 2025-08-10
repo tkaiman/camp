@@ -1,0 +1,21 @@
+name: Intimidation Tactics
+tags: [concession]
+incant: Negotiation
+call: "“[Name or Description]: Obey by Fear, [command]”, “Counter, Intimidation Tactics”"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest
+accent: Fear
+effect: Obey, Counter
+description: |
+  Sometimes you need a little push to get a negotiation rolling, and sometimes you just need to get the last word. During a negotiation, include some threatening or frustrated roleplay of some kind,
+  and call one of:
+
+    * “[Name or Description]: Obey by Fear, give a reasonable condition for this request.”
+    * “[Name or Description]: Obey by Fear, offer a reasonable concession to your request.”
+    * “[Name or Description]: Obey by Fear, give a lower price.”
+
+  You can’t benefit from Give and Take from a concession earned in this way.
+
+  Alternatively, you may expend this power to Counter a Fear effect used on you during a negotiation by calling “Counter, Intimidation Tactics.”

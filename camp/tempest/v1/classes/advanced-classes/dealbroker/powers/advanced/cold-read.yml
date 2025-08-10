@@ -1,0 +1,21 @@
+name: Cold Read
+tags: [concession]
+incant: Negotiation (out of combat)
+call: "“[Name or Description] Subtle Discern by Mind: [Question]”"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest, Long Rest
+accent: Mind
+effect: Discern
+description: |
+  While it’s hard to pull off, with training you can glean more from someone’s barest introductions than they might otherwise imagine could be gleaned. During a negotiation you are participating in
+  or observing out of combat, you may Subtle Discern one of the following questions from anyone participating in or observing the negotiation:
+
+    * What do you hope to achieve with this negotiation?
+    * What could I offer you that would change your mind?
+    * Who could I threaten that would change your mind?
+
+  Additionally, with the correct probing, it’s possible for the Dealbroker to identify someone who isn’t a mere mark, but with this technique it isn’t possible to avoid revealing yourself as well. Once per Long Rest, you may use:
+
+    * Discern Final: Are you currently able to Obfuscate Discerns?

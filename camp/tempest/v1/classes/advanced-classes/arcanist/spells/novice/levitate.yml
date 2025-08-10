@@ -1,0 +1,19 @@
+name: Levitate
+tags: [arcane-tool]
+incant: Standard
+call: "“Instruction: Float up to me at walking speed if you wish” or “It Can Be Seen that I am rising up to you”"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Focus Quick 100
+accent: None
+effect: Roleplay
+description: |
+  This spell can be cast for one of two effects but can only be cast while out of combat as it requires some explanation. The first is that it can cause another individual to rise up to be the same altitude
+  as the Arcanist. This is often used to get people out of holes or pits, or to help people up to other heights.
+
+  Note: This spell will fail if the other player cannot physically get to where the Arcanist is and it cannot be used to pull another character down, nor will it free the other from bonds, or other things
+  that might hold the character down. It can only lift one individual and will fail the moment a second individual is lifted.
+
+  The second usage is to allow the Arcanist to rise to the altitude of another character. This is often used to get the Arcanist themself out of pits or chasms. In either case, the spell ends when both
+  characters are at the same level. The rise is gentle and takes place about the same speed as a player can walk.

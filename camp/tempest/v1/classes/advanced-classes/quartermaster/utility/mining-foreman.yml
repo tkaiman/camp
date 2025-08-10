@@ -1,0 +1,12 @@
+name: Mining Foreman
+tags: [crafter]
+requires: prospect-1
+description: |
+  Organized groups of prospectors often elect a leader who keeps track of the count and handles draws from the mining decks. When you are this person, you may perform any of the following actions:
+
+    * Any time you draw from the yield deck or hazard deck on behalf of someone else, you may opt to use a power that would otherwise manipulate your own draw on their behalf.
+    * You may opt to sacrifice your own yield result. If you do so, you must still draw a hazard, but may call “By My Voice Grant X Barrier”, where X is equal to 2x your Prospecting tier (up to 6).
+    * While drawing results, once per prospecting session per Quartermaster class-level, you may call “[Name or Description]: Grant Protect vs. This Hazard” after reading any hazard result and confirming that the card will not be replaced or negated. Note that a character may not receive multiple simultaneous copies of the same Protect, so these Protects must go to other members of your group.
+    * You may choose to rush the expedition, reducing the count to Focus Slow 90 by calling “Rush Expedition”. If you do this, you lose all of the other options granted by this power for the rest of the prospecting session, sacrificing safety for speed.
+
+  When prospecting as a group in this way, hazard effects pulled by the leader take effect simultaneously after all results have been pulled, not when the individual results are announced.

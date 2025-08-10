@@ -1,0 +1,12 @@
+name: Tools of the Trade
+requires: assassin:3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Attunement Slot
+description:
+  The Assassin has an additional Attunement slot. Normally this means the Assassin can be Attuned to up to four magical items, but with other enhancements, this might mean more.

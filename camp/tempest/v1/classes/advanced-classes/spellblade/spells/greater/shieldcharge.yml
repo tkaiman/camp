@@ -1,0 +1,13 @@
+name: Shieldcharge
+incant: Standard
+call: “[Call from Triggered Power]”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Spell
+accent: None
+effect: Imbue
+description: |
+  Upon completion of the Incantation of this spell, a shield wielded by the caster becomes a repository for magic. The Spellblade must immediately cast another Spell (or Cantrip) into the shield, which must have a Delivery of Packet or Weapon, and the shield will take it in, ready to be triggered and release that spell against anyone who has just struck the shield. The spell to be absorbed by the shield may be Bookcast, and does not cost a Spell-Slot to cast, but must be performed by the same character that casts Shieldcharge.
+
+  Any time before the Spellblade completes a Long Rest, while wielding the shield they can make a Verbal Call that is identical to that of the spell cast into the shield, targeted at someone who has just struck the shield (within 2 seconds or so, much like a Counter) and the Shieldcharge is then discharged. The shield cannot have more than one Shieldcharge trigger ready at any one time.

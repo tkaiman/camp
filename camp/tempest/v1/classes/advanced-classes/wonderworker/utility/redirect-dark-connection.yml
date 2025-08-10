@@ -1,0 +1,13 @@
+name: Redirect Dark Connection
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Special
+description: |
+  The Dark is always attempting to find entry into the world, and ritual magic sometimes makes this unavoidable. The Wonderworker can redirect the touch of the Dark for a time, but not without risk or cost.
+
+  When determining the Dark Territory of a ritual of which the Wonderworker is involved, the Wonderworker may elect to create a connection to an implement of their choice to reduce the Dark Territory score.  The Wonderworker may perform this a number of times equal to their active Talismans per event, each attempt reducing Dark Territory by 1.  The attempts can be used on different rituals, or the same ritual.  However, this effect has a backlash, causing the Wonderworker to become a conduit for the Dark.  Unless the Wonderworker is a participant in a ritual and uses this ability to reduce Dark Territory, any ritual in their vicinity (same building, within about 50 feet) increases its Dark Territory by an amount equal to the number of times the Wonderworker has used this ability in this event.

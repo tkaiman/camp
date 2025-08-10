@@ -1,0 +1,12 @@
+name: Withering Glare
+incant: None
+requires: unmatched-gaze
+call: "“[Name or Description]: Short Drain by Agony”"
+target: Individual
+duration: Short
+delivery: None
+refresh: None
+accent: Agony
+effect: Drain
+description: |
+  Whenever the Ringleader uses the Unmatched Gaze power, you may call “[Name or Description]: Short Drain by Agony” instead of its normal Call.

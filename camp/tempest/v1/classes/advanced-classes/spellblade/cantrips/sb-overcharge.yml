@@ -1,0 +1,17 @@
+name: Overcharge
+incant: Standard
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: None
+description: |
+  When this Cantrip is cast while the caster has a Bladechanneled Cantrip active, it adds one additional charge of that Cantrip.
+
+  If, instead this Cantrip is cast while a Novice or Adept-tier Bladechanneled Spell (the spell must also be cast using a Novice or Adept-tier slot)  is charged that normally allows multiple spell-balls, the Spellblade may expend 2 Shard Points. If they do so, Overcharge instead adds one charge to that spell. The additional charge will have the same Call as the other charges, but if those charges have multiple Calls, the caster may choose which charge to mimic. If a charge can be enhanced as it is used (i.e. expend a Spike to do +1 damage with a Packet) then the mimicked charges can also be enhanced.
+
+  Overcharge may only affect any given spell or cantrip once.
+
+  For Example: A weapon had been charged with Char, which normally would give two attacks of “Wounding 3 by Flame”, and then this Cantrip were then used on the weapon, a third charge would be added.

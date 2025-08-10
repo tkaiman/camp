@@ -1,0 +1,13 @@
+name: Shadow Puppet
+incant: "RP: One minute of conversation."
+call: "“[Name or Description] Obey by Darkness: Tell me a secret you think I’d be interested in.”"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Long Rest
+accent: Darkness
+effect: Obey
+description: |
+  While the Shadowdancer’s tricks are often confined to the physical, the dark reaches of the mind often have corners themselves where even deeper shadows lie. While out of combat, the Shadowdancer may engage a prospective target in conversation. Should they do so, they may probe the depths of their target’s mind, causing the target to bring forth a small bounty of possibly useful information.
+
+  Note: While this method’s effectiveness is profound, the aftermath may be significant, as the target will be fully aware of the effect of this Power, and the information will be spoken aloud, for all to hear.

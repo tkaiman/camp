@@ -1,0 +1,17 @@
+name: Unending Stability
+requires: quartermaster:4
+option:
+  values:
+    - Quaffed Alchemy
+    - Topical Alchemy
+    - Scrolls
+    - Repair Kits & Sharpening Stones
+description: |
+  A single category of single-use items you craft that are listed as having Standard expiration instead have a Permanent duration. The Quartermaster must choose from a list of options:
+
+    * Alchemy with an Application of Quaff
+    * Alchemy with an Application of Topical
+    * Scrolls
+    * Repair Kits and Sharpening Stones (Including Enchanted Repair Kits or Sharpening Stones)
+
+  This only functions with crafting that produces a new item — crafts that modify an existing object, creature, or place (such as most Enchantments and Rituals) do not qualify, even if they are consumed after a single use.

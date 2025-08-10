@@ -1,0 +1,11 @@
+name: Missive
+incant: None
+call: None
+target: "Object: Letter"
+duration: Instantaneous
+delivery: Touch
+refresh: Event
+accent: None
+effect: Grant Immunity
+description: |
+  Once per event, you may use your authority to seal a letter or envelope against prying eyes. You must identify yourself on the exterior of the letter or envelope with a seal or signature that positively identifies you - you may use a pseudonym, but may not assume another’s identity or pseudonym for this purpose. Draw a Black Key sigil on the sealed letter or envelope, and write under it: "Can only be opened by <name or other identifier>. Immune to Shatter and Discern until opened.”

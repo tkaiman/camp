@@ -1,0 +1,13 @@
+name: Favorable Winds
+incant: None
+call: "Counter, Dodge"
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous, Short Rest
+refresh: Short Rest
+effect: Counter, Slow
+description: |
+  Whenever the Dervish is hit with a Thrown Weapon, Ranged Weapon, or Materia Attack, they may take a Short Slow Final Effect to Counter that attack. The appropriate call for this defense is “Counter, Dodge.”
+
+  This ability may not be used while the Dervish is Hobbled.

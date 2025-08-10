@@ -1,0 +1,17 @@
+name: Left Hand
+tags: [concession]
+incant: Negotiation (out of combat)
+call: '“[Name or Description]: Taunt 10 by Mind”, “[Name or Description]: Short Obey by Mind: Do not speak to [Individual] unless they ask you a direct question.”'
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Short Rest
+accent: Mind
+effect: Taunt, Obey
+description: |
+  Cunning negotiators sometimes try to glean information from the less socially capable of a party, and you know how to defend against this. You may use your force of personality to bend attention
+  towards yourself by calling “[Name or Description]: Taunt 10 by Mind.” If a negotiation might erupt into combat, this level of attention may be undesirable.
+
+  If the target does not call a defense against the Taunt, whenever the target attempts to speak to someone other than you or one of their own allies, you may call: “[Name or Description]: Short Obey
+  by Mind: Do not speak to [Individual] unless they ask you a direct question.” This may be used at-will until the end of the negotiation, you take a Short Rest, or the target calls a defense against
+  a use of this Obey.

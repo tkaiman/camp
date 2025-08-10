@@ -1,0 +1,16 @@
+name: Form Specialization
+cost: 6
+requires:
+  - advanced-druid:5
+  - favored-form
+incant: None
+call: None
+target: Self
+accent: None
+duration: None
+delivery: None
+refresh: Long Rest
+effect: None
+description:
+  Once per Long Rest, when the Druid casts the Form Spell of their Favored Form, they may use one Novice Spell-Slot ability,
+  one Adept Spell-Slot ability, and one Greater Spell-Slot ability from their Form without expending a Spell-Slot.

@@ -1,0 +1,12 @@
+name: Patch Up
+tags: [crafter]
+incant: Focus Quick 100
+call: '“Rebuild [Item]”, “Mend to Full”'
+target: Shattered Item
+duration: Permanent
+delivery: Touch
+refresh: Long Rest
+accent: None
+effect: Rebuild, Mend
+description:
+  The Quartermaster can perform feats of repair beyond what normal folk could hope to achieve… for a few minutes anyway. The quartermaster sets to work doing whatever repairs can be attempted to a piece of personal equipment, door, or other object smaller than a door. After a Focus Quick 100, call “Rebuild [Item]”. If the repaired item is a Shield, Armor, Door, or other object that can be mended, then call “Mend to Full” on it. The Quartermaster may Rebuild and Mend a number of items equal to their Quartermaster class-level per Long Rest.

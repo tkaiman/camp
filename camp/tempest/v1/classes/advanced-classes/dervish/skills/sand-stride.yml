@@ -1,0 +1,14 @@
+name: Sand Stride
+tags: [Hobbled]
+cost: 4
+requires: dervish:4
+incant: "Sand Stride"
+call: "Cure [Condition]"
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Quick 100
+effect: Cure
+description: |
+  While Hobbled, you may Sacrifice one Life Point to Call “Cure [Condition]” for the Condition that is Hobbling you (Slow, Root, Disable).

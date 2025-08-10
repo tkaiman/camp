@@ -1,0 +1,25 @@
+name: Dungeon Delver
+incant: None
+call: None
+grants:
+  - agility
+  - cold-dead-hands
+  - iron-stomach
+  - sight
+  - leap
+  - trap-sense
+  - keen-hearing
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Power
+description: |
+  The Rogue is simply better at some dungeon-appropriate feats than others.
+
+  A Rogue with this Power automatically gets the following Perks: Agility (2), Cold Dead Hands (3), Iron Stomach (2), and Sight (3).
+
+  In addition, the Rogue gains the following Powers:
+
+  Leap (Rogue Basic), Trap Sense (Rogue Class Skill - 2 CP), Keen Hearing (Rogue Basic).

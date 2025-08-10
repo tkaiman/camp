@@ -1,0 +1,4 @@
+type: skill
+parent: sourcerer
+requires: advanced-sourcerer
+category: Sourcerer

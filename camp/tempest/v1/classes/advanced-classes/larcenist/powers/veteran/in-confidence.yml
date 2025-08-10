@@ -1,0 +1,11 @@
+name: In Confidence
+incant: RP, One minute of conversation
+call: “[Name or Description] Long Charm by Mind”
+target: Individual
+duration: Long Rest
+delivery: Verbal
+refresh: Short Rest
+accent: Mind
+effect: Charm
+description:
+  Out of Combat, the Larcenist can engage with a target for a minute of conversation and unravel their concerns about the character’s intentions. After a minute of conversation, the Larcenist may call “[Name or Description], Long Charm by Mind.”

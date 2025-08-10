@@ -1,0 +1,10 @@
+name: "Word of Power: Refuge"
+incant: "“...to use the Word of Power: Refuge”"
+call: “Short Grant Resistance to Weapon Damage”
+target: Individual
+duration: Short Rest
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Resistance
+description: The Universalist’s attunement with divine magic allows them to grant great protection from unaccented weapon attacks. This spell allows the Universalist to Grant Short Resistance to Unaccented Weapon Attacks. Replicate Enhancement works on this spell despite normal restrictions.

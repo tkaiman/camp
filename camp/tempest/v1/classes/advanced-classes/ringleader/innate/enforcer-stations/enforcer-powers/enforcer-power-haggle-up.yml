@@ -1,0 +1,15 @@
+name: Haggle Up
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Special
+description: |
+  The Factor has resources to bring to bear.  With the Ringleader’s permission, the Factor can spend up to 5 Wealth per Long Rest buying resources of various kinds.  This is done by visiting Staff and trading Wealth for whatever is needed.  The Factor can purchase:
+  For 1 Wealth each:
+    1 Bloom, 1 Ingot, or 1 Hide
+    For 3 Wealth each:
+    1 Night Prize, 1 Rare Mineral, or 1 Harvest

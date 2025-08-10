@@ -1,0 +1,12 @@
+name: Devastating Blows
+tags: [reinforce]
+incant: None
+call: '“Wounding 15”, “Quick Weakness Final”'
+target: Individual, Self
+duration: Instantaneous, Quick 100
+delivery: Weapon, None
+refresh: Short Rest
+accent: None
+effect: Wounding, Weakness
+description:
+  The Fighter makes a weapon hit of extraordinary strength but they then immediately take a Quick Weakness Final Effect.

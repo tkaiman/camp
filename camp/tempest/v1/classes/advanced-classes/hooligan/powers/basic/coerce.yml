@@ -1,0 +1,13 @@
+name: Coerce
+incant: None
+call: "“Long Obey to Living by Fear: Do not speak about seeing this interaction between myself and [Name or Description].”"
+target: Individual
+duration: Long Rest
+delivery: Weapon
+refresh: Short Rest
+accent: Fear
+effect: Obey
+description: |
+  You live longer when you don’t witness nothing. This is especially true in the Hooligan’s line of work, and they’re quick to remind others that it’s often best to see nothing and know nothing.
+
+  The Hooligan may instruct an individual who has witnessed their interactions with another to keep quiet that the event occurred, if only for a little while. It won’t guarantee that they won’t get caught, but it will buy the Hooligan time to tie up some loose ends. The Hooligan must strike the individual with a melee weapon and call “Long Obey to Living by Fear: Do not speak about seeing this interaction between myself and [Name or Description]”, where the Name or Description is the person to whom the Hooligan was talking.

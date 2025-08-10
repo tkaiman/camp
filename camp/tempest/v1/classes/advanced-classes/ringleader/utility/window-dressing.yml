@@ -1,0 +1,13 @@
+name: Window Dressing
+incant: None
+call: “It has been told I am wealthy.”
+target: Self
+duration: Passive
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Special
+description: |
+  It takes money to make money, and when you don’t have money, you make it look like you have money. The Ringleader has developed a knack for making their assets appear more valuable than they are. This, in turn, invites more investors into the Ringleader’s circles, and more investors means more money. The Ringleader receives an additional 2 Wealth for every rank of Profession, and an additional 1 Wealth for Manse and Income (if they have those).
+
+  The Ringleader also gains the ability, once per Short Rest, to claim “It Has Been Told I am Wealthy.” as per the Power Words.

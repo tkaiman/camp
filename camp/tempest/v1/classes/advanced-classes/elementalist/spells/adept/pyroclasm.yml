@@ -1,0 +1,16 @@
+name: Pyroclasm
+tags: [wellspring]
+incant: Standard
+call: Explanation, “[Name or Description] Quick Disable [Limb] by [Flame / Acid]"
+target: Individual
+duration: Short Rest
+delivery: Touch
+refresh: Spell
+accent: Acid, Flame
+effect: Disable
+description: |
+  Calling upon volcanic elemental forces, the Elementalist surrounds themself or another with a Cloud of Pyroclasm until their next Short Rest. If this Spell is being cast on another individual, it can only be cast out of combat. The Cloud of Pyroclasm has charges equal to the Elementalist’s Wellspring pool at time of casting.
+
+  Upon granting this Power, the Elementalist should explain to the target what it does, if necessary. Each time the recipient of Pyroclasm takes damage from a melee weapon, they can expend a Pyroclasm charge and Call “[Name or Description] Quick Disable [Limb] by [Flame / Acid]" against the attacker.
+
+  Note: the Disable doesn’t occur until after the attack, so any damage is still done.

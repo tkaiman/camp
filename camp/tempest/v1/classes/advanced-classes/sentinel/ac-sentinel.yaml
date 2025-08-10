@@ -1,0 +1,50 @@
+name: Sentinel
+type: class
+class_type: advanced
+ranks: 5
+category: Advanced Class
+requires:
+  - level:10
+  - power@2
+  - any:
+      - heavy-armor
+      - advanced-shields
+  - any:
+      - short-weapons
+      - great-weapons
+level_grants:
+  2: sentinel-lp-bonus
+  4: sentinel-bonus-spikes
+  5: sentinel-lp-bonus
+description: |
+  While some portion of the world will always believe that the best defense is a good offense, you have learned that nothing can truly substitute for an excellent defense. There are a number of ways to prevent harm befalling oneself, but the Sentinel seeks to use as many of them as possible so that their vigilant watch won’t end anytime soon.
+
+  Some Sentinels use mundane means to mitigate harm - heavy armors, shields, and parrying blades - just as many find the usage of magical armor, barrier, or shield to absorb the slings and arrows they face.
+
+  A Sentinel will usually be found in the front of the fighting, absorbing, deflecting, and mitigating damage that was directed at them, or meant for their allies. However, this isn’t to say that the Sentinel isn’t dangerous, as many discover to their dismay. The weight of armor and shields, or the magical power behind other protections, can be turned into a weapon unto themselves, and the Sentinel is unafraid to throw their weight around when the situation calls for it.
+
+  ## Reinforce Interactions
+
+  Several powers of the Sentinel have the [Reinforce] tag. These powers interact with the base class Fighter Skill Reinforce, as explained in that class’ skill.
+
+  ## Living Iron Interactions
+
+  A few powers of the Sentinel have the [Artificer] tag. These powers interact with the base class Artisan ability Living Iron, as explained in that class’ skill.
+---
+id: sentinel-lp-bonus
+type: subfeature
+display_type: Bonus
+parent: sentinel
+name: +1 Max LP
+ranks: 2
+level_grants:
+  1: lp:1
+  2: lp:1
+---
+id: sentinel-bonus-spikes
+type: subfeature
+parent: sentinel
+name: Bonus Maximum Spikes
+category: Sentinel Class Bonuses
+display_type: Bonus
+grants: spikes:1

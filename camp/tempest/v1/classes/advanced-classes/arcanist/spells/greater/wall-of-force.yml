@@ -1,0 +1,26 @@
+name: Wall of Force
+tags: [arcane-tool]
+incant: Standard
+call: “Wall of Force”
+target: Special
+duration: Event
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Wall of Force
+description: |
+  Using a white cord, rope or the like that is no longer than 10 feet long, the Arcanist can build an invisible wall of force. To cast the wall, there must be two obvious anchor points for each end that the
+  rope can touch. These anchor points need not be walls, but they must be something obvious, visible and practically unmovable (i.e. two boots will not work, two stumps will) - another Wall of Force is not
+  an acceptable anchor.
+
+  The wall must be basically straight between the two anchors, although the rope can be folded on itself if the anchor points are closer to each other than the length of the rope. Once the rope is laid, and
+  then the Spell is cast (in that order), the caster must remain within easy communication distance of the wall. It is their responsibility to use "Instruction: You may not cross the line, nor attack through
+  it." and "Instruction: Do not move the rope." as necessary (if it helps communicate, “By My Voice” can be added).
+
+  If an individual gets across the rope without knowing that it is impenetrable, they have penetrated the wall. If the Wall is cast out of combat, the Arcanist can put an info card with the wall to give the
+  instructions, but the card must be easily visible and preferably lit.
+
+  The card must mention that the Wall is destroyed by Dispel Magic. If a card is left, the Arcanist can leave the immediate area of the Wall. The Wall can only be taken down by the Arcanist removing the
+  rope and the card (if there is one) or by being Dispelled. Until the Wall is taken down, the Arcanist may not refresh the Spell-Slot that was used to cast it.
+
+  Note: Any level of Disjunction or similar Ritual Magic will also destroy the wall.

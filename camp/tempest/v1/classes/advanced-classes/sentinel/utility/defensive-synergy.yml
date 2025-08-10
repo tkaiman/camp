@@ -1,0 +1,14 @@
+name: Defensive Synergy
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description: |
+  While wielding both a Shield and wearing physical armor, the Sentinel has the following two abilities:
+
+    * May spend a spike and 4 armor points to call “Rebuild Shield”
+    * May call “Shatter Shield to Self” and  call “Refresh 1 spike and Mend 4 to Armor to Self”

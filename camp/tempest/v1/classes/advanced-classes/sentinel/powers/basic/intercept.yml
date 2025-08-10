@@ -1,0 +1,14 @@
+name: Intercept
+tags: [reinforce]
+incant: None
+call: '"Short Grant Power" + Description'
+target: Other Individual
+duration: Short Rest
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: Grant Power
+description: |
+  The Sentinel touches another they are trying to protect in this battle. The recipient gains the power to Counter a melee attack as long as they are in melee range of the Sentinel who used this power on them.
+
+  The recipient calls “Counter, Intercept” when they use this counter. All of this needs to be explained to the recipient.

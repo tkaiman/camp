@@ -1,0 +1,22 @@
+name: Just You and Me
+incant: None
+call: “[Name or Description] Taunt 100 Final”
+target: Individual, Self
+duration: Instantaneous, Short Rest
+delivery: Verbal, None
+refresh: Long Rest
+accent: None
+effect: Taunt, Grant
+description: |
+  The hooligan knows that sometimes the Crew just isn’t up to a particular task, and that it needs to be handled by the Hooligan themself.  If this power is not prevented, the Hooligan’s spikes are immediately fully refreshed.
+
+  Functionally, this is a one on one duel, so while the target of the Taunt is engaged by no one else the Hooligan gains the following benefits:
+
+    * The Hooligan gains Plus Spike Damage equal to the number of their Crew present.
+    * The Hooligan gains resistance to Unaccented Damage and Effects.
+
+  Note: The Plus Spike Damage bonus may, by itself, exceed the Stacking norm of +3 since it’s from a single source.
+
+  If the Hooligan is victorious (i.e. kills, downs, or renders Helpless the foe), they are immediately Healed to Full and Cured of any Conditions they wish.
+
+  If the duel stops for any reason, all ongoing benefits are lost and the power ends.

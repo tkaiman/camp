@@ -1,0 +1,20 @@
+name: Add Memory
+requires:
+  - mentalist:4
+  - psychic-surgery
+cost: 3
+tags: [psychic-surgery-procedure]
+incant: RP, Psychic Surgery
+call: Explanation
+target: Other Individual
+duration: Short Rest
+delivery: Touch
+refresh: Long Rest
+accent: Mind
+effect: Special
+description: |
+  The Mentalist describes the memory they wish to implant, including when (generally) it would have occurred. Only one "scene" can be added per use of this Power, but the target will adapt their own memory around the added scene to make it fit and seem believable. This Power can be used quite nefariously, for example: implanting a memory of a commanding officer giving orders, or a memory of a beloved parent’s deathbed final wish might be very compelling.
+
+  It will be up to the target how exactly the new memories affect their behavior, but after a Short Rest the target will be able to (at the option of the target’s portrayer) break away from the false memory, seeing it for what it is.
+
+  Implanting a memory is hard work, and the Mentalist will take a Drain Effect once the Power is completed.

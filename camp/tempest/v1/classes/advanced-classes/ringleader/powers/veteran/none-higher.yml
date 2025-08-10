@@ -1,0 +1,13 @@
+name: None Higher
+incant: None
+call: "“By My Voice: Cure Dominate, Obedient, and Charm to Enforcers of [Name] by Fear, Short Grant Resistance to Dominate, Obedient, and Charm to Enforcers of [Name] by Fear”"
+target: Individuals (Enforcer)
+duration: Short Rest
+delivery: Voice
+refresh: Short Rest
+accent: Fear
+effect: Dominate
+description: |
+  Either with bonds of comradery, fear, or brotherhood, it becomes nearly impossible to compel the Ringleader’s circle to harm each other.  If the Ringleader witnesses any of their enforcers become afflicted with the Dominate, Obedient, or Charm conditions, they may use this power.
+
+  The Ringleader demands that their enforcers return to them and inure them against further treachery, with the call “By My Voice: Dominate to Enforcers of [Ringleader’s Name], Short Grant Resistance to Dominate, Obedient, and Charm to Enforcers of [Name] by fear”

@@ -1,0 +1,16 @@
+name: Acid Spittle
+incant: Standard
+call: “Wounding [X] by [Acid/Poison]”
+target: Individual
+accent: Acid, Poison
+duration: Instantaneous
+delivery: Packet, Weapon
+refresh: Spell
+effect: Wounding
+description: |
+  By miming coating a Weapon, Spell-Ball, or Spell-Packet with venom the Druid can cause it to be covered in either Acid or Poison. The Druid may do up to their
+  Druid Class-Level in damage, split up however they would like among Spell-Packets and Spell-Balls. The Druid may not have more than one thing envenomed (by
+  this Power) at a time.
+
+  For Example: An 11th level Druid could do five Spell-Packets doing “Wounding 1 by Acid” each, then a melee strike doing “Wounding 4 by Poison”, and then
+  a Spell-Ball with “Wounding 2 by Poison”. Alternatively, the same 11th level Druid could do one Spell-Ball that did “Wounding 11 by Acid”.

@@ -1,0 +1,17 @@
+name: Line Cook
+tags: [crafter, mystic]
+incant: None
+call: None
+target: Special
+duration: Instantaneous
+delivery: Ingested
+refresh: Long Rest
+accent: None
+effect: Special
+description: |
+  Quartermasters are often responsible for ensuring that their groups stay well fed. While any good Quartermaster can serve functional food, some develop a talent for meals that inspire. If you serve a meal that you prepared, you may choose one of the following benefits to grant to up to 10 people who consume it. If you cooked the meal using an Enhanced Cookpot, you instead grant both.
+
+    * Long Grant +1 Maximum Spikes
+    * Long Grant +1 Maximum Life Points
+
+  If the food is served as refreshments at a party thrown by someone using the Socialite Party Planner power, you may additionally tell the planner: “Explanation: You may use all single-use Party Planner abilities twice at this party.”

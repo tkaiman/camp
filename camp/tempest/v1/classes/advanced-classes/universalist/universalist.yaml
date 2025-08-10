@@ -1,0 +1,41 @@
+type: class
+category: Advanced Class
+class_type: advanced
+ranks: 5
+name: Universalist
+sphere: dual
+spells_known:
+  0: 0
+  1: 2
+  2: 4
+  3: 6
+  4: 8
+  5: 10
+requires:
+  - level:10
+  - divine.spell_slots:3
+  - arcane.spell_slots:3
+  - spell@2
+  - basic-faith
+  - basic-arcane
+  - any:
+      - peacecaster
+      - warcaster
+      - extended-capacity-novice:3
+      - advanced-recharge
+flags: flag+universalist
+description: |
+  There have always been those that believe the divisions between Arcane and Divine casters are artificial and only for the narrow-minded. Among the truly enlightened it is known that the split between these forms of magic exist only in the minds of those casting those spells, not in reality. Those that are brave enough to look into these concepts and meld all magic into one are called “Universalists,” and they are few and far between.
+
+  This Lost Path is discovered through research in the Library of the Unbound and a quest to break down the barriers in one’s own mind between Arcane and Divine, Self and Other, Nature and Cosmos. This quest is often deeply personal and requires both preparation of spirit, mind, and body. Many who undertake the quest do not return, or at least do not return sane.
+
+  However, those that do return fundamentally changed: magic is now a unified force to be wielded without bound or limit - only those imposed by the self are truly barriers to greatness and understanding.
+
+  Throwing off the shackles of what one once thought were insurmountable laws of magic, these pioneers find new and innovative methods of the casting of magic far beyond the rudimentary understanding of those once long ago considered peers, now left in the darkness of obscurity.
+
+
+  ### Base Incant
+
+  > “I call on Magic the one true Source, which sets the cosmos on its course,
+  > From planes beyond, my cosmic brew, By Word and Will is forged anew,
+  > With eldritch art and faith ordained, I channel power unconstrained...”

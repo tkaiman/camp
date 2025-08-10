@@ -1,0 +1,13 @@
+name: Intrusion
+incant: None
+call: '“Grant Insubstantial”, “Cure Insubstantial”'
+target: Self
+duration: Special
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Grant Insubstantial, Cure
+description: |
+  While in contact with a building, the Assassin may attempt to pierce the defenses of that building, allowing them entrance. While touching a door or other similar building entrance, the Assassin may call “Grant insubstantial” and enter the building. The Assassin can manipulate the door or similar entrance. This insubstantial condition ends when the Assassin is no longer touching the door, completes a Slow 30 count, or becomes Helpless.  The Assassin cannot do anything besides enter the building while using this Power.
+
+  Note: This ability will pierce Havens and other such building defenses, however, Enhanced Havens will still prevent entry.

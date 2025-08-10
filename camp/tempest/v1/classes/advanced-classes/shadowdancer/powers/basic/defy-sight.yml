@@ -1,0 +1,11 @@
+name: Defy Sight
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Obfuscate vs Expose
+description:
+  Drawing the Darkness around them, the Shadowdancer can elude even the most persistent of hunters. The Shadowdancer gains a single Obfuscate vs Expose.

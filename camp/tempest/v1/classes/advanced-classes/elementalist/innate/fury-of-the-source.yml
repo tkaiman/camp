@@ -1,0 +1,10 @@
+name: Fury of the Source
+requires: elementalist:5
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+description:
+  A practiced Elementalist can take magic that has already been cast upon their person, and bend it to their ends. By voluntarily ending a beneficial Grant or Imbue effect already affecting the caster, the Elementalist can charge an additional Spell-Ball of a Spell that uses one of the fundamental element accents. This immediately empties the Elementalist’s Wellspring pool, and may only be used if the Wellspring Pool has 5 or more points.

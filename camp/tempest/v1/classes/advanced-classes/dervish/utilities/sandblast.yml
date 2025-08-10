@@ -1,0 +1,11 @@
+name: Sandblast
+incant: None
+call: “Wounding 2 by Acid”
+target: Individual
+delivery: Weapon
+accent: Acid
+duration: Event
+refresh: Immediate
+effect: Wounding
+description: |
+  After using a Power with a Call of "Counter, Dodge” while wielding two weapons or a thrown weapon, the Dervish may make their next two attacks with the Call "Wounding 2 by Acid." This call may not be altered.

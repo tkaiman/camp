@@ -1,0 +1,15 @@
+name: Artistry of Arms
+tags: [artificer]
+ranks: 3
+incant: Focus Quick Count 100
+call: “Short Grant +1 Base Damage with this Weapon”
+target: Individual
+delivery: Touch
+accent: None
+duration: Short Rest
+refresh: Long Rest
+effect: Grant Base Damage
+description:
+  The Artisan can spend a Quick Count of 100 Focusing on a weapon out of combat, enhancing and preparing it at the Tinker’s Forge;
+  this process spends a Forgesource, which is used to power up the weapon. Until the wielder completes a Short Rest, the weapon,
+  in their hands, will do +1 Base Damage.

@@ -1,0 +1,16 @@
+name: Mind Games
+requires: mentalist:1
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Grant Accent
+description: |
+  The Mentalist knows that magic begins in the mind, and so is able to simply alter the state of his allies and foes minds to achieve the effect they wish. The Mentalist may add or alter the Accent of any Mage or Mentalist spell they cast to the Mind Accent.
+
+  Once the character has at least two Mentalist class-levels, they may instead add or alter the Accent of any Mage or Mentalist spell they cast to the Fear Accent.
+
+  Once the character has at least four Mentalist class-levels, they may instead add or alter the Accent of any Mage or Mentalist spell they cast to the Illusion Accent.

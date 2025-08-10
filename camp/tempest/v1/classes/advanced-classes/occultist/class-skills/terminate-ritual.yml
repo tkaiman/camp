@@ -1,0 +1,13 @@
+name: Terminate Ritual
+cost: 4
+requires: occultist:4
+incant: None
+call: “Terminate Ritual”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Special
+description:
+  Once per Long Rest, during a ritual or enchantment where you are Ritualist, if you do not like how things are going you may end the ritual safely by calling “Terminate Ritual”. If this is used after the Final Card has been revealed, all components used in the ritual are lost. If used before the Final Card, approximately half the components will survive, at the discretion of the Ritual Marshal. If used during an unmarshalled ritual, all components are saved.

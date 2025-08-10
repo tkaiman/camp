@@ -1,0 +1,16 @@
+name: Threatening Veneration
+cost: 3
+tags: [patron]
+requires: warlock:2
+incant: Invocation of your Patron, “By the [attribute] of [Patron], I [do thing]!” or “By [Patron]’s [attribute], I [do thing]!” example “By Brogdar’s toes, I incinerate my foes!” (bonus points if it rhymes)
+call: None
+target: Self
+duration: Instantaneous
+delivery: Spell-Packet, Spell-Ball
+refresh: Short Rest
+accent: None
+effect: Refresh
+description: |
+  By invoking the awesome might of your Patron, you may bolster your own power. After calling out in exaltation of your Patron to accomplish your goal, the Warlock may immediately charge a Spell-Packet or Spell-Ball to repeat (depending on what the original effect used) the same call they just made. Any Packets charged with this Power may not be subsequently used to charge another Packet with this Power.
+
+  If the exaltation of your Patron rhymes or in your opinion provides significant gravitas or exaltation to your Patron, and the power the copied call is from charges multiple packets, you may charge an additional Spell-Ball or Spell-Packet.

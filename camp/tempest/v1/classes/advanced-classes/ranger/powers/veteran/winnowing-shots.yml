@@ -1,0 +1,11 @@
+name: Winnowing Shots
+incant: None
+call: “Wounding 10”
+target: Individual
+duration: Instantaneous
+delivery: Projectile or Thrown
+refresh: Short Rest
+accent: None
+effect: Wounding
+description:
+  Winnowing Shots deals “Wounding 8” to the Ranger’s Mark, however, this power can not be used on any other target and it does not benefit from Aiming, Spikes, or other powers that increase damage. A Ranger may use this power a number of times per Short Rest equal to their Ranger class-level.

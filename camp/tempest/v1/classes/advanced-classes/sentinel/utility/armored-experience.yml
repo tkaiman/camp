@@ -1,0 +1,11 @@
+name: Armored Experience
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Plus Armor
+description: |
+  The Sentinel is accustomed to getting the most out of their worn armor, even when not deliberately planted and ready to fight. The Sentinel, when not in Sentinel’s Stance, adds half of the bonus normally gained from Sentinel’s Stance to their armor, rounded down.

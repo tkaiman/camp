@@ -1,0 +1,16 @@
+name: Empower the Departed
+requires: medium
+incant: None
+call: "“Short Grant Strong Spirit to Spirit, [explanation if necessary]”, “Instruction to Spirit: You may converse with me and answer questions as if you were not a Spirit.”"
+target: Other Individual Spirit
+duration: Short Rest
+delivery: Touch
+refresh: Immediate
+accent: None
+effect: Grant, Instruction
+description: |
+  While the Occultist usually works in the medium of stray spirits that linger in the world, the stronger spirits of the mortal races are not immune to their machinations. The Occultist calls upon their Spirits’ armor, and empowers the spirit of a recently deceased mortal. By Sacrificing one point of Protection of the Spirits, the Occultist may Grant a spirit the [Strong Spirit](../strong-spirit) Supernatural Perk, reproduced below for convenience. Additionally, the Occultist may Sacrifice an additional point of Protection of the Spirits to give the targeted Spirit the ability to fully communicate with the Occultist, instead of the usual restriction to eye contact and gestures allowed by Strong Spirit.
+
+    ### Strong Spirit
+
+         Normally, when a character gains the Spirit Type, they are incapable of looking at others or communicating. A character with a strong spirit can make eye contact and even make gestures (although charades-type communication is simply too difficult). In addition, they need not head directly to the Spirit Well, but can go to one familiar location or person first and can remain in that spot for up to ten minutes (Slow 600) before heading to the Well.

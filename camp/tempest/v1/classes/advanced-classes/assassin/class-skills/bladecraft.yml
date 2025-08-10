@@ -1,0 +1,12 @@
+name: Bladecraft
+cost: 3
+incant: None
+call: “Counter, Bladecraft"
+target: Weapon
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description:
+  The assassin’s blade is among their most important tools, thus many in the trade take extra precautions to ensure their tools do not go unprotected. When wielding a blade of either Hand or Short length and it is struck by a Shatter Effect the Assassin may expend a spike to Counter that Effect.

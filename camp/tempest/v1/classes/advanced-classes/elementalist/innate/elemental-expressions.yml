@@ -1,0 +1,17 @@
+name: Elemental Expressions
+requires: elementalist:4
+incant: None
+call: None
+target: Self
+duration: Passive, Instantaneous, Quick 100
+delivery: None
+refresh: None, Immediate
+accent: Acid, Flame, Ice, Lightning
+effect: Wounding, Disable, Root, Repel
+description: |
+  The Wellspring pool of the Elementalist becomes more flexible, letting the elementalist charge Spell-Balls with additional effects for two points of Wellspring each.
+
+    * “Wounding 2 by [Acid / Flame / Ice / Lightning]”
+    * “Quick Disable [Limb] by [Acid / Flame / Ice / Lightning]”
+    * “Quick Root by [Acid / Flame / Ice / Lightning]”
+    * “Quick Repel by [Acid / Flame / Ice / Lightning]”

@@ -1,0 +1,23 @@
+name: Lethal Intuition
+incant: None
+call: '“[Name or Description], Subtle Discern by Mind: [Question]”, “Lantern Spirit, Subtle Discern: [Question]”'
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Long Rest
+accent: Mind, None
+effect: Discern
+description: |
+  Knowing a target’s weaknesses is fundamental to planning an attack. The more that is known, the better the outcome is likely to be. By engaging the mark beforehand, important information can be gleaned.
+
+  Out of Combat, The Assassin may ask the following Subtle Discerns (once per Long Rest):
+
+    * “Are you immune or resistant to the Poison Accent?”
+    * “What are your Maximum Life Points?”
+    * “Can you cast Spells or Cantrips?”
+
+  In addition, on an staffed encounter, such as a mod, before the encounter begins you may ask the Lantern Spirit each of these (once per Long Rest):
+
+    * “Lethal Intuition: Are there traps present in this encounter?”
+    * “Lethal Intuition: Do I sense the presence of poison in the area?”
+    * “Lethal Intuition: Are there other entrances I should know about?“

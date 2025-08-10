@@ -1,0 +1,17 @@
+name: "Word of Power: Simplicity"
+incant: "...to use the Word of Power: Simplicity"
+call: None
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: None
+description: |
+  The Universalist’s understanding that “All Magic is One” allows them to simplify the casting process tapping into the “true” means of casting spells of most minor magical spells.
+
+  The Universalist may cast all Cantrip, Novice, and Adept spells by substituting the word “Truecast” and the name of the spell for the entire Incantation.  This also works for Universalist Greater spells.  It does not work on other Tier 3 Advanced Class Greater spells.  Truecast can only be used on spells that require an Incantation to cast.
+
+  For Example: To cast Gigacharge, a Spell that normally requires ““I call on Magic the one true Source, which sets the cosmos on its course, From planes beyond, my cosmic brew, By Word and Will is forged anew to cast gigacharge.” the Universalist could instead say “Truecast: Gigacharge.”
+
+  The Universalist may make these substitutions to their incants at-will.

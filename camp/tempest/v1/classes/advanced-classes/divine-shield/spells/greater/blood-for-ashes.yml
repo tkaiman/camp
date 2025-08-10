@@ -1,0 +1,11 @@
+name: Blood For Ashes
+incant: Standard
+call: “[Name or Description] [X] Flame”
+target: Individual
+delivery: Verbal
+accent: Flame
+duration: Instantaneous
+refresh: Spell
+effect: Damage
+description: |
+  The Divine Shield releases a bolt of flame from the heavens, striking an opponent. Blood for Ashes cannot target a character the Divine Shield considers an ally. This Spell does 1 point of damage per point left in the character’s Divine Pool (to a maximum of two points per character level) and empties the Pool completely. If this bolt is Prevented, the Divine Shield adds 10 points to their Divine Pool.

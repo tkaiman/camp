@@ -1,0 +1,14 @@
+name: Tink
+tags: [artificer]
+incant: Focus Quick Count 30
+call: '“Mend Physical Armor to Full”, “Grant 5 Barrier”'
+target: Individual
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Mend
+description:
+  The Artisan can spend a Quick Count of 30 adjusting and repairing the armor, making it fit better and protect better than it has
+  any right to. The Artisan will fully repair the armor, which must be physical and, if the Artisan has the Artificer specialization,
+  also grant the wearer five points of Barrier.

@@ -1,0 +1,12 @@
+name: Little Garden
+cost: 1
+requires: advanced-druid:2
+incant: None
+call: None
+target: Self
+accent: None
+duration: None
+delivery: None
+refresh: Event
+effect: None
+description: The Druid has a little garden in their grove, and can get Bloom to grow there. At the beginning of each Event, if the Druid has created a Grove (using the Grove Innate Power) the Druid can get four Bloom from Logistics with their other income. This does not count against any Foraging limit they have.

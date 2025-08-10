@@ -1,0 +1,24 @@
+name: Memorysculpt
+requires:
+  - mentalist:1
+  - psychic-surgery
+cost: 3
+tags: [psychic-surgery-procedure]
+incant: "RP: Psychic Surgery, Explanation"
+call: None, "Dispel Obey by Mind."
+target: Other Individual
+duration: Permanent
+delivery: Touch
+refresh: Long Rest
+accent: Mind
+effect: None
+description: |
+  The Mentalist, with help of the target, walks through a moment in the Individual’s life, and makes suggestions to cause minor alterations to the memory of those events. The bond between both the caster and the recipient must stay stable, therefore, any changes made to the Individual’s life must be agreed upon by the recipient. Alternatively, the Mentalist can help restore memories that were altered by previous uses of this Power. The effects of this Power are permanent and cannot be Cured or Dispelled.
+
+  In addition, the Mentalist gains the ability to sift the patient’s mind of influences outside their control. After at least sixty seconds of Psychic Surgery roleplay, the Mentalist may call "Dispel Obey by Mind."
+
+  For Example: Ishkta the Paladin has just discovered that the Candlemen– the clergy of religious worship that he followed in his youth– was ridden with evil, terrible people, however, his only memory of them from his youth was one of reverence and joy, it was a celebration. He finds Imora, a Mentalist, and has her use Memorysculpt on him.
+
+  In the memory he describes the celebration: the Candlemen come to the celebration bearing gifts of mead and gold, but then had to shortly leave before having much interaction with the celebrants. Imora suggests she changes the gifts of mead and gold to pig intestines and mud-pie cakes, while also leaving the memory of herself as a celebrant as an anchor for the change. Ishkta agrees to the changes, and Imora weaves her mental magic to make it so.
+
+  Afterwards, Ishkta no longer holds any kindness for the Candlemen - as his last memory of them involved pig intestines and mud cakes at a celebration.

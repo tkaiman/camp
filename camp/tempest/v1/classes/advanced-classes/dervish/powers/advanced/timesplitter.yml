@@ -1,0 +1,16 @@
+name: Timesplitter
+tags: [Whirlwind]
+incant: None
+call: “Piercing 2 by Time”, “Grant Insubstantial to Self”, “Cure Insubstantial”
+target: Individual, Self
+delivery: Thrown Weapon, None
+accent: Time
+duration: Instantaneous
+refresh: Short Rest
+effect: Piercing, Grant Insubstantial, Cure
+description: |
+  When the Dervish lands a Thrown Weapon they may Call “Piercing 2 by Time.” If that Effect is not Prevented, they may then utilize the remaining Effect described below:
+
+  As soon as the Thrown Weapon comes to rest, the Dervish becomes Insubstantial and must move as quickly and directly as is safely possible to the spot where the weapon came to rest. They may not walk part way and then end the Power.
+
+  Once the Dervish arrives where the Thrown Weapon came to rest, they may choose to pick up their Thrown Weapon. Whether they collect their weapon or not, they must then Call loudly “Cure Insubstantial to Self.” Between connecting with the Piercing attack and the end of the Power, the character can do nothing besides move to the weapon's location and pick up the weapon.

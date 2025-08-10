@@ -1,0 +1,15 @@
+name: Voidsliver
+incant: Standard
+call: "“1 Darkness”, “Wounding 2 to Insubstantial”"
+target: Individual
+duration: Instantaneous
+delivery: Spell-Packet
+refresh: Immediate
+accent: Darkness
+effect: Damage, Wounding
+description: |
+  The Warlock calls forth a sliver of the void beyond the Veil to slice apart their foes. With concentration this sliver can pierce even those phased out with the world, rendering them susceptible to the prepared arcanist.
+
+  Once cast, this cantrip charges a packet with “1 Darkness.” If the Warlock expends a Spike during the charging of the Spell-Packet, the call for that Spell-Packet is changed to “Wounding 2 to Insubstantial,” as the Warlock draws upon the destructive nature of the void.
+
+  In addition, the Warlock may charge up to half their Arcane Spellcasting class-levels in Spell-Packets from this spell at any one time by completing the incant for each charge. If the Warlock uses any other Powers, is rendered Helpless, or completes a Short Rest, these charges are lost.

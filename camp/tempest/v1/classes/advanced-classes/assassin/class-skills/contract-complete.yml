@@ -1,0 +1,15 @@
+name: Contract Complete
+cost: 3
+requires: assassin:5
+incant: None
+call: '“Grant Long Rest”, “Refresh [Power]”'
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Event
+accent: None
+effect: Grant Long Rest, Refresh
+description: |
+  Upon completion of a Contract (as per Contract Killing), the Assassin may revel in their success by buying a round of drinks with friends, teammates, or other individuals in the know (place ten wealth in the Ash Bin). Should they do so, they may choose to benefit from a Long Rest. This Power cannot be Refreshed.
+
+  Additionally, once per Event even if they have not completed a Contract, the Assassin may refresh a Basic or Advanced Assassin power if they are in an assassination Contract.

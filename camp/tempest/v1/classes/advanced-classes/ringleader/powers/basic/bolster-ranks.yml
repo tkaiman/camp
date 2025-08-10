@@ -1,0 +1,11 @@
+name: Bolster Ranks
+incant: None
+call: “By My Voice to Enforcers of [Name], Grant +3 Barrier.”
+target: Enforcer(s)
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Grant Barrier
+description:
+  Barking words of command, the Ringleader demands the shields of cannon-fodder to stay up, and to keep them protected. After finishing a short string of orders to their Enforcers, the Ringleader may call “By My Voice to Enforcer of [Ringleader’s Name], Grant 3 Barrier.”

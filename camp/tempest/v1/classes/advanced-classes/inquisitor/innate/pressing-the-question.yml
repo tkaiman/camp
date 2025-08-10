@@ -1,0 +1,28 @@
+name: Pressing the Question
+requires: inquisitor:1
+incant: "RP: Interrogation, forceful or accusatory questions."
+call: "“[Name or Description] Discern by Radiance: [Question]”"
+target: Individual
+delivery: Verbal
+accent: Radiance
+duration: Instantaneous
+refresh: Event
+effect: Discern
+description: |
+  This Power can only be used out of combat. The Inquisitor brings to bear the divine gaze of truth and justice through intense questioning and sharp words. When needed, they can apply the divine might of their faith to those questions. The Inquisitor may choose a single target while in the midst of an interrogation, and ask the following questions, any number of questions from this list may be asked during the interrogation with only a single “use” of this power:
+
+  * What is your full name?
+  * What Religion are you devoted to?
+  * What Culture do you hail from?
+  * Where did you most recently come from?
+  * Have you knowingly spoken an untruth in the last five minutes?
+  * Has your memory ever been altered?
+  * What Classes do you have?
+  * What Breeds are you?
+  * Have you ever resurrected?
+  * Have you killed a living creature in the last hour?
+  * Do you have [item] in your possession right now?
+  * What Types do you have?
+  * What Inherent Conditions do you have?
+
+  They may use this Power a number of times equal to their Inquisitor class-level per event.  If this power is used on an individual the Inquisitor has Branded (see below) the Discern is delivered as Final.

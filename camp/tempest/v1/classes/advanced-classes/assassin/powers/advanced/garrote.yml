@@ -1,0 +1,12 @@
+name: Garrote
+ranks: 2
+incant: None
+call: “Silence by [Agony/Force]”
+target: Individual
+duration: Event
+delivery: Weapon
+refresh: Short Rest
+accent: Agony, Force
+effect: Silence
+description:
+  The character can strike another in the throat or vocal chords (for those creatures without a throat) and cause it to go quiet. This lasts until the silenced Condition is Cured. The strike should not actually target the player’s throat.

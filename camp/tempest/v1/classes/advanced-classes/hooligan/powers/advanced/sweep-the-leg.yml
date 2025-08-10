@@ -1,0 +1,14 @@
+name: Sweep the Leg
+ranks: 2
+incant: None
+call: “Short Disable Both Legs by Force”
+target: Individual
+duration: Short Rest
+delivery: Weapon
+refresh: Short Rest
+accent: Force
+effect: Disable, Refresh
+description: |
+  The Hooligan knows that a foe that can’t stand is one that is ill-equipped to fight: by taking out their opponents legs, the Hooligan is sure to have the high ground.
+
+  The Hooligan may swing for “Short Disable Both Legs by Force” once per Short Rest. If this attack is Prevented, the Hooligan may Refresh this power once per Short Rest.

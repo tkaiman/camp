@@ -1,0 +1,18 @@
+name: Campaign of the Faith
+cost: 1
+requires: exemplar:1
+incant: Roleplay extolling the virtues of one of your Oaths, your Deity, or Patron
+call: "[Name or Description] Explanation, Long Grant Protect vs [Darkness, Radiance, or the Chosen Accent]"
+target: Other Individuals
+duration: Long Rest
+delivery: Verbal
+refresh: Long Rest
+accent: "[Chosen Accent]"
+effect: Grant Power, Protect
+description: |
+  After extolling the virtues of one of your Oaths, your Deity, or Patron for approximately 5 minutes without interruption, the Exemplar may grant a number of other characters equal to the total
+  of their Cleric and Exemplar class-levels with one of the following effects, chosen by the Exemplar: all participants must receive the same effect. This may only be granted to characters who
+  listen to the entire duration of the Exemplar’s sermon and must be used before the next Long Rest.
+
+  * The ability to change a single unaccented spike attack into a spike attack of the Divine Hand’s [Chosen Accent] with an additional +1 Bonus Spike Damage.
+  * A Protect Vs. One of: Darkness, Radiance, or the [Chosen Accent]

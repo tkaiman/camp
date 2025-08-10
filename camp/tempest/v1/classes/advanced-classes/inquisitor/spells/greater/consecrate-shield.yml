@@ -1,0 +1,13 @@
+name: Consecrate Shield
+incant: Standard
+call: “Short Grant Counter by Radiance”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: Radiance
+effect: Grant Counter
+description: |
+  The Inquisitor calls out to their god to install a blessing upon their shield. Consecrate Shield makes the Inquisitor’s shield Counter Effects that strike it. When the caster’s shield is struck by an Effect, the Inquisitor may call “Counter, Sacred Shield” once.
+
+  Additionally, if the shield bears the divine sigil of the Inquisitor’s god, when casting the spell, the Inquisitor may expend Spikes to Counter additionally Effects that hit the shield one-for-one basis, but the shield may never Counter more Effects than the Inquisitor's class-Level of the Inquisitor class in a single casting.

@@ -1,0 +1,11 @@
+name: Avalanche Assault
+incant: None
+call: “Wounding 12”
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Short Rest
+accent: None
+effect: Damage
+description:
+  The Sentinel learns to take the burdens of their defenses, and throw that weight behind one of their blows to mighty effect. To use this power the Sentinel must be wearing at least 8 points of armor from any source and using a shield.  The Sentinel may call “Wounding 12”.

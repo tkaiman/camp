@@ -1,0 +1,15 @@
+name: Perseverance
+incant: Standard
+call: “Grant Protect vs [Force, Time, or Illusion] to Worshiper of [Religion/Deity]”, “Resist, Perseverance”
+target: Individual, Self
+duration: Event, Short
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Protect, Grant Power
+description: |
+  The Inquisitor calls upon the temperance of their god and bolsters them and followers of their god. At the time of casting this spell, the Inquisitor may Grant Protection to themselves and any Individual the Inquisitor has confirmed follows the same Religion as the Inquisitor using their Detect Devotion Cantrip.  The Inquisitor may do this a number of times equal to their Inquisitor class-level so long as each person who receives the boon worships the same Religion or Deity.
+
+  The Inquisitor may also call “Resist, Perseverance” to a number of Root, Disarm, or Disable effects equal to their inquisitor class level until they complete a short rest.
+
+  Note: Worshiping the same deity does not necessarily mean worshiping the same Religion.

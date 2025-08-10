@@ -1,0 +1,20 @@
+name: Rewind
+tags: [patron]
+incant: Standard
+call: '“Grant Insubstantial to Self by Time”, “Cure Insubstantial to Self by Time”, “[Patron’s Name]”'
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: Time
+effect: Grant Insubstantial, Cure
+description: |
+  When this spell is cast, the Warlock inscribes a location with a symbol of their choosing. The Symbol must be at least 6” by 6”, and must designate the caster’s current Life Point total and Spikes at the time of casting.
+
+  Until the Warlock finishes a Long Rest, they may activate this power by incanting the name of their patron to become Insubstantial and immediately move to their inscribed symbol and activate it. The Warlock may activate this power while Dying, Dead, or Helpless, but not while a Spirit.
+
+  Once Activated, the Warlock’s current Life Points and current Spikes are set to an amount equal to what was inscribed on the symbol and then they must Dispel Insubstantial. This does not count as a form of healing, as it is a change of the number rather than an increase (or decrease in some cases).
+
+  If the Symbol is no longer present or otherwise defaced, their Current Life Points will be set to one and their current Spikes set to zero, and then they will take a Dispel All Conditions by Darkness Final.
+
+  Note: The Warlock may not have more than one Rewind symbol active.

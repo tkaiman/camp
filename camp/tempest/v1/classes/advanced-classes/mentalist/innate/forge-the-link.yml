@@ -1,0 +1,18 @@
+name: Forge the Link
+requires: mentalist:1
+incant: "30 seconds of RP: Drawing memories and mental energy from the target."
+call: '"Short Drain to Willing by Mind”, ”Short Obey to Willing by Mind: Speak no lies to me."'
+target: Other Individual
+duration: Short Rest
+delivery: Touch
+refresh: Immediate
+accent: Mind
+effect: Drain, Obey
+description: |
+  The Mentalist can forge a link with another individual, pulling at threads of memory and drawing out psychic strength. Links may not be forged in combat situations, even with allies.  To create the link, the player should role-play drawing mental energy from the other, which can appear any way the portrayers choose. The Mentalist and the target form a strange temporary bond and find themselves unable to lie to one another for a short time. The procedure leaves the target feeling tired and wan, but gives the Mentalist one Link. A Mentalist can draw from Links to perform special feats, but the bond only lasts until the Mentalist takes a Short Rest. Each Link can only be drawn from once and after that, the Mentalist must re-establish the Link to draw from it again.
+
+  Until they take a Short Rest, the Mentalist will have this Link and will be unable to speak an untruth to the target of this Power. This Power can only be used on any one individual once between Short Rests (for the Mentalist) and, once the Mentalist has used Forge the Link on the same target five times ever, the Incantation drops to five seconds of RP.
+
+  The Mentalist may only have up to their Mentalist class-level in active Links at any one time.
+
+  For Example: Mouryn the Mentalist uses Forge the Link on their partner, Tempus, and on their two boon companions Tymeria and Peat. Having forged three Links, Mouryn can now use Powers that require them to draw on a Link (or exhaust a Link) three times before they complete a Short Rest. After the Short Rest, they could forge new links with those three again.

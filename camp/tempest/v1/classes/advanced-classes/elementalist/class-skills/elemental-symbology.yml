@@ -1,0 +1,15 @@
+name: Elemental Symbology
+cost: 3
+requires: elementalist:3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  The Elementalist finds power through the elements themselves, and not just the sources common to Sourcerers. If the Elementalist has a significant source of an appropriate element available - a torch for flame, a waterskin for ice, and so on - they may substitute that for the appropriate Eldritch source.
+
+  Note: this does require an actual object that could be held in hand - the air surrounding the Elementalist does not suffice for a Lightning Source, for example.

@@ -1,0 +1,14 @@
+name: Strands of Life
+incant: Standard
+call: '“[Name or Description], Grant Life by Radiance”'
+target: Individual
+delivery: Verbal
+accent: Radiance
+duration: Instantaneous
+refresh: Spell
+effect: Grant Life
+description: |
+  This powerful spell washes the target in life-energy. If the target is a corpse, it will bring it back to the living with 1 Life Point.
+  This Spell adds 6 points to the Cleric’s Healing Touch pool.
+
+  If Gift of Life is used on an Undead, it will cause the creature to immediately discorporate and take Spirit Form.

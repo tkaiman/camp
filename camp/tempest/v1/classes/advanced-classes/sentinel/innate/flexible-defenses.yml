@@ -1,0 +1,14 @@
+name: Flexible Defenses
+requires: ac-sentinel:4
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description: |
+  The Sentinel learns to utilize every trick they have in broader strokes - what was once a narrow defensive option becomes a tool to use against all the ails of the world.
+
+  Any powers that the Sentinel possess that grant Counters or Resistances to Wounding or Piercing effects lose that restriction, and may be used against any damaging attacks.

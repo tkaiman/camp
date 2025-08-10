@@ -1,0 +1,14 @@
+name: Arcane Toolbox
+requires: arcanist:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  The Arcanist is a master of special spells and utility magics, allowing them to perform amazing feats that other casters can only dream of. Between each Long Rest, the Arcanist can bookcast a number of Spells equal to their Arcanist class-level that have the [Arcane Tool] tag without exhausting Spell-Slots. In addition, the Arcanist adds four ranks of the Bookcaster skill which must be used on Spells with the [Arcane Tool] tag, and adds two more ranks every time they go up in Arcanist level that have the same restriction.
+
+  When the Arcanist reaches level 5, they may Bookcast by reading the incant only once, instead of five times.

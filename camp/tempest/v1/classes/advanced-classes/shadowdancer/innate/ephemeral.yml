@@ -1,0 +1,15 @@
+name: Ephemeral
+tags: [insubstantial]
+requires: shadowdancer:3
+incant: None
+call: "“Counter: Ephemeral”"
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: Darkness
+effect: Counter
+description: |
+  Once per Long Rest, while you have the Insubstantial condition, you may Counter an Effect that would remove your insubstantial Condition. This Power may be used twice once the character has five class-levels of Shadowdancer.
+
+  Note: This cannot be used when you are the one ending the Condition.

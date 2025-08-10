@@ -10,7 +10,7 @@ register = template.Library()
 
 _MD = md.Markdown(
     output="html",
-    extensions=["tables", "smarty", "attr_list"],
+    extensions=["tables", "smarty", "attr_list", "admonition"],
 )
 
 

@@ -1,0 +1,12 @@
+name: Universal Novice Spell
+ranks: 10
+choices:
+  spell:
+    name: Base Class Novice Spell
+    limit_is_per_rank: true
+    matcher:
+      type: spell
+      attrs: { tier: 1 }
+      parent:
+        class_type: basic
+description: Instead of choosing a Universalist Novice Spell when they would receive one from taking a Universalist level, the character may instead take a Novice Spell from any of the Base Classes.

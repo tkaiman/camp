@@ -1,0 +1,12 @@
+name: Sure Spell
+requires: advanced-mage:5
+incant: Standard
+call: "...and ensure this spell."
+target: Self
+duration: Until Expended
+delivery: None
+refresh: Immediate
+accent: None
+effect: None
+description: |
+  As long as the character has 15 levels in Mage, this cantrip will allow them to cast Materia-delivery spells that will automatically refresh if they miss. To protect a Spell with this cantrip, the Mage must add “...and ensure this spell” to the end of the Incantation. Once done, as long as all of the Materia charged by the enhanced spell miss targets the Spell-Slot is not expended. Additionally, the Mage may choose to make Sure Spell refresh with a “Short Rest” instead of Immediate to make their other Spell-Slot not expended if the target prevents the spell from affecting them.

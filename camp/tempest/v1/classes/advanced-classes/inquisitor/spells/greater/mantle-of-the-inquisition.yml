@@ -1,0 +1,15 @@
+name: Mantle of the Inquisition
+incant: Standard
+call: “Long Grant 5 Summoned Armor to Self by Radiance”, “Grant Protect vs Weapons”, “Grant Protect vs Materia”, Grant Protect vs Charm and Obey”
+target: Self
+duration: Long Rest, Event
+delivery: None
+refresh: Spell
+accent: Radiance
+effect: Grant Summoned Armor, Grant Protect, Grant Plus Armor
+description: |
+  The Inquisitor raises their voice to give homage to their god. Their god is well pleased and offers a boon of protection against the wicked and the false. The Inquisitor is granted 5 Summoned Armor Points. This is considered a new “suit” or armor and is not stackable with other sources of Summoned Armor. If the Inquisitor bears the Divine Sigil of their god on their person prominently, this spell also grants a single Protection from Weapons, a single Protection from Materia, and a single Protection from Charm and Obey Effects.
+
+  If instead of granting summoned armor the Inquisitor is wearing physical worn armor, this spell instead grants the Inquisitor +3 Maximum Armor.
+
+  Note: Remember a target can only have 3 protects on them at one time normally, if this spell would cause the target to have too many protects, the target may choose which protects they gain and which ones they lose.

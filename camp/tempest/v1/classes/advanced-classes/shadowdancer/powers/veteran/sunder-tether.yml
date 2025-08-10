@@ -1,0 +1,13 @@
+name: Sunder Tether
+incant: None
+call: “Short Grant Insubstantial by Darkness”
+target: Individual
+duration: Short Rest
+delivery: Melee Weapon
+refresh: Long Rest
+accent: Darkness
+effect: Grant Insubstantial
+description: |
+  The “common” Shadowdancer is well versed in manipulations of their own form, but forcing it upon others is a power known to few. With a blow, the Shadowdancer can cause another to fade into the etheric plane, trapped for a time, unable to return of their own accord, save for the due process of time.
+
+  To use this Power, the Shadowdancer must approach their target and successfully make contact with a valid melee weapons strike - once they have done so, they may call “Short Grant Insubstantial by Darkness.” If necessary, the Shadowdancer must be able to explain the condition to the target, or this Power has no effect, and is instead refreshed.

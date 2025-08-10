@@ -1,0 +1,15 @@
+name: Good Night
+incant: Standard
+call: "Grant Protect vs. Deathblow. Instruction: The Protect ends if you get out of bed or your bed is moved."
+target: Individual
+duration: Special
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Protect
+description: |
+  This Spell can only be cast on an Individual in or on a bed, cot, hammock, or other piece of equipment meant specifically for sleep. The Spell lasts until used, until the character leaves the bed, or until
+  the bed moves from its current location. If Bookcast, Good Night does not exhaust a Spell-Slot.
+
+  Note: This effect is subtle, and most often will most often be used when waking up in the morning and finding out via a note from Plot that a monster has deathblowed your entire cabin while you were asleep.
+  In this instance, tell Plot at the Spirit Well that you had this effect active when you go to the Spirit Well in the morning.

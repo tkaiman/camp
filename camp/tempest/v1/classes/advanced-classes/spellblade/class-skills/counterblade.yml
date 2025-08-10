@@ -1,0 +1,13 @@
+name: Counterblade
+cost: 3
+requires: spellblade:2
+incant: None
+call: “Resist”
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Resistance
+description:
+  Whenever the Spellblade has a Bladechanneled Spell active, any Packets that strike that weapon can be Resisted. When this happens, the Spellblade should Call "Resist!"

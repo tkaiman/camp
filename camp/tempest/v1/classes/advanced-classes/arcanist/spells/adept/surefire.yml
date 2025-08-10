@@ -1,0 +1,11 @@
+name: Surefire
+incant: Standard
+call: None
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant Verbal Delivery
+description:
+  After this spell is cast, the next Spell you cast that charges only one Materia subsequently requires no Materia and has its Delivery changed to Verbal. The Call for the Spell will be the target’s [Name or Description], plus the normal Call for the Spell. This spell ends if the Arcanist completes a Long Rest.

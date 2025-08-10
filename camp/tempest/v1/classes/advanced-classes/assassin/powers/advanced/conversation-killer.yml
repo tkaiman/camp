@@ -1,0 +1,10 @@
+name: Conversation Killer
+incant: "RP: One Minute of Conversation"
+call: “Piercing 6 by Poison”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Packet
+refresh: Short Rest
+accent: Poison
+effect: Piercing
+description: This power may only be used out of combat. Should the Assassin engage in at least one minute of conversation with the target, they may activate this power to call “Piercing 6 by Poison,” by Spell-Packet. This damage increases to  Piercing 12 once the character reaches 5th class-level in Assassin.

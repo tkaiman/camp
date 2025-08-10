@@ -1,0 +1,14 @@
+name: Impart Proficiency
+incant: Standard
+call: “Long Grant [Weapon Type] Proficiency”
+target: Other Individual
+duration: Long Rest
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Proficiency
+description: |
+  This Spell transfers the knowledge of a weapon’s use into the mind of the target individual. The caster must be able to both touch the intended weapon and the target individual of the spell. Until that
+  individual completes a Long Rest, they will be able to use weapons of that type as if they were proficient.
+
+  Note: A spellcaster cannot target themselves with this spell. This spell may be used only once per Target per Long Rest.

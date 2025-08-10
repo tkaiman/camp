@@ -1,0 +1,13 @@
+name: Divine Conduit
+requires: inquisitor:3
+cost: 3
+incant: "“I call my faith: divine and right, I wield and shape creation's light, to unmask the corrupted.”"
+call: “By My Voice to  [Abomination, Undead, or Undevoted], Expose by Radiance”
+target: Individuals
+delivery: Voice
+accent: Radiance
+duration: Instantaneous
+refresh: Long Rest
+effect: Expose
+description: |
+  Where the sun shines, evil cannot prevail, for deception and trickery quails under the light of the just. The Inquisitor may call upon the scouring light of the sun to uncover deceitful creatures in a large area by calling “By My Voice to [Abomination, Undead, or Undevoted]  Expose by Radiance.”

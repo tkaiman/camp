@@ -11,5 +11,6 @@ accent: None
 duration: Instantaneous
 refresh: Immediate
 effect: None
+grants: the-right-hand.child_purchases:1
 description: |
   The Socialite has mastered the arts of social manipulation such that they may have an additional Bodyguard. The Socialite may use The Right Hand power to designate one other individual as their Bodyguard. Purchasing this Power also grants the Socialite the privilege of purchasing another Right Hand Power.

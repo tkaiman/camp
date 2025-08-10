@@ -1,0 +1,12 @@
+name: Final Stroke
+ranks: 4
+incant: None
+call: “Death by Agony”
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Short Rest
+accent: Agony
+effect: Death
+description:
+  Attacking with a melee weapon from behind, the Assassin may attempt to simply kill the target outright.

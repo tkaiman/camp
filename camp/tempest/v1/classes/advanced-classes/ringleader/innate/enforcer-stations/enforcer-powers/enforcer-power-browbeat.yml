@@ -1,0 +1,11 @@
+name: Browbeat
+incant: None
+call: "“[Name or Description]: Short Repel by Fear"
+target: Individual
+duration: Short
+delivery: Verbal
+refresh: Short Rest
+accent: Fear
+effect: Repel
+description: |
+  Such is the intimidating nature of muscle that they are able to follow up a strike with a threat that breaks the spirit.  Whenever the Enforcer lands an attack of any kind that is not Prevented, once per short rest they can call a verbal delivery “[Name or Description] : Short Repel by Fear” to the target they struck by making a quick audible threat.

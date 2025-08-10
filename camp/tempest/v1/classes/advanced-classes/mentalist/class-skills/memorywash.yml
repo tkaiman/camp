@@ -1,0 +1,20 @@
+name: Memorywash
+requires:
+  - mentalist:1
+  - psychic-surgery
+cost: 3
+tags: [psychic-surgery-procedure]
+incant: RP, Psychic Surgery
+call: 'Explanation, "Discern by Mind: Are you under the effects of an Obey?"'
+target: Other Individual
+duration: Permanent
+delivery: Touch
+refresh: Long Rest
+accent: Mind
+effect: None
+description: |
+  The Mentalist and the patient work together to find memories that the patient no longer desires and together they erase that memory.  The patient will not find any holes in their recall, and will naturally gloss over or wave away inconsistencies that might depend on the washed memory.
+
+  The particulars are up to the patient’s portrayer, but as a rule, these missing memories will not cause the patient any distress. At the desire of the patient’s portrayer, too much stress on those memories (another person grilling them or insisting that the memory be re-lived) can cause the Memorywash to "break", and the missing memories to come flooding back. The effects of this Power are permanent and cannot be Dispelled.
+
+  In addition, the Mentalist is capable of determining if the patient has been affected by mental powers that would alter their behavior. When using this power in this way, the Mentalist may call "Discern by Mind: Are you under the effects of an Obey?" The Mentalist may use this Discern a number of times equal to their Mentalist class-level per Long Rest.

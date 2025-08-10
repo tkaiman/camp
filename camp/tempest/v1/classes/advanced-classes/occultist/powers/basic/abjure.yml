@@ -1,0 +1,18 @@
+name: Abjure / Invoke the Dark
+tags: [blood-magic]
+incant: "“With sacred salts I abjure the Dark” / “By tooth and claw I invoke the Dark” / “By lifeblood spilled I welcome the Dark”"
+call: "“Short Grant [Minus/Plus] One Dark Territory”, “Short Grant Plus Two Dark Territory”"
+target: Individual
+duration: Short Rest
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: Grant Dark Territory
+description: |
+  Your initiation into the occult allows a basic manipulation of the energies surrounding an individual. You may expend either a Rare Minerals or a Harvest to gain a standard effect, or Sacrifice 1 Life Point of blood (not necessarily your blood) to get a stronger effect. Sacrificing blood in this manner is considered Blood Magic; the other sacrifices are not. The appropriate incantations and calls are:
+
+    * Rare Minerals: “With sacred salts I abjure the Dark”, “Short Grant Minus One Dark Territory”
+    * Harvest: “By tooth and claw I invoke the Dark”, “Short Grant Plus One Dark Territory”
+    * Blood: “By lifeblood spilled I welcome the Dark”, “Short Grant Plus Two Dark Territory”
+
+  Note: Recall that a given target may only have this effect applied to them once at any given time, per Stacking.

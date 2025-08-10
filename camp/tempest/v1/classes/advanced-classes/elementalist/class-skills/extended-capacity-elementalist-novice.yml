@@ -1,0 +1,5 @@
+name: "Extended Capacity: Elementalist Novice"
+cost: 2
+requires: elementalist:5
+grants: arcane.spell_slots@1
+description: The Elementalist adds one Arcane Novice Spell-Slot.

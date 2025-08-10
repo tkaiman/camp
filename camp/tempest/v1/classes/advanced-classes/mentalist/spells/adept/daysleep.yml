@@ -1,0 +1,11 @@
+name: Daysleep
+incant: Standard
+call: "Short Sleep by Mind"
+target: Individual
+duration: Short Rest
+delivery: Spell-Ball
+refresh: Spell
+accent: Mind
+effect: Sleep
+description:
+  The Mentalist reaches out and shuts down the mind of another, immediately dropping them into a deep sleep.

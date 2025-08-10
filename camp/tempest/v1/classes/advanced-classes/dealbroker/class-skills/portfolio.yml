@@ -1,0 +1,15 @@
+name: Portfolio
+requires:
+  - dealbroker:1
+  - income
+cost: 3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description:
+  You know how to make a small investment pay dividends in due time. At the start of each event, you gain 2 Wealth per Dealbroker class-level.

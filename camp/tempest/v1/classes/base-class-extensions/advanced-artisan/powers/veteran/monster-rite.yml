@@ -1,0 +1,16 @@
+name: Monster Rite
+tags: [mystic]
+incant: Focus Quick 100
+call: "Grant Short Rest to Willing"
+target: Individual
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Grant Short Rest
+description:
+  This unfortunately-named rite was once used to infuse adventurers with the essence of monsters in order to awaken and enliven their
+  senses. The magic has been refined over the centuries so that the monster essences are no longer required, but the name remains. The
+  Artisan must Focus for a Quick Count of 100 while working on the energy centers of another Individual, adjusting them, and moving
+  them about. At the end of the Focus, the Artisan can restore the energy of the target, granting the benefits (and drawbacks) of an
+  instantaneous Short Rest. If the Artisan is a Mystic Specialist, they may apply this to an additional target.

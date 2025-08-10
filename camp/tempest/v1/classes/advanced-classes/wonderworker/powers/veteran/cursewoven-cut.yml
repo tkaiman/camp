@@ -1,0 +1,11 @@
+name: Cursewoven Cut
+incant: None
+call: “Short Grant Vulnerability to [Accent]”
+target: Individual
+duration: Short Rest
+delivery: Weapon
+refresh: Short Rest
+accent: None
+effect: Grant
+description: |
+  Wonderworkers are in tune with the workings of the universe, and a well-trained Wonderworker can act to disrupt a victim in such a way that one of the workings of the universe becomes anathema to their being. The Wonderworker makes a weapon attack, and Grants the target a vulnerability to one of the following Accents: Acid, Arcane, Darkness, Flame, Force, Ice, Lightning, Radiance, or Time.

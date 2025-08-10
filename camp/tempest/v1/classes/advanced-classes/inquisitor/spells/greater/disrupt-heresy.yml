@@ -1,0 +1,20 @@
+name: Disrupt Heresy
+incant: Standard
+call: See below
+target: Individual or Object
+duration: Instantaneous
+delivery: Spell-Ball, Touch
+refresh: Spell
+accent: None
+effect: Special
+description: |
+  This powerful spell can be used in many ways to disrupt the heretical doings of those opposed to the Inquisitor and allows the Inquisitor to call one of the following;
+
+  * Harm creatures antithetical to life: “Piercing 10 to [Abomination, Undead, Undevoted] by Radiance.”
+  * Harm creatures Branded by the Inquisitor as Oath Breakers: “Piercing 10 by Radiance”
+  * Dispel any of the following: “Dispel Protects Final”, “Dispel Obfuscated”, “Dispel Barrier”
+  * Cure All Conditions Final by Touch
+  * Break any circle represented by a cord, rope, or the like: “Dispel Circle”. This will end spells like Elemental Node and Minor Circle.
+  * Immediately end a Blood Magic Ritual, causing a backlash upon all Participants.
+
+  By design, Disrupt Heresy may also have other uses.

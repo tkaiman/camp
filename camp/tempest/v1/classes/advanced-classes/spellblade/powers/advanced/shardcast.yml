@@ -1,0 +1,13 @@
+name: Shardcast
+incant: None
+call: “Shardcast”
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  The Spellblade can cast their spells by expending one Shard Point and then substituting the word “Shardcast” and the name of the spell for the entire Incantation. Shardcast can only be used on spells that require an Incantation to cast.
+
+  For Example: To cast Dragonbolt, a Spell that normally requires “I conjure words of arcane might, from studied tomes in candlelight, I draw my strength from sky and land. Gather now within my hand. From planes beyond, my power's Source, By Word and Will I give it force to summon the breath of the dragon.” the Spellblade could instead say “Shardcast: Dragonbolt.”

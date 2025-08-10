@@ -1,0 +1,19 @@
+name: Grisly Trophy
+cost: 3
+requires: ranger:1
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Claw(s)
+description: |
+  Trophy taking is part of being a ranger, but sometimes the very trophies that are taken from the mythical or mundane can be used as protection for the Ranger. By carving free a fang or claw, the Ranger is able to fabricate natural weapons from the beasts they hunt. The Ranger may gain up to two Claws as Natural weapons. These Claws should be no longer than 36” long.
+
+  If the Ranger has Long Weapon proficiency, the Ranger may gain a Long Claw (a single claw up to 48”) and a Short Claw (up to 36”) instead.
+
+  If the Ranger has Great Weapon proficiency, they may gain a single Sharp Great Claw. This Claw should have a length between 48”- 90.”
+
+  Switching between any of these options may be done at the completion of a Short Rest.

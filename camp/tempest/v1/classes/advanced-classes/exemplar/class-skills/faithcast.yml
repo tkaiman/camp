@@ -1,0 +1,15 @@
+name: Faithcast
+cost: 3
+requires: exemplar:1
+incant: None
+call: “Faithcast”
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  The Exemplar can cast their Basic and Exemplar spells by expending a Divine Grace and then substituting the word “Faithcast” and the name of the spell for the entire Incantation. Faithcast can only be used on spells that require an Incantation to cast.
+
+  For Example: To cast Cleave the Fell, it normally requires the Exemplar to incant: “I call my faith: divine and right, I wield and shape creation's light, With fervent plea and ardent zeal, I summon strength for woe and weal, From realms beyond, my power's source, With prayer and faith I give it force to cleave my foes.” The Exemplar could instead expend a Divine Grace and say “Faithcast: Cleave the Fell.”

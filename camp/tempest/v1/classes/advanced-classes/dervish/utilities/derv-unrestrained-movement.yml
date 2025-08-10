@@ -1,0 +1,11 @@
+name: Unrestrained Movement
+incant: None
+call: "Resist"
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: Resistance
+description: |
+  While wearing four or fewer points of Physical, Summoned, or Natural Armor, the Dervish may Counter any of the following Effects: Slow, Root, Repel unless the source of the Effect is the Dervish. The Call for this Effect is “Counter, Dodge.”

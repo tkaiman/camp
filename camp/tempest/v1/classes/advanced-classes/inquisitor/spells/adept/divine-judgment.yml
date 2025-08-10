@@ -1,0 +1,13 @@
+name: Divine Judgment
+incant: Standard
+call: “Wounding 5 by Radiance”, “Wounding 10 by Radiance”
+target: Individual
+duration: Instantaneous
+delivery: Spell-ball
+refresh: Spell
+accent: Radiance
+effect: Wounding
+description: |
+  The Inquisitor calls on their god to exact the sentencing on those who the Inquisitor judged worthy of such an honor. The Inquisitor calls down gouts of Radiant energy to overwhelm their foes. The Inquisitor may spend a Spike to charge a second spell-ball with the same call.
+
+  If the target of this judgment is an Abomination, Undead, Undevoted, or Branded by the Inquisitor as an Oath Breaker, they may call Wounding 10 in place of Wounding 5.

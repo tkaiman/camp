@@ -1,0 +1,15 @@
+name: Fury
+incant: Standard
+call: "“Wounding 3 by [Eldritch Accent]”, “Piercing 2 by [Eldritch Accent]”"
+target: Individual
+duration: Short Rest, Special
+delivery: Spell-Ball
+refresh: Spell
+accent: "[Eldritch Accent]"
+effect: Wounding
+description: |
+  Upon completion of the incant, the Warlock must plant her right foot, then as long as the spell is active, the Warlock can charge a Spell-Ball with elemental energy by calling “ Spell-Ball Charged!” The Warlock may choose to alter the Accent on a per-ball basis. The Warlock may only have a single Spell-Ball charged this way at one time.
+
+  If the Warlock has purchased the Warlock Class Skill The Weave Within, the Warlock may force themselves onward, dragging the gout of spell energy along with them. Instead of planting their foot, the Warlock is inherently slowed until this spell ends.
+
+  By expending a Spike, the Warlock may alter the currently held Spell-Ball to “Piercing 2 by [Eldritch Accent].” The Warlock may continue to charge Spell-Balls until she completes a Short Rest, uses another Spell or Cantrip, or moves her foot.

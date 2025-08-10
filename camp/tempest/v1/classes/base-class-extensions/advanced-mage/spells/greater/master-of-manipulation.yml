@@ -1,0 +1,15 @@
+name: Master of Manipulation
+incant: Standard
+call: “Short [Berserk/Charm/Sleep] by Mind”
+target: Individual(s)
+duration: Short Rest
+delivery: Spell-Ball
+refresh: Spell
+accent: Mind
+effect: Berserk, Charm, Sleep
+description: |
+  The Mage charges one Spell-Ball with mind warping magic. On contact with a target the Mage may choose the Effect from the list of Berserk, Charm, or Sleep.
+
+  If the Spell-Ball lands but is prevented in any way, the Mage may spend a Life Point and with a Focus Quick 100 charge a new Spell-Ball with the same effect.  The Mage may keep doing this until the spell lands and has an effect or runs out of life points.
+
+  Enhancement: Expend a Spike: The Accent changes from Mind to Arcane.  If the Mage recharges the spell-ball as per above, they must spend an additional Spike to change the accent to Arcane again.

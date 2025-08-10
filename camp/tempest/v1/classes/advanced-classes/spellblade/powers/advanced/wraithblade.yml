@@ -1,0 +1,11 @@
+name: Wraithblade
+incant: None
+call: None
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Immediate
+accent: None
+effect: Grant Qualifier
+description:
+  For any Weapon attack that the Spellblade uses a Spike (to enhance a Power, to do damage, to trigger a Power or Effect, etc.), the Spellblade can add the “to Insubstantial” Qualifier.

@@ -1,0 +1,15 @@
+name: Rite of Astralor
+incant: Roleplay Q300, inviting the Spirits of Winter to guide your hunt.
+call: "“Long Grant Ice Accent, Long Grant +1 Spike Damage”, ”Quick Slow by Ice”, “Quick Imprison Final by Ice”"
+target: Self, Individual
+duration: Long Rest, Instantaneous
+delivery: Projectile or Thrown, Verbal
+refresh: Long Rest
+accent: Ice
+effect: Grant Accent, Grant Spike Damage, Slow, Imprison
+description: |
+  The Nirfolk of Astralor rely on Rangers almost exclusively for their game and draw their power from ancient Thrylossi rites. Passed from Ranger to ranger, Winter’s Approach designates the rites in which the Nirfolk use to imbue their arrows with the merciless cold of the Creeping Winterlands.
+
+  After participating in their rite, the Ranger may grant themselves the Ice Accent for all Projectile or Thrown attacks and +1 Spike Damage. When dealing damage with a Projectile or Thrown weapon with the Ice Accent, the Ranger may call [Name or Description] Quick Slow by Ice as an additional attack.
+
+  In a pinch, the Rite of Winter can be expended in one burst of energy. The Ranger may use one projectile attack with the effect “Quick Imprison Final By Ice”, but then the Rite and all its effects end for the Ranger.

@@ -1,0 +1,27 @@
+name: Trigger Versatility
+cost: 1
+ranks: 8
+requires: elementalist:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  The elementalist can see some shade of the elements in places that one might not expect to look. For the purposes of powers that look for specific accents, the Elementalist can use different Eldritch accents to trigger those powers. This includes the Elementalists Wellspring pool.
+
+  This skill may be purchased multiple times, each time allowing the Elementalist to choose from the substitution list below.
+
+    | Eldritch Accent | Triggered Accent |
+    |:---------------:|:----------------:|
+    |      Agony      |       Acid       |
+    |     Darkness    |       Acid       |
+    |      Force      |       Flame      |
+    |     Radiance    |       Flame      |
+    |       Time      |        Ice       |
+    |       Will      |        Ice       |
+    |     Illusion    |     Lightning    |
+    |       Mind      |     Lightning    |

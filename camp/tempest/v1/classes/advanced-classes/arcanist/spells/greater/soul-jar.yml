@@ -1,0 +1,19 @@
+name: Soul Jar
+tags: [arcane-tool]
+incant: Standard
+call: “Grant Soul Jar”, Explanation
+target: Individual, Item
+duration: Event
+delivery: Touch
+refresh: Spell
+accent: Arcane
+effect: Grant Soul Jar
+description: |
+  This Spell can only be cast outside of combat. It is cast on a living character (with the Living Type) who must be holding an item of special beauty, worth, or meaning which measures at least 8 inches in
+  one dimension. The recipient of the Spell, if they take Spirit Form and would normally go to the Spirit Well, may instead go to the item and, upon touching it, will immediately gain corporeal form, alive
+  again with 1 Life Point, and destroying the item irrevocably ending the spell.
+
+  However, a character who is under the effects of this Spell is immune to “Grant Life” and “Shatter Spirit” Effects as their soul is not contained within their body. If the Spirit cannot find the item,
+  they must go and resurrect normally at the Spirit Well.
+
+  Note: The item used must have an item card with it denoting that this spell was cast upon it. Item cards can be found at Crafting Stations and from Staff.

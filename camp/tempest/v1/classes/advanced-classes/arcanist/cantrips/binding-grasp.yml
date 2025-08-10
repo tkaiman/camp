@@ -1,0 +1,11 @@
+name: Binding Grasp
+incant: Standard
+call: “Quick Bind by Force”
+target: Individual
+duration: Quick 100
+delivery: Spell-Packet
+refresh: Focus Quick 100
+accent: Force
+effect: Bind
+description:
+  The Arcanist conjures bands of force to entrap their foe, binding them for a short time.

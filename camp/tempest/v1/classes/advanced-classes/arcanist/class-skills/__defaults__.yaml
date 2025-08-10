@@ -1,0 +1,4 @@
+type: skill
+requires: arcanist
+parent: arcanist
+category: Arcanist Class Skills

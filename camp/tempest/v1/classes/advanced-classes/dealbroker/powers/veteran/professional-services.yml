@@ -1,0 +1,28 @@
+name: Professional Services
+incant: None
+call: None
+target: Special
+duration: Instantaneous
+delivery: Special
+refresh: Long Rest
+accent: None
+effect: Special
+description: |
+  Once per Long Rest, you may go offstage and pay for one of the following services. Each service may be used at most once per Event.
+
+    * Access Sources (3 Wealth): Ask Staff to view the Sources sheet for this event. You may make purchases from the sheet’s list immediately. If you do not make a purchase, you may come back later
+      during the event to make a purchase, but must pay the fee again. Once you have made purchases from the list, you may not return to make more. Any number of items may be purchased from the list,
+      subject to availability and staff patience. Reduced Fees applies to the 3 Wealth fee, but not any purchase from the list.
+    * Post/Reduce Bounty (X Wealth): You may increase or reduce the active Bounty on a named individual by 3 times the amount of Wealth you pay. Reduced Fees does not apply to this.
+    * Background Check (20 Wealth): A relevant Staff member provides you with a brief historical dossier for a named individual, if available. The dossier is unlikely to contain any truly secret
+      information, but unconfirmed rumors may appear. A background check on an individual you cannot identify properly will likely fail or provide paper thin information, but this may also be useful to
+      note.
+
+  Note: Staff may not be able to give you an immediate response, and you may receive it later or between games. If the individual is a PC that has neither an approved backstory or meaningful plot
+  interactions to speak of, or a throwaway NPC not worth asking about, you will learn this information for free, and the power refreshes.
+
+    * Veracity Check (10 Wealth): You may ask Staff regarding either a rumor on the Rumormonger sheet or the Down Low sheet, or an “It Has Been Told” phrase you have heard. You may get either more
+      specific information about the rumor, confirmation that it is a dead end, or information regarding where and when it originated. This will generally not identify who started a particular rumor,
+      but may give you a lead. The Staff member you ask may not be able to get you an immediate response. If the Staff team determines that they do not know anything about a particular rumor, you receive
+      a refund and the power refreshes.
+    * Anonymous Tip (20 Wealth): Seek out a Staff member and ask them for a clue regarding either a particular plotline or challenge, or ask for a tip regarding something you don’t know about yet.

@@ -1,0 +1,11 @@
+name: Radiant Fire
+incant: Standard
+call: '“Wounding 12 to Undead by Radiance ”, “Wounding 8 by Radiance”'
+target: Individual
+delivery: Spell-Ball
+accent: Radiance
+duration: Instantaneous
+refresh: Spell
+effect: Wounding
+description:
+  This Spell charges two Spell-Balls of holy power. Each one does either Wounding 12 by Radiance to the Undead or Wounding 8 by Radiance (the Cleric may choose when the Spell-Ball is thrown).

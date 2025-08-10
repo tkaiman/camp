@@ -6,7 +6,10 @@ choices:
     matcher:
       type: power
       tier: 1
-      parent: -artisan
+      parent:
+        type: class
+        id: -artisan
+        attrs: { class_type: basic }
       refresh: ^Spell
 description: |
   When this power is chosen the Artisan can choose one Basic-Tier Power from any other non-Artisan Base Class. This choice is permanent, and the Power will have the same Incantation, requirements, etc. as it did in the original class. The Power cannot have a Refresh of “Spell”.

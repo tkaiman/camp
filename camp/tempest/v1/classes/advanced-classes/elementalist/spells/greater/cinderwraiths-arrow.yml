@@ -1,0 +1,11 @@
+name: Cinderwraith’s Arrow
+incant: Standard
+call: '“Wounding 15 by Flame”, “[Name or Description] Piercing 5 by Flame”'
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball, Verbal
+refresh: Spell
+accent: Flame
+effect: Wounding, Piercing
+description:
+  Cinderwraith’s Arrow calls upon a fraction of the power of the primal elemental themself, creating a mighty bolt of flame Calling “Wounding 15 by Flame”. If the Elementalist has selected Flame as the element affected by Elemental Flow or is using a Flame Source, and the attack is Prevented, the caster may expend a Spike and call “[Name or Description] Piercing 5 by Flame” against the original target.

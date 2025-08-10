@@ -1,0 +1,7 @@
+name: Redemption
+cost: 2
+requires: exemplar:2
+description: |
+  When using a non-consumable Heal Effect on a Dying target, that Effect heals one additional Life Point and adds the “to Dying” Qualifier if it does not already have it.
+
+  Note: This will modify all spells, powers, and cantrips despite other restrictions including Revive and Care for the Fallen.

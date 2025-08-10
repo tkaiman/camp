@@ -1,0 +1,14 @@
+name: Trap Dodge
+requires: larcenist:3
+incant: None
+call: “Counter, Luck”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Special
+description: |
+  Inevitably, the Larcenist will come upon a prize worth having where the owner will have set up static defenses. No matter - the Larcenist is well versed in classic traps of all shapes and sizes, and, more often than not, can simply avoid the consequences by knowing exactly where the blade, dart, cloud of poison gas or whatever will land, and not be there. Some particularly canny Larcenists will intentionally trip traps simply out of expediency - particularly when time is of the essence.
+
+  The Larcenist may now expend two Luck charges to “Counter, Luck” any Trap call, whether they tripped it, or someone else did.

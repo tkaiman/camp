@@ -1,0 +1,36 @@
+name: Spellblade
+type: class
+class_type: advanced
+ranks: 5
+category: Advanced Class
+sphere: dual
+powers: true
+spells:
+  0:
+    0: 0
+    1: 1
+    2: 1
+    3: 1
+    4: 1
+    5: 2
+spells_known:
+  0: 0
+  1: 1
+  2: 2
+  3: 3
+  4: 4
+  5: 5
+flags: flag+spellblade
+requires:
+  - level:10
+  - spell:2
+  - power:2
+  - any:
+      - spell@2
+      - power@2
+description: |
+  While it is well-known that the materia used to carry the essence of magic is a fundamental foundation in the understanding of even the most rudimentary novice spellcaster, there are rumors of those for whom the materia can take other shapes and forms - one such group of spellcasters are known as the “Spellblades.”
+
+  The Spellblade is one such master of material delivery - utilizing a weapon made of steel, wood, or bone to transmit the aetheric flows of magic into hapless targets. While some might scoff at such “limitation” - the spellblade’s delivery now being limited to those they can reach with their blade or bow, others see broad new horizons for speed, efficacy, and creative new interpretations for what were once niche spells and effects.
+
+  Indeed, to witness a Spellblade in action is to behold a seamless integration of steel and sorcery. Their weapon, whether a sword, axe, or staff, is not merely a tool of physical might; it is a channel for the arcane forces that course through the realms. These warriors are not bound by the traditional separation of melee combat and spellcasting. Instead, they seamlessly blend both disciplines, transitioning from a flurry of physical strikes to a cascade of arcane projectiles with fluid grace.

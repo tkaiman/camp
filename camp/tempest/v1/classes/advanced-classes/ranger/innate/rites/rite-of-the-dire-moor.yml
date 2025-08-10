@@ -1,0 +1,15 @@
+name: Rite of the Dire Moor
+incant: Roleplay Q300, communing with the spirits of snakes.
+call: "“Long Grant Poison Accent, Long Grant Resistance to Poison”, “[Name or Description] 1 Poison”, “Drain by Poison”"
+target: Self, Individual
+duration: Long Rest, Instantaneous, Event
+delivery: Projectile or Thrown, Verbal, Claw
+refresh: Long Rest
+accent: Poison
+effect: Grant Accent, Grant Resistance, Drain
+description: |
+  Rangers who call home in the muck and dredges of the Dire Moor are, unfortunately, often more prey than hunters. The Sunwatch Zolom, however, has its eyes steadfastly set upon those who would predate within its territory, and Rangers who invoke the Rite of the Dire Moor ask it, specifically, for the skills needed to hunt within it.
+
+  After the Rite is concluded, the Ranger gains the Poison accent for all attacks made with Projectile or Thrown weapons. In addition, whenever they are dealt damage by a Melee attack, they may respond to the attack with “[Name or Description], 1 Poison” to the attacker. While the rite is active, the Ranger has Resistance to Poison.
+
+  The Ranger may end the Rite at any time with a Projectile, Thrown, or Claw attack calling “Drain by Poison” against an individual target.

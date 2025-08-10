@@ -1,0 +1,16 @@
+name: Shadowstep
+tags: [insubstantial]
+incant: None
+call: “Shadowstep”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Focus Quick 100
+accent: Darkness
+effect: None
+description: |
+  The Shadowdancer may become briefly as light as a shadow to traverse seemingly impossible distances.
+
+  In any situation where it can be done safely (for the player, not the character) the Shadowdancer may make a single leap that is the length of one leap and then three more steps. The player can take one leap and then an additional three steps (both feet must be on the ground at once for each step) to get to the location that the character is leaping to. Alternatively, the Shadowdancer can make a vertical leap to reach something six feet above her head.
+
+  If the Shadowdancer is Insubstantial when this Power is used, they instead may take five steps after the leap, and the Refresh is reduced to a Quick 30 (not Focus).

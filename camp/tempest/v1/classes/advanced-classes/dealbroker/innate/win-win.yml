@@ -1,0 +1,22 @@
+name: Win-Win
+requires: dealbroker:1
+incant: Negotiation, “I stake my reputation on an amicable resolution”, “As do I”
+call: '“By My Voice to parties in this negotiation, Expose Final: Anyone who is unhappy with the result of this negotiation.”, “Short Drain to Self by Will Final”'
+target: Individuals, Self
+duration: Instantaneous
+delivery: Voice
+refresh: Short Rest
+accent: None, Will
+effect: Refresh, Drain
+description: |
+  A dealbroker with a reputation for one-sided strong-arming may find few parties willing to negotiate with them or accept them as a neutral moderator. A wise dealbroker tries to garner a reputation for fair play and deals that result in both parties feeling happy with the result, though this is not always possible.
+
+  At the beginning of a negotiation where you are acting as a negotiator or mediator, you may activate this power by saying “I stake my reputation on an amicable resolution.” If another dealbroker has already done this, you may respond “As do I” instead of saying the entire thing. At the conclusion of the negotiation, if it resolves in a manner other than combat or being tabled for later, you (or another Dealbroker) must then call at a conversational tone:
+
+    * “By My Voice to parties in this negotiation, Expose Final: Anyone who is unhappy with the result of this negotiation.”
+
+  If any party responds negatively, all of your [Concession] powers are considered expended, and you must call “Short Drain to Self by Will Final”.
+
+  If no unhappy parties are exposed, all of your [Concession] powers automatically refresh.
+
+  In the event that combat breaks out, it does not necessarily ruin your negotiation attempt, but if the combat resolves by one side’s defeat or retreat, your negotiation result is automatically treated as “unhappy” without going through the Expose step. If you are able to bring both sides back to the table, the negotiation continues.

@@ -1,0 +1,11 @@
+name: Lay Bare
+incant: None
+call: “[Name or Description] Subtle Dispel all Protections Final”
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Long Rest
+accent: None
+effect: Dispel
+description:
+  The Assassin may, outside of combat after a minute of conversation, subtly lay bare the individual they are conversing with of all their protections. The Assassin may call “[Name or Description] Subtle Dispel all Protections Final.”

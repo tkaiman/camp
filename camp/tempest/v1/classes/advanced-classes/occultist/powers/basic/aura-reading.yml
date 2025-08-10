@@ -1,0 +1,19 @@
+name: Aura Reading
+requires: sight
+incant: RP; 1 minute of roleplay
+call: "“[Name or Description] Subtle Discern by Mind: [Question]”"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest
+accent: Mind
+effect: Discern
+description: |
+  Your ability to see beyond what others can see gives you insights into a creature’s condition that others might miss. After about one minute of out of combat roleplay focused on a particular creature, you may ask it any of the following Discern questions. You may continue to ask these questions as long as you focus on the creature, but about a minute must pass between each question. This Power ends if you look away from the creature for any reason, use any other Power, or the creature calls a defense against this power (including “No Effect”).
+
+    * “What are your non-Inherent conditions?”
+    * “What is (another) one of your Vulnerabilities?”
+    * “Are you currently Dominated, Charmed, or under the influence of an Obey command?”
+    * “What is (another) one of your Classes?”
+    * “Are you a [Type or Qualifier of your choice]?”
+    * “Are your memories of anything discussed in this conversation altered?”

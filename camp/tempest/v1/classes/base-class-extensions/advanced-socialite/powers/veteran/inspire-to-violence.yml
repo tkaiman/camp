@@ -1,0 +1,13 @@
+name: Inspire to Violence
+incant: None
+call: “Short Imbue Weapon with Wounding 10”
+target: Individual
+duration: Explanation
+delivery: Verbal
+refresh: Short Rest
+accent: None
+effect: Imbue
+description: |
+  After giving a few words of encouragement, the Socialite can give a powerful attack to anyone who is currently engaged as their Bodyguard (as per The Right Hand) or who is a member of their group (as per Heart of the Group). If the first person the Socialite Imbues thanks the Socialite, the Power will immediately Refresh (but it will not Refresh a second time, regardless of how polite other recipients might be).
+
+  Enhancement: Expend a Spike: The Socialite can add any of the following Accents to the Wounding 10: Flame, Ice, Acid, Lightning, or Force.

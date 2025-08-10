@@ -1,0 +1,11 @@
+name: Displacement
+incant: Standard
+call: '"Grant 5 Barrier by Illusion" “Grant Protect vs Verbal by Illusion”'
+target: Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Spell
+accent: Illusion
+effect: Grant Barrier
+description:
+  The Mentalist weaves Illusions of plates of fictitious armor around the target, causing those who would strike them to merely pass through illusory portions of the protected. The Mentalist may "Grant 5 Barrier by Illusion" to a target they touch.  Additionally, if the Mentalist spends a Link they may Grant a Protect vs Verbal.  

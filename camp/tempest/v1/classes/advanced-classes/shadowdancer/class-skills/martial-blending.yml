@@ -1,0 +1,14 @@
+name: Martial Blending
+cost: 2
+incant: None
+call: “Refresh by Darkness”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: Darkness
+effect: None
+description:
+  The Shadowdancer may expend a Basic or Advanced Rogue or Shadowdancer Power to Cast Umbral Fade (provided they have access to it otherwise). If the Shadowdancer expends a Power in this way it does not Refresh until their next Long Rest regardless of its normal refresh.
+
+  In addition, when Short Resting the Shadowdancer may expend a Novice or higher Spell-slot to Refresh a Martial Power that was used to grant them the Umbral Fade Power from above.

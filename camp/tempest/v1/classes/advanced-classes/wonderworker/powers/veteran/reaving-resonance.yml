@@ -1,0 +1,13 @@
+name: Reaving Resonance
+incant: None
+call: “Grant +3 Base Damage and Arcane Accent to Next Attack”
+target: Self
+duration: Next Delivered Damage
+delivery: None
+refresh: Short Rest
+accent: Arcane
+effect: Grant
+description: |
+  Wonderworkers have the capacity to interact with the world at a level usually only accessed by those wielding arcane arts. By tapping into that flow of power, they can add disruptive force to one of their interactions with the world.
+
+  The wonderworker can expend this power to add +3 damage and the Arcane Accent to any power that deals damage with a delivery of Weapon, Touch, Spell-Packet, or Spell-Ball - effecting only the first swing or charge of a power.  This power supercedes all rules preventing the increase of damage of powers.  

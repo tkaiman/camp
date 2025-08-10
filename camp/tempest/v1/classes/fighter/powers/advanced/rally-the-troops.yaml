@@ -1,7 +1,7 @@
 name: Rally the Troops
 ranks: 2
 incant: RP About 5 seconds of encouraging an ally
-call: '“[Name or Description] Refresh One Spike and Grant 2 Barrier by Will”'
+call: '“[Name or Description] Refresh Two Spikes and Grant 3 Barrier by Will”'
 target: Other Individual
 delivery: Verbal
 accent: Will
@@ -13,7 +13,7 @@ description: |
   simple _"look out behind you"_, the Fighter encourages one of their comrades
   to greatness. The Fighter must provide instruction and encouragement to an ally
   for about 5 seconds and should then follow it with the call immediately to
-  provide one individual a Refreshed Spike and 2 Barrier by Will. The Fighter may
+  provide one individual 2 refreshed Spikes and 3 Barrier by Will. The Fighter may
   not target themselves with this ability.
 
   This instruction and encouragement may be tactical in nature, for example: _"Valifar,

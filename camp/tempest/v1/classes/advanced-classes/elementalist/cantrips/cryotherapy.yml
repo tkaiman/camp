@@ -1,0 +1,11 @@
+name: Cryotherapy
+incant: Standard
+call: “Cure [Condition] and Short Drain by Ice”
+target: Individual
+duration: Instantaneous, Short
+delivery: Touch
+refresh: Immediate
+accent: Ice
+effect: Cure, Drain
+description:
+  The practice of a freezing cold bath to rinse away what ails a person is taken to an extreme by the elementalist, blasting away troubles at the expense of leaving the cured individual a shivering, drained mess. If the target accepts the cure, they also accept the drain - the drain could also be targeted and cured by this Spell, but would result in the target being further drained (and likely grumpy at the repeated ice bath).

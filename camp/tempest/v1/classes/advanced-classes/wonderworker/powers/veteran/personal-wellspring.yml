@@ -1,0 +1,15 @@
+name: Personal Wellspring
+incant: None
+call: '“Attack charged!”, “Energized!”'
+target: Self
+duration: Instantaneous, Short Rest
+delivery: Weapon or Packet
+refresh: Long Rest
+accent: None
+effect: Refresh
+description: |
+  Magic items resonate with the essence of those who wield them. By working with that connection, a Wonderworker can push a magic item’s normal powers past its limits.
+
+  In order to use this Power, the Wonderworker charges a weapon attack or Spell. This can be a normal, unaccented attack or any other Spell or Power enhanced attack. If that attack strikes a target, the Wonderworker fills themself with power until their next Short Rest.
+
+  The Wonderworker may expend this charge to utilize an expended Carded Item Power that has a Refresh of Short, Long, or Event. If the Power refreshed has a normal refresh of Event, this Power may only be used on that item once per Event.

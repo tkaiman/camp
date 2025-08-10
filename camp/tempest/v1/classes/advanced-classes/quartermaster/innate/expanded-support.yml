@@ -1,0 +1,50 @@
+name: Expanded Support
+requires: quartermaster:2
+choices:
+  support:
+    name: Support
+    matcher:
+      id:
+        - greater-alchemy
+        - greater-enchanting
+        - greater-tinkering
+        - greater-arcane-ritual
+        - greater-divine-ritual
+        - basic-locks
+        - basic-traps
+        - mystic-smith
+        - great-weapons
+        - shield-expertise
+        - expanded-support-medical
+        - expanded-support-supply
+    choice_requires:
+      greater-alchemy: journeyman-alchemy
+      greater-enchanting: journeyman-enchanting
+      greater-tinkering: journeyman-tinkering
+      greater-arcane-ritual: journeyman-arcane-ritual
+      greater-divine-ritual: journeyman-divine-ritual
+      great-weapons: basic-martial-weapons
+      shield-expertise: basic-shields
+description: |
+  The Quartermaster continues to learn new and better means of supporting their company, and some may choose to branch out into avenues of support they had not previously anticipated. The Quartermaster gains one of the following options that they already meet the requirements for:
+
+    * Bespoke Equipment: Gain your choice of Greater Alchemy or Greater Enchanting or Greater Tinkering
+    * Master of Ceremonies: Gain your choice of Greater Arcane Ritual Magic or Greater Divine Ritual Magic
+    * Field Engineer: Gain your choice of Basic Locks or Basic Traps
+    * Combat Support: Gain your choice of Mystic Smith or Great Weapons or Shield Expertise
+    * Medical Support: Gain Basic Medicine and Advanced Medicine
+    * Supply Chain Management: Gain Manse and Income
+---
+id: expanded-support-medical
+name: Medical Support (Basic and Advanced Medicine)
+parent: expanded-support
+type: subfeature
+display_type: Bonus
+grants: [basic-medicine, advanced-medicine]
+---
+id: expanded-support-supply
+name: Supply Chain Management (Manse and Income)
+parent: expanded-support
+type: subfeature
+display_type: Bonus
+grants: [manse, income]

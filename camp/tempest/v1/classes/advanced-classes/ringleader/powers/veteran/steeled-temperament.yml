@@ -1,0 +1,13 @@
+name: Steeled Temperament
+incant: None
+call: None
+target: Self
+duration: Passive  
+delivery: None
+refresh: None
+accent: None
+effect: Obfuscate
+description: |
+  Nothing cracks the facade of the ringleader, practice on the battlefield and negotiation have made them nearly impossible to read.
+
+  The Ringleader is considered Inherently obfuscated vs. Discerns that are neither Subtle nor Final.

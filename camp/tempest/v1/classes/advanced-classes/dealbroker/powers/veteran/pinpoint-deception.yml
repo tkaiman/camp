@@ -1,0 +1,16 @@
+name: Pinpoint Deception
+tags: [concession]
+incant: Negotiation (out of combat)
+call: "“[Name or Description] Subtle Discern by Mind: [Question]”"
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Short Rest
+accent: Mind
+effect: Discern
+description: |
+  Dealbrokers tend to have a highly-trained sense of attempts to deceive. During a negotiation out of combat, you may ask: “[Name or Description] Subtle Discern by Mind: What have you lied about during this negotiation?”.
+
+  If you use it again during the same negotiation on the same target (for example, if you use Give and Take to Refresh it), the call changes to: “[Name or Description] Subtle Discern by Mind: What is one thing you have lied about since I last asked?”
+
+  Even if Refreshed, you can only use this power on any given target once per Short Rest.

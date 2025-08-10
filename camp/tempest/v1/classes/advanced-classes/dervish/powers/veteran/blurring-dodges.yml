@@ -1,0 +1,11 @@
+name: Blurring Dodges
+incant: None
+call: "Resist"
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: Resistance
+description: |
+  The Dervish moves so quickly that she has resistance to Thrown and Projectile weapons. This ability cannot be used while the Dervish is Hobbled.

@@ -1,0 +1,11 @@
+name: Inspiration
+incant: Standard
+call: "“Instruction: Until you complete a Short Rest, you can cast all Novice Spells as if they were cast with an Adept Spell-Slot”"
+target: Other Individual
+delivery: Touch
+accent: None
+duration: Short Rest
+refresh: Spell
+effect: Alter
+description: |
+  This Spell can only be cast out of combat and must be cast on another character. The recipient can treat Novice Spells they cast as if they were being cast with an Adept-tier Spell-Slot while still only expending a Novice-tier Spell-Slot.

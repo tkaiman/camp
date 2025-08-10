@@ -1,0 +1,13 @@
+name: Cleric Mend
+incant: Standard
+call: “Mend 5 by Radiance”, “Rebuild Shield”
+target: Individual
+delivery: Spell-Ball
+accent: Radiance
+duration: Instantaneous
+refresh: Spell
+effect: Mend, Rebuild
+description: |
+  The target of this spell will Mend 5 Armor Points or Rebuild a Shield.
+
+  Enhancement: Expend a Spike: If the target is Chosen, it will “Mend to Full” one suit of armor.

@@ -1,0 +1,11 @@
+name: Master of the Healing Arts
+cost: 6
+requires: universalist:3
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description: When using a Cantrip to heal, that Cantrip heals one additional Life Point. This additional healing should be incorporated into the Call and stacks with Advanced Peacecaster.

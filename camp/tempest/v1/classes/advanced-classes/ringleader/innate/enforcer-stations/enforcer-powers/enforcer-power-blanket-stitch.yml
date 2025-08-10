@@ -1,0 +1,13 @@
+name: Blanket Stitch
+incant: None
+call: “Heal 1 to Dying by Agony, Weakness by Agony”
+target: Individual or Item
+duration: Instantaneous
+delivery: Verbal
+refresh: Immediate
+accent: None
+effect: Heal, Weakness
+description: |
+  The surgeon is skilled at field-work, and  can help pick up somebody on the battlefield by quickly stitching their wounds shut. The process is painful and usually involves quite a bit of discomfort on the recipient’s part - after a Quick Count of 10 role-playing stitching the wounds of the target, you may call “ Heal 1 to Dying by Agony, Short Weakness by Agony”.
+
+  If the Surgeon uses this Power on someone they believe to be one of their Ringleader’s Enforcers, they have the option to take their time and spend a Quick Count of 30 stitching, rather than only 10.  For this, the Call is “Heal 3 to Dying by Agony” instead.

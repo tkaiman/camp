@@ -1,0 +1,12 @@
+name: Undeniable
+requires: mentalist:5
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Refresh
+description:
+  When using a Mentalist or Mage spell with an effect that is not taken for any reason (such countered, resisted, immune etc) the Mentalist may immediately refresh the slot used to cast it.

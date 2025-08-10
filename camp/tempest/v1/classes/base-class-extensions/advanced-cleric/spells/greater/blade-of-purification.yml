@@ -1,0 +1,13 @@
+name: Blade of Purification
+incant: Standard
+call: “Imbue Weapon with [Grant Life to Undead] by Radiance"
+target: Individual
+delivery: Touch
+accent: None
+duration: Until Used
+refresh: Spell
+effect: Imbue
+description: |
+  This powerful Spell wreathes a weapon in the blinding light of creation.
+
+  Note: As with all Imbue effects, this is only a single effect, and the Grant Life is not able to be used at-will.

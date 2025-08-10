@@ -1,0 +1,14 @@
+name: Assassinate
+requires: assassin:5
+incant: None
+call: “Death”, “[Name or Description] 10 Piercing by Poison”
+target: Individual
+duration: Instantaneous
+delivery: Weapon, Verbal
+refresh: Short Rest
+accent: None, Poison
+effect: Death, Piercing
+description: |
+  This Power can only be used out of combat. The Assassin can use a Hand Weapon to make an attack from behind which will immediately kill the target. If the Assassin places her weapon against her target (while validly “from behind”) and leaves it there, she can Call the attack at any time, including the initiation and first moments of combat.
+
+  Note: The weapon should be placed against a valid hit location, not against the throat or head.  If the Death effect is prevented the Assassin may expend a Spike to call “[Name or Description] 10 Piercing by Poison to the target which prevented the death effect.

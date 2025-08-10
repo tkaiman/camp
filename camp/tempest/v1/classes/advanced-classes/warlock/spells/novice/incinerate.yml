@@ -1,0 +1,11 @@
+name: Incinerate
+incant: Standard
+call: “Wounding 1 by Flame”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Packet
+refresh: Spell
+accent: Flame
+effect: Wounding
+description:
+  When this spell is cast, Incinerate charges double the Warlock’s class-level in Spell-Packets with Wounding 1 by Flame.

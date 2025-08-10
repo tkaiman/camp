@@ -1,0 +1,11 @@
+name: Control Undead
+incant: “I call the spirits to assume control of this husk”
+call: “Short Dominate to Undead by Darkness”
+target: Other Individual
+duration: Short Rest
+delivery: Weapon or Spell-Ball
+refresh: Long Rest
+accent: Darkness or Devotion
+effect: Dominate
+description:
+  Particularly in lands where necromancy is a common occurrence, occultists may find it useful to study these creatures, either to defend against them or for more nefarious purposes. Undead minds tend to have a control mechanism built in by their creators, or at least a weakness that you can exploit, and you know how to exploit that vulnerability. Once per Long Rest, you may chant “I call the spirits to assume control of this husk” and deliver a call of “Short Dominate to Undead” by either a weapon or a thrown spell ball. If you follow a religion and brandish a symbol of your faith, you may add your Devotion Accent to this call instead of Darkness.

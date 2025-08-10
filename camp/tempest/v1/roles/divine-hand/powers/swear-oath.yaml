@@ -1,0 +1,25 @@
+name: Swear Oath
+level: bonus
+ranks: 10
+cost:
+  ranks:
+    1: 0
+    2: 2
+    3: 4
+    4: 6
+    5: 8
+    # These extra ranks are not normally purchaseable.
+    # You get them by taking Exemplar levels or the like.
+    6: 99
+    7: 99
+    8: 99
+    9: 99
+    10: 99
+description: |
+  The Divine Hand is a vessel for their deity’s righteousness, which allows them to draw upon divine power. When the Divine Hand takes this power they must choose an Oath to swear from the list below. Each Oath comes with a list of Tenets as well as a single benefit that may be utilized if the Divine Hand spends a point of Divine Grace.
+
+  If the Divine Hand ever violates their Oath, they immediately lose all of their points of Divine Grace and will be unable to access Powers from this Role or any Innate Powers or Spells from the Exemplar Advanced Class until the next Event, until they have undergone an Atonement spell, or have received forgiveness from their Deity.
+
+  A Divine Hand that has sworn an Oath through this power gains a point of Divine Grace. These Points refresh after completing a Long Rest. Points of Divine Grace stack from additional purchases of Swear Oath. Points of Divine Grace granted from Swear Oath are additive with points granted from Exemplar’s Divine Grace Innate Power. Additionally, when the Divine Hand takes the “Swear Oath” Role Power they gain access to a “Chosen Accent.” This Accent may be used in place of the Accent granted by their Religion for various substitution powers and also interacts with the Exemplar class. The Divine Hand may only have a single “Chosen Accent” at any one time, but may switch between any of their available Chosen Accents during a Short Rest.
+
+  The cost of Swear Oath is 0 for the first time it is purchased then increases by two, so the second purchase of Swear Oath would be 2 CP, then 4, then 6, then 8. No more than 5 Oaths may be sworn with Swear Oath and all Oath combinations must be approved by plot prior to gaining any benefits from the Oaths.

@@ -1,0 +1,11 @@
+name: Rise up the Faithful
+incant: Standard
+call: "By My Voice, Heal 5 to [Devotion]"
+target: Individual
+delivery: Voice
+accent: "[Devotion Accent]"
+duration: Instantaneous
+refresh: Spell
+effect: Heal
+description: |
+  The Divine Shield can release a wave of healing energy that heals all those of the same faith as the Divine Shield.

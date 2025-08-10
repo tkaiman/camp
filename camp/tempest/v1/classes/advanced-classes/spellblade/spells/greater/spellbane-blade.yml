@@ -1,0 +1,19 @@
+name: Spellbane Blade
+incant: Standard
+call: '"Resist","Dispel"'
+target: Weapon
+duration: Short Rest or until Discharged
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Dispel, Grant Resistance
+description: |
+  This spell causes a weapon to gain powerful anti-magic properties. The spell lasts until the weapon is not in the caster's hand, the caster completes a Short Rest or becomes Helpless, or the Dispel Magic is used. While active, the enhanced weapon has Resistance to Packets, and Verbal Effects targeted at the weapon itself. The wielder can also cause any effect causable by a Dispel Magic spell as a Weapon Delivery:
+
+    * Harm Constructs: “Piercing 5 to Construct.”
+    * Dispel any of the following: “Dispel Protects”, “Dispel Summoned Armor”, “Dispel Barrier”, or a specific Condition: “Dispel [Condition].”
+    * Dispel all Conditions caused by a specific Accent: “Dispel [Accent].”
+    * Break any circle represented by a cord, rope, or the like: “Dispel Circle Final.”
+    * Deactivate a Glyph for a Slow Count of 60: “Dispel Magic: Deactivate Glyph, Slow 60.”
+
+  Once this Dispel has been used, the spell ends.

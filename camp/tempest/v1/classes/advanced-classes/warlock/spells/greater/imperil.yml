@@ -1,0 +1,11 @@
+name: Imperil
+tags: [patron]
+incant: Standard
+call: “Short Grant Vulnerability to [Eldritch Accent] by [Eldritch Accent]”
+target: Individual
+duration: Short Rest
+delivery: Spell-Ball
+refresh: Spell
+accent: "[Eldritch Accent]"
+effect: Grant Vulnerability
+description: Twisting fate and warping reality, the Warlock lays bare her opponent’s weakness for all to exploit. The two Accents named in the Call must be identical.

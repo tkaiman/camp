@@ -1,0 +1,13 @@
+name: Flexibility
+ranks: 2
+incant: None
+call: None
+target: Self
+duration: None
+delivery: None
+refresh: None
+accent: None
+effect: None
+grants: rogue.powers@2:2
+description: |
+  The Rogue may choose between: two additional Basic Rogue Powers, two Advanced Rogue Powers, or a combination of one of each.

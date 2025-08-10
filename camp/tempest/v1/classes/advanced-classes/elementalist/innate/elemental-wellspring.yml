@@ -1,0 +1,23 @@
+name: Elemental Wellspring
+requires: elementalist:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  When casting a Spell that uses Acid / Flame / Ice / Lightning Accents (even one that has been adjusted to use one of them), the Elementalist can slowly accumulate power - siphoning off small errant charges of energy from each of the Spells they cast during combat. While normally an admixture of these elements would cancel each other out, the elementalist is able, through consistent casting of the same or related elements, to build up Spells of devastating effect.
+
+  Whenever the Elementalist casts a Spell with one of these four accents, they should make note of the tier of Spell they cast: Novice Spells count as one, Adept as two, Greater as three, and Master is four. That number of charges is added to their Elemental Well. These charges can be used in any of the following ways:
+
+    * They may throw a single Spell-Ball at a foe, dealing [X] [ Acid/Flame/Ice/Lightning], with X equal the amount of charges expended. The Spell-Ball is charged with the Call “I charge you from the Elemental Well.”
+    * The Elementalist may plant their right foot; they may then call “[Name or Description] 1 [Acid/Flame/Ice /Lightning]” against the named target for as long as they keep their foot planted. Each Call consumes one charge.
+    * The caster immediately gains Barrier equal to the charges spent (Maximum x2 Elementalist levels).
+    * If the Elementalist is struck with a weapon attack, they may spend five charges to retaliate with a “[Name or Description] Short Disable [Limb] by [Acid/Flame/Ice /Lightning]”, targeting the limb or limbs holding the weapon that struck them.
+
+  When casting Elementalist Spells, there are several marked with [Wellspring] that will contribute to this growing well of elemental power. Each Spell adds to this Elemental Well differently, and it is up to the caster to appropriately keep track of their Well.
+
+  Finally, the Well may not contain more charges than the Elementalist’s character level at any one time. Charges gained beyond this value are lost.

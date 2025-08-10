@@ -1,0 +1,13 @@
+name: Radiant/Dark Flame Weapon
+incant: Standard
+call: '“Short Grant [Flame / Radiance] Accent” or “Short Grant [Flame / Darkness] Accent”, “Short Grant Plus 1 Spike Damage”'
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: Radiance, Flame, Darkness
+effect: Grant Plus Spike Damage, Grant Accent
+description: |
+  On casting, the Exemplar chooses either [Flame/Radiance] or [Flame/Darkness].  For the duration of the spell the exemplar may substitute either accent from the pair they chose on Weapon Attacks or Weapon Powers.
+
+  By expending a Divine Grace, The Exemplar receives a Short Grant +1 Base Spike Damage as celestial power envelops their weapons.

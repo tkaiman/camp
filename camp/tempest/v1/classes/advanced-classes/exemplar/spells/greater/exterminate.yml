@@ -1,0 +1,13 @@
+name: Exterminate
+incant: Standard
+call: "“Death by Darkness”, “Short Grant Plus 2 Base Damage”"
+target: Individual, Self
+duration: Instantaneous, Short Rest
+delivery: Spell-Ball or, Weapon
+refresh: Spell
+accent: Darkness
+effect: Death, Grant Plus 2 Base Damage
+description: |
+  When this spell is cast, Exterminate charges a single spell-ball or weapon with “Death By Darkness.” If the victim negates or reduces this attack with a defense your Base Damage against that opponent is increased by two until the opponent dies, quits the field, and/or the battle ends.
+
+  The Exemplar may expend a Divine Grace to charge this power twice.

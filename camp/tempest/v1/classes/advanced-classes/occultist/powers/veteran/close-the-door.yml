@@ -1,0 +1,11 @@
+name: Close the Door
+incant: “I call the spirits to close the door of darkness"
+call: "“Short Grant Minus Two Dark Territory to Self”, “Instruction to Marshal: Perform no Dark Territory draws for this process unless the Dark Territory modifier is above X.”"
+target: Crafting process
+duration: Short Rest
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Special
+description: |
+  While the occultist participates in a ritual, enchantment, or other crafting process that would normally require a Dark Territory draw, they may prevent the Dark’s encroachment if its influence is sufficiently weak. At the beginning of the process (after the initial Dark Territory modifier has been announced), the occultist may incant “I call the spirits to close the door of darkness" and then call “Short Grant Minus Two Dark Territory to Self”. You should then call “Instruction to Marshal: Perform no Dark Territory draws for this process unless the Dark Territory is greater than X”, where X is an amount that you Sacrifice from your Protection of the Spirits (Zero if you spend no points). If another character has already made this Instruction call during this process, X begins at the number previously announced instead of 0, so you may pool your points together with another Occultist.

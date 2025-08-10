@@ -1,0 +1,13 @@
+name: Holy Fire
+incant: Standard
+call: “[Name of Description] 4 Flame”, “[Name or Description] 4 Radiance”
+target: Individual
+delivery: Verbal
+accent: Flame, Radiance
+duration: Instantaneous
+refresh: Spell
+effect: Damage
+description: |
+  Reaching to the sky, the Divine Shield calls down a bolt of holy fire, calling “[Name or Description] 4 Flame.” If the Power is Prevented, the Divine Shield may use a second Verbal attack with the Call “[Name or Description] 4 Radiance” against the same target. The Divine Shield adds two points to their Divine Pool.
+
+  In addition, if the Divine Shield has a Basic Devotion power, they may use their Devotion’s Accent instead for both parts.

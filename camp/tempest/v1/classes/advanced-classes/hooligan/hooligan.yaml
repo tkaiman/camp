@@ -1,0 +1,29 @@
+name: Hooligan
+type: class
+category: Advanced Class
+class_type: advanced
+ranks: 5
+requires:
+  - level:10
+  - power@2
+  - short-weapons
+  - light-armor
+flags: flag+hooligan
+level_grants:
+  2: hooligan-bonus-spikes
+description: |
+  The Hooligan is the pack animal: they may be threatening when alone, but they truly shine when surrounded by the pack. Myriad gangs across the world count Hooligans among their number, from small groups of street toughs to well-organized criminal syndicates.
+
+  With an array of methods to harass, beguile, and harm their opponents in creative ways, one should never turn their back on one of these nefarious scoundrels - but then again, one in front of you shouldn’t be discounted either.
+
+  Worse still, with their mates nearby, the Hooligans' antics increase: what might have merely been a nuisance before can become deadly. Either way, guard your purse, your kin, and your kidneys should you suspect one of these ruffians approach.
+---
+id: hooligan-bonus-spikes
+type: subfeature
+parent: hooligan
+name: Bonus Maximum Spikes
+category: Hooligan Class Bonuses
+ranks: 2
+display_type: Bonus
+level_grants:
+  1: spikes:1

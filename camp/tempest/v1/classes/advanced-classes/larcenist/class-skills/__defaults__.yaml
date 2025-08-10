@@ -1,0 +1,4 @@
+type: skill
+parent: larcenist
+requires: larcenist
+category: Larcenist Class Skills

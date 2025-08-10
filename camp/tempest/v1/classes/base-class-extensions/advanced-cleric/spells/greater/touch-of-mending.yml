@@ -1,0 +1,13 @@
+name: Touch of Mending
+incant: Standard
+call: '“Grant Touch of Mending”, “Mend [X] by Radiance”'
+target: Self
+delivery: None
+accent: None
+duration: Long Rest
+refresh: Spell
+effect: Grant Power
+description:
+  Until the Cleric completes a Long Rest, they may use points from their Divine Pool to Mend Armor instead of Heal.
+  The Incantation for Healing Touch remains the same. The Cleric expends double the amount of Pool per point of Mending
+  granted to the target. The same limits apply to Mending as did to Healing.

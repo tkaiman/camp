@@ -1,0 +1,16 @@
+name: Channel-claw Focus
+cost: 2
+requires:
+  - universalist:1
+  - druid:2
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description: |
+  While any form spell is active, at-will, the Universalist can cast any Base Class or Universalist Spell with a Delivery of Packet as if it were a weapon-spell with a Delivery of Natural Weapon (Melee). The Incantation of the Spell will have the word “Clawchannel” added to the beginning. If the Clawchannelled Spell charges multiple Packets at once, each use of the weapon can be used to discharge one Packet's worth of effect.
+
+  For Example: If Char (which charges two Spell-Balls with “Wounding 3 by Flame”) were Clawchannelled, the user would be able to swing two attacks that did “Wounding 3 by Flame.” If the Call is made but the weapon attack misses, the Spell or charge is still considered expended. If a second spell is Clawchannelled into the weapon, the previous one immediately ends, losing any unused charges.

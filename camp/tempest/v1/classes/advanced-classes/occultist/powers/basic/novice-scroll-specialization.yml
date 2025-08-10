@@ -1,0 +1,15 @@
+name: Novice Scroll Specialization
+ranks: 2
+requires: apprentice-enchanting
+incant: None
+call: None
+target: Special
+duration: Passive, Instantaneous
+delivery: None
+refresh: None, Short Rest
+accent: None
+effect: Special
+description: |
+  Whenever you cast from a scroll, you need only recite the Incantation once. If you can perform the Incantation without looking; you do not need to actually read from the scroll — touching it with a hand is sufficient. You may therefore activate a scroll even if it is folded, rolled, or too dark to see, as long as you know its contents.
+
+  Once per Short Rest, you may cast a single Novice-tier scroll without expending it. If you take this power a second time, you gain an additional use of this ability per Short Rest. An Occultist may use this power [Occultist level] times per Long Rest for each purchase of this power.

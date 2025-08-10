@@ -1,0 +1,20 @@
+name: Balefire
+incant: Standard
+call: '"[Name or Description] X Arcane", "[Name or Description] Deathblow by Arcane"'
+target: Individual
+duration: Long Rest, Instantaneous
+delivery: Verbal
+refresh: Spell
+accent: Arcane
+effect: Damage, Deathblow
+description: |
+  The Balefire is a pool of energy that allows the Mage to craft blasts of pure magical energy. At any time before completing a Long Rest, the Mage can release this magical fire.
+  The Balefire Pool begins with ten points which may be released in any increment up to the Mage’s Class-Level to cause damage, one-for-one with the call "[Name or Description] X Arcane."
+
+  If a Balefire strike appears to take down a foe (i.e. the creature appears to become Helpless or otherwise obviously defeated), the Mage adds three points to their Balefire Pool.
+
+  Lastly, 1 point of Balefire can be expended to Call "[Name or Description] Deathblow by Arcane." This never adds additional points to the Balefire.
+
+  For Example: The Mage Tristan blasts a Chaos Bear with "Chaos Bear, 4 Arcane" and that creature drops. Tristan would then have 9 more points (rather than 6) of Balefire left to do damage
+  with. He then turns to the evil Mage apparently in charge of the Chaos Animals and releases a "Mage in Black, 4 Arcane" at that target, who calls "Protect!" Tristan would then have
+  5 points of Balefire left to use. Tristan tries again, using his last 5 points on the mage, who falls, leaving Tristan with 3 more points and no enemies left to fire at.

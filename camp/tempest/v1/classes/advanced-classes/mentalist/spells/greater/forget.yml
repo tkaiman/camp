@@ -1,0 +1,11 @@
+name: Forget
+incant: Standard
+call: '"[Name of Description] Obey by Mind: ‘Forget the last ten minutes’" “Instruction: This Obey may not be Cured, only Dispelled”'
+target: Individual
+duration: Permanent
+delivery: Verbal
+refresh: Spell
+accent: Mind
+effect: Obey
+description:
+  Tearing the last few moments from another, the Mentalist causes a blank in the target’s mind. Although this Spell has a Verbal Delivery, it can only be cast on a target who is within arm’s reach at the end of the Incantation.

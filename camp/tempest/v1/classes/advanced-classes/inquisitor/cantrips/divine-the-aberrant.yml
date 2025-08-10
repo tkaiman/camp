@@ -1,0 +1,15 @@
+name: Divine the Aberrant
+incant: Standard
+call: Special
+target: Individual
+delivery: Verbal
+accent: Radiance
+duration: Instantaneous
+refresh: Immediate
+effect: Discern
+description: |
+  This spell allows the character to determine if a targeted creature is one of the Living Dead. Alternatively, it may be used to determine the controller of an Undead or what kind of Undead a creature is, but only if the Inquisitor has already used this Power to ask the first question and gotten a positive response.
+
+  *“[Name or Description] Discern by Radiance: Are you [Undead/Abomination]?”
+  *“[Name or Description] Discern by Radiance to [Undead/Abomination]: What kind of [Undead/Abomination]are you?”
+  *“[Name or Description] Discern by Radiance to [Undead/Abomination]: Who is your controller?”

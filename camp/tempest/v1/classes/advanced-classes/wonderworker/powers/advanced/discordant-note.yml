@@ -1,0 +1,13 @@
+name: Discordant Note
+incant: None
+call: '“Counter, Discordance”, “[Name or Description], Short Silence by Force”'
+target: Self, Individual
+duration: Short Rest, Instantaneous
+delivery: None/Verbal
+refresh: Short Rest
+accent: Force
+effect: Counter, Silence
+description: |
+  A Wonderworker can learn the connection between music and magic, and turn a foul note into a weapon against spellcasters.
+
+  The Wonderworker must first use an instrument or other noise-generating object to create a charge for this Power - any small roleplaying of creating the charge is appropriate, as long as sound is involved. This charge will last until the Wonderworker completes a Short Rest. During that time, the Wonderworker can use the charge to Counter a Verbally-Delivered attack or Effect. They then may use the Verbal Silence directed at the source of the Verbal attack. The Silence charge is lost if not used immediately after the Counter.

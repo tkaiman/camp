@@ -1,0 +1,16 @@
+name: Voice of the Grimm
+incant: "RP: Sacrifice of Hide, Harvest, Scale, or Blood."
+call: "“Discern to Marshal Spirit: I invoke the Voice of the Grimm”, Explanation"
+target: Marshal Spirit
+duration: Instantaneous
+delivery: Verbal
+refresh: Event
+accent: None
+effect: Special
+grants: [sight, sight-beyond-sight]
+description: |
+  The strongest of rangers know the world around them well, but that knowledge usually comes from experience. Not always are these experiences their own. All rangers who have found themselves in the Grimm know of the third man factor, pushing them beyond their limits to finish their hunt, or encouraging them to hunt stronger, more mighty beasts. This ‘Voice of the Grimm’ becomes second nature to some Rangers, who rely on it often.
+
+  The Ranger gains the Sight and Sight Beyond Sight character options.
+
+  In addition, by making a meaningful sacrifice of Hide, Harvest, Scale or Blood, the Ranger may invoke the Voice of the Grimm and ask them three questions. The Voice of the Grimm will judge the sacrifice and answer: the level of detail and specifics directly correlated to the sacrifice made to it. The Voice of the Grimm is a creature of the Hunt, and while his information may not be complete, it is always honest in its response and usually helpful.

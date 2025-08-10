@@ -1,0 +1,19 @@
+name: Spell Versatility
+requires: spellblade:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+choices:
+  sphere:
+    name: Bonus Spell Slot
+    description: Choose a sphere of magic to receive an additional Adept spell slot in.
+    limit: 1
+    controller: sphere-bonus
+    controller_data:
+      bonus: spell_slots@2
+description: Gain a single Arcane or Divine Adept Tier spell slot.

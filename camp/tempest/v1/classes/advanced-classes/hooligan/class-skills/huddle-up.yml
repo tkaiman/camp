@@ -1,0 +1,19 @@
+name: Huddle Up
+requires: hooligan:4
+cost: 5
+incant: None
+call: Special
+target: Individuals
+duration: Instantaneous, Short Rest, Event
+delivery: Verbal
+refresh: Long Rest
+accent: None
+effect: Grant
+description: |
+  The Hooligan is often the hype-guy for their Crew, and is often looked to to get the group ready mentally for an upcoming fight. The Hooligan may grant any number of these Effects to their posse members by expending Spikes.  Posse members can be given more than one benefit, but the Hooligan may not knowingly give the same bonus to the same member more than once.
+
+    * 1 Spike: “[Name or Description] Short Grant +1 Bonus Maximum Spikes”
+    * 1 Spike: “[Name or Description] Short Grant Agony Accent”
+    * 1 Spike: “[Name or Description] Mend 3 to [Armor/Shield]”
+    * 1 Spike: “[Name or Description] Grant Protect vs. Damage”
+    * 3 Spikes: “[Name or Description] Short Grant +1 Bonus Spike Damage”

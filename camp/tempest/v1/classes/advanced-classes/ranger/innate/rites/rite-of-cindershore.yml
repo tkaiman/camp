@@ -1,0 +1,15 @@
+name: Rite of Cindershore
+incant: Roleplay Q300, inviting beasts of Flame to guide your hunt.
+call: "“Long Grant Flame Accent”, “Wounding 4 by Flame”, “Shatter Final [Armor, Weapon, Form] by Flame”"
+target: Self, Individual
+duration: Long Rest, Instantaneous
+delivery: Projectile, Thrown or Claw
+refresh: Long Rest
+accent: Flame
+effect: Grant Accent, Wounding, Shatter
+description: |
+  Rangers hailing from the Cindershore are few and far between, given the natural game has been warped by the Witch-God Phoenix’s ascension into hardy creatures of cracked obsidian scales and fiery breath. Still, those who invoke the Rite of Summer seek the strength of these beasts to guide their hunt,
+
+  After participating in their rite, the Ranger may grant themselves the Flame Accent for all Projectile, Thrown or Claw attacks. They may expend a spike at will to deal “Wounding 4 by Flame” with a projectile, thrown or Claw attack.
+
+  The Rite of Cindershore can be expended in one burst of energy. The Ranger may use one projectile attack with the effect “Shatter [Armor, Weapon, Form] Final by Flame”, but then the Rite and all its effects end for the Ranger.

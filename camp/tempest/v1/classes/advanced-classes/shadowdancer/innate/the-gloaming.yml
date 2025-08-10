@@ -1,0 +1,12 @@
+name: The Gloaming
+requires: shadowdancer:1
+incant: Focus Quick 100
+call: '“Heal Full by Darkness”, “Cure [Condition] by Darkness.”'
+target: Self
+duration: Instantaneous  
+delivery: None
+refresh: Long Rest
+accent: Darkness
+effect: Heal, Cure
+description:
+  Once per Long Rest, if you Focus for a Quick Count of 100 in hiding where (as far as you can tell) no enemies can see you, you may call “Heal Full by Darkness.” You may also Cure one Condition of your choice with “Cure [Condition] by Darkness.”

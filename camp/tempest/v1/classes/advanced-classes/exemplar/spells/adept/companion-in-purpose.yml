@@ -1,0 +1,21 @@
+name: Companion in Purpose
+incant: Standard
+call: “Grant Divine Purpose”, Explanation
+target: Other Individual
+duration: Long Rest
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Grant Power
+description: |
+  The Exemplar allows another character to swear (one of) the same Oaths that they themselves have sworn. In doing so, the target gains the Divine Purpose Power below.
+
+  After casting the Spell, the Exemplar must expend a Divine Grace and then tell the target that they are to repeat an Oath after the Exemplar, and at the end will be bound to that Oath. The Exemplar should then speak their Oath, line by line, repeated by the target (who must remain within Touch Range the entire procedure). The Exemplar can only have one Companion in Purpose active at a time.
+
+  While adhering to the Oath, the target gains the following effects:
+
+    * Resistance to [Chosen Accent]
+    * Resistance to Radiance/Darkness
+    * Once, when visiting a Consecrated area appropriate to the Oath, the target may offer up prayer for guidance (of about 2 minutes), and refresh a number of novice spell slots equal to the Exemplar’s class-level (disclosed to the target when the spell is cast). These spell slots may be exchanged as per Refreshing Prayer. Alternatively, the target may refresh a martial power with a refresh of Long Rest.
+
+  Enhancement: The Exemplar may expend a spike in addition to the Divine Grace to empower their own oath, allowing the power to be cast on themself.

@@ -1,0 +1,31 @@
+name: Greater Form of the Striking Serpent
+tags: [form]
+incant: Standard
+call: “Grant Greater Form of the Striking Serpent”
+target: Self
+accent: None
+duration: Short Rest
+delivery: None
+refresh: Spell
+effect: Grant Power
+description: |
+  This Spell can only be cast while out of combat. The Druid is inhabited by the essence of the venomous snake, giving them speed and poisonous power.
+  The serpent is a predator, striking hard and cruel. While in the Greater Form of the Striking Serpent, the character cannot cast Spells of any kind,
+  but can activate the Powers of items and can cast the Nettles and Barbs Cantrip, but no others. The Druid has the following benefits:
+
+    * +2 Base Spike Damage.
+    * +2 Base Maximum Spikes.
+    * May manifest and Wield up to two Natural Short weapons proficiently.
+    * Gains resistance to Poison and Fear.
+    * May add the Serpent Accents to any Claw Weapon attack that does not have an Accent.
+    * Serpent Accents: [Poison, Fear]
+
+  The Serpent has the following additional abilities:
+
+    * Expend a Novice Spell-Slot to make a Weapon attack that does “Wounding 4 by [Serpent Accent].”
+    * Expend a Novice Spell-Slot to make a Verbal attack that does “Quick Slow by [Serpent Accent].”
+    * Expend a Novice Spell-Slot to make a Weapon attack that does “Quick Disable [Left/Right Arm] by [Serpent Accent].”
+    * Expend a Novice Spell-Slot to Refresh one Spike by Calling “Refresh Spike”.
+    * Expend an Adept Spell-Slot to do a Weapon attack that does “Taint by [Serpent Accent].”
+    * Expend an Adept Spell-Slot to do a Weapon attack that does “Quick Drain by [Serpent Accent].”
+    * Expend a Greater Spell-Slot to do a Weapon attack that does “Wounding [Druid-Level] by [Serpent Accent].”

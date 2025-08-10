@@ -1,0 +1,21 @@
+name: Elemental Mastery - Acid
+incant: Standard
+call: “...by Acid”, “Resist”, “Protect”, “1 Acid”
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: None
+description: |
+  The Sourcerer may only cast this spell if one of their [Eldritch Accents] is Acid.
+
+  The Sourcerer cannot cast this Spell if they have cast any other Elemental Mastery Spell this Event. In addition, if the character has a Draconic Heritage other than Acid, they cannot cast this Spell. Until the Sourcerer completes a Long Rest, they gain the following benefits:
+
+    * The Sourcerer can add the Acid Accent to any unaccented Power.
+    * The Sourcerer gains +1 Base Damage with all Spells that do Acid-Accented damage.
+    * The Sourcerer can expend a Spike to Counter a single source of Acid-Accented damage.
+    * The Sourcerer gains one Protect vs. Acid upon completing a Short Rest.
+    * The Sourcerer takes no damage from normal or natural acid; it is treated as water.
+    * The Sourcerer has immunity to ingested poisons of all kinds as they are burned up in the character’s system.
+    * The caster can exude acid from their fingertip. Although harmless to the one using it, it is extremely painful to those touched and has been used as an advanced interrogation technique, or as a punishment. Sometimes it is just useful to put someone unconscious. The character can do “1 Acid” by Touch at-will (remember that Touch Delivery can only be used on the helpless or willing). This touch will not dissolve or burn things without special Staff involvement.

@@ -1,0 +1,30 @@
+id: bonus-oath-1
+name: Bonus Oath +1
+requires: exemplar:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+grants: swear-oath
+description: |
+  The Exemplar may take one additional Oath from the Divine Hand Role without needing to pay the CP cost at Exemplar Levels two and four.
+---
+id: bonus-oath-2
+name: Bonus Oath +2
+requires: exemplar:4
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+grants: swear-oath
+supersedes: bonus-oath-1
+description: |
+  The Exemplar may take one additional Oath from the Divine Hand Role without needing to pay the CP cost at Exemplar Levels two and four.

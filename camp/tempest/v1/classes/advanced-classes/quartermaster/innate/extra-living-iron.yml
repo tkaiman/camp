@@ -1,0 +1,8 @@
+name: Extra Living Iron
+requires:
+  - quartermaster:1
+  - living-iron
+description: |
+  For the purposes of the Artisan Archetype power Living Iron only, add your Quartermaster level to your Artisan class-levels.  At level 5 Quartermaster, the Quartermaster adds their Quartermaster levels twice to Artisan class-levels instead of once.
+
+  For Example: A character who is a 10th level Crafter Artisan and 3th level Quartermaster would have a base Living Iron pool of 3 x 13 = 39 points, and could Mend a maximum of 13 points in a single use. Once the character reaches 5th level Quartermaster, their pool grows to 3 x 20 = 60 points, and can use up to 20 points in a single use.

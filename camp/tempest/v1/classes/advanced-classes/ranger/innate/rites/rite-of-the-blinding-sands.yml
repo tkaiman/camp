@@ -1,0 +1,15 @@
+name: Rite of the Blinding Sands
+incant: Roleplay Q300, inviting the Spirits of the Sands to guide your hunt.
+call: "“Long Grant Acid Accent”, “[Name or Description] Taunt 3”,  “[Name or Description] Berserk by Mind,”"
+target: Self, Individual
+duration: Long Rest, Instantaneous, Event
+delivery: Projectile or Thrown, Verbal
+refresh: Long Rest
+accent: Acid
+effect: Grant Accent, Taunt, Berserk
+description: |
+  The sun-scorched sands of the interior of Vedea are seldom traveled, if not just for the inhospitable desert, but the voracious scavengers that ply the dunes in search of unwary visitors. Rangers of these lands are often loners out of necessity - a water source may barely support a single individual, and the animal life of the wastelands seek out the tracks of well-fed caravaneers.
+
+  After participating in their rite, the Ranger may grant themselves the Acid Accent for all Projectile or Thrown attacks and when they land a Spike attack, they may follow up with a call of “[Name or Description] Taunt 3” against the same target.
+
+  Finally, the Rite of the Blinding Sands can be expended in one burst of energy. The Ranger may call “[Name or Description] Berserk by Mind,” against a number of creatures up to their Ranger class-Level, but then the Rite and all its effects end for the Ranger.

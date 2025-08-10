@@ -1,0 +1,15 @@
+name: Warsource, Greater
+cost: 2
+requires:
+  - spellblade:3
+  - warsource
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description:
+  The character’s Source can be a weapon or a shield of any size.

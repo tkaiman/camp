@@ -1,0 +1,11 @@
+name: Back Off
+incant: None
+call: “Quick Repel by Fear Final”
+target: Individual
+duration: Quick 100
+delivery: Weapon (Melee)
+refresh: Focus Quick 100
+accent: Fear
+effect: Repel
+description:
+  The Hooligan may Call “Quick Repel by Fear Final.”

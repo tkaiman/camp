@@ -1,0 +1,12 @@
+name: Shifting Sands
+tags: [Whirlwind]
+incant: None
+call: "Counter, Dodge"
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Counter
+description: |
+  Once per Short Rest, the Dervish may call “Counter, Dodge” against a Weapon or Materia attack, or Trap Call.

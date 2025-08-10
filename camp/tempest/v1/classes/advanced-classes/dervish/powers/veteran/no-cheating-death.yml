@@ -1,0 +1,13 @@
+name: No Cheating Death
+incant: None
+call: “Piercing 10”
+target: Individual
+delivery: Weapon
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Wounding
+description: |
+  Once per Short Rest, when you see an enemy use a Called defense to negate or reduce a Death effect, you may charge one of your weapons with a single attack of “Piercing 10” that can be used against that enemy anytime before your next Short Rest.
+
+  In addition, this Power refreshes when the Dervish successfully completes a deathblow against the creature that initially triggered this power.

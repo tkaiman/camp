@@ -1,0 +1,11 @@
+name: Find the Flaw
+incant: None
+call: “[Name or Description] Short Grant Vulnerability to Weapon Damage”
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Long Rest
+accent: None
+effect: Grant
+description: |
+  After seeing the Muscle in combat with another creature (landing at least one hit with a weapon on the enemy or their equipment) the Ringleader can analyze  the target’s weaknesses. In most cases, this opens up a whole new spectrum of pain, allowing creatures previously resistant to damage to be damaged: if only slightly. The call for this Power is “[Name or Description] Short Grant Vulnerability to Weapon Damage.”

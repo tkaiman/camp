@@ -1,0 +1,15 @@
+name: Persistence of Entry
+incant: "RP Focus Quick 100: Attempting to gain entry."
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Special
+description: |
+  The Larcenist is all too familiar with Havens and the problems they create when attempting a little wealth redistribution. Through persistence, the right tools, and a quiet location with which to do their work, even the most fortified of locations will eventually fall to the Larcenist’s “request” for entry.
+
+  When attempting entry into an area protected by a Haven, the Larcenist may roleplay breaking in for a Focus Quick 100. When they complete their count, they may remove a number of Haven charges equal to their Larcenist class-level.
+
+  Note: The Larcenist is not considered to have triggered the Haven’s prohibitions for attempting entry, and may use this ability at-will and consecutively against the same Haven.

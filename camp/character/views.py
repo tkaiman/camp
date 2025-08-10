@@ -506,6 +506,10 @@ class FeatureGroup:
     category_priority: dict[str, int] = dataclasses.field(default_factory=dict)
 
     @property
+    def need_collapse(self) -> bool:
+        return len(self.available_categories) > 1
+
+    @property
     def has_available(self) -> bool:
         return self.available or self.available_categories
 

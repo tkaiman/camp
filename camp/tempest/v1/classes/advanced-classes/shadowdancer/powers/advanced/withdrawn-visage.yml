@@ -1,0 +1,11 @@
+name: Withdrawn Visage
+incant: Focus Quick 100
+call: '“Grant Short Rest by Darkness”, “Heal to Full by Darkness”, “Cure [Condition] by Darkness”'
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: Darkness
+effect: Grant Short Rest, Heal, Cure
+description:
+  While unable to see the sun and while no part of their body is in direct sunlight, the Shadowdancer may quickly prepare themselves for the situation at hand. The Shadowdancer, while entirely in shadow, may complete a Focus Quick 100; if they do so without being interrupted, they may complete a Short Rest immediately, Heal to full, and Cure any Condition or combination of Conditions on themselves.

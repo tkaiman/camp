@@ -1,0 +1,22 @@
+name: Eldritch Harvester
+incant: Standard
+call: “Grant Eldritch Harvest”
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant Power
+description:
+  The Sourcerer gains the “Eldritch Harvest” Cantrip until they complete a Long Rest.
+
+subcard:
+  call: “Death to Helpless by [Eldritch Accent]”, “Grant 3 Barrier”
+  target: Individual, Self
+  duration: Instantaneous
+  delivery: Touch, None
+  refresh: Immediate
+  accent: Eldritch Accent
+  effect: Death, Grant Barrier
+  description:
+    This will kill Helpless individuals immediately. Upon casting on a valid target, as long as it is not Prevented, the Sourcerer gains three Barrier.

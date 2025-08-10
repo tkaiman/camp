@@ -1,0 +1,13 @@
+name: "Word of Power: Shield"
+incant: Standard
+call: “Grant Barrier 20 by Force”
+target: Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Spell
+accent: Force
+effect: Grant Barrier
+description: |
+  This power spell calls upon the essence of true magic and grants the target 20 Barrier.  
+
+  Enhancement: If the Mage wishes to shorten the Incantation to the simple “Word of Power: Shield” instead of the whole incantation, they may grant 10 Barrier by Force instead.

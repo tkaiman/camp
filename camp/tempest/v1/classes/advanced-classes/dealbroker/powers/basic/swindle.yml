@@ -1,0 +1,12 @@
+name: Swindle
+tags: [concession]
+incant: Negotiation (out of combat)
+call: “[Name or Description] Short Charm by Will”
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Short
+accent: Will
+effect: Charm
+description: |
+  Sometimes, an obvious trick works best. During a negotiation out of combat, if the target requests a concession and you both immediately accept it and also throw in some meaningful bonus, and the target accepts your addition, you may then call “[Name or Description]: Short Charm by Will” on the negotiator who requested the concession.

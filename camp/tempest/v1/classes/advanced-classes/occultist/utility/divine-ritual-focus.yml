@@ -1,0 +1,4 @@
+name: Divine Ritual Focus
+requires: journeyman-divine-ritual
+grants: greater-divine-ritual
+description: You gain Greater Divine Ritual Magic. Additionally, once per Event when you cast the Haven ritual, you may grant it a single enhancement from the Enhanced Haven list at no additional cost. The Haven must have an active Hearth to benefit from this ability, and Enhanced Haven can still be cast to add additional enhancements.

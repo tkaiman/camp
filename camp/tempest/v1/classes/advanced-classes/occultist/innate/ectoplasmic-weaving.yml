@@ -1,0 +1,12 @@
+name: Ectoplasmic Weaving
+requires: occultist:4
+incant: None
+call: '“Short Grant to Spirit: Lose Strong Spirit” “Rebuild Summoned Armor to Self” “Recharge Protection of the Spirits”'
+target: Other Individual Spirit
+duration: Short, Instantaneous
+delivery: Touch
+refresh: Focus Quick 100
+accent: None
+effect: Grant, Special
+description:
+  The Occultist can find use for spirits that are far stronger than the usual fare that composes their Protection of the Spirits. The Occultist may, utilizing a willing Spirit, pull strength from that Spirit. This requires the Spirit to have the Strong Spirit Supernatural Perk, either through character purchase or other means. The Occultist temporarily removes this Perk from the Spirit for one of two benefits for themselves. They may either Mend the Summoned Armor from Protection of the Spirits to full without the usual Focus Slow 180 required by Protection of the Spirits, or they may instead recover a Sacrificed Maximum point of Summoned Armor from Protection of the Spirits.

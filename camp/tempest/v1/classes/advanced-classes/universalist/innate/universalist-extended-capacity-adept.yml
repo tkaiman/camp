@@ -1,0 +1,12 @@
+name: "Universalist Extended Capacity: Adept"
+requires: universalist:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+grants: universalist.spell_slots@2
+description: The Universalist gains an additional Adept Spell Slot.

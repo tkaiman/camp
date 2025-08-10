@@ -1,0 +1,4 @@
+type: skill
+parent: quartermaster
+requires: quartermaster
+category: Quartermaster Class Skills

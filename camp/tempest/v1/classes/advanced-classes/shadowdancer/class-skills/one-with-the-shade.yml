@@ -1,0 +1,14 @@
+name: One with the Shade
+cost: 2
+tags: [insubstantial]
+requires: shadowdancer:2
+incant: None
+call: “Refresh Spike”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Refresh
+description:
+  After spending so much time flitting among the shadows, the Shadowdancer can find within the umbral realms motes of strength they can rejuvenate themselves with. Upon entering an Insubstantial state, the Shadowdancer automatically refreshes one Spike.

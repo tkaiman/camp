@@ -1,0 +1,16 @@
+name: Retribution
+incant: Standard
+call: "“[Name or Description], 4 Radiance”, “Short Grant +3 Spike Damage”"
+target: Self, Individual
+duration: Short Rest
+delivery: Touch, Verbal
+refresh: Spell
+accent: Radiance
+effect: Immunity, Grant Spike Damage, Taunt
+description: |
+  The Exemplar must plant the right foot on the ground upon casting this spell, granting themselves immunity to all damaging Weapon attacks for the duration of the spell. When the Exemplar is struck by an attack that would deal damage to them, they may call “[Name or Description]: 4 Radiance” to the creature that attacked them and then must end this spell.
+
+  This spell immediately ends if another Power is used, the Exemplar becomes helpless, is dealt non-weapon damage, or they move their right foot.
+
+  When this spell ends by the Exemplar taking damage, they may expend a point of Divine Grace. If they do, they may choose to gain a +3 to their Bonus Spike Damage, and the Exemplar is affected
+  by a Taunt 5 Final to the target that dealt them damage. The bonus to Spike Damage ends when the Taunt effect is resolved.

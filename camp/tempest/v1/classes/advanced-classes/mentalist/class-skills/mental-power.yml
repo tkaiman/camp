@@ -1,0 +1,13 @@
+name: Mental Power
+requires: mentalist:5
+cost: 5
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+grants: mentalist.power@3
+description: The Mentalist gains a Veteran Tier Mentalist power from those available.

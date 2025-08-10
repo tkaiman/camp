@@ -1,0 +1,10 @@
+name: Not So Funny Bone
+incant: None
+call: “Disable [Limb]”
+target: Individual
+duration: Permanent
+delivery: Weapon (Melee)
+refresh: Short Rest
+accent: None
+effect: Disable
+description: While striking an opponent or their equipment with a weapon, the character can call out “Disable [Limb].”

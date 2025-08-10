@@ -1,0 +1,17 @@
+name: Mass Production
+cost: 3
+requires: quartermaster:2
+incant: “Mass Production”
+call: None
+target: None
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description: |
+  When outfitting an entire operation, it is sometimes useful to cut a few corners when the resulting drop in quality will not impact useability. The Quartermaster may call “Mass Production” at the beginning of any crafting attempt to double the number of outputs from the crafting plan. This requires that the Quartermaster expend double the appropriate resources for the plan they are crafting. If the Quartermaster has the correct Batch Process skill from the Artisan class, it can be used in conjunction with this process to produce quadrupled results at quadruple cost.
+
+  There is a price to be paid for this level of output. Any item with an expiration created by this process will have its expiration duration halved. If the Quartermaster is an Artisan with the Durable Creation archetype power, this penalty and that benefit cancel out. Items that do not have an expiration such as processed resources are much more amenable to mass production, and suffer no ill consequences when produced this way.
+
+  Note: Crafting processes requiring a Dark Territory card pull must be pulled twice (or four times, when also using Batch Process) from the same hand. Resolve each card before the next is pulled.

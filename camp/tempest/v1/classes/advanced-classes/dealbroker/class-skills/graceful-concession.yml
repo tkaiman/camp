@@ -1,0 +1,17 @@
+name: Graceful Concession
+requires:
+  - dealbroker:3
+  - -hard-won-concession
+cost: 3
+incant: None
+call: None
+target: None
+duration: None
+delivery: None
+refresh: None
+accent: None
+effect: None
+description:
+  Negotiation does not have to be about conflict, and your even temper allows minor disagreements to flow naturally like a stream around a rock. When you
+  are asked to make a concession in a negotiation, you may ask for modifications to it up to twice and still benefit from Give and Take if the Dealbroker
+  then accepts the request, with or without your requested modifications.

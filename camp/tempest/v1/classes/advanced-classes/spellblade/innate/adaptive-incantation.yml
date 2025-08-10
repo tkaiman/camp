@@ -1,0 +1,14 @@
+name: Adaptive Incantation
+requires: spellblade:1
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  The Spellblade may use the Novice, Adept, or Greater level incantations from any casting class they have levels in interchangeably. The Spellblade may also use a custom incantation they purchased with Service Points interchangeably as though it were a base incantation above.
+
+  In addition, the Spellblade counts as both a Martial and an Arcane Spellcasting class for the purposes of Powers that depend on those class-level counts.

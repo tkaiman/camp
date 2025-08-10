@@ -1,0 +1,14 @@
+name: Bladechannel
+requires: spellblade:1
+incant: “Bladechannel”
+call: None
+target: Self
+duration: Until Discharged
+delivery: Touch
+refresh: Immediate
+accent: None
+effect: None
+description: |
+  At-will, the Spellblade can cast any Spell or Cantrip with a Delivery of Spell-Packet or Spell-Ball as if it were a weapon-spell with a Delivery of Weapon (Melee). The Incantation of the Spell or Cantrip will have the word “Bladechannel'' added to the beginning. If the Bladechannelled Power charges multiple Materia at once, each use of the weapon can be used to discharge one Materia’s's worth of effect.  If the Power charges multiple Packets subsequently, each charge can charge the weapon, just as if it were a Materia. If the Call is made but the weapon attack misses, the Spell or charge is still considered expended. If a second spell is Bladechannelled into the weapon, the previous one immediately ends, losing any unused charges.
+
+  For Example: Char (which charges two Spell-Balls with “Wounding 3 by Flame”) were Bladechannelled, the user would be able to swing two attacks that did “Wounding 3 by Flame”.

@@ -1,0 +1,11 @@
+name: Elemental Blade
+incant: Standard
+call: '“Grant Elemental Blade”, “Imbue Weapon with Wounding 2 [Flame, Ice, Lightning, Acid]”'
+target: Individual
+duration: Short Rest, Instantaneous
+delivery: Touch
+refresh: Spell, Immediate
+accent: None
+effect: Grant Power, Imbue
+description:
+  The Mage can give one individual within Touch Range the power to do elemental damage with a weapon. Until the Mage completes a Short Rest, they can Call “Imbue Weapon with Wounding 2 [Flame, Ice, Lightning, Acid]” while within Touch Range on that individual at-will, altering the Accent granted each time the power is Imbued.

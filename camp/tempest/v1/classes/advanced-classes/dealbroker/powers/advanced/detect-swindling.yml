@@ -1,0 +1,10 @@
+name: Detect Swindling
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Alter
+description: Even a Dealbroker can be taken in by a convincing hustler from time to time, but a skilled broker may recognize the hustle before it is too late. When the Dealbroker is affected by a Charm, this power can be used to reduce the effective duration by spending a Spike at the time it is applied. Event-duration Charms are reduced to Long, Long to Short, Short to Quick 100, and Quick 100 to Quick 30. The Dealbroker should not announce that this power was used. As with any ability that alters an Effect received, it can be used even if the Dealbroker takes the effect as Final. This can also be used even if the Charm has the Subtle modifier.

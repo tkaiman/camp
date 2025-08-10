@@ -1,0 +1,14 @@
+name: Part of the Crew
+requires: hooligan:3
+incant: None
+call: “Cure [Charm, Dominate, Obey] to self, Part of the Crew”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Cure
+description: |
+  The Hooligan is one that knows which way is up, and which is down, even when things go sideways. One part of that is knowing for certain who’s got your back, and who doesn’t, but acts like they do.
+
+  The Hooligan, when under the effects of a Charm, Dominate, or Obey effect that receives a clear command to do harm to one of their Crew, may Call “Cure [Charm, Dominate, Obey] to Self, Part of the Crew” on themselves. This Call must be loud enough so that at least one of the Hooligan’s Posse could hear, but does not have to be heard by the origin of the Effect.

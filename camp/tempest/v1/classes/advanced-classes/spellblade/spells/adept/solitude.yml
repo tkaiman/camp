@@ -1,0 +1,11 @@
+name: Solitude
+incant: Standard
+call: “[Name or Description] Quick Repel by Mind Final”
+target: Individual
+duration: Short Rest or until discharged
+delivery: Verbal
+refresh: Spell
+accent: Mind
+effect: Repel
+description:
+  The Spellblade sets up a triggered ability that will last until she completes a Short Rest. At any time until then, they can call a Quick Repel as a Verbal, ending the spell.

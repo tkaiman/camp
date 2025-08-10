@@ -1,0 +1,13 @@
+name: Radiant Shard
+incant: Standard
+call: “1 [Radiance/Force]”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Packet
+refresh: Immediate
+accent: Radiance/Force
+effect: Damage
+description: |
+  This minor cantrip charges a packet of Materia causing one damage by either Force or Radiance Accent, chosen by the caster at the time of casting. If this packet strikes a conscious enemy target and is not Prevented, the Caster may add 1 to their Healing Touch pool or Life Tap pool if they have one.
+
+  Note: Players should use their best judgment as to what an “enemy” is and this cantrip should not be used on their allies to regain Healing Touch or Life Tap pool.

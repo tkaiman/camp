@@ -1,0 +1,15 @@
+name: Dominate Element
+incant: Standard
+call: '“[Name or Description] Discern by Will: Do you have immunity or selective immunity to [Element]?”, “[Name or Description] Short Dominate by Will.”'
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Spell
+accent: Will
+effect: Discern, Dominate
+description: |
+  The Elementalist’s command of the elements can allow them to find a creature imbued with sufficient amounts of that element, and then crush their will to their own ends.
+
+  When the Elementalist casts this Spell, they pick a target and use the call: “[Name or Description] Discern by Will: Do you have Immunity or Selective Immunity to [Acid/Flame/Ice/Lightning]?” If the target answers in the affirmative, the Elementalist may then target that foe with “[Name or Description], Short Dominate by Will.”
+
+  Note: If the target does not have immunity or selective immunity, the Spell is expended but may be refreshed by completing a Short Rest.

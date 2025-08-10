@@ -1,0 +1,5 @@
+type: subfeature
+display_type: Oath
+category: Oaths
+parent: divine-hand
+use_purchase_limit: true

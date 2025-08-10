@@ -1,0 +1,17 @@
+name: Minor Miracle
+incant: Standard
+call: “Long Grant [Accent] by [Accent]”
+target: Other Individuals
+delivery: Touch
+accent: "[Accent]"
+duration: Long Rest, Quick 100
+refresh: Spell
+effect: Grant Accent, Drain
+description: |
+  The Divine Shield allows their allies to use a specific Accent at great personal cost.
+
+  The Divine Shield can grant any of the following Accents: Flame, Ice, Acid, Lightning, Radiance, or Darkness. In addition, if the Divine Shield has an Advanced Devotion power, they may Grant their Devotion’s Accent instead.
+
+  The number of targets that may be chosen is equal to twice the Divine Shield’s class-level.
+
+  When this spell is cast, the caster takes a Quick Drain and, unless all recipients are Chosen, also Sacrifices 4 Life Points.

@@ -1,0 +1,14 @@
+name: Aurora Veil
+tags: [wellspring]
+incant: Standard
+call: '“Short Grant X Barrier”, “[Name or Description], X Lightning”'
+target: Self
+duration: Short Rest
+delivery: None, Verbal
+refresh: Spell
+accent: Lightning
+effect: Grant Barrier, damage
+description: |
+  The caster surrounds themselves in an electrically charged aurora that deflects harm and might hurt those that touch the caster. Upon casting this Spell, the caster immediately gains Barrier equal to half (rounded up) their current Wellspring total.
+
+  While the caster has Barrier from this Spell, whenever the caster is hit by a melee attack, they may expend points from Wellspring to immediately call “[Name or Description], [X] Lightning,” where [X] is the expended points.

@@ -1,0 +1,12 @@
+name: Alchemical Tolerance
+requires: journeyman-alchemy
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description:
+  The pursuit of forbidden knowledge and power leads some to questionable life choices, but with practice and a preventative regimen you may resist some of the ill effects, to a point. The first Corrupted Alchemy item you consume per Long Rest does not affect you as though it is Corrupted. Additionally, the first time that you would gain Mana Sickness each Long Rest, you do not gain it.

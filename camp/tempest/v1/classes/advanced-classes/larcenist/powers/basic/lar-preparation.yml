@@ -1,0 +1,11 @@
+name: Preparation
+incant: Focus Quick 100
+call: “Grant Short Rest to Self”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Refresh, Special
+description:
+  The Larcenist may quickly prepare themselves for the situation at hand. They, while they believe they are unobserved by foes, may complete a Focus Quick 100, if they do so without being interrupted, they may complete a Short Rest immediately. This Power cannot be refreshed by any Power including ones that grant Long Rests.

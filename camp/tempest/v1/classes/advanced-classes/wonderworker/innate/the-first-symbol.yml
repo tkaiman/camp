@@ -1,0 +1,15 @@
+name: The First Symbol
+requires: wonderworker:1
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Symbol
+grants: ww-gateway
+description: |
+  Wonderworkers are defined by their panopoly - the collection of things, gizmos, trinkets, and knicknacks they collect and find meaning with. The First Symbol of the Wonderworker is something a bit stronger - having some association with the suits of Dark Territory, it has a deeper well to learn from and more power that can be expressed in the world.
+
+  The Wonderworker gains access to a Symbol of their choice, detailed below  in the “Wonderworker Symbols” section as well as access to the Gateway Power from that symbol. This choice is permanent, and reflects the character’s path of study through the esoteric knowledge they have discovered.

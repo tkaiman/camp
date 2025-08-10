@@ -1,0 +1,16 @@
+name: Learned Scholar
+requires: arcanist:1
+incant: "I pierce the veil of obscurity and command: reveal your inner workings to me."
+call: "“Discern by Arcane to [Item]: Reveal your Secrets.”"
+target: Non-Relic Item
+duration: Instantaneous
+delivery: Touch
+refresh: Immediate
+accent: Arcane
+effect: Discern
+description: |
+  By using this Power on an item, the Arcanist may learn all of the magical properties of an item. Although it is easy for anyone to determine if an item is magical or special in nature and read the
+  information card to discover obvious properties, this Power will allow the player to look at the folded information card (even if they normally wouldn’t meet the requirements on the outside) to know
+  its exact properties.
+
+  Note: If the card says “Relic” on the public portion, this spell has no effect.

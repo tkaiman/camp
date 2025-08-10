@@ -1,0 +1,13 @@
+name: Last Stand
+incant: "Last Stand"
+call: "Heal to Full by Will"
+target: Self
+duration: Special
+delivery: None
+refresh: Short Rest
+accent: Will
+effect: Heal, Root
+description: |
+  When the Sentinel would be put into a dying state (Ex: reduced to zero Life Points), they may instead Heal to Full and gain the Inherent rooted Condition until they enter the dying state again.
+
+  Once the Sentinel can no longer perceive a known hostile threat, they are immediately reduced to zero Life Points and begin dying.

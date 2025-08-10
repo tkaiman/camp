@@ -1,0 +1,6 @@
+name: Spirit Seer
+requires: occultist:3
+description: |
+  You gain the Sight perk. If you already possess the Sight perk, the CP for the original purchase is refunded. You may add “to Spirit” or “to Insubstantial” to any Discern or Expose effect you call. This is an at-will ability.
+
+  Additionally, you have a deeper insight into the spirits of creatures even if they are in material form. After about a minute of roleplay focused on a specific creature, you may ask it “[Name or Description]: Subtle Discern, what is your creature Type?” You may use this Discern once per Occultist class-level per Long Rest, but can only use it on any given creature once per Long Rest.

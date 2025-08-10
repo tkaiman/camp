@@ -1,0 +1,11 @@
+name: Eldritch Seal
+incant: Standard
+call: “Short Resistance to Dominate and Fear”
+target: Self
+duration: Short Rest, Event
+delivery: None
+refresh: Spell
+accent: None
+effect: Resistance, Grant Barrier
+description:
+  For the duration of this enchantment the Warlock is granted resistance to the effects of Dominate and the Accent Fear. They may resist these effects a number of times equal to their Maximum Life Points before the enchantment collapses. When successfully resisting an effect by using this ability, the Warlock gains 2 Barrier.

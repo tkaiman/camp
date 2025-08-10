@@ -1,0 +1,15 @@
+name: Expanded Knowing
+requires: wonderworker:3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Power
+grants: ww-deeper
+description:
+  Through experience, occult research, or just downright luck, the Wonderworker has a breakthrough that allows them to express greater powers of one of the symbols that they have connected with.
+
+  The Wonderworker gains access to the Deeper Power from one of their unlocked Symbols.

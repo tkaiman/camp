@@ -1,0 +1,12 @@
+name: Ankle Biter
+ranks: 3
+incant: None
+call: "Wounding 5 by Agony"
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Short Rest
+accent: Agony
+effect: Wounding
+description: |
+  After seeing a Crew member strike a target, the Hooligan may use Ankle Biter to deal “Wounding 3 by Agony” to that target any time before the Hooligan completes a Short Rest. If this Power is Prevented, the Hooligan immediately Refreshes a Spike.

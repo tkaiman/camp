@@ -1,0 +1,13 @@
+name: Forced Illusion
+incant: None
+call: "“[Name or Description] Short Obey by Mind: Act as though I belong here.”"
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Long Rest
+accent: Mind
+effect: Obey
+description: |
+  The Assassin’s trade always risks getting caught, however, stealth is not simply the act of going about unseen, but altering the perceptions of those around you, even to the extent of exerting control over the minds of the unwary.
+
+  Out of combat, the assassin may approach a target in an attempt to exert their will over the target and force them to ignore the assassin’s presence.

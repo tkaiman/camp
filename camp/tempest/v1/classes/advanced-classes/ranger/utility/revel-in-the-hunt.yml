@@ -1,0 +1,11 @@
+name: Revel in the Hunt
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Refresh Spikes
+description:
+  There is a certain joy to be had in taking down your prey, and some Rangers live for that thrill. Whenever the Ranger delivers a deathblow or kills their Ranger’s Mark or a creature belonging to their [Foe Type], they may refresh a Spike.

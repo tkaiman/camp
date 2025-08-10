@@ -1,0 +1,12 @@
+name: Hail of Sandstone
+tags: [Whirlwind, Hobbled]
+incant: None
+call: “Wounding 2”
+target: Individual
+delivery: Thrown Weapon
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Grant Wounding
+description: |
+  The Dervish may throw several weapons in rapid succession with devastating accuracy. The Dervish may throw up to four weapons before taking a Short Rest, with the call “Wounding 2.” In addition, while Hobbled, the Dervish may expend Spikes to add their Spike Damage to these attacks.

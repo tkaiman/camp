@@ -1,0 +1,15 @@
+name: Transcendent Armor
+tags: [artificer]
+requires: ac-sentinel:4
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Mend
+description: |
+  The Sentinels’ armor takes on nearly living quality, reacting to the needs of the Sentinel and knitting itself back together when provided the energy necessary to do so.
+
+  The Sentinel, when granted points of Barrier, may also choose to Mend their armor or shield for the same number of Barrier points that they were given

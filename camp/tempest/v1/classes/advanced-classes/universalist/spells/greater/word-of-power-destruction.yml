@@ -1,0 +1,13 @@
+name: "Word of Power: Destruction"
+incant: Standard
+call: “Wounding 15 by Arcane”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Arcane
+effect: Wounding
+description: |
+  The Universalist’s understanding of magic allows them to condense the raw arcane power of the universe and put it into a single piece of materia. If this incredibly devastating attack is Prevented the Universalist gains 10 points to their Healing Touch or Life Tap pool.
+
+  Enhancement: The universalist may spend 2 spikes to add additional spell balls to this effect, up to their Universalist Class Levels

@@ -1,0 +1,17 @@
+name: Surpassed Limits
+incant: None
+call: “Attack Charged!”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Special
+description: |
+  The Wonderworker can maintain a connection to their best selves, and in times of need they can tap into that connection to push beyond normal limits.
+
+  In order to use this Power, the Wonderworker charges a weapon attack or Spell. This can be a normal, unaccented attack or any other Spell or Power granted attack. If this attack strikes a target, the Wonderworker creates a resonance that powers their abilities.
+
+  If the Wonderworker has any Powers that utilize a keyword such as [Reinforce], [Whirlwind], or similarly represented keywords, the Wonderworker may use this Power to interact with one of those Powers as detailed in the original class. This will most frequently be a recharge of a skill or skills, but can vary depending on each class.
+
+  Example: Jotaro is a 10th Level Fighter, 5th Level Dervish and 2nd Level Wonderworker. They use Surpassed Limits, saying “Attack Charged!” then make a normal attack on a goblin who looked away a moment too long during their fight. Jotaro may then have Surpassed Limits interact with [Reinforce] as detailed in the Fighter’s Reinforce power to recharge all powers with that keyword, or they may interact with [Whirlwind] to recharge a Dervish power as detailed by Whirlwind.

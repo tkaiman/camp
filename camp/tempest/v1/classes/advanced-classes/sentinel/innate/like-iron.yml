@@ -1,0 +1,14 @@
+name: Like Iron
+requires: ac-sentinel:3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Resistance
+description: |
+  The Sentinel can further harden themselves in their stance, in exchange for a further loss of mobility.
+
+  In addition to its normal benefits, Sentinel’s Stance may grant Resistance to unaccented Damage while in effect. In exchange, the Sentinel must elect to be inherently rooted instead of slowed per Sentinel’s Stance. This choice must be made when Sentinel's Stance is activated.

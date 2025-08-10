@@ -1,0 +1,13 @@
+name: Spiritual Attunement
+incant: “I call the spirits to link me to this vessel”
+call: '“Short Grant Attunement to Self”, “Subtle Discern: What are the properties of this item?”'
+target: Self
+duration: Short Rest
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: Grant Attunement
+description: |
+  While touching a magic item, you may chant “I call the spirits to link me to this vessel”, then call “Short Grant Attunement to Self”. This fails if another creature is attuned to the item or the item has attunement requirements you do not meet. When you successfully attune to an item, you may call “Subtle Discern: What are the properties of this item?” and read its item card as though using the Artisan power Analysis.
+
+  You may use this temporary attunement even if you are already at your attunement maximum. The item de-attunes from you at the end of a Short Rest unless you obtain a proper attunement (either from the item itself or the Attune ritual) and are within your attunement limits, or the item prevents you from de-attuning (generally because it is cursed). If you are prevented from de-attuning from the item and you are over your attunement limit, you gain the Inherent Tainted condition until you remove enough attunements to be within your limits. If you die under these circumstances, you must ask a Keeper or other intermediary to remove attunements beyond your limit before your spirit can return to life.

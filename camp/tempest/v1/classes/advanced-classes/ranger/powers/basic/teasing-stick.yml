@@ -1,0 +1,11 @@
+name: Teasing Stick
+incant: None
+call: “Taunt 2 to [Animal / Foe Type]”
+target: Individual
+duration: Instantaneous
+delivery: Projectile or Thrown
+refresh: Focus Quick 100
+accent: None
+effect: Taunt
+description:
+  The Ranger knows just how to harass their foes just enough to focus their attention on themselves. Using a projectile or thrown weapon, the Ranger may call “Taunt 2 to [Animal / Foe Type].”

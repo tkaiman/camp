@@ -1,0 +1,38 @@
+name: Unleashed Knowing
+requires: wonderworker:5
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Power
+choices:
+  power:
+    name: Symbol Power
+    matcher:
+      id:
+        - wwuk-prime
+        - wwuk-deeper
+description: |
+  At the pinnacle of their power, the Wonderworker is confronted with a choice. They can study their symbols broadly, and unlock power across several of the symbols. Or, they can delve deeply into their powers, and find a path to a profound occult secret of one of their symbols. The choice is theirs, and is never taken lightly.
+
+  The Wonderworker has a choice to make:
+
+    * Either they gain access to the Prime Power from a Symbol they already have the Deeper Power from and a Deeper Power from another Symbol they already have the Gateway Power from; or,
+    * They gain access to two Deeper Powers from two of their unlocked Symbols.
+
+  This choice is permanent, and reflects the character’s path of study through the esoteric knowledge they have discovered.
+---
+type: subfeature
+display_type: Bonus
+id: wwuk-prime
+name: Prime Power + Deeper Power
+grants: [ww-prime, ww-deeper]
+---
+type: subfeature
+display_type: Bonus
+id: wwuk-deeper
+name: Deeper Power x2
+grants: ww-deeper:2

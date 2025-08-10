@@ -1,0 +1,24 @@
+name: Savage Shield
+requires: advanced-shields
+grants:
+  - great-shields
+  - reinforce
+description: |
+  The Sentinel knows that their shield can be dangerous, and can use that to fuel their powers.  Upon taking Savage Shield the Sentinel may add their Sentinel class levels to Fighter for Reinforce calculations.  Additionally, the Sentinel gains Great Shield (2), the Reinforce (3) Class Skill from Fighter, and the Shield Crush ability:
+
+subcard:
+  name: Shield Crush
+  incant: Q10 RP inflicting harm with a shield
+  call: “[Name or Description], Death to Helpless by Force”
+  target: Individual
+  duration: Instantaneous
+  delivery: Verbal
+  refresh: Short Rest
+  accent: Force
+  effect: Death
+  description: |
+    Instead of doing a deathblow to a helpless creature, the Sentinel can pantomime using their shield to execute a helpless individual.  Although this is a Verbal Delivery, the Sentinel must be close enough to touch the target with their shield in order to use the Power.
+
+    Note: A shield should NEVER deliberately make contact with another player during combat, or be used to shield bash. RP safely and respectfully.
+
+    If the Sentinel successfully kills a creature with this Power (it is not Prevented), they may refresh all powers with the [Reinforce] tag.

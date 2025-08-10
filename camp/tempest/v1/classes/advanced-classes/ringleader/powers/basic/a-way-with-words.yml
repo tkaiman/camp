@@ -1,0 +1,10 @@
+name: A Way with Words
+ranks: 3
+choices:
+  power:
+    name: Socialite Basic Power
+    matcher:
+      parent: socialite
+      type: power
+      attrs: { tier: 1 }
+description: The Ringleader may select a Basic Power from the Socialite class.

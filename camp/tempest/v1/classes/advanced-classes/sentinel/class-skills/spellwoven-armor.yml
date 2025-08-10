@@ -1,0 +1,13 @@
+name: Spellwoven Armor
+cost: 2
+requires: ac-sentinel:2
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Grant Plus Armor
+description: |
+  With a deeper understanding of how armor and protection works, the Sentinel can more efficiently grant magical protections. Whenever the Sentinel uses a Power that grants summoned armor, natural armor, or bonus physical armor, they can increase the amount of armor granted by that Power by one.

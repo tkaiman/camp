@@ -1,0 +1,12 @@
+name: Benefits of the Menagerie
+parent: enforcer-huntsman
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  The menagerie of animals that the Huntsman maintains have a few benefits for the Ringleader.  First, the Ringleader gains an additional 1 wealth a game at check in.  Second, the Ringleader has become an accomplished hunter and gains a +1 base damage to all Spike damage done with Projectile Weapons.  Lastly, the Ringleader has learned little snippets about the world of creatures and, for one application per Event (checking an info card, asking a question of Staff, etc.) can act as if they had the Lore: Nature skill.

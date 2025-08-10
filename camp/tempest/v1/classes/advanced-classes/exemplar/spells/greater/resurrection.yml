@@ -1,0 +1,19 @@
+name: Resurrection
+incant: Standard
+call: “Grant Life by Radiance”
+target: Individual(s)
+duration: Instantaneous
+delivery: Spell-ball or Weapon
+refresh: Spell
+accent: Radiance
+effect: Grant Life
+description: |
+  This powerful spell washes the target in life-energy. It provides two charges to the caster’s weapon or charges two spell balls. If the target is a corpse, it will bring it back to the living with 1 Life Point.
+
+  A Grant Life Effect, used on an Undead, will cause the creature to immediately discorporate and take Spirit Form.
+
+  Casting this spell adds ten points to the Exemplar’s Healing Touch pool if they have one. If the caster has the Peacecaster skill, instead they will add eleven points into their Healing Touch pool if they have one.
+
+  Note: This spell may be cast more than once per Long Rest.
+
+  If cast with a Master level spell slot the delivery becomes Verbal and the call becomes “[Name or Description] Grant Life, Heal to Full, and Grant 5 Barrier by Radiance” instead.

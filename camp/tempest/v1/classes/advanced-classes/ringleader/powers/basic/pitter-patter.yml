@@ -1,0 +1,10 @@
+name: Pitter Patter
+incant: None
+call: '“[Name or Description] Instruction: Turn your crafting hourglass over; its timer is complete."'
+target: Individual
+duration: Instantaneos
+delivery: Verbal
+refresh: Short Rest
+accent: None
+effect: None
+description: Patience is not really a Ringleader’s strong suit, but, sometimes, that’s okay. The Ringleader may instruct another to turn their hourglass over while crafting an item, shortening the time it takes to create an item. A Ringleader may use this Power a number of times each Short Rest equal to their Ringleader class-level.

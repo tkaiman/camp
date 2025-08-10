@@ -1,0 +1,13 @@
+name: Garus' Armor
+incant:  Focus Quick 100
+call: “Resist”, “Grant 6 Barrier by Time”, “Counter, Garus’s Armor”
+target: Self
+delivery: None
+accent: None
+duration: Short Rest
+refresh: Long Rest
+effect: Resistance, Grant Barrier, Counter
+description: |
+  The Dervish peers through the sands of time, seeing the blows their foes will use against them. Until the Dervish completes a Short Rest, they have resistance to Damage below 3.
+
+  The Dervish may end this Power early to grant themselves 6 points of Barrier by Time, or to Counter a Death Effect.

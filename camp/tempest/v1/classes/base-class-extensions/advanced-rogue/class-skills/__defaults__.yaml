@@ -1,0 +1,4 @@
+type: skill
+parent: rogue
+requires: advanced-rogue
+category: Rogue Class Skills

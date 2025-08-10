@@ -1,0 +1,15 @@
+name: Atonement
+incant: Standard
+call: Explanation
+target: Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Spell
+accent: None
+effect: Special
+description: |
+  Sometimes, there are those who stray, breaking laws of gods and mortals alike, requiring both penance and forgiveness. The ability to cast this spell is a privilege, and is never to be used frivolously or lightly.
+
+  A character who had been given Atonement should feel the weight of guilt lifted from them. If the character has received Atonement, they can add that they confessed and atoned to any Power that forces the character to speak the truth, determines if the character has spoken the truth, or detects if a character has strayed from morality or dogma (even if the Power would not normally allow such a statement, such as a Power that requires only a yes or a no).
+
+  The Inquisitor knows that the handing out of Atonement is of grave consequence, and is essentially, vouching for the Atoned in the eyes of the Divine. Should the Atoned return to their previously erroneous behavior, it is possible the weight of penance could fall upon the Inquisitor as well.

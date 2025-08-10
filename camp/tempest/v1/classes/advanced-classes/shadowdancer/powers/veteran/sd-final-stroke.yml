@@ -1,0 +1,11 @@
+name: Final Stroke
+incant: None
+call: “Death by Agony”
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Long Rest
+accent: Agony
+effect: Death
+description:
+  Attacking with a melee weapon from behind, the Shadowdancer can expend a Spike to do an attack that attempts to simply kill the target outright. If this attack is Prevented it will Refresh immediately when the Shadowdancer becomes Insubstantial.

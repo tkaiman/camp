@@ -1,0 +1,12 @@
+name: Dust Devil
+requires: dervish:1
+incant: None
+call: “Grant 3 Barrier and Short Slow Final”
+target: Self
+delivery: None
+accent: None
+duration: Event, Short Rest
+refresh: Short Rest
+effect: Grant Barrier, Slow
+description: |
+  Once per Short Rest, the Dervish may Grant themselves 3 Barrier, however, they take Short Slow Final to Self.

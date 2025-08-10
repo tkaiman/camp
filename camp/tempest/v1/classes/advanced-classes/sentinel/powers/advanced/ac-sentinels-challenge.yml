@@ -1,0 +1,13 @@
+name: Sentinel’s Challenge
+incant: None
+call: “[Name or Description], Taunt 8 by Will”
+target: Individual
+duration: Permanent
+delivery: Verbal
+refresh: Short Rest
+accent: Will
+effect: Taunt
+description: |
+  Calling out to a foe, the Sentinel drags their adversary into a fight against their indomitable defenses. This power lets the Sentinel make a verbal delivery of Taunt 8. In exchange, the Sentinel also Taunts themselves to that opponent for the same amount. If the opponent does not appear to hear or take the Taunt Effect, or the Taunt is Prevented, the Sentinel may likewise disregard the Taunt against that opponent.
+
+  If the Sentinel is wielding a Great Weapon in two hands and no other weapon, then upon resolving their self inflicted Taunt Effect they may refresh all powers with the [Reinforce] tag.

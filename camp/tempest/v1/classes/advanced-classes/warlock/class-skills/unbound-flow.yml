@@ -1,0 +1,14 @@
+name: Unbound Flow
+cost: 4
+tags: [patron]
+requires: warlock:4
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Refresh
+description:
+  Opening the Gate, A Torrent Released, and Overwhelming Force may be used on Cantrips and Spells with the Spell-Packet delivery in addition to the normal Spell-Ball delivery.

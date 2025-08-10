@@ -1,0 +1,14 @@
+name: Caustic Blades
+requires: dervish:1
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: Grant Accent
+description: |
+  By concentrating on the shifting sands and the alchemical nature of the stone they walk upon, the Dervish may invest their weapons with the caustic nature of the elemental stone.
+
+  The Dervish may add the Acid Accent to any unaccented Power, as well as any unaccented melee attack or thrown attack made with their weapons.

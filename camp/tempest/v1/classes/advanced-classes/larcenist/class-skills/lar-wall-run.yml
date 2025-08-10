@@ -1,0 +1,13 @@
+name: Wall Run
+requires: larcenist:2
+cost: 3
+incant: None
+call: “Wall Run”
+target: Self
+duration: Special
+delivery: None
+refresh: Focus Quick 100
+accent: None
+effect: Special
+description:
+  The Larcenist may negate an environmental fall effect as long as they are moving and are touching a wall. If the Larcenist removes their hand from the wall, or slows to a stop, the ability immediately ends and they take the environmental effect applicable to where they are currently standing.

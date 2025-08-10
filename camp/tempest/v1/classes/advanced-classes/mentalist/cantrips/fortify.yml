@@ -1,0 +1,11 @@
+name: Fortify
+incant: Standard
+call: "Grant Protection vs Mind"
+target: Self, Other Linked Individual
+duration: Until Used
+delivery: Touch
+refresh: Immediate
+accent: None
+effect: Grant
+description:
+  The Mentalist can grant themselves or a target they are Linked with the ability to stop one incoming mental attack by granting them a single Protect against the Mind Accent.

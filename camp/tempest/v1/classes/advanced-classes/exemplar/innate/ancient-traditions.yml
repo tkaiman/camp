@@ -1,0 +1,16 @@
+name: Ancient Traditions
+requires:
+  - exemplar:1
+  - druid:1
+incant: None
+call: None
+target: None
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description: |
+  While modern Exemplars generally come from clerical backgrounds, the concept predates modern practice, and with a little effort these traditions can be resumed.
+
+  The Exemplar may use the Druid incants instead of Cleric incants for Exemplar powers. Any time an Exemplar spell would add points to your Healing Touch pool, you may instead add those points to your Life Tap pool. Additionally, levels in Exemplar count as levels in Druid for calculating the Life Tap pool.

@@ -1,0 +1,14 @@
+name: Divine Intuition
+incant: Standard
+call: '“Long Grant Divine Intuition”, “Counter, Parry”'
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant
+description: |
+  Once this spell is cast, while the Exemplar is actively battling perceived foes of their divine purpose they may spend Divine Spell slots to Counter as per the Fighter Parry Blow power. While
+  wielding a weapon or shield, a character may sacrifice a Divine Spell slot to use Parry Blow to Counter any weapon delivered attack, by calling “Counter, Parry.”
+
+  They may do this a number of times equal to their Exemplar plus Fighter class-levels, however, this power ends when they take a Long Rest or run out of spell slots.

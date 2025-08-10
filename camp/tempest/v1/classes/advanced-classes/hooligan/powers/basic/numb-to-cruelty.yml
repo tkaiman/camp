@@ -1,0 +1,13 @@
+name: Numb to Cruelty
+incant: None
+call: “Counter, Numb”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description: |
+  Working under cruel criminal lords, ringleaders and snarky socialites has earned many Hooligans a limited resistance to the ravages of the mind.
+
+  The Hooligan may Counter an ability with Agony or Fear once per Short Rest.

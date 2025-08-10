@@ -1,0 +1,11 @@
+name: Second Mind
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+description:
+  The Mentalist splits off a piece of their intellect and sets it aside. This second mind can act even when the primary mind cannot. When the Mentalist is dying, unconscious, slept, drained, or otherwise Helpless, the second mind can still activate magic items and Powers, so long as the activation does not require Incantations or physical movement.

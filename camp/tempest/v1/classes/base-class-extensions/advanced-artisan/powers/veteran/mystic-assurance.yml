@@ -1,0 +1,19 @@
+name: Mystic Assurance
+tags: [mystic]
+incant: None
+call: “Grant Life to Self by [Devotion Accent]”
+target: Self
+delivery: None
+accent: None
+duration: Short Rest
+refresh: Long Rest
+effect: Grant Life
+description: |
+  The Artisan spends a minute or more out-of-combat in meditation and prayer, sometimes chanting arcane words, sometimes invoking
+  the Divinities. The next time the Artisan dies, as long as it occurs before the Artisan completes a Short Rest, the Artisan gets
+  an immediate “Grant Life” as the Spirits/Divine come to save the character.
+
+
+  If the Artisan has a Devotion the accent of this power will match their Devotion’s accent (see Religions), if they are Undevoted
+  it will be unaccented.  If the Artisan is a Mystic Specialist then they also may choose to become Insubstantial for a slow 30
+  count after returning to life.

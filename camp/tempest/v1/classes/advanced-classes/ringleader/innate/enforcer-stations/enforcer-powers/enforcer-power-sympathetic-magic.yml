@@ -1,0 +1,10 @@
+name: Sympathetic Magic
+incant: None
+call: “Refresh [Spell Slot(s)] to Self”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Refresh
+description: Once per long rest, the Scholar may instantly refresh a spell slot used to cast a spell targeting the Ringleader or one of their enforcers.

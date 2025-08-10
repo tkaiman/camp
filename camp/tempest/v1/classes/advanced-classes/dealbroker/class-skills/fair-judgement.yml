@@ -1,0 +1,23 @@
+name: Fair Judgement
+cost: 1
+requires:
+  - dealbroker:1
+  - win-win
+incant: Negotiation, “I stake my reputation on a fair judgment”, “As do I”
+call: "“By My Voice to parties in this negotiation, Expose Final: Anyone who feels this result is unfair.”, “Short Drain to Self by Will Final”"
+target: Individuals
+duration: Instantaneous
+delivery: Voice
+refresh: Short Rest
+accent: None, Will
+effect: Expose, Drain
+description: |
+  Judges, lawyers, and others who must make hard calls often find that an amicable result is not always possible; in a trial or other dispute resolution, one side or
+  the other is generally going to leave unhappy. In such situations, the Dealbroker may use Fair Judgement instead of Win-Win.
+
+  Fair Judgement follows the same procedure and requirements as Win-Win, but with a different Incantation and Expose call:
+
+    * At the start of the negotiation, you must say “I stake my reputation on a fair judgment”, or reply “As do I” to another Dealbroker saying the same.
+    * At the end of the negotiation, you must call “By My Voice to parties in this negotiation, Expose Final: Anyone who feels this result is unfair.”
+
+  The resulting effects on the Dealbroker are the same as with Win-Win. This counts as a “happy” or “unhappy” use of Win-Win for the purposes of other powers that grant you benefits or consequences based on the outcome of Win-Win unless otherwise noted in those powers.

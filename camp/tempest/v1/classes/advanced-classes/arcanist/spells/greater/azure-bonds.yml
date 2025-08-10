@@ -1,0 +1,17 @@
+name: Azure Bonds
+incant: Standard
+call: '"Quick Root by Arcane", "Quick Weakness by Arcane"'
+target: Individual
+duration: Short Rest, Quick 100
+delivery: Spell-Packet
+refresh: Spell
+accent: Arcane
+effect: Root, Weakness
+description: |
+  The Arcanist gains the power to restrain the movements of those that would cause them ill. Upon completing this spell, the caster gains a pool of 10 Azure Bonds. Each one will do Quick Root by Arcane and is held within a Spell-Packet which must be charged with the words "Azure Bonds."
+
+  In addition, the Arcanist may expend a Spike to alter one of these Calls to “Quick Weakness by Arcane.”
+
+  Finally, the Arcanist may Sacrifice a Novice spell-slot to refresh two Azure Bonds.
+
+  This spell ends when the Arcanist completes a Short Rest or is rendered Helpless.

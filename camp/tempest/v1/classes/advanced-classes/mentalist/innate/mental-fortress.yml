@@ -1,0 +1,12 @@
+name: Mental Fortress
+requires: mentalist:3
+incant: None
+call: "Resist"
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Grant Resistance
+description: |
+  The Mentalist is a veritable fortress of mental might, and while repeated assault might eventually bring them low, doing so would be a supreme feat. The Mentalist may choose to have resistance to the Mind Accent: for any given Effect with the Mind Accent, the Mentalist may allow it to function or call "Resist" and take 1 point of damage. While unconscious, the character does not have access to this resistance.

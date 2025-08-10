@@ -1,0 +1,11 @@
+name: Threaten
+incant: None
+call: "[Name or Description] Taunt 2 by Fear"
+target: Individual
+duration: Permanent
+delivery: Verbal
+refresh: Short Rest
+accent: Fear
+effect: Taunt
+description:
+  The Ringleader is a master of getting the right people’s attention, and dealing with potential threats to their mastery. The Ringleader can call out “[Name or Description] Taunt 2 by Fear,” against a foe, forcing them to deal with the Ringleader personally.

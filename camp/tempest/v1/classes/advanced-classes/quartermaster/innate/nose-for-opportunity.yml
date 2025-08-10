@@ -1,0 +1,14 @@
+name: Nose for Opportunity
+requires: quartermaster:2
+incant: None
+call: "“Discern [to Marshal Spirit]: [Question]”"
+target: Marshal Spirit
+duration: Immediate
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Discern
+description: |
+  Quartermasters are always on the lookout for convenient opportunities to obtain additional resources (or, at least, delegate such duties). When speaking with an NPC that is proposing an expedition, adventure, or other outing, you may call to them: “Discern: Is this adventure likely to contain harvestable resources or hidden treasure?” This use does not expend this power, though you may only ask about any particular adventure once.
+
+  Should you personally attend an adventure (whether or not you asked the above question), once per Short Rest you may approach a marshal and call: “Discern to Marshal Spirit: Where in the vicinity might I find harvestable resources or hidden treasure?”

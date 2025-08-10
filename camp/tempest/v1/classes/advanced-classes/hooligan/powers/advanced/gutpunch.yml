@@ -1,0 +1,13 @@
+name: Gutpunch
+incant: None
+call: “Quick Silence by Agony”
+target: Individual
+duration: Quick 100
+delivery: Weapon (Melee)
+refresh: Focus Quick 100
+accent: Agony
+effect: Silence
+description: |
+  Fighting dirty is the way of the Hooligan, and sometimes, punching the Sourcerer in the gut after a large apple fritter really is the best way to keep their tampering down.
+
+  The Hooligan expends a Spike to deal Quick Silence by Agony with a melee weapon.

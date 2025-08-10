@@ -1,0 +1,19 @@
+name: Universalist Additional Cantrip
+requires: universalist:3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+choices:
+  cantrip:
+    name: Bonus Cantrip
+    matcher:
+      type: cantrip
+      parent:
+        type: class
+    controller: sphere-grant
+description: The Universalist gains an additional Cantrip. This Cantrip can come from any Class the Universalist has levels in.

@@ -1,0 +1,5 @@
+name: Broad Focus
+cost: 4
+requires: ranger:2
+description:
+  There is an additional enemy type you have a particular skill or passion for hunting. You may act as if you have both enemy groups from the Enmity power.

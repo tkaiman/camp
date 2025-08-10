@@ -1,0 +1,19 @@
+name: Armorsmith
+tags: [artificer]
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+grants: apprentice-tinkering
+description: |
+  The Sentinel gains the Apprentice Tinkering (3) skill, and the ability below:
+
+  The Sentinel has enough familiarity with the ins and outs of armor, that they can not just work with it but are proficient enough to know certain tricks of the trade.
+
+  During any Short Rest, the Sentinel can Rebuild one shield in the field.
+
+  In addition, while Tinkering on a Shield, Armor, or other physical defensive item, they can reduce the cost of any work they do by one Basic, or Uncommon Resource of their choosing, to a minimum of one.

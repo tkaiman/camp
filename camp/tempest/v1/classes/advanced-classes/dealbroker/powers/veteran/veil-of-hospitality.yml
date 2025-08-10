@@ -1,0 +1,15 @@
+name: Veil of Hospitality
+incant: “You may sit without worry at my table”
+call: "“By My Voice [To those seated at this table OR individual names] Grant Insubstantial”, Explanation"
+target: Individuals
+duration: Special
+delivery: Voice
+refresh: Long Rest
+accent: None
+effect: Grant Insubstantial, Cure
+description: |
+  You may grant those under the care of your hospitality some measure of protection. Indicate up to 10 people seated at a table. You may include yourself, but there must be at least one other target
+  selected. You may Call “[Names or Descriptions]: Grant Insubstantial until you leave this table”. Then, Call: “Explanation, if you took this effect, call Cure Insubstantial on yourself if you leave
+  your seat or otherwise move more than 5 feet from this table”. If the number of people seated at the indicated table is 10 or fewer, you may shorten the voice targeting to “To those seated at this table” or similar.
+
+  While you are insubstantial due to this power, you may attach “to Insubstantial” to any of your Socialite or Dealbroker power calls, or any Discern or Expose call, when you target someone affected by this power.

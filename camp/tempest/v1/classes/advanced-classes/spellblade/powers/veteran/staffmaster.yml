@@ -1,0 +1,13 @@
+name: Staffmaster
+incant: None
+call: “Disarm [Left/Right Arm]”
+target: Self, Individual
+duration: Passive, Instantaneous
+delivery: None, Weapon
+refresh: None, Immediate, Short Rest
+accent: None
+effect: Grant, Disarm
+description: |
+  The Spellblade gains +1 Base Damage while using a staff. In addition, they may, at-will, expend a Spike while using a staff in both hands to do a Disarm Effect with a Weapon Delivery.
+
+  Lastly, once per Short Rest, when the Spellblade uses Bladechannel to put a Novice Spell onto a weapon, the Spellblade can discharge the Spell once from the Staff without expending the charge (meaning that it effectively has two charges for every charge put into the Staff).

@@ -1,0 +1,12 @@
+name: Intangible
+tags: [insubstantial]
+requires: shadowdancer:2
+incant: None
+call: "“Counter: Intangible”"
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: Darkness
+effect: Counter
+description: While you have the insubstantial Condition, you may expend a Spike to Counter a Damaging Effect that has the qualifier “to Insubstantial.”

@@ -1,0 +1,29 @@
+name: Redoubt
+incant: None
+call: '“[Name or Description], [Effect] by Will"'
+target: Special
+duration: Long Rest
+delivery: Verbal
+refresh: Long Rest
+accent: Will
+effect: Various
+description: |
+  This Power is activated by hanging up a notice inside a room of the Socialite’s choosing. The notice should be an official notice and warning that the room is the
+  protected redoubt of the Socialite and should include the character’s name. If the notice is not visible from the center of the room, or if the notice is shattered,
+  the Power ends.
+
+  While in the room, the Socialite has the following abilities. Each is listed with the number of times the ability can be used and each can only be used on targets that
+  are also inside the room. Once all the uses are expended, the Socialite will need to complete a Short Rest in the claimed room to refresh all of the uses of all abilities.
+  The Power can be maintained seamlessly from Long Rest to Long Rest by simply expending the Power again once the notice has been hung:
+
+    Ten Times:
+        * Verbal Repel: “[Name or Description]: Short Repel by Will”
+    Five Times:
+      * Verbal Disarm: “[Name or Description]: Disarm [Held Object] by Will”
+    Two Times:
+      * Remove from Premises. Verbal Obey: “[Name or Description]: Short Obey by Will: Leave this room and stay out.”
+      * My Room. Counter against any Weapon, Packet, Verbal or Voice Power used by someone within the room. - “Counter, My Room.”
+    One Time:
+      * Read the Room. Verbal Discern. - “[Name or Description]: Subtle Discern by Will: Do you mean to harm anyone in this room?”
+      * Defend me. Verbal Imbue. - “[Name or Description]: Short Imbue Weapon with Wounding 4.”
+      * Not on my Watch. Verbal Healing for the dying. - ““[Name or Description]: Heal 5 to Dying”.

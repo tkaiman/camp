@@ -1,0 +1,8 @@
+name: Favor of the Spirits
+requires: occultist:5
+description: |
+  Your rapport with the minor spirits of the world is great, and whether they love or fear you they will always protect you. You receive a +3 bonus to the base Summoned Armor provided by Protection of the Spirits. As a 5th level Occultist, this places your Protection of the Spirits armor value at 10. This does not affect other sources of Summoned Armor, but does increase the amount of that armor you can Sacrifice by spending your Protection of the Spirits.
+
+  While casting or participating in a ritual or enchantment with a ritual marshal present, you are immune to any damage that you are not Vulnerable to from outside of the ritual (that is, from anyone who is not a Ritualist, Participant, or Target of the ritual, or caused by the ritual itself). If you would take a non-damaging Effect from outside the ritual, you may spend a point of your Protection of the Spirits to Counter it, calling “Counter, Favor of the Spirits.” Using either your immunity or Counters in this way does not disrupt your ritual. The ritual marshal may, at their discretion, revoke this immunity.
+
+  If you are instead an unwilling target of a ritual (even while unconscious, dominated, or otherwise forced to comply), this benefit is inverted and protects you from the Ritualists and Participants of the ritual and any damage or effects from the ritual itself as noted above.

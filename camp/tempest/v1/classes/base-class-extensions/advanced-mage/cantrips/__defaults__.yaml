@@ -1,0 +1,5 @@
+type: cantrip
+parent: mage
+category: Mage Cantrips
+requires: advanced-mage:1
+sphere: arcane

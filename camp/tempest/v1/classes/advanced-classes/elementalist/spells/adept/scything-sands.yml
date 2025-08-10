@@ -1,0 +1,16 @@
+name: Scything Sands
+tags: [wellspring]
+incant: Standard
+call: See below
+target: Self
+duration: Short Rest
+delivery: Spell-Packet
+refresh: Spell
+accent: Acid, Lightning
+effect: Slow, Repel, Bind
+description: |
+  The Elementalist creates a dust devil around themselves, that as they cast elementally aligned Spells gathers in force. This spell allows the Elementalist to expend Wellspring charges for different Effects. Any of the following can be used with a Spell-Packet delivery:
+
+    * 1 Charge: “Short Slow by [Acid / Lightning]”
+    * 2 Charges: “Short Repel by [Acid / Lightning]”
+    * 3 Charges: “Short Bind by [Acid / Lightning]”

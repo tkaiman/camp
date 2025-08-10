@@ -1,0 +1,8 @@
+name: Adept Versatile Mentality
+ranks: 5
+soft_requires: mentalist.spell_slots@2:-1
+grants:
+  - mentalist.spell_slots@2:-1
+  - mentalist.powers@2
+description: |
+  By selecting this, you sacrifice an Adept slot and spell known from Mentalist and gain an Advanced Mentalist Power instead.

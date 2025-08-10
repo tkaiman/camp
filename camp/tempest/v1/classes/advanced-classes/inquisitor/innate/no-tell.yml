@@ -1,0 +1,12 @@
+name: No Tell
+requires: inquisitor:4
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Instantaneous
+refresh: Long Rest
+effect: Obfuscate
+description: |
+  A master of investigation knows all the tells and how to pick them out. Conversely, the Inquisitor is also a master of deception, knowing what not to do. The Inquisitor may Obfuscate any Discern targeting them once per Long Rest.   The Inquisitor may use this power times equal to their Inquisitor-level against Branded individuals instead of once per Long Rest.

@@ -1,0 +1,10 @@
+name: Trifling Magic
+incant: Special
+call: None
+target: Individual or Item
+duration: Passive
+delivery: Verbal
+refresh: None
+accent: None
+effect: Special
+description: The Ringleader is granted the ability to cast a single cantrip that their Scholar has learned.  This cantrip is picked at any time during an event, but can not be changed until the next event once picked.  For the purpose of any special effects on a cantrip, the Ringleader counts as first level, and can not utilize any special resources whatsoever besides spikes on the cantrip.

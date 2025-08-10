@@ -1,0 +1,18 @@
+name: Band Together
+requires: hooligan:1
+incant: None
+call: “Refresh [X] Spikes to self”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Refresh
+description: |
+  While the Hooligan isn’t afraid to go it alone when necessary, even the most street-hardened thug appreciates a band of like-minded warriors with them when the chips are down.
+
+  The Hooligan may select up to their Hooligan class-level in individuals that form their “posse”, ”gang”, or other appropriate group term. These individuals should be told that they have been selected, and how that affects them, if at all.
+
+  While at least one member of their posse is within Verbal Range, the Hooligan may call "Refresh [X] Spikes to self,” where X is the Hooligan's class level, once per Short Rest.
+
+  For the rest of this Class, characters who have been designated as part of the Hooligan’s group by this Power will be called the “Hooligan’s Crew”. This refers only to the Hooligan and  those who are designated by that Hooligan.

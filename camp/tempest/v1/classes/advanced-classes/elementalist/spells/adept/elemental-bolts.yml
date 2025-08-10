@@ -1,0 +1,11 @@
+name: Elemental Bolts
+incant: Standard
+call: “Wounding 5 by [Acid / Flame / Ice / Lightning]”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Acid, Flame, Ice, Lightning
+effect: Wounding
+description:
+  When this Spell is cast, it will charge three Spell-Balls at the same time with elemental power. Each of the Spell-Balls need not be charged with the same element.

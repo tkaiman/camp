@@ -1,0 +1,17 @@
+name: Automatic Writing
+cost: 4
+requires: wonderworker:5
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Event
+accent: None
+effect: Special
+description: |
+  One of the first symbols of civilization lies in front of so many of the unsuspecting - the written word. The Wonderworker has developed connections to the written word not dissimilar to that of a medium, and can call upon latent spirits to provide information beyond normal means of acquisition.
+
+  The Wonderworker must contact Staff to use this power. Plot will write a short and cryptic but factually accurate message to the Wonderworker’s player, sealed (ideally marked with both a white halo and a black keyhole sigil and the Wonderworkers name). The Wonderworker then can re-enter game and perform some kind of roleplay to represent receiving this message - common versions might be trapping chalk between two slates and shaking them, or entering a trance and scribbling madly on parchment. After this roleplay is performed, the message can be unsealed and read.
+
+  This Power will usually only be usable once per Event, but it is possible that Plot will be able to provide multiple messages.

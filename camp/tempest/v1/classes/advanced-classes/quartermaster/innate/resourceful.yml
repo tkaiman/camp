@@ -1,0 +1,8 @@
+name: Resourceful
+requires: quartermaster:3
+description: |
+  Once per Short Rest, you may use one of the following benefits:
+
+    * When you draw from a Prospecting, Scavenging, Hazard, or other gathering-related deck, you may draw twice and take whichever result you prefer. You may decide to use this after you have drawn.
+    * For a single draw from the Planar Weir, you may draw a second resource, and may keep either result and put the other back as though it had not been drawn.
+    * When you follow any crafting plan that creates a Resource, you may chant “Pause Process” to safely interrupt a part of the process that would normally cause the process to fail if paused or interrupted. This chant must continue regularly and without interruption, when the chant ends the process resumes immediately, potentially causing failure if the criteria for continuation are not met.

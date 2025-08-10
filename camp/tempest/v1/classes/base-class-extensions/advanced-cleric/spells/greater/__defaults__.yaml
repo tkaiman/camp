@@ -1,0 +1,6 @@
+type: spell
+tier: 3
+parent: cleric
+requires: advanced-cleric
+category: Cleric Greater Spells
+sphere: divine

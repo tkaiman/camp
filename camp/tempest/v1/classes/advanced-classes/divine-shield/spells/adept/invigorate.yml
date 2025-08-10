@@ -1,0 +1,11 @@
+name: Invigorate
+incant: Standard
+call: "Refresh 2 Spikes"
+target: Other Individual
+delivery: Touch
+accent: None
+duration: Instantaneous
+refresh: Spell
+effect: Refresh
+description: |
+  The target of this spell will refresh two Spikes. The Divine Shield cannot target themself. If the target is Chosen, it will instead Refresh 3 Spikes.

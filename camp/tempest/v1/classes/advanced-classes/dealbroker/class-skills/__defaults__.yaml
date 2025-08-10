@@ -1,0 +1,4 @@
+type: skill
+parent: dealbroker
+requires: dealbroker
+category: Dealbroker Class Skills

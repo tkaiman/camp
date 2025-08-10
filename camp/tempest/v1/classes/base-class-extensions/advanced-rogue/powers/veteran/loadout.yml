@@ -1,0 +1,16 @@
+name: Loadout
+incant: None
+call: None
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Grant Power
+description:
+  Upon selecting this Power The Rogue must choose three other Rogue Base Class Powers of Basic, Adept, or Veteran tiers and write down the description and pertinent information. Each of
+  these three Powers must have a Refresh of “Short Rest” and cannot be powers that exceed the maximum number of copies of a power the Rogue would otherwise be allowed to have, nor can any
+  of the powers be powers that replicate other powers, produce Refresh effects, or are Loadout itself.
+
+  As long as the Rogue has that information on their person, at each Short Rest, they may choose which of the three Powers they can use. That choice remains until the character completes a
+  Short Rest. If no active decision is made to change the Power upon completing a short rest, the same Power will remain in the character’s loadout until the next Short Rest.

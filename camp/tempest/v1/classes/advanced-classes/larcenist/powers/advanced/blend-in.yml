@@ -1,0 +1,15 @@
+name: Blend In
+incant: "RP: Attempting to blend in with the crowd"
+call: "“[Name or Description] Short Obey by Mind: Act as though I belong here.”"
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Short Rest
+accent: None
+effect: Obey
+description: |
+  The Larcenist need not always perform their trade under cover of night. Sometimes, “hiding in plain sight” is the best method for intrusion: simply acting as though one belongs, and going about their business is enough to keep the watchful eyes of guards from landing upon them.
+
+  Out of combat, the Larcenist may call out against a foe the Verbal component, and simply go about their business.
+
+  If the Larcenist expends two Luck Charges, this power may be immediately refreshed.

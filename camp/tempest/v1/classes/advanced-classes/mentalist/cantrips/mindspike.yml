@@ -1,0 +1,11 @@
+name: Mindspike
+incant: Standard
+call: '"1 Mind", "Quick Root by Mind"'
+target: Individual
+duration: Instantaneous
+delivery: Spell-Packet
+refresh: Immediate
+accent: Mind
+effect: Damage, Root
+description:
+  The Mentalist can damage the minds of their foes directly, or by expending a Spike at the time of casting, the Mentalist can throw "Quick Root by Mind" instead.

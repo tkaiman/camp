@@ -1,0 +1,14 @@
+name: Martial Source
+requires: advanced-sourcerer:2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  The Sourcerer can have a Source that is a weapon, shield or piece of jewelry. If a weapon, it cannot be over 36” in length unless it is a staff, and if it is a shield, it can be no larger than an Advanced shield. The Sourcerer may also choose from the following Accents, adding it to the list or Eldritch Accents the Sourcerer can choose from: Agony, Disease, Fear, Illusion, Poison, Madness.
+
+  The Personal Source must be forged in-game using the Craft Item Tinkering schematic, and should be made in such a way that it has some personal significance to the Sourcerer. The Tinker making the item must include a Foundation Resource Infusion of the Sourcerer’s choosing in the creation of the item. Then, to fully consecrate the crafted item into a full Source, the Sourcerer should perform a personal rite, accepting it as a part of their soul and their magic. Note that the Sourcerer can still Rebuild such an item if it shattered or broken, as they can do with any Source.

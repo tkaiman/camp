@@ -1,0 +1,5 @@
+name: Lesson of the Quillfiend
+cost: 4
+requires: ranger:1
+description:
+  A Ranger may use Fighter or Rogue powers that have a requirement of Thrown Weapons or Projectile Weapons and apply the effects of that power to the opposite. For example, a Ranger using a Bow may use the Power “Fan of Knives,” and a Ranger with a Thrown Weapon may use “Flaming Arrows” on the other type of weapon.

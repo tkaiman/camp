@@ -1,0 +1,14 @@
+name: Warding Steel
+requires: ac-sentinel:5
+incant: None
+call: “Counter, Deflected”
+target: One Weapon Attack
+duration: Instantaneous
+delivery: None
+refresh: Quick 100
+accent: None
+effect: Counter
+description: |
+  Any option the Sentinel has to turn an attack aside becomes the perfect option.
+
+  While in Sentinel’s Stance, if the Sentinel’s weapon or shield is hit with a Weapon attack, the Sentinel may call “Counter, Deflected.”

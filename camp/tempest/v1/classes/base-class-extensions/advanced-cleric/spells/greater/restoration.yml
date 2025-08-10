@@ -1,0 +1,28 @@
+name: Restoration
+incant: Standard
+call: "“Discern by Radiance: [Question]”, [Various] by Radiance"
+target: Individual (Other)
+delivery: Touch
+accent: Radiance
+duration: Instantaneous
+refresh: Spell
+effect: Discern, Heal, Mend, Rebuild, Refresh, Cure
+description: |
+  This powerful spell can be used on a single individual other than the caster to get them back to full. After completing the Incantation, the caster can use any or all of the following Discerns:
+
+    * Are you Dying?
+    * Are you Dead?
+    * What Conditions do you have?
+    * How many Life Points are you down?
+    * How many Armor Points are you down?
+    * Are any of your possessions in need of Rebuilding?
+
+  Immediately following the last of the Discerns the Cleric wishes to use (which might be none), before other Powers are used or attacks made, the caster can provide any or all of the following benefits to the target. The caster may choose which (or all):
+
+    * “Cure [X/All] [Condition(s)].”
+    * “Heal to Full.”
+    * “Refresh all Spikes.”
+    * “Rebuild [Armor, Shield, and/or Weapons]”
+    * “Mend to Full.”
+
+  The Call may be adjusted however best works for the caster and is still clear. I.e. “Mend Armor to Full, Heal to Full and Cure all Conditions by Radiance" etc. If the Call is to target objects, the object(s) must be in possession of, or worn by the target of the initial casting of the spell (i.e. the Discerns).

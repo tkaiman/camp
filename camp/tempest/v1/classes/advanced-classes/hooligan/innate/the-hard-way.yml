@@ -1,0 +1,12 @@
+name: The Hard Way
+requires: hooligan:1
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Accent
+description:
+  The Hooligan may add or alter the existing Accent of Weapon Attacks and Weapon Powers to the Agony accent.

@@ -1,0 +1,14 @@
+name: Source Flexibility
+requires: elementalist:1
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Base Damage
+description: |
+  The first lesson that an Elementalist learns is how to quickly choose between their options. They may freely switch between attuned sources without focus or effort, but only as long as those sources are for the fundamental elements (Acid, Flame, Lightning, and Ice).
+
+  Whenever the Elementalist casts a Damaging Spell with an Accent, if it matches the Accent of the source they are using they may expend a Spike to add one to the damage of that Spell. If the spell has multiple charges, all charges will benefit from the added damage.

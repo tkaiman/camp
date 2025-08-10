@@ -1,0 +1,11 @@
+name: Unrestrained Movement
+incant: None
+call: “Counter, Dodge”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description: |
+  While wearing four or less points (Maximum) of physical, summoned, or natural armor, the Larcenist may Counter any of the following Effects: Slow, Root, Bind, Repel. The call for this effect is “Counter, Dodge.”

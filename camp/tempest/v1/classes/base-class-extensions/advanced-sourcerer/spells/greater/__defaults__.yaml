@@ -1,0 +1,6 @@
+type: spell
+sphere: arcane
+tier: 3
+parent: sourcerer
+requires: advanced-sourcerer
+category: Sourcerer Greater Spell

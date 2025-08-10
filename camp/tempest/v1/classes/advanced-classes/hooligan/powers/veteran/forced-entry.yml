@@ -1,0 +1,18 @@
+name: Forced Entry
+incant: None
+call: '“Shatter [Item] by Force”, “Shatter Armor”'
+target: Individual or Item
+duration: Short Rest, Passive
+delivery: Weapon
+refresh: Long Rest, None
+accent: None
+effect: Shatter
+description: |
+  Sometimes the only way out, or in, is through… physically. The Hooligan may activate this Power to:
+
+    * Out-of-combat, expend a Spike to call “Shatter [Item] by Force” by weapon at-will.
+    * Expend a Spike to do “Shatter Armor to Constructs” against a creature the Hooligan believed to be an Automaton or Construct.
+
+  Both of these options end when the Hooligan takes a Short Rest.
+
+  In addition, when the Hooligan attempts to gain entry to a building protected by a Haven Ritual,  the Hooligan may mark off four Haven Charges even when this Power is not active. Thus, when rebuffed by a Haven, the Hooligan may remove four tokens instead of the normal one.

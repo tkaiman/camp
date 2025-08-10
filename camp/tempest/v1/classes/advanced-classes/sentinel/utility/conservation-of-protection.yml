@@ -1,0 +1,14 @@
+name: Conservation of Protection
+tags: [artificer, reinforce]
+incant: None
+call: “Grant 3 Barrier”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Grant Barrier
+description: |
+  There are a number of times in which the various protections that can be granted to a Sentinel by themselves or others go unused - perhaps they bring a Protection potion against Poison and discover they are opposed by elementals, or perhaps they have a friend Grant them Protection against Materia and are in a duel with a powerful fighter.
+
+  When used, this Power lets the Sentinel sacrifice a Protection they have on them to Grant themselves 3 Barrier.

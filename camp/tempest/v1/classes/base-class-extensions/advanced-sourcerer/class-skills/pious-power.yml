@@ -1,0 +1,11 @@
+name: Pious Power
+requires: advanced-sourcerer:3
+cost: 4
+incant: "Short Grant Eldritch Accent to Self"
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Immediate
+accent: None
+effect: Grant Eldritch Accet
+description: The Sourcerer can perform a little ceremony (of the player’s design), which should last 30 seconds or more, begging favor from one or more of the Divinities. This Power cannot be used if the Sourcerer is Undevoted or worships forces that are not the Divinities. Expending a Novice Spell-Slot, the Sourcerer can then treat either Radiance or Darkness as an Eldritch Accent until they complete a Short Rest.

@@ -1,0 +1,19 @@
+name: Elemental Eruptions [The Wand]
+requires: deeper-power-elemental-manifestations
+incant: Focus Quick 10
+call: Per Effect, see below
+target: Individual
+duration: Quick 100
+delivery: Spell-Packet
+refresh: Immediate
+accent: "[Elemental Accent]"
+effect: Grant
+description: |
+  When you first gain this power, select an additional elemental Accent from among the four listed in Magic Collector. This should take your total to three elemental Accents.
+
+  When you charge a Spell Ball and expend a Spike, you may instead of calling damage call one of the following effects:
+
+    * Acid: “Quick Taint by Acid”
+    * Flame: “Quick Charm by Flame”
+    * Ice: “Quick Imprison by Ice”
+    * Lightning: “Quick Drain by Lightning”

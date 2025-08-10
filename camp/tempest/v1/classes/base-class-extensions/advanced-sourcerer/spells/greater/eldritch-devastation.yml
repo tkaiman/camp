@@ -1,0 +1,15 @@
+name: Eldritch Devastation
+incant: Standard
+call: “Wounding 10 by [Eldritch Accent]”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Eldritch Accent
+effect: Wounding, Grant Barrier
+description: |
+  The Sourcerer charges three Spell-Balls with significant power. After the final Spell-Ball is used, the Sourcerer adds 2 Barrier per Spell-Ball that had its effects Prevented. Normally this could add up to 6 Barrier, but other Powers that increase the number of Spell-Balls charged will also increase the amount of Barrier available.
+
+  Note: As all of this barrier is coming from this spell, it counts as a single source, as therefore is not subject to stacking limitations.
+
+  Enhancement: If the Sourcerer’s [Eldritch Accent] is Ice the Sourcerer instead adds 4 Barrier per Spell-Ball that had its effects Prevented.

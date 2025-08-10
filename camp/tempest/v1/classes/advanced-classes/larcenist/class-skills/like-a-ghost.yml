@@ -1,0 +1,17 @@
+name: Like a Ghost
+requires:
+  - larcenist:1
+  - waylay
+cost: 5
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Refresh
+description: |
+  The mark of a professional thief is the ability to enter and exit a job without ever raising an alarm - indeed the most notable thefts of all time still go uncredited to this day, even years later due to the high level of execution. Those who hone their craft night and day find that luck walks beside them in critical moments.
+
+  Once per Short Rest, when utilizing the Waylay Rogue Basic power against an unaware foe that is not Prevented, the Larcenist may refresh a Luck Charge.

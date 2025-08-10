@@ -1,0 +1,14 @@
+name: Arcanist's Bookcasting Expertise
+cost: 1
+ranks: 4
+requires: arcanist:1
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: None
+refresh: None
+effect: None
+description:
+  Once per Long Rest, the caster can bookcast one Spell without using up a Spell-Slot.

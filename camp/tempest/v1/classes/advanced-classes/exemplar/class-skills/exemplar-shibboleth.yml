@@ -1,0 +1,13 @@
+name: Shibboleth
+cost: 1
+requires: exemplar:1
+incant: None
+call: “It can be believed that I [worship X / am a member of X]”
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Immediate
+accent: None
+effect: None
+description: |
+  The Exemplar can speak in a way that leaves no room for doubt as to their convictions. They can use the Power Phrase “It can be believed…” to name a god they worship or to name their membership in a specific religion. “It can be believed that I worship Sodron” or “It can be believed that I am a Follower of the Tower” are both valid examples. This can be done at-will.

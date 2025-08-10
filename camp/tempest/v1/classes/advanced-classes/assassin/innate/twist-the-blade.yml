@@ -1,0 +1,12 @@
+name: Twist the Blade
+requires: assassin:2
+incant: None
+call: None
+target: Individual
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Grant Piercing
+description:
+  When the Assassin uses a “from behind” Power that does the Wounding Effect, they may alter the Effect of the attack to Piercing.

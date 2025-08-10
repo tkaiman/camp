@@ -1,0 +1,11 @@
+name: Fast Friends
+ranks: 2
+incant: "RP: One Minute of Conversation"
+call: “[Name or Description] Subtle Long Charm by Mind”
+target: Individual
+duration: Long Rest
+delivery: Verbal
+refresh: Short Rest
+accent: Mind
+effect: Charm
+description: Out of combat, the Assassin can engage with a target for a minute of conversation and unravel their concerns about the target’s intentions. After a minute of conversation, the assassin may call “[Name or Description], Subtle Long Charm by Mind.”

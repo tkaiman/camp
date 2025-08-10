@@ -1,0 +1,41 @@
+name: Advanced Rogue
+type: class
+extends: rogue
+class_type: advanced
+ranks: 5
+category: Advanced Class
+requires: rogue:10
+powers: {}
+level_grants:
+  2: advanced-rogue-bonus-spikes
+  4: advanced-rogue-bonus-damage
+description: |
+  Rogues are often seen as thieves or burglars, but this is not the real essence of the Rogue. A Rogue is an agile warrior, whose expertise with the throwing dagger is unrivaled. It is true that many Rogues are attracted to the less legal side of life, and it is true that most prefer a good ambush from behind than a face-to-face sword fight, but Rogues are not always this way. There are a few that rely on their speed and cunning to simply out-fight their opponents. The Rogue is great at supporting fire, and what they lack in armor and brute force, they make up for in speed, cunning and deadly skill.
+
+  Although Rogues are not often seen in history, there are a number of them in fantasy literature. Grey Mouser from the Lankhmar books or Silk from David Eddings’ Belgariad series. There are even examples like Willie Garvin from the Modesty Blaise novels or Bilbo or Frodo Baggins from Tolkein's classic works. Rogues are often portrayed as fast, cunning and infinitely resourceful.
+
+  The Rogue of Tempest brings in heavy supporting fire. There are few things more worrisome than a Rogue with their daggers. They tend to snipe from a distance, only engaging in combat when they know that they can get in killing blows while using their dodging abilities to remain unharmed. Rogues also have great ability with locks, traps and poisons, and make a worthy addition to a team.
+
+  Rogue garb ranges from the blacks and dark grays of the assassin to the drab grays and browns of the poor pickpocket. Some Rogue characters prefer fancier garb, especially those who survive more by their contacts and charm than their invisibility. A bandoleer of throwing daggers is a good accessory for any Rogue character.
+
+  ## Attacking From Behind
+
+  A number of Rogue Powers reference attacking “from behind.” In order to count as an attack from behind, the Rogue must have one foot on the back side of a line created by the target’s shoulders and must strike with a hand that is also behind that line. These rules include thrown weapon attacks, and the check for these requirements occurs when the call is made, which should be when the strike lands. “From behind” Powers will always be usable against targets that are helpless or willing. An attack that must come “from behind” which doesn’t for some reason, becomes a normal attack (for example: the opponent turns, the attack hits the wrong target, etc.). In this case it is up to the Rogue to let the target know that they should take the normal uncalled damage of one.
+---
+id: advanced-rogue-bonus-spikes
+type: subfeature
+parent: advanced-rogue
+name: Bonus Maximum Spikes
+category: Advanced Rogue Class Bonuses
+ranks: 1
+display_type: Bonus
+grants: spikes:1
+
+---
+id: advanced-rogue-bonus-damage
+type: subfeature
+display_type: Bonus
+parent: advanced-rogue
+name: +1 Bonus Spike Damage
+category: Advanced Rogue Class Bonuses
+# TODO: Track spike damage

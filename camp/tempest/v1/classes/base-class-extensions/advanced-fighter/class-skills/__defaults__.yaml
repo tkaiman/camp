@@ -1,0 +1,4 @@
+type: skill
+parent: fighter
+requires: advanced-fighter
+category: Fighter Class Skills

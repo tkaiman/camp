@@ -1,0 +1,12 @@
+name: Kneecapper Extraordinaire
+ranks: 2
+incant: None
+call: “Wounding 10 by Agony”
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Short Rest
+accent: Agony
+effect: Wounding, Refresh
+description: |
+  After seeing a Crew member strike at a target (the strike does not need to hit), the Hooligan may use Kneecapper Extraordinaire to swing “Wounding 10 by Agony” twice to that target. If this power is Prevented, the Hooligan immediately Refreshes all Spikes.

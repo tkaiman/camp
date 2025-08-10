@@ -1,0 +1,19 @@
+name: Sense Divine Script
+incant: Standard
+call: “[Name or Description], Subtle Discern [Question]”
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Immediate
+accent: Radiance
+effect: Discern
+description: |
+  This cantrip allows the Exemplar to identify the telltale markers of the Divine’s influence over a mortal, or its influence over mundane objects. This Cantrip can only be cast out of combat, and
+  the role-play requirements of 1 minute of conversation must be met before the Call is provided.
+
+  The caster may utilize this Cantrip to call any one of the following Discern effects:
+
+    * “to Marshal Spirit by Radiance: Which deity created this object?”
+    * “by Radiance: Which Character Flaw Oaths or Divine Hand Oaths are you sworn to?”
+    * “by Radiance to Human: Are you a Chosen sub-breed of Human?”
+    * “by Radiance to Simulacrum: Which god created you?”

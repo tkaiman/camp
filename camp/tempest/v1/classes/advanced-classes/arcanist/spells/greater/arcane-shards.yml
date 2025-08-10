@@ -1,0 +1,13 @@
+name: Arcane Shards
+incant: Standard
+call: "Wounding 2 by Arcane"
+target: Individual
+duration: Short Rest, Instantaneous
+delivery: Spell-Packet
+refresh: Spell
+accent: Arcane
+effect: Wounding
+description: |
+  The Arcanist gains the power to launch shards of raw magic. Upon completing this spell, the caster gains a pool of twenty (20) arcane shards. Each one will do 2 points of Wounding damage by Arcane and is held within a Spell-Packet which must be charged with the words "Arcane Shard."
+
+  This spell ends if the Arcanist completes a Short Rest or is rendered Helpless.

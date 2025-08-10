@@ -1,0 +1,17 @@
+name: Fractal Bombardment
+incant: Standard
+call: “Grant Fractal Bombardment”, “[X] [Eldritch Accent]”
+target: Self, Individual
+duration: Short Rest, Instantaneous
+delivery: None, Spell-Ball
+refresh: Spell
+accent: None
+effect: None
+description: |
+  The Sourcerer creates a tear in reality through which pure power can flow through at increasing rates.
+
+  The Sourcerer may initially charge a Spell-Ball with "1 [Eldritch Accent]" and attack a target with it.
+
+  If the attack does not Miss and is not Prevented, the caster may immediately charge another Spell-Ball, and the damage of the Call increases by one, repeating for each attack. The cap for the Damage these Spell-Balls may do is equal to the Sourcerer’s Base Spike Damage Bonus plus one.
+
+  The Sourcerer may continue to charge Spell-Balls until the Sourcerer casts any other spell, completes a Short Rest, the caster becomes unable to use Powers, a Spell-Ball Misses, or three Spell-Balls are Prevented, at which time any charged Spell-Ball loses its power, and Fractal Bombardment ends.

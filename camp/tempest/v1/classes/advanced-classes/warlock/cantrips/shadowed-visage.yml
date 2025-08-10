@@ -1,0 +1,13 @@
+name: Shadowed Visage
+incant: Standard
+call: “Obfuscate vs Discern and Expose by Mind”
+target: Self
+duration: Event
+delivery: None
+refresh: Focus Quick 100
+accent: None
+effect: Obfuscate
+description: |
+  The Warlock is used to the investigations and inquisitions of their lands, often misunderstanding the nature of the Eldritch magic they wield. Sometimes, simply hiding under the cover of darkness is best, but under direct scrutiny the Warlock can find themselves pinned down. However, the prepared Warlock is one that lives to see the next dawn, and Shadowed Visage allows passing questions to be undermined.
+
+  The Warlock may cast this cantrip to be Obfuscated versus Discern and Expose powers with the Mind Accent used against them. This defense is strong, but fleeting; it fades after a single use, after which the Warlock must refocus their mind against intrusion.

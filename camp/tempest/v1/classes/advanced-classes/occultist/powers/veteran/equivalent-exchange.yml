@@ -1,0 +1,17 @@
+name: Equivalent Exchange
+incant: “I call the spirits to give this vessel my life”
+call: “Grant Life”
+target: Individual
+duration: Instantaneous, Short Rest
+delivery: Touch, Melee, Spell-Ball
+refresh: Short Rest
+accent: None
+effect: Grant Life, Grant Hollow Type
+description: |
+  You give a recently deceased individual or shambling undead the gift of life; specifically, yours. You must spend 1 point of your Protection of the Spirits to activate this power. When you do, you may chant “I call the spirits to give this vessel my life”, and call “Grant Life”, delivering the effect with a touch, a melee weapon strike, or a spell ball.
+
+  The process takes all you have to give, but mercifully, not all at once. You do not immediately die. Instead, you gain the Hollow Type until your next Short Rest; see the Tempest Rulebook for the effects of the Hollow Type. When you lose the Hollow Type (due to taking a Short Rest or otherwise) you immediately discorporate and proceed to the Spirit Well. If you receive a Grant Life before that time, you lose the Hollow Type without dying.
+
+  If you use this power while you have the Hollow Type or otherwise lack the Living Type, you immediately die and take Spirit Form after delivering the effect.
+
+  If the power does not work (the target calls “No Effect”, some other defense, or does not otherwise acknowledge or react to your call), you do not take the Hollow Type or die, regardless of your current type.

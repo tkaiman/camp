@@ -1,0 +1,22 @@
+name: Arcane Echoes
+requires: spellblade:5
+incant: Focus Quick 100
+call: None
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Long Rest
+accent: None
+effect: None
+description: |
+  The Spellblade can activate a link between themselves and the target of their magic. Until they complete a Short Rest, each time they successfully use a Packet or Weapon Spell (Not Cantrip) and it is not Prevented, they will Heal 1 Life Point and gain 1 Shard Point. Shard Points and Healing are only gained for the first charge from a given Spell that is not Prevented; additional charges of the same Spell do not give additional benefit.
+
+  So if a Spellblade had three charges of “Wounding 3 by Flame” on a weapon, and the first was Countered, but the second was not, they could gain 1 Shard Point and Heal 1. If the third attack was also effective, no further Shard Points or Healing would be gained.
+
+  While Arcane Echoes is active, the character’s Shard Point maximum is 20 and they can spend up to 10 Shard points at a time. While Arcane Echoes is active, they have the following additional Shard point options:
+
+    * 10 Shards
+
+      * Grant +1 base damage to self with weapon attacks until they complete a Short Rest. The character cannot benefit from having this bonus more than once.
+      * “[Name or Description x4] Short Root” (“You, you, you, and you: Short Root”)
+      * “Dispel all Conditions” by Weapon Attack

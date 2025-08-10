@@ -1,0 +1,22 @@
+name: Obscure Intent
+requires: dealbroker:5
+incant: Negotiation
+call: “No Effect, Immune”
+target: Self
+duration: Special
+delivery: None
+refresh: Special
+accent: Mind
+effect: Obfuscate vs Discern, Immunity
+description: |
+  You become Obfuscated versus Discerns with the Mind Accent for the first five questions leveled at you during a negotiation. After that you must expend a Spike to gain the condition again. Each time
+  you expend a Spike in this manner, the cost to refresh the Obfuscation goes up by one.
+
+  For Example: Norbert, the well-known dealmaker, is in negotiation for a large sum of construction materials. Over the course of the negotiation, the other side uses several Discerns to suss out
+  Norbert’s true intentions, which he naturally Obfuscates. However, once those defenses were exhausted, Norbert silently expends a spike to refresh them. The next time he runs out the Refresh will
+  cost two Spikes. He best conclude the negotiations before the cost to refresh exceeds his Maximum Spikes.
+
+  As long as you are Obfuscated by this power, you may choose to have Immunity to a single Discern of your choice. You may use this Immunity to defend against a single Discern Final by calling “No
+  Effect, Immune.”
+
+  This power lasts until the end of your current negotiation. It refreshes and activates immediately at the start of your next negotiation.

@@ -1,7 +1,7 @@
 name: Refocus
 ranks: 5
 incant: Focus Quick 100
-call: '“Refresh All Spikes to Self by Will”'
+call: '“Refresh 3 Spikes to Self by Will”'
 target: Self
 delivery: None
 accent: Will
@@ -9,4 +9,4 @@ duration: Instantaneous
 refresh: Long Rest
 effect: Refresh
 description: |
-  The Fighter refreshes all of their Spikes to their current Maximum Spikes.
+  The Fighter refreshes 3 of their Spikes to no higher than their current Maximum Spikes.

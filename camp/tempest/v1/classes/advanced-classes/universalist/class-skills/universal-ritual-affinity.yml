@@ -1,0 +1,52 @@
+name: Universal Ritual Affinity
+cost: 1
+requires: universalist:1
+incant: None
+call: None
+target: None
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+grant_if:
+  ura-apprentice: apprentice-arcane-ritual
+  ura-journeyman: journeyman-arcane-ritual
+  ura-greater: greater-arcane-ritual
+  ura-master: master-arcane-ritual
+description: |
+  The Universalist can use their understanding of all magic to help “catch up” on whatever type of Ritual magic they know less about. All Ritual Magic purchases cost them one fewer character point if they have the other side of Ritual Magic purchased already. For example if the Universalist has Apprentice Arcane Ritual Magic then Apprentice Divine Ritual Magic skill costs them one fewer Character Point.
+
+  When this skill is purchased, if the Universalist has both levels of Divine and Arcane Ritual Magic of any level (Apprentice, Journeyman etc) they are refunded 1 CP per level “set” they have. For example if this Power is purchased and the Universalist has Apprentice Arcane and Divine Ritual Magic as well as Journeyman Arcane and Divine Ritual magic they would be refunded 2 CP.
+---
+id: ura-apprentice
+parent: universal-ritual-affinity
+type: subfeature
+display_type: Discount
+name: Apprentice Affinity
+discounts:
+  apprentice-divine-ritual: 1
+---
+id: ura-journeyman
+parent: universal-ritual-affinity
+type: subfeature
+display_type: Discount
+name: Journeyman Affinity
+discounts:
+  journeyman-divine-ritual: 1
+---
+id: ura-greater
+parent: universal-ritual-affinity
+type: subfeature
+display_type: Discount
+name: Greater Affinity
+discounts:
+  greater-divine-ritual: 1
+---
+id: ura-master
+parent: universal-ritual-affinity
+type: subfeature
+display_type: Discount
+name: Master Affinity
+discounts:
+  master-divine-ritual: 1

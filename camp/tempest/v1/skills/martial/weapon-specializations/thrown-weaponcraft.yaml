@@ -3,6 +3,6 @@ cost: 4
 requires:
   - thrown-weapons
   - martial:2
-  - weapon-specialization+Thrown_Weapon
+  - weapon-specialization+Thrown_Weapons
 description: |
   When using a Thrown Weapon, the character may spend a Spike to call "Quick Repel by Agony." If this Power misses they may immediately throw an additional weapon with the same call.

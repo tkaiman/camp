@@ -1,0 +1,14 @@
+name: Mask of Deception
+cost: 1
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: Obfuscate
+description: |
+  If the Assassin's form is hidden by appropriate clothing, they may circumvent attempts to expose their location. The Assassin must be in mostly dark, concealing clothing to use this skill, and must make an effort to hide and remain hidden. While they are hidden in this way, they may expend a Spike to gain Obfuscate vs Expose. As with all Obfuscate powers, they do not need to announce when they are using this power.
+
+  Note: The Spike can be expended after the Expose Call is made to preemptively gain Obfuscate for that Call.

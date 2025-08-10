@@ -4,19 +4,13 @@ requires: basic-martial-weapons
 option:
   multiple: false
   values:
-    - Shortsword
-    - Longsword
-    - Mace
-    - Flail
-    - Axe
-    - Great Sword
-    - Great Mace
-    - Great Axe
-    - Polearm
-    - Bow
-    - Crossbow
-    - Thrown Weapon
-    - Staff
     - Dagger
+    - Sword
+    - Mace
+    - Axe
+    - Projectile Weapons
+    - Thrown Weapons
+    - Staff
+    - Polearm
 description: |
-  The character must choose from the following list: Shortsword, Longsword, Mace, Flail, Axe, Great Sword, Great Mace, Great Axe, Polearm, Bow, Crossbow, Thrown Weapon, Staff, or Dagger. After each Short Rest, the character gains one additional Spike that can only be used while the character is wielding a weapon of that type (although the actual attack need not come from that weapon). A character may only have Weapon Specialization with one weapon type.
+  The character must choose from the following list: Dagger, Sword, Mace, Axe, Projectile Weapons, Thrown Weapons, Staff or Polearm.  Note: Flails are considered Maces, per Macecraft.  After each Short Rest, the character gains one additional Spike that can only be used while the character is wielding a weapon of that type (although the actual attack need not come from that weapon). A character may only have Weapon Specialization with one weapon type.

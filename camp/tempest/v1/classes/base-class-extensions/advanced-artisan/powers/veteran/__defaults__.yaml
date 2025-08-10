@@ -1,0 +1,5 @@
+type: power
+tier: 3
+parent: artisan
+requires: advanced-artisan
+category: Artisan Veteran Powers

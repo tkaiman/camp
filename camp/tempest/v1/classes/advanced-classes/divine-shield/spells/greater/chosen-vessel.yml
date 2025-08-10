@@ -1,0 +1,22 @@
+name: Chosen Vessel
+incant: “... to bestow the grace of [Your Devotion’s Qualifier] upon your spirit, go forth and be the fury of the Divine.”
+call: Grant Chosen Vessel by [Devotion Accent], Explanation
+target: Other Individual
+delivery: Touch
+accent: "[Devotion Accent]"
+duration: Short Rest
+refresh: Spell
+effect: Resistance, Heal, Refresh, Cure, Grant Spike Damage, Grant Spikes, Grant Life Points
+description: |
+  The Divine Shield may invest another with the essence of her faith. The target must be of the same Devotion as the Divine Shield.
+
+  When affected by this Power, the target is immediately Healed to full Life Points, Refreshes all Spikes, and is Cured of all Conditions.
+
+  In addition, the target gains until their next Short Rest:
+
+  * Becomes Chosen by the Divine Shield, even if the Divine Shield has no available “Chosen slots”
+  * Resistance to the Divine Shield’s Devotion Accent
+  * Becomes capable of performing feats of strength
+  * Gains +1 Maximum Life Points
+  * +1 Maximum Spikes
+  * +1 Spike Damage

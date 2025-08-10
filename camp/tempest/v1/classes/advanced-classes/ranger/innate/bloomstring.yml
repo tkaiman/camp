@@ -1,0 +1,14 @@
+name: Bloomstring
+requires: ranger:3
+incant: "RP Slow 100, Repeating: “With these Bloom I reinforce my bow.”"
+call: "“Counter: Bloomstring”"
+target: One Bow
+duration: Event
+delivery: None
+refresh: Immediate
+accent: None
+effect: Counter
+description: |
+  The Ranger’s bow is their tool of the trade, and they know secret techniques in keeping their bow in working condition. By spending a Slow 100 in RP carefully weaving Bloom into their bowstring, the Ranger may grant it limited immunity to breakage. The Ranger may Sacrifice three Bloom (place in the Ash Bin)  to gain a number of Counters versus Shattering Effect targeting the Ranger’s bow equal to their Ranger class-level.
+
+  Note: As a reminder, a bow struck by a weapon takes a shatter effect.

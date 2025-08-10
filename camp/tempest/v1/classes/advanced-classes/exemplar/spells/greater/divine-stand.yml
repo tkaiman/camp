@@ -1,0 +1,33 @@
+name: Divine Stand
+incant: Standard
+call: “Grant Last Stand”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Grant
+description: |
+  Once this spell is cast, the Exemplar is granted the following suite of powers:
+
+    * Heal to Full, Mend to Full, and Rebuild on the Exemplar’s Shield, Armor, and Weapon
+    * Unaccented Weapon Damage Resistance
+    * Resistance to Radiance, Darkness, and the Exemplar’s Chosen Accent
+    * +1 Base Damage
+    * +3 Base Spike Damage
+    * +3 Base Maximum Spikes
+
+  In addition, the Exemplar may expend any number of Divine Graces to add one (per Divine Grace expended) of any of the following abilities to their weapon:
+
+    * The wielder becomes immune to Disarm, Shatter and Disable Effects. The wielder should call "No Effect" when these Effects occur.
+    * If the weapon is a great weapon, it can be wielded in one hand without penalty or restriction.
+    * The weapon is wielded as if the Exemplar was proficient with that weapon.
+    * The weapon gains resistance to Materia.
+    * By expending a Divine Grace, the character can Counter one Materia or Verbal that targets them by Calling "Counter: Divine Avenger”
+    * The weapon can add a +2 damage bonus by adding "to Demon" as a Qualifier to any damaging attack. This will increase Wounding and Piercing Effects as well.
+    * The weapon can add a +2 damage bonus by adding "to Angel" as a Qualifier to any damaging attack. This will increase Wounding and Piercing Effects as well.
+    * By expending a Divine Grace, the weapon can be charged with three “Heal 3 by Radiance” blows which will have the Weapon delivery. These will go away when the Spell ends.
+    * The first time the Exemplar drops to 0 Life Points, they are healed to full Life Points. If the character is affected by Death, the Exemplar may call "Counter: Divine Avenger" once.
+    * The weapon can do Death to Helpless at-will and will Heal the wielder for 2 Life Points each time.
+
+  Once the Exemplar leaves combat, becomes Helpless, or completes a Short Rest, they immediately assume Spirit Form, and must proceed to the appropriate location (usually the Spirit Well).

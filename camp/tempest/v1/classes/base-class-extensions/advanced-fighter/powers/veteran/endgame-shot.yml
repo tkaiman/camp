@@ -1,0 +1,10 @@
+name: Endgame Shot
+incant: None
+call: "[15/20]"
+target: Individual
+duration: Instantaneous
+delivery: Weapon (Two-hander / Projectile)
+refresh: Short Rest
+accent: None
+effect: Damage
+description: The Fighter makes a weapon hit that attempts to end the battle before it even starts in some cases. If the Fighter is using a projectile weapon they may instead call “20”.  If the Fighter is using a Great Weapon they may instead call “15”.

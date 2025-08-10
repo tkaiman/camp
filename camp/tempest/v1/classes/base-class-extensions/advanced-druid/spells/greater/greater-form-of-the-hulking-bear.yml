@@ -1,0 +1,28 @@
+name: Greater Form of the Hulking Bear
+tags: [form]
+incant: Standard
+call: “Grant Greater Form of the Hulking Bear”
+target: Self
+accent: None
+duration: Short Rest
+delivery: None
+refresh: Spell
+effect: Grant Power
+description: |
+  This Spell can only be cast while out of combat. The Druid is inhabited by the essence of the Bear Spirit. Powerful and capable of taking enormous punishment,
+  the Bear can ride any front line. While in the Greater Form of the Bear, the character cannot cast Spells of any kind, but can activate the Powers of items
+  and can cast the Hide Cantrip, but no others. The Druid has the following benefits:
+
+    * +4 Life Points
+    * 8 points of Natural Armor
+    * May manifest and Wield up to two Natural Short or Long weapons proficiently.
+    * May add the “Force” Accent to any Claw Weapon attack that does not have an Accent.
+
+  The Bear has the following additional abilities:
+
+    * Expend a Novice Spell-Slot to Counter a damaging Weapon attack. The Call is “Counter: Bearhide!”.
+    * Expend a Novice Spell-Slot to Heal themself for 3 Life Points. The Call is “Heal 3”
+    * Expend a Novice Spell-Slot to do a Weapon attack that does “Taunt 3.”
+    * Expend an Adept Spell-Slot to Grant themself +1 Bonus Spike Damage until they leave the Form.
+    * Expend an Adept Spell-Slot to Cure themself of one Condition. The Call for this is "Cure [Condition]" and the Bear can do this while unable to speak, but not while unable to use Powers.
+    * Expend a Greater Spell-Slot to Counter a Weapon or Materia attack. The Call is “Counter, Bearhide!”

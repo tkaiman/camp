@@ -1,0 +1,12 @@
+name: Greater Storm Blade
+incant: Standard
+call: “Short Imbue Weapon with [Wounding 15 by Lightning]”, “Short Grant Lightning Accent to Weapon Attacks”
+target: Individual
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: Imbue, Grant Accent
+description:
+  This allows the Druid to give another the power to send electricity coursing through their weapon to harm a foe. All of the character’s Weapon Attacks will be able
+  to use the Lightning Accent, and they will also be able to unleash one strike of significant power.

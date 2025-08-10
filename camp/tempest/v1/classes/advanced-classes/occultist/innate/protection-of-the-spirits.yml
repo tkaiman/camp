@@ -1,0 +1,20 @@
+name: Protection of the Spirits
+requires: occultist:1
+incant: RP for 1 minute; “I call the spirits to protect me”
+call: “Grant X Summoned Armor to Self”
+target: Self
+duration: Event
+delivery: Touch
+refresh: Short Rest
+accent: None
+effect: Grant Summoned Armor
+description: |
+  Regardless of their methods, Occultists try to garner respect, blessings, or favors from the minor spirits that swirl around us all the time. While there are many benefits and uses for this, one of the most elementary is granting a blessing of protection. While out of combat, you may spend a minute of performative roleplay connecting with and appealing to the spirits of the world, which might involve minor offerings, meditation, and so on. You may then chant “I call the spirits to protect me”, and then Call “Grant X Summoned Armor to Self”, where X is 2 plus your Occultist class-level. Should you lose this armor due to death, dispelling, or other causes, you may use this Power again to regain it (subject to the Short Rest refresh).
+
+  Some Occultist Powers give a benefit if you spend your Protection of the Spirits. Doing so requires that you are using Summoned Armor as your current suit of armor. Points that you spend are a Sacrifice of your Protection of the Spirits Maximum Summoned Armor points. If you have an additional source of Summoned Armor,  your effective Maximum Summoned Armor points will not drop below the other source, but you may not continue to sacrifice Maximum Summoned Armor points.
+
+  For Example: A Level 2 Occultist (who would receive 4 Summoned Armor from this power) wearing a Greater Arcane Bracelet (that grants 5 Summoned Armor) could only sacrifice 4 out of the 5 points granted by that armor.
+
+  This Sacrifice lasts until your next Long Rest, and persists even if you change sources of Summoned Armor or have this Power dispelled and re-cast it.
+
+  At any time, if your Summoned Armor is Shattered, you may meditate for a Focus Slow 180 to call “Rebuild Summoned Armor to Self.” This may be done even in combat situations.

@@ -1,0 +1,16 @@
+name: Faith's Resilience
+requires:
+  - advanced-cleric:5
+  - -undevoted
+incant: None
+call: "Resist"
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: None
+effect: Grant Resistance
+description: |
+  The character gains Selective Resistance to the Accent of their Devotion. They can choose not to use this resistance, though, on any incoming Effect or attack, taking the Effect or attack instead.
+
+  Note: If the Cleric is Undevoted, they gain no benefit from this power as the Undevoted path has no Accent.

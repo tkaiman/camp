@@ -1,0 +1,14 @@
+name: Nit Picking
+cost: 1
+requires: advanced-druid:4
+incant: None
+call: None
+target: Self
+accent: None
+duration: None
+delivery: None
+refresh: Event
+effect: None
+description:
+  The Druid can go through their Harvest finding maggots, mites, and other creatures living in the bowels and bones of monsters.
+  When creating Night Prize Essence, the Druid may substitute up to five Harvest instead of Night Prizes.

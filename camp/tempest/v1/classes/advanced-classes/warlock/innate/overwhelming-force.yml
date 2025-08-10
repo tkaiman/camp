@@ -1,0 +1,13 @@
+name: Overwhelming Force
+tags: [patron]
+requires: warlock:5
+incant: None
+call: None
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Immediate
+accent: None
+effect: None, only Damage
+description:
+  The Warlock may choose to expend a further additional Spike when utilizing Opening the Gate, adding one damage if the spell does Piercing, two if it does Wounding, or by three if it is normal damage, in addition to the bonuses from Opening the Gate, and A Torrent Released.

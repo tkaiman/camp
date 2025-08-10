@@ -1,0 +1,9 @@
+name: Liturgical Leader
+cost: 3
+requires:
+  - occultist:1
+  - any:
+      - journeyman-enchanting
+      - journeyman-arcane-ritual
+      - journeyman-divine-ritual
+description: When you are the Primary Ritualist in a ritual or enchantment, you may increase the number of Participants by your Occultist class-level. You may only benefit from this if the process in question accepts at least two Participants already.

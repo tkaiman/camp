@@ -1,0 +1,4 @@
+type: skill
+parent: cleric
+requires: advanced-cleric
+category: Cleric Class Skills

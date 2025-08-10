@@ -1,0 +1,15 @@
+name: Chain of Protection
+incant: Standard
+call: “Grant Protect vs. Weapons”
+target: Other Individual, Self
+delivery: Touch
+accent: None
+duration: Event, Short
+refresh: Spell
+effect: Grant Protect
+description: |
+  When this Spell is first cast, it gives another character a Protect vs Weapons. However, it also sets up a particular resonance. Any time before the Divine Shield takes a Short Rest, when they hear the target of the Chain of Protection Call “Protect”, they can get within Touch range and Call “Grant Protect vs. Weapons” again.
+
+  This can be repeated once more (after another “Protect” Call is heard) for a total of three Protects. The Divine Shield can only have one Chain of Protection active at any given time and the Spell does not end until the Divine Shield gives all three Protects or completes a Short Rest.
+
+  Note: While the trigger is the Call of “Protect”, there is no guarantee that it was the Weapon Protect Granted by this Spell, so additional applications may be wasted without proper communication (because of the Stacking restrictions on Protects).

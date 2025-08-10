@@ -1,0 +1,10 @@
+name: Imperious Defense
+incant: None
+call: "“[Name or Description] Short Obey to Living by Will: Do not attack [Individual] unless they attack you first.”"
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Short Rest
+accent: Will
+effect: Obey
+description: The Socialite can command a single other individual not to attack a secondary target. The Call must include enough of a description (which must be in-game… no “Doug’s character”) to be clear, so that the affected target knows who not to attack. This is just an Obey, so this will not stop the target from harming the named individual on accident, or even if they forget (although they can be reminded), but the target will do their best to avoid attacking that person.

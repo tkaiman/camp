@@ -1,0 +1,11 @@
+name: Concealed Dart
+incant: Focus Quick 30
+call: '“Wounding 10”, “Quick Sleep”, “Short Silence”'
+target: Individual
+duration: Instantaneous, Quick 100, Short Rest
+delivery: Thrown Weapon
+refresh: Short Rest
+accent: None
+effect: Wounding, Sleep, Silence
+description: |
+  This Power can only be used with a Thrown weapon and it can only be used out of combat, generally to start a fight. The attack can be used to do one of three effects. It can do 10 points of Wounding damage, or it can do a Quick Sleep Effect, or it can cause a Short Silence Effect.

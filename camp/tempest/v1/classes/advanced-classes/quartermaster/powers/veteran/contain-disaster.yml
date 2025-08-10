@@ -1,0 +1,14 @@
+name: Contain Disaster
+tags: [artificer]
+incant: None
+call: “Contain Disaster”
+target: Special
+duration: Until Used
+delivery: Special
+refresh: Special, Short Rest
+accent: Special
+effect: Special
+description: |
+  A Forgesource contains the power of creation, and with a little knowhow, it can contain other things. Once per Short Rest, when you would trigger a Hazard while prospecting or a Pollution Call while crafting, you may sacrifice a Forgesource to call “Contain Disaster.” This prevents the hazard from triggering, protecting those around you.
+
+  At some point before the end of the event, you may unleash that disaster. Using either a Spell Ball or a thrown weapon representation of a Forgesource, you may throw the effect that would have been triggered. If the contained hazard originally used Voice delivery, (for example, “By My Voice Piercing 5 by Poison”), you may alternatively trigger that effect, but you take the effect yourself as Final.

@@ -1,0 +1,15 @@
+name: I’m Not Eatin’ Crow Today
+requires: hooligan:4
+cost: 5
+incant: None
+call: “Grant Obfuscate”, Explanation
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Event
+accent: None
+effect: Obfuscate
+description: |
+  When you and your posse put your heads together, you can come up with an impeccable cover story for whatever you have been up to. By roleplaying and ensuring you have a cover story established with your Crew, you can get your Crew’s help in resisting the truth.
+
+  After you have your cover story set up with the members of your posse, you may Obfuscate a number of Discerns equal to your Hooligan Class-level up to a maximum of the number of posse members present while you are being interrogated. These Obfuscates are only able to be used against Discerns that get at what you are covering up with your cover story. If the Hooligan witnesses any member of their posse being caught in a lie related to the shared story, the Hooligan immediately loses all Obfuscates from this Power.

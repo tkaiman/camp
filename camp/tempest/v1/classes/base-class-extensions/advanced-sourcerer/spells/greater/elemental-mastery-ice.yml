@@ -1,0 +1,22 @@
+name: Elemental Mastery - Ice
+incant: Standard
+call: “...by Ice”, “Resist”, “Protect”
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: None
+description: |
+  The Sourcerer may only cast this spell if one of their [Eldritch Accents] is Ice.
+
+  The Sourcerer cannot cast this Spell if they have cast any other Elemental Mastery Spell this Event. In addition, if the character has a Draconic Heritage other than Ice, they cannot cast this Spell. Until the Sourcerer completes a Long Rest, they gain the following benefits:
+
+    * The Sourcerer can add the Ice Accent to any unaccented Power.
+    * The Sourcerer gains +1 Base Damage with all Spells that do Ice-Accented damage.
+    * The Sourcerer can expend a Spike to Resist a single source of Ice-Accented damage.
+    * The Sourcerer gains one Protect vs. Ice upon completing a Short Rest.
+    * The Sourcerer takes no damage from normal or natural cold; and survives extreme cold, even though it still feels cold (this does not mean the player should eschew clothing).
+    * The Sourcerer will not slide around on ice, nor are they hindered seeing through snow or sleet.
+    * The Sourcerer can walk over water as if it were solid ice, freezing it with each footstep.
+    * The Sourcerer has resistance to Slow and Imprison Effects.

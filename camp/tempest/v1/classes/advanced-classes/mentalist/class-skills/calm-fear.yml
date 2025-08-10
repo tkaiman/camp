@@ -1,0 +1,20 @@
+name: Calm Fear
+requires:
+  - mentalist:2
+  - psychic-surgery
+cost: 4
+tags: [psychic-surgery-procedure]
+incant: RP, Psychic Surgery
+call: None, "Short Grant Resistance to Fear by Mind"
+target: Individual
+duration: Permanent
+delivery: Touch
+refresh: Short Rest, Long Rest
+accent: Mind
+effect: None
+description: |
+  The Mentalist and the patient work together to find places in the patient’s mind where there is deep or abiding fear. The Mentalist can excise those deep feelings, either fully or partially alleviating the fear. This can have one of three possible results:
+
+    * In a purely role-playing sense, the character is freed of some fear or anxiety. This is permanent and cannot be dispelled.
+    * The character can ease a character’s nightmares for the next night’s sleep. Mechanically, the character will act like they do not have the Nightmares Flaw after the next 7 AM Long Rest until that evening. The effects must be explained to the target.
+    * The character can become inured to fear, and gains resistance to Effects with the Fear Accent until they complete a Short Rest. The Call is "Short Grant Resistance to Fear by Mind." This exhausts the Mentalist’s ability to Calm Fear until their next Long Rest.

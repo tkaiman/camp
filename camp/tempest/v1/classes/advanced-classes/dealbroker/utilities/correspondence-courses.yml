@@ -1,0 +1,17 @@
+name: Correspondence Courses
+incant: None
+call: None
+target: None
+duration: None
+delivery: None
+refresh: None
+accent: None
+effect: None
+grants: lore
+choices:
+  utility:
+    name: Socialite Utility Power
+    matcher:
+      type: utility
+      parent: socialite
+description: Not everyone has the luxury of attending a proper finishing school, but your connections make it possible to pick up some of that knowledge. You gain a Lore skill and a Socialite Utility power of your choice.

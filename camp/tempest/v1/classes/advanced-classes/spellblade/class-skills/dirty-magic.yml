@@ -1,0 +1,15 @@
+name: Dirty Magic
+cost: 3
+requires: spellblade:3
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+description: |
+  Whenever the Spellblade makes a Weapon attack from behind using a Bladechanneled spell, they can convert Wounding Effects into Piercing Effects with the damage number halved, rounding down.
+
+  From Behind: In order to count as an attack from behind, the Spellblade must have one foot on the back side of a line created by the target’s shoulders and must strike with a hand that is also behind that line. This includes projectile and thrown weapon attacks. “From behind” Powers will always be usable against targets that are helpless or willing. An attack that must come “from behind” which doesn’t for some reason, does nothing at all: not even a single point. Often, an attack will begin as an attack “from behind” but will end up being a normal attack (the opponent turns, the attack hits the wrong target, etc.). In this case it is up to the Spellblade to let the target know not to take any damage or Effects.

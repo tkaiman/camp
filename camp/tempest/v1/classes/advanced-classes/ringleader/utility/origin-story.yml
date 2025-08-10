@@ -1,0 +1,9 @@
+name: Origin Story
+choices:
+  power:
+    name: Fighter or Socialite Utility Power
+    matcher:
+      parent:
+        id: [fighter, socialite]
+      type: utility
+description: The Ringleader may select one Utility power from either Socialite or Fighter.

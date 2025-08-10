@@ -1,0 +1,11 @@
+name: Warden of the Iron Prison
+incant: None
+call: “Quick [Bind / Root/ Silence] by Force”
+target: Individual
+duration: Short Rest, Quick 100
+delivery: Weapon
+refresh: Long Rest
+accent: Force
+effect: Bind, Root, Silence
+description:
+  The Sentinel turns the battlefield around them into a prison for their foes. While in Sentinel’s Stance, the Sentinel may activate this Power. While active, the Sentinel may make melee attacks with the Call “Quick [Bind, Root, or Silence] by Force” at-will. You may change which Effect you call between them.  This Power ends if the Sentinel completes a Short Rest, becomes Helpless, or is no longer in combat.

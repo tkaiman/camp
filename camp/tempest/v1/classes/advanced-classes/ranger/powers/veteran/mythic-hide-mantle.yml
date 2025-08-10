@@ -1,0 +1,19 @@
+name: Mythic Hide Mantle
+incant: None
+call: “Grant [X] Natural Armor”
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Immediate
+accent: None
+effect: Grant Natural Armor
+description: |
+  The great beasts of the realms are resources both alive and dead to the Ranger: The skins, hides, and carapaces of the larger beasts are easily fashioned into makeshift protection with but a few deft strokes of the blade, and a bit of mystical knowledge.
+
+  When turning in a scavenge token, the Ranger may choose to instead take all of the resources granted by a single Token card as Natural Armor, at a rate of 1 per Hide, and 2 per Harvest, and 3 for Scale.
+
+  For Example: If Swindle turns in a Captain scavenging token that would award 2 Hide and 2 Harvest, they may instead grant themselves 6 Natural Armor until their next Long Rest.
+
+  Alternatively, the Ranger may turn in a Special Resource with a basic resource equivalent listed on its tag for the same effect.
+
+  For Example: If Swindle turns in an Auroch Hide Special Resource worth 10 Hide, he would be granted 10 Natural armor until their next Long Rest.

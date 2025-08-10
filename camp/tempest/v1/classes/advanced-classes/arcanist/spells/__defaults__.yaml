@@ -1,0 +1,4 @@
+type: spell
+sphere: arcane
+parent: arcanist
+refresh: Spell

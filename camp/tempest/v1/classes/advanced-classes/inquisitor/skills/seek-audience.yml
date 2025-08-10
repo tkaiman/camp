@@ -1,0 +1,17 @@
+name: Seek Audience
+requires: inquisitor:3
+cost: 3
+incant: '"From the light of the divine, from the lessons of mystic lore, so do we seek an audience” repeated six times'
+call: “Grant Insubstantial”, “Dispel Insubstantial”
+target: Individual
+delivery: Touch
+accent: None
+duration: Special
+refresh: Long Rest
+effect: Grant Insubstantial, Dispel Insubstantial
+description: |
+  This powerful rite lets the Inquisitor ask their god to answer a question. The Inquisitor and up to one other target per Inquisitor class-level of the character must find an out-of-combat location to perform this powerful rite. All targets will, at the end of the Incantation (which all must perform) fade away, becoming insubstantial and traveling directly to the Spirit Well, where they will seek the answers of their god. All targets will be gone for at least four hours (taking an NPC shift).  If not all the targets perform the Incantation, or if it is overly mangled, it is up to the Inquisitor’s player to declare the Power ineffective.
+
+  The power to call upon the Divine so directly is not one to be used lightly. The god or higher power may require tasks, homage, or sacrifices to be made in exchange. If the god or higher power targeted does not deign to answer the call of their supplicant, another being may answer instead, or there may be no answer at all.
+
+  At the end of their seeking, all who sought an audience will return, and each person may have the answer to a single question that they ask at the Spirit Well. These answers will be generally reliable, although they may be couched in riddle, poetry, or other obfuscation. At the end of their seeking, all targets will travel directly back, insubstantial, to where they cast the rite, and become corporeal again by calling “Dispel Insubstantial.”

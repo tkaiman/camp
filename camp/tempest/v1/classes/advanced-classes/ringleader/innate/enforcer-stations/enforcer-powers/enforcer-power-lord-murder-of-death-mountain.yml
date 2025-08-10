@@ -1,0 +1,15 @@
+name: Lord Murder of Death Mountain
+incant: None
+call: “Short Grant +2 Base Damage”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Grant
+description: |
+  A surge of unnatural power courses through The Warlord’s veins - probably because they know their boss is watching and they’ve got an image to uphold.
+
+  By stating their name, station, title, ranks, kill count, or otherwise imposing their own power, the Warlord is able to hype themselves up for the coming conflict.
+
+  Until the next Short Rest, or five Weapon attacks have been made, The Warlord may increase their base damage by +2.

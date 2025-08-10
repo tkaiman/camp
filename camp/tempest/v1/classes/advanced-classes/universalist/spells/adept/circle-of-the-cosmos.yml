@@ -1,0 +1,15 @@
+name: Circle of the Cosmos
+incant: Standard
+call: “Wounding 2 by [Eldritch Accent, Radiance, Darkness, Force, or Flame]
+target: Individual
+duration: Short Rest, Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: Eldritch Accent, Radiance, Darkness, Force, Flame
+effect: Wounding
+description: |
+  Once the incantation is complete, the Universalist may, at-will until their next Short Rest, charge spell balls with a Focus Quick 30 with “Wounding 2 by [Accent].” The accent chosen must rotate between their [Eldritch Accent] (if they have one), Radiance, Force, Darkness, and Flame. They must use each of these five accents before repeating the use of an accent. If the Universalist takes any damage to their Life Points, becomes Helpless, casts any other spell, or forgets which accent they need to use next without repeating too soon the power ends.
+
+  If the Universalist has a Source providing an Eldritch Accent of Radiance or Flame they may instead use any of the above accents available to them in whatever combination they wish without needing to worry about repeating.
+
+  If the Universalist has a Source providing an Eldritch Accent of Force or Darkness, all spell balls from this spell deal an additional Base +1 Damage.

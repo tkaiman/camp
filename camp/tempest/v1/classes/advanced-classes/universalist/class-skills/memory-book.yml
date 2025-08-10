@@ -1,0 +1,22 @@
+name: Memory Book
+cost: 3
+requires:
+  - universalist:1
+  - sourcerer:1
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Special
+choices:
+  spell:
+    name: Spell
+    limit: 4
+    matcher:
+      type: spell
+      parent:
+        type: class
+    controller: sphere-grant
+description: The Universalist gains four additional spells known. These spells may come from any combination of Base Classes. In addition, skills and powers that require a spellbook are now available to Universalist, this overrides normal Sourcerer disadvantages related to this.

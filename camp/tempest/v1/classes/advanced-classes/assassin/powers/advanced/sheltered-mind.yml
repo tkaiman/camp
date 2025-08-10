@@ -1,0 +1,11 @@
+name: Sheltered Mind
+incant: None
+call: None
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Ofuscate vs Discern
+description:
+  The Assassin’s line of work requires a certain amount of discretion, and some practice a rhyme or mantra to clear their minds when under the scrutiny of the law or other opposition. For a Short Rest, they may choose to answer Discerns that would incriminate the Assassin, uncover a secret, or put them in danger with any answer they desire, and need not indicate that this power was used. This Obfuscate does not protect against Expose Effects.

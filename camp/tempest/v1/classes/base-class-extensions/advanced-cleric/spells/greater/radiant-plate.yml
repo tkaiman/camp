@@ -1,0 +1,11 @@
+name: Radiant Plate
+incant: Standard
+call: '“Long Grant 5 Summoned Armor by Radiance” “Protect against Verbals”'
+target: Individual
+delivery: Touch
+accent: Radiance
+duration: Long Rest
+refresh: Spell
+effect: Grant Summoned Armor
+description:
+  This Spell wraps the target in divine Summoned Armor, keeping them safe from harm.  The spell also grants the target a “Protect against Verbals”.

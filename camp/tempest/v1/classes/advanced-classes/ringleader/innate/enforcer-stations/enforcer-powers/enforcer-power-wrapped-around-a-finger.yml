@@ -1,0 +1,10 @@
+name: Wrapped Around a Finger
+incant: None
+call: “[Name or Description] Subtle Short Charm by Mind”
+target: Individual
+duration: Short Rest
+delivery: Verbal
+refresh: Long Rest
+accent: Mind
+effect: Charm
+description: The Face is the manipulator of the group, subverting their target’s will and directing it themselves. The Face may, after a minute or so of conversation, Call “[Name or Description ] Subtle Short Charm by Mind” against the target of their attention.

@@ -1,0 +1,11 @@
+name: Broken Twigs, Moonlit Sight
+incant: None
+call: “[Name or Description] Expose”
+target: Individual
+duration: Instantaneous
+delivery: Verbal
+refresh: Quick 100
+accent: None
+effect: Expose
+description:
+  There exists no better hunters across the realms than the Ranger, and every piece of evidence the Ranger can collect is paramount to a successful hunt. The Ranger gains the Tracking Skill, and becomes incredibly adept at finding their Quarry, should they be lost. They may call “[Name or Description] Expose.” The target of this power must have been your most recent Ranger’s Mark, though they need not still be your Ranger’s Mark.

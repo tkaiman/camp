@@ -1,0 +1,5 @@
+type: power
+tier: 3
+parent: rogue
+category: Rogue Veteran Powers
+requires: advanced-rogue

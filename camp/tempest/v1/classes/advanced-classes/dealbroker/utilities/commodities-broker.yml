@@ -1,0 +1,28 @@
+name: Commodities Broker
+incant: None
+call: None
+target: Resources
+duration: Special
+delivery: None
+refresh: Long Rest
+accent: None
+effect: None
+description: |
+  Your connections have granted you access to markets that are generally unavailable to others.
+
+  Once per Long Rest, The Dealbroker may exchange processed Basic or Uncommon Resources on the commodities market for a small fee. Basic or Uncommon resources represented by Powder, Essence, or Plate
+  cards may be traded in this manner. You may trade up two full cards of Basic resources for two full cards of other Basic resources of your choice, a single card of Uncommon resources for another
+  card of Uncommon resources, or you may swap two cards of Basic for one Uncommon (or vice-versa). You must pay a fee of 4 Wealth to process this transaction. For the purposes of this power, a full
+  card has 11 uses, but partially-used cards adding up to 11 count as a single full card.
+
+  You may instead issue a request for a single Town Construction Resource of your choice in your trade request, as follows, at the expense of 20 Wealth in fees:
+
+    * You can generally obtain any Basic Construction Resource for four full cards of Basic resources or two full cards of Uncommon resources, or swap a Basic Construction Resource for another Basic
+      Construction Resource.
+    * You can obtain Advanced Construction Resources for four Basic Construction Resources, or swap a single Advanced Construction Resource for another one. Note that a trade request for Advanced
+      Construction Resources is more likely to be unavailable than other trades, particularly when requesting Luxuries.
+    * You can swap an Advanced Construction Resource for any four Basic Construction Resources. In this case, you do not pay a fee, and instead receive 10 Wealth as a commission for the trade.
+
+  The Dealbroker should pass the resources and Wealth to Staff with a note detailing their return request. If you have the class skill Limited Time Offer, you may note your willingness to receive such
+  an offer. Staff will make the trades and return to the Dealbroker at their convenience. The resources and coin will be refunded and the ability refreshed if Staff cannot make the trade for logistical
+  or plot reasons.

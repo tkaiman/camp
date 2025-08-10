@@ -1,0 +1,12 @@
+name: Threadstrike
+tags: [Whirlwind]
+incant: None
+call: “Piercing 5 by Time”
+target: Individual
+delivery: Thrown Weapon
+accent: None
+duration: Instantaneous
+refresh: Short Rest
+effect: Piercing
+description: |
+  The Dervish may reach through to the past and attempt to end the foe’s life. The Dervish may attack out of combat or from behind (See Rogue for definition) and attempt to strike the opponent in the past by calling “Piercing 5 by Time.”

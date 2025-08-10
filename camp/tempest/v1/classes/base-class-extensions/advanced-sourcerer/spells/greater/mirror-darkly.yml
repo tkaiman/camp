@@ -1,0 +1,11 @@
+name: Mirror Darkly
+incant: Standard
+call: "“[Name or Description] Discern by Arcane: What is an Accent you can use?”"
+target: Individual, Self
+duration: Long Rest
+delivery: Verbal, None
+refresh: Spell
+accent: Arcane
+effect: Discern
+description: |
+  The Sourcerer can learn one Accent that another can use. Once learned, the Sourcerer can use that Accent as an Eldritch Accent or can add it to any Spike attack or Power until they complete a Long Rest. Unfortunately, any answer of Malediction or Maelstrom will not only fail to grant the Accent to the Sorcerer but may also result in disastrous outcomes.

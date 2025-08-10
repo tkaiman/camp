@@ -1,0 +1,19 @@
+name: Hybrid Advancement II
+ranks: 2
+incant: None
+call: None
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: None
+choices:
+  sphere:
+    name: Bonus Spell Slot
+    description: Choose a sphere of magic to receive an additional Greater spell slot in.
+    limit: 1
+    controller: sphere-bonus
+    controller_data:
+      bonus: spell_slots@3
+description: The Spellblade is often a blend of martial and spell-casting classes. As such, they have both Powers and Spells available. The Spellblade adds one Greater Spell-Slot of a Sphere they have access to.

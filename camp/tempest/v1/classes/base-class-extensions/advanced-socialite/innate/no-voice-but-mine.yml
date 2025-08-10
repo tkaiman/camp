@@ -1,0 +1,12 @@
+name: No Voice But Mine
+requires: advanced-socialite:5
+incant: None
+call: “Dispel [Obedient, Berserk, Charmed, Dominated] by Will”
+target: Individual
+duration: Instantaneous
+delivery: Touch
+refresh: Focus Quick 100 or Short Rest
+accent: Will
+effect: Dispel
+description:
+  The Socialite is a true leader and does not easily follow the rules of others, nor will they allow others to either. This Power can be used on the Socialite themself (as long as their orders do not preclude it) or can be used on anyone who is currently engaged as their Bodyguard (as per The Right Hand) or who is a member of their group (as per Heart of the Group). If used to Dispel an Obedient condition, it instead refreshes after a Short Rest rather than Focus Quick 100.

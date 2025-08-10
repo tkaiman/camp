@@ -1,0 +1,26 @@
+name: Mentalist
+type: class
+category: Advanced Class
+class_type: advanced
+ranks: 5
+sphere: arcane
+requires:
+  - level:10
+  - any:
+      - arcane.spell_slots@2:2
+      - power@2:2
+      - all:
+          - arcane.spell_slots@2
+          - power@2
+powers: {}
+description: |
+  There are those who adventure in the world, running through jungles and over pits, dodging beasts and quicksand alike. There are those who adventure below the world, in darkest dungeons and caves heavy with moss and secrets. The Mentalist adventures in the world of the mind. There are two paths the Mentalist can take (and come from), those powers of the mind that are purely magical in nature, and those of a more intuitive and perhaps mystical sort. The former can cause changes in behavior, magically control their foes, and fog the minds of their enemies with weakness or confusion. The latter use subtler means; mind reading, turns of phrase, stresses of voice or gaze to move the needle of other’s behavior one way or the other. Some Mentalists even see themselves as healers, delving into the memories and psyche of their patients to relieve them of strain, trauma, or occasionally, the truth.
+
+  ## Base Incant
+  > “I conjure words of arcane might, from studied tomes in candlelight,
+  > I draw my strength from sky and land. Gather now within my hand.
+  > From planes beyond, my power's Source, By Word and Will I give it force.
+  > My Word as law, my Will supreme, I fuse the strength of truth and dream…”
+
+  ## Warning for non-casters
+  This class grants spell slots, but can be accessed without previously taking a casting class.  If the class is unlocked and taken this way, the class will not have any way to recharge their spells during game, and it is advised those spells be swapped for powers via Versatile Mentality.

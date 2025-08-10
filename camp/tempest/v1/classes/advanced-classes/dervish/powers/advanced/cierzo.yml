@@ -1,0 +1,13 @@
+name: Cierzo
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Short Rest
+refresh: Short Rest
+effect: Grant Wounding
+description: |
+  The Dervish becomes a whirlwind of dancing blades, allowing them to cut through their enemy's defenses.
+
+  While wielding two weapons and slowed, the Dervish may activate this Power. While this Power is active, the Dervish may swing for "Wounding 1" at will. If the Dervish uses any other Power (including Counters), becomes Helpless, or there are no more visible targets this Power ends.

@@ -1,0 +1,41 @@
+name: Assassin
+type: class
+ranks: 5
+class_type: advanced
+category: Advanced Class
+requires:
+  - level:10
+  - power@2
+  - short-weapons
+  - poisoner
+  - lore+Shadow
+flags: flag+assassin
+level_grants:
+  2: assassin-bonus-spikes
+  4: assassin-bonus-spikes:2
+  5: assassin-bonus-damage
+description: |
+  With the advent of any form of leadership, the urge to remove them by any means necessary inevitably crops up - thus the Assassin has a long and storied history. These often stealthy, but not always, combatants have struck fear into the hearts of leaders, bodyguards, and soldiers for their ability to sneak into protected places and kill targets of high value for millenia. Even more concerning is the ability for many of them to accomplish their goals without detection, and escape into the night sight unseen. Poison, blades, and the cover of darkness are all the tools of the Assassin: many assassins go years without truly facing danger head on.
+
+  ## Attacking From Behind
+
+  A number of Assassin Powers reference attacking “from behind.” In order to count as an attack from behind, the Assassin must have one foot on the back side of a line created by the target’s shoulders and must strike with a hand that is also behind that line. This includes projectile and thrown weapon attacks. “From behind” Powers will always be usable against targets that are helpless or willing. An attack that must come “from behind” which doesn’t for some reason, does nothing at all: not even a single point. Often, an attack will begin as an attack “from behind” but will end up being a normal attack (the opponent turns, the attack hits the wrong target, etc.). In this case it is up to the Assassin to let the target know not to take any damage or Effects.-
+---
+id: assassin-bonus-spikes
+type: subfeature
+parent: assassin
+name: Bonus Maximum Spikes
+category: Assassin Class Bonuses
+ranks: 2
+display_type: Bonus
+level_grants:
+  1: spikes:1
+  2: spikes:2
+---
+id: assassin-bonus-damage
+type: subfeature
+display_type: Bonus
+parent: assassin
+name: +1 Bonus Spike Damage
+category: assassin Class Bonuses
+# TODO: Track spike damage

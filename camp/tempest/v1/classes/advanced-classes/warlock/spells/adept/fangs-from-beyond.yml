@@ -1,0 +1,18 @@
+name: Fangs from Beyond
+tags: [patron]
+incant: Standard
+call: “Wounding 0 by [Eldritch Accent]”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: "[Eldritch Accent]"
+effect: Wounding
+description: |
+  “Nilanea, what does that spell even do?” Jhonas glanced at his warlock companion. Nilanea’s fangs glimmered in the darkness. ”Maybe you’ll live long enough to learn, Jhonas... maybe. Let’s press on.”
+
+  After finishing the incantation, the Warlock may charge a Spell-Ball with “0 Wounding by [Eldritch Accent].” This Spell-Ball may be modified by other Powers and Spells as per normal, although it may not be given the Final modifier for any reason. Whenever the Warlock lands this attack on target, they may immediately call “Spell-Ball Charged!” and charge an additional Spell-Ball with the exact same Call. This additional Spell-Ball may not benefit from any bonuses, modifications, Spells, Powers, or Effects for any reasons and must always be the exact same Call as the previous Spell-Ball. No further incantation is required to use these Spell-Balls.
+
+  A Warlock may charge a number of Spell-Balls equal to their Arcane Spellcasting class-levels. If the Warlock misses, or is Prevented a number of times equal to the caster’s levels in Warlock, the spell immediately ends and any remaining charges are lost.
+
+  This spell also ends when the Warlock has landed (spell has taken effect) a number of Spell-Balls equal to their Warlock Class Level.

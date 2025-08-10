@@ -1,0 +1,11 @@
+name: Mobility
+incant: Standard
+call: “Mobile”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: None
+description:
+  Once the Spellblade has cast Mobility, they need not keep one foot planted while casting cantrips. They should add “Mobile” before the incantation of the spell, even if the spell’s incantation has been altered. If this spell is cast with a Greater spell-slot, it will provide the benefit for Novice-tier spells as well. If cast with a Master spell-slot, it will also allow the Spellblade to move while casting Adept tier-spells.

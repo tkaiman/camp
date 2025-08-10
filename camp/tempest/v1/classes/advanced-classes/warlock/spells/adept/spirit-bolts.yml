@@ -1,0 +1,12 @@
+name: Spirit Bolts
+tags: [patron]
+incant: Standard
+call: “Piercing 3 and Drain to Insubstantial”
+target: Individual
+duration: Instantaneous
+delivery: Spell-Ball
+refresh: Spell
+accent: None
+effect: Piercing, Drain
+description:
+  This blast of arcane energy passes outside the plane of the physical to harm creatures that are normally immune to such Powers. The spell can be used to charge up to three Spell-Balls at one time.

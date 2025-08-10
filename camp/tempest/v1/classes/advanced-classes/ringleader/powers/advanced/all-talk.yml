@@ -1,0 +1,11 @@
+name: All Talk
+incant: None
+call: “Counter, All Talk”
+target: Self
+duration: Instantaneous
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Counter
+description:
+  The Ringleader may Counter a Verbal Power targeted at them specifically. The Ringerleader may use this once per Short Rest.

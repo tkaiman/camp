@@ -1,0 +1,14 @@
+name: Jaunt
+tags: [insubstantial]
+incant: None
+call: '“Dispel Insubstantial”, “Grant Insubstantial”'
+target: Self
+duration: Slow 60
+delivery: None
+refresh: Short Rest
+accent: None
+effect: Dispel, Grant
+description: |
+  While insubstantial, the Shadowdancer is reasonably assured of safety, but unable to interact with the world. However, with enough practice, the Shadowdancer can momentarily return to the physical world, and then retreat to the safety of their insubstantial state.
+
+  While insubstantial, the Shadowdancer may activate this Power, Dispelling their insubstantial state for up to sixty seconds, allowing them to interact with the world normally. Upon the end of the Slow Count, or when the Shadowdancer wishes, they will return to their previous insubstantial state (“Grant Insubstantial”), along with whatever remaining duration the previous insubstantial condition had.

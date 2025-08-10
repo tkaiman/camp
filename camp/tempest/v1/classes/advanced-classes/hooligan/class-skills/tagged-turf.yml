@@ -1,0 +1,17 @@
+name: Tagged Turf
+requires: hooligan:3
+cost: 4
+incant: None
+call: None
+target: Self
+duration: Event
+delivery: None
+refresh: Event
+accent: None
+effect: Refresh
+description: |
+  Hooligans are known for staking their claim to areas, creating borders and fiefdoms in cities that have just as much ramification to the city governance as anything the “official” government of the city can do. Once per Event, the Hooligan can select an information card (commonly referred to as a “Blue Card”) and add their personal mark to it, representing their mark with a note, additional laminated card, or some other means of conveying their mark and the effects thereof. They should take care to not damage the writing of the original card.
+
+  Hooligans who are in the Hooligan’s Crew with the individual who placed the mark may take a moment of celebration, peacocking, or otherwise show their strength around the mark. Following this, until the end of Event, this tagged location can be counted as a posse member for Powers requiring one present, and whenever the Hooligan uses their Band Together power within touch range of this location, they may treat their Hooligan level as one Level higher than it is, up to 6.
+
+  Individuals who are explicitly opposed to the Hooligan’s organization or team of which the mark represents who read the card are affected by a “Weakness by Fear.”

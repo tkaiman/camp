@@ -1,0 +1,39 @@
+name: Warlock
+type: class
+category: Advanced Class
+class_type: advanced
+ranks: 5
+requires:
+  - level:10
+  - arcane.spell_slots@2
+  - patron
+  - warcaster
+flags: flag+warlock
+level_grants:
+  3: warlock-bonus-spikes
+  5: [warlock-bonus-damage, warlock-bonus-spikes]
+sphere: arcane
+description: |
+  Deep within the annals of magical lore lie untapped resources of forbidden and lost knowledge. The Warlock seeks to traverse this winding and treacherous path, bidding the Weave to destroy what obstacles they may face. Yet the mortal paths to such power are narrow, treacherous, and often fraught with failure.
+
+  However, there are innumerable entities which would proffer such power for the merest fraction of effort and ensure success - if but for the price of subordination. Some Patrons are all too eager to barter such knowledge, while others are reclusive shut-ins, barely willing to respond to potential supplicants. Even when answered, the road to this power is not without its tribulations: dark deals with the mysterious entities, unbound demons, fae lords, and other less savory entities are common among those that choose to walk this path.
+
+  However obtained, the Warlock is pact-bound to their Patron, and derives the majority of their efficacy through it. Some warlocks even manage to survive long enough to count themselves as gaining more than they lost in the trade - nevertheless, the Warlock lives up to their name - bringing the clash of battle and the terrors of war to any field that they care to place themselves in.
+---
+id: warlock-bonus-spikes
+type: subfeature
+parent: warlock
+name: Bonus Maximum Spikes
+category: Warlock Class Bonuses
+ranks: 2
+display_type: Bonus
+level_grants:
+  1: spikes:1
+  2: spikes:2
+---
+id: warlock-bonus-damage
+type: subfeature
+display_type: Bonus
+parent: warlock
+name: +1 Bonus Spike Damage
+category: Warlock Class Bonuses

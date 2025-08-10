@@ -1,0 +1,14 @@
+name: Sacred Weapon
+requires: exemplar:5
+incant: None
+call: “Grant Radiance”
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Radiance
+description: |
+  The Exemplar may add the Radiance or Darkness Accent to any of their Powers or attacks that would otherwise be unaccented or may alter the accent to Radiance or Darkness Accents.
+
+  Additionally, when making a Spike attack, they may add the “to Undead”, “to Dark”, or “to Undevoted” qualifier. If they do, they gain a +1 Spike Base Damage for that attack. If the Exemplar has the Backstab Archetype Power, this Base Spike Damage increases to +3 Spike Base Damage when performing a Backstab.

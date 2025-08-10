@@ -1,0 +1,14 @@
+name: Master of the Quarters
+tags: [crafter, mystic]
+grants: hearth
+choices:
+  hearth-perks:
+    name: Hearth Perks
+    description: Choose up to 5 points of Hearth perks.
+    controller: point-picker
+    controller_data:
+      points: 5
+    matcher:
+      id: -hearth
+      category: Hearth Perks
+description: The first Quartermasters managed the quarters of royalty. While few match that description now, many are still responsible for maintaining a company’s living area, and have the skills to show for it. You gain Hearth for free, plus five CP worth of Hearth perks of your choice. Additionally, you may perform the Haven ritual even if you do not have the Apprentice Divine Ritual Magic skill, and if you are the Primary Ritualist, may spend half the Rare Minerals for the same effect.

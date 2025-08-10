@@ -1,0 +1,21 @@
+name: Elemental Mastery - Flame
+incant: Standard
+call: “...by Flame”, “Resist”, “Protect”
+target: Self
+duration: Long Rest
+delivery: None
+refresh: Spell
+accent: None
+effect: None
+description: |
+  The Sourcerer may only cast this spell if one of their [Eldritch Accents] is Flame.
+
+  The Sourcerer cannot cast this Spell if they have cast any other Elemental Mastery Spell this Event. In addition, if the character has a Draconic Heritage other than Flame, they cannot cast this Spell. Until the Sourcerer completes a Long Rest, they gain the following benefits:
+
+    * The Sourcerer can add the Flame Accent to any unaccented Power.
+    * The Sourcerer gains +1 Base Damage with all Spells that do Flame-Accented damage.
+    * The Sourcerer can expend a Spike to Resist a single source of Flame-Accented damage.
+    * The Sourcerer gains one Protect vs. Flame upon completing a Short Rest.
+    * The Sourcerer takes no damage from normal or natural fire; and can touch extremely hot things comfortably. They don’t ever have to use tongs or gloves when Tinkering.
+    * The Sourcerer’s form is somewhat malleable. They have resistance to Root.
+    * The Sourcerer can wreathe themself in fire and this gains resistance to weapon attacks by Projectile Weapons, Staves, and obviously wooden weapons.

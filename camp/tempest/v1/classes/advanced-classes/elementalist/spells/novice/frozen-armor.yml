@@ -1,0 +1,13 @@
+name: Frozen Armor
+incant: Standard
+call: “Grant 3 Barrier by Ice”
+target: Individual
+duration: Event
+delivery: Touch
+refresh: Spell
+accent: Ice
+effect: Grant Barrier
+description: |
+  The Elementalist can freeze ambient water vapor into sheets of deflective ice around themselves or another target. The Call for this is “Grant 3 Barrier by Ice.”
+
+  If the Elementalist has selected Ice as the element affected by Elemental Flow or is using an Ice Source, this grants five Barrier instead.

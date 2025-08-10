@@ -1,0 +1,14 @@
+name: Coalesce
+tags: [insubstantial]
+incant: None
+call: “[X] to Physical by Darkness”
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Short Rest
+accent: Darkness
+effect: None, only damage
+description: |
+  While being insubstantial can be a great boon to the Shadowdancer, it can be difficult to have the necessary impact upon the world or one’s target when in such a state. With concentration, the Shadowdancer can momentarily manifest a weapon that affects the normal world, and then vanish back to safety.
+
+  Once activated this Power allows the character to, once per Shadowdancer class-level, while insubstantial, expend a Spike to call their normal Spike damage with the Qualifier and Accents “[X] to Physical by Darkness”, where X is the Shadowdancer’s current Spike Damage. Neither the Qualifier nor the Accent may be altered.

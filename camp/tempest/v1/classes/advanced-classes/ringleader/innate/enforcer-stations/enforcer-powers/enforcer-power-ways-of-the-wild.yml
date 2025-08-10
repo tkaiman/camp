@@ -1,0 +1,18 @@
+name: Ways of the Wild
+parent: enforcer-huntsman
+incant: None
+call: “[Name or Description] Short Dominate to [Animal / Beast] by Fear”
+target: Self
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Dominate
+description: |
+  The Huntsman is an expert with animals and beasts of all kinds.  Each Long Rest, they can do each of the following once:
+    * “Expose Animals and Beasts”
+    * “[Name or Description] Heal 4 to Animal or Beast.”
+    * “[Name or Description] Short Dominate to [Animal / Beast]”
+    * “[Name or Description] Imbue by Voice By My Voice Repel to Animal or Beast””..
+
+  In addition, the Huntsman gains the Tracking Skill.

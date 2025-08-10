@@ -1,0 +1,13 @@
+name: Scan
+incant: Standard
+call: '"Subtle Discern by Radiance: How many Life Points are you down?” or "Subtle Discern by Radiance: What Conditions do you have?”'
+target: Other Individual
+delivery: Touch
+accent: Radiance
+duration: Instantaneous
+refresh: Immediate
+effect: Discern
+description: |
+  This Cantrip scans another character to either determine how hurt they are or what Conditions they have.
+
+  Note: Touch spells require the target to be Willing.

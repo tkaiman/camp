@@ -1,0 +1,11 @@
+name: Stored Reserves
+incant: None
+call: "[Name or Description] Imbue Touch with Heal 4 to [Mentalist’s Name]"
+target: Other individual
+duration: Short Rest
+delivery: Verbal
+refresh: Short Rest
+accent: None
+effect: Imbue, Grant
+description:
+  If the Mentalist can implant in the mind of another the ability to heal the Mentalist themself. This Power can only be used out of combat, but it will give another the power to Heal the Mentalist any time before the target completes a Short Rest. If the target uses this Power on the Mentalist when the Mentalist is at full Life Points, the Mentalist gains 2 Barrier and enough mental power to count as a Link, which can be exhausted normally. This is basically a way to "refund" the Power if it ends up not being used.

@@ -1,0 +1,11 @@
+name: Uncanny Survivalist
+incant: None
+call: None
+target: None
+duration: Passive
+delivery: None
+refresh: None
+accent: None
+effect: Grant Resistance
+grants: sight
+description: The Ranger is adept at identifying natural and mystical phenomena, as their survival depends on it. The Ranger gains the Sight character option. They also have resistance to environmental effects with the Poison, Fire, Ice and Acid effects, such as scorching heat from a nearby magma run or frigid temperatures.

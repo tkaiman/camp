@@ -1,0 +1,4 @@
+type: skill
+parent: druid
+requires: advanced-druid
+category: Druid Class Skills

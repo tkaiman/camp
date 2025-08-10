@@ -1,0 +1,15 @@
+name: The Manual
+requires: advanced-artisan:1
+cost: 3
+ranks: 2
+incant: None
+call: None
+target: Self
+delivery: None
+accent: None
+duration: Passive
+refresh: Immediate
+effect: None
+description:
+  The character can write down one Artisan Power with a Refresh of Short Rest or Immediate that she does not have into a special Manual and can use that Power directly from the book. Only Powers of a Tier the character has access to can be recorded and used in this way.
+  To use an Artisan Power from the Manual, the character must study it for a full minute before reading the Call directly from the book (if there is one). A Manual-provided Power may only be used out of combat. All other requirements and components will remain the same.

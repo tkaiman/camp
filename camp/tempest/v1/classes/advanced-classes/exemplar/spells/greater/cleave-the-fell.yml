@@ -1,0 +1,12 @@
+name: Cleave the Fell
+incant: Standard
+call: '“Wounding 10 by Radiance”, “Wounding 20 by Radiance”'
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Spell
+accent: Radiance
+effect: None
+description: |
+  By calling on their divine host, the Exemplar is able to wreath their weapon in one, cataclysmic blast of divine energy. After casting this spell, they may charge their weapon with one swing
+  of Wounding 10 by Radiance. If the Exemplar is using a Great weapon, they may call “Wounding 20 by Radiance.” The Exemplar may expend a Divine Grace to charge this power twice.

@@ -1,0 +1,14 @@
+name: Caustic Crumbling
+ranks: 2
+incant: Focus Quick 30
+call: “Shatter Physical Armor by Poison”
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Short Rest
+accent: Poison
+effect: Shatter
+description: |
+  The assassin may roleplay coating their weapon with a poisonous substance for a Focus Quick 30, forgoing simply stabbing the opponent and can instead do ruinous damage to the target’s physical armor, leaving it with no protections against further attacks.  This Power immediately refreshes the first time it is Prevented.
+
+  An Assassin may Sacrifice a rare mineral to alter the Accent of this power from Poison to Acid.

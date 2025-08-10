@@ -1,0 +1,14 @@
+name: Channel the Divine
+requires: exemplar:1
+incant: None
+call: None
+target: None
+duration: Passive
+delivery: None
+refresh: None
+accent: "[Chosen Accent]"
+effect: Special
+description: |
+  Whenever this character uses a Power (including spell) or attack that has the Radiance or Darkness Accents, the character may substitute that Accent for their Divine Hand’s Role Accent instead. In some places in this document [Chosen Accent] may be used, this means the Accent granted by the Divine Hand Role. This can be done at-will.
+
+  Additionally, levels of Exemplar count as Cleric levels for purposes of Faith’s Resilience, Greater Healing Touch, and Healing Touch. Exemplar is a Divine-Casting class for purposes of Refreshing Prayer or Commune with Nature.

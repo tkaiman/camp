@@ -1,0 +1,13 @@
+name: Rescind the Call of Death
+incant: Standard
+call: “[Name or Description], Grant Life and Heal to Full by Radiance”
+target: Individual
+delivery: Verbal
+accent: Radiance
+duration: Instantaneous
+refresh: Spell
+effect: Grant Life, Heal
+description: |
+  This powerful spell washes the target in life-energy. If the target is a corpse, it will bring it back to the living with full Life Points.
+
+  Once per Event, the Divine Shield may Sacrifice a Maximum Life Point until the end of the Event to instead Call “Instruction to Spirit: Return to corporeal form, Grant Life, and Heal to Full by Radiance”

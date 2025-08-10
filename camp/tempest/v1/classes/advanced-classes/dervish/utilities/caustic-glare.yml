@@ -1,0 +1,11 @@
+name: Caustic Glare
+incant: None
+call: “Counter, Caustic Glare”, “[Name or Description] 1 Acid”
+target: Self, Individual
+delivery: None, Verbal
+accent: None, Acid
+duration: Instantaneous
+refresh: Immediate
+effect: Counter, Damage
+description: |
+  The Dervish, when targeted by a non-Subtle Discern, may Counter the Discern by calling “Counter, Caustic Glare,” and may immediately call “[Name or Description], 1 Acid” against the source of the Discern.

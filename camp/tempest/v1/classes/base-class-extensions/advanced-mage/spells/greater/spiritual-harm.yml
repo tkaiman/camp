@@ -1,0 +1,11 @@
+name: Spiritual Harm
+incant: Standard
+call: '“Wounding 4 by Force” or “Wounding 20 to Insubstantial”, “[Name or Description] Dispel Insubstantial to Insubstantial. Quick Obey: Do not become Insubstantial.”'
+target: Individual
+duration: Instantaneous, Quick 100
+delivery: Spell-Ball, Verbal
+refresh: Spell
+accent: Force
+effect: Wounding, Dispel, Obey
+description: |
+  This Spell charges three Spell-Balls that can reach past the bounds of matter. Each Spell-Ball can be thrown as either “Wounding 4 by Mind” or “Wounding 20 to Insubstantial”. Instead of charging three Spell-Balls, the Spell can be cast as a Verbal that does “[Name or Description] Dispel Insubstantial to Insubstantial. Quick Obey: Do not become Insubstantial.”

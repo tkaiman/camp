@@ -1,0 +1,14 @@
+name: Aim of the Screaming Sun
+tags: [Hobbled]
+cost: 4
+requires: dervish:5
+incant: Focus Quick 30
+call: "[Spike Damage]"
+target: Individual
+delivery: Thrown Weapon
+accent: None
+duration: Instantaneous
+refresh: Focus Quick 100
+effect: Damage
+description: |
+  While Hobbled, the Dervish may Focus for a Quick Count of 30 aiming a thrown weapon at an enemy to deal their Spike Damage without expending a Spike.

@@ -1,0 +1,28 @@
+name: Cauldron Brew
+tags: [crafter, mystic]
+requires: greater-alchemy
+incant: Crafting Procedure
+call: “Cauldron Brew”
+target: Crafting Process
+duration: Instantaneous
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Special
+description: |
+  Witches, linecooks, and quartermasters all agree: if you need to produce a lot of something, a cauldron is the way to go. This process involves a cauldron prop, three brewers and produces at least 10, but up to 20 times the amount of a normal batch of a standard alchemical recipe. If the recipe normally produces a Pollution Call, it should be made at the indicated point in the below procedure. If the recipe involves Dark Territory or Blood Magic, inform a Ritual Marshal before you begin; modifying such a recipe in this way is dangerous, and nothing is known of the consequences. The modified procedure is:
+
+  This process involves two brewers in addition to yourself, spread among three roles: one who stirs, one who maintains the fire, and one who monitors the brew’s flavor and consistency and adds herbs or solutions to adjust. You may trade roles at any time during the process, and this is particularly recommended to give the stirrer a break. Only one participant needs to know the Cauldron Brew power, but all must be at least Apprentice Alchemists. Due to the use of a large cauldron, this procedure need not be performed at an Alchemical Lab. Some special locations may grant benefits to brewing with a cauldron, but the procedure can be done anywhere a fire can be safely built, including indoors if the floor is appropriately protected. Expended resources should be placed in a temporary Ash Bin and turned in directly to plot after you are done brewing.
+
+  Gather 10 or 20 times the normal ingredients for a particular recipe batch. Any of the brewers may use Batch Process [Alchemy] and/or Mass Production or other powers that normally double a recipe’s yield, but the benefit is replaced with increasing the brew’s batch limit by 10, and no power with the same call may be used more than once with a particular brew. The expiration reduction from Mass Production applies as usual.
+
+    * One brewer should start a fire, then occasionally blow on it, add more fuel, stir the fire, and so on.
+    * One brewer should fill the cauldron with water, place it over the flame if not there already, then begin stirring.
+    * One brewer should roughly chop, crush, or otherwise break down ingredients a handful at a time, adding them once per hourglass turn until all ingredients are added. After the normal ingredients are expended, occasionally taste the brew and add salts, herbs, random leaves, or whatever else seems appropriate to enhance the flavor, potency, and consistency of the brew.
+    * Over the course of 20 hourglass turns, stir the cauldron slowly clockwise. If you are using an Enhanced Cookpot as your cauldron, reduce this to 16 turns. As this is a crafting process, other abilities that reduce the number of hourglass turns may be applied, though only one instance of any particular power may be used (that is, if two brewers have Studied Process, it only works once).
+    * If the normal recipe involves a Pollution Call, say it loudly at this point.
+
+  Optional: If you have the Kick power from the Artisan class, Advanced Kick, or some other power that applies a kick modification to an alchemical item, you may expend it to kick the entire batch at once. Instead of the normal activation time, add an additional 10 hourglass turns of stirring counter-clockwise.
+  Take the cauldron off the heat. Over the next two hourglass turns, cool the brew and parcel it out into flasks or whatever container is most appropriate. You may then write item cards for the doses.
+
+  Those who Cauldron Brew frequently should be aware that this activity resembles ritual magic enough that spirits are sometimes drawn to it. While you should not normally need to involve a Ritual Marshal in this process, particular conditions may cause it to be required at plot discretion, and wandering spirits may latch on to a brew in progress. Some prefer to Cauldron Brew in private, warded places so that spirits are less likely to notice, while some use special chants to attract, repel, or otherwise influence wandering spirits. Whether these practices work is up for debate.

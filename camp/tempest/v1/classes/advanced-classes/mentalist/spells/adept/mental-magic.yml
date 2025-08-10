@@ -1,0 +1,19 @@
+name: Mental Magic
+incant: Standard
+call: “Grant Mental Magic”
+target: Self
+duration: Short Rest
+delivery: None
+refresh: Spell
+accent: Mind
+effect: Grant Power
+description: |
+  Once this Spell is placed on the Mentalist, they can cast any Basic Arcane or Mentalist Spell without any Incantation by exhausting a Link.
+
+  Only spells with a ‘Standard’ Incantation can be cast in this special manner (meaning Spells that require lines of Incantation followed by a spell-specific suffix).
+
+  The Accent of all spells cast this way becomes “Mind.” Spells whose Calls or Accents cannot be changed cannot be cast with this Power.
+
+  The Mentalist may Sacrifice a Maximum Life Point until their next Long Rest to make the duration of this spell “Long Rest” as they dedicate part of themselves to maintaining the effect.
+
+  Note: The Call is still needed, to communicate the spell’s effects to others.The effect of this spell does not change any other requirements of other Spells (i.e. Materia must be in hand, the target must be in range, touch-spell targets must be helpless or willing, or expenditure of Spikes or other resources, etc.).

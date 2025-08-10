@@ -1,0 +1,10 @@
+name: Prismatic Claw
+incant: Standard
+call: “[1/2] [Eldritch Accent]”
+target: Individual
+duration: Instantaneous
+delivery: Weapon
+refresh: Immediate
+accent: "[Eldritch Accent]"
+effect: None, only damage
+description: The Universalist may deliver accented blows with a weapon using the accent of their Source. If the Universalist has an active Form Spel it instead does 2 [Eldritch Accent] instead of 1 [Eldritch Accent]

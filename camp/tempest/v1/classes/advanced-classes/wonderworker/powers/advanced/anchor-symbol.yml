@@ -1,0 +1,17 @@
+name: Anchor Symbol
+incant: None
+call: '“Grant Insubstantial to Self”, “Cure Insubstantial”'
+target: Self
+duration: Special
+delivery: None
+refresh: Long Rest
+accent: None
+effect: Insubstantial
+description: |
+  Such is the connection between a Wonderworker and their Symbols, that they can create an anchor point in space with their Symbol for them to return safely.
+
+  When the Wonderworker first invokes this power, they must take one of the items designated as their Symbol and place it at the location they seek to return to. While the item remains at that location, the Wonderworker loses access to all Powers related to that Symbol.
+
+  Once per Long Rest, while that Symbol is not on their person, the Wonderworker may Grant themselves insubstantial, and return directly to the location that the Symbol has been placed. When they arrive at the Symbol, they may Cure their insubstantial Condition.
+
+  If the Symbol is no longer at the location where it was left, the Wonderworker may spend a Slow Count of 300 attempting to find the Symbol. If the tool cannot be found, the Wonderworker goes to the Spirit Well to reincorporate as a Spirit, with all the drawbacks that entails.

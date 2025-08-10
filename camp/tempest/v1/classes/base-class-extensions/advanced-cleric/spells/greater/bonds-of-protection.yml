@@ -1,0 +1,14 @@
+name: Bonds of Protection
+incant: Standard
+call: “Grant Protect vs. [Weapons/Materia/Verbal]”
+target: Individual (Other)
+delivery: Touch
+accent: None
+duration: Short, Until Used
+refresh: Spell
+effect: Grant Protect
+description: |
+  When this spell is cast, the Cleric gains four charges of Grant Protect that may be selected as either vs Weapons, vs Materia, or vs Verbals upon use.
+  Unlike normal spell charges, these charges are only lost after the Cleric takes a Short Rest.
+
+  Enhancement: Master Spell-Slot: Six charges are generated and each time the Cleric may choose from Weapons, Materia, Verbal, or By My Voice.
