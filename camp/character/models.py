@@ -170,6 +170,28 @@ class Sheet(RulesModel):
                 flags = {"freeplay": False}
             else:  # This is a freeplay character
                 flags["freeplay"] = True
+                # Grant all Advanced Class flags to freeplay characters
+                advanced_class_flags = [
+                    "flag+assassin",
+                    "flag+dealbroker", 
+                    "flag+dervish",
+                    "flag+exemplar",
+                    "flag+hooligan",
+                    "flag+inquisitor",
+                    "flag+occultist",
+                    "flag+ranger",
+                    "flag+ringleader",
+                    "flag+shadowdancer",
+                    "flag+spellblade",
+                    "flag+universalist",
+                    "flag+warlock",
+                    "flag+wonderworker",
+                    "flag+divine-hand",
+                ]
+                for flag in advanced_class_flags:
+                    flags[flag] = True
+                
+
             self._controller = self.ruleset.engine.load_character(
                 self.data, metadata, flags
             )
