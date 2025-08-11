@@ -1,5 +1,7 @@
 type: class
 category: Advanced Class
+class_type: advanced
+ranks: 5
 name: Ringleader
 requires:
   - level:10

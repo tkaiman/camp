@@ -1,13 +1,11 @@
 name: Healing Gift
 incant: Standard
-call: '"[Name or Description] Instruction to [Corpse/Dying]: Take Spirit Form and walk to me", "[Name or Description] Instruction: Resume corporeal form just as you were and restart your Death timers."'
+call: "Short Imbue Touch with Heal 2"
 target: Other Individual
-delivery: Verbal
+delivery: Touch
 accent: None
-duration: Instantaneous
+duration: Short Rest
 refresh: Spell
 effect: None
 description: |
-  The Divine Shield can cause a body to take Spirit Form and come to them, usually for healing or life-saving spells.
-
-  The Divine Shield first causes the character to become a Spirit and approach them, and then, once the target is within melee range, must give the second Instruction: to re-corporate and begin any death-timers from the beginning. The second Call should be made even if the caster is incapacitated or dead when the Spirit arrives or moves from the spot they were when they cast the Spell.
+  This Spell grants another character the ability to do a small amount of healing by touch.

@@ -13,6 +13,8 @@ choices:
     name: Bonus Spell Slot
     description: Choose a sphere of magic to receive an additional Greater spell slot in.
     limit: 1
+    limit_is_per_rank: true
+    multi: True
     controller: sphere-bonus
     controller_data:
       bonus: spell_slots@3
