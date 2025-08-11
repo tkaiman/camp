@@ -118,8 +118,6 @@ DATABASES = {
     )
 }
 
-REDIS_URL = env.str("REDIS_URL", default="redis://localhost:6379/0")
-
 
 AUTHENTICATION_BACKENDS = (
     "rules.permissions.ObjectPermissionBackend",
