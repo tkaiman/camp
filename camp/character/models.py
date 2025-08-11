@@ -173,7 +173,7 @@ class Sheet(RulesModel):
                 # Grant all Advanced Class flags to freeplay characters
                 advanced_class_flags = [
                     "flag+assassin",
-                    "flag+dealbroker", 
+                    "flag+dealbroker",
                     "flag+dervish",
                     "flag+exemplar",
                     "flag+hooligan",
@@ -190,7 +190,6 @@ class Sheet(RulesModel):
                 ]
                 for flag in advanced_class_flags:
                     flags[flag] = True
-                
 
             self._controller = self.ruleset.engine.load_character(
                 self.data, metadata, flags
