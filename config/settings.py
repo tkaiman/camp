@@ -62,7 +62,6 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "rules.apps.AutodiscoverRulesConfig",
     "django_htmx",
-    "django_celery_results",
     "django_recaptcha",
     # Social auth providers. See here for the full available list:
     # https://django-allauth.readthedocs.io/en/latest/installation.html
@@ -227,19 +226,6 @@ ENABLE_HXBOOST = env.bool("ENABLE_HXBOOST", default=False)
 DEBUG_TOOLBAR_CONFIG = {"ROOT_TAG_EXTRA_ATTRS": "hx-preserve"}
 
 
-# Celery task queue
-CELERY_TASK_TRACK_STARTED = True
-CELERY_TIMEZONE = TIME_ZONE
-CELERY_BROKER_URL = REDIS_URL
-CELERY_ACCEPT_CONTENT = ["json"]
-CELERY_RESULT_BACKEND = "django-db"
-CELERY_CACHE_BACKEND = "django-cache"
-CELERY_TASK_SERIALIZER = "json"
-CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
-CELERY_TASK_SOFT_TIME_LIMIT = env.int("TASK_SOFT_TIMEOUT_SECONDS", default=3600)
-CELERY_TASK_TIME_LIMIT = env.int("TASK_HARD_TIMEOUT_SECONDS", default=3600 * 2)
-
-
 # ReCaptcha
 # Version strings: v2i, v2c, v3
 RECAPTCHA_VERSION = env.str("RECAPTCHA_VERSION", default="v2c")
@@ -264,7 +250,6 @@ if DEBUG:
 # Sentry error reporting
 if sentry_dsn := env.str("SENTRY_DSN", default=None):
     import sentry_sdk
-    from sentry_sdk.integrations.celery import CeleryIntegration
     from sentry_sdk.integrations.django import DjangoIntegration
 
     if traces_sample_rate := env.float("SENTRY_SAMPLE_RATE", default=None):
@@ -279,7 +264,6 @@ if sentry_dsn := env.str("SENTRY_DSN", default=None):
         send_default_pii=True,
         integrations=[
             DjangoIntegration(),
-            CeleryIntegration(),
         ],
         enable_tracing=enable_tracing,
         traces_sample_rate=traces_sample_rate,

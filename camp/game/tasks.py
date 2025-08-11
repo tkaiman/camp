@@ -5,23 +5,17 @@ from typing import Callable
 from typing import Iterable
 from urllib.parse import urljoin
 
-from celery import chord
-from celery import shared_task
-from celery.result import AsyncResult
-from sentry_sdk import add_breadcrumb
 from sentry_sdk import capture_exception
 from xlsxwriter import Workbook
 
 from camp.accounts.models import User
-from camp.character.models import Sheet
 from camp.engine.rules.base_engine import PropertyController
 from camp.engine.rules.tempest.controllers.character_controller import TempestCharacter
 from camp.engine.rules.tempest.controllers.feature_controller import FeatureController
 from camp.game.models import Event
-from camp.game.models import Ruleset
+from camp.game.models.event_models import EventRegistration
 
 from . import models
-from . import remote_loader
 
 _WORKBOOK_OPTIONS = {
     "constant_memory": False,
@@ -191,7 +185,6 @@ def _passive_income(char: TempestCharacter) -> int | None:
             income += 1
     if char.get("pit-master") > 0:
         income += 2
-    # TODO: Add income from ACs
     return income
 
 
@@ -244,8 +237,11 @@ _CHARACTER_COLUMNS: dict[str, Callable[[TempestCharacter], Any]] = {
 
 
 def generate_report(
-    report_type, event_id, requestor, base_url, **kwargs
-) -> tuple[models.EventReport, AsyncResult]:
+    report_type,
+    event_id,
+    requestor,
+    base_url,
+) -> models.EventReport:
     user = User.objects.filter(username=requestor).first()
     event = Event.objects.get(id=event_id)
     report = models.EventReport.objects.create(
@@ -261,24 +257,17 @@ def generate_report(
         sheet__isnull=False,
     )
 
-    result = chord(
-        [sheet_columns.s(r.sheet_id) for r in pc_regs],
-        task_id=report.task_id,
-    )(
-        export_registrations.s(report_id=report.id, base_url=base_url),
+    return export_registrations(
+        ((r.sheet_id, sheet_columns(r)) for r in pc_regs),
+        report=report,
+        base_url=base_url,
     )
 
-    return report, result
 
-
-@shared_task
-def sheet_columns(sheet_id) -> tuple[int, dict[str, Any]]:
-    add_breadcrumb(
-        category="report",
-        message=f"Extracting columns for sheet {sheet_id}",
-        level="info",
-    )
-    sheet = Sheet.objects.get(id=sheet_id)
+def sheet_columns(registration: EventRegistration) -> dict[str, Any]:
+    sheet = registration.sheet
+    if sheet is None:
+        return {"Error": "Character sheet no longer exists."}
     char: TempestCharacter
     try:
         char = sheet.controller
@@ -286,9 +275,7 @@ def sheet_columns(sheet_id) -> tuple[int, dict[str, Any]]:
     except Exception as exc:
         capture_exception(exc)
         return {"Error": str(exc)}
-    add_breadcrumb(
-        category="report", message=f"Successfully loaded sheet {sheet_id} ({char})"
-    )
+
     results: dict[str, Any] = {}
     for col, getter in _CHARACTER_COLUMNS.items():
         try:
@@ -297,14 +284,15 @@ def sheet_columns(sheet_id) -> tuple[int, dict[str, Any]]:
             capture_exception(exc)
             results[col] = str(exc)
 
-    return sheet_id, results
+    return results
 
 
-@shared_task()
 def export_registrations(
-    sheet_columns: Iterable[tuple[int, dict[str, Any]]], *, report_id, base_url
+    sheet_columns: Iterable[tuple[int, dict[str, Any]]],
+    *,
+    report: models.EventReport,
+    base_url: str,
 ) -> int:
-    report = models.EventReport.objects.get(pk=report_id)
     event = report.event
     all_regs = list(event.registrations.filter(canceled_date__isnull=True).all())
     stream = io.BytesIO()
@@ -335,7 +323,7 @@ def export_registrations(
     report.filename = _filenameize(f"{event} Registrations.xlsx")
     report.download_ready = True
     report.save()
-    return report.pk
+    return report
 
 
 def _write_pc_regs(
@@ -538,10 +526,3 @@ def _get_email(user) -> str | None:
     if best_email is None:
         best_email = user.email
     return best_email or None
-
-
-@shared_task(ignore_result=True)
-def update_remote_ruleset(ruleset_id):
-    ruleset = Ruleset.objects.get(id=ruleset_id)
-    remote_loader.fetch_ruleset(ruleset)
-    ruleset.save()

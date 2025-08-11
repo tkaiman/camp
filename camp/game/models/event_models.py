@@ -6,7 +6,6 @@ import uuid
 from decimal import Decimal
 from typing import TypeAlias
 
-from celery.result import AsyncResult
 from django.contrib.auth import get_user_model
 from django.db import models
 from django.db import transaction
@@ -567,13 +566,6 @@ class EventReport(RulesModel):
         max_length=50,
         help_text="Report type identifier, as used by the trigger-event-report view.",
     )
-    task_id: str = models.CharField(
-        default=_task_uuid,
-        null=True,
-        blank=True,
-        max_length=100,
-        help_text="Task ID used by the underlying task queue system.",
-    )
     content_type: str = models.CharField(
         max_length=100,
         blank=True,
@@ -598,12 +590,6 @@ class EventReport(RulesModel):
         help_text="Marked True by the task once the report download is ready.",
     )
     message: str = models.TextField(blank=True, null=True, default=None)
-
-    @property
-    def result(self) -> AsyncResult | None:
-        if not self.task_id:
-            return None
-        return AsyncResult(self.task_id)
 
     def __str__(self):
         return f"{self.event} {self.report_type}"

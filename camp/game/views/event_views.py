@@ -407,15 +407,12 @@ def trigger_event_report(request, pk, report_type):
     timezone.activate(event.chapter.timezone)
 
     if existing_report := _fetch_report(pk, report_type):
-        if result := existing_report.result:
-            result.revoke()
-            result.forget()
-            existing_report.delete()
+        existing_report.delete()
 
     logging.info("Triggering generate_report task for %s, %s", pk, report_type)
     hostname = request.build_absolute_uri("/")
     try:
-        report, result = tasks.generate_report(
+        report = tasks.generate_report(
             report_type=report_type,
             event_id=pk,
             requestor=request.user.username,
@@ -425,8 +422,7 @@ def trigger_event_report(request, pk, report_type):
         return HttpResponseBadRequest(f"Unknown report type {report_type}")
 
     # Check if we should skip polling and go for the download immediately
-    if result.ready:
-        report.refresh_from_db(fields=["download_ready"])
+    report.refresh_from_db(fields=["download_ready"])
 
     return render(
         request,
@@ -454,9 +450,6 @@ def poll_event_report(request, pk, report_type):
 def download_event_report(request, pk, report_type):
     report = _fetch_report(pk, report_type)
     if report and report.download_ready:
-        if report.task_id:
-            report.result.forget()
-            report.task_id = None
         return _report_download_response(report)
     return Http404
 
@@ -480,26 +473,7 @@ def _fetch_report(event_id, report_type) -> models.EventReport | None:
             logging.info(
                 "Cleaning up old report: %s from %s", old_report.pk, old_report.started
             )
-            if old_result := old_report.result:
-                old_result.revoke()
-                old_result.forget()
             old_report.delete()
-        if report.task_id is None:
-            return report
-        elif report.result.failed():
-            logging.info(
-                "Cleaning up failed report: %s from %s", report.pk, report.started
-            )
-            report.message = "Report generation failed."
-            report.result.forget()
-            report.task_id = None
-            report.save()
-        elif report.result.state == "PENDING":
-            # If the task hasn't started within 10 seconds, report it failed.
-            if timezone.now() - report.started > datetime.timedelta(seconds=10):
-                report.task_id = None
-                report.message = "Report task did not start after 10 seconds."
-                report.save()
     else:
         logging.debug("No reports found for event %s", event_id)
         report = None
