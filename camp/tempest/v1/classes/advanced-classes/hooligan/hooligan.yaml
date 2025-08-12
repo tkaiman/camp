@@ -8,7 +8,6 @@ requires:
   - power@2
   - short-weapons
   - light-armor
-flags: flag+hooligan
 level_grants:
   2: hooligan-bonus-spikes
 description: |
