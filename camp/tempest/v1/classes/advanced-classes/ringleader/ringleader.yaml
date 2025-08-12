@@ -17,7 +17,6 @@ requires:
       - rumormonger
       - undevoted
       - devotion.advanced
-flags: flag+ringleader
 description: |
   Across the Eyes, there will always be groups who seek to expand their influence. Teams band together under a belt flag, soldiers stand at attention for their superior officer, and crime syndicates take their orders, too. Regardless of morality, political affiliation or creed, it’s common for peoples with aligning purposes to seek leadership as it were and take orders from an elected or self-chosen leader.
 
