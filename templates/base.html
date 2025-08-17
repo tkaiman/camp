@@ -112,17 +112,16 @@
     </nav>
   </header>
 
-  {% if messages %}
   <div id="messages" class="d-print-none">
-    {% for message in messages %}
-      <div class="alert alert-{{message.level_tag}} alert-dismissible fade show" role="alert">
-        {{message}}
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
-    {% endfor %}
-    </ul>
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{message.level_tag}} alert-dismissible fade show" role="alert">
+          {{message}}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      {% endfor %}
+    {% endif %}
   </div>
-  {% endif %}
 
   <div id="htmx-alert" hidden class="alert alert-warning sticky-top d-print-none"></div>
 
@@ -156,6 +155,15 @@
     htmx.onLoad(function installTooltips() {
       const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
       const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    });
+
+    // Close any open Bootstrap modal when the server triggers a refresh-character event
+    document.body.addEventListener('refresh-character', function() {
+      const openModalEl = document.querySelector('.modal.show');
+      if (openModalEl) {
+        const modalInstance = bootstrap.Modal.getInstance(openModalEl) || new bootstrap.Modal(openModalEl);
+        modalInstance.hide();
+      }
     });
 
     document.body.addEventListener('htmx:afterRequest', function (evt) {
