@@ -152,9 +152,18 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js" integrity="sha384-BxpSbjbDhVKwnC1UfcjsNEuMuxg4af5IXOaSi1Iq5rASQ/9a7uslhEXbP9UI/fXo" crossorigin="anonymous"></script>
   <script src="{% static 'js/base.js' %}"></script>
   <script>
+    function hideAllTooltips() {
+      document.querySelectorAll('[data-bs-title]').forEach(function(el){
+        const instance = bootstrap.Tooltip.getInstance(el);
+        if (instance) { instance.hide(); }
+      });
+    }
+
     htmx.onLoad(function installTooltips() {
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-title]');
+      const tooltipList = [...tooltipTriggerList].map(function(el){
+        return new bootstrap.Tooltip(el, { trigger: 'hover', container: 'body' });
+      });
     });
 
     // Close any open Bootstrap modal when the server triggers a refresh-character event
@@ -164,7 +173,20 @@
         const modalInstance = bootstrap.Modal.getInstance(openModalEl) || new bootstrap.Modal(openModalEl);
         modalInstance.hide();
       }
+      hideAllTooltips();
     });
+
+    // Ensure any tooltip is hidden when its trigger is clicked (e.g., opening a modal)
+    document.body.addEventListener('click', function(evt) {
+      const trigger = evt.target.closest('[data-bs-title]');
+      if (trigger) {
+        const instance = bootstrap.Tooltip.getInstance(trigger);
+        if (instance) { instance.hide(); }
+      }
+    });
+
+    // Also hide tooltips when any Bootstrap modal is about to show
+    document.body.addEventListener('show.bs.modal', function(){ hideAllTooltips(); });
 
     document.body.addEventListener('htmx:afterRequest', function (evt) {
       // Adapted from https://xvello.net/blog/htmx-error-handling/

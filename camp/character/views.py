@@ -319,6 +319,8 @@ def feature_view(request, pk, feature_id):
                     "purchase_form": forms.FeatureForm(feature_controller),
                     "issues": issues,
                 }
+                # Recheck increment permission on fresh controller
+                can_inc = feature_controller.can_increase()
                 if not can_inc:
                     context["no_purchase_reason"] = can_inc.reason
                 context["trigger_refresh"] = True
@@ -412,6 +414,8 @@ def feature_view(request, pk, feature_id):
                 "purchase_form": pf,
                 "issues": issues,
             }
+            # Recheck increment permission on fresh controller
+            can_inc = feature_controller.can_increase()
             if not can_inc:
                 context["no_purchase_reason"] = can_inc.reason
             context["trigger_refresh"] = True
