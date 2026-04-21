@@ -79,7 +79,7 @@ def _qualifiers(char: TempestCharacter) -> str:
     return ", ".join(sorted(qualifiers))
 
 
-def _attr(attr) -> str:
+def _attr(attr) -> Callable[[TempestCharacter], str | None]:
     def get_name(c: TempestCharacter) -> str:
         match v := getattr(c, attr, None):
             case None:
@@ -92,6 +92,10 @@ def _attr(attr) -> str:
                 return str(v)
 
     return get_name
+
+
+def classes(c: TempestCharacter) -> str:
+    return " / ".join(f"{clz.display_name()} {clz.value}" for clz in c.classes)
 
 
 def _true_format(c):
@@ -197,13 +201,13 @@ def _issues(char: TempestCharacter):
 _CHARACTER_COLUMNS: dict[str, Callable[[TempestCharacter], Any]] = {
     "Issues": _issues,
     "Level": lambda c: c.level.value,
+    "Classes": classes,
     "Religion": _attr("religion"),
     "Religion Level": lambda c: c.religion.level_label() if c.religion else None,
     "Culture": _attr("culture"),
     "Primary Breed": _attr("primary_breed"),
     "Subbreed": _attr("subbreed"),
     "Secondary Breed": _attr("secondary_breed"),
-    "Primary Class": _attr("primary_class"),
     "Lores": _controller("lore", _option_format),
     "Profession": _profession,
     "Hobbies": _controller("chronic-hobbyist", _option_format),
@@ -221,6 +225,7 @@ _CHARACTER_COLUMNS: dict[str, Callable[[TempestCharacter], Any]] = {
     "Arcane Ritual": _craft("arcane-ritual"),
     "Divine Ritual": _craft("divine-ritual"),
     "Tracking?": _controller("tracking"),
+    "Vermintongue?": _controller("vermintongue"),
     "Nightmares?": _controller("nightmares"),
     "Rumormonger?": _controller("rumormonger"),
     "Soothsayer?": _controller("soothsayer"),

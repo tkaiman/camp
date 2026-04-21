@@ -9,7 +9,6 @@ requires:
   - lore+Nature
   - tracking
   - power@2
-flags: flag+ranger
 level_grants:
   2: ranger-bonus-damage
   4: ranger-bonus-spikes
