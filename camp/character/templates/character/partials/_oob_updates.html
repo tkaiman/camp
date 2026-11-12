@@ -1,0 +1,11 @@
+{% comment %}
+Sent along with HTMX responses whenever the character may have changed.
+Each element replaces the contents of its counterpart on the character sheet.
+{% endcomment %}
+<div id="character-header" hx-swap-oob="innerHTML">
+    {% include "character/partials/_header.html" %}
+</div>
+<div id="character-summary" hx-swap-oob="innerHTML">
+    {% include "character/partials/_summary.html" %}
+</div>
+{% include "snippets/messages.html" with oob=True %}

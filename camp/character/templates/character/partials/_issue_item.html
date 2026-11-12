@@ -1,0 +1,10 @@
+{% load character_sheet %}
+{# One validation issue. The reason may link to features itself, so it can't be wrapped in a link. #}
+<li class="list-group-item list-group-item-warning d-flex justify-content-between align-items-start gap-3">
+    <div class="issue-reason">{{ issue.reason|character_markdown:character }}</div>
+    {% if issue.feature_id %}
+    <a class="link-body-emphasis text-nowrap d-print-none" {% feature_link_attrs character issue.feature_id %}>
+        Review <i class="bi bi-chevron-right"></i>
+    </a>
+    {% endif %}
+</li>

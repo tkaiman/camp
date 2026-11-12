@@ -1,0 +1,17 @@
+{% load character_sheet %}
+{# A feature, as content for the character modal. #}
+<div class="modal-header">
+    <div>
+        {% if group_back %}
+        {% url 'character-available-group' character.id group_back.key as group_url %}
+        <a class="small link-secondary" href="{{ group_url }}" {% modal_attrs group_url %}>&larr; Back to {{ group_back.name }}</a>
+        {% endif %}
+        <h1 class="modal-title fs-5" id="characterModalLabel">{{ feature.display_name }}</h1>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    {# The page's own messages are hidden behind the modal, so repeat them here. #}
+    {% include "snippets/message_alerts.html" %}
+    {% include "character/partials/_feature_detail.html" with in_modal=True %}
+</div>

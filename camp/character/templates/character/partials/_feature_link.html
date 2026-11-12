@@ -1,0 +1,20 @@
+{% load character_sheet %}
+{% comment %}
+A link to a feature (f) on the character, with a tooltip summarizing it.
+
+exclude, exclude2, exclude3: Tags that are redundant where the link is shown.
+show_cost: Include the cost to purchase the feature.
+show_badges: Include the feature's status badges, which print if print_badges.
+from_group: Key of the group list this link is shown in, for linking back to it.
+{% endcomment %}
+<a {% feature_link_attrs character f group=from_group %} {% feature_tooltip_attrs f %}>
+    {% name_without_tags f exclude exclude2 exclude3 %}
+    {% if show_cost and f.purchase_cost_string %}
+    ({{ f.purchase_cost_string }})
+    {% endif %}
+    {% if show_badges %}
+    {% for level, badge in f.badges %}
+    <span class="badge bg-{{level}}{% if not print_badges %} d-print-none{% endif %}">{{badge}}</span>
+    {% endfor %}
+    {% endif %}
+</a>

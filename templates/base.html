@@ -112,23 +112,13 @@
     </nav>
   </header>
 
-  {% if messages %}
-  <div id="messages" class="d-print-none">
-    {% for message in messages %}
-      <div class="alert alert-{{message.level_tag}} alert-dismissible fade show" role="alert">
-        {{message}}
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
-    {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
+  {% include "snippets/messages.html" %}
 
   <div id="htmx-alert" hidden class="alert alert-warning sticky-top d-print-none"></div>
 
   <main class="flex-shrink-0">
     <div class="container avoidbreak avoidbreakaround">
-      <h1>{% block body_title %}{% endblock %}</h1>
+      {% block body_header %}<h1>{% block body_title %}{% endblock %}</h1>{% endblock %}
       {% block precontent %}{% endblock %}
     </div>
     <div class="avoidbreakaround container py-2">
@@ -152,32 +142,8 @@
   <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js" integrity="sha384-BxpSbjbDhVKwnC1UfcjsNEuMuxg4af5IXOaSi1Iq5rASQ/9a7uslhEXbP9UI/fXo" crossorigin="anonymous"></script>
   <script src="{% static 'js/base.js' %}"></script>
-  <script>
-    htmx.onLoad(function installTooltips() {
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-    });
-
-    document.body.addEventListener('htmx:afterRequest', function (evt) {
-      // Adapted from https://xvello.net/blog/htmx-error-handling/
-      const errorTarget = document.getElementById("htmx-alert")
-      if (evt.detail.successful) {
-          // Successful request, clear out alert
-          errorTarget.setAttribute("hidden", "true")
-          errorTarget.innerText = "";
-      } else if (evt.detail.failed && evt.detail.xhr) {
-          // Server error with response contents, equivalent to htmx:responseError
-          console.warn("Server error", evt.detail)
-          const xhr = evt.detail.xhr;
-          errorTarget.innerText = `Unexpected server error: ${xhr.status} - ${xhr.statusText}`;
-          errorTarget.removeAttribute("hidden");
-      } else {
-          // Unspecified failure, usually caused by network error
-          console.error("Unexpected htmx error", evt.detail);
-      }
-  });
-
   {% if debug %}
+  <script>
     if (typeof window.htmx !== "undefined") {
         htmx.on("htmx:afterSettle", function(detail) {
             if (
@@ -190,9 +156,8 @@
             }
         });
     }
-  {% endif %}
-
   </script>
+  {% endif %}
   {% django_htmx_script %}
   {% block javascript %}
   {% endblock javascript %}

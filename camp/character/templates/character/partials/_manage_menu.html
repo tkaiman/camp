@@ -1,0 +1,57 @@
+{% load character_sheet %}
+{% comment %}
+Actions on the character as a whole. Forms are loaded into the character modal
+on demand. Actions that need no input are submitted straight from the menu, and
+answered with out-of-band updates to the sheet.
+{% endcomment %}
+<div class="dropdown">
+    <a href="#" class="link-body-emphasis" data-bs-toggle="dropdown" aria-expanded="false">
+        Manage
+    </a>
+    <ul class="dropdown-menu">
+        {% if not character.campaign %}
+        {% url 'character-manage' character.id 'attrs' as attrs_url %}
+        <li><a class="dropdown-item" href="{{ attrs_url }}" {% modal_attrs attrs_url %}>Set Attributes</a></li>
+        {% endif %}
+        {% url 'character-manage' character.id 'name' as name_url %}
+        <li><a class="dropdown-item" href="{{ name_url }}" {% modal_attrs name_url %}>Change Name</a></li>
+        {% url 'character-manage' character.id 'delete' as delete_url %}
+        <li><a class="dropdown-item" href="{{ delete_url }}" {% modal_attrs delete_url %}>
+            {% if character.campaign %}
+            Discard Character
+            {% else %}
+            Delete Character
+            {% endif %}
+        </a></li>
+        {% if controller.can_respend %}
+        {% url 'character-apply' character.id as apply_url %}
+        <li>
+            <form method="post" action="{{ apply_url }}"
+                  hx-post="{{ apply_url }}" hx-swap="none"
+                  hx-confirm="This will remove ALL choices you have made on this character.">
+                {% csrf_token %}
+                <input type="hidden" name="mutation" value='{"type": "respend"}'>
+                <button type="submit" class="dropdown-item">Apply Full Character Respend</button>
+            </form>
+        </li>
+        {% endif %}
+        {% if undo %}
+        {% url 'character-undo' character.id as undo_url %}
+        {% with undo_label=undo|stringformat:"s" %}
+        <li>
+            <form method="post" action="{{ undo_url }}"
+                  hx-post="{{ undo_url }}" hx-swap="none"
+                  hx-confirm="{{ undo_label }}? The last action will be undone. There is no &quot;redo&quot; functionality.">
+                {% csrf_token %}
+                <input type="hidden" name="undo" value="{{ undo.id }}">
+                <button type="submit" class="dropdown-item">{{ undo_label }}</button>
+            </form>
+        </li>
+        {% endwith %}
+        {% else %}
+        <li><a class="dropdown-item disabled" role="button" aria-disabled="true">Undo not available</a></li>
+        {% endif %}
+        {% url 'character-manage' character.id 'copy' as copy_url %}
+        <li><a class="dropdown-item" href="{{ copy_url }}" {% modal_attrs copy_url %}>Copy Character...</a></li>
+    </ul>
+</div>

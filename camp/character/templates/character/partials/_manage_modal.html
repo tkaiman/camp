@@ -1,0 +1,107 @@
+{% load character_sheet %}
+{% comment %}
+Modal content for one sheet-level action on the character (action).
+Once applied, the sheet is updated in place and the modal is closed.
+{% endcomment %}
+{% if action == "attrs" %}
+{% url 'character-set-attr' character.id as action_url %}
+<div class="modal-header">
+    <h1 class="modal-title fs-5" id="characterModalLabel">Set Attributes</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <form id="set-attr" {% modal_form_attrs action_url in_modal %}>
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="set-level" class="form-label">Level</label>
+            <input type="number" class="form-control" id="set-level" name="level"
+                value="{{ controller.xp_level }}" min="2" max="20">
+        </div>
+        <div>
+            <label for="set-cp" class="form-label">Freeplay CP</label>
+            <input type="number" class="form-control" id="set-cp" name="cp"
+                value="{{ controller.freeplay_cp }}" min="0" max="999">
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <button type="submit" class="btn btn-primary" form="set-attr">Apply</button>
+</div>
+
+{% elif action == "name" %}
+{% url 'character-set-name' character.id as action_url %}
+<div class="modal-header">
+    <h1 class="modal-title fs-5" id="characterModalLabel">Change Name</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <form id="set-name" {% modal_form_attrs action_url in_modal %}>
+        {% csrf_token %}
+        <label for="set-name-input" class="form-label">Name</label>
+        <input type="text" class="form-control" id="set-name-input" name="name"
+            value="{{ character.name }}" required>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <button type="submit" class="btn btn-primary" form="set-name">Apply</button>
+</div>
+
+{% elif action == "delete" %}
+{% url 'character-delete' character.id as action_url %}
+<div class="modal-header">
+    <h1 class="modal-title fs-5" id="characterModalLabel">
+        {% if character.campaign %}
+        Discard Character
+        {% else %}
+        Delete Character
+        {% endif %}
+    </h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    {% if character.campaign %}
+    The character "{{ character }}" will be marked discarded.
+    {% else %}
+    The character "{{ character }}" will be permanently deleted. This action cannot be undone.
+    {% endif %}
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <form {% modal_form_attrs action_url in_modal %}>
+        {% csrf_token %}
+        <button id="deleteCharacterButton" type="submit" class="btn btn-danger">
+            {% if character.campaign %}
+            Discard "{{ character }}"
+            {% else %}
+            Permanently Delete "{{ character }}"
+            {% endif %}
+        </button>
+    </form>
+</div>
+
+{% elif action == "copy" %}
+{% url 'character-copy' character.id as action_url %}
+<div class="modal-header">
+    <h1 class="modal-title fs-5" id="characterModalLabel">Copy Character</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <form id="copy-character" {% modal_form_attrs action_url in_modal %}>
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="copyName" class="form-label">Name for copied character</label>
+            <input class="form-control" id="copyName" name="name" value="Copy of {{character.name}}" required>
+        </div>
+    </form>
+    <p>The character "{{character}}" will be copied to Freeplay with its current XP/CP values and any special unlocks intact.</p>
+    {% if request.user != character.owner %}
+    <p><strong>Note:</strong> This character doesn't belong to you. If you make a copy, the copy will appear in <em>your</em> account.</p>
+    {% endif %}
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <button type="submit" class="btn btn-primary" form="copy-character">Copy!</button>
+</div>
+{% endif %}

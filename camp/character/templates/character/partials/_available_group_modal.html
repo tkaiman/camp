@@ -1,0 +1,14 @@
+{% comment %}
+Modal content listing the features of one FeatureGroup (group) that can be added.
+Choosing one replaces this list with that feature, which links back here.
+{% endcomment %}
+<div class="modal-header">
+    <h1 class="modal-title fs-5" id="characterModalLabel">Add New {{ group.name }}</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    {% if group.explain %}
+    <p>{{ group.explain }}</p>
+    {% endif %}
+    {% include "character/partials/_available_list.html" with from_group=group.key %}
+</div>

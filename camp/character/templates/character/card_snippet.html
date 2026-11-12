@@ -11,7 +11,7 @@
         {% if card.requires_description %}
         <details open class="d-print-none">
             <summary><strong>Prerequisites</strong></summary>
-            {{ card.requires_description | markdown }}
+            {{ card.requires_description|character_markdown:character }}
         </details>
         {% endif %}
 
@@ -58,7 +58,7 @@
         {% endif %}
 
         {% for sc in subcards %}
-        {% include "character/card_snippet.html" with card=sc only %}
+        {% include "character/card_snippet.html" with card=sc character=character only %}
         {% endfor %}
     </div>
 </div>

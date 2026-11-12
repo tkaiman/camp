@@ -1,0 +1,7 @@
+{% comment %}
+The page's message area. It is always rendered, even when empty, so that
+HTMX responses can replace it out-of-band by including it with oob=True.
+{% endcomment %}
+<div id="messages" class="d-print-none"{% if oob %} hx-swap-oob="true"{% endif %}>
+  {% include "snippets/message_alerts.html" %}
+</div>

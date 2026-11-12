@@ -21,3 +21,43 @@
 .skill-tooltip .tooltip-content strong {
   color: #3498db;
 }
+
+/* Character modal (see character_detail.html and static/js/base.js) */
+
+/* A thin bar across the top of the modal while a request is in flight. */
+.character-modal-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.character-modal-indicator .progress {
+  --bs-progress-height: 4px;
+}
+
+/* Modal content shown as a page of its own has nothing to dismiss. */
+.character-modal-static [data-bs-dismiss="modal"] {
+  display: none;
+}
+
+/* Markdown is rendered as paragraphs, which shouldn't pad out a list item. */
+.issue-reason > :last-child {
+  margin-bottom: 0;
+}
+
+@media print {
+  /* An open modal locks scrolling on the body, which would clip the printout. */
+  body.modal-open {
+    overflow: visible !important;
+    padding-right: 0 !important;
+  }
+
+  .modal,
+  .modal-backdrop,
+  .tooltip {
+    display: none !important;
+  }
+}

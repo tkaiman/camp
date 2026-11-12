@@ -19,16 +19,21 @@ _ATTRIBUTES = {
 }
 
 
+def render_markdown(value: str, p_class: str | None = None) -> str:
+    """Convert markdown to sanitized HTML.
+
+    The shared Markdown instance keeps per-document state (references,
+    footnotes, etc.), so it is reset before every conversion.
+    """
+    attr_values = {"p": {"class": p_class}} if p_class else None
+    _MD.reset()
+    return nh3.clean(
+        _MD.convert(value), set_tag_attribute_values=attr_values, attributes=_ATTRIBUTES
+    )
+
+
 @register.filter()
 @mark_safe
 @stringfilter
 def markdown(value, arg=None):
-    if arg:
-        attr_values = {
-            "p": {"class": arg},
-        }
-    else:
-        attr_values = None
-    return nh3.clean(
-        _MD.convert(value), set_tag_attribute_values=attr_values, attributes=_ATTRIBUTES
-    )
+    return render_markdown(value, arg)

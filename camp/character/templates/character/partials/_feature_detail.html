@@ -1,0 +1,167 @@
+{% load crispy_forms_tags %}
+{% load character_sheet %}
+{% comment %}
+Everything about a feature on a character: what it is, and forms to change it.
+This is the only implementation. It is shown as a page by feature_form.html,
+and in the character modal (in_modal) by partials/_feature_modal.html.
+{% endcomment %}
+
+{% if issues %}
+<!-- Issues -->
+<ul class="list-group mb-3">
+    {% for issue in issues %}
+    {% include "character/partials/_issue_item.html" %}
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% include "character/card_snippet.html" with card=feature.power_card subcards=feature.sub_cards %}
+
+<div class="mt-3">
+    {% if feature.parent %}
+    <p>Part of <a {% feature_link_attrs character feature.parent %}>{{ feature.parent.display_name }}</a></p>
+    {% endif %}
+
+    {% if feature.supersedes %}
+    <p>Supersedes <a {% feature_link_attrs character feature.supersedes %}>{{ feature.supersedes.display_name }}</a></p>
+    {% endif %}
+
+    {% if feature.is_superseded %}
+    <p>Superseded by <a {% feature_link_attrs character feature.superseded_by %}>{{ feature.superseded_by.display_name }}</a></p>
+    {% endif %}
+
+    {% if purchase_form %}
+        {% if feature.unused_bonus > 0 %}
+        <p>You have {{ feature.unused_bonus }} unused bonus rank(s). Your next purchase is free.</p>
+        {% endif %}
+
+        {% if feature.should_render %}
+        <form {% modal_form_attrs feature_url in_modal %} id="purchaseForm" class="d-print-none mb-3">
+            {% csrf_token %}
+            {{ purchase_form | crispy }}
+            {% if purchase_form.show_remove_button %}
+            <button type="submit" id="removeButton"
+                    name="remove" value="1"
+                    class="btn btn-danger">
+                Remove
+            </button>
+            {% else %}
+            <button type="submit" id="purchaseButton" name="purchase"
+                    class="btn btn-{{purchase_form.button_level}}">
+                {{purchase_form.button_label}}
+            </button>
+            {% endif %}
+        </form>
+        {% endif %}
+    {% elif no_purchase_reason and feature.should_render %}
+    <div class="d-print-none">
+        <p>You can not currently purchase this because:</p>
+        {{ no_purchase_reason|character_markdown:character }}
+    </div>
+    {% endif %}
+
+    {% if explain_ranks and feature.should_render %}
+    <div class="d-print-none">
+        <h3>Details</h3>
+        {% for explanation in explain_ranks %}
+        {{ explanation|character_markdown:character }}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if feature.granted_features and feature.should_render %}
+    <div class="d-print-none">
+        <h3>Granted Features</h3>
+        <ul>
+            {% for subfeat in feature.granted_features %}
+            <li><a {% feature_link_attrs character subfeat %} {% feature_tooltip_attrs subfeat %}>{% name_without_tags subfeat feature.id %}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    {% if feature.discounted_features and feature.should_render %}
+    <div class="d-print-none">
+        <h3>Discounted Features</h3>
+        <ul>
+            {% for subfeat, amount in feature.discounted_features %}
+            <li><a {% feature_link_attrs character subfeat %} {% feature_tooltip_attrs subfeat discount=amount %}>{{ subfeat.display_name }}: {{amount}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    {% if choices %}
+    <a name="choices"></a>
+    {% for key, choice in choices.items %}
+        {% if choice.controller.limit > 1 %}
+        <h3>{{ choice.controller.name }} ({{choice.controller.choices_remaining}}/{{choice.controller.limit}})</h3>
+        {% else %}
+        <h3>{{ choice.controller.name }}</h3>
+        {% endif %}
+        {% if choice.controller.description %}
+        {{ choice.controller.description|character_markdown:character }}
+        {% endif %}
+        {% if choice.taken %}
+        <h4 class="d-print-none">Selected Choices</h4>
+        <form {% modal_form_attrs feature_url in_modal %}>
+            {% csrf_token %}
+            <input type="hidden" name="unchoose" value="1">
+            <input type="hidden" name="choice" value="{{choice.id}}">
+            <ul>
+                {% for f, name in choice.taken.items %}
+                <li><a {% feature_link_attrs character f %} {% feature_tooltip_attrs f name=name type_label="Choice Selection" %}>{{ name }}</a>
+                    {% if f in choice.removable %}
+                    <button type="submit" class="btn btn-danger btn-sm d-print-none" name="selection" value="{{f}}"
+                            aria-label="Remove {{ name }}">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </form>
+        {% endif %}
+        {% if choice.available %}
+        <form {% modal_form_attrs feature_url in_modal %} class="d-print-none mb-3">
+            {% csrf_token %}
+            {{ choice | crispy }}
+            <button type="submit" name="choice" value="{{choice.id}}" class="btn btn-primary">Choose this option</button>
+        </form>
+        {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {% if subfeatures %}
+    <h3>Purchased Features</h3>
+    <ul class="list-group mb-3">
+        {% for f in subfeatures %}
+        <li class="list-group-item">
+            {% include "character/partials/_feature_link.html" with exclude=feature.id show_badges=True print_badges=True %}
+            {# Yeah I guess subfeatures could have subfeatures... #}
+            {% if f.subfeatures %}
+            <ul>
+                {% for sf in f.subfeatures %}
+                <li>
+                    {% include "character/partials/_feature_link.html" with f=sf exclude=f.id show_badges=True print_badges=True %}
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% for group in subfeatures_available %}
+    {% if group.has_available %}
+    <div class="d-print-none">
+        <h3>{{group.name}}</h3>
+        {% if group.explain %}
+        <p>{{ group.explain }}</p>
+        {% endif %}
+        {% include "character/partials/_available_list.html" with parent=feature expand_first=True %}
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>

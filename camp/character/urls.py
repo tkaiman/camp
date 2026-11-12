@@ -28,6 +28,16 @@ urlpatterns = [
     path("<int:pk>/undo/", views.undo_view, name="character-undo"),
     path("<int:pk>/copy/", views.copy_view, name="character-copy"),
     path(
+        "<int:pk>/manage/<str:action>/",
+        views.manage_view,
+        name="character-manage",
+    ),
+    path(
+        "<int:pk>/available/<str:group_type>/",
+        views.available_group_view,
+        name="character-available-group",
+    ),
+    path(
         "<int:pk>/f/<feature:feature_id>/",
         views.feature_view,
         name="character-feature-view",
